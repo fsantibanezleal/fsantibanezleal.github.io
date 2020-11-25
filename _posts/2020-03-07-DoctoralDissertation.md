@@ -1,7 +1,7 @@
 ---
 title: 'My doctoral dissertation defense'
 date: 2020-03-07
-permalink: /posts/2020/03/doctoral dissertation defense/
+permalink: /posts/2020/03/doctoral-dissertation-defense/
 tags:
   - doctoral dissertation
   - education
