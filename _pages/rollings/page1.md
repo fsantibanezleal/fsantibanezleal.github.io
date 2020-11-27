@@ -1,7 +1,7 @@
 ---
 index: 1
 layout: archive
-permalink: /rolling-archive/
+permalink: /rolling-archive/page1
 title: Personal daily events
 author_profile: true
 redirect_from:
@@ -18,14 +18,20 @@ redirect_from:
 {% assign have_valid_page = 0 %}
 
 /* How many post? */
-{% assign posts_count = site.rollings | size %}
+{% assign posts_count = sortedposts | size %}
+
+
+{% assign internal_mod_pag = 1000 %}
+{% if site.paginate > 0 %}
+      {% assign internal_mod_pag = site.paginate %}
+{% endif %}
 
 /* How many pages we need? */
-{% assign mod_pag = posts_count | modulo:site.mpaginate %}
-{% if mod_pag > 0 then %}
+{% assign mod_pag = posts_count | modulo:internal_mod_pag %}
+{% if mod_pag > 0 %}
       {% assign is_last_partial = 1 %}
 {% endif %}
-{% assign pages_count = posts_count | divided_by:site.mpaginate | plus:is_last_partial %}
+{% assign pages_count = posts_count | divided_by:internal_mod_pag | plus:is_last_partial %}
 
 /* What should be the next page? */
 {% assign next_pag = page.index | plus:1 %}
@@ -33,26 +39,26 @@ redirect_from:
 /* What should be the previus page? */
 {% assign previus_pag = page.index | plus:1 %}
 
-{% if next_pag <= pages_count then %}
+{% if next_pag <= pages_count %}
       {% assign have_next_page = 1 %}
 {% endif %}
 
-{% if previus_pag >= 0 then %}
+{% if previus_pag >= 0 %}
       {% assign have_previus_page = 1 %}
 {% endif %}
 
 
 /* Lets calculate an offset to the posts of the current page. */
-{% assign OFFSET = site.mpaginate | times:page.index %}
+{% assign OFFSET = internal_mod_pag | times:page.index %}
 
-{% if page.index <= pages_count then %}
+{% if page.index <= pages_count %}
       {% assign have_valid_page = 1 %}
 {% endif %}
 
 
 
-{% if have_valid_page > 0 then %}
-      {% for post in sortedposts limit:site.mpaginate offset:OFFSET %}
+{% if have_valid_page > 0 %}
+      {% for post in sortedposts limit:internal_mod_pag offset:OFFSET %}
         {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
         {% if year != written_year %}
           <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
