@@ -1,18 +1,13 @@
 # Authors
 
-Name Name:
-  name        : "Name Name"
-  uri         : "https://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
-
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+Felipe Santibañez-Leal:
+  name        : "Felipe Santibañez-Leal"
+  uri         : "https://fsantibanezleal.github.io"
+  email       : "felipe@FASL.Work"
+  bio         : "I&F Decision Science Assoc. Manager @ Accenture | Applied Scientific Researcher"
+  avatar      : "profile.png"
+  twitter     : "fsantiba"
+  github      : "fsantibanezleal"
+  linkedin    : "fsantibanez"
+  google_scholar : "BE787WgAAAAJ"
+  orcid       : "0000-0002-0150-3246"

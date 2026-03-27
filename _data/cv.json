@@ -1,152 +1,261 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Felipe A. Santibañez-Leal",
+    "email": "felipe@FASL.Work",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://fsantibanezleal.github.io",
+    "summary": "Advanced analytics leader with 15+ years bridging academia and industry. I design and deploy data-driven solutions for mining, manufacturing, and services — delivering throughput gains, environmental improvements, and field-data workflow acceleration.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Santiago",
+      "countryCode": "CL",
+      "region": "Región Metropolitana"
     },
     "profiles": [
       {
         "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "username": "BE787WgAAAAJ",
+        "url": "https://scholar.google.cl/citations?user=BE787WgAAAAJ"
       },
       {
         "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "username": "0000-0002-0150-3246",
+        "url": "https://orcid.org/0000-0002-0150-3246"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "fsantibanezleal",
+        "url": "https://github.com/fsantibanezleal"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "fsantibanez",
+        "url": "https://www.linkedin.com/in/fsantibanez"
       }
     ]
   },
-  "work": [],
-  "education": [
+  "work": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "company": "Accenture – Industry X",
+      "position": "I&F Decision Science Assoc. Manager | Senior Data Science Lead",
+      "website": "https://www.accenture.com/us-en/insights/industry-x-index",
+      "startDate": "2025-09-01",
+      "endDate": "",
+      "summary": "Technical & Project Lead at CODELCO MinCo-Hidro. End-to-end data science for mining process optimization.",
+      "highlights": [
+        "Strategic deployment of Data & AI solutions across mining operations",
+        "Internship supervision: geotechnical risk prediction system industrialization"
+      ]
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
+      "company": "Minera Centinela – AMSA Group",
+      "position": "Data Processing Specialist | Senior Lead Data Scientist",
+      "startDate": "2025-01-01",
+      "endDate": "2025-09-01",
+      "summary": "Advanced analytics across the mining value chain.",
+      "highlights": [
+        "SAG milling, flotation, stockpile optimization: +120 TPH throughput uplift",
+        "Air quality initiative: 15% reduction in severe-event alerts"
+      ]
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "company": "Accenture – Industry X",
+      "position": "Business & Technology Delivery Associate Manager",
+      "startDate": "2024-06-01",
+      "endDate": "2024-12-01",
+      "summary": "Strategic advisor in digital transformation for national mining companies.",
+      "highlights": [
+        "Generative AI for process improvement and operational communication",
+        "Underground ore transport optimization and geophysical risk analysis"
+      ]
+    },
+    {
+      "company": "CODELCO",
+      "position": "Project Leader | Senior Data Scientist",
+      "startDate": "2022-01-01",
+      "endDate": "2024-05-01",
+      "summary": "Optimization projects across flotation, milling, and thickening.",
+      "highlights": [
+        "+100 TPH throughput increases and copper recovery improvements",
+        "Computer vision (24-stream) + Generative AI for pollution mitigation",
+        "Azure Databricks, Data Factory, Kedro, Spark Delta"
+      ]
+    },
+    {
+      "company": "Alaya Digital Solutions",
+      "position": "Head of Analytics and Development Teams",
+      "startDate": "2021-08-01",
+      "endDate": "2021-12-01",
+      "summary": "Analytics across mining, aquaculture, retail, and brewing.",
+      "highlights": [
+        "10-15% production improvements in real operations",
+        "Computer-vision-based monitoring for salmon processing plants"
+      ]
+    },
+    {
+      "company": "ALGES – Universidad de Chile",
+      "position": "Principal ML/AI Engineer | Research Scientist",
+      "startDate": "2017-08-01",
+      "endDate": "2023-10-01",
+      "summary": "Applied research in hyperspectral imaging, geostatistics, and geometallurgy.",
+      "highlights": [
+        "Geometallurgical models integrating spectral and laboratory data",
+        "Exploration models for brownfield and greenfield operations",
+        "Published in Mathematical Geosciences, Natural Resources Research, Scientific Data (Nature)"
+      ]
+    },
+    {
+      "company": "BNI – SCIAN-Lab, Universidad de Chile",
+      "position": "ML Expert – Electronic Engineer",
+      "startDate": "2011-07-01",
+      "endDate": "2016-03-01",
+      "summary": "Scientific computing for biomedical microscopy and super-resolution.",
+      "highlights": [
+        "First SOFI super-resolution implementation in Chile",
+        "Collaboration with University of Göttingen, Germany"
+      ]
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
+  "education": [
+    {
+      "institution": "Universidad de Viña del Mar",
+      "area": "M.Sc. Program in Project Management",
+      "studyType": "Master's",
+      "startDate": "2024-08-01",
+      "endDate": "",
+      "gpa": null,
+      "courses": []
+    },
+    {
+      "institution": "Universidad de Chile",
+      "area": "Ph.D. in Electrical Engineering",
+      "studyType": "Doctorate",
+      "startDate": "2013-03-01",
+      "endDate": "2019-12-01",
+      "gpa": null,
+      "courses": ["CONICYT National Scholarship"]
+    },
+    {
+      "institution": "Universidad de Chile & University of Heidelberg",
+      "area": "Postgraduate Diploma in Medical Informatics",
+      "studyType": "Diploma",
+      "startDate": "2011-03-01",
+      "endDate": "2011-07-01",
+      "gpa": null,
+      "courses": []
+    },
+    {
+      "institution": "Universidad de Concepción",
+      "area": "B.Sc. in Electronic Civil Engineering",
+      "studyType": "Bachelor's",
+      "startDate": "2003-03-01",
+      "endDate": "2009-12-01",
+      "gpa": null,
+      "courses": ["Enrique Molina Garmendia Scholarship", "Bicentenario Scholarship"]
+    }
+  ],
+  "skills": [
+    {"name": "Python / ML / Data Science", "keywords": ["Python", "scikit-learn", "PyTorch", "TensorFlow", "XGBoost", "Kedro", "Spark"]},
+    {"name": "Cloud & MLOps", "keywords": ["Azure Databricks", "Data Factory", "AWS", "MLflow", "CI/CD", "Docker"]},
+    {"name": "Image Processing & Vision", "keywords": ["OpenCV", "Hyperspectral", "FIJI/ImageJ", "Computer Vision", "Super-resolution"]},
+    {"name": "Geostatistics", "keywords": ["Spatial analysis", "MPS", "Compressed Sensing", "Information Theory"]},
+    {"name": "Full-Stack Development", "keywords": ["FastAPI", "Next.js", "Dash", "PostgreSQL", "Three.js"]},
+    {"name": "Leadership", "keywords": ["Project Management", "Agile", "Cross-functional teams", "Mentoring"]}
+  ],
+  "languages": [
+    {"language": "Spanish", "fluency": "Native"},
+    {"language": "English", "fluency": "Professional Working"}
+  ],
+  "interests": [
+    {"name": "Data Science & Machine Learning"},
+    {"name": "Computational Photography & Optics"},
+    {"name": "Geostatistics & Mining Analytics"},
+    {"name": "Nature & Hiking"}
+  ],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "HIDSAG: Hyperspectral Image Database for Supervised Analysis in Geometallurgy",
+      "publisher": "Scientific Data (Nature)",
+      "releaseDate": "2023-03-23",
+      "website": "https://doi.org/10.1038/s41597-023-02061-x",
+      "summary": "Public SWIR/VNIR hyperspectral image database of mineral samples with geometallurgical properties."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "Ore-Waste Discrimination with Adaptive Sampling Strategy",
+      "publisher": "Natural Resources Research",
+      "releaseDate": "2020-02-08",
+      "website": "https://doi.org/10.1007/s11053-020-09625-3",
+      "summary": "Adaptive sampling for grade control in short-term mining planning, validated on three real cases."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "Sampling Strategies for Uncertainty Reduction in Categorical Random Fields",
+      "publisher": "Mathematical Geosciences",
+      "releaseDate": "2019-01-04",
+      "website": "https://doi.org/10.1007/s11004-018-09777-2",
+      "summary": "Information-theoretic optimal sampling using conditional entropy for geostatistical simulation."
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Geological Facies Recovery Based on Weighted l1-Regularization",
+      "publisher": "Mathematical Geosciences",
+      "releaseDate": "2019-09-18",
+      "website": "https://doi.org/10.1007/s11004-019-09825-5",
+      "summary": "Weighted compressed sensing for channelized geological facies reconstruction."
+    },
+    {
+      "name": "A Robust Stochastic Approach to Mineral Hyperspectral Analysis for Geometallurgy",
+      "publisher": "Minerals",
+      "releaseDate": "2020-11-27",
+      "website": "https://www.mdpi.com/2075-163X/10/12/1139",
+      "summary": "Stochastic process formulation for hyperspectral mineral characterization."
     }
   ],
   "presentations": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
+      "name": "Doctoral Dissertation Defense: Information-Theoretic Sampling for Geological Image Recovery",
+      "event": "Universidad de Chile, Electrical Engineering Doctoral Program",
+      "date": "2020-03-07",
+      "location": "Santiago, Chile",
+      "description": "Optimal Sensor Placement for categorical 2D models in mining exploration."
     },
     {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
+      "name": "Multi Pixel Stochastic Approach to Mineral Samples Spectral Analysis",
+      "event": "Procemin Geomet 2020",
+      "date": "2020-11-17",
+      "location": "Santiago, Chile (virtual)",
+      "description": "Hierarchical regressor for geometallurgical variable estimation from hyperspectral data."
     },
     {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
+      "name": "Channelized facies recovery based on weighted compressed sensing",
+      "event": "IEEE SAM Workshop 2016",
+      "date": "2016-07-13",
+      "location": "Rio de Janeiro, Brazil",
+      "description": "Weighted compressed sensing for geological facies recovery."
     }
   ],
   "teaching": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
+      "course": "Professional Internship Supervision: Geotechnical Risk Prediction",
+      "institution": "Accenture Industry X",
+      "date": "2026-02-01",
+      "role": "Mentor / Supervisor",
+      "description": "9-week mentorship on rockburst prediction system industrialization."
     },
     {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
+      "course": "Medical Informatics and Digital Pathology",
+      "institution": "Universidad San Sebastián",
+      "date": "2017-08-01",
+      "role": "Undergraduate Instructor (2017-2019)",
+      "description": "Microscopy, optics, and image processing for medical technologists."
+    },
+    {
+      "course": "Microscopy, Optics, and Super-Resolution",
+      "institution": "Universidad de Chile, Master in Medical Informatics",
+      "date": "2012-08-01",
+      "role": "Graduate Instructor (2012, 2014)",
+      "description": "Spatial localization, co-localization analysis, and scientific image processing."
     }
   ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "portfolio": []
 }
