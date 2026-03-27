@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#112240;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="compGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a7a7a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d4f4f;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="compGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2980b9;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1a5276;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="matGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8e44ad;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#5b2c6f;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arr1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" style="fill:#4ecdc4"/>
+    </marker>
+    <marker id="arr2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" style="fill:#f1c40f"/>
+    </marker>
+    <marker id="arr3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" style="fill:#e74c3c"/>
+    </marker>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgGrad2)"/>
+  <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1a7a7a" stroke-width="2" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="35" style="font-family:Arial,sans-serif;font-size:16px;fill:#4ecdc4;text-anchor:middle;font-weight:bold;letter-spacing:1px">DUAL PHOTOGRAPHY CONCEPT</text>
+
+  <!-- === TOP ROW: Original Setup === -->
+  <text x="200" y="65" style="font-family:Arial,sans-serif;font-size:12px;fill:#8899aa;text-anchor:middle;font-style:italic">Original Capture</text>
+
+  <!-- Projector -->
+  <rect x="40" y="85" width="90" height="65" rx="8" style="fill:url(#compGrad);stroke:#4ecdc4;stroke-width:1.5"/>
+  <text x="85" y="112" style="font-family:Arial,sans-serif;font-size:11px;fill:#e0e0e0;text-anchor:middle;font-weight:bold">Projector</text>
+  <text x="85" y="127" style="font-family:Arial,sans-serif;font-size:8px;fill:#aaa;text-anchor:middle">p patterns</text>
+  <!-- Light cone from projector -->
+  <polygon points="130,100 210,90 210,155 130,145" style="fill:#f1c40f;opacity:0.08"/>
+  <line x1="130" y1="105" x2="210" y2="95" style="stroke:#f1c40f;stroke-width:1;opacity:0.5;stroke-dasharray:4,3"/>
+  <line x1="130" y1="120" x2="210" y2="120" style="stroke:#f1c40f;stroke-width:1.2;opacity:0.6" marker-end="url(#arr2)"/>
+  <line x1="130" y1="140" x2="210" y2="150" style="stroke:#f1c40f;stroke-width:1;opacity:0.5;stroke-dasharray:4,3"/>
+
+  <!-- Scene object -->
+  <rect x="210" y="80" width="70" height="85" rx="6" style="fill:#1a1a3e;stroke:#4ecdc4;stroke-width:1;stroke-dasharray:3,2"/>
+  <text x="245" y="105" style="font-family:Arial,sans-serif;font-size:10px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">Scene</text>
+  <!-- Simple scene content -->
+  <rect x="222" y="112" width="16" height="22" rx="2" style="fill:#2c3e50;stroke:#4ecdc4;stroke-width:0.5"/>
+  <circle cx="255" cy="130" r="10" style="fill:none;stroke:#4ecdc4;stroke-width:0.5"/>
+  <polygon points="245,112 255,112 250,122" style="fill:#2c3e50;stroke:#4ecdc4;stroke-width:0.5"/>
+
+  <!-- Light to camera -->
+  <line x1="280" y1="120" x2="340" y2="120" style="stroke:#4ecdc4;stroke-width:1.2;opacity:0.6" marker-end="url(#arr1)"/>
+
+  <!-- Camera -->
+  <rect x="340" y="85" width="90" height="65" rx="8" style="fill:url(#compGrad2);stroke:#4ecdc4;stroke-width:1.5"/>
+  <text x="385" y="112" style="font-family:Arial,sans-serif;font-size:11px;fill:#e0e0e0;text-anchor:middle;font-weight:bold">Camera</text>
+  <text x="385" y="127" style="font-family:Arial,sans-serif;font-size:8px;fill:#aaa;text-anchor:middle">c pixels</text>
+
+  <!-- Arrow down to T matrix -->
+  <line x1="245" y1="170" x2="245" y2="195" style="stroke:#f1c40f;stroke-width:1.5" marker-end="url(#arr2)"/>
+  <text x="258" y="187" style="font-family:Arial,sans-serif;font-size:9px;fill:#8899aa">Measure</text>
+
+  <!-- === MIDDLE: Transport Matrix === -->
+  <!-- T matrix -->
+  <rect x="170" y="198" width="150" height="55" rx="8" style="fill:url(#matGrad);stroke:#c39bd3;stroke-width:1.5"/>
+  <text x="245" y="222" style="font-family:Arial,sans-serif;font-size:14px;fill:#e0e0e0;text-anchor:middle;font-weight:bold">T</text>
+  <text x="245" y="240" style="font-family:Arial,sans-serif;font-size:9px;fill:#d7bde2;text-anchor:middle">Light Transport Matrix</text>
+  <text x="245" y="250" style="font-family:Arial,sans-serif;font-size:8px;fill:#bbb;text-anchor:middle">c x p</text>
+
+  <!-- Equation: c = T * p -->
+  <text x="82" y="230" style="font-family:Arial,sans-serif;font-size:13px;fill:#e0e0e0;text-anchor:middle;font-weight:bold">c = T p</text>
+  <line x1="120" y1="225" x2="165" y2="225" style="stroke:#c39bd3;stroke-width:1;opacity:0.5" marker-end="url(#arr1)"/>
+
+  <!-- Arrow: Transpose operation -->
+  <text x="400" y="218" style="font-family:Arial,sans-serif;font-size:11px;fill:#f1c40f;text-anchor:middle;font-weight:bold">Transpose</text>
+  <line x1="325" y1="225" x2="430" y2="225" style="stroke:#f1c40f;stroke-width:2" marker-end="url(#arr2)"/>
+
+  <!-- T' matrix -->
+  <rect x="435" y="198" width="150" height="55" rx="8" style="fill:url(#matGrad);stroke:#f1c40f;stroke-width:1.5"/>
+  <text x="510" y="222" style="font-family:Arial,sans-serif;font-size:14px;fill:#e0e0e0;text-anchor:middle;font-weight:bold">T'</text>
+  <text x="510" y="240" style="font-family:Arial,sans-serif;font-size:9px;fill:#d7bde2;text-anchor:middle">Transposed Matrix</text>
+  <text x="510" y="250" style="font-family:Arial,sans-serif;font-size:8px;fill:#bbb;text-anchor:middle">p x c</text>
+
+  <!-- Equation: p' = T' * c -->
+  <text x="680" y="230" style="font-family:Arial,sans-serif;font-size:13px;fill:#e0e0e0;text-anchor:middle;font-weight:bold">p' = T' c</text>
+  <line x1="590" y1="225" x2="640" y2="225" style="stroke:#c39bd3;stroke-width:1;opacity:0.5" marker-end="url(#arr1)"/>
+
+  <!-- Arrow down to result -->
+  <line x1="510" y1="258" x2="510" y2="285" style="stroke:#f1c40f;stroke-width:1.5" marker-end="url(#arr2)"/>
+  <text x="530" y="278" style="font-family:Arial,sans-serif;font-size:9px;fill:#8899aa">Reconstruct</text>
+
+  <!-- === BOTTOM ROW: Dual Result === -->
+  <text x="560" y="300" style="font-family:Arial,sans-serif;font-size:12px;fill:#8899aa;text-anchor:middle;font-style:italic">Dual (Virtual) View</text>
+
+  <!-- Virtual Camera (was projector) -->
+  <rect x="410" y="310" width="90" height="65" rx="8" style="fill:url(#compGrad);stroke:#f1c40f;stroke-width:1.5"/>
+  <text x="455" y="332" style="font-family:Arial,sans-serif;font-size:10px;fill:#e0e0e0;text-anchor:middle;font-weight:bold">Virtual</text>
+  <text x="455" y="346" style="font-family:Arial,sans-serif;font-size:10px;fill:#e0e0e0;text-anchor:middle;font-weight:bold">Camera</text>
+  <text x="455" y="363" style="font-family:Arial,sans-serif;font-size:8px;fill:#f1c40f;text-anchor:middle">(Projector's view)</text>
+
+  <!-- Dual scene -->
+  <line x1="500" y1="345" x2="550" y2="345" style="stroke:#4ecdc4;stroke-width:1.2;opacity:0.6"/>
+  <rect x="550" y="310" width="70" height="65" rx="6" style="fill:#1a1a3e;stroke:#f1c40f;stroke-width:1;stroke-dasharray:3,2"/>
+  <text x="585" y="335" style="font-family:Arial,sans-serif;font-size:10px;fill:#f1c40f;text-anchor:middle;font-weight:bold">Dual</text>
+  <text x="585" y="350" style="font-family:Arial,sans-serif;font-size:10px;fill:#f1c40f;text-anchor:middle;font-weight:bold">Scene</text>
+  <text x="585" y="368" style="font-family:Arial,sans-serif;font-size:8px;fill:#aaa;text-anchor:middle">Reconstructed</text>
+
+  <!-- Virtual Projector (was camera) -->
+  <line x1="620" y1="345" x2="660" y2="345" style="stroke:#f1c40f;stroke-width:1;opacity:0.5;stroke-dasharray:4,3"/>
+  <rect x="660" y="310" width="90" height="65" rx="8" style="fill:url(#compGrad2);stroke:#f1c40f;stroke-width:1.5"/>
+  <text x="705" y="332" style="font-family:Arial,sans-serif;font-size:10px;fill:#e0e0e0;text-anchor:middle;font-weight:bold">Virtual</text>
+  <text x="705" y="346" style="font-family:Arial,sans-serif;font-size:10px;fill:#e0e0e0;text-anchor:middle;font-weight:bold">Projector</text>
+  <text x="705" y="363" style="font-family:Arial,sans-serif;font-size:8px;fill:#f1c40f;text-anchor:middle">(Camera's view)</text>
+
+  <!-- Duality arrow -->
+  <text x="85" y="320" style="font-family:Arial,sans-serif;font-size:11px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">Helmholtz</text>
+  <text x="85" y="336" style="font-family:Arial,sans-serif;font-size:11px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">Reciprocity</text>
+  <path d="M 85 280 L 85 300" style="fill:none;stroke:#4ecdc4;stroke-width:1" marker-end="url(#arr1)"/>
+  <text x="85" y="360" style="font-family:Arial,sans-serif;font-size:9px;fill:#aaa;text-anchor:middle">Light paths are</text>
+  <text x="85" y="373" style="font-family:Arial,sans-serif;font-size:9px;fill:#aaa;text-anchor:middle">reversible</text>
+
+  <!-- Key insight box -->
+  <rect x="20" y="260" width="130" height="30" rx="5" style="fill:#0d2137;stroke:#4ecdc4;stroke-width:1"/>
+  <text x="85" y="279" style="font-family:Arial,sans-serif;font-size:9px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">Key Principle</text>
+</svg>
