@@ -19,7 +19,7 @@ Open-pit mining operations generate airborne particulate matter that can impact 
 The system operates in three integrated stages:
 
 ### 1. Real-time estimation
-**24 video camera streams** are processed continuously using computer vision models to estimate pollution levels across the operational area. This provides spatial coverage far beyond what point sensors alone can achieve, creating a dense pollution map updated in near real-time.
+**24 video camera streams** are processed continuously using deep learning models (convolutional neural networks trained on labeled visibility/opacity data) to estimate pollution levels across the operational area. The vision models perform regression from image patches to concentration estimates, calibrated against co-located particulate matter sensors. This provides spatial coverage far beyond what point sensors alone can achieve, creating a dense pollution map updated in near real-time.
 
 ### 2. Predictive forecasting
 Time-series models generate forecasts at **1-hour and 6-hour horizons**, combining current pollution estimates with meteorological data, operational schedules, and historical patterns. This gives operators advance warning to take preventive action before events reach critical thresholds.
@@ -41,4 +41,4 @@ A **Generative AI module** synthesizes the current situation, forecasts, and ope
 - **GenAI**: Large language models fine-tuned for operational context
 - **Infrastructure**: Streaming pipelines on Azure Databricks
 
-*Note: This description reflects the general type and architecture of systems I have built. Specific client details and operational data are omitted.*
+*This project is part of proprietary corporate work. Source code is not publicly available.*

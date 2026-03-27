@@ -16,7 +16,13 @@ During zebrafish gastrulation, the Enveloping Layer (EVL) expands from the anima
 
 ## The simulation
 
-Cells move on the surface of a sphere using an **AER (Azimuth-Elevation-Radius) coordinate system** with automatic wrapping at the poles. Each cell is coupled to the EVL margin through a configurable force, with stochastic noise representing biological variability. Pairwise collision detection ensures cells maintain physical separation while migrating collectively.
+Cells move on the surface of a sphere using an **AER (Azimuth-Elevation-Radius) coordinate system** with automatic wrapping at the poles:
+
+- **Azimuth**: horizontal angle (-pi to pi), analogous to longitude, with periodic wrapping
+- **Elevation**: vertical angle (-pi/2 to pi/2), analogous to latitude, clamped at the poles
+- **Radius**: constant (cells remain on the sphere surface)
+
+Each cell's contour is discretized as N vertices: vertex[i] = (center_az + r*cos(2*pi*i/N), center_el + r*sin(2*pi*i/N), R_embryo). Cell velocity has a deterministic component from EVL coupling (base_velocity = [0, -(pi/2)*evl_speed, 0]) plus a Gaussian stochastic term scaled by migration speed, capturing the biological variability of cytoskeletal dynamics. Pairwise collision detection in angular space (angular_dist < size_a + size_b) with symmetric push-apart resolution ensures cells maintain physical separation while migrating collectively.
 
 ## Technical highlights
 

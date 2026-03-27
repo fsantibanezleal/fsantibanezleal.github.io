@@ -16,7 +16,7 @@ When a projector illuminates a scene and a camera captures the result, the relat
 
 ## What makes this interesting
 
-This is not just a matrix transpose. The transport matrix encodes how every projector pixel contributes to every camera pixel through the scene's geometry and materials. Analyzing its singular value spectrum reveals the scene's optical complexity: rank, condition number, and how much information can be recovered from compressed measurements.
+This is not just a matrix transpose. The transport matrix **T** (of size N_camera x N_projector) encodes how every projector pixel contributes to every camera pixel through the scene's geometry and materials, with each entry T_ij determined by the Lambertian BRDF and geometric visibility between projector pixel j and camera pixel i. The SVD decomposition T = U * Sigma * V^T reveals the scene's optical complexity: the singular value spectrum shows effective rank (how many independent light paths exist), the condition number sigma_max/sigma_min quantifies numerical stability for inversion, and the rate of spectral decay indicates how much information can be recovered from compressed (sub-Nyquist) measurements using Bernoulli or Hadamard measurement matrices.
 
 ## Features
 

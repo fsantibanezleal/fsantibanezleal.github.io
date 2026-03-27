@@ -13,4 +13,4 @@ The adaptive entropy sampling algorithm is starting to converge to something use
 
 Spent the last month implementing the conditional entropy estimator from scratch in MATLAB. The multiple-point statistics backend is slow but it works. Comparing against regular grids and random sampling, the information-theoretic approach consistently recovers the field better with fewer samples. The (1-1/e) approximation guarantee from the submodularity property is elegant — theory and practice agreeing for once.
 
-Professor Silva's guidance on the information-theoretic formulation has been invaluable. This might actually become a publishable framework.
+Professor Silva's guidance on the information-theoretic formulation has been invaluable. This might actually become a publishable framework. [Sampling code on GitHub](https://github.com/fsantibanezleal/IDS_OWP).

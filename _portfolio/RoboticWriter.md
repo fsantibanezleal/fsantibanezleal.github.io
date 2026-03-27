@@ -23,7 +23,7 @@ Each step requires solving the **inverse kinematics** problem: given a desired e
 
 ## Kinematics
 
-The system uses the **Denavit-Hartenberg convention** for systematic description of the 5-joint kinematic chain:
+The system uses the **Denavit-Hartenberg (DH) convention** for systematic description of the 5-joint kinematic chain. Each joint i is described by four parameters: link length a_i, link offset d_i, link twist alpha_i, and joint angle theta_i. The homogeneous transformation between consecutive frames is T_i = Rot_z(theta_i) * Trans_z(d_i) * Trans_x(a_i) * Rot_x(alpha_i), and the end-effector pose is obtained by composing all five transformations: T_05 = T_01 * T_12 * T_23 * T_34 * T_45. Inverse kinematics are solved analytically (closed-form geometric solution) for real-time performance, avoiding the convergence issues of iterative numerical methods:
 
 | Joint | Type | d (mm) | a (mm) |
 |-------|------|--------|--------|

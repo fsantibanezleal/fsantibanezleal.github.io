@@ -19,6 +19,14 @@ Real cells are not point particles. They have area, they deform when they push a
 - **Adhesion energy**: cells stick to neighbors with type-dependent strength
 - **Motility**: Gaussian filopodia generate directed forces toward migration targets
 
+### Gaussian filopodia model
+
+Each cell's radial contour is defined by a set of filopodial protrusions modeled as Gaussian bumps on a base radius:
+
+> R(theta) = max over j of { R0 + A_j * exp( -(theta - theta0_j)^2 / (2 * W_j^2) ) }
+
+where R0 is the resting cell radius, A_j is the amplitude (extension length), theta0_j is the angular direction, and W_j is the angular spread of filopodium j. The cell's velocity is then derived from the shape asymmetry of its membrane contour -- a cell with an asymmetric protrusion migrates in that direction. Filopodium angles undergo a Brownian random walk at each time step, producing realistic exploratory motility. A two-pass collision resolution (soft forward pass + hard backward pass) ensures stable cell-cell separation without oscillation.
+
 ## Key features
 
 - **Deformable cell model** with configurable Gaussian filopodia

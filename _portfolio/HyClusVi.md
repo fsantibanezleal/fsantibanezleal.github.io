@@ -5,7 +5,7 @@ excerpt: "A short Undergraduate Project for HSI Clustering Visualization<br/><im
 collection: portfolio
 ---
 
-This is a short project where computer science and electrical engineering students worked on the application of convolutional autoenconders and high dimensional data visualization techniques. We worked with samples characterized by hyperspectral images.
+This project explored the application of deep convolutional autoencoders and high-dimensional data visualization techniques to hyperspectral imagery from mining operations. The core challenge was dimensionality reduction -- mapping hundreds of spectral bands into compact latent representations that preserve discriminative structure for mineral characterization and sample provenance identification.
 
 
 The Context
@@ -610,4 +610,4 @@ colors = ['C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C1
 
 ![img](/files/portfolio/HyClus/120.png)
 
-
+*This project does not have a public repository. The data and detailed implementation remain confidential due to the industrial origin of the samples.*

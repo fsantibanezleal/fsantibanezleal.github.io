@@ -9,17 +9,19 @@ tags:
   - Nature
 ---
 
-Our HIDSAG database paper has been published in Scientific Data, a Nature journal. This one feels special.
+Our HIDSAG database paper has been published in Scientific Data, a Nature journal. [Read the paper (DOI)](https://doi.org/10.1038/s41597-023-02061-x). This one feels special.
 
 A dataset in a Nature journal
 ======
 
-Publishing in a Nature-family journal is a milestone I do not take lightly. The HIDSAG database -- a comprehensive collection of hyperspectral mineral sample images -- represents years of careful laboratory work, acquiring SWIR and VNIR images of mineral samples under controlled conditions. Every sample was measured, documented, and curated with the goal of building something the community could actually use.
+Publishing in a Nature-family journal is a milestone I do not take lightly. The HIDSAG database -- a comprehensive collection of hyperspectral mineral sample images -- represents years of careful laboratory work spanning roughly 2019 to 2022, acquiring hundreds of SWIR and VNIR images of mineral samples under controlled conditions. Every sample was measured, documented, and curated with the goal of building something the community could actually use. The process of acquiring that volume of hyperspectral imagery was methodical and slow -- each sample required careful preparation, consistent illumination setup, and quality checks on the captured spectra. It is not the kind of work that makes for exciting papers, but it is the kind of work that makes all subsequent research possible.
 
 The importance of open data
 ======
 
-Science progresses faster when data is shared. This conviction drove the project from the beginning. In the hyperspectral mineral analysis community, most researchers work with proprietary datasets that cannot be compared or reproduced. HIDSAG changes that. By making a high-quality, well-documented dataset publicly available, we give other researchers a common benchmark to test their methods against.
+Science progresses faster when data is shared. This conviction drove the project from the beginning. The decision to publish as open data in a Nature journal was deliberate -- we wanted the dataset to be not just available but citable and peer-reviewed, giving it the weight and discoverability it deserved. In the hyperspectral mineral analysis community, most researchers work with proprietary datasets locked behind NDAs and corporate agreements, which means methods cannot be fairly compared or results independently reproduced. HIDSAG changes that. By making a high-quality, well-documented dataset publicly available, we give other researchers a common benchmark to test their methods against. This enables the kind of reproducible research that our field desperately needs.
+
+This is a personal point of pride for me -- giving back to the scientific community. So much of my own doctoral work depended on the generosity of others who shared their code and data. Making HIDSAG open is my way of continuing that cycle.
 
 Reproducibility is not just a buzzword -- it is the foundation of credible science. When someone develops a new mineral identification algorithm, they should be able to test it on the same data others have used. HIDSAG enables that.
 

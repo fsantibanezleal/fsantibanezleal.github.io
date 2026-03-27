@@ -20,9 +20,9 @@ The system transforms raw seismic monitoring data into actionable risk predictio
 
 ### Feature engineering
 Raw seismic event catalogs are transformed into meaningful indicators:
-- **Energy indices**: cumulative and windowed seismic energy release patterns
-- **Spatial features**: event clustering, migration patterns, proximity to geological structures
-- **Temporal patterns**: event rate changes, quiescence periods, frequency-magnitude distributions
+- **Energy indices**: cumulative seismic energy release, apparent stress (ratio of seismic energy to seismic moment), and windowed energy rate patterns
+- **Spatial features**: event clustering (DBSCAN-based), migration velocity vectors, proximity to mapped geological structures and excavation faces
+- **Temporal patterns**: event rate changes, seismic quiescence detection, Gutenberg-Richter b-value estimation from frequency-magnitude distributions
 - **Block model integration**: geological and geomechanical properties from 3D mine models
 
 ### Classification
@@ -42,4 +42,4 @@ Risk predictions feed into operational planning systems, informing decisions abo
 - **Deployment**: Multi-environment (dev/preprod/prod) with CI/CD
 - **Output**: JSON risk assessments consumed by operational planning systems
 
-*Note: This description reflects the general type and architecture of systems I have built. Specific client details and operational data are omitted.*
+*This project is part of proprietary corporate work. Source code is not publicly available.*
