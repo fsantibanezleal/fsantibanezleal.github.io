@@ -16,7 +16,7 @@
   <!-- Background -->
   <rect width="800" height="400" fill="url(#bg)"/>
   <!-- Title -->
-  <text x="400" y="30" style="font-family:Arial,sans-serif;font-size:15px;font-weight:bold;fill:#e0e0e0;text-anchor:middle;">Mathematical Formulation &mdash; Rockburst Risk Model</text>
+  <text x="400" y="30" style="font-family:Arial,sans-serif;font-size:15px;font-weight:bold;fill:#e0e0e0;text-anchor:middle;">Mathematical Formulation &#x2014; Rockburst Risk Model</text>
 
   <!-- === ROW 1: Target Definition & Score === -->
   <!-- Target definition box -->
