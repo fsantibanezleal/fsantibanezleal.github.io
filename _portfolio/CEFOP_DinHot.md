@@ -16,7 +16,7 @@ Holographic optical tweezers (HOT) use a Spatial Light Modulator (SLM) to shape 
 
 ## The approach
 
-The system implements the **weighted Gerchberg-Saxton (GS) algorithm**, an iterative Fourier-transform method that alternates between the SLM plane and the focal plane, enforcing amplitude constraints at each step. Weights are adjusted per trap to equalize intensities across all targets, converging to a solution that distributes light evenly among the desired positions.
+The system implements the **weighted Gerchberg-Saxton (GS) algorithm**, an iterative Fourier-transform method that alternates between the SLM plane and the focal plane. At each iteration: (1) the current phase mask is Fourier-transformed to the focal plane, (2) the resulting amplitude is replaced with the desired trap amplitudes while preserving the computed phase, (3) the inverse FFT returns to the SLM plane, and (4) the amplitude is replaced with the uniform illumination profile while preserving the phase. Per-trap weights are adjusted at each iteration to equalize intensities across all targets -- traps receiving too much light have their weights reduced, and vice versa. The algorithm converges when the intensity uniformity across traps falls below a threshold, typically within 20-50 iterations.
 
 ## Technical highlights
 

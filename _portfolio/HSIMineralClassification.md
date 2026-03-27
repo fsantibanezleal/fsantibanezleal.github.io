@@ -19,7 +19,7 @@ Hyperspectral cameras capture hundreds of narrow spectral bands across the visib
 1. **Data ingestion**: The platform accepts hyperspectral rasters from VNIR/SWIR cameras alongside laboratory reference measurements (XRD for mineral phases, XRF for elemental composition). Regions of interest (ROIs) are defined to link spectral patches with ground-truth mineral labels.
 2. **Spectral patch database**: ROI-aligned spectral patches are extracted and organized into training databases, with augmentation and normalization pipelines to handle varying illumination and sensor conditions.
 3. **Multi-model training**: Several model architectures are trained in parallel -- XGBoost, ExtraTrees, Ridge regression, Partial Least Squares Regression (PLSR), and 1D/2D Convolutional Neural Networks. An ensemble layer and meta-learning strategies combine predictions across models and datasets.
-4. **Compositional constraints**: A post-processing layer enforces that predicted mineral abundances satisfy closure (summing to 100%) and non-negativity, using constrained optimization techniques.
+4. **Compositional constraints**: A post-processing layer enforces that predicted mineral abundances satisfy closure (sum to 100%) and non-negativity. This is formulated as a constrained least-squares problem: min ||a - a_pred||^2 subject to sum(a_i) = 1 and a_i >= 0, solved via quadratic programming or simplex projection.
 5. **Output products**: Mineral classification maps, per-pixel abundance estimates with confidence intervals, and summary statistics for geological interpretation.
 
 ## Minerals handled
@@ -34,4 +34,4 @@ The system has been applied to a range of mineral assemblages relevant to mining
 - **Desktop deployment**: Packaged for field use at sites with limited connectivity
 - **Data**: HDF5 and GeoTIFF for raster storage, pandas for tabular data
 
-*Note: This description reflects the general type and architecture of systems I have built as a consultant for industrial clients. Specific client details, operational data, and proprietary methodologies are omitted.*
+*This project is part of proprietary consulting work. Source code is not publicly available.*
