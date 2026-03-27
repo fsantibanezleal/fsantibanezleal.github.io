@@ -11,16 +11,16 @@ redirect_from:
 About
 ======
 
-Hola Hola! I am Felipe Santibañez-Leal, an **I&F Decision Science Associate Manager at [Accenture](https://www.accenture.com/)**, currently on client assignment as **Senior Data Science Lead & Technical Project Lead** at [CODELCO](https://www.codelco.com/)'s Advanced Analytics Directorate (MinCo-Hidro) under the Technology & Digitalization Management (GTD).
+Hola! I am Felipe Santibañez-Leal, an **I&F Decision Science Associate Manager at [Accenture](https://www.accenture.com/)**, currently on client assignment as **Senior Data Science Lead & Technical Project Lead** at [CODELCO](https://www.codelco.com/)'s Advanced Analytics Directorate (MinCo-Hidro) under the Technology & Digitalization Management (GTD).
 
-I am an applied scientist and technical leader with a passion for integrating data-driven solutions into mission-critical operations. With over 15 years of experience spanning academia and industry, I bridge advanced analytics, machine learning, and operational expertise to deliver measurable impact across mining, industrial, and service sectors.
+I am an applied scientist and technical leader with over 15 years of experience spanning academia and industry. I bridge advanced analytics, machine learning, and operational expertise to deliver measurable impact across mining, industrial, and service sectors.
 
 My work and research
 ======
 
-I love science, mathematics and nature.
+I love science, mathematics, and nature—and my career sits at their intersection.
 
-My career combines deep technical expertise with project leadership. I lead end-to-end data science initiatives for mining process optimization, delivering secure, scalable, production-grade solutions that tie business value to governance and engineering best practices.
+I lead end-to-end data science initiatives for mining process optimization, delivering secure, scalable, production-grade solutions that tie business value to governance and engineering best practices.
 
 **Current focus areas:**
 - Advanced analytics and MLOps for mining operations (SAG mills, flotation, grinding)
@@ -35,7 +35,7 @@ My career combines deep technical expertise with project leadership. I lead end-
 - Super-resolution microscopy and computational photography
 - Geostatistical modeling and spatial analysis
 
-Various laboratories, places and researchers have left a strong impression on my research and my approach to science:
+Several laboratories, institutions, and researchers have shaped my research and my approach to science:
 
 1. [Advanced Laboratory for Geostatistical Supercomputing (ALGES)](http://www.alges.cl/)
 1. [Information and Decision Systems Group, Universidad de Chile](http://ingenieria.uchile.cl/investigacion/presentacion/laboratorios/departamento-de-ingenieria-electrica/90774/laboratorio-de-informacion-y-decision)
@@ -63,14 +63,14 @@ Key clients and companies include CODELCO, Minera Centinela, and various mining 
 
 My origins
 ======
-I come from the south of Chile, where I grew up on a hill a bit isolated from civilization but surrounded by nature, cliffs, forests and beaches.
+I come from southern Chile, where I grew up on a hill—a bit isolated from civilization, but surrounded by nature, cliffs, forests, and beaches.
 
 ![wolverine](/images/places/wolverine/15.jpg)
 
-I received my PhD from the School of Electrical Engineering at the University of Chile, my double Diploma in Medical Informatics from the University of Chile and the University of Heidelberg, and my B.Sc. in electronic civil engineering at the Universidad de Concepcion in Concepcion, Chile. The campus of the University of Concepcion is also surrounded by nature.
+I received my Ph.D. from the School of Electrical Engineering at the University of Chile, a Postgraduate Diploma in Medical Informatics jointly from the University of Chile and the University of Heidelberg, and my B.Sc. in Electronic Civil Engineering from the Universidad de Concepción. The campus of the Universidad de Concepción is also surrounded by nature.
 
 ![UDEC](/images/places/udec/udec3.jpg)
 
-I also have industrial technical training in electronics at the High Technology Educational Center [CEAT](https://www.ceat.cl/inicio/), located in San Pedro de la Paz and surrounded by a lagoon and a small hill.
+I also hold an Industrial Electronics Technician degree from the High Technology Educational Center [CEAT](https://www.ceat.cl/inicio/), located in San Pedro de la Paz—surrounded by a lagoon and a small hill.
 
 ![CEAT](/images/places/ceat/ceat1.jpg)
