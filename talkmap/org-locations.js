@@ -1,22 +1,12 @@
 var addressPoints = [
   [
-    "Berkeley CA, USA",
-    37.8708393,
-    -122.2728638
+    "Talk for Procemin Geomet 2020<br />Procemin Geomet 2020; Santiago, Chile",
+    -33.4376995,
+    -70.6510671
   ],
   [
-    "London, UK",
-    51.5073219,
-    -0.1276473
-  ],
-  [
-    "San Francisco, California",
-    37.7792808,
-    -122.4192362
-  ],
-  [
-    "Los Angeles, CA",
-    34.0543942,
-    -118.2439408
+    "Talk of my doctoral dissertation defense<br />Doctoral Electric Engineering Program of the University of Chile; Santiago, Chile",
+    -33.4376995,
+    -70.6510671
   ]
 ];
