@@ -78,9 +78,14 @@ Selected projects
 * **Real-Time Material Tracking & Blending** — Digital twin for ore flow, stockpile management, and blending optimization
 * **Environmental Monitoring & Mitigation** — Computer vision (24-stream) + GenAI for pollution forecasting and natural-language recommendations
 * **Geotechnical Risk Prediction** — ML-based rockburst and slope instability prediction from seismic data and 3D block models
+* **Crusher Liner Wear Management** — 3D point cloud profiling, cylindrical wear analysis, and remaining-life forecasting
+* **Hyperspectral Mineral Classification** — ML platform for mineral ID from VNIR/SWIR imagery (XGBoost, CNN, compositional constraints)
 * **[HIDSAG](https://doi.org/10.1038/s41597-023-02061-x)** — Hyperspectral Image Database for Geometallurgy (Scientific Data, Nature)
-* **[Cellular Potts Model Simulator](https://github.com/fsantibanezleal/SCIAN_LEO_CPM)** — Zebrafish embryonic cell migration with deformable bodies
-* **[3D Embryo Cell Migration](https://github.com/fsantibanezleal/SCIAN_EVL_SpherSIM)** — Collective cell migration on spherical embryo surface (Three.js/FastAPI)
+* **[SOFI Super-Resolution Microscopy](https://github.com/fsantibanezleal/FASL_SOFI_QDOTS)** — Quantum dot fluorescence via higher-order cumulants (up to 2.45x resolution)
+* **[Optimal Spatial Sampling](https://github.com/fsantibanezleal/IDS_OWP)** — Information-theoretic AdSEMES algorithm for well placement (PhD thesis companion)
+* **[3D Haptic Simulation](https://github.com/fsantibanezleal/UDEC_Haptic_SIM)** — Octree collision detection and spring-damper force feedback
+* **[Cellular Potts Model](https://github.com/fsantibanezleal/SCIAN_LEO_CPM)** — Zebrafish embryonic cell migration with deformable bodies
+* **[3D Embryo Cell Migration](https://github.com/fsantibanezleal/SCIAN_EVL_SpherSIM)** — Collective cell migration on spherical embryo surface
 * **[Holographic Optical Tweezers](https://github.com/fsantibanezleal/CEFOP_DinHot)** — Real-time phase mask computation via Gerchberg-Saxton algorithm
 * **[Dual Photography Lab](https://github.com/fsantibanezleal/FASL_Coding_DualFotography)** — Light transport matrices, SVD analysis, and compressed sensing
 * **[Robotic Writer](https://github.com/fsantibanezleal/Udec_Robotic_Writer)** — 5-DOF robotic arm kinematics, trajectory planning, and simulation

@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bgSofi" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b2a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1b2d45;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrSt" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" style="fill:#4ecdc4"/>
+    </marker>
+    <marker id="arrSo" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" style="fill:#e8a838"/>
+    </marker>
+    <filter id="glowS">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowDot">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgSofi)"/>
+  <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1a7a7a" stroke-width="2" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="30" style="font-family:Arial,sans-serif;font-size:15px;fill:#4ecdc4;text-anchor:middle;font-weight:bold;letter-spacing:1px">SUPER-RESOLUTION OPTICAL FLUCTUATION IMAGING (SOFI)</text>
+
+  <!-- === LEFT: Fluorescence Video Stack === -->
+  <rect x="15" y="45" width="170" height="220" rx="5" style="fill:#0a1628;stroke:#1a5a6a;stroke-width:1"/>
+  <text x="100" y="62" style="font-family:Arial,sans-serif;font-size:10px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">Fluorescence Video Stack</text>
+  <text x="100" y="74" style="font-family:Arial,sans-serif;font-size:9px;fill:#7a9ab5;text-anchor:middle">(T frames, blinking QDots)</text>
+
+  <!-- Stacked frames illusion -->
+  <rect x="38" y="88" width="110" height="80" rx="3" style="fill:#0d2240;stroke:#2a5a7a;stroke-width:0.5;opacity:0.4" transform="translate(6,-6)"/>
+  <rect x="38" y="88" width="110" height="80" rx="3" style="fill:#0d2240;stroke:#2a5a7a;stroke-width:0.5;opacity:0.6" transform="translate(3,-3)"/>
+  <rect x="38" y="88" width="110" height="80" rx="3" style="fill:#0d2240;stroke:#2a5a7a;stroke-width:1"/>
+
+  <!-- Blinking quantum dots - ON (bright) -->
+  <circle cx="60" cy="105" r="3" style="fill:#00ff88;opacity:0.9" filter="url(#glowDot)"/>
+  <circle cx="85" cy="115" r="2.5" style="fill:#00ff88;opacity:0.8" filter="url(#glowDot)"/>
+  <circle cx="120" cy="100" r="3" style="fill:#00ff88;opacity:0.95" filter="url(#glowDot)"/>
+  <circle cx="105" cy="140" r="2.5" style="fill:#00ff88;opacity:0.85" filter="url(#glowDot)"/>
+  <circle cx="70" cy="150" r="3" style="fill:#00ff88;opacity:0.9" filter="url(#glowDot)"/>
+  <circle cx="135" cy="130" r="2.5" style="fill:#00ff88;opacity:0.7" filter="url(#glowDot)"/>
+
+  <!-- Blinking quantum dots - OFF (dim) -->
+  <circle cx="75" cy="130" r="2.5" style="fill:#00ff88;opacity:0.15"/>
+  <circle cx="95" cy="98" r="2" style="fill:#00ff88;opacity:0.1"/>
+  <circle cx="130" cy="155" r="2" style="fill:#00ff88;opacity:0.12"/>
+  <circle cx="50" cy="135" r="2" style="fill:#00ff88;opacity:0.08"/>
+  <circle cx="110" cy="110" r="2.5" style="fill:#00ff88;opacity:0.1"/>
+
+  <!-- Frame labels -->
+  <text x="93" y="180" style="font-family:Arial,sans-serif;font-size:8px;fill:#7a9ab5;text-anchor:middle">t=1 ... t=T</text>
+
+  <!-- Blinking diagram -->
+  <text x="100" y="200" style="font-family:Arial,sans-serif;font-size:8px;fill:#e8a838;text-anchor:middle">Stochastic ON/OFF blinking</text>
+  <!-- ON/OFF timeline -->
+  <line x1="35" y1="215" x2="170" y2="215" style="stroke:#3a5a7a;stroke-width:0.5"/>
+  <polyline points="35,225 45,225 45,208 60,208 60,225 70,225 70,208 80,208 80,225 100,225 100,208 108,208 108,225 125,225 125,208 140,208 140,225 155,225 155,208 165,208 165,225 170,225" style="fill:none;stroke:#00ff88;stroke-width:1.2"/>
+  <text x="35" y="238" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a8a9a">ON</text>
+  <text x="35" y="248" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a8a9a">OFF</text>
+  <line x1="33" y1="208" x2="33" y2="225" style="stroke:#3a5a7a;stroke-width:0.5"/>
+  <text x="100" y="258" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a7a8a;text-anchor:middle">time &#x2192;</text>
+
+  <!-- Arrow: Left to Center -->
+  <line x1="190" y1="150" x2="220" y2="150" style="stroke:#4ecdc4;stroke-width:1.5" marker-end="url(#arrSt)"/>
+
+  <!-- === CENTER TOP: Cumulant Computation === -->
+  <rect x="225" y="45" width="220" height="120" rx="5" style="fill:#0a1628;stroke:#e8a838;stroke-width:1"/>
+  <text x="335" y="62" style="font-family:Arial,sans-serif;font-size:10px;fill:#e8a838;text-anchor:middle;font-weight:bold">Cumulant Computation</text>
+
+  <!-- Orders -->
+  <text x="335" y="80" style="font-family:Arial,sans-serif;font-size:9px;fill:#b0c4d8;text-anchor:middle">Orders n = 2, 3, 4, 5, 6</text>
+
+  <!-- PSF narrowing concept -->
+  <text x="335" y="98" style="font-family:Arial,sans-serif;font-size:9px;fill:#4ecdc4;text-anchor:middle">PSF&#x207F; &#x2192; resolution &#x221D; 1/&#x221A;n</text>
+
+  <!-- PSF narrowing illustration: wide gaussian -->
+  <text x="265" y="118" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">Wide PSF</text>
+  <path d="M 240 155 Q 245 155 250 152 Q 255 145 260 130 Q 265 120 265 118 Q 265 120 265 130 Q 270 145 275 152 Q 280 155 290 155" style="fill:none;stroke:#5588aa;stroke-width:1.5"/>
+
+  <!-- Arrow between gaussians -->
+  <text x="335" y="140" style="font-family:Arial,sans-serif;font-size:14px;fill:#e8a838;text-anchor:middle">&#x2192;</text>
+
+  <!-- PSF narrowing illustration: narrow gaussian -->
+  <text x="400" y="118" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">Narrow PSF</text>
+  <path d="M 375 155 Q 382 155 388 154 Q 393 152 397 140 Q 400 125 400 118 Q 400 125 403 140 Q 407 152 412 154 Q 418 155 425 155" style="fill:none;stroke:#4ecdc4;stroke-width:1.5"/>
+
+  <!-- === CENTER BOTTOM: Post-processing === -->
+  <rect x="225" y="175" width="220" height="90" rx="5" style="fill:#0a1628;stroke:#1a7a7a;stroke-width:1"/>
+  <text x="335" y="192" style="font-family:Arial,sans-serif;font-size:10px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">Post-processing</text>
+
+  <!-- Branch 1: Fourier Interpolation -->
+  <rect x="235" y="200" width="95" height="55" rx="4" style="fill:#112a40;stroke:#3a7a9a;stroke-width:0.8"/>
+  <text x="282" y="216" style="font-family:Arial,sans-serif;font-size:8px;fill:#e8a838;text-anchor:middle;font-weight:bold">Fourier</text>
+  <text x="282" y="228" style="font-family:Arial,sans-serif;font-size:8px;fill:#e8a838;text-anchor:middle;font-weight:bold">Interpolation</text>
+  <text x="282" y="242" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">Sub-pixel</text>
+  <text x="282" y="251" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">upsampling</text>
+
+  <!-- Branch 2: Deconvolution -->
+  <rect x="340" y="200" width="95" height="55" rx="4" style="fill:#112a40;stroke:#3a7a9a;stroke-width:0.8"/>
+  <text x="387" y="216" style="font-family:Arial,sans-serif;font-size:8px;fill:#e8a838;text-anchor:middle;font-weight:bold">Deconvolution</text>
+  <text x="387" y="232" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">Wiener /</text>
+  <text x="387" y="242" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">Richardson-Lucy</text>
+
+  <!-- Arrow: Center to Right -->
+  <line x1="450" y1="150" x2="480" y2="150" style="stroke:#4ecdc4;stroke-width:1.5" marker-end="url(#arrSt)"/>
+
+  <!-- === RIGHT: Super-resolved Image === -->
+  <rect x="485" y="45" width="170" height="220" rx="5" style="fill:#0a1628;stroke:#1a5a6a;stroke-width:1"/>
+  <text x="570" y="62" style="font-family:Arial,sans-serif;font-size:10px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">Super-resolved Image</text>
+  <text x="570" y="74" style="font-family:Arial,sans-serif;font-size:9px;fill:#7a9ab5;text-anchor:middle">(sharper, higher resolution)</text>
+
+  <!-- Super-resolved dots - sharp, bright, well-separated -->
+  <circle cx="520" cy="105" r="2" style="fill:#00ffaa;opacity:0.95" filter="url(#glowDot)"/>
+  <circle cx="545" cy="115" r="1.8" style="fill:#00ffaa;opacity:0.95" filter="url(#glowDot)"/>
+  <circle cx="580" cy="100" r="2" style="fill:#00ffaa;opacity:0.95" filter="url(#glowDot)"/>
+  <circle cx="565" cy="140" r="1.8" style="fill:#00ffaa;opacity:0.95" filter="url(#glowDot)"/>
+  <circle cx="530" cy="150" r="2" style="fill:#00ffaa;opacity:0.95" filter="url(#glowDot)"/>
+  <circle cx="595" cy="130" r="1.8" style="fill:#00ffaa;opacity:0.95" filter="url(#glowDot)"/>
+  <circle cx="535" cy="130" r="1.8" style="fill:#00ffaa;opacity:0.95" filter="url(#glowDot)"/>
+  <circle cx="555" cy="98" r="1.5" style="fill:#00ffaa;opacity:0.95" filter="url(#glowDot)"/>
+  <circle cx="590" cy="155" r="1.5" style="fill:#00ffaa;opacity:0.95" filter="url(#glowDot)"/>
+  <circle cx="510" cy="135" r="1.5" style="fill:#00ffaa;opacity:0.95" filter="url(#glowDot)"/>
+  <circle cx="570" cy="110" r="1.8" style="fill:#00ffaa;opacity:0.95" filter="url(#glowDot)"/>
+
+  <!-- Resolution comparison label -->
+  <text x="570" y="180" style="font-family:Arial,sans-serif;font-size:8px;fill:#e8a838;text-anchor:middle">vs. diffraction-limited:</text>
+
+  <!-- Mini comparison: blurry vs sharp -->
+  <rect x="505" y="190" width="55" height="55" rx="3" style="fill:#081828;stroke:#2a4a5a;stroke-width:0.5"/>
+  <text x="532" y="202" style="font-family:Arial,sans-serif;font-size:6px;fill:#5a7a8a;text-anchor:middle">Standard</text>
+  <circle cx="520" cy="220" r="6" style="fill:#00ff88;opacity:0.25"/>
+  <circle cx="540" cy="225" r="5" style="fill:#00ff88;opacity:0.2"/>
+  <circle cx="528" cy="232" r="5.5" style="fill:#00ff88;opacity:0.22"/>
+
+  <rect x="570" y="190" width="55" height="55" rx="3" style="fill:#081828;stroke:#2a4a5a;stroke-width:0.5"/>
+  <text x="597" y="202" style="font-family:Arial,sans-serif;font-size:6px;fill:#5a7a8a;text-anchor:middle">SOFI</text>
+  <circle cx="585" cy="218" r="2" style="fill:#00ffaa;opacity:0.95" filter="url(#glowDot)"/>
+  <circle cx="605" cy="224" r="1.8" style="fill:#00ffaa;opacity:0.95" filter="url(#glowDot)"/>
+  <circle cx="593" cy="233" r="1.8" style="fill:#00ffaa;opacity:0.95" filter="url(#glowDot)"/>
+
+  <!-- === RIGHT SIDE: Pipeline Summary === -->
+  <rect x="670" y="45" width="120" height="220" rx="5" style="fill:#0a1628;stroke:#1a5a6a;stroke-width:1"/>
+  <text x="730" y="62" style="font-family:Arial,sans-serif;font-size:9px;fill:#e8a838;text-anchor:middle;font-weight:bold">Pipeline</text>
+
+  <!-- Pipeline steps -->
+  <rect x="680" y="72" width="100" height="22" rx="3" style="fill:#112a40;stroke:#4ecdc4;stroke-width:0.8"/>
+  <text x="730" y="86" style="font-family:Arial,sans-serif;font-size:7px;fill:#4ecdc4;text-anchor:middle">1. Acquire T frames</text>
+
+  <line x1="730" y1="94" x2="730" y2="102" style="stroke:#3a6a7a;stroke-width:0.8"/>
+
+  <rect x="680" y="102" width="100" height="22" rx="3" style="fill:#112a40;stroke:#4ecdc4;stroke-width:0.8"/>
+  <text x="730" y="116" style="font-family:Arial,sans-serif;font-size:7px;fill:#4ecdc4;text-anchor:middle">2. Compute cumulants</text>
+
+  <line x1="730" y1="124" x2="730" y2="132" style="stroke:#3a6a7a;stroke-width:0.8"/>
+
+  <rect x="680" y="132" width="100" height="22" rx="3" style="fill:#112a40;stroke:#4ecdc4;stroke-width:0.8"/>
+  <text x="730" y="146" style="font-family:Arial,sans-serif;font-size:7px;fill:#4ecdc4;text-anchor:middle">3. Linearize (n-th root)</text>
+
+  <line x1="730" y1="154" x2="730" y2="162" style="stroke:#3a6a7a;stroke-width:0.8"/>
+
+  <rect x="680" y="162" width="100" height="22" rx="3" style="fill:#112a40;stroke:#e8a838;stroke-width:0.8"/>
+  <text x="730" y="176" style="font-family:Arial,sans-serif;font-size:7px;fill:#e8a838;text-anchor:middle">4. Fourier interp.</text>
+
+  <line x1="730" y1="184" x2="730" y2="192" style="stroke:#3a6a7a;stroke-width:0.8"/>
+
+  <rect x="680" y="192" width="100" height="22" rx="3" style="fill:#112a40;stroke:#e8a838;stroke-width:0.8"/>
+  <text x="730" y="206" style="font-family:Arial,sans-serif;font-size:7px;fill:#e8a838;text-anchor:middle">5. Deconvolve</text>
+
+  <line x1="730" y1="214" x2="730" y2="222" style="stroke:#3a6a7a;stroke-width:0.8"/>
+
+  <rect x="680" y="222" width="100" height="30" rx="3" style="fill:#112a40;stroke:#00ffaa;stroke-width:0.8"/>
+  <text x="730" y="237" style="font-family:Arial,sans-serif;font-size:7px;fill:#00ffaa;text-anchor:middle;font-weight:bold">6. Super-resolved</text>
+  <text x="730" y="248" style="font-family:Arial,sans-serif;font-size:7px;fill:#00ffaa;text-anchor:middle;font-weight:bold">image output</text>
+
+  <!-- === BOTTOM: Resolution Improvement Table === -->
+  <rect x="15" y="275" width="640" height="115" rx="5" style="fill:#0a1628;stroke:#e8a838;stroke-width:1"/>
+  <text x="335" y="293" style="font-family:Arial,sans-serif;font-size:10px;fill:#e8a838;text-anchor:middle;font-weight:bold">Resolution Improvement by Cumulant Order</text>
+
+  <!-- Table headers -->
+  <text x="80" y="313" style="font-family:Arial,sans-serif;font-size:9px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">Order</text>
+  <text x="195" y="313" style="font-family:Arial,sans-serif;font-size:9px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">PSF Factor</text>
+  <text x="335" y="313" style="font-family:Arial,sans-serif;font-size:9px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">Resolution Gain</text>
+  <text x="510" y="313" style="font-family:Arial,sans-serif;font-size:9px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">Visual</text>
+  <line x1="30" y1="318" x2="640" y2="318" style="stroke:#2a4a5a;stroke-width:0.5"/>
+
+  <!-- Order 2 -->
+  <text x="80" y="335" style="font-family:Arial,sans-serif;font-size:9px;fill:#b0c4d8;text-anchor:middle">n = 2</text>
+  <text x="195" y="335" style="font-family:Arial,sans-serif;font-size:9px;fill:#b0c4d8;text-anchor:middle">PSF&#xB2;</text>
+  <text x="335" y="335" style="font-family:Arial,sans-serif;font-size:9px;fill:#00ffaa;text-anchor:middle;font-weight:bold">1.41&#xD7; (&#x221A;2)</text>
+  <rect x="470" y="326" width="80" height="12" rx="2" style="fill:#112a40;stroke:#2a4a5a;stroke-width:0.5"/>
+  <rect x="471" y="327" width="45" height="10" rx="1" style="fill:#4ecdc4;opacity:0.6"/>
+
+  <!-- Order 4 -->
+  <text x="80" y="355" style="font-family:Arial,sans-serif;font-size:9px;fill:#b0c4d8;text-anchor:middle">n = 4</text>
+  <text x="195" y="355" style="font-family:Arial,sans-serif;font-size:9px;fill:#b0c4d8;text-anchor:middle">PSF&#x2074;</text>
+  <text x="335" y="355" style="font-family:Arial,sans-serif;font-size:9px;fill:#00ffaa;text-anchor:middle;font-weight:bold">2.00&#xD7; (&#x221A;4)</text>
+  <rect x="470" y="346" width="80" height="12" rx="2" style="fill:#112a40;stroke:#2a4a5a;stroke-width:0.5"/>
+  <rect x="471" y="347" width="63" height="10" rx="1" style="fill:#4ecdc4;opacity:0.7"/>
+
+  <!-- Order 6 -->
+  <text x="80" y="375" style="font-family:Arial,sans-serif;font-size:9px;fill:#b0c4d8;text-anchor:middle">n = 6</text>
+  <text x="195" y="375" style="font-family:Arial,sans-serif;font-size:9px;fill:#b0c4d8;text-anchor:middle">PSF&#x2076;</text>
+  <text x="335" y="375" style="font-family:Arial,sans-serif;font-size:9px;fill:#00ffaa;text-anchor:middle;font-weight:bold">2.45&#xD7; (&#x221A;6)</text>
+  <rect x="470" y="366" width="80" height="12" rx="2" style="fill:#112a40;stroke:#2a4a5a;stroke-width:0.5"/>
+  <rect x="471" y="367" width="78" height="10" rx="1" style="fill:#4ecdc4;opacity:0.8"/>
+
+</svg>
