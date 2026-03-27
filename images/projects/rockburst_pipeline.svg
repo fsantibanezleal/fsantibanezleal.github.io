@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#0d1b2a"/>
+      <stop offset="100%" style="stop-color:#1b2d45"/>
+    </linearGradient>
+    <linearGradient id="srcGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#1a3a5c"/>
+      <stop offset="100%" style="stop-color:#0f2744"/>
+    </linearGradient>
+    <linearGradient id="procGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#0a4d68"/>
+      <stop offset="100%" style="stop-color:#063547"/>
+    </linearGradient>
+    <linearGradient id="outGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#5c3d1a"/>
+      <stop offset="100%" style="stop-color:#3d2a0f"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- Title -->
+  <text x="400" y="32" style="font-family:Arial,sans-serif;font-size:16px;font-weight:bold;fill:#e0e0e0;text-anchor:middle;">Geotechnical Risk Prediction Pipeline &mdash; Weekly Operational Cycle</text>
+  <!-- Weekly cycle arrow (large loop) -->
+  <path d="M 710 60 A 280 150 0 1 1 710 340" style="fill:none;stroke:#2ec4b6;stroke-width:1.5;stroke-dasharray:6,4;opacity:0.5;"/>
+  <polygon points="710,340 705,328 715,328" style="fill:#2ec4b6;opacity:0.6;"/>
+  <text x="760" y="200" style="font-family:Arial,sans-serif;font-size:10px;fill:#2ec4b6;text-anchor:middle;opacity:0.7;" transform="rotate(90,760,200)">Weekly Cycle</text>
+
+  <!-- === DATA SOURCES (Column 1) === -->
+  <text x="100" y="62" style="font-family:Arial,sans-serif;font-size:12px;font-weight:bold;fill:#5dade2;text-anchor:middle;">DATA SOURCES</text>
+  <!-- Source 1: Seismicity -->
+  <rect x="20" y="75" width="160" height="38" rx="5" style="fill:url(#srcGrad);stroke:#5dade2;stroke-width:1.2;"/>
+  <text x="100" y="91" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#8ecae6;text-anchor:middle;">Seismicity</text>
+  <text x="100" y="105" style="font-family:Arial,sans-serif;font-size:9px;fill:#a0b8cc;text-anchor:middle;">Unity Catalog</text>
+  <!-- Source 2: Drilling & Blasting -->
+  <rect x="20" y="122" width="160" height="38" rx="5" style="fill:url(#srcGrad);stroke:#5dade2;stroke-width:1.2;"/>
+  <text x="100" y="138" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#8ecae6;text-anchor:middle;">Drilling &amp; Blasting</text>
+  <text x="100" y="152" style="font-family:Arial,sans-serif;font-size:9px;fill:#a0b8cc;text-anchor:middle;">PyT System</text>
+  <!-- Source 3: Mining Geometry -->
+  <rect x="20" y="169" width="160" height="38" rx="5" style="fill:url(#srcGrad);stroke:#5dade2;stroke-width:1.2;"/>
+  <text x="100" y="185" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#8ecae6;text-anchor:middle;">Mining Geometry</text>
+  <text x="100" y="199" style="font-family:Arial,sans-serif;font-size:9px;fill:#a0b8cc;text-anchor:middle;">Polygons / CAD</text>
+  <!-- Source 4: Geological Structures -->
+  <rect x="20" y="216" width="160" height="38" rx="5" style="fill:url(#srcGrad);stroke:#5dade2;stroke-width:1.2;"/>
+  <text x="100" y="232" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#8ecae6;text-anchor:middle;">Geological Structures</text>
+  <text x="100" y="246" style="font-family:Arial,sans-serif;font-size:9px;fill:#a0b8cc;text-anchor:middle;">Faults / Contacts</text>
+
+  <!-- Arrows: Sources to Processing -->
+  <line x1="180" y1="94" x2="240" y2="140" style="stroke:#5dade2;stroke-width:1.2;opacity:0.6;"/>
+  <line x1="180" y1="141" x2="240" y2="155" style="stroke:#5dade2;stroke-width:1.2;opacity:0.6;"/>
+  <line x1="180" y1="188" x2="240" y2="170" style="stroke:#5dade2;stroke-width:1.2;opacity:0.6;"/>
+  <line x1="180" y1="235" x2="240" y2="185" style="stroke:#5dade2;stroke-width:1.2;opacity:0.6;"/>
+
+  <!-- === PROCESSING (Column 2) === -->
+  <text x="330" y="62" style="font-family:Arial,sans-serif;font-size:12px;font-weight:bold;fill:#2ec4b6;text-anchor:middle;">PROCESSING</text>
+  <!-- Stage 1: Feature Engineering -->
+  <rect x="240" y="78" width="180" height="44" rx="6" style="fill:url(#procGrad);stroke:#2ec4b6;stroke-width:1.4;"/>
+  <text x="330" y="97" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#80edd8;text-anchor:middle;">Feature Engineering</text>
+  <text x="330" y="114" style="font-family:Arial,sans-serif;font-size:9px;fill:#a0ccbf;text-anchor:middle;">Aggregation per cell-week</text>
+  <!-- Arrow down -->
+  <line x1="330" y1="122" x2="330" y2="140" style="stroke:#2ec4b6;stroke-width:1.5;"/>
+  <polygon points="330,145 325,138 335,138" style="fill:#2ec4b6;"/>
+  <!-- Stage 2: Model Training -->
+  <rect x="240" y="148" width="180" height="44" rx="6" style="fill:url(#procGrad);stroke:#2ec4b6;stroke-width:1.4;"/>
+  <text x="330" y="167" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#80edd8;text-anchor:middle;">Model Training</text>
+  <text x="330" y="184" style="font-family:Arial,sans-serif;font-size:9px;fill:#a0ccbf;text-anchor:middle;">XGBoost (binary classification)</text>
+  <!-- Arrow down -->
+  <line x1="330" y1="192" x2="330" y2="210" style="stroke:#2ec4b6;stroke-width:1.5;"/>
+  <polygon points="330,215 325,208 335,208" style="fill:#2ec4b6;"/>
+  <!-- Stage 3: Weekly Inference -->
+  <rect x="240" y="218" width="180" height="44" rx="6" style="fill:url(#procGrad);stroke:#2ec4b6;stroke-width:1.4;"/>
+  <text x="330" y="237" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#80edd8;text-anchor:middle;">Weekly Inference</text>
+  <text x="330" y="254" style="font-family:Arial,sans-serif;font-size:9px;fill:#a0ccbf;text-anchor:middle;">Score all active cells</text>
+
+  <!-- Arrows: Processing to Outputs -->
+  <line x1="420" y1="100" x2="485" y2="100" style="stroke:#e0a050;stroke-width:1.2;opacity:0.6;"/>
+  <line x1="420" y1="170" x2="485" y2="155" style="stroke:#e0a050;stroke-width:1.2;opacity:0.6;"/>
+  <line x1="420" y1="240" x2="485" y2="200" style="stroke:#e0a050;stroke-width:1.2;opacity:0.6;"/>
+  <line x1="420" y1="240" x2="485" y2="250" style="stroke:#e0a050;stroke-width:1.2;opacity:0.6;"/>
+
+  <!-- === OUTPUTS (Column 3) === -->
+  <text x="580" y="62" style="font-family:Arial,sans-serif;font-size:12px;font-weight:bold;fill:#e8a838;text-anchor:middle;">OUTPUTS</text>
+  <!-- Output 1: Risk Map -->
+  <rect x="488" y="78" width="175" height="38" rx="5" style="fill:url(#outGrad);stroke:#e8a838;stroke-width:1.2;"/>
+  <text x="576" y="94" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#f0c878;text-anchor:middle;">Risk Map</text>
+  <text x="576" y="108" style="font-family:Arial,sans-serif;font-size:9px;fill:#c8a868;text-anchor:middle;">Traffic-light per cell</text>
+  <!-- Output 2: JSON Report -->
+  <rect x="488" y="125" width="175" height="38" rx="5" style="fill:url(#outGrad);stroke:#e8a838;stroke-width:1.2;"/>
+  <text x="576" y="141" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#f0c878;text-anchor:middle;">JSON Report</text>
+  <text x="576" y="155" style="font-family:Arial,sans-serif;font-size:9px;fill:#c8a868;text-anchor:middle;">Structured weekly output</text>
+  <!-- Output 3: Long-format Table -->
+  <rect x="488" y="172" width="175" height="38" rx="5" style="fill:url(#outGrad);stroke:#e8a838;stroke-width:1.2;"/>
+  <text x="576" y="188" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#f0c878;text-anchor:middle;">Long-format Table</text>
+  <text x="576" y="202" style="font-family:Arial,sans-serif;font-size:9px;fill:#c8a868;text-anchor:middle;">Cell x Week x Score</text>
+  <!-- Output 4: Backtesting Results -->
+  <rect x="488" y="219" width="175" height="38" rx="5" style="fill:url(#outGrad);stroke:#e8a838;stroke-width:1.2;"/>
+  <text x="576" y="235" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#f0c878;text-anchor:middle;">Backtesting Results</text>
+  <text x="576" y="249" style="font-family:Arial,sans-serif;font-size:9px;fill:#c8a868;text-anchor:middle;">Historical validation</text>
+
+  <!-- Operational cycle feedback arrow at bottom -->
+  <path d="M 576 270 L 576 320 Q 576 340 556 340 L 130 340 Q 110 340 110 320 L 110 265" style="fill:none;stroke:#2ec4b6;stroke-width:1.8;stroke-dasharray:8,4;"/>
+  <polygon points="110,265 105,275 115,275" style="fill:#2ec4b6;"/>
+  <rect x="270" y="328" width="180" height="22" rx="4" style="fill:#0d1b2a;stroke:#2ec4b6;stroke-width:1;opacity:0.8;"/>
+  <text x="360" y="343" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#2ec4b6;text-anchor:middle;">Weekly Operational Cycle</text>
+
+  <!-- Legend -->
+  <rect x="20" y="370" width="10" height="10" rx="2" style="fill:#5dade2;opacity:0.7;"/>
+  <text x="35" y="379" style="font-family:Arial,sans-serif;font-size:9px;fill:#8899aa;">Data Ingestion</text>
+  <rect x="130" y="370" width="10" height="10" rx="2" style="fill:#2ec4b6;opacity:0.7;"/>
+  <text x="145" y="379" style="font-family:Arial,sans-serif;font-size:9px;fill:#8899aa;">ML Processing</text>
+  <rect x="240" y="370" width="10" height="10" rx="2" style="fill:#e8a838;opacity:0.7;"/>
+  <text x="255" y="379" style="font-family:Arial,sans-serif;font-size:9px;fill:#8899aa;">Deliverables</text>
+</svg>

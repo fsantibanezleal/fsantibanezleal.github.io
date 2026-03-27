@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b2a"/>
+      <stop offset="100%" style="stop-color:#1b2d45"/>
+    </linearGradient>
+    <linearGradient id="blue3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e90ff"/>
+      <stop offset="100%" style="stop-color:#0a6abf"/>
+    </linearGradient>
+    <linearGradient id="teal3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#20b2aa"/>
+      <stop offset="100%" style="stop-color:#148f88"/>
+    </linearGradient>
+    <linearGradient id="orange3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8873a"/>
+      <stop offset="100%" style="stop-color:#c4682a"/>
+    </linearGradient>
+    <linearGradient id="purple3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#9b59b6"/>
+      <stop offset="100%" style="stop-color:#7d3c98"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg3)" rx="8"/>
+
+  <!-- Title -->
+  <text x="330" y="26" style="font-family:Arial,sans-serif;font-size:14px;font-weight:bold;fill:#e0e0e0;text-anchor:middle;">DevOps and Deployment Architecture</text>
+
+  <!-- ============================================ -->
+  <!-- TOP LAYER: Applications -->
+  <!-- ============================================ -->
+  <rect x="30" y="38" width="600" height="80" rx="6" fill="none" stroke="#1e90ff" stroke-width="1.2" opacity="0.5"/>
+  <text x="50" y="54" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#1e90ff;text-transform:uppercase;letter-spacing:1px;">Applications</text>
+
+  <rect x="45" y="62" width="170" height="44" rx="5" fill="url(#blue3)" opacity="0.85"/>
+  <text x="130" y="80" style="font-family:Arial,sans-serif;font-size:8.5px;font-weight:bold;fill:#fff;text-anchor:middle;">Web Platform</text>
+  <text x="130" y="96" style="font-family:Arial,sans-serif;font-size:7.5px;fill:#c8dff5;text-anchor:middle;">Next.js + FastAPI</text>
+
+  <rect x="230" y="62" width="170" height="44" rx="5" fill="url(#blue3)" opacity="0.85"/>
+  <text x="315" y="80" style="font-family:Arial,sans-serif;font-size:8.5px;font-weight:bold;fill:#fff;text-anchor:middle;">Desktop Apps</text>
+  <text x="315" y="96" style="font-family:Arial,sans-serif;font-size:7.5px;fill:#c8dff5;text-anchor:middle;">Dash / Streamlit + PyInstaller</text>
+
+  <rect x="415" y="62" width="200" height="44" rx="5" fill="url(#blue3)" opacity="0.85"/>
+  <text x="515" y="80" style="font-family:Arial,sans-serif;font-size:8.5px;font-weight:bold;fill:#fff;text-anchor:middle;">ML Services</text>
+  <text x="515" y="96" style="font-family:Arial,sans-serif;font-size:7.5px;fill:#c8dff5;text-anchor:middle;">Training + Inference Pipelines</text>
+
+  <!-- Arrows down from Applications to Infrastructure -->
+  <line x1="130" y1="106" x2="130" y2="130" style="stroke:#4aa8d8;stroke-width:1.2;"/>
+  <polygon points="126,128 130,135 134,128" fill="#4aa8d8"/>
+  <line x1="315" y1="106" x2="315" y2="130" style="stroke:#4aa8d8;stroke-width:1.2;"/>
+  <polygon points="311,128 315,135 319,128" fill="#4aa8d8"/>
+  <line x1="515" y1="106" x2="515" y2="130" style="stroke:#4aa8d8;stroke-width:1.2;"/>
+  <polygon points="511,128 515,135 519,128" fill="#4aa8d8"/>
+
+  <!-- ============================================ -->
+  <!-- MIDDLE LAYER: Infrastructure -->
+  <!-- ============================================ -->
+  <rect x="30" y="136" width="600" height="118" rx="6" fill="none" stroke="#20b2aa" stroke-width="1.2" opacity="0.5"/>
+  <text x="50" y="152" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#20b2aa;text-transform:uppercase;letter-spacing:1px;">Infrastructure</text>
+
+  <!-- Docker Swarm container -->
+  <rect x="45" y="160" width="255" height="82" rx="5" fill="#0f2235" stroke="#20b2aa" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="60" y="176" style="font-family:Arial,sans-serif;font-size:8px;font-weight:bold;fill:#20b2aa;">Docker Swarm Orchestration</text>
+
+  <!-- Services inside Docker Swarm -->
+  <rect x="55" y="184" width="72" height="24" rx="3" fill="url(#teal3)" opacity="0.8"/>
+  <text x="91" y="199" style="font-family:Arial,sans-serif;font-size:7px;fill:#fff;text-anchor:middle;">App Services</text>
+
+  <rect x="135" y="184" width="72" height="24" rx="3" fill="url(#teal3)" opacity="0.8"/>
+  <text x="171" y="199" style="font-family:Arial,sans-serif;font-size:7px;fill:#fff;text-anchor:middle;">Workers</text>
+
+  <rect x="215" y="184" width="72" height="24" rx="3" fill="url(#teal3)" opacity="0.8"/>
+  <text x="251" y="199" style="font-family:Arial,sans-serif;font-size:7px;fill:#fff;text-anchor:middle;">ML Runners</text>
+
+  <!-- Network label -->
+  <rect x="55" y="214" width="232" height="18" rx="3" fill="none" stroke="#3cc9c1" stroke-width="0.8"/>
+  <text x="171" y="226" style="font-family:Arial,sans-serif;font-size:6.5px;fill:#6dd8d0;text-anchor:middle;">Overlay Network (internal)</text>
+
+  <!-- Traefik -->
+  <rect x="315" y="160" width="120" height="36" rx="5" fill="url(#teal3)" opacity="0.85"/>
+  <text x="375" y="178" style="font-family:Arial,sans-serif;font-size:8px;font-weight:bold;fill:#fff;text-anchor:middle;">Traefik</text>
+  <text x="375" y="190" style="font-family:Arial,sans-serif;font-size:7px;fill:#c8f0ed;text-anchor:middle;">Reverse Proxy + TLS</text>
+
+  <!-- Arrow from Traefik to Docker Swarm -->
+  <line x1="315" y1="178" x2="300" y2="178" style="stroke:#3cc9c1;stroke-width:1;"/>
+  <polygon points="302,174 295,178 302,182" fill="#3cc9c1"/>
+
+  <!-- PostgreSQL -->
+  <rect x="315" y="204" width="120" height="36" rx="5" fill="url(#teal3)" opacity="0.85"/>
+  <text x="375" y="222" style="font-family:Arial,sans-serif;font-size:8px;font-weight:bold;fill:#fff;text-anchor:middle;">PostgreSQL</text>
+  <text x="375" y="234" style="font-family:Arial,sans-serif;font-size:7px;fill:#c8f0ed;text-anchor:middle;">Persistent Storage</text>
+
+  <!-- Redis -->
+  <rect x="450" y="160" width="100" height="36" rx="5" fill="url(#teal3)" opacity="0.85"/>
+  <text x="500" y="178" style="font-family:Arial,sans-serif;font-size:8px;font-weight:bold;fill:#fff;text-anchor:middle;">Redis</text>
+  <text x="500" y="190" style="font-family:Arial,sans-serif;font-size:7px;fill:#c8f0ed;text-anchor:middle;">Cache + Queue</text>
+
+  <!-- Background Workers -->
+  <rect x="450" y="204" width="100" height="36" rx="5" fill="url(#teal3)" opacity="0.85"/>
+  <text x="500" y="222" style="font-family:Arial,sans-serif;font-size:8px;font-weight:bold;fill:#fff;text-anchor:middle;">Celery Workers</text>
+  <text x="500" y="234" style="font-family:Arial,sans-serif;font-size:7px;fill:#c8f0ed;text-anchor:middle;">Background Jobs</text>
+
+  <!-- Connections between infra components -->
+  <line x1="435" y1="178" x2="450" y2="178" style="stroke:#3cc9c1;stroke-width:0.8;"/>
+  <line x1="435" y1="222" x2="450" y2="222" style="stroke:#3cc9c1;stroke-width:0.8;"/>
+  <line x1="500" y1="196" x2="500" y2="204" style="stroke:#3cc9c1;stroke-width:0.8;"/>
+
+  <!-- Arrows down to Automation -->
+  <line x1="315" y1="254" x2="315" y2="272" style="stroke:#e8873a;stroke-width:1.2;"/>
+  <polygon points="311,270 315,277 319,270" fill="#e8873a"/>
+
+  <!-- ============================================ -->
+  <!-- BOTTOM LAYER: Automation -->
+  <!-- ============================================ -->
+  <rect x="30" y="278" width="600" height="68" rx="6" fill="none" stroke="#e8873a" stroke-width="1.2" opacity="0.5"/>
+  <text x="50" y="294" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#e8873a;text-transform:uppercase;letter-spacing:1px;">Automation</text>
+
+  <rect x="45" y="302" width="150" height="34" rx="5" fill="url(#orange3)" opacity="0.85"/>
+  <text x="120" y="318" style="font-family:Arial,sans-serif;font-size:8px;font-weight:bold;fill:#fff;text-anchor:middle;">Ansible Playbooks</text>
+  <text x="120" y="330" style="font-family:Arial,sans-serif;font-size:7px;fill:#fad4b0;text-anchor:middle;">Server provisioning + config</text>
+
+  <rect x="210" y="302" width="140" height="34" rx="5" fill="url(#orange3)" opacity="0.85"/>
+  <text x="280" y="318" style="font-family:Arial,sans-serif;font-size:8px;font-weight:bold;fill:#fff;text-anchor:middle;">Vault Secrets</text>
+  <text x="280" y="330" style="font-family:Arial,sans-serif;font-size:7px;fill:#fad4b0;text-anchor:middle;">Encrypted credentials</text>
+
+  <rect x="365" y="302" width="150" height="34" rx="5" fill="url(#orange3)" opacity="0.85"/>
+  <text x="440" y="318" style="font-family:Arial,sans-serif;font-size:8px;font-weight:bold;fill:#fff;text-anchor:middle;">CI / CD Pipeline</text>
+  <text x="440" y="330" style="font-family:Arial,sans-serif;font-size:7px;fill:#fad4b0;text-anchor:middle;">Build, test, deploy</text>
+
+  <!-- Connecting arrows between automation boxes -->
+  <line x1="195" y1="319" x2="210" y2="319" style="stroke:#f0b88a;stroke-width:0.8;"/>
+  <line x1="350" y1="319" x2="365" y2="319" style="stroke:#f0b88a;stroke-width:0.8;"/>
+
+  <!-- ============================================ -->
+  <!-- RIGHT SIDE: Distribution -->
+  <!-- ============================================ -->
+  <rect x="648" y="38" width="140" height="350" rx="6" fill="none" stroke="#9b59b6" stroke-width="1.2" opacity="0.5"/>
+  <text x="718" y="56" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#9b59b6;text-anchor:middle;text-transform:uppercase;letter-spacing:1px;">Distribution</text>
+
+  <!-- Desktop Distribution path -->
+  <text x="718" y="78" style="font-family:Arial,sans-serif;font-size:7.5px;font-weight:bold;fill:#bb8fd9;text-anchor:middle;">Desktop Path</text>
+
+  <rect x="660" y="86" width="116" height="30" rx="4" fill="url(#purple3)" opacity="0.85"/>
+  <text x="718" y="105" style="font-family:Arial,sans-serif;font-size:7.5px;fill:#fff;text-anchor:middle;">PyInstaller Packaging</text>
+
+  <line x1="718" y1="116" x2="718" y2="126" style="stroke:#9b59b6;stroke-width:1;"/>
+  <polygon points="714,124 718,131 722,124" fill="#9b59b6"/>
+
+  <rect x="660" y="132" width="116" height="30" rx="4" fill="url(#purple3)" opacity="0.85"/>
+  <text x="718" y="145" style="font-family:Arial,sans-serif;font-size:7.5px;fill:#fff;text-anchor:middle;">Windows Installer</text>
+  <text x="718" y="157" style="font-family:Arial,sans-serif;font-size:6.5px;fill:#d4b8e8;text-anchor:middle;">(Inno Setup)</text>
+
+  <line x1="718" y1="162" x2="718" y2="172" style="stroke:#9b59b6;stroke-width:1;"/>
+  <polygon points="714,170 718,177 722,170" fill="#9b59b6"/>
+
+  <rect x="665" y="178" width="106" height="24" rx="4" fill="none" stroke="#9b59b6" stroke-width="1"/>
+  <text x="718" y="194" style="font-family:Arial,sans-serif;font-size:7px;fill:#bb8fd9;text-anchor:middle;">End-User Desktop</text>
+
+  <!-- Cloud Distribution path -->
+  <text x="718" y="222" style="font-family:Arial,sans-serif;font-size:7.5px;font-weight:bold;fill:#bb8fd9;text-anchor:middle;">Cloud Path</text>
+
+  <rect x="660" y="230" width="116" height="30" rx="4" fill="url(#purple3)" opacity="0.85"/>
+  <text x="718" y="249" style="font-family:Arial,sans-serif;font-size:7.5px;fill:#fff;text-anchor:middle;">Docker Images</text>
+
+  <line x1="718" y1="260" x2="718" y2="270" style="stroke:#9b59b6;stroke-width:1;"/>
+  <polygon points="714,268 718,275 722,268" fill="#9b59b6"/>
+
+  <rect x="660" y="276" width="116" height="30" rx="4" fill="url(#purple3)" opacity="0.85"/>
+  <text x="718" y="295" style="font-family:Arial,sans-serif;font-size:7.5px;fill:#fff;text-anchor:middle;">Registry Push</text>
+
+  <line x1="718" y1="306" x2="718" y2="316" style="stroke:#9b59b6;stroke-width:1;"/>
+  <polygon points="714,314 718,321 722,314" fill="#9b59b6"/>
+
+  <rect x="665" y="322" width="106" height="24" rx="4" fill="none" stroke="#9b59b6" stroke-width="1"/>
+  <text x="718" y="338" style="font-family:Arial,sans-serif;font-size:7px;fill:#bb8fd9;text-anchor:middle;">Cloud Deployment</text>
+
+  <!-- Connecting arrows from main layers to Distribution -->
+  <!-- From Desktop Apps to Desktop Path -->
+  <line x1="400" y1="84" x2="630" y2="84" style="stroke:#4aa8d8;stroke-width:1;stroke-dasharray:4,2;"/>
+  <line x1="630" y1="84" x2="630" y2="101" style="stroke:#9b59b6;stroke-width:1;stroke-dasharray:4,2;"/>
+  <line x1="630" y1="101" x2="660" y2="101" style="stroke:#9b59b6;stroke-width:1;stroke-dasharray:4,2;"/>
+
+  <!-- From Infrastructure to Cloud Path -->
+  <line x1="550" y1="222" x2="630" y2="222" style="stroke:#3cc9c1;stroke-width:1;stroke-dasharray:4,2;"/>
+  <line x1="630" y1="222" x2="630" y2="245" style="stroke:#9b59b6;stroke-width:1;stroke-dasharray:4,2;"/>
+  <line x1="630" y1="245" x2="660" y2="245" style="stroke:#9b59b6;stroke-width:1;stroke-dasharray:4,2;"/>
+
+  <!-- From CI/CD to both paths -->
+  <line x1="515" y1="319" x2="570" y2="319" style="stroke:#e8873a;stroke-width:1;stroke-dasharray:4,2;"/>
+  <line x1="570" y1="319" x2="570" y2="155" style="stroke:#e8873a;stroke-width:1;stroke-dasharray:3,2;"/>
+  <line x1="570" y1="155" x2="630" y2="155" style="stroke:#9b59b6;stroke-width:1;stroke-dasharray:3,2;"/>
+  <line x1="570" y1="291" x2="630" y2="291" style="stroke:#9b59b6;stroke-width:1;stroke-dasharray:3,2;"/>
+  <line x1="630" y1="291" x2="660" y2="291" style="stroke:#9b59b6;stroke-width:1;stroke-dasharray:3,2;"/>
+
+  <!-- Small icon markers for visual interest -->
+  <!-- Docker whale icon (simplified) -->
+  <rect x="56" y="172" width="6" height="3" rx="1" fill="#3cc9c1" opacity="0.6"/>
+  <rect x="64" y="172" width="6" height="3" rx="1" fill="#3cc9c1" opacity="0.6"/>
+  <rect x="56" y="177" width="6" height="3" rx="1" fill="#3cc9c1" opacity="0.6"/>
+  <rect x="64" y="177" width="6" height="3" rx="1" fill="#3cc9c1" opacity="0.6"/>
+
+  <!-- Flow summary at very bottom -->
+  <text x="330" y="378" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a7a9a;text-anchor:middle;">Code Commit → CI/CD Build → Docker/PyInstaller → Deploy to Cloud or Package for Desktop</text>
+  <text x="330" y="392" style="font-family:Arial,sans-serif;font-size:6.5px;fill:#3a5575;text-anchor:middle;">Fully automated provisioning with Ansible + secrets management with Vault</text>
+</svg>
