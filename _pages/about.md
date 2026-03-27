@@ -8,9 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-About
-======
-
 Hola! I am Felipe Santibañez-Leal, an **I&F Decision Science Associate Manager at [Accenture](https://www.accenture.com/)**, currently on client assignment as **Senior Data Science Lead & Technical Project Lead** at [CODELCO](https://www.codelco.com/)'s Advanced Analytics Directorate (MinCo-Hidro) under the Technology & Digitalization Management (GTD).
 
 I am an applied scientist and technical leader with over 15 years of experience spanning academia and industry. I bridge advanced analytics, machine learning, and operational expertise to deliver measurable impact across mining, industrial, and service sectors.
