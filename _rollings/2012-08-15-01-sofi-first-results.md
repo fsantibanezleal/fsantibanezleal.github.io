@@ -13,4 +13,4 @@ After weeks of debugging MATLAB code and calibrating the microscope, we got the 
 
 This is apparently the first time anyone has done this in Chile. The collaboration with the group in Göttingen has been essential — they have years of experience with the technique and helped us avoid several pitfalls with the cumulant computation.
 
-Still a lot to do. Higher orders (3rd, 4th) should give even better resolution, but the noise gets worse. Need more frames.
+Still a lot to do. Higher orders (3rd, 4th) should give even better resolution, but the noise gets worse. Need more frames. [SOFI project on GitHub](https://github.com/fsantibanezleal/FASL_SOFI_QDOTS).

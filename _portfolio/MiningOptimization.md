@@ -19,7 +19,7 @@ Large-scale mining operations involve complex, interconnected processes where sm
 The platform follows a modular pipeline architecture built on Kedro for reproducibility and MLOps best practices:
 
 1. **Data ingestion**: Streaming and batch pipelines pulling from SCADA systems, lab analyses, and operational databases via Azure Data Factory
-2. **Feature engineering**: Domain-informed features including rolling statistics, lag variables, ore property indicators, and operational regime detection
+2. **Feature engineering**: Domain-informed features including rolling statistics (mean, variance, percentiles over configurable time windows), lag variables capturing process inertia, ore property indicators derived from assay data, and operational regime detection via hidden Markov models or change-point algorithms
 3. **Model training**: Ensemble of XGBoost, gradient-boosted trees, and neural networks trained on historical operational windows
 4. **Recommendation engine**: Scenario simulation generating actionable setpoint recommendations with confidence intervals
 5. **Operational dashboard**: Real-time monitoring of adherence to recommendations, KPI tracking, and expert feedback loops
@@ -39,4 +39,4 @@ The platform follows a modular pipeline architecture built on Kedro for reproduc
 - **Infrastructure**: Docker containers on Azure Container Registry, CI/CD via Azure Pipelines
 - **Visualization**: Power BI dashboards with Streamlit prototypes for model exploration
 
-*Note: This description reflects the general type and architecture of systems I have built. Specific client details, operational data, and proprietary methodologies are omitted.*
+*This project is part of proprietary corporate work. Source code is not publicly available.*
