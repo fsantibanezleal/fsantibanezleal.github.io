@@ -22,6 +22,7 @@ Real cells are not point particles. They have area, they deform when they push a
 ## Key features
 
 - **Deformable cell model** with configurable Gaussian filopodia
+- **Durotaxis mechanics**: cells respond to stiffness gradients in the tissue, biasing migration toward stiffer regions — a key mechanism in developmental biology
 - **Real-time 2D Canvas visualization** at 10-50 FPS
 - **Per-cell color coding** for tracking individual cells
 - **Tissue boundary dynamics**: EVL epiboly front and DEB convergence margin
