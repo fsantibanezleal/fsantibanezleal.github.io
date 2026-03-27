@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b2a"/>
+      <stop offset="100%" style="stop-color:#1b2d45"/>
+    </linearGradient>
+    <linearGradient id="box" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f"/>
+      <stop offset="100%" style="stop-color:#122844"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e07830"/>
+      <stop offset="100%" style="stop-color:#c05818"/>
+    </linearGradient>
+    <linearGradient id="rock" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a3228"/>
+      <stop offset="100%" style="stop-color:#1a1410"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg)" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="28" style="font-family:Arial,sans-serif;font-size:15px;font-weight:bold;fill:#e07830;text-anchor:middle;letter-spacing:1.5px;">GEOTECHNICAL RISK PREDICTION SYSTEM</text>
+
+  <!-- ===== TOP ROW: PIPELINE ===== -->
+
+  <!-- 1. Seismic Sensors -->
+  <rect x="18" y="46" width="120" height="80" rx="8" fill="url(#accent)"/>
+  <text x="78" y="66" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#fff;text-anchor:middle;">SEISMIC</text>
+  <text x="78" y="80" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#fff;text-anchor:middle;">SENSORS</text>
+  <!-- Waveform -->
+  <polyline points="30,105 38,100 44,112 50,96 56,108 62,98 68,110 74,94 80,108 86,98 92,110 98,96 104,106 110,100 118,105" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.8"/>
+  <text x="78" y="122" style="font-family:Arial,sans-serif;font-size:7px;fill:#fde0c8;text-anchor:middle;">Geophones &amp; Accelerometers</text>
+
+  <!-- Arrow 1 -->
+  <line x1="143" y1="86" x2="168" y2="86" stroke="#e07830" stroke-width="2.5"/>
+  <polygon points="168,82 178,86 168,90" fill="#e07830"/>
+
+  <!-- 2. Feature Extraction -->
+  <rect x="183" y="46" width="130" height="80" rx="8" fill="url(#box)" stroke="#3a7ab8" stroke-width="1.5"/>
+  <text x="248" y="66" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#7db8e0;text-anchor:middle;">FEATURE</text>
+  <text x="248" y="80" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#7db8e0;text-anchor:middle;">EXTRACTION</text>
+  <text x="248" y="97" style="font-family:Arial,sans-serif;font-size:8px;fill:#5a9ac0;text-anchor:middle;">Energy Indices</text>
+  <text x="248" y="108" style="font-family:Arial,sans-serif;font-size:8px;fill:#5a9ac0;text-anchor:middle;">Spatial Patterns</text>
+  <text x="248" y="119" style="font-family:Arial,sans-serif;font-size:8px;fill:#5a9ac0;text-anchor:middle;">Temporal Clustering</text>
+
+  <!-- Arrow 2 -->
+  <line x1="318" y1="86" x2="343" y2="86" stroke="#3a7ab8" stroke-width="2.5"/>
+  <polygon points="343,82 353,86 343,90" fill="#3a7ab8"/>
+
+  <!-- 3. ML Classification -->
+  <rect x="358" y="46" width="130" height="80" rx="8" fill="url(#accent)"/>
+  <text x="423" y="63" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#fff;text-anchor:middle;">ML CLASSIFICATION</text>
+  <!-- Risk levels -->
+  <rect x="370" y="72" width="106" height="14" rx="3" fill="#1a4a2a" stroke="#4adc8e" stroke-width="0.8"/>
+  <circle cx="380" cy="79" r="3.5" fill="#4adc8e"/>
+  <text x="426" y="82" style="font-family:Arial,sans-serif;font-size:8px;fill:#4adc8e;text-anchor:middle;">LOW</text>
+  <rect x="370" y="90" width="106" height="14" rx="3" fill="#3a3210" stroke="#e8d44a" stroke-width="0.8"/>
+  <circle cx="380" cy="97" r="3.5" fill="#e8d44a"/>
+  <text x="426" y="100" style="font-family:Arial,sans-serif;font-size:8px;fill:#e8d44a;text-anchor:middle;">MODERATE</text>
+  <rect x="370" y="108" width="106" height="14" rx="3" fill="#4a1a10" stroke="#e85050" stroke-width="0.8"/>
+  <circle cx="380" cy="115" r="3.5" fill="#e85050"/>
+  <text x="426" y="118" style="font-family:Arial,sans-serif;font-size:8px;fill:#e85050;text-anchor:middle;">HIGH</text>
+
+  <!-- Arrow 3 -->
+  <line x1="493" y1="86" x2="518" y2="86" stroke="#e07830" stroke-width="2.5"/>
+  <polygon points="518,82 528,86 518,90" fill="#e07830"/>
+
+  <!-- 4. 3D Block Model -->
+  <rect x="533" y="46" width="120" height="80" rx="8" fill="url(#box)" stroke="#3a7ab8" stroke-width="1.5"/>
+  <text x="593" y="63" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#7db8e0;text-anchor:middle;">3D BLOCK MODEL</text>
+  <!-- Isometric grid (3x3) -->
+  <polygon points="560,85 572,78 584,85 572,92" fill="#4adc8e" opacity="0.5" stroke="#4adc8e" stroke-width="0.6"/>
+  <polygon points="584,85 596,78 608,85 596,92" fill="#e8d44a" opacity="0.5" stroke="#e8d44a" stroke-width="0.6"/>
+  <polygon points="608,85 620,78 632,85 620,92" fill="#4adc8e" opacity="0.4" stroke="#4adc8e" stroke-width="0.6"/>
+  <polygon points="560,97" fill="none"/>
+  <polygon points="560,97 572,90 584,97 572,104" fill="#e8d44a" opacity="0.4" stroke="#e8d44a" stroke-width="0.6"/>
+  <polygon points="584,97 596,90 608,97 596,104" fill="#e85050" opacity="0.6" stroke="#e85050" stroke-width="0.6"/>
+  <polygon points="608,97 620,90 632,97 620,104" fill="#e8d44a" opacity="0.4" stroke="#e8d44a" stroke-width="0.6"/>
+  <polygon points="560,109 572,102 584,109 572,116" fill="#4adc8e" opacity="0.3" stroke="#4adc8e" stroke-width="0.6"/>
+  <polygon points="584,109 596,102 608,109 596,116" fill="#e07830" opacity="0.5" stroke="#e07830" stroke-width="0.6"/>
+  <polygon points="608,109 620,102 632,109 620,116" fill="#4adc8e" opacity="0.5" stroke="#4adc8e" stroke-width="0.6"/>
+
+  <!-- Arrow 4 -->
+  <line x1="658" y1="86" x2="683" y2="86" stroke="#3a7ab8" stroke-width="2.5"/>
+  <polygon points="683,82 693,86 683,90" fill="#3a7ab8"/>
+
+  <!-- 5. Safety Alerts -->
+  <rect x="698" y="46" width="82" height="80" rx="8" fill="url(#box)" stroke="#e85050" stroke-width="1.5"/>
+  <text x="739" y="66" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#e85050;text-anchor:middle;">SAFETY</text>
+  <text x="739" y="80" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#e85050;text-anchor:middle;">ALERTS</text>
+  <!-- Bell icon -->
+  <path d="M732,94 Q732,88 739,88 Q746,88 746,94 L749,102 L729,102 Z" fill="none" stroke="#e85050" stroke-width="1.5"/>
+  <line x1="739" y1="102" x2="739" y2="107" stroke="#e85050" stroke-width="1.5"/>
+  <circle cx="739" cy="109" r="2" fill="#e85050"/>
+  <!-- Notification rays -->
+  <line x1="751" y1="91" x2="758" y2="88" stroke="#e85050" stroke-width="1" opacity="0.6"/>
+  <line x1="751" y1="97" x2="760" y2="97" stroke="#e85050" stroke-width="1" opacity="0.6"/>
+  <line x1="751" y1="103" x2="758" y2="106" stroke="#e85050" stroke-width="1" opacity="0.6"/>
+
+  <!-- ===== BOTTOM: UNDERGROUND MINE CROSS-SECTION ===== -->
+  <text x="30" y="155" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#5a9ac0;letter-spacing:1px;">UNDERGROUND MINE CROSS-SECTION</text>
+
+  <!-- Surface terrain -->
+  <path d="M20,175 Q120,165 220,173 Q340,182 420,172 Q520,164 620,174 Q720,182 780,170" fill="none" stroke="#5a4a30" stroke-width="2.5"/>
+
+  <!-- Rock mass fill -->
+  <path d="M20,175 Q120,165 220,173 Q340,182 420,172 Q520,164 620,174 Q720,182 780,170 L780,395 L20,395 Z" fill="url(#rock)" opacity="0.85"/>
+
+  <!-- Rock texture lines -->
+  <line x1="60" y1="215" x2="140" y2="220" stroke="#3a3020" stroke-width="0.6" opacity="0.4"/>
+  <line x1="200" y1="230" x2="290" y2="228" stroke="#3a3020" stroke-width="0.6" opacity="0.4"/>
+  <line x1="350" y1="250" x2="430" y2="255" stroke="#3a3020" stroke-width="0.6" opacity="0.4"/>
+  <line x1="480" y1="210" x2="550" y2="213" stroke="#3a3020" stroke-width="0.6" opacity="0.4"/>
+  <line x1="620" y1="245" x2="700" y2="240" stroke="#3a3020" stroke-width="0.6" opacity="0.4"/>
+  <line x1="120" y1="300" x2="200" y2="305" stroke="#3a3020" stroke-width="0.5" opacity="0.3"/>
+  <line x1="520" y1="310" x2="600" y2="308" stroke="#3a3020" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Shaft -->
+  <rect x="660" y="172" width="24" height="82" rx="2" fill="#080808" opacity="0.7" stroke="#5a4a30" stroke-width="1"/>
+  <text x="672" y="200" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a9ac0;text-anchor:middle;" transform="rotate(90,672,200)">SHAFT</text>
+
+  <!-- Main drift (Level 1) -->
+  <rect x="80" y="250" width="600" height="26" rx="5" fill="#080808" opacity="0.75" stroke="#5a4a30" stroke-width="1"/>
+  <text x="380" y="268" style="font-family:Arial,sans-serif;font-size:9px;fill:#7db8e0;text-anchor:middle;">MAIN DRIFT — Level 1</text>
+
+  <!-- Cross-cuts (vertical tunnels) -->
+  <rect x="170" y="278" width="24" height="55" rx="4" fill="#080808" opacity="0.65" stroke="#5a4a30" stroke-width="0.8"/>
+  <rect x="340" y="278" width="24" height="60" rx="4" fill="#080808" opacity="0.65" stroke="#5a4a30" stroke-width="0.8"/>
+  <rect x="510" y="278" width="24" height="50" rx="4" fill="#080808" opacity="0.65" stroke="#5a4a30" stroke-width="0.8"/>
+
+  <!-- Lower drift (Level 2) -->
+  <rect x="140" y="338" width="420" height="22" rx="4" fill="#080808" opacity="0.6" stroke="#5a4a30" stroke-width="0.8"/>
+  <text x="350" y="353" style="font-family:Arial,sans-serif;font-size:8px;fill:#5a9ac0;text-anchor:middle;">LOWER DRIFT — Level 2</text>
+
+  <!-- Seismic sensors (orange circles with radiation rings) -->
+  <circle cx="140" cy="263" r="5" fill="#e07830"/>
+  <circle cx="140" cy="263" r="9" fill="none" stroke="#e07830" stroke-width="0.8" opacity="0.5"/>
+  <circle cx="140" cy="263" r="13" fill="none" stroke="#e07830" stroke-width="0.5" opacity="0.25"/>
+
+  <circle cx="290" cy="263" r="5" fill="#e07830"/>
+  <circle cx="290" cy="263" r="9" fill="none" stroke="#e07830" stroke-width="0.8" opacity="0.5"/>
+  <circle cx="290" cy="263" r="13" fill="none" stroke="#e07830" stroke-width="0.5" opacity="0.25"/>
+
+  <circle cx="450" cy="263" r="5" fill="#e07830"/>
+  <circle cx="450" cy="263" r="9" fill="none" stroke="#e07830" stroke-width="0.8" opacity="0.5"/>
+  <circle cx="450" cy="263" r="13" fill="none" stroke="#e07830" stroke-width="0.5" opacity="0.25"/>
+
+  <circle cx="610" cy="263" r="5" fill="#e07830"/>
+  <circle cx="610" cy="263" r="9" fill="none" stroke="#e07830" stroke-width="0.8" opacity="0.5"/>
+  <circle cx="610" cy="263" r="13" fill="none" stroke="#e07830" stroke-width="0.5" opacity="0.25"/>
+
+  <!-- Seismic events (red warning markers) -->
+  <circle cx="260" cy="305" r="7" fill="none" stroke="#e85050" stroke-width="1.5" opacity="0.8"/>
+  <text x="260" y="308" style="font-family:Arial,sans-serif;font-size:8px;font-weight:bold;fill:#e85050;text-anchor:middle;">!</text>
+  <circle cx="260" cy="305" r="11" fill="none" stroke="#e85050" stroke-width="0.7" opacity="0.35"/>
+
+  <circle cx="400" cy="320" r="7" fill="none" stroke="#e85050" stroke-width="1.5" opacity="0.8"/>
+  <text x="400" y="323" style="font-family:Arial,sans-serif;font-size:8px;font-weight:bold;fill:#e85050;text-anchor:middle;">!</text>
+  <circle cx="400" cy="320" r="11" fill="none" stroke="#e85050" stroke-width="0.7" opacity="0.35"/>
+
+  <!-- High risk zone -->
+  <ellipse cx="380" cy="316" rx="70" ry="30" fill="#e85050" fill-opacity="0.08" stroke="#e85050" stroke-width="1" stroke-dasharray="5,3" stroke-opacity="0.3"/>
+  <text x="380" y="390" style="font-family:Arial,sans-serif;font-size:8px;font-weight:bold;fill:#e85050;text-anchor:middle;letter-spacing:0.5px;">HIGH RISK ZONE</text>
+
+  <!-- Legend -->
+  <rect x="645" y="290" width="135" height="78" rx="6" fill="#122844" stroke="#3a7ab8" stroke-width="1"/>
+  <text x="712" y="308" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#7db8e0;text-anchor:middle;">LEGEND</text>
+  <circle cx="662" cy="324" r="4" fill="#e07830"/>
+  <text x="672" y="327" style="font-family:Arial,sans-serif;font-size:8px;fill:#c0c0c0;" dx="4">Seismic Sensor</text>
+  <circle cx="662" cy="342" r="4" fill="none" stroke="#e85050" stroke-width="1.2"/>
+  <text x="672" y="345" style="font-family:Arial,sans-serif;font-size:8px;fill:#c0c0c0;" dx="4">Seismic Event</text>
+  <rect x="658" y="356" width="8" height="8" rx="1" fill="#e85050" opacity="0.15" stroke="#e85050" stroke-width="0.8"/>
+  <text x="672" y="363" style="font-family:Arial,sans-serif;font-size:8px;fill:#c0c0c0;" dx="4">Risk Zone</text>
+</svg>

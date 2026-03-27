@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#162d50;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0f2440;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8772e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#c45a1a;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cvGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5a2d82;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#3a1858;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="genaiGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a6a4a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d4a30;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgGrad)" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="30" style="font-family:Arial,sans-serif;font-size:16px;font-weight:bold;fill:#e8772e;text-anchor:middle;letter-spacing:1px;">ENVIRONMENTAL MONITORING SYSTEM</text>
+
+  <!-- === INPUT SOURCES === -->
+  <text x="30" y="58" style="font-family:Arial,sans-serif;font-size:8px;font-weight:bold;fill:#5a95c0;letter-spacing:1px;">INPUT SOURCES</text>
+
+  <!-- Video Cameras -->
+  <rect x="20" y="68" width="120" height="90" rx="8" fill="url(#accentGrad)" style="filter:url(#shadow)"/>
+  <text x="80" y="88" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#fff;text-anchor:middle;">VIDEO CAMERAS</text>
+  <text x="80" y="104" style="font-family:Arial,sans-serif;font-size:9px;fill:#fde0c8;text-anchor:middle;">24 Streams</text>
+  <!-- camera grid -->
+  <rect x="35" y="112" width="14" height="10" rx="2" fill="none" stroke="#fff" stroke-width="1"/>
+  <rect x="53" y="112" width="14" height="10" rx="2" fill="none" stroke="#fff" stroke-width="1"/>
+  <rect x="71" y="112" width="14" height="10" rx="2" fill="none" stroke="#fff" stroke-width="1"/>
+  <rect x="89" y="112" width="14" height="10" rx="2" fill="none" stroke="#fff" stroke-width="1"/>
+  <rect x="107" y="112" width="14" height="10" rx="2" fill="none" stroke="#fff" stroke-width="1"/>
+  <rect x="35" y="126" width="14" height="10" rx="2" fill="none" stroke="#fde0c8" stroke-width="0.8"/>
+  <rect x="53" y="126" width="14" height="10" rx="2" fill="none" stroke="#fde0c8" stroke-width="0.8"/>
+  <rect x="71" y="126" width="14" height="10" rx="2" fill="none" stroke="#fde0c8" stroke-width="0.8"/>
+  <rect x="89" y="126" width="14" height="10" rx="2" fill="none" stroke="#fde0c8" stroke-width="0.8"/>
+  <rect x="107" y="126" width="14" height="10" rx="2" fill="none" stroke="#fde0c8" stroke-width="0.8"/>
+  <rect x="35" y="140" width="14" height="10" rx="2" fill="none" stroke="#fde0c8" stroke-width="0.6" opacity="0.6"/>
+  <rect x="53" y="140" width="14" height="10" rx="2" fill="none" stroke="#fde0c8" stroke-width="0.6" opacity="0.6"/>
+
+  <!-- Air Quality Sensors -->
+  <rect x="20" y="172" width="120" height="65" rx="8" fill="url(#boxGrad)" stroke="#2a6aa8" stroke-width="1.5" style="filter:url(#shadow)"/>
+  <text x="80" y="192" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#7db8e0;text-anchor:middle;">AIR QUALITY</text>
+  <text x="80" y="206" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#7db8e0;text-anchor:middle;">SENSORS</text>
+  <!-- sensor indicators -->
+  <circle cx="45" cy="224" r="4" fill="#4adc8e"/>
+  <text x="60" y="227" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a95c0;">PM2.5</text>
+  <circle cx="85" cy="224" r="4" fill="#e8d44a"/>
+  <text x="100" y="227" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a95c0;">PM10</text>
+
+  <!-- Arrow from cameras -->
+  <line x1="140" y1="113" x2="170" y2="140" stroke="#e8772e" stroke-width="2"/>
+  <polygon points="167,143 175,140 170,135" fill="#e8772e"/>
+
+  <!-- Arrow from sensors -->
+  <line x1="140" y1="200" x2="170" y2="175" stroke="#4a8ec2" stroke-width="2"/>
+  <polygon points="167,172 175,175 170,180" fill="#4a8ec2"/>
+
+  <!-- Computer Vision Module -->
+  <rect x="178" y="100" width="120" height="108" rx="8" fill="url(#cvGrad)" stroke="#8a5ab8" stroke-width="1.5" style="filter:url(#shadow)"/>
+  <text x="238" y="122" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#c8a0e8;text-anchor:middle;">COMPUTER</text>
+  <text x="238" y="136" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#c8a0e8;text-anchor:middle;">VISION</text>
+  <!-- neural network icon -->
+  <circle cx="210" cy="162" r="5" fill="none" stroke="#c8a0e8" stroke-width="1"/>
+  <circle cx="230" cy="155" r="5" fill="none" stroke="#c8a0e8" stroke-width="1"/>
+  <circle cx="250" cy="162" r="5" fill="none" stroke="#c8a0e8" stroke-width="1"/>
+  <circle cx="220" cy="180" r="5" fill="none" stroke="#c8a0e8" stroke-width="1"/>
+  <circle cx="240" cy="180" r="5" fill="none" stroke="#c8a0e8" stroke-width="1"/>
+  <circle cx="265" cy="175" r="5" fill="none" stroke="#c8a0e8" stroke-width="1"/>
+  <line x1="215" y1="162" x2="225" y2="175" stroke="#c8a0e8" stroke-width="0.6"/>
+  <line x1="235" y1="155" x2="225" y2="175" stroke="#c8a0e8" stroke-width="0.6"/>
+  <line x1="235" y1="155" x2="245" y2="175" stroke="#c8a0e8" stroke-width="0.6"/>
+  <line x1="250" y1="167" x2="245" y2="175" stroke="#c8a0e8" stroke-width="0.6"/>
+  <line x1="250" y1="167" x2="265" y2="170" stroke="#c8a0e8" stroke-width="0.6"/>
+  <text x="238" y="200" style="font-family:Arial,sans-serif;font-size:7px;fill:#a080c8;text-anchor:middle;">Object Detection</text>
+
+  <!-- Arrow -->
+  <line x1="298" y1="154" x2="320" y2="154" stroke="#8a5ab8" stroke-width="2"/>
+  <polygon points="320,150 328,154 320,158" fill="#8a5ab8"/>
+
+  <!-- Pollution Estimation -->
+  <rect x="332" y="108" width="115" height="92" rx="8" fill="url(#boxGrad)" stroke="#2a6aa8" stroke-width="1.5" style="filter:url(#shadow)"/>
+  <text x="389" y="128" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#7db8e0;text-anchor:middle;">POLLUTION</text>
+  <text x="389" y="142" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#7db8e0;text-anchor:middle;">ESTIMATION</text>
+  <!-- level bars -->
+  <rect x="350" y="156" width="12" height="30" rx="2" fill="none" stroke="#4adc8e" stroke-width="1"/>
+  <rect x="350" y="170" width="12" height="16" rx="0" fill="#4adc8e" opacity="0.7"/>
+  <rect x="368" y="156" width="12" height="30" rx="2" fill="none" stroke="#e8d44a" stroke-width="1"/>
+  <rect x="368" y="164" width="12" height="22" rx="0" fill="#e8d44a" opacity="0.7"/>
+  <rect x="386" y="156" width="12" height="30" rx="2" fill="none" stroke="#e8772e" stroke-width="1"/>
+  <rect x="386" y="168" width="12" height="18" rx="0" fill="#e8772e" opacity="0.7"/>
+  <rect x="404" y="156" width="12" height="30" rx="2" fill="none" stroke="#e85050" stroke-width="1"/>
+  <rect x="404" y="174" width="12" height="12" rx="0" fill="#e85050" opacity="0.7"/>
+  <rect x="422" y="156" width="12" height="30" rx="2" fill="none" stroke="#4adc8e" stroke-width="1"/>
+  <rect x="422" y="172" width="12" height="14" rx="0" fill="#4adc8e" opacity="0.7"/>
+
+  <!-- Arrow -->
+  <line x1="447" y1="154" x2="470" y2="154" stroke="#4a8ec2" stroke-width="2"/>
+  <polygon points="470,150 478,154 470,158" fill="#4a8ec2"/>
+
+  <!-- GenAI Module -->
+  <rect x="482" y="100" width="120" height="108" rx="8" fill="url(#genaiGrad)" stroke="#4adc8e" stroke-width="1.5" style="filter:url(#shadow)"/>
+  <text x="542" y="122" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#4adc8e;text-anchor:middle;">GenAI</text>
+  <text x="542" y="138" style="font-family:Arial,sans-serif;font-size:9px;fill:#80d0a8;text-anchor:middle;">Natural Language</text>
+  <text x="542" y="152" style="font-family:Arial,sans-serif;font-size:9px;fill:#80d0a8;text-anchor:middle;">Recommendations</text>
+  <!-- text lines icon -->
+  <line x1="500" y1="170" x2="570" y2="170" stroke="#4adc8e" stroke-width="1" opacity="0.6"/>
+  <line x1="500" y1="178" x2="560" y2="178" stroke="#4adc8e" stroke-width="1" opacity="0.5"/>
+  <line x1="500" y1="186" x2="575" y2="186" stroke="#4adc8e" stroke-width="1" opacity="0.4"/>
+  <line x1="500" y1="194" x2="545" y2="194" stroke="#4adc8e" stroke-width="1" opacity="0.3"/>
+
+  <!-- Arrow -->
+  <line x1="602" y1="154" x2="625" y2="154" stroke="#4adc8e" stroke-width="2"/>
+  <polygon points="625,150 633,154 625,158" fill="#4adc8e"/>
+
+  <!-- Alert System -->
+  <rect x="638" y="85" width="140" height="138" rx="8" fill="url(#boxGrad)" stroke="#e8772e" stroke-width="1.5" style="filter:url(#shadow)"/>
+  <text x="708" y="108" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#e8772e;text-anchor:middle;">ALERT SYSTEM</text>
+  <!-- alert levels -->
+  <rect x="655" y="118" width="110" height="22" rx="4" fill="#1a4a2a" stroke="#4adc8e" stroke-width="1"/>
+  <circle cx="668" cy="129" r="5" fill="#4adc8e"/>
+  <text x="715" y="133" style="font-family:Arial,sans-serif;font-size:8px;fill:#4adc8e;text-anchor:middle;">Normal Operations</text>
+
+  <rect x="655" y="145" width="110" height="22" rx="4" fill="#4a3a10" stroke="#e8d44a" stroke-width="1"/>
+  <circle cx="668" cy="156" r="5" fill="#e8d44a"/>
+  <text x="715" y="160" style="font-family:Arial,sans-serif;font-size:8px;fill:#e8d44a;text-anchor:middle;">Elevated Levels</text>
+
+  <rect x="655" y="172" width="110" height="22" rx="4" fill="#4a1a10" stroke="#e85050" stroke-width="1"/>
+  <circle cx="668" cy="183" r="5" fill="#e85050"/>
+  <text x="715" y="187" style="font-family:Arial,sans-serif;font-size:8px;fill:#e85050;text-anchor:middle;">Critical Alert</text>
+
+  <!-- Notification icon -->
+  <text x="708" y="212" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a95c0;text-anchor:middle;">SMS | Email | Dashboard</text>
+
+  <!-- === PREDICTION TIMELINE (bottom) === -->
+  <rect x="20" y="260" width="760" height="120" rx="10" fill="url(#boxGrad)" stroke="#2a6aa8" stroke-width="1" opacity="0.7" style="filter:url(#shadow)"/>
+  <text x="400" y="282" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#7db8e0;text-anchor:middle;letter-spacing:1px;">PREDICTION TIMELINE</text>
+
+  <!-- Timeline axis -->
+  <line x1="60" y1="320" x2="740" y2="320" stroke="#5a95c0" stroke-width="1.5"/>
+
+  <!-- Now marker -->
+  <line x1="100" y1="295" x2="100" y2="345" stroke="#e8772e" stroke-width="2"/>
+  <text x="100" y="358" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#e8772e;text-anchor:middle;">NOW</text>
+  <circle cx="100" cy="320" r="5" fill="#e8772e"/>
+
+  <!-- 1h prediction -->
+  <line x1="300" y1="300" x2="300" y2="340" stroke="#4adc8e" stroke-width="1.5"/>
+  <text x="300" y="358" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#4adc8e;text-anchor:middle;">+1h</text>
+  <circle cx="300" cy="320" r="5" fill="#4adc8e"/>
+  <rect x="240" y="295" width="120" height="18" rx="4" fill="#0d3a24" stroke="#4adc8e" stroke-width="0.8"/>
+  <text x="300" y="307" style="font-family:Arial,sans-serif;font-size:7px;fill:#4adc8e;text-anchor:middle;">Short-term Forecast (High Conf.)</text>
+
+  <!-- 6h prediction -->
+  <line x1="550" y1="300" x2="550" y2="340" stroke="#e8d44a" stroke-width="1.5"/>
+  <text x="550" y="358" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#e8d44a;text-anchor:middle;">+6h</text>
+  <circle cx="550" cy="320" r="5" fill="#e8d44a"/>
+  <rect x="480" y="295" width="140" height="18" rx="4" fill="#3a3210" stroke="#e8d44a" stroke-width="0.8"/>
+  <text x="550" y="307" style="font-family:Arial,sans-serif;font-size:7px;fill:#e8d44a;text-anchor:middle;">Medium-term Forecast (Mod. Conf.)</text>
+
+  <!-- Uncertainty band -->
+  <path d="M100,310 Q200,305 300,308 Q425,306 550,312 Q650,318 740,330" fill="none" stroke="#4a8ec2" stroke-width="1.5"/>
+  <path d="M100,330 Q200,335 300,332 Q425,334 550,328 Q650,324 740,330" fill="none" stroke="#4a8ec2" stroke-width="1" stroke-dasharray="4,2" opacity="0.5"/>
+  <path d="M100,310 Q200,305 300,308 Q425,306 550,312 Q650,318 740,330 L740,330 Q650,324 550,328 Q425,334 300,332 Q200,335 100,330 Z" fill="#4a8ec2" opacity="0.08"/>
+
+  <text x="700" y="310" style="font-family:Arial,sans-serif;font-size:7px;fill:#4a8ec2;text-anchor:middle;">Confidence</text>
+  <text x="700" y="340" style="font-family:Arial,sans-serif;font-size:7px;fill:#4a8ec2;text-anchor:middle;">Band</text>
+</svg>
