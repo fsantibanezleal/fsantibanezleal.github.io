@@ -1,0 +1,288 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bgHap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b2a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1b2d45;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrHt" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" style="fill:#4ecdc4"/>
+    </marker>
+    <marker id="arrHo" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" style="fill:#e8a838"/>
+    </marker>
+    <marker id="arrHr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" style="fill:#ff6b6b"/>
+    </marker>
+    <filter id="glowH">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgHap)"/>
+  <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1a7a7a" stroke-width="2" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="28" style="font-family:Arial,sans-serif;font-size:14px;fill:#4ecdc4;text-anchor:middle;font-weight:bold;letter-spacing:1px">3D HAPTIC SIMULATION SYSTEM</text>
+
+  <!-- === LEFT: 3D Scene === -->
+  <rect x="15" y="42" width="185" height="260" rx="5" style="fill:#0a1628;stroke:#1a5a6a;stroke-width:1"/>
+  <text x="107" y="58" style="font-family:Arial,sans-serif;font-size:10px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">3D Scene</text>
+  <text x="107" y="70" style="font-family:Arial,sans-serif;font-size:8px;fill:#7a9ab5;text-anchor:middle">Triangle meshes + probe</text>
+
+  <!-- Cube 1 (wireframe, blue) -->
+  <g style="stroke:#4a8acc;stroke-width:1;fill:none">
+    <!-- Front face -->
+    <polygon points="50,120 110,120 110,180 50,180" style="fill:#1a3a5a;opacity:0.3"/>
+    <polygon points="50,120 110,120 110,180 50,180"/>
+    <!-- Top face -->
+    <polygon points="50,120 70,100 130,100 110,120" style="fill:#2a4a6a;opacity:0.2"/>
+    <polygon points="50,120 70,100 130,100 110,120"/>
+    <!-- Right face -->
+    <polygon points="110,120 130,100 130,160 110,180" style="fill:#1a3a5a;opacity:0.15"/>
+    <polygon points="110,120 130,100 130,160 110,180"/>
+  </g>
+
+  <!-- Cube 2 (wireframe, teal, overlapping) -->
+  <g style="stroke:#4ecdc4;stroke-width:1;fill:none">
+    <polygon points="80,140 140,140 140,200 80,200" style="fill:#1a5a5a;opacity:0.2"/>
+    <polygon points="80,140 140,140 140,200 80,200"/>
+    <polygon points="80,140 100,120 160,120 140,140" style="fill:#2a5a6a;opacity:0.15"/>
+    <polygon points="80,140 100,120 160,120 140,140"/>
+    <polygon points="140,140 160,120 160,180 140,200" style="fill:#1a5a5a;opacity:0.1"/>
+    <polygon points="140,140 160,120 160,180 140,200"/>
+  </g>
+
+  <!-- Sphere (wireframe) -->
+  <circle cx="70" cy="220" r="25" style="fill:#2a3a5a;opacity:0.2;stroke:#a569bd;stroke-width:1"/>
+  <ellipse cx="70" cy="220" rx="25" ry="8" style="fill:none;stroke:#a569bd;stroke-width:0.5;opacity:0.5"/>
+  <ellipse cx="70" cy="220" rx="8" ry="25" style="fill:none;stroke:#a569bd;stroke-width:0.5;opacity:0.5"/>
+
+  <!-- Probe point -->
+  <circle cx="115" cy="170" r="4" style="fill:#ff6b6b;opacity:0.9" filter="url(#glowH)"/>
+  <circle cx="115" cy="170" r="6" style="fill:none;stroke:#ff6b6b;stroke-width:0.8;opacity:0.5"/>
+  <text x="115" y="163" style="font-family:Arial,sans-serif;font-size:7px;fill:#ff6b6b;text-anchor:middle;font-weight:bold">Probe</text>
+
+  <!-- Collision highlight -->
+  <line x1="110" y1="180" x2="115" y2="170" style="stroke:#ff6b6b;stroke-width:0.8;stroke-dasharray:2,2"/>
+  <text x="140" y="195" style="font-family:Arial,sans-serif;font-size:6px;fill:#ff6b6b">penetration d</text>
+
+  <!-- Triangle mesh labels -->
+  <text x="107" y="268" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">2 cubes + sphere</text>
+  <text x="107" y="280" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">= triangle soup</text>
+  <text x="107" y="295" style="font-family:Arial,sans-serif;font-size:7px;fill:#4a8acc;text-anchor:middle">STL / OBJ mesh input</text>
+
+  <!-- Arrow: Left to Center Top -->
+  <line x1="205" y1="120" x2="218" y2="120" style="stroke:#4ecdc4;stroke-width:1.5" marker-end="url(#arrHt)"/>
+  <!-- Arrow: Left to Center Bottom -->
+  <line x1="205" y1="220" x2="218" y2="220" style="stroke:#4ecdc4;stroke-width:1.5" marker-end="url(#arrHt)"/>
+
+  <!-- === CENTER TOP: Octree Spatial Partitioning === -->
+  <rect x="222" y="42" width="210" height="130" rx="5" style="fill:#0a1628;stroke:#e8a838;stroke-width:1"/>
+  <text x="327" y="58" style="font-family:Arial,sans-serif;font-size:10px;fill:#e8a838;text-anchor:middle;font-weight:bold">Octree Spatial Partitioning</text>
+  <text x="327" y="70" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">Recursive subdivision for fast queries</text>
+
+  <!-- Octree illustration: large cube subdivided -->
+  <!-- Level 0: outer cube -->
+  <rect x="245" y="78" width="70" height="70" rx="1" style="fill:none;stroke:#4a6a8a;stroke-width:1"/>
+  <!-- Level 1: subdivide into 4 visible quadrants -->
+  <line x1="280" y1="78" x2="280" y2="148" style="stroke:#4a6a8a;stroke-width:0.5"/>
+  <line x1="245" y1="113" x2="315" y2="113" style="stroke:#4a6a8a;stroke-width:0.5"/>
+  <!-- Level 2: subdivide top-left further -->
+  <line x1="262" y1="78" x2="262" y2="113" style="stroke:#3a5a7a;stroke-width:0.3"/>
+  <line x1="245" y1="95" x2="280" y2="95" style="stroke:#3a5a7a;stroke-width:0.3"/>
+  <!-- Triangles in leaf nodes -->
+  <polygon points="250,85 258,85 254,82" style="fill:#4ecdc4;opacity:0.5;stroke:#4ecdc4;stroke-width:0.5"/>
+  <polygon points="268,100 275,100 271,96" style="fill:#e8a838;opacity:0.5;stroke:#e8a838;stroke-width:0.5"/>
+  <polygon points="288,120 300,120 294,116" style="fill:#4ecdc4;opacity:0.5;stroke:#4ecdc4;stroke-width:0.5"/>
+  <polygon points="252,125 264,125 258,118" style="fill:#a569bd;opacity:0.5;stroke:#a569bd;stroke-width:0.5"/>
+
+  <!-- Tree diagram -->
+  <g transform="translate(330,80)">
+    <!-- Root -->
+    <rect x="25" y="0" width="20" height="12" rx="2" style="fill:#e8a838;opacity:0.3;stroke:#e8a838;stroke-width:0.5"/>
+    <text x="35" y="9" style="font-family:Arial,sans-serif;font-size:6px;fill:#e8a838;text-anchor:middle">root</text>
+    <!-- Level 1 children -->
+    <line x1="35" y1="12" x2="10" y2="22" style="stroke:#3a5a7a;stroke-width:0.5"/>
+    <line x1="35" y1="12" x2="25" y2="22" style="stroke:#3a5a7a;stroke-width:0.5"/>
+    <line x1="35" y1="12" x2="45" y2="22" style="stroke:#3a5a7a;stroke-width:0.5"/>
+    <line x1="35" y1="12" x2="60" y2="22" style="stroke:#3a5a7a;stroke-width:0.5"/>
+    <rect x="2" y="22" width="16" height="10" rx="1" style="fill:#4ecdc4;opacity:0.2;stroke:#4ecdc4;stroke-width:0.4"/>
+    <rect x="20" y="22" width="10" height="10" rx="1" style="fill:#4ecdc4;opacity:0.2;stroke:#4ecdc4;stroke-width:0.4"/>
+    <rect x="40" y="22" width="10" height="10" rx="1" style="fill:#4ecdc4;opacity:0.2;stroke:#4ecdc4;stroke-width:0.4"/>
+    <rect x="55" y="22" width="10" height="10" rx="1" style="fill:#4ecdc4;opacity:0.2;stroke:#4ecdc4;stroke-width:0.4"/>
+    <!-- Level 2 (one branch subdivided further) -->
+    <line x1="10" y1="32" x2="2" y2="42" style="stroke:#3a5a7a;stroke-width:0.3"/>
+    <line x1="10" y1="32" x2="10" y2="42" style="stroke:#3a5a7a;stroke-width:0.3"/>
+    <line x1="10" y1="32" x2="18" y2="42" style="stroke:#3a5a7a;stroke-width:0.3"/>
+    <rect x="0" y="42" width="6" height="6" rx="1" style="fill:#e8a838;opacity:0.3;stroke:#e8a838;stroke-width:0.3"/>
+    <rect x="8" y="42" width="6" height="6" rx="1" style="fill:#e8a838;opacity:0.3;stroke:#e8a838;stroke-width:0.3"/>
+    <rect x="16" y="42" width="6" height="6" rx="1" style="fill:#e8a838;opacity:0.3;stroke:#e8a838;stroke-width:0.3"/>
+    <text x="35" y="60" style="font-family:Arial,sans-serif;font-size:6px;fill:#7a9ab5;text-anchor:middle">8 octants per node</text>
+  </g>
+
+  <text x="327" y="163" style="font-family:Arial,sans-serif;font-size:7px;fill:#4ecdc4;text-anchor:middle">O(log n) triangle lookup</text>
+
+  <!-- === CENTER BOTTOM: SAT Collision Detection === -->
+  <rect x="222" y="180" width="210" height="122" rx="5" style="fill:#0a1628;stroke:#ff6b6b;stroke-width:1"/>
+  <text x="327" y="196" style="font-family:Arial,sans-serif;font-size:10px;fill:#ff6b6b;text-anchor:middle;font-weight:bold">SAT Collision Detection</text>
+  <text x="327" y="208" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">Separating Axis Theorem (11 axes)</text>
+
+  <!-- Two triangles with separating axis -->
+  <!-- Triangle A -->
+  <polygon points="255,230 290,260 240,260" style="fill:#4ecdc4;opacity:0.2;stroke:#4ecdc4;stroke-width:1"/>
+  <text x="262" y="255" style="font-family:Arial,sans-serif;font-size:7px;fill:#4ecdc4;text-anchor:middle">A</text>
+
+  <!-- Triangle B -->
+  <polygon points="310,225 345,255 300,250" style="fill:#e8a838;opacity:0.2;stroke:#e8a838;stroke-width:1"/>
+  <text x="318" y="248" style="font-family:Arial,sans-serif;font-size:7px;fill:#e8a838;text-anchor:middle">B</text>
+
+  <!-- Separating axis line -->
+  <line x1="292" y1="220" x2="292" y2="270" style="stroke:#ff6b6b;stroke-width:1;stroke-dasharray:3,2"/>
+  <text x="292" y="280" style="font-family:Arial,sans-serif;font-size:6px;fill:#ff6b6b;text-anchor:middle">sep. axis</text>
+
+  <!-- Projection intervals on axis -->
+  <line x1="240" y1="272" x2="290" y2="272" style="stroke:#4ecdc4;stroke-width:2"/>
+  <line x1="300" y1="272" x2="345" y2="272" style="stroke:#e8a838;stroke-width:2"/>
+  <text x="265" y="280" style="font-family:Arial,sans-serif;font-size:5px;fill:#4ecdc4;text-anchor:middle">proj A</text>
+  <text x="322" y="280" style="font-family:Arial,sans-serif;font-size:5px;fill:#e8a838;text-anchor:middle">proj B</text>
+
+  <!-- 11 axes explanation -->
+  <g transform="translate(355,218)">
+    <text x="0" y="0" style="font-family:Arial,sans-serif;font-size:7px;fill:#b0c4d8">Test axes:</text>
+    <text x="0" y="12" style="font-family:Arial,sans-serif;font-size:6px;fill:#4ecdc4">&#x2022; 3 face normals (A)</text>
+    <text x="0" y="22" style="font-family:Arial,sans-serif;font-size:6px;fill:#e8a838">&#x2022; 3 face normals (B)</text>
+    <text x="0" y="32" style="font-family:Arial,sans-serif;font-size:6px;fill:#ff6b6b">&#x2022; 3&#xD7;3 = 9 edge cross</text>
+    <text x="0" y="42" style="font-family:Arial,sans-serif;font-size:6px;fill:#7a9ab5">&#x2022; products</text>
+    <line x1="0" y1="48" x2="65" y2="48" style="stroke:#3a5a7a;stroke-width:0.5"/>
+    <text x="0" y="58" style="font-family:Arial,sans-serif;font-size:6px;fill:#ffffff;font-weight:bold">= 15 axes total</text>
+    <text x="0" y="68" style="font-family:Arial,sans-serif;font-size:6px;fill:#7a9ab5">(11 for tri-tri)</text>
+  </g>
+
+  <!-- Arrow: Center to Right -->
+  <line x1="436" y1="150" x2="454" y2="150" style="stroke:#4ecdc4;stroke-width:1.5" marker-end="url(#arrHt)"/>
+
+  <!-- === RIGHT: Force Feedback === -->
+  <rect x="458" y="42" width="185" height="260" rx="5" style="fill:#0a1628;stroke:#1a5a6a;stroke-width:1"/>
+  <text x="550" y="58" style="font-family:Arial,sans-serif;font-size:10px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">Force Feedback</text>
+  <text x="550" y="70" style="font-family:Arial,sans-serif;font-size:8px;fill:#7a9ab5;text-anchor:middle">Kelvin-Voigt spring-damper model</text>
+
+  <!-- Force equation -->
+  <rect x="470" y="78" width="160" height="28" rx="4" style="fill:#112a40;stroke:#e8a838;stroke-width:0.8"/>
+  <text x="550" y="96" style="font-family:Arial,sans-serif;font-size:11px;fill:#ffffff;text-anchor:middle;font-weight:bold">F = &#x2212;k&#x00B7;d &#x2212; b&#x00B7;v</text>
+
+  <!-- Labels -->
+  <text x="480" y="122" style="font-family:Arial,sans-serif;font-size:7px;fill:#4ecdc4">k = stiffness (N/m)</text>
+  <text x="480" y="134" style="font-family:Arial,sans-serif;font-size:7px;fill:#e8a838">b = damping (N&#x00B7;s/m)</text>
+  <text x="480" y="146" style="font-family:Arial,sans-serif;font-size:7px;fill:#ff6b6b">d = penetration depth</text>
+  <text x="480" y="158" style="font-family:Arial,sans-serif;font-size:7px;fill:#a569bd">v = probe velocity</text>
+
+  <!-- Spring-damper diagram -->
+  <text x="550" y="178" style="font-family:Arial,sans-serif;font-size:8px;fill:#7a9ab5;text-anchor:middle">Spring-Damper Diagram</text>
+
+  <!-- Wall (surface) -->
+  <line x1="490" y1="188" x2="490" y2="260" style="stroke:#7a9ab5;stroke-width:2"/>
+  <!-- Hatching on wall -->
+  <line x1="485" y1="195" x2="490" y2="190" style="stroke:#5a7a8a;stroke-width:0.8"/>
+  <line x1="485" y1="205" x2="490" y2="200" style="stroke:#5a7a8a;stroke-width:0.8"/>
+  <line x1="485" y1="215" x2="490" y2="210" style="stroke:#5a7a8a;stroke-width:0.8"/>
+  <line x1="485" y1="225" x2="490" y2="220" style="stroke:#5a7a8a;stroke-width:0.8"/>
+  <line x1="485" y1="235" x2="490" y2="230" style="stroke:#5a7a8a;stroke-width:0.8"/>
+  <line x1="485" y1="245" x2="490" y2="240" style="stroke:#5a7a8a;stroke-width:0.8"/>
+  <line x1="485" y1="255" x2="490" y2="250" style="stroke:#5a7a8a;stroke-width:0.8"/>
+
+  <!-- Spring (top path) -->
+  <line x1="490" y1="205" x2="500" y2="205" style="stroke:#4ecdc4;stroke-width:1"/>
+  <polyline points="500,205 505,198 515,212 525,198 535,212 545,198 555,212 560,205" style="fill:none;stroke:#4ecdc4;stroke-width:1.2"/>
+  <line x1="560" y1="205" x2="580" y2="205" style="stroke:#4ecdc4;stroke-width:1"/>
+  <text x="530" y="195" style="font-family:Arial,sans-serif;font-size:7px;fill:#4ecdc4;text-anchor:middle">k (spring)</text>
+
+  <!-- Damper (bottom path) -->
+  <line x1="490" y1="245" x2="510" y2="245" style="stroke:#e8a838;stroke-width:1"/>
+  <!-- Damper piston -->
+  <rect x="510" y="238" width="30" height="14" rx="1" style="fill:none;stroke:#e8a838;stroke-width:1"/>
+  <line x1="525" y1="235" x2="525" y2="255" style="stroke:#e8a838;stroke-width:1.5"/>
+  <line x1="540" y1="245" x2="580" y2="245" style="stroke:#e8a838;stroke-width:1"/>
+  <text x="525" y="232" style="font-family:Arial,sans-serif;font-size:7px;fill:#e8a838;text-anchor:middle">b (damper)</text>
+
+  <!-- Junction lines -->
+  <line x1="580" y1="205" x2="580" y2="245" style="stroke:#7a9ab5;stroke-width:1"/>
+
+  <!-- Probe (mass) at end -->
+  <circle cx="595" cy="225" r="10" style="fill:#ff6b6b;opacity:0.3;stroke:#ff6b6b;stroke-width:1"/>
+  <text x="595" y="228" style="font-family:Arial,sans-serif;font-size:7px;fill:#ff6b6b;text-anchor:middle;font-weight:bold">P</text>
+
+  <!-- Force arrow -->
+  <line x1="610" y1="225" x2="630" y2="225" style="stroke:#ff6b6b;stroke-width:1.5" marker-end="url(#arrHr)"/>
+  <text x="625" y="220" style="font-family:Arial,sans-serif;font-size:7px;fill:#ff6b6b;font-weight:bold">F</text>
+
+  <!-- Haptic loop info -->
+  <text x="550" y="275" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">1 kHz haptic update rate</text>
+  <text x="550" y="287" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">30 fps visual rendering</text>
+  <text x="550" y="295" style="font-family:Arial,sans-serif;font-size:7px;fill:#4ecdc4;text-anchor:middle">PHANToM 6-DOF device</text>
+
+  <!-- === FAR RIGHT: System Info === -->
+  <rect x="650" y="42" width="140" height="260" rx="5" style="fill:#0a1628;stroke:#1a5a6a;stroke-width:1"/>
+  <text x="720" y="58" style="font-family:Arial,sans-serif;font-size:9px;fill:#e8a838;text-anchor:middle;font-weight:bold">System Pipeline</text>
+
+  <!-- Pipeline -->
+  <rect x="660" y="68" width="120" height="20" rx="3" style="fill:#112a40;stroke:#4ecdc4;stroke-width:0.8"/>
+  <text x="720" y="81" style="font-family:Arial,sans-serif;font-size:7px;fill:#4ecdc4;text-anchor:middle">1. Load mesh (STL/OBJ)</text>
+
+  <line x1="720" y1="88" x2="720" y2="95" style="stroke:#3a6a7a;stroke-width:0.8"/>
+
+  <rect x="660" y="95" width="120" height="20" rx="3" style="fill:#112a40;stroke:#4ecdc4;stroke-width:0.8"/>
+  <text x="720" y="108" style="font-family:Arial,sans-serif;font-size:7px;fill:#4ecdc4;text-anchor:middle">2. Build octree</text>
+
+  <line x1="720" y1="115" x2="720" y2="122" style="stroke:#3a6a7a;stroke-width:0.8"/>
+
+  <rect x="660" y="122" width="120" height="20" rx="3" style="fill:#112a40;stroke:#e8a838;stroke-width:0.8"/>
+  <text x="720" y="135" style="font-family:Arial,sans-serif;font-size:7px;fill:#e8a838;text-anchor:middle">3. Query octree node</text>
+
+  <line x1="720" y1="142" x2="720" y2="149" style="stroke:#3a6a7a;stroke-width:0.8"/>
+
+  <rect x="660" y="149" width="120" height="20" rx="3" style="fill:#112a40;stroke:#ff6b6b;stroke-width:0.8"/>
+  <text x="720" y="162" style="font-family:Arial,sans-serif;font-size:7px;fill:#ff6b6b;text-anchor:middle">4. SAT collision test</text>
+
+  <line x1="720" y1="169" x2="720" y2="176" style="stroke:#3a6a7a;stroke-width:0.8"/>
+
+  <rect x="660" y="176" width="120" height="20" rx="3" style="fill:#112a40;stroke:#ff6b6b;stroke-width:0.8"/>
+  <text x="720" y="189" style="font-family:Arial,sans-serif;font-size:7px;fill:#ff6b6b;text-anchor:middle">5. Compute penetration</text>
+
+  <line x1="720" y1="196" x2="720" y2="203" style="stroke:#3a6a7a;stroke-width:0.8"/>
+
+  <rect x="660" y="203" width="120" height="20" rx="3" style="fill:#112a40;stroke:#e8a838;stroke-width:0.8"/>
+  <text x="720" y="216" style="font-family:Arial,sans-serif;font-size:7px;fill:#e8a838;text-anchor:middle">6. Apply F = -kd - bv</text>
+
+  <line x1="720" y1="223" x2="720" y2="230" style="stroke:#3a6a7a;stroke-width:0.8"/>
+
+  <rect x="660" y="230" width="120" height="28" rx="3" style="fill:#112a40;stroke:#00ffaa;stroke-width:0.8"/>
+  <text x="720" y="244" style="font-family:Arial,sans-serif;font-size:7px;fill:#00ffaa;text-anchor:middle;font-weight:bold">7. Send force to</text>
+  <text x="720" y="254" style="font-family:Arial,sans-serif;font-size:7px;fill:#00ffaa;text-anchor:middle;font-weight:bold">haptic device</text>
+
+  <!-- Loop arrow -->
+  <line x1="720" y1="258" x2="720" y2="268" style="stroke:#e8a838;stroke-width:0.8"/>
+  <line x1="720" y1="268" x2="785" y2="268" style="stroke:#e8a838;stroke-width:0.8"/>
+  <line x1="785" y1="268" x2="785" y2="81" style="stroke:#e8a838;stroke-width:0.8"/>
+  <line x1="785" y1="81" x2="783" y2="81" style="stroke:#e8a838;stroke-width:0.8" marker-end="url(#arrHo)"/>
+  <text x="792" y="175" style="font-family:Arial,sans-serif;font-size:6px;fill:#e8a838" transform="rotate(90,792,175)">1 kHz loop</text>
+
+  <!-- === BOTTOM: Legacy to Modern === -->
+  <rect x="15" y="310" width="773" height="80" rx="5" style="fill:#0a1628;stroke:#e8a838;stroke-width:1"/>
+  <text x="400" y="328" style="font-family:Arial,sans-serif;font-size:10px;fill:#e8a838;text-anchor:middle;font-weight:bold">Technology Evolution</text>
+
+  <!-- Legacy -->
+  <rect x="40" y="338" width="300" height="40" rx="4" style="fill:#112a40;stroke:#4a6a8a;stroke-width:0.8"/>
+  <text x="190" y="354" style="font-family:Arial,sans-serif;font-size:9px;fill:#4a8acc;text-anchor:middle;font-weight:bold">Legacy (2008)</text>
+  <text x="190" y="370" style="font-family:Arial,sans-serif;font-size:8px;fill:#7a9ab5;text-anchor:middle">C++ &#x2022; OpenGL &#x2022; OpenHaptics &#x2022; SensAble PHANToM</text>
+
+  <!-- Arrow -->
+  <text x="385" y="362" style="font-family:Arial,sans-serif;font-size:18px;fill:#e8a838;text-anchor:middle">&#x2192;</text>
+
+  <!-- Modern -->
+  <rect x="420" y="338" width="350" height="40" rx="4" style="fill:#112a40;stroke:#4ecdc4;stroke-width:0.8"/>
+  <text x="595" y="354" style="font-family:Arial,sans-serif;font-size:9px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">Modern (2026)</text>
+  <text x="595" y="370" style="font-family:Arial,sans-serif;font-size:8px;fill:#7a9ab5;text-anchor:middle">Python &#x2022; Three.js &#x2022; WebSocket &#x2022; Web-based haptics</text>
+
+</svg>
