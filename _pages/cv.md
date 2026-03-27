@@ -25,6 +25,7 @@ Work experience
   * Accenture, Santiago, Chile
   * Senior Data Science Lead & Technical Project Lead @ MinCo-Hidro CODELCO
   * End-to-end data science initiatives for mining process optimization
+  * Internship supervision: geotechnical risk prediction system industrialization (2026)
 
 * Jan 2025 - Sep 2025: **Data Processing Specialist | Senior Lead Data Scientist**
   * Minera Centinela, Antofagasta, Chile
