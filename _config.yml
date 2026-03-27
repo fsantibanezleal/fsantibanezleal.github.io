@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Options: "default", "air", "sunrise", "mint", "dirt", "contrast"
-title                    : "Felipe Santibañez-Leal"
+title                    : "The last love song on this little planet"
 title_separator          : "-"
 name                     : &name "Felipe Santibañez-Leal"
 description              : &description "Advanced Analytics & Data Science | Computational Photography & Optics"
