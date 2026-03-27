@@ -97,3 +97,5 @@ The most rewarding part was watching users interact with the system for the firs
 ## Lessons learned
 
 Although FeelIT never reached a production-ready state, the project taught me two things that shaped my career: first, that the most meaningful engineering problems sit at the intersection of technology and human needs; and second, that hardware constraints are temporary — the miniaturization and cost barriers that stopped us in 2010 are falling every year.
+
+*This project does not have a public repository. The hardware prototypes and software components remain in private archives.*

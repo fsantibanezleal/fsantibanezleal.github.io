@@ -20,7 +20,7 @@ The system operates on two synchronized layers:
 
 **Physical layer tracking**: Conveyor-mounted sensors, weightometers, and sampling points feed continuous data about material flow rates and estimated properties. The system maintains a time-resolved model of each stockpile's composition based on accumulation and extraction history.
 
-**Optimization layer**: Given the current state of all stockpiles and the target feed requirements for the processing plant, the system simulates blending scenarios and recommends extraction strategies that maximize compliance with target specifications while minimizing operational disruptions.
+**Optimization layer**: Given the current state of all stockpiles and the target feed requirements for the processing plant, the system formulates blending as a constrained optimization problem -- minimize deviation from target grade specifications subject to tonnage constraints, equipment availability, and extraction sequence feasibility. The solver simulates blending scenarios and recommends extraction strategies that maximize compliance with target specifications while minimizing operational disruptions.
 
 ## Key capabilities
 
@@ -38,4 +38,4 @@ The system operates on two synchronized layers:
 - **Deployment**: Dockerized pipelines running hourly (tracking) and every 4 hours (optimization)
 - **Multi-division**: Configurable per division with shared core engine components
 
-*Note: This description reflects the general type and architecture of systems I have built. Specific client details and operational data are omitted.*
+*This project is part of proprietary corporate work. Source code is not publicly available.*

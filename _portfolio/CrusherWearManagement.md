@@ -16,7 +16,7 @@ Gyratory and cone crushers are among the largest and most critical machines in a
 
 ## System architecture
 
-1. **Point cloud ingestion and parsing**: Raw scan files (DXF, PTS) are parsed and transformed into cylindrical coordinate representations aligned to the crusher axis. Aggregation routines collapse the dense point cloud into interpretable radial-axial wear profiles.
+1. **Point cloud ingestion and parsing**: Raw scan files (DXF, PTS -- typically millions of points per scan) are parsed and transformed into cylindrical coordinate representations (r, theta, z) aligned to the crusher axis via least-squares axis fitting. Aggregation routines bin points by angular sector and axial elevation, collapsing the dense point cloud into interpretable radial-axial wear profiles that capture the geometry of concave and mantle surfaces.
 2. **Campaign and survey management**: Each crusher liner installation defines a campaign. Multiple surveys (scans) are registered within a campaign, enabling wear progression tracking over time. The system manages metadata, alignment corrections, and reference geometries.
 3. **Wear trend modeling and forecasting**: Wear rates are computed per profile zone, and regression models project remaining useful life. The system generates recommended change dates with confidence bounds, supporting maintenance planning.
 4. **Dual deployment architecture**: The platform operates in two modes. A **desktop application** (Streamlit/Dash packaged with PyInstaller) serves offline mine sites with no internet connectivity. A **web platform** (Next.js frontend, FastAPI backend, PostgreSQL database, Redis caching) provides centralized management for multi-site operations.
@@ -31,4 +31,4 @@ Gyratory and cone crushers are among the largest and most critical machines in a
 - **Infrastructure**: Docker Swarm, Traefik, Ansible, Nginx
 - **ML/Forecasting**: scikit-learn, custom regression models for wear projection
 
-*Note: This description reflects the general type and architecture of systems I have built as a consultant for a mining equipment services company. Specific client details, operational data, and proprietary methodologies are omitted.*
+*This project is part of proprietary consulting work. Source code is not publicly available.*
