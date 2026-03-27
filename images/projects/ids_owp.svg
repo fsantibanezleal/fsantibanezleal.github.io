@@ -1,0 +1,251 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bgIds" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b2a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1b2d45;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrIt" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" style="fill:#4ecdc4"/>
+    </marker>
+    <marker id="arrIo" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" style="fill:#e8a838"/>
+    </marker>
+    <marker id="arrIw" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" style="fill:#ffffff"/>
+    </marker>
+    <filter id="glowI">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgIds)"/>
+  <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1a7a7a" stroke-width="2" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="28" style="font-family:Arial,sans-serif;font-size:14px;fill:#4ecdc4;text-anchor:middle;font-weight:bold;letter-spacing:1px">OPTIMAL WELL PLACEMENT VIA INFORMATION-THEORETIC SAMPLING</text>
+
+  <!-- === LEFT: Binary Random Field === -->
+  <rect x="15" y="42" width="180" height="200" rx="5" style="fill:#0a1628;stroke:#1a5a6a;stroke-width:1"/>
+  <text x="105" y="58" style="font-family:Arial,sans-serif;font-size:10px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">Binary Random Field</text>
+  <text x="105" y="70" style="font-family:Arial,sans-serif;font-size:8px;fill:#7a9ab5;text-anchor:middle">Channelized geological patterns</text>
+
+  <!-- 12x12 grid with channel pattern -->
+  <g transform="translate(30,78)">
+    <!-- Background cells (gray = non-channel) -->
+    <rect x="0" y="0" width="144" height="144" style="fill:#1a2a3a"/>
+    <!-- Grid lines -->
+    <g style="stroke:#0d1b2a;stroke-width:0.5">
+      <line x1="12" y1="0" x2="12" y2="144"/><line x1="24" y1="0" x2="24" y2="144"/>
+      <line x1="36" y1="0" x2="36" y2="144"/><line x1="48" y1="0" x2="48" y2="144"/>
+      <line x1="60" y1="0" x2="60" y2="144"/><line x1="72" y1="0" x2="72" y2="144"/>
+      <line x1="84" y1="0" x2="84" y2="144"/><line x1="96" y1="0" x2="96" y2="144"/>
+      <line x1="108" y1="0" x2="108" y2="144"/><line x1="120" y1="0" x2="120" y2="144"/>
+      <line x1="132" y1="0" x2="132" y2="144"/>
+      <line x1="0" y1="12" x2="144" y2="12"/><line x1="0" y1="24" x2="144" y2="24"/>
+      <line x1="0" y1="36" x2="144" y2="36"/><line x1="0" y1="48" x2="144" y2="48"/>
+      <line x1="0" y1="60" x2="144" y2="60"/><line x1="0" y1="72" x2="144" y2="72"/>
+      <line x1="0" y1="84" x2="144" y2="84"/><line x1="0" y1="96" x2="144" y2="96"/>
+      <line x1="0" y1="108" x2="144" y2="108"/><line x1="0" y1="120" x2="144" y2="120"/>
+      <line x1="0" y1="132" x2="144" y2="132"/>
+    </g>
+    <!-- Channel cells (blue = high permeability channel) - sinuous channel pattern -->
+    <g style="fill:#2a7acc;opacity:0.7">
+      <!-- Channel 1: top-left to bottom-right, sinuous -->
+      <rect x="0" y="0" width="12" height="12"/><rect x="12" y="0" width="12" height="12"/>
+      <rect x="12" y="12" width="12" height="12"/><rect x="24" y="12" width="12" height="12"/>
+      <rect x="24" y="24" width="12" height="12"/><rect x="36" y="24" width="12" height="12"/>
+      <rect x="36" y="36" width="12" height="12"/><rect x="36" y="48" width="12" height="12"/>
+      <rect x="48" y="48" width="12" height="12"/><rect x="48" y="60" width="12" height="12"/>
+      <rect x="60" y="60" width="12" height="12"/><rect x="60" y="72" width="12" height="12"/>
+      <rect x="72" y="72" width="12" height="12"/><rect x="72" y="84" width="12" height="12"/>
+      <rect x="84" y="84" width="12" height="12"/><rect x="84" y="96" width="12" height="12"/>
+      <rect x="96" y="96" width="12" height="12"/><rect x="96" y="108" width="12" height="12"/>
+      <rect x="108" y="108" width="12" height="12"/><rect x="108" y="120" width="12" height="12"/>
+      <rect x="120" y="120" width="12" height="12"/><rect x="132" y="132" width="12" height="12"/>
+      <rect x="120" y="132" width="12" height="12"/>
+      <!-- Channel 2: secondary branch -->
+      <rect x="72" y="0" width="12" height="12"/><rect x="84" y="0" width="12" height="12"/>
+      <rect x="84" y="12" width="12" height="12"/><rect x="96" y="12" width="12" height="12"/>
+      <rect x="96" y="24" width="12" height="12"/><rect x="96" y="36" width="12" height="12"/>
+      <rect x="108" y="36" width="12" height="12"/><rect x="108" y="48" width="12" height="12"/>
+      <rect x="120" y="48" width="12" height="12"/><rect x="120" y="60" width="12" height="12"/>
+      <rect x="132" y="60" width="12" height="12"/><rect x="132" y="72" width="12" height="12"/>
+    </g>
+  </g>
+
+  <!-- Arrow: Left to Center -->
+  <line x1="200" y1="140" x2="218" y2="140" style="stroke:#4ecdc4;stroke-width:1.5" marker-end="url(#arrIt)"/>
+
+  <!-- === CENTER: AdSEMES Algorithm === -->
+  <rect x="222" y="42" width="210" height="200" rx="5" style="fill:#0a1628;stroke:#e8a838;stroke-width:1"/>
+  <text x="327" y="58" style="font-family:Arial,sans-serif;font-size:10px;fill:#e8a838;text-anchor:middle;font-weight:bold">AdSEMES Algorithm</text>
+  <text x="327" y="70" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">Adaptive Sequential Entropy Max. Experimental Sampling</text>
+
+  <!-- Algorithm loop -->
+  <rect x="240" y="78" width="120" height="22" rx="3" style="fill:#112a40;stroke:#4ecdc4;stroke-width:0.8"/>
+  <text x="300" y="92" style="font-family:Arial,sans-serif;font-size:7px;fill:#4ecdc4;text-anchor:middle">Compute H(X | samples)</text>
+
+  <!-- Arrow down -->
+  <line x1="300" y1="100" x2="300" y2="108" style="stroke:#3a6a7a;stroke-width:0.8" marker-end="url(#arrIt)"/>
+
+  <rect x="240" y="110" width="120" height="22" rx="3" style="fill:#112a40;stroke:#e8a838;stroke-width:0.8"/>
+  <text x="300" y="124" style="font-family:Arial,sans-serif;font-size:7px;fill:#e8a838;text-anchor:middle">Select max-entropy location</text>
+
+  <!-- Arrow down -->
+  <line x1="300" y1="132" x2="300" y2="140" style="stroke:#3a6a7a;stroke-width:0.8" marker-end="url(#arrIt)"/>
+
+  <rect x="240" y="142" width="120" height="22" rx="3" style="fill:#112a40;stroke:#4ecdc4;stroke-width:0.8"/>
+  <text x="300" y="156" style="font-family:Arial,sans-serif;font-size:7px;fill:#4ecdc4;text-anchor:middle">Sample at location</text>
+
+  <!-- Arrow down -->
+  <line x1="300" y1="164" x2="300" y2="172" style="stroke:#3a6a7a;stroke-width:0.8" marker-end="url(#arrIt)"/>
+
+  <rect x="240" y="174" width="120" height="22" rx="3" style="fill:#112a40;stroke:#4ecdc4;stroke-width:0.8"/>
+  <text x="300" y="188" style="font-family:Arial,sans-serif;font-size:7px;fill:#4ecdc4;text-anchor:middle">Update posterior</text>
+
+  <!-- Loop arrow back to top -->
+  <line x1="300" y1="196" x2="300" y2="206" style="stroke:#e8a838;stroke-width:0.8"/>
+  <line x1="300" y1="206" x2="380" y2="206" style="stroke:#e8a838;stroke-width:0.8"/>
+  <line x1="380" y1="206" x2="380" y2="89" style="stroke:#e8a838;stroke-width:0.8"/>
+  <line x1="380" y1="89" x2="364" y2="89" style="stroke:#e8a838;stroke-width:0.8" marker-end="url(#arrIo)"/>
+  <text x="396" y="150" style="font-family:Arial,sans-serif;font-size:7px;fill:#e8a838;text-anchor:middle" transform="rotate(90,396,150)">repeat</text>
+
+  <!-- Convergence -->
+  <text x="327" y="230" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">Until budget exhausted or converged</text>
+
+  <!-- Arrow: Center to Right -->
+  <line x1="436" y1="140" x2="454" y2="140" style="stroke:#4ecdc4;stroke-width:1.5" marker-end="url(#arrIt)"/>
+
+  <!-- === RIGHT TOP: Sampling Strategies === -->
+  <rect x="458" y="42" width="330" height="120" rx="5" style="fill:#0a1628;stroke:#1a5a6a;stroke-width:1"/>
+  <text x="623" y="58" style="font-family:Arial,sans-serif;font-size:10px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">Sampling Strategies Comparison</text>
+
+  <!-- 6 small grid icons -->
+  <!-- 1. Random -->
+  <rect x="470" y="68" width="42" height="42" rx="2" style="fill:#112a40;stroke:#2a4a5a;stroke-width:0.5"/>
+  <circle cx="480" cy="78" r="1.5" style="fill:#e8a838"/><circle cx="500" cy="85" r="1.5" style="fill:#e8a838"/>
+  <circle cx="488" cy="98" r="1.5" style="fill:#e8a838"/><circle cx="505" cy="75" r="1.5" style="fill:#e8a838"/>
+  <circle cx="476" cy="102" r="1.5" style="fill:#e8a838"/><circle cx="495" cy="72" r="1.5" style="fill:#e8a838"/>
+  <text x="491" y="120" style="font-family:Arial,sans-serif;font-size:6px;fill:#7a9ab5;text-anchor:middle">Random</text>
+
+  <!-- 2. Stratified -->
+  <rect x="520" y="68" width="42" height="42" rx="2" style="fill:#112a40;stroke:#2a4a5a;stroke-width:0.5"/>
+  <line x1="541" y1="68" x2="541" y2="110" style="stroke:#1a3a5a;stroke-width:0.3"/>
+  <line x1="520" y1="89" x2="562" y2="89" style="stroke:#1a3a5a;stroke-width:0.3"/>
+  <circle cx="530" cy="78" r="1.5" style="fill:#e8a838"/><circle cx="552" cy="82" r="1.5" style="fill:#e8a838"/>
+  <circle cx="533" cy="99" r="1.5" style="fill:#e8a838"/><circle cx="548" cy="96" r="1.5" style="fill:#e8a838"/>
+  <text x="541" y="120" style="font-family:Arial,sans-serif;font-size:6px;fill:#7a9ab5;text-anchor:middle">Stratified</text>
+
+  <!-- 3. Multiscale -->
+  <rect x="570" y="68" width="42" height="42" rx="2" style="fill:#112a40;stroke:#2a4a5a;stroke-width:0.5"/>
+  <circle cx="580" cy="78" r="1.5" style="fill:#e8a838"/><circle cx="602" cy="78" r="1.5" style="fill:#e8a838"/>
+  <circle cx="580" cy="100" r="1.5" style="fill:#e8a838"/><circle cx="602" cy="100" r="1.5" style="fill:#e8a838"/>
+  <circle cx="591" cy="89" r="1" style="fill:#4ecdc4"/><circle cx="585" cy="83" r="1" style="fill:#4ecdc4"/>
+  <circle cx="597" cy="95" r="1" style="fill:#4ecdc4"/>
+  <text x="591" y="120" style="font-family:Arial,sans-serif;font-size:6px;fill:#7a9ab5;text-anchor:middle">Multiscale</text>
+
+  <!-- 4. Oracle -->
+  <rect x="620" y="68" width="42" height="42" rx="2" style="fill:#112a40;stroke:#2a4a5a;stroke-width:0.5"/>
+  <circle cx="630" cy="80" r="1.5" style="fill:#ff6b6b"/><circle cx="640" cy="85" r="1.5" style="fill:#ff6b6b"/>
+  <circle cx="650" cy="92" r="1.5" style="fill:#ff6b6b"/><circle cx="635" cy="98" r="1.5" style="fill:#ff6b6b"/>
+  <circle cx="655" cy="78" r="1.5" style="fill:#ff6b6b"/><circle cx="645" cy="102" r="1.5" style="fill:#ff6b6b"/>
+  <text x="641" y="120" style="font-family:Arial,sans-serif;font-size:6px;fill:#7a9ab5;text-anchor:middle">Oracle</text>
+
+  <!-- 5. Adaptive Entropy (highlighted) -->
+  <rect x="670" y="68" width="42" height="42" rx="2" style="fill:#112a40;stroke:#e8a838;stroke-width:1"/>
+  <circle cx="682" cy="76" r="1.5" style="fill:#00ffaa"/><circle cx="700" cy="82" r="1.5" style="fill:#00ffaa"/>
+  <circle cx="688" cy="90" r="1.5" style="fill:#00ffaa"/><circle cx="695" cy="100" r="1.5" style="fill:#00ffaa"/>
+  <circle cx="678" cy="104" r="1.5" style="fill:#00ffaa"/><circle cx="706" cy="94" r="1.5" style="fill:#00ffaa"/>
+  <text x="691" y="120" style="font-family:Arial,sans-serif;font-size:6px;fill:#e8a838;text-anchor:middle;font-weight:bold">Adaptive</text>
+  <text x="691" y="128" style="font-family:Arial,sans-serif;font-size:6px;fill:#e8a838;text-anchor:middle;font-weight:bold">Entropy</text>
+
+  <!-- 6. Regular -->
+  <rect x="720" y="68" width="42" height="42" rx="2" style="fill:#112a40;stroke:#2a4a5a;stroke-width:0.5"/>
+  <circle cx="730" cy="78" r="1.5" style="fill:#e8a838"/><circle cx="741" cy="78" r="1.5" style="fill:#e8a838"/>
+  <circle cx="752" cy="78" r="1.5" style="fill:#e8a838"/>
+  <circle cx="730" cy="89" r="1.5" style="fill:#e8a838"/><circle cx="741" cy="89" r="1.5" style="fill:#e8a838"/>
+  <circle cx="752" cy="89" r="1.5" style="fill:#e8a838"/>
+  <circle cx="730" cy="100" r="1.5" style="fill:#e8a838"/><circle cx="741" cy="100" r="1.5" style="fill:#e8a838"/>
+  <circle cx="752" cy="100" r="1.5" style="fill:#e8a838"/>
+  <text x="741" y="120" style="font-family:Arial,sans-serif;font-size:6px;fill:#7a9ab5;text-anchor:middle">Regular</text>
+
+  <!-- === RIGHT BOTTOM: Reconstruction === -->
+  <rect x="458" y="170" width="330" height="72" rx="5" style="fill:#0a1628;stroke:#1a5a6a;stroke-width:1"/>
+  <text x="623" y="186" style="font-family:Arial,sans-serif;font-size:10px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">Reconstruction from Sparse Samples</text>
+
+  <!-- Recovered field mini-grid -->
+  <g transform="translate(475,194)">
+    <rect x="0" y="0" width="40" height="40" style="fill:#1a2a3a;stroke:#2a4a5a;stroke-width:0.5"/>
+    <!-- Sparse samples shown -->
+    <rect x="0" y="0" width="10" height="10" style="fill:#2a7acc;opacity:0.5"/>
+    <rect x="10" y="10" width="10" height="10" style="fill:#2a7acc;opacity:0.5"/>
+    <rect x="20" y="20" width="10" height="10" style="fill:#2a7acc;opacity:0.5"/>
+    <rect x="30" y="30" width="10" height="10" style="fill:#2a7acc;opacity:0.5"/>
+    <circle cx="5" cy="5" r="2" style="fill:#e8a838"/>
+    <circle cx="25" cy="15" r="2" style="fill:#e8a838"/>
+    <circle cx="15" cy="35" r="2" style="fill:#e8a838"/>
+    <text x="20" y="-3" style="font-family:Arial,sans-serif;font-size:6px;fill:#7a9ab5;text-anchor:middle">Samples</text>
+  </g>
+
+  <!-- Arrow -->
+  <text x="535" y="218" style="font-family:Arial,sans-serif;font-size:14px;fill:#e8a838;text-anchor:middle">&#x2192;</text>
+
+  <!-- Interpolated field -->
+  <g transform="translate(555,194)">
+    <rect x="0" y="0" width="40" height="40" style="fill:#1a2a3a;stroke:#2a4a5a;stroke-width:0.5"/>
+    <rect x="0" y="0" width="10" height="10" style="fill:#2a7acc;opacity:0.4"/>
+    <rect x="10" y="0" width="10" height="10" style="fill:#2a7acc;opacity:0.2"/>
+    <rect x="10" y="10" width="10" height="10" style="fill:#2a7acc;opacity:0.5"/>
+    <rect x="20" y="10" width="10" height="10" style="fill:#2a7acc;opacity:0.3"/>
+    <rect x="20" y="20" width="10" height="10" style="fill:#2a7acc;opacity:0.5"/>
+    <rect x="30" y="20" width="10" height="10" style="fill:#2a7acc;opacity:0.3"/>
+    <rect x="30" y="30" width="10" height="10" style="fill:#2a7acc;opacity:0.5"/>
+    <rect x="20" y="30" width="10" height="10" style="fill:#2a7acc;opacity:0.2"/>
+    <text x="20" y="-3" style="font-family:Arial,sans-serif;font-size:6px;fill:#7a9ab5;text-anchor:middle">Interpolated</text>
+  </g>
+
+  <!-- Arrow -->
+  <text x="615" y="218" style="font-family:Arial,sans-serif;font-size:14px;fill:#e8a838;text-anchor:middle">&#x2192;</text>
+
+  <!-- Recovered field -->
+  <g transform="translate(635,194)">
+    <rect x="0" y="0" width="40" height="40" style="fill:#1a2a3a;stroke:#2a4a5a;stroke-width:0.5"/>
+    <rect x="0" y="0" width="10" height="10" style="fill:#2a7acc;opacity:0.7"/>
+    <rect x="10" y="0" width="10" height="10" style="fill:#2a7acc;opacity:0.6"/>
+    <rect x="10" y="10" width="10" height="10" style="fill:#2a7acc;opacity:0.7"/>
+    <rect x="20" y="10" width="10" height="10" style="fill:#2a7acc;opacity:0.6"/>
+    <rect x="20" y="20" width="10" height="10" style="fill:#2a7acc;opacity:0.7"/>
+    <rect x="30" y="20" width="10" height="10" style="fill:#2a7acc;opacity:0.6"/>
+    <rect x="30" y="30" width="10" height="10" style="fill:#2a7acc;opacity:0.7"/>
+    <rect x="20" y="30" width="10" height="10" style="fill:#2a7acc;opacity:0.5"/>
+    <rect x="0" y="10" width="10" height="10" style="fill:#2a7acc;opacity:0.4"/>
+    <text x="20" y="-3" style="font-family:Arial,sans-serif;font-size:6px;fill:#00ffaa;text-anchor:middle;font-weight:bold">Recovered</text>
+  </g>
+
+  <text x="745" y="218" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">Kriging /</text>
+  <text x="745" y="228" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">MPS</text>
+
+  <!-- === BOTTOM: Key Equation === -->
+  <rect x="15" y="250" width="773" height="70" rx="5" style="fill:#0a1628;stroke:#e8a838;stroke-width:1"/>
+  <text x="400" y="268" style="font-family:Arial,sans-serif;font-size:10px;fill:#e8a838;text-anchor:middle;font-weight:bold">Key Information-Theoretic Foundation</text>
+
+  <!-- Equation -->
+  <text x="400" y="290" style="font-family:Arial,sans-serif;font-size:12px;fill:#ffffff;text-anchor:middle;font-weight:bold">I(X&#x1D453;; X&#x1DA0;) = H(X&#x1D453;) &#x2212; H(X&#x1D453; | X&#x1DA0;)</text>
+
+  <!-- Submodularity note -->
+  <text x="400" y="310" style="font-family:Arial,sans-serif;font-size:9px;fill:#4ecdc4;text-anchor:middle">Submodular maximization &#x2192; greedy achieves (1 &#x2212; 1/e) &#x2248; 63% approximation guarantee</text>
+
+  <!-- Bottom labels -->
+  <text x="150" y="345" style="font-family:Arial,sans-serif;font-size:8px;fill:#7a9ab5;text-anchor:middle">X&#x1D453; = unsampled locations</text>
+  <text x="400" y="345" style="font-family:Arial,sans-serif;font-size:8px;fill:#7a9ab5;text-anchor:middle">X&#x1DA0; = sampled locations</text>
+  <text x="650" y="345" style="font-family:Arial,sans-serif;font-size:8px;fill:#7a9ab5;text-anchor:middle">H(&#x00B7;) = Shannon entropy</text>
+
+  <!-- Method comparison note -->
+  <text x="400" y="370" style="font-family:Arial,sans-serif;font-size:8px;fill:#e8a838;text-anchor:middle">AdSEMES outperforms random, stratified, and regular sampling with fewer wells</text>
+
+  <!-- Tech stack -->
+  <text x="400" y="390" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a7a8a;text-anchor:middle">MATLAB &#x2022; Geostatistics &#x2022; Information Theory &#x2022; Multiple-Point Statistics (MPS)</text>
+
+</svg>
