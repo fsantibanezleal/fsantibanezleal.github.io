@@ -22,10 +22,12 @@ Cells move on the surface of a sphere using an **AER (Azimuth-Elevation-Radius) 
 
 - **Backend**: Python/FastAPI with real-time WebSocket streaming of simulation state
 - **Frontend**: Three.js (r128) for interactive 3D visualization with orbit controls
+- **Cartesian push collision model**: improved cell-cell interactions using 3D displacement vectors projected back onto the sphere surface
+- **Layer-based DFC management**: cells organized by developmental layer with configurable coupling forces
 - **Controls**: Play/Pause/Step for continuous or frame-by-frame exploration
 - **Configurable**: Cell count, radial size, EVL speed, noise amplitude, collision parameters
 - **Legacy**: Preserves the original MATLAB implementation alongside the modern version
-- **23 automated tests** across cell, collision, geometry, and simulation modules
+- **23+ automated tests** across cell, collision, geometry, and simulation modules
 
 ## From SCIAN-Lab
 

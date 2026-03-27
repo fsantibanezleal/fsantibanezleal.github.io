@@ -21,6 +21,7 @@ The system implements the **weighted Gerchberg-Saxton (GS) algorithm**, an itera
 ## Technical highlights
 
 - **Backend**: Python/FastAPI serving the GS computation with NumPy for FFT operations
+- **Improved phase scaling**: corrected phase mask normalization for accurate multi-trap intensity distribution
 - **Frontend**: HTML5 Canvas for dual visualization — interactive trap placement and real-time phase mask rendering
 - **Communication**: REST API + WebSocket for streaming convergence data
 - **Legacy preservation**: The original C++/.NET version (2010) is preserved alongside the modern rewrite
