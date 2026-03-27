@@ -20,7 +20,7 @@
   <!-- Background -->
   <rect width="800" height="400" fill="url(#bg)"/>
   <!-- Title -->
-  <text x="400" y="32" style="font-family:Arial,sans-serif;font-size:16px;font-weight:bold;fill:#e0e0e0;text-anchor:middle;">Geotechnical Risk Prediction Pipeline &mdash; Weekly Operational Cycle</text>
+  <text x="400" y="32" style="font-family:Arial,sans-serif;font-size:16px;font-weight:bold;fill:#e0e0e0;text-anchor:middle;">Geotechnical Risk Prediction Pipeline &#x2014; Weekly Operational Cycle</text>
   <!-- Weekly cycle arrow (large loop) -->
   <path d="M 710 60 A 280 150 0 1 1 710 340" style="fill:none;stroke:#2ec4b6;stroke-width:1.5;stroke-dasharray:6,4;opacity:0.5;"/>
   <polygon points="710,340 705,328 715,328" style="fill:#2ec4b6;opacity:0.6;"/>

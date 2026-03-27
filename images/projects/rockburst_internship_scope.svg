@@ -20,7 +20,7 @@
   <!-- Background -->
   <rect width="800" height="350" fill="url(#bg)"/>
   <!-- Title -->
-  <text x="400" y="28" style="font-family:Arial,sans-serif;font-size:15px;font-weight:bold;fill:#e0e0e0;text-anchor:middle;">Professional Internship Scope &mdash; 9-Week Plan</text>
+  <text x="400" y="28" style="font-family:Arial,sans-serif;font-size:15px;font-weight:bold;fill:#e0e0e0;text-anchor:middle;">Professional Internship Scope &#x2014; 9-Week Plan</text>
 
   <!-- Timeline axis -->
   <line x1="50" y1="55" x2="750" y2="55" style="stroke:#445566;stroke-width:1.5;"/>
