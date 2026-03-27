@@ -3,36 +3,114 @@
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+# `jekyll serve -l -H localhost`. If you change this file, please restart the
+# server process.
+
+# Basic Site Settings
+locale                   : "en-US"
+site_theme               : "default" # Options: "default", "air", "sunrise", "mint", "dirt", "contrast"
+title                    : "Felipe Santibañez-Leal"
+title_separator          : "-"
+name                     : &name "Felipe Santibañez-Leal"
+description              : &description "Advanced Analytics & Data Science | Computational Photography & Optics"
+url                      : https://fsantibanezleal.github.io
+baseurl                  : ""
+repository               : "fsantibanezleal/fsantibanezleal.github.io"
+
+# Site Author - The following control what appear as part of the author content on the side bar.
+author:
+  # Biographic information
+  avatar           : "profile.png"
+  name             : "Felipe Santibañez-Leal"
+  pronouns         : "he/him"
+  bio              : "I&F Decision Science Assoc. Manager @ Accenture | Applied Scientific Researcher"
+  location         : "Santiago, Chile"
+  employer         : "Accenture"
+  uri              :
+  email            : "felipe@FASL.Work"
+
+  # Academic websites
+  academia         :
+  arxiv            :
+  googlescholar    : "https://scholar.google.cl/citations?user=BE787WgAAAAJ"
+  inspire-hep      :
+  impactstory      : "https://profiles.impactstory.org/u/0000-0002-0150-3246"
+  orcid            : "https://orcid.org/0000-0002-0150-3246"
+  semantic         :
+  ssrn             :
+  pubmed           : "https://pubmed.ncbi.nlm.nih.gov/?term=%28Santib%C3%A1%C3%B1ez+F%5BAuthor%5D%29+OR+%28Santibanez-Leal+%5BAuthor%5D%29+OR+%28Santiba%C3%B1ez-Leal+%5BAuthor%5D%29+OR+%28Santib%C3%A1%C3%B1ez-Leal+%5BAuthor%5D%29+OR+%28Santiba%C3%B1ez+Leal+%5BAuthor%5D%29"
+  researchgate     : "https://www.researchgate.net/profile/Felipe_Santibanez-Leal"
+  scopus           :
+  zotero           :
+
+  # Repositories and software development
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  github           : "fsantibanezleal"
+  kaggle           :
+  stackoverflow    :
+
+  # Social media
+  artstation       :
+  bluesky          :
+  facebook         : "fsantibanezleal"
+  flickr           :
+  foursquare       :
+  goodreads        :
+  google_plus      :
+  keybase          :
+  instagram        :
+  lastfm           :
+  linkedin         : "fsantibanez"
+  mastodon         :
+  medium           :
+  pinterest        :
+  soundcloud       :
+  steam            :
+  telegram         :
+  tumblr           :
+  twitter          : "fsantiba"
+  vine             :
+  weibo            :
+  wikipedia        :
+  xing             :
+  youtube          :
+  zhihu            :
+
+# Publication Category
+publication_category:
+  books:
+    title: 'Books'
+  manuscripts:
+    title: 'Journal Articles'
+  conferences:
+    title: 'Conference Papers'
+  thesis:
+    title: 'Thesis'
+  datasets:
+    title: 'Datasets'
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Last love song on this little planet"
-title_separator          : "-"
-name                     : &name "Felipe Santibáñez-Leal"
-description              : &description "Reading..."
-url                      : https://fsantibanezleal.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io" http://localhost:4000 # 
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "fsantibanezleal/fsantibanezleal.github.io"
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
+teaser                   :
+breadcrumbs              : false
 words_per_minute         : 160
-future                   : false
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false #change to true to add link to talkmap on talks page
+future                   : true
+read_more                : "disabled"
+talkmap_link             : false
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               :
   disqus:
     shortname            :
   discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+    server               :
   facebook:
     appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : "dark" # "light" (default), "dark"
+    num_posts            :
+    colorscheme          : "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "master" #"gh-pages" # "master", "gh-pages"
+  branch                 : "master"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
   format                 : "yml"
@@ -45,9 +123,11 @@ staticman:
     date:
       type               : "date"
       options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+        format           : "iso8601"
 atom_feed:
-  path                   : # blank (default) uses feed.xml
+  hide                   : false
+  path                   :
+
 
 # SEO Related
 google_site_verification :
@@ -55,66 +135,27 @@ bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
 
+
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : &twitter "fsantiba"
 facebook:
-  username               :
+  username               : "fsantibanezleal"
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
+og_image                 :
+og_description           :
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   :
+  name                   :
+  links:
 
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : "false"
   google:
     tracking_id          :
-
-
-# Site Author
-author:
-  name             : "Felipe Santibáñez-Leal"
-  avatar           : "profile.png"
-  bio              : "Unraveling a path for Applied Scientific Research"
-  location         : "Santiago, Chile"
-  employer         : "Industry X @ Accenture"
-  pubmed           :  "https://pubmed.ncbi.nlm.nih.gov/?term=%28Santib%C3%A1%C3%B1ez+F%5BAuthor%5D%29+OR+%28Santibanez-Leal+%5BAuthor%5D%29+OR+%28Santiba%C3%B1ez-Leal+%5BAuthor%5D%29+OR+%28Santib%C3%A1%C3%B1ez-Leal+%5BAuthor%5D%29+OR+%28Santiba%C3%B1ez+Leal+%5BAuthor%5D%29" # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "https://scholar.google.cl/citations?user=BE787WgAAAAJ"
-  email            : "felipe@FASL.Work"
-  researchgate     : "https://www.researchgate.net/profile/Felipe_Santibanez-Leal" # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         : "fsantibanezleal"
-  foursquare       :
-  github           : "fsantibanezleal"
-  google_plus      :
-  keybase          :
-  instagram        :
-  impactstory      : "https://profiles.impactstory.org/u/0000-0002-0150-3246"
-  lastfm           :
-  linkedin         : "fsantibanez"
-  orcid            : "https://orcid.org/0000-0002-0150-3246"
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            :
-  tumblr           :
-  twitter          : "fsantiba"
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :
-  wikipedia        :
 
 
 # Reading Files
@@ -127,23 +168,26 @@ exclude:
   - "*.sublime-workspace"
   - .asset-cache
   - .bundle
+  - .github
   - .jekyll-assets-cache
   - .sass-cache
-  - CHANGELOG
-  - Capfile
-  - Gemfile
-  - Gruntfile.js
-  - LICENSE
-  - README
-  - Rakefile
   - assets/js/_main.js
   - assets/js/plugins
   - assets/js/vendor
+  - CHANGELOG
+  - Capfile
   - config
+  - Dockerfile
+  - Gemfile
+  - Gruntfile.js
   - gulpfile.js
+  - LICENSE
+  - local
   - log
   - node_modules
-  - package.json
+  - package.json*
+  - Rakefile
+  - README
   - tmp
   - vendor
 keep_files:
@@ -259,17 +303,18 @@ defaults:
       author_profile: true
       share: true
 
+
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed
 
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 4 # amount of posts to show
-paginate_path: /year-archive/page:num/ # /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+paginate: 4
+paginate_path: /year-archive/page:num/
+timezone: America/Santiago
 
 
 # Plugins
@@ -279,7 +324,9 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
-# mimic GitHub Pages with --safe
+  - jemoji
+
+# Mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
@@ -289,36 +336,15 @@ whitelist:
 
 
 # Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
   path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
 
 
 # HTML Compression
-# - http://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:

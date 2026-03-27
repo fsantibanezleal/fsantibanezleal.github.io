@@ -1,4 +1,4 @@
-# main links links
+# main links
 main:
   - title: "Portfolio"
     url: /portfolio/
@@ -10,15 +10,16 @@ main:
     url: "https://fsantibanezleal.github.io/online-cv/"
 
   - title: "Rolling"
-    url: /rolling-archive/    
+    url: /rolling-archive/
 
   - title: "Talks"
-    url: /talks/    
+    url: /talks/
 
   - title: "Teaching"
-    url: /teaching/    
-            
+    url: /teaching/
+
   - title: "Blog Posts"
     url: /year-archive/
-    
 
+  - title: "CV"
+    url: /cv/
