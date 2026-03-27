@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#0d1b2a"/>
+      <stop offset="100%" style="stop-color:#1b2d45"/>
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#142840"/>
+      <stop offset="100%" style="stop-color:#0e1e32"/>
+    </linearGradient>
+    <linearGradient id="featGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#0a4d68"/>
+      <stop offset="100%" style="stop-color:#063547"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- Title -->
+  <text x="400" y="30" style="font-family:Arial,sans-serif;font-size:15px;font-weight:bold;fill:#e0e0e0;text-anchor:middle;">Mathematical Formulation &mdash; Rockburst Risk Model</text>
+
+  <!-- === ROW 1: Target Definition & Score === -->
+  <!-- Target definition box -->
+  <rect x="20" y="48" width="370" height="80" rx="6" style="fill:url(#boxGrad);stroke:#5dade2;stroke-width:1.2;"/>
+  <text x="205" y="66" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#8ecae6;text-anchor:middle;">Target Definition (Cell-Week)</text>
+  <!-- y_{g,t} formula -->
+  <text x="205" y="90" style="font-family:Arial,sans-serif;font-size:13px;fill:#e8e8e8;text-anchor:middle;font-style:italic;">
+    y<tspan style="font-size:9px;" baseline-shift="sub">g,t</tspan> = 1  if  <tspan style="font-size:11px;">&#x2203;</tspan> event e : M<tspan style="font-size:9px;" baseline-shift="sub">e</tspan> <tspan style="font-size:11px;">&#x2265;</tspan> M<tspan style="font-size:9px;" baseline-shift="sub">thr</tspan>
+  </text>
+  <text x="205" y="110" style="font-family:Arial,sans-serif;font-size:11px;fill:#a0b8cc;text-anchor:middle;">within distance r of cell g in week t</text>
+
+  <!-- Score equation box -->
+  <rect x="410" y="48" width="370" height="80" rx="6" style="fill:url(#boxGrad);stroke:#5dade2;stroke-width:1.2;"/>
+  <text x="595" y="66" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#8ecae6;text-anchor:middle;">Score Equation</text>
+  <text x="595" y="92" style="font-family:Arial,sans-serif;font-size:14px;fill:#e8e8e8;text-anchor:middle;font-style:italic;">
+    p = <tspan style="font-size:13px;">&#x03C3;</tspan>( f<tspan style="font-size:9px;" baseline-shift="sub">&#x03B8;</tspan>(<tspan font-weight="bold">x</tspan>) )
+  </text>
+  <text x="595" y="112" style="font-family:Arial,sans-serif;font-size:10px;fill:#a0b8cc;text-anchor:middle;">f<tspan style="font-size:8px;" baseline-shift="sub">&#x03B8;</tspan> = XGBoost classifier,  &#x03C3; = sigmoid</text>
+
+  <!-- === ROW 2: Traffic Light System === -->
+  <rect x="20" y="142" width="760" height="62" rx="6" style="fill:url(#boxGrad);stroke:#2ec4b6;stroke-width:1.2;"/>
+  <text x="400" y="160" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#80edd8;text-anchor:middle;">Traffic Light System</text>
+  <!-- Green -->
+  <rect x="50" y="170" width="200" height="24" rx="4" style="fill:#0d3320;stroke:#2ecc71;stroke-width:1.2;"/>
+  <circle cx="66" cy="182" r="6" style="fill:#2ecc71;"/>
+  <text x="160" y="186" style="font-family:Arial,sans-serif;font-size:11px;fill:#6ddb9e;text-anchor:middle;">
+    GREEN: p &lt; <tspan style="font-style:italic;">&#x03C4;</tspan><tspan style="font-size:8px;" baseline-shift="sub">amber</tspan>
+  </text>
+  <!-- Amber -->
+  <rect x="290" y="170" width="220" height="24" rx="4" style="fill:#3d3010;stroke:#f0a030;stroke-width:1.2;"/>
+  <circle cx="306" cy="182" r="6" style="fill:#f0a030;"/>
+  <text x="410" y="186" style="font-family:Arial,sans-serif;font-size:11px;fill:#f0c060;text-anchor:middle;">
+    AMBER: <tspan style="font-style:italic;">&#x03C4;</tspan><tspan style="font-size:8px;" baseline-shift="sub">amber</tspan> &#x2264; p &lt; <tspan style="font-style:italic;">&#x03C4;</tspan><tspan style="font-size:8px;" baseline-shift="sub">red</tspan>
+  </text>
+  <!-- Red -->
+  <rect x="550" y="170" width="200" height="24" rx="4" style="fill:#3d1010;stroke:#e74c3c;stroke-width:1.2;"/>
+  <circle cx="566" cy="182" r="6" style="fill:#e74c3c;"/>
+  <text x="660" y="186" style="font-family:Arial,sans-serif;font-size:11px;fill:#f08070;text-anchor:middle;">
+    RED: p &#x2265; <tspan style="font-style:italic;">&#x03C4;</tspan><tspan style="font-size:8px;" baseline-shift="sub">red</tspan>
+  </text>
+
+  <!-- === ROW 3: Feature Families === -->
+  <text x="400" y="228" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#80edd8;text-anchor:middle;">Feature Families</text>
+  <!-- Seismic -->
+  <rect x="20" y="238" width="240" height="70" rx="5" style="fill:url(#featGrad);stroke:#5dade2;stroke-width:1;"/>
+  <text x="140" y="255" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#8ecae6;text-anchor:middle;">Seismic Features</text>
+  <text x="140" y="272" style="font-family:Arial,sans-serif;font-size:9px;fill:#a0ccbf;text-anchor:middle;">nve (event count), aeb (energy budget)</text>
+  <text x="140" y="286" style="font-family:Arial,sans-serif;font-size:9px;fill:#a0ccbf;text-anchor:middle;">amb (max magnitude), esp (spectral)</text>
+  <text x="140" y="300" style="font-family:Arial,sans-serif;font-size:9px;fill:#7a9ab0;text-anchor:middle;">Multi-window: 1w, 2w, 4w, 8w, 16w</text>
+
+  <!-- Operational -->
+  <rect x="280" y="238" width="240" height="70" rx="5" style="fill:url(#featGrad);stroke:#5dade2;stroke-width:1;"/>
+  <text x="400" y="255" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#8ecae6;text-anchor:middle;">Operational Features</text>
+  <text x="400" y="272" style="font-family:Arial,sans-serif;font-size:9px;fill:#a0ccbf;text-anchor:middle;">Blasting counts (1w, 2w, 4w)</text>
+  <text x="400" y="286" style="font-family:Arial,sans-serif;font-size:9px;fill:#a0ccbf;text-anchor:middle;">Drilling meters per cell</text>
+  <text x="400" y="300" style="font-family:Arial,sans-serif;font-size:9px;fill:#7a9ab0;text-anchor:middle;">Production advance rates</text>
+
+  <!-- Geometric -->
+  <rect x="540" y="238" width="240" height="70" rx="5" style="fill:url(#featGrad);stroke:#5dade2;stroke-width:1;"/>
+  <text x="660" y="255" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#8ecae6;text-anchor:middle;">Geometric Features</text>
+  <text x="660" y="272" style="font-family:Arial,sans-serif;font-size:9px;fill:#a0ccbf;text-anchor:middle;">Distance to excavation cavities</text>
+  <text x="660" y="286" style="font-family:Arial,sans-serif;font-size:9px;fill:#a0ccbf;text-anchor:middle;">Lithology type (encoded)</text>
+  <text x="660" y="300" style="font-family:Arial,sans-serif;font-size:9px;fill:#7a9ab0;text-anchor:middle;">Structural domain flags</text>
+
+  <!-- === ROW 4: Evaluation Metrics === -->
+  <rect x="20" y="322" width="760" height="60" rx="6" style="fill:url(#boxGrad);stroke:#e8a838;stroke-width:1.2;"/>
+  <text x="400" y="342" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#f0c878;text-anchor:middle;">Evaluation Metrics</text>
+  <!-- Metric boxes -->
+  <rect x="60" y="350" width="120" height="22" rx="4" style="fill:#3d2a0f;stroke:#e8a838;stroke-width:0.8;"/>
+  <text x="120" y="365" style="font-family:Arial,sans-serif;font-size:10px;fill:#f0d898;text-anchor:middle;">Precision</text>
+  <rect x="210" y="350" width="120" height="22" rx="4" style="fill:#3d2a0f;stroke:#e8a838;stroke-width:0.8;"/>
+  <text x="270" y="365" style="font-family:Arial,sans-serif;font-size:10px;fill:#f0d898;text-anchor:middle;">Recall</text>
+  <rect x="360" y="350" width="120" height="22" rx="4" style="fill:#3d2a0f;stroke:#e8a838;stroke-width:0.8;"/>
+  <text x="420" y="365" style="font-family:Arial,sans-serif;font-size:10px;fill:#f0d898;text-anchor:middle;">F1 Score</text>
+  <rect x="510" y="350" width="120" height="22" rx="4" style="fill:#3d2a0f;stroke:#e8a838;stroke-width:0.8;"/>
+  <text x="570" y="365" style="font-family:Arial,sans-serif;font-size:10px;fill:#f0d898;text-anchor:middle;">ROC AUC</text>
+  <rect x="660" y="350" width="100" height="22" rx="4" style="fill:#3d2a0f;stroke:#e8a838;stroke-width:0.8;"/>
+  <text x="710" y="365" style="font-family:Arial,sans-serif;font-size:10px;fill:#f0d898;text-anchor:middle;">Backtesting</text>
+</svg>
