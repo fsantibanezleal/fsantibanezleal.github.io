@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#162d50;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0f2440;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8772e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#c45a1a;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="twinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a5a3a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d3a24;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgGrad)" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="32" style="font-family:Arial,sans-serif;font-size:16px;font-weight:bold;fill:#e8772e;text-anchor:middle;letter-spacing:1px;">REAL-TIME MATERIAL TRACKING SYSTEM</text>
+
+  <!-- PHYSICAL FLOW ROW -->
+  <text x="30" y="60" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#5a95c0;letter-spacing:1px;">PHYSICAL FLOW</text>
+
+  <!-- Ore Sources -->
+  <rect x="25" y="70" width="110" height="100" rx="8" fill="url(#boxGrad)" stroke="#2a6aa8" stroke-width="1.5" style="filter:url(#shadow)"/>
+  <text x="80" y="90" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#7db8e0;text-anchor:middle;">ORE SOURCES</text>
+  <!-- pit icons -->
+  <polygon points="45,108 65,108 60,130 50,130" fill="none" stroke="#e8772e" stroke-width="1.5"/>
+  <text x="55" y="145" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a95c0;text-anchor:middle;">Pit A</text>
+  <polygon points="75,108 95,108 90,130 80,130" fill="none" stroke="#e8772e" stroke-width="1.5"/>
+  <text x="85" y="145" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a95c0;text-anchor:middle;">Pit B</text>
+  <polygon points="105,108 120,108 117,130 108,130" fill="none" stroke="#e8772e" stroke-width="1.2"/>
+  <text x="112" y="145" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a95c0;text-anchor:middle;">Pit C</text>
+
+  <!-- Arrow -->
+  <line x1="140" y1="120" x2="168" y2="120" stroke="#e8772e" stroke-width="2"/>
+  <polygon points="168,116 176,120 168,124" fill="#e8772e"/>
+
+  <!-- Conveyor Belts -->
+  <rect x="180" y="80" width="120" height="80" rx="8" fill="url(#boxGrad)" stroke="#2a6aa8" stroke-width="1.5" style="filter:url(#shadow)"/>
+  <text x="240" y="100" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#7db8e0;text-anchor:middle;">CONVEYOR</text>
+  <text x="240" y="114" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#7db8e0;text-anchor:middle;">BELTS</text>
+  <!-- belt icon -->
+  <line x1="200" y1="135" x2="280" y2="135" stroke="#e8772e" stroke-width="2"/>
+  <circle cx="205" cy="135" r="5" fill="none" stroke="#e8772e" stroke-width="1.5"/>
+  <circle cx="275" cy="135" r="5" fill="none" stroke="#e8772e" stroke-width="1.5"/>
+  <!-- sensor dots on belt -->
+  <circle cx="225" cy="128" r="3" fill="#4adc8e" opacity="0.9"/>
+  <circle cx="245" cy="128" r="3" fill="#4adc8e" opacity="0.9"/>
+  <circle cx="260" cy="128" r="3" fill="#4adc8e" opacity="0.9"/>
+  <text x="240" y="155" style="font-family:Arial,sans-serif;font-size:7px;fill:#4adc8e;text-anchor:middle;">Sensors</text>
+
+  <!-- Arrow -->
+  <line x1="305" y1="120" x2="333" y2="120" stroke="#e8772e" stroke-width="2"/>
+  <polygon points="333,116 341,120 333,124" fill="#e8772e"/>
+
+  <!-- Stockpiles -->
+  <rect x="345" y="80" width="110" height="80" rx="8" fill="url(#boxGrad)" stroke="#2a6aa8" stroke-width="1.5" style="filter:url(#shadow)"/>
+  <text x="400" y="100" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#7db8e0;text-anchor:middle;">STOCKPILES</text>
+  <!-- stockpile shapes -->
+  <polygon points="365,145 380,118 395,145" fill="none" stroke="#e8772e" stroke-width="1.5"/>
+  <polygon points="390,145 405,120 420,145" fill="none" stroke="#c45a1a" stroke-width="1.5"/>
+  <polygon points="415,145 428,122 440,145" fill="none" stroke="#e8772e" stroke-width="1.2"/>
+
+  <!-- Arrow -->
+  <line x1="460" y1="120" x2="488" y2="120" stroke="#e8772e" stroke-width="2"/>
+  <polygon points="488,116 496,120 488,124" fill="#e8772e"/>
+
+  <!-- Blending Optimization -->
+  <rect x="500" y="72" width="120" height="96" rx="8" fill="url(#accentGrad)" style="filter:url(#shadow)"/>
+  <text x="560" y="92" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#fff;text-anchor:middle;">BLENDING</text>
+  <text x="560" y="106" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#fff;text-anchor:middle;">OPTIMIZATION</text>
+  <!-- mixing icon -->
+  <circle cx="560" cy="135" r="16" fill="none" stroke="#fff" stroke-width="1.5"/>
+  <path d="M550,130 Q560,140 570,130" fill="none" stroke="#fff" stroke-width="1.2"/>
+  <path d="M550,138 Q560,128 570,138" fill="none" stroke="#fde0c8" stroke-width="1.2"/>
+
+  <!-- Arrow -->
+  <line x1="625" y1="120" x2="653" y2="120" stroke="#e8772e" stroke-width="2"/>
+  <polygon points="653,116 661,120 653,124" fill="#e8772e"/>
+
+  <!-- Processing Plant -->
+  <rect x="665" y="72" width="115" height="96" rx="8" fill="url(#boxGrad)" stroke="#e8772e" stroke-width="1.5" style="filter:url(#shadow)"/>
+  <text x="722" y="92" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#e8772e;text-anchor:middle;">PROCESSING</text>
+  <text x="722" y="106" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#e8772e;text-anchor:middle;">PLANT INPUT</text>
+  <!-- factory icon -->
+  <rect x="700" y="120" width="18" height="30" rx="2" fill="none" stroke="#7db8e0" stroke-width="1.2"/>
+  <rect x="724" y="126" width="18" height="24" rx="2" fill="none" stroke="#7db8e0" stroke-width="1.2"/>
+  <rect x="706" y="125" width="6" height="6" rx="1" fill="#e8772e"/>
+  <rect x="730" y="131" width="6" height="6" rx="1" fill="#e8772e"/>
+
+  <!-- DIGITAL TWIN ROW -->
+  <line x1="25" y1="210" x2="775" y2="210" stroke="#1a5a3a" stroke-width="1" stroke-dasharray="6,3" opacity="0.7"/>
+  <text x="30" y="235" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#4adc8e;letter-spacing:1px;">DIGITAL TWIN LAYER</text>
+
+  <!-- Digital Twin Box -->
+  <rect x="25" y="245" width="750" height="130" rx="10" fill="url(#twinGrad)" stroke="#4adc8e" stroke-width="1.5" opacity="0.9" style="filter:url(#shadow)"/>
+
+  <text x="80" y="272" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#4adc8e;text-anchor:middle;">DIGITAL TWIN</text>
+
+  <!-- Mirrored virtual components -->
+  <rect x="40" y="285" width="85" height="40" rx="6" fill="#0d3a24" stroke="#4adc8e" stroke-width="1" opacity="0.8"/>
+  <text x="82" y="303" style="font-family:Arial,sans-serif;font-size:8px;fill:#4adc8e;text-anchor:middle;">Virtual Ore</text>
+  <text x="82" y="315" style="font-family:Arial,sans-serif;font-size:8px;fill:#4adc8e;text-anchor:middle;">Sources</text>
+
+  <line x1="130" y1="305" x2="150" y2="305" stroke="#4adc8e" stroke-width="1" stroke-dasharray="4,2"/>
+  <polygon points="150,302 156,305 150,308" fill="#4adc8e"/>
+
+  <rect x="160" y="285" width="95" height="40" rx="6" fill="#0d3a24" stroke="#4adc8e" stroke-width="1" opacity="0.8"/>
+  <text x="207" y="303" style="font-family:Arial,sans-serif;font-size:8px;fill:#4adc8e;text-anchor:middle;">Virtual Conveyor</text>
+  <text x="207" y="315" style="font-family:Arial,sans-serif;font-size:8px;fill:#4adc8e;text-anchor:middle;">Simulation</text>
+
+  <line x1="260" y1="305" x2="280" y2="305" stroke="#4adc8e" stroke-width="1" stroke-dasharray="4,2"/>
+  <polygon points="280,302 286,305 280,308" fill="#4adc8e"/>
+
+  <rect x="290" y="285" width="85" height="40" rx="6" fill="#0d3a24" stroke="#4adc8e" stroke-width="1" opacity="0.8"/>
+  <text x="332" y="303" style="font-family:Arial,sans-serif;font-size:8px;fill:#4adc8e;text-anchor:middle;">Virtual</text>
+  <text x="332" y="315" style="font-family:Arial,sans-serif;font-size:8px;fill:#4adc8e;text-anchor:middle;">Stockpiles</text>
+
+  <line x1="380" y1="305" x2="400" y2="305" stroke="#4adc8e" stroke-width="1" stroke-dasharray="4,2"/>
+  <polygon points="400,302 406,305 400,308" fill="#4adc8e"/>
+
+  <rect x="410" y="285" width="95" height="40" rx="6" fill="#0d3a24" stroke="#4adc8e" stroke-width="1" opacity="0.8"/>
+  <text x="457" y="303" style="font-family:Arial,sans-serif;font-size:8px;fill:#4adc8e;text-anchor:middle;">Blend Quality</text>
+  <text x="457" y="315" style="font-family:Arial,sans-serif;font-size:8px;fill:#4adc8e;text-anchor:middle;">Prediction</text>
+
+  <line x1="510" y1="305" x2="530" y2="305" stroke="#4adc8e" stroke-width="1" stroke-dasharray="4,2"/>
+  <polygon points="530,302 536,305 530,308" fill="#4adc8e"/>
+
+  <rect x="540" y="285" width="95" height="40" rx="6" fill="#0d3a24" stroke="#4adc8e" stroke-width="1" opacity="0.8"/>
+  <text x="587" y="303" style="font-family:Arial,sans-serif;font-size:8px;fill:#4adc8e;text-anchor:middle;">Process Input</text>
+  <text x="587" y="315" style="font-family:Arial,sans-serif;font-size:8px;fill:#4adc8e;text-anchor:middle;">Forecast</text>
+
+  <!-- Real-time sync arrows (vertical dashed) -->
+  <line x1="80" y1="170" x2="80" y2="280" stroke="#4adc8e" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <line x1="240" y1="160" x2="207" y2="280" stroke="#4adc8e" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <line x1="400" y1="160" x2="332" y2="280" stroke="#4adc8e" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <line x1="560" y1="168" x2="457" y2="280" stroke="#4adc8e" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <line x1="722" y1="168" x2="587" y2="280" stroke="#4adc8e" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+
+  <!-- Monitoring panel -->
+  <rect x="660" y="270" width="100" height="55" rx="6" fill="#0d3a24" stroke="#e8772e" stroke-width="1.2"/>
+  <text x="710" y="288" style="font-family:Arial,sans-serif;font-size:8px;font-weight:bold;fill:#e8772e;text-anchor:middle;">MONITORING</text>
+  <!-- mini bars -->
+  <rect x="675" y="296" width="8" height="18" rx="1" fill="#4adc8e" opacity="0.8"/>
+  <rect x="687" y="302" width="8" height="12" rx="1" fill="#4adc8e" opacity="0.6"/>
+  <rect x="699" y="298" width="8" height="16" rx="1" fill="#e8772e" opacity="0.8"/>
+  <rect x="711" y="304" width="8" height="10" rx="1" fill="#4adc8e" opacity="0.6"/>
+  <rect x="723" y="294" width="8" height="20" rx="1" fill="#e8772e" opacity="0.8"/>
+  <rect x="735" y="300" width="8" height="14" rx="1" fill="#4adc8e" opacity="0.7"/>
+
+  <!-- Sync label -->
+  <text x="400" y="198" style="font-family:Arial,sans-serif;font-size:8px;fill:#4adc8e;text-anchor:middle;letter-spacing:1px;">REAL-TIME SYNCHRONIZATION</text>
+
+  <!-- Status indicators -->
+  <text x="400" y="388" style="font-family:Arial,sans-serif;font-size:8px;fill:#5a95c0;text-anchor:middle;">Material Balance | Grade Tracking | Throughput Monitoring | Reconciliation</text>
+</svg>

@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#162d50;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0f2440;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8772e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#c45a1a;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="processGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a4a7a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d2e52;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgGrad)" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="32" style="font-family:Arial,sans-serif;font-size:16px;font-weight:bold;fill:#e8772e;text-anchor:middle;letter-spacing:1px;">MINING PROCESS OPTIMIZATION PIPELINE</text>
+
+  <!-- Process Icons Row (bottom) -->
+  <rect x="30" y="310" width="110" height="70" rx="8" fill="url(#processGrad)" stroke="#2a6aa8" stroke-width="1.5" style="filter:url(#shadow)"/>
+  <text x="85" y="340" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#7db8e0;text-anchor:middle;">SAG MILL</text>
+  <!-- gear icon -->
+  <circle cx="85" cy="362" r="10" fill="none" stroke="#e8772e" stroke-width="1.5"/>
+  <circle cx="85" cy="362" r="4" fill="#e8772e"/>
+
+  <rect x="160" y="310" width="110" height="70" rx="8" fill="url(#processGrad)" stroke="#2a6aa8" stroke-width="1.5" style="filter:url(#shadow)"/>
+  <text x="215" y="340" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#7db8e0;text-anchor:middle;">FLOTATION</text>
+  <!-- bubbles icon -->
+  <circle cx="205" cy="362" r="5" fill="none" stroke="#e8772e" stroke-width="1"/>
+  <circle cx="218" cy="358" r="4" fill="none" stroke="#e8772e" stroke-width="1"/>
+  <circle cx="225" cy="366" r="3" fill="none" stroke="#e8772e" stroke-width="1"/>
+
+  <rect x="290" y="310" width="110" height="70" rx="8" fill="url(#processGrad)" stroke="#2a6aa8" stroke-width="1.5" style="filter:url(#shadow)"/>
+  <text x="345" y="340" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#7db8e0;text-anchor:middle;">THICKENING</text>
+  <!-- funnel icon -->
+  <polygon points="335,355 355,355 349,375 341,375" fill="none" stroke="#e8772e" stroke-width="1.5"/>
+
+  <!-- Sensors -->
+  <rect x="30" y="55" width="95" height="55" rx="8" fill="url(#accentGrad)" style="filter:url(#shadow)"/>
+  <text x="77" y="78" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#fff;text-anchor:middle;">SENSORS</text>
+  <text x="77" y="96" style="font-family:Arial,sans-serif;font-size:8px;fill:#fde0c8;text-anchor:middle;">IoT / SCADA</text>
+
+  <!-- Arrow 1 -->
+  <line x1="125" y1="82" x2="145" y2="82" stroke="#e8772e" stroke-width="2" marker-end="url(#arrowOrange)"/>
+
+  <!-- Data Ingestion -->
+  <rect x="148" y="55" width="105" height="55" rx="8" fill="url(#boxGrad)" stroke="#2a6aa8" stroke-width="1.5" style="filter:url(#shadow)"/>
+  <text x="200" y="75" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#7db8e0;text-anchor:middle;">DATA INGESTION</text>
+  <text x="200" y="90" style="font-family:Arial,sans-serif;font-size:8px;fill:#5a95c0;text-anchor:middle;">Streaming</text>
+  <text x="200" y="102" style="font-family:Arial,sans-serif;font-size:8px;fill:#5a95c0;text-anchor:middle;">Batch</text>
+
+  <!-- Arrow 2 -->
+  <line x1="253" y1="82" x2="273" y2="82" stroke="#4a8ec2" stroke-width="2"/>
+  <polygon points="273,78 281,82 273,86" fill="#4a8ec2"/>
+
+  <!-- Feature Engineering -->
+  <rect x="283" y="55" width="105" height="55" rx="8" fill="url(#boxGrad)" stroke="#2a6aa8" stroke-width="1.5" style="filter:url(#shadow)"/>
+  <text x="335" y="75" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#7db8e0;text-anchor:middle;">FEATURE</text>
+  <text x="335" y="90" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#7db8e0;text-anchor:middle;">ENGINEERING</text>
+  <text x="335" y="104" style="font-family:Arial,sans-serif;font-size:8px;fill:#5a95c0;text-anchor:middle;">Transform / Aggregate</text>
+
+  <!-- Arrow 3 -->
+  <line x1="388" y1="82" x2="408" y2="82" stroke="#4a8ec2" stroke-width="2"/>
+  <polygon points="408,78 416,82 408,86" fill="#4a8ec2"/>
+
+  <!-- ML Models -->
+  <rect x="418" y="48" width="115" height="68" rx="8" fill="url(#accentGrad)" style="filter:url(#shadow)"/>
+  <text x="475" y="68" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#fff;text-anchor:middle;">ML MODELS</text>
+  <text x="475" y="84" style="font-family:Arial,sans-serif;font-size:8px;fill:#fde0c8;text-anchor:middle;">XGBoost</text>
+  <text x="475" y="96" style="font-family:Arial,sans-serif;font-size:8px;fill:#fde0c8;text-anchor:middle;">Neural Networks</text>
+  <text x="475" y="108" style="font-family:Arial,sans-serif;font-size:8px;fill:#fde0c8;text-anchor:middle;">Ensemble Methods</text>
+
+  <!-- Arrow 4 -->
+  <line x1="533" y1="82" x2="553" y2="82" stroke="#e8772e" stroke-width="2"/>
+  <polygon points="553,78 561,82 553,86" fill="#e8772e"/>
+
+  <!-- Recommendations -->
+  <rect x="563" y="55" width="105" height="55" rx="8" fill="url(#boxGrad)" stroke="#2a6aa8" stroke-width="1.5" style="filter:url(#shadow)"/>
+  <text x="615" y="78" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#7db8e0;text-anchor:middle;">RECOMMEN-</text>
+  <text x="615" y="92" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#7db8e0;text-anchor:middle;">DATIONS</text>
+
+  <!-- Arrow 5 -->
+  <line x1="668" y1="82" x2="688" y2="82" stroke="#4a8ec2" stroke-width="2"/>
+  <polygon points="688,78 696,82 688,86" fill="#4a8ec2"/>
+
+  <!-- Operational Dashboard -->
+  <rect x="698" y="48" width="85" height="68" rx="8" fill="url(#boxGrad)" stroke="#e8772e" stroke-width="1.5" style="filter:url(#shadow)"/>
+  <text x="740" y="68" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#e8772e;text-anchor:middle;">OPERATIONAL</text>
+  <text x="740" y="82" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#e8772e;text-anchor:middle;">DASHBOARD</text>
+  <!-- mini chart icon -->
+  <rect x="718" y="90" width="6" height="15" rx="1" fill="#4a8ec2"/>
+  <rect x="728" y="95" width="6" height="10" rx="1" fill="#4a8ec2"/>
+  <rect x="738" y="87" width="6" height="18" rx="1" fill="#e8772e"/>
+  <rect x="748" y="92" width="6" height="13" rx="1" fill="#4a8ec2"/>
+
+  <!-- Feedback Loop Arrow -->
+  <path d="M 740 116 L 740 200 Q 740 210 730 210 L 90 210 Q 77 210 77 200 L 77 115" fill="none" stroke="#e8772e" stroke-width="2" stroke-dasharray="6,3"/>
+  <polygon points="73,118 77,110 81,118" fill="#e8772e"/>
+  <text x="400" y="225" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#e8772e;text-anchor:middle;letter-spacing:1px;">FEEDBACK LOOP</text>
+
+  <!-- Connection lines from processes to sensors -->
+  <line x1="85" y1="310" x2="77" y2="115" stroke="#2a6aa8" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+  <line x1="215" y1="310" x2="77" y2="115" stroke="#2a6aa8" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+  <line x1="345" y1="310" x2="77" y2="115" stroke="#2a6aa8" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+
+  <!-- Process flow arrows between process icons -->
+  <line x1="140" y1="345" x2="155" y2="345" stroke="#5a95c0" stroke-width="1.5"/>
+  <polygon points="155,342 160,345 155,348" fill="#5a95c0"/>
+  <line x1="270" y1="345" x2="285" y2="345" stroke="#5a95c0" stroke-width="1.5"/>
+  <polygon points="285,342 290,345 285,348" fill="#5a95c0"/>
+
+  <!-- Labels for process row -->
+  <text x="215" y="396" style="font-family:Arial,sans-serif;font-size:9px;fill:#5a95c0;text-anchor:middle;">PHYSICAL PROCESS LAYER</text>
+
+  <!-- Decorative grid lines -->
+  <line x1="30" y1="250" x2="770" y2="250" stroke="#1a3a60" stroke-width="0.5" opacity="0.6"/>
+  <line x1="30" y1="295" x2="770" y2="295" stroke="#1a3a60" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- Layer labels -->
+  <text x="770" y="265" style="font-family:Arial,sans-serif;font-size:8px;fill:#3a6a9a;text-anchor:end;">DATA &amp; ANALYTICS LAYER</text>
+</svg>

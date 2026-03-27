@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bgGradR" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#112240;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="armGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#34495e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#2c3e50;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="jointGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a7a7a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d4f4f;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrRt" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" style="fill:#4ecdc4"/>
+    </marker>
+    <marker id="arrRy" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" style="fill:#f1c40f"/>
+    </marker>
+    <marker id="arrRr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" style="fill:#e74c3c"/>
+    </marker>
+    <marker id="arrRg" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" style="fill:#2ecc71"/>
+    </marker>
+    <filter id="glowR">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgGradR)"/>
+  <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1a7a7a" stroke-width="2" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="35" style="font-family:Arial,sans-serif;font-size:16px;fill:#4ecdc4;text-anchor:middle;font-weight:bold;letter-spacing:1px">5-DOF ROBOTIC ARM - LETTER BLOCK WRITER</text>
+
+  <!-- === Left: Robotic Arm === -->
+
+  <!-- Base platform -->
+  <rect x="120" y="330" width="120" height="20" rx="4" style="fill:#2c3e50;stroke:#4ecdc4;stroke-width:1"/>
+  <text x="180" y="344" style="font-family:Arial,sans-serif;font-size:8px;fill:#4ecdc4;text-anchor:middle">BASE</text>
+
+  <!-- Base joint (J1 - rotation) -->
+  <circle cx="180" cy="325" r="12" style="fill:url(#jointGrad);stroke:#4ecdc4;stroke-width:1.5"/>
+  <text x="180" y="329" style="font-family:Arial,sans-serif;font-size:8px;fill:#e0e0e0;text-anchor:middle;font-weight:bold">J1</text>
+  <!-- DH frame 0 -->
+  <line x1="180" y1="325" x2="180" y2="305" style="stroke:#e74c3c;stroke-width:1.2" marker-end="url(#arrRr)"/>
+  <line x1="180" y1="325" x2="200" y2="325" style="stroke:#2ecc71;stroke-width:1.2" marker-end="url(#arrRg)"/>
+  <text x="170" y="303" style="font-family:Arial,sans-serif;font-size:6px;fill:#e74c3c">z0</text>
+  <text x="202" y="322" style="font-family:Arial,sans-serif;font-size:6px;fill:#2ecc71">x0</text>
+
+  <!-- Link 1 -->
+  <rect x="172" y="245" width="16" height="80" rx="3" style="fill:url(#armGrad);stroke:#557799;stroke-width:1"/>
+
+  <!-- Joint 2 -->
+  <circle cx="180" cy="245" r="10" style="fill:url(#jointGrad);stroke:#4ecdc4;stroke-width:1.5"/>
+  <text x="180" y="249" style="font-family:Arial,sans-serif;font-size:8px;fill:#e0e0e0;text-anchor:middle;font-weight:bold">J2</text>
+  <!-- DH frame 1 -->
+  <line x1="180" y1="245" x2="180" y2="228" style="stroke:#e74c3c;stroke-width:1" marker-end="url(#arrRr)"/>
+  <line x1="180" y1="245" x2="197" y2="245" style="stroke:#2ecc71;stroke-width:1" marker-end="url(#arrRg)"/>
+
+  <!-- Link 2 (angled) -->
+  <line x1="180" y1="245" x2="230" y2="185" style="stroke:#34495e;stroke-width:14;stroke-linecap:round"/>
+  <line x1="180" y1="245" x2="230" y2="185" style="stroke:#3d566e;stroke-width:10;stroke-linecap:round"/>
+
+  <!-- Joint 3 -->
+  <circle cx="230" cy="185" r="10" style="fill:url(#jointGrad);stroke:#4ecdc4;stroke-width:1.5"/>
+  <text x="230" y="189" style="font-family:Arial,sans-serif;font-size:8px;fill:#e0e0e0;text-anchor:middle;font-weight:bold">J3</text>
+  <!-- DH frame 2 -->
+  <line x1="230" y1="185" x2="230" y2="168" style="stroke:#e74c3c;stroke-width:1" marker-end="url(#arrRr)"/>
+  <line x1="230" y1="185" x2="247" y2="185" style="stroke:#2ecc71;stroke-width:1" marker-end="url(#arrRg)"/>
+
+  <!-- Link 3 -->
+  <line x1="230" y1="185" x2="290" y2="145" style="stroke:#34495e;stroke-width:12;stroke-linecap:round"/>
+  <line x1="230" y1="185" x2="290" y2="145" style="stroke:#3d566e;stroke-width:8;stroke-linecap:round"/>
+
+  <!-- Joint 4 -->
+  <circle cx="290" cy="145" r="9" style="fill:url(#jointGrad);stroke:#4ecdc4;stroke-width:1.5"/>
+  <text x="290" y="149" style="font-family:Arial,sans-serif;font-size:7px;fill:#e0e0e0;text-anchor:middle;font-weight:bold">J4</text>
+
+  <!-- Link 4 (wrist) -->
+  <line x1="290" y1="145" x2="330" y2="125" style="stroke:#34495e;stroke-width:8;stroke-linecap:round"/>
+  <line x1="290" y1="145" x2="330" y2="125" style="stroke:#3d566e;stroke-width:5;stroke-linecap:round"/>
+
+  <!-- Joint 5 (end effector) -->
+  <circle cx="330" cy="125" r="8" style="fill:url(#jointGrad);stroke:#f1c40f;stroke-width:1.5"/>
+  <text x="330" y="129" style="font-family:Arial,sans-serif;font-size:7px;fill:#e0e0e0;text-anchor:middle;font-weight:bold">J5</text>
+
+  <!-- Gripper -->
+  <line x1="325" y1="117" x2="318" y2="103" style="stroke:#f1c40f;stroke-width:2.5;stroke-linecap:round"/>
+  <line x1="335" y1="117" x2="342" y2="103" style="stroke:#f1c40f;stroke-width:2.5;stroke-linecap:round"/>
+  <!-- DH frame at end effector -->
+  <line x1="330" y1="125" x2="330" y2="108" style="stroke:#e74c3c;stroke-width:1" marker-end="url(#arrRr)"/>
+  <line x1="330" y1="125" x2="347" y2="125" style="stroke:#2ecc71;stroke-width:1" marker-end="url(#arrRg)"/>
+  <text x="333" y="107" style="font-family:Arial,sans-serif;font-size:6px;fill:#e74c3c">z5</text>
+  <text x="349" y="122" style="font-family:Arial,sans-serif;font-size:6px;fill:#2ecc71">x5</text>
+
+  <!-- Workspace arc (dashed) -->
+  <path d="M 80 100 Q 180 50 320 80 Q 380 95 400 150" style="fill:none;stroke:#557799;stroke-width:1;stroke-dasharray:5,4"/>
+  <text x="80" y="92" style="font-family:Arial,sans-serif;font-size:8px;fill:#557799">Workspace</text>
+
+  <!-- === Right: Letter blocks === -->
+
+  <!-- Circular arc source of blocks -->
+  <text x="600" y="75" style="font-family:Arial,sans-serif;font-size:11px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">Source (Circular Arc)</text>
+  <path d="M 500 200 Q 520 100 600 85 Q 680 100 700 200" style="fill:none;stroke:#1a7a7a;stroke-width:1.5;stroke-dasharray:6,3"/>
+
+  <!-- Letter blocks on arc -->
+  <g>
+    <rect x="504" y="175" width="28" height="28" rx="4" style="fill:#2c3e50;stroke:#4ecdc4;stroke-width:1.5"/>
+    <text x="518" y="195" style="font-family:Arial,sans-serif;font-size:14px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">H</text>
+  </g>
+  <g>
+    <rect x="540" y="125" width="28" height="28" rx="4" style="fill:#2c3e50;stroke:#4ecdc4;stroke-width:1.5"/>
+    <text x="554" y="145" style="font-family:Arial,sans-serif;font-size:14px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">E</text>
+  </g>
+  <g>
+    <rect x="584" y="105" width="28" height="28" rx="4" style="fill:#2c3e50;stroke:#4ecdc4;stroke-width:1.5"/>
+    <text x="598" y="125" style="font-family:Arial,sans-serif;font-size:14px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">L</text>
+  </g>
+  <g>
+    <rect x="628" y="112" width="28" height="28" rx="4" style="fill:#2c3e50;stroke:#4ecdc4;stroke-width:1.5"/>
+    <text x="642" y="132" style="font-family:Arial,sans-serif;font-size:14px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">L</text>
+  </g>
+  <g>
+    <rect x="668" y="145" width="28" height="28" rx="4" style="fill:#2c3e50;stroke:#4ecdc4;stroke-width:1.5"/>
+    <text x="682" y="165" style="font-family:Arial,sans-serif;font-size:14px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">O</text>
+  </g>
+
+  <!-- Pick arrow -->
+  <path d="M 335 110 Q 400 80 510 185" style="fill:none;stroke:#f1c40f;stroke-width:1.5;stroke-dasharray:5,3" marker-end="url(#arrRy)"/>
+  <text x="405" y="105" style="font-family:Arial,sans-serif;font-size:9px;fill:#f1c40f;text-anchor:middle">PICK</text>
+
+  <!-- Target line (placement area) -->
+  <text x="600" y="255" style="font-family:Arial,sans-serif;font-size:11px;fill:#f1c40f;text-anchor:middle;font-weight:bold">Target Line (Placement)</text>
+  <line x1="470" y1="300" x2="740" y2="300" style="stroke:#557799;stroke-width:1;stroke-dasharray:4,3"/>
+
+  <!-- Placed blocks -->
+  <g>
+    <rect x="478" y="275" width="32" height="32" rx="5" style="fill:#1a4a2a;stroke:#2ecc71;stroke-width:1.5"/>
+    <text x="494" y="297" style="font-family:Arial,sans-serif;font-size:16px;fill:#2ecc71;text-anchor:middle;font-weight:bold">H</text>
+  </g>
+  <g>
+    <rect x="518" y="275" width="32" height="32" rx="5" style="fill:#1a4a2a;stroke:#2ecc71;stroke-width:1.5"/>
+    <text x="534" y="297" style="font-family:Arial,sans-serif;font-size:16px;fill:#2ecc71;text-anchor:middle;font-weight:bold">E</text>
+  </g>
+  <g>
+    <rect x="558" y="275" width="32" height="32" rx="5" style="fill:#1a4a2a;stroke:#2ecc71;stroke-width:1.5"/>
+    <text x="574" y="297" style="font-family:Arial,sans-serif;font-size:16px;fill:#2ecc71;text-anchor:middle;font-weight:bold">L</text>
+  </g>
+  <!-- Block being placed (animated feel) -->
+  <g style="opacity:0.6">
+    <rect x="598" y="275" width="32" height="32" rx="5" style="fill:#1a4a2a;stroke:#f1c40f;stroke-width:1.5;stroke-dasharray:4,2"/>
+    <text x="614" y="297" style="font-family:Arial,sans-serif;font-size:16px;fill:#f1c40f;text-anchor:middle;font-weight:bold">L</text>
+  </g>
+
+  <!-- Place arrow -->
+  <path d="M 340 120 Q 450 220 600 275" style="fill:none;stroke:#2ecc71;stroke-width:1.5;stroke-dasharray:5,3" marker-end="url(#arrRg)"/>
+  <text x="470" y="230" style="font-family:Arial,sans-serif;font-size:9px;fill:#2ecc71;text-anchor:middle">PLACE</text>
+
+  <!-- DH Parameters box -->
+  <rect x="470" y="330" width="300" height="55" rx="6" style="fill:#0d2137;stroke:#1a7a7a;stroke-width:1"/>
+  <text x="620" y="350" style="font-family:Arial,sans-serif;font-size:10px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">DH Parameters (5 joints)</text>
+  <text x="620" y="370" style="font-family:Arial,sans-serif;font-size:9px;fill:#aaa;text-anchor:middle">Forward kinematics: T = A1 * A2 * A3 * A4 * A5</text>
+  <text x="620" y="382" style="font-family:Arial,sans-serif;font-size:8px;fill:#778899;text-anchor:middle">Inverse kinematics for pick-and-place trajectory planning</text>
+
+  <!-- Legend -->
+  <line x1="50" y1="380" x2="62" y2="380" style="stroke:#e74c3c;stroke-width:1.5"/>
+  <text x="68" y="384" style="font-family:Arial,sans-serif;font-size:8px;fill:#e74c3c">z-axis</text>
+  <line x1="110" y1="380" x2="122" y2="380" style="stroke:#2ecc71;stroke-width:1.5"/>
+  <text x="128" y="384" style="font-family:Arial,sans-serif;font-size:8px;fill:#2ecc71">x-axis</text>
+  <circle cx="180" cy="380" r="5" style="fill:url(#jointGrad);stroke:#4ecdc4;stroke-width:1"/>
+  <text x="192" y="384" style="font-family:Arial,sans-serif;font-size:8px;fill:#4ecdc4">Joint</text>
+</svg>

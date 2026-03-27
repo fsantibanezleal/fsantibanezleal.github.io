@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#112240;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="laserGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:0.6"/>
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a7a7a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d4f4f;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2980b9;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1a5276;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrowTeal" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" style="fill:#4ecdc4"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" style="fill:#e74c3c"/>
+    </marker>
+    <marker id="arrowYellow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" style="fill:#f1c40f"/>
+    </marker>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgGrad)"/>
+  <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1a7a7a" stroke-width="2" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="35" style="font-family:Arial,sans-serif;font-size:16px;fill:#4ecdc4;text-anchor:middle;font-weight:bold;letter-spacing:1px">HOLOGRAPHIC OPTICAL TWEEZERS SYSTEM</text>
+
+  <!-- Laser source -->
+  <rect x="30" y="140" width="90" height="60" rx="8" style="fill:url(#boxGrad);stroke:#4ecdc4;stroke-width:1.5"/>
+  <text x="75" y="167" style="font-family:Arial,sans-serif;font-size:11px;fill:#e0e0e0;text-anchor:middle;font-weight:bold">LASER</text>
+  <text x="75" y="182" style="font-family:Arial,sans-serif;font-size:9px;fill:#aaa;text-anchor:middle">532 nm</text>
+
+  <!-- Laser beam to SLM -->
+  <line x1="120" y1="170" x2="168" y2="170" style="stroke:#e74c3c;stroke-width:3;opacity:0.8" filter="url(#glow)"/>
+  <line x1="120" y1="170" x2="160" y2="170" style="stroke:url(#laserGrad);stroke-width:2" marker-end="url(#arrowRed)"/>
+
+  <!-- SLM -->
+  <rect x="170" y="130" width="100" height="80" rx="8" style="fill:url(#boxGrad2);stroke:#4ecdc4;stroke-width:1.5"/>
+  <text x="220" y="160" style="font-family:Arial,sans-serif;font-size:11px;fill:#e0e0e0;text-anchor:middle;font-weight:bold">SLM</text>
+  <text x="220" y="175" style="font-family:Arial,sans-serif;font-size:8px;fill:#aaa;text-anchor:middle">Spatial Light</text>
+  <text x="220" y="186" style="font-family:Arial,sans-serif;font-size:8px;fill:#aaa;text-anchor:middle">Modulator</text>
+  <!-- SLM pixel pattern -->
+  <g style="opacity:0.4">
+    <rect x="185" y="192" width="6" height="6" style="fill:#4ecdc4"/><rect x="193" y="192" width="6" height="6" style="fill:#2980b9"/>
+    <rect x="201" y="192" width="6" height="6" style="fill:#4ecdc4"/><rect x="209" y="192" width="6" height="6" style="fill:#1a7a7a"/>
+    <rect x="217" y="192" width="6" height="6" style="fill:#2980b9"/><rect x="225" y="192" width="6" height="6" style="fill:#4ecdc4"/>
+    <rect x="233" y="192" width="6" height="6" style="fill:#1a7a7a"/><rect x="241" y="192" width="6" height="6" style="fill:#2980b9"/>
+  </g>
+
+  <!-- Beam SLM to Phase Mask -->
+  <line x1="270" y1="170" x2="318" y2="170" style="stroke:#e74c3c;stroke-width:2;opacity:0.7" marker-end="url(#arrowRed)"/>
+
+  <!-- Phase Mask -->
+  <rect x="320" y="130" width="100" height="80" rx="8" style="fill:url(#boxGrad);stroke:#4ecdc4;stroke-width:1.5"/>
+  <text x="370" y="158" style="font-family:Arial,sans-serif;font-size:11px;fill:#e0e0e0;text-anchor:middle;font-weight:bold">PHASE</text>
+  <text x="370" y="172" style="font-family:Arial,sans-serif;font-size:11px;fill:#e0e0e0;text-anchor:middle;font-weight:bold">MASK</text>
+  <text x="370" y="195" style="font-family:Arial,sans-serif;font-size:8px;fill:#aaa;text-anchor:middle">Hologram</text>
+
+  <!-- Beam Phase Mask to Objective -->
+  <line x1="420" y1="170" x2="468" y2="170" style="stroke:#e74c3c;stroke-width:2;opacity:0.7" marker-end="url(#arrowRed)"/>
+
+  <!-- Microscope Objective -->
+  <rect x="470" y="130" width="100" height="80" rx="8" style="fill:url(#boxGrad2);stroke:#4ecdc4;stroke-width:1.5"/>
+  <text x="520" y="158" style="font-family:Arial,sans-serif;font-size:11px;fill:#e0e0e0;text-anchor:middle;font-weight:bold">MICROSCOPE</text>
+  <text x="520" y="172" style="font-family:Arial,sans-serif;font-size:11px;fill:#e0e0e0;text-anchor:middle;font-weight:bold">OBJECTIVE</text>
+  <text x="520" y="195" style="font-family:Arial,sans-serif;font-size:8px;fill:#aaa;text-anchor:middle">High NA</text>
+
+  <!-- Beam to sample - diverging -->
+  <line x1="570" y1="160" x2="620" y2="145" style="stroke:#e74c3c;stroke-width:1.5;opacity:0.5"/>
+  <line x1="570" y1="170" x2="620" y2="170" style="stroke:#e74c3c;stroke-width:1.5;opacity:0.7"/>
+  <line x1="570" y1="180" x2="620" y2="195" style="stroke:#e74c3c;stroke-width:1.5;opacity:0.5"/>
+
+  <!-- Sample Plane -->
+  <rect x="620" y="115" width="150" height="110" rx="10" style="fill:#0d2137;stroke:#4ecdc4;stroke-width:1.5;stroke-dasharray:4,3"/>
+  <text x="695" y="135" style="font-family:Arial,sans-serif;font-size:10px;fill:#4ecdc4;text-anchor:middle;font-weight:bold">SAMPLE PLANE</text>
+
+  <!-- Trapped particles -->
+  <circle cx="660" cy="170" r="8" style="fill:#f1c40f;opacity:0.8" filter="url(#glow)"/>
+  <circle cx="695" cy="185" r="6" style="fill:#e67e22;opacity:0.8" filter="url(#glow)"/>
+  <circle cx="730" cy="160" r="7" style="fill:#f1c40f;opacity:0.8" filter="url(#glow)"/>
+  <circle cx="700" cy="155" r="5" style="fill:#e67e22;opacity:0.7" filter="url(#glow)"/>
+  <!-- Trap cones -->
+  <line x1="660" y1="170" x2="650" y2="145" style="stroke:#ff6b6b;stroke-width:0.8;opacity:0.4"/>
+  <line x1="660" y1="170" x2="670" y2="145" style="stroke:#ff6b6b;stroke-width:0.8;opacity:0.4"/>
+  <line x1="730" y1="160" x2="720" y2="145" style="stroke:#ff6b6b;stroke-width:0.8;opacity:0.4"/>
+  <line x1="730" y1="160" x2="740" y2="145" style="stroke:#ff6b6b;stroke-width:0.8;opacity:0.4"/>
+  <text x="695" y="215" style="font-family:Arial,sans-serif;font-size:8px;fill:#aaa;text-anchor:middle">Trapped particles</text>
+
+  <!-- GS Algorithm feedback loop -->
+  <rect x="220" y="280" width="200" height="80" rx="10" style="fill:#1a1a3e;stroke:#f1c40f;stroke-width:1.5"/>
+  <text x="320" y="305" style="font-family:Arial,sans-serif;font-size:12px;fill:#f1c40f;text-anchor:middle;font-weight:bold">Gerchberg-Saxton</text>
+  <text x="320" y="322" style="font-family:Arial,sans-serif;font-size:12px;fill:#f1c40f;text-anchor:middle;font-weight:bold">Algorithm</text>
+  <text x="320" y="348" style="font-family:Arial,sans-serif;font-size:9px;fill:#aaa;text-anchor:middle">Iterative phase retrieval</text>
+
+  <!-- GS loop arrows -->
+  <!-- Up from GS to Phase Mask -->
+  <path d="M 320 280 L 320 245 L 370 245 L 370 215" style="fill:none;stroke:#f1c40f;stroke-width:1.5" marker-end="url(#arrowYellow)"/>
+  <text x="360" y="260" style="font-family:Arial,sans-serif;font-size:8px;fill:#f1c40f;text-anchor:end">Phase update</text>
+
+  <!-- Down from SLM to GS -->
+  <path d="M 220 215 L 220 245 L 270 245 L 270 280" style="fill:none;stroke:#f1c40f;stroke-width:1.5" marker-end="url(#arrowYellow)"/>
+  <text x="230" y="260" style="font-family:Arial,sans-serif;font-size:8px;fill:#f1c40f">Target pattern</text>
+
+  <!-- Iteration loop symbol -->
+  <path d="M 450 320 Q 480 320 480 300 Q 480 280 460 280" style="fill:none;stroke:#f1c40f;stroke-width:1.2" marker-end="url(#arrowYellow)"/>
+  <text x="500" y="305" style="font-family:Arial,sans-serif;font-size:8px;fill:#aaa">Iterate until</text>
+  <text x="500" y="316" style="font-family:Arial,sans-serif;font-size:8px;fill:#aaa">convergence</text>
+
+  <!-- Legend dots -->
+  <circle cx="50" y="370" r="4" style="fill:#e74c3c"/>
+  <text x="60" y="374" style="font-family:Arial,sans-serif;font-size:9px;fill:#aaa">Laser beam path</text>
+  <circle cx="160" y="370" r="4" style="fill:#f1c40f"/>
+  <text x="170" y="374" style="font-family:Arial,sans-serif;font-size:9px;fill:#aaa">GS feedback loop</text>
+  <circle cx="290" y="370" r="4" style="fill:#f1c40f;opacity:0.8"/>
+  <text x="300" y="374" style="font-family:Arial,sans-serif;font-size:9px;fill:#aaa">Trapped particles</text>
+</svg>

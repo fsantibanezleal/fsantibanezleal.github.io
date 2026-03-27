@@ -1,6 +1,6 @@
 ---
-title: ' Sampling Cements ' 
-date: 2021-05-13-01
+title: 'Sampling Cements'
+date: 2021-05-13
 permalink: /rollings/2021/05/Sampling-Cements/
 tags:
   - Samples
@@ -9,31 +9,30 @@ tags:
   - Hyperspectral Imaging
 ---
 
-Starting the characterization of our industrial partner's cement samples.
+Starting the characterization of our industrial partner's cement samples — the first step in building a spectral database for material classification.
 
-The Samples
+The samples
 ======
 
-Thirty samples of one kilogram each are available. The samples come in sacks, and it took me a while to find the information to be able to identify each of the samples.
+Thirty samples of one kilogram each arrived in sacks. It took me a while to decode the labeling and identify each one properly.
 
-Actually each 10 kilograms correspond to the same batch of material. So we will have to be careful when relating the laboratory tests that were previously performed on the data
+Every 10 kilograms belong to the same batch of material, so we need to be careful when relating these new spectral measurements to the laboratory tests previously performed on the data.
 
-Bags organization
+Bag organization
 ------
 
 ![img](/files/personal-blog/2021-05-13-01/01.jpg)
 ![img](/files/personal-blog/2021-05-13-01/02.jpg)
 ![img](/files/personal-blog/2021-05-13-01/03.jpg)
 
-Cement Bags
+Preparing the containers
 ------
 
-Samples were placed in large containers, and in each batch about 100 grams of additional material was placed on top of the container to characterize as much material as possible.
+Samples were placed in large containers, with about 100 grams of additional material spread on top of each container to maximize the surface area available for spectral acquisition.
 
 ![img](/files/personal-blog/2021-05-13-01/04.jpg)
 ![img](/files/personal-blog/2021-05-13-01/05.jpg)
 ![img](/files/personal-blog/2021-05-13-01/06.jpg)
-
 
 Acquisition
 ------
@@ -44,27 +43,17 @@ Acquisition
 ![img](/files/personal-blog/2021-05-13-01/10.jpg)
 ![img](/files/personal-blog/2021-05-13-01/11.jpg)
 
-
-
-Finally, I acquired 7 images for the samples. I think we acquired a lot of hyperspectral pixel for the amount of material.
-
-The RAW database is close to 200 GB.
+In total, I acquired 7 hyperspectral images across the samples. That is a *lot* of spectral pixels for this amount of material — the RAW database is close to 200 GB.
 
 <iframe src="https://www.youtube.com/embed/0ni4GjJX5Zw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
 <iframe src="https://www.youtube.com/embed/zdxQQHQ4gO0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-
-
-
-Offtopic data of the day
+Off-topic find of the day
 ------
 
-I found an article about altered visual encoding capacity in individuals with autism spectrum disroder. [PLOS Article](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001215)
+I came across an article about altered visual encoding capacity in individuals with autism spectrum disorder. [PLOS Biology Article](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001215)
 
-The articule state some conections with cramer rao lower bound and the fisher information 
+The article draws connections with the Cramer-Rao lower bound and Fisher information — a nice bridge between neuroscience and the kind of estimation theory I work with daily.
 
 ![img](/files/personal-blog/2021-05-13-01/21.jpg)
-
