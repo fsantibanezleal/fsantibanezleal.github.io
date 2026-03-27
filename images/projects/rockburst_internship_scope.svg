@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="350" viewBox="0 0 800 350">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#0d1b2a"/>
+      <stop offset="100%" style="stop-color:#1b2d45"/>
+    </linearGradient>
+    <linearGradient id="phaseGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#142840"/>
+      <stop offset="100%" style="stop-color:#0e1e32"/>
+    </linearGradient>
+    <linearGradient id="focusBGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" style="stop-color:#0a4d68"/>
+      <stop offset="100%" style="stop-color:#063547"/>
+    </linearGradient>
+    <linearGradient id="focusEGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" style="stop-color:#5c3d1a"/>
+      <stop offset="100%" style="stop-color:#3d2a0f"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="350" fill="url(#bg)"/>
+  <!-- Title -->
+  <text x="400" y="28" style="font-family:Arial,sans-serif;font-size:15px;font-weight:bold;fill:#e0e0e0;text-anchor:middle;">Professional Internship Scope &mdash; 9-Week Plan</text>
+
+  <!-- Timeline axis -->
+  <line x1="50" y1="55" x2="750" y2="55" style="stroke:#445566;stroke-width:1.5;"/>
+  <!-- Week markers -->
+  <line x1="50" y1="50" x2="50" y2="60" style="stroke:#667788;stroke-width:1;"/>
+  <text x="50" y="47" style="font-family:Arial,sans-serif;font-size:8px;fill:#8899aa;text-anchor:middle;">W1</text>
+  <line x1="137" y1="50" x2="137" y2="60" style="stroke:#667788;stroke-width:1;"/>
+  <text x="137" y="47" style="font-family:Arial,sans-serif;font-size:8px;fill:#8899aa;text-anchor:middle;">W2</text>
+  <line x1="225" y1="50" x2="225" y2="60" style="stroke:#667788;stroke-width:1;"/>
+  <text x="225" y="47" style="font-family:Arial,sans-serif;font-size:8px;fill:#8899aa;text-anchor:middle;">W3</text>
+  <line x1="312" y1="50" x2="312" y2="60" style="stroke:#667788;stroke-width:1;"/>
+  <text x="312" y="47" style="font-family:Arial,sans-serif;font-size:8px;fill:#8899aa;text-anchor:middle;">W4</text>
+  <line x1="400" y1="50" x2="400" y2="60" style="stroke:#667788;stroke-width:1;"/>
+  <text x="400" y="47" style="font-family:Arial,sans-serif;font-size:8px;fill:#8899aa;text-anchor:middle;">W5</text>
+  <line x1="487" y1="50" x2="487" y2="60" style="stroke:#667788;stroke-width:1;"/>
+  <text x="487" y="47" style="font-family:Arial,sans-serif;font-size:8px;fill:#8899aa;text-anchor:middle;">W6</text>
+  <line x1="575" y1="50" x2="575" y2="60" style="stroke:#667788;stroke-width:1;"/>
+  <text x="575" y="47" style="font-family:Arial,sans-serif;font-size:8px;fill:#8899aa;text-anchor:middle;">W7</text>
+  <line x1="662" y1="50" x2="662" y2="60" style="stroke:#667788;stroke-width:1;"/>
+  <text x="662" y="47" style="font-family:Arial,sans-serif;font-size:8px;fill:#8899aa;text-anchor:middle;">W8</text>
+  <line x1="750" y1="50" x2="750" y2="60" style="stroke:#667788;stroke-width:1;"/>
+  <text x="750" y="47" style="font-family:Arial,sans-serif;font-size:8px;fill:#8899aa;text-anchor:middle;">W9</text>
+
+  <!-- === Phase bars (Gantt-style) === -->
+  <!-- Phase 1: Context & Baseline (W1) -->
+  <rect x="50" y="68" width="87" height="32" rx="4" style="fill:url(#phaseGrad);stroke:#5dade2;stroke-width:1.2;"/>
+  <text x="94" y="82" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#8ecae6;text-anchor:middle;">Context &amp;</text>
+  <text x="94" y="93" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#8ecae6;text-anchor:middle;">Baseline</text>
+
+  <!-- Phase 2: Data Contracts & Observability (W2-3) -->
+  <rect x="137" y="68" width="175" height="32" rx="4" style="fill:url(#phaseGrad);stroke:#5dade2;stroke-width:1.2;"/>
+  <text x="225" y="82" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#8ecae6;text-anchor:middle;">Data Contracts &amp;</text>
+  <text x="225" y="93" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#8ecae6;text-anchor:middle;">Observability</text>
+
+  <!-- Phase 3: Dimensioning & Alternatives (W4-5) -->
+  <rect x="312" y="68" width="175" height="32" rx="4" style="fill:url(#phaseGrad);stroke:#5dade2;stroke-width:1.2;"/>
+  <text x="400" y="82" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#8ecae6;text-anchor:middle;">Dimensioning &amp;</text>
+  <text x="400" y="93" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#8ecae6;text-anchor:middle;">Alternatives</text>
+
+  <!-- Phase 4: Artifact Implementation (W6-7) -->
+  <rect x="487" y="68" width="175" height="32" rx="4" style="fill:url(#phaseGrad);stroke:#5dade2;stroke-width:1.2;"/>
+  <text x="575" y="82" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#8ecae6;text-anchor:middle;">Artifact</text>
+  <text x="575" y="93" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#8ecae6;text-anchor:middle;">Implementation</text>
+
+  <!-- Phase 5: Closure & Handover (W8-9) -->
+  <rect x="662" y="68" width="88" height="32" rx="4" style="fill:url(#phaseGrad);stroke:#5dade2;stroke-width:1.2;"/>
+  <text x="706" y="82" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#8ecae6;text-anchor:middle;">Closure &amp;</text>
+  <text x="706" y="93" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#8ecae6;text-anchor:middle;">Handover</text>
+
+  <!-- === FOCUS B TRACK (Main) === -->
+  <text x="40" y="130" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#2ec4b6;text-anchor:end;">Focus B</text>
+  <text x="40" y="142" style="font-family:Arial,sans-serif;font-size:8px;fill:#5dada0;text-anchor:end;">(Main)</text>
+  <!-- Focus B bar spanning W2-W7 -->
+  <rect x="137" y="120" width="525" height="30" rx="5" style="fill:url(#focusBGrad);stroke:#2ec4b6;stroke-width:1.4;"/>
+  <text x="400" y="139" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#80edd8;text-anchor:middle;">Dimensioning: Cell Grid, Magnitude Threshold, Time Windows, Distance Radius</text>
+
+  <!-- Focus B deliverables -->
+  <rect x="137" y="158" width="160" height="44" rx="4" style="fill:#0a3040;stroke:#2ec4b6;stroke-width:0.8;"/>
+  <text x="217" y="173" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#6dd8c4;text-anchor:middle;">Sensitivity Analysis</text>
+  <text x="217" y="186" style="font-family:Arial,sans-serif;font-size:8px;fill:#5aaa9e;text-anchor:middle;">M_thr / r / cell-size</text>
+  <text x="217" y="196" style="font-family:Arial,sans-serif;font-size:8px;fill:#5aaa9e;text-anchor:middle;">parameter sweeps</text>
+
+  <rect x="317" y="158" width="160" height="44" rx="4" style="fill:#0a3040;stroke:#2ec4b6;stroke-width:0.8;"/>
+  <text x="397" y="173" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#6dd8c4;text-anchor:middle;">Alternative Models</text>
+  <text x="397" y="186" style="font-family:Arial,sans-serif;font-size:8px;fill:#5aaa9e;text-anchor:middle;">LightGBM, CatBoost,</text>
+  <text x="397" y="196" style="font-family:Arial,sans-serif;font-size:8px;fill:#5aaa9e;text-anchor:middle;">Neural Network baselines</text>
+
+  <rect x="497" y="158" width="165" height="44" rx="4" style="fill:#0a3040;stroke:#2ec4b6;stroke-width:0.8;"/>
+  <text x="580" y="173" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#6dd8c4;text-anchor:middle;">Backtesting Framework</text>
+  <text x="580" y="186" style="font-family:Arial,sans-serif;font-size:8px;fill:#5aaa9e;text-anchor:middle;">Walk-forward validation</text>
+  <text x="580" y="196" style="font-family:Arial,sans-serif;font-size:8px;fill:#5aaa9e;text-anchor:middle;">across Sector A / Sector B</text>
+
+  <!-- === FOCUS E TRACK (Secondary) === -->
+  <text x="40" y="230" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#e8a838;text-anchor:end;">Focus E</text>
+  <text x="40" y="242" style="font-family:Arial,sans-serif;font-size:8px;fill:#c89848;text-anchor:end;">(Secondary)</text>
+  <!-- Focus E bar spanning W4-W8 -->
+  <rect x="312" y="220" width="350" height="30" rx="5" style="fill:url(#focusEGrad);stroke:#e8a838;stroke-width:1.4;"/>
+  <text x="487" y="239" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#f0c878;text-anchor:middle;">Engineering Artifacts: Quality Gates, Reports, Wrappers</text>
+
+  <!-- Focus E deliverables -->
+  <rect x="312" y="258" width="150" height="44" rx="4" style="fill:#2d200a;stroke:#e8a838;stroke-width:0.8;"/>
+  <text x="387" y="273" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#f0c878;text-anchor:middle;">Data Quality Gate</text>
+  <text x="387" y="286" style="font-family:Arial,sans-serif;font-size:8px;fill:#c8a060;text-anchor:middle;">Freshness / completeness</text>
+  <text x="387" y="296" style="font-family:Arial,sans-serif;font-size:8px;fill:#c8a060;text-anchor:middle;">checks before inference</text>
+
+  <rect x="482" y="258" width="150" height="44" rx="4" style="fill:#2d200a;stroke:#e8a838;stroke-width:0.8;"/>
+  <text x="557" y="273" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#f0c878;text-anchor:middle;">Weekly Report</text>
+  <text x="557" y="286" style="font-family:Arial,sans-serif;font-size:8px;fill:#c8a060;text-anchor:middle;">Automated HTML/PDF</text>
+  <text x="557" y="296" style="font-family:Arial,sans-serif;font-size:8px;fill:#c8a060;text-anchor:middle;">generation pipeline</text>
+
+  <rect x="652" y="258" width="130" height="44" rx="4" style="fill:#2d200a;stroke:#e8a838;stroke-width:0.8;"/>
+  <text x="717" y="273" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#f0c878;text-anchor:middle;">Param. Wrapper</text>
+  <text x="717" y="286" style="font-family:Arial,sans-serif;font-size:8px;fill:#c8a060;text-anchor:middle;">CLI / config-driven</text>
+  <text x="717" y="296" style="font-family:Arial,sans-serif;font-size:8px;fill:#c8a060;text-anchor:middle;">execution interface</text>
+
+  <!-- Legend -->
+  <rect x="50" y="320" width="12" height="12" rx="2" style="fill:#2ec4b6;opacity:0.7;"/>
+  <text x="68" y="330" style="font-family:Arial,sans-serif;font-size:9px;fill:#8899aa;">Focus B (Main): Dimensioning &amp; Model Alternatives</text>
+  <rect x="380" y="320" width="12" height="12" rx="2" style="fill:#e8a838;opacity:0.7;"/>
+  <text x="398" y="330" style="font-family:Arial,sans-serif;font-size:9px;fill:#8899aa;">Focus E (Secondary): Engineering Artifacts</text>
+  <rect x="650" y="320" width="12" height="12" rx="2" style="fill:#5dade2;opacity:0.7;"/>
+  <text x="668" y="330" style="font-family:Arial,sans-serif;font-size:9px;fill:#8899aa;">Timeline Phases</text>
+</svg>
