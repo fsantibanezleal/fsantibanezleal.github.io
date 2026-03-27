@@ -29,8 +29,9 @@ This is not just a matrix transpose. The transport matrix encodes how every proj
 
 ## Technical stack
 
-- **Backend**: Python with NumPy/SciPy for ray-casting and linear algebra
+- **Backend**: Python with NumPy/SciPy for ray-casting, BRDF simulation, and linear algebra
 - **Frontend**: Dash (Plotly + Bootstrap) for interactive visualization
+- **BRDF models**: Lambertian reflectance with configurable material properties for realistic light transport
 - **Patterns**: Compressed sensing connections through Bernoulli measurement matrices
 
 [View on GitHub](https://github.com/fsantibanezleal/FASL_Coding_DualFotography)
