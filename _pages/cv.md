@@ -17,7 +17,7 @@ Education
 * Ph.D. in Electrical Engineering, Universidad de Chile, 2013-2019
 * Postgraduate Diploma in Medical Informatics, Universidad de Chile & University of Heidelberg, 2011
 * B.Sc. in Electronic Civil Engineering, Universidad de Concepción, 2003-2009
-* Industrial Electronics Technician, CEAT Liceo Mauricio Hochschild, 1999-2002
+* Industrial Electronics Technician, CEAT Liceo Mauricio Hochschild, 1998-2002
 
 Work experience
 ======
