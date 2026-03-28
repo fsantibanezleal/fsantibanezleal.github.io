@@ -25,6 +25,17 @@ In large-scale copper mining, a 1% recovery improvement or a 100 TPH throughput 
 
 ![Pipeline Architecture](/images/projects/mining_optimization.svg)
 
+## Key Performance Indicators — Process impact
+
+The platform embeds analytics into the operational cadence, shifting decision-making from experience-based to data-driven with measurable production impact.
+
+| KPI | Baseline | With system | Impact |
+|-----|----------|-------------|--------|
+| Decision basis | Operator experience, shift-to-shift variability | Data-driven recommendations every 4 hours | Consistent, auditable operational decisions |
+| Optimization cycle | Manual setpoint adjustments | Automated scenario simulation with confidence intervals | Faster response to ore variability |
+| Value realization | Unknown improvement potential | +100 TPH throughput, measurable recovery gains | Quantifiable annual production value |
+| Multi-division scalability | Site-specific solutions | Configurable shared platform across divisions | Reduced per-site implementation cost |
+
 ## The challenge
 
 Large-scale mining operations involve complex, interconnected processes where small improvements in throughput or recovery translate into significant economic impact. SAG mills, flotation banks, and thickeners each have dozens of controllable variables and hundreds of sensor readings, creating a high-dimensional optimization problem that evolves continuously with ore characteristics.

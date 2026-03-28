@@ -25,6 +25,17 @@ Underground mining safety decisions traditionally depend on individual expert ju
 
 ![Geotechnical Risk](/images/projects/geotechnical_risk.svg)
 
+## Key Performance Indicators — Process impact
+
+The system shifts geotechnical risk management from reactive expert judgment to proactive data-informed planning, with quantifiable detection capabilities.
+
+| KPI | Baseline (manual) | With system | Impact |
+|-----|-------------------|-------------|--------|
+| Detection capability | Expert-dependent, inconsistent | >80% detection of critical geophysical event patterns | Systematic, auditable risk assessment |
+| Short-term decision support | Post-event response | Pre-event area isolation timing evaluation | Proactive safety management |
+| Medium-term planning | Not systematically addressed | Production plan adjustment for projected gradual phenomena (pillar collapse) | Risk-informed mine planning |
+| Assessment cadence | Irregular, event-triggered | Weekly systematic evaluation | Consistent operational rhythm |
+
 ## The challenge
 
 Underground mining operations face inherent geotechnical risks. Rock mass under stress can fail suddenly, creating hazards for equipment and personnel. Traditional assessment relies on manual geological surveys and rule-of-thumb thresholds applied to seismic monitoring data. These approaches miss complex spatial and temporal patterns that precede major events.
