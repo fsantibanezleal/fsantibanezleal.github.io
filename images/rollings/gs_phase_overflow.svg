@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="760" height="300">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#0d1b2a"/>
+      <stop offset="100%" style="stop-color:#1b2d45"/>
+    </linearGradient>
+  </defs>
+  <rect width="760" height="300" fill="url(#bg3)"/>
+  <!-- Title -->
+  <text x="380" y="22" style="font-family:Arial,sans-serif;font-size:13px;fill:#5bc0be;text-anchor:middle;font-weight:bold;">Gerchberg-Saxton Dimensionless Reformulation</text>
+  <!-- LEFT: PROBLEM section -->
+  <rect x="15" y="32" width="210" height="150" rx="6" style="fill:#0f2236;stroke:#f4845f;stroke-width:1;"/>
+  <text x="120" y="48" style="font-family:Arial,sans-serif;font-size:11px;fill:#f4845f;text-anchor:middle;font-weight:bold;">PROBLEM</text>
+  <text x="120" y="62" style="font-family:Arial,sans-serif;font-size:9px;fill:#8899aa;text-anchor:middle;">SI phase magnitudes</text>
+  <!-- Bar chart showing huge phase values -->
+  <text x="35" y="82" style="font-family:Arial,sans-serif;font-size:8px;fill:#e0e0e0;">Phase (rad)</text>
+  <!-- Y-axis -->
+  <line x1="50" y1="88" x2="50" y2="155" style="stroke:#667788;stroke-width:0.8;"/>
+  <line x1="50" y1="155" x2="200" y2="155" style="stroke:#667788;stroke-width:0.8;"/>
+  <!-- Bars (representing massive phase values) -->
+  <rect x="62" y="90" width="18" height="65" rx="1" style="fill:#f4845f;opacity:0.8;"/>
+  <rect x="88" y="95" width="18" height="60" rx="1" style="fill:#f4845f;opacity:0.7;"/>
+  <rect x="114" y="92" width="18" height="63" rx="1" style="fill:#f4845f;opacity:0.8;"/>
+  <rect x="140" y="88" width="18" height="67" rx="1" style="fill:#f4845f;opacity:0.9;"/>
+  <rect x="166" y="93" width="18" height="62" rx="1" style="fill:#f4845f;opacity:0.75;"/>
+  <text x="120" y="168" style="font-family:Arial,sans-serif;font-size:8px;fill:#f4845f;text-anchor:middle;">~10&#x00B9;&#x2076; radians!</text>
+  <text x="120" y="178" style="font-family:Arial,sans-serif;font-size:8px;fill:#e0e0e0;text-anchor:middle;">mod 2&#x03C0; &#x2192; wrapping noise</text>
+  <!-- CENTER: SOLUTION section -->
+  <rect x="240" y="32" width="260" height="150" rx="6" style="fill:#0f2236;stroke:#5bc0be;stroke-width:1;"/>
+  <text x="370" y="48" style="font-family:Arial,sans-serif;font-size:11px;fill:#5bc0be;text-anchor:middle;font-weight:bold;">SOLUTION</text>
+  <text x="370" y="62" style="font-family:Arial,sans-serif;font-size:9px;fill:#8899aa;text-anchor:middle;">Dimensionless formulation</text>
+  <!-- Formula K_j -->
+  <text x="260" y="84" style="font-family:Arial,sans-serif;font-size:11px;fill:#e0e0e0;">K_j = &#x03B1;(u&#x00B7;x_j + v&#x00B7;y_j) &#x2212; &#x03B2;(u&#x00B2;+v&#x00B2;)z_j</text>
+  <!-- Alpha definition -->
+  <text x="260" y="106" style="font-family:Arial,sans-serif;font-size:10px;fill:#fca311;">&#x03B1; = (2&#x03C0;/&#x03BB;f)&#x00B7;&#x0394;p&#x00B2;&#x00B7;N &#x2248; &#x03C0;</text>
+  <!-- Beta definition -->
+  <text x="260" y="124" style="font-family:Arial,sans-serif;font-size:10px;fill:#fca311;">&#x03B2; = (&#x03C0;&#x03BB;/N&#x00B2;&#x0394;p&#x00B2;)&#x00B7;z</text>
+  <!-- Key insight -->
+  <rect x="254" y="134" width="235" height="22" rx="3" style="fill:#1a3a2a;stroke:#5bc0be;stroke-width:0.8;"/>
+  <text x="370" y="149" style="font-family:Arial,sans-serif;font-size:9px;fill:#5bc0be;text-anchor:middle;">All terms O(1) &#x2192; no floating-point overflow</text>
+  <!-- Super-Gaussian inset -->
+  <rect x="254" y="160" width="110" height="18" rx="3" style="fill:#162438;stroke:#2a4060;stroke-width:0.8;"/>
+  <text x="260" y="173" style="font-family:Arial,sans-serif;font-size:8px;fill:#8899aa;">Aperture: Super-Gauss n=8</text>
+  <!-- Small SG shape -->
+  <path d="M378,172 Q381,172 384,172 Q388,171 391,168 Q393,162 394,162 Q395,162 397,168 Q399,171 403,172 Q406,172 410,172" style="fill:none;stroke:#5bc0be;stroke-width:1;"/>
+  <text x="420" y="173" style="font-family:Arial,sans-serif;font-size:7px;fill:#667788;">smooth cutoff</text>
+  <!-- RIGHT: Convergence curve -->
+  <rect x="515" y="32" width="230" height="150" rx="6" style="fill:#0f2236;stroke:#2a4060;stroke-width:1;"/>
+  <text x="630" y="48" style="font-family:Arial,sans-serif;font-size:10px;fill:#fca311;text-anchor:middle;font-weight:bold;">GS Convergence</text>
+  <!-- Axes -->
+  <line x1="545" y1="60" x2="545" y2="155" style="stroke:#667788;stroke-width:0.8;"/>
+  <line x1="545" y1="155" x2="725" y2="155" style="stroke:#667788;stroke-width:0.8;"/>
+  <text x="535" y="66" style="font-family:Arial,sans-serif;font-size:7px;fill:#8899aa;text-anchor:end;">RMS</text>
+  <text x="725" y="167" style="font-family:Arial,sans-serif;font-size:7px;fill:#8899aa;text-anchor:end;">iterations</text>
+  <!-- Convergence curve (exponential decay) -->
+  <polyline points="548,65 558,75 568,84 578,91 588,97 598,102 608,106 618,109 628,111 638,113 648,114 658,115 668,115.5 678,115.8 688,116 698,116 708,116.1 718,116.1" style="fill:none;stroke:#5bc0be;stroke-width:2;"/>
+  <!-- Iteration markers -->
+  <text x="548" y="167" style="font-family:Arial,sans-serif;font-size:7px;fill:#667788;">0</text>
+  <text x="633" y="167" style="font-family:Arial,sans-serif;font-size:7px;fill:#667788;">25</text>
+  <text x="718" y="167" style="font-family:Arial,sans-serif;font-size:7px;fill:#667788;">50</text>
+  <!-- BOTTOM: Phase mask comparison -->
+  <rect x="15" y="192" width="730" height="95" rx="6" style="fill:#0f2236;stroke:#2a4060;stroke-width:1;"/>
+  <text x="380" y="210" style="font-family:Arial,sans-serif;font-size:10px;fill:#e0e0e0;text-anchor:middle;">Phase Mask Comparison</text>
+  <!-- SI phase mask (noisy) -->
+  <rect x="45" y="218" width="80" height="55" rx="3" style="fill:#1a1a2e;stroke:#f4845f;stroke-width:1;"/>
+  <text x="85" y="232" style="font-family:Arial,sans-serif;font-size:8px;fill:#f4845f;text-anchor:middle;">SI Phase</text>
+  <!-- Noise representation -->
+  <line x1="55" y1="242" x2="62" y2="248" style="stroke:#f4845f;stroke-width:0.5;opacity:0.6;"/>
+  <line x1="63" y1="240" x2="58" y2="250" style="stroke:#f4845f;stroke-width:0.5;opacity:0.5;"/>
+  <line x1="70" y1="245" x2="75" y2="238" style="stroke:#f4845f;stroke-width:0.5;opacity:0.7;"/>
+  <line x1="78" y1="250" x2="82" y2="240" style="stroke:#f4845f;stroke-width:0.5;opacity:0.4;"/>
+  <line x1="88" y1="238" x2="92" y2="252" style="stroke:#f4845f;stroke-width:0.5;opacity:0.6;"/>
+  <line x1="95" y1="248" x2="100" y2="240" style="stroke:#f4845f;stroke-width:0.5;opacity:0.5;"/>
+  <line x1="105" y1="242" x2="110" y2="255" style="stroke:#f4845f;stroke-width:0.5;opacity:0.7;"/>
+  <line x1="60" y1="255" x2="68" y2="260" style="stroke:#f4845f;stroke-width:0.5;opacity:0.5;"/>
+  <line x1="75" y1="258" x2="85" y2="262" style="stroke:#f4845f;stroke-width:0.5;opacity:0.4;"/>
+  <line x1="90" y1="260" x2="100" y2="256" style="stroke:#f4845f;stroke-width:0.5;opacity:0.6;"/>
+  <text x="85" y="280" style="font-family:Arial,sans-serif;font-size:7px;fill:#f4845f;text-anchor:middle;">chaotic / noise</text>
+  <!-- Arrow -->
+  <line x1="140" y1="248" x2="170" y2="248" style="stroke:#fca311;stroke-width:1.5;"/>
+  <polygon points="170,246 170,250 176,248" style="fill:#fca311;"/>
+  <!-- Dimensionless phase mask (clean rings) -->
+  <rect x="190" y="218" width="80" height="55" rx="3" style="fill:#1a1a2e;stroke:#5bc0be;stroke-width:1;"/>
+  <text x="230" y="232" style="font-family:Arial,sans-serif;font-size:8px;fill:#5bc0be;text-anchor:middle;">Dimensionless</text>
+  <!-- Concentric rings -->
+  <circle cx="230" cy="255" r="18" style="fill:none;stroke:#5bc0be;stroke-width:0.8;opacity:0.8;"/>
+  <circle cx="230" cy="255" r="13" style="fill:none;stroke:#5bc0be;stroke-width:0.8;opacity:0.6;"/>
+  <circle cx="230" cy="255" r="8" style="fill:none;stroke:#5bc0be;stroke-width:0.8;opacity:0.9;"/>
+  <circle cx="230" cy="255" r="3" style="fill:#5bc0be;opacity:0.5;"/>
+  <!-- Trap pattern dots -->
+  <circle cx="222" cy="248" r="1.5" style="fill:#fca311;"/>
+  <circle cx="238" cy="248" r="1.5" style="fill:#fca311;"/>
+  <circle cx="230" cy="242" r="1.5" style="fill:#fca311;"/>
+  <text x="230" y="280" style="font-family:Arial,sans-serif;font-size:7px;fill:#5bc0be;text-anchor:middle;">clean rings + traps</text>
+  <!-- Explanation text -->
+  <text x="320" y="240" style="font-family:Arial,sans-serif;font-size:9px;fill:#e0e0e0;">Key insight: rescaling phase by &#x03B1;,&#x03B2; keeps all</text>
+  <text x="320" y="254" style="font-family:Arial,sans-serif;font-size:9px;fill:#e0e0e0;">arithmetic in double-precision range, eliminating</text>
+  <text x="320" y="268" style="font-family:Arial,sans-serif;font-size:9px;fill:#e0e0e0;">catastrophic cancellation in mod 2&#x03C0; operations.</text>
+  <!-- Bottom accent -->
+  <rect x="0" y="294" width="760" height="6" rx="0" style="fill:#5bc0be;opacity:0.3;"/>
+</svg>
