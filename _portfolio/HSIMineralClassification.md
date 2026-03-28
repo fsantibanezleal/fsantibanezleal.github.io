@@ -25,6 +25,17 @@ Laboratory mineral analysis (XRD/XRF) takes days and requires sample preparation
 
 ![Pipeline](/images/projects/hsi_mineral_classification.svg)
 
+## Key Performance Indicators — Process impact
+
+Mineral characterization speed and accuracy directly affect process control feedback loops. The system transforms a laboratory bottleneck into a near-real-time capability.
+
+| KPI | Baseline (laboratory) | With HSI system | Impact |
+|-----|----------------------|-----------------|--------|
+| Characterization turnaround | Days (lab XRD/XRF) | Hours (conveyor samples), same-day (drone flights) | Enables tight process control feedback |
+| Estimation error vs lab reference | N/A (lab is ground truth) | 3-5% deviation | Maintains analytical confidence |
+| In-line capability | Not possible | Conveyor-mounted VNIR/SWIR scanning | Real-time ore routing decisions |
+| Drone-based field coverage | Manual sampling campaigns | Hyperspectral flights with same-day results | Spatial coverage orders of magnitude larger |
+
 ## The challenge
 
 Hyperspectral cameras capture hundreds of narrow spectral bands across the visible, near-infrared, and short-wave infrared ranges. Each pixel in the resulting raster encodes a spectral signature that can reveal the mineral composition of rock samples, drill core, or conveyor belt material. However, translating raw spectral data into reliable mineral maps requires careful calibration, robust models, and domain-aware constraints -- particularly the requirement that predicted mineral abundances at each pixel must sum to 100%.
