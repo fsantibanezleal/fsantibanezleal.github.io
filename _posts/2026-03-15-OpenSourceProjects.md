@@ -15,6 +15,10 @@ Dusting off the archives
 
 Over the past weeks, I have been revisiting code from across my academic career and preparing it for public release. The projects span over a decade of work, and each one carries its own story. The [Robotic Writer](https://github.com/fsantibanezleal/Udec_Robotic_Writer) is the oldest -- a robotic arm controller from 2004, built as a lab activity when I was a second-year undergraduate at UdeC. It was written in C++/CLI, and looking at that code now is like reading a letter from a younger self who was just discovering what programming could do. [CEFOP_DinHot](https://github.com/fsantibanezleal/CEFOP_DinHot) came from my first real research job at CEFOP around 2010, working on optical tweezers dynamics -- that was where I learned what it means to do science systematically, not just write code that works. [SCIAN_LEO_CPM](https://github.com/fsantibanezleal/SCIAN_LEO_CPM) and [SCIAN_EVL_SpherSIM](https://github.com/fsantibanezleal/SCIAN_EVL_SpherSIM) are from SCIAN-Lab, where I worked on biophysics simulations during what I consider the most formative years of my research career -- the rigor and intellectual ambition of that lab shaped how I approach problems to this day. And the [Dual Photography implementation](https://github.com/fsantibanezleal/FASL_Coding_DualFotography) was a personal exploration that connected computational optics to my growing interest in imaging science.
 
+![Biological context — zebrafish development](/images/rollings/cpm_biological_context.svg)
+
+![Haptic simulator frontend](/images/projects/screenshots/haptic_frontend.png)
+
 Each of these sat in private folders for years, some in formats that were becoming increasingly difficult to run. Modernizing them meant updating dependencies, adding documentation, and in several cases building simple web interfaces so that anyone can interact with the core ideas without wrestling with outdated toolchains.
 
 Why bother?
