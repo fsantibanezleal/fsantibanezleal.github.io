@@ -8,6 +8,21 @@ tags: [point-cloud, 3d-analysis, wear-forecasting, fastapi, nextjs, python]
 
 A **full-stack platform** for tracking and forecasting the wear of crusher liners in minerals processing operations, built from raw 3D laser scan data through to production deployment.
 
+## Business impact
+
+This platform replaced manual caliper measurements with automated 3D point cloud analysis, transforming liner wear assessment from imprecise periodic snapshots into continuous, data-driven forecasting. Maintenance scheduling shifted from fixed intervals to remaining-useful-life predictions — reducing both premature replacements and the risk of catastrophic failure. Dual deployment (desktop for remote mine sites, web for centralized management) ensured adoption across operational contexts.
+
+| Metric | Result |
+|--------|--------|
+| Measurement | 3D point cloud vs. manual calipers |
+| Prediction | Remaining useful life forecasting |
+| Deployment | Desktop (offline) + Web (centralized) |
+| Coverage | Concave and mantle wear profiles |
+
+## Strategic context
+
+Crusher liner replacement is one of the highest-cost maintenance activities in mineral processing — each change involves days of downtime and hundreds of thousands in parts and labor. Replacing liners too early wastes material; too late risks catastrophic failure that can shut down the entire crushing circuit. This system provides the quantitative basis to make that decision optimally, turning a high-stakes judgment call into a data-informed planning activity.
+
 ![Architecture](/images/projects/crusher_wear_system.svg)
 
 ## The challenge

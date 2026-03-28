@@ -8,6 +8,21 @@ tags: [machine-learning, mining, optimization, kedro, azure, mlops]
 
 An **end-to-end machine learning platform** for optimizing mineral processing operations — SAG milling, flotation, and thickening — deployed across multiple mining divisions and processing plants.
 
+## Business impact
+
+This platform delivered measurable operational gains at industrial scale: throughput uplift exceeding +100 TPH in SAG milling — translating to millions in additional annual revenue — alongside measurable copper recovery improvements across flotation circuits. Optimization recommendations run on a 4-hourly production cadence, embedded directly into the operational workflow across multiple mining divisions.
+
+| Metric | Result |
+|--------|--------|
+| Throughput | +100 TPH in SAG milling |
+| Recovery | Measurable improvement across flotation circuits |
+| Optimization cycle | Hourly tracking, 4-hour recommendation cadence |
+| Deployment | Multiple mining divisions |
+
+## Strategic context
+
+In large-scale copper mining, a 1% recovery improvement or a 100 TPH throughput gain translates to tens of millions USD annually. This platform moved operational decisions from experience-based to data-driven, embedding analytics into the daily operational cadence. The multi-division deployment required balancing standardized methodology with division-specific calibration — a technical and organizational challenge that defined the platform's architecture.
+
 ![Pipeline Architecture](/images/projects/mining_optimization.svg)
 
 ## The challenge
