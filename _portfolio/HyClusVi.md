@@ -5,19 +5,16 @@ excerpt: "A short Undergraduate Project for HSI Clustering Visualization<br/><im
 collection: portfolio
 ---
 
-This project explored the application of deep convolutional autoencoders and high-dimensional data visualization techniques to hyperspectral imagery from mining operations. The core challenge was dimensionality reduction -- mapping hundreds of spectral bands into compact latent representations that preserve discriminative structure for mineral characterization and sample provenance identification.
+Hyperspectral imaging produces data cubes with hundreds of spectral bands per pixel, creating a fundamental dimensionality reduction and visualization challenge: how do you compress this high-dimensional spectral information into compact representations that preserve meaningful structure for mineral identification and sample provenance discrimination? HyClusVi addresses this problem by combining deep autoencoders with nonlinear embedding techniques (t-SNE) to transform raw spectral data into interpretable low-dimensional visualizations, enabling clustering and classification of mineral samples from industrial comminution circuits.
 
+![Pipeline](/images/projects/hyclusvi_pipeline.svg)
 
 The Context
 ======
 
-In the first execution of the Data Science Project course (Data Science Project CC5214) of the Department of Computer Science, of the Faculty of Physical and Mathematical Sciences of the University of Chile, our laboratory proposed the project "Clusterization and Identification of mineral species from Hyperspectral images". 
+This project originated in the first edition of the Data Science Project course (CC5214) at the Department of Computer Science, Faculty of Physical and Mathematical Sciences, Universidad de Chile. Our laboratory proposed the project "Clusterization and Identification of mineral species from Hyperspectral images", and three students worked on the formulation, analysis, and evaluation of the system using real data: monthly composites from comminution feeders of three different productive sectors of a large mining company operating nationwide.
 
-It is in this context 3 students worked on the formulation, analysis and evaluation of this project for processing real data of monthly composites from comminution feeders of 3 different productive sectors of a large mining company in active work nationwide.
-
-In this project, the students were able to carry out the task of researching and implementing deep machine learning systems in the analysis of high-dimensional hyperspectral images. This work has made it possible to complement scientific and visualization tools that we are currently promoting and disseminating in the national mining industry.
-
-From the results obtained by the team, the techniques for displaying clustering results using Big Data stand out, which have allowed us to improve our results reporting system.
+The students researched and implemented deep learning systems for the analysis of high-dimensional hyperspectral images. This work complemented scientific and visualization tools that we were actively promoting and disseminating in the national mining industry. The resulting techniques for visualizing clustering results at scale have since improved our results reporting system.
 
 
 The data
@@ -107,10 +104,10 @@ In the case of sorting the spectra by the origin month, no visual organization i
 
 
 
-Deep Autoencoders 
+Deep Autoencoders
 ------
 
-For this work the use of the individual spectrum as the input was considered. A preliminary approach corresponded to apply a convolution autoencoder to attempt reduce the dimensionality of the hyperspectral data. Here, an initial hard reduction to 4 dimensions was considered by using keras from tensorflow. 
+The core dimensionality reduction engine is a symmetric dense autoencoder. Each individual spectrum serves as the input, and the network learns a compressed latent representation through a bottleneck architecture. The encoder path progressively reduces dimensionality (input &rarr; 128 &rarr; 64 &rarr; 32 &rarr; 16 &rarr; 4), and the decoder mirrors this structure (4 &rarr; 16 &rarr; 32 &rarr; 64 &rarr; 128 &rarr; output). All hidden layers use **tanh** activation with **orthogonal** kernel initialization, which helps preserve gradient flow and avoid degenerate representations. Input spectra are normalized with **MinMaxScaler** before training, and the output layer uses sigmoid activation with binary cross-entropy loss. The bottleneck of 4 dimensions was chosen as an aggressive compression target; a second variant with 16 latent dimensions was also evaluated for comparison.
 
 ```python
 from tensorflow.keras import layers, models, callbacks
@@ -610,4 +607,9 @@ colors = ['C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C1
 
 ![img](/files/portfolio/HyClus/120.png)
 
-*This project does not have a public repository. The data and detailed implementation remain confidential due to the industrial origin of the samples.*
+*This project was developed as part of the CC5214 Data Science Project course at Universidad de Chile. It does not have a public repository; the data and detailed implementation remain confidential due to the industrial origin of the samples.*
+
+Connection to HIDSAG and Geometallurgy
+======
+
+HyClusVi represents an early exploration of the dimensionality reduction and visualization pipeline that later became central to the [HIDSAG](/portfolio/HIDSAG) research program. The insights from this student project -- particularly the effectiveness of autoencoder-based spectral compression and t-SNE visualization for mineral discrimination -- informed subsequent work on hyperspectral data analysis for geometallurgical estimation. The topic modelling approach presented at [Procemin Geomet 2022](/talks/2022-10-01-talk-procemin-geomet) builds directly on the spectral representation ideas first tested here, extending them with probabilistic models (LDA) for mineral abundance estimation from SWIR and VNIR imagery.
