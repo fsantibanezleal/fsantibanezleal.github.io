@@ -47,4 +47,12 @@ Forward kinematics compose the transformations; inverse kinematics are solved an
 
 The original 2004 lab used MATLAB scripts to command the physical Scorbot III. The modern version wraps the entire system — simulation, kinematics, planning, and optional hardware control — in a Python web application, making the project accessible without the physical robot.
 
+## Live application
+
+![Robotic Writer — 3D kinematics simulation and trajectory planning](/images/projects/screenshots/robotic_frontend.png)
+
+### Demo video — The robot spells words
+
+{% include youtube.html id="ubUdNsb0W-o" %}
+
 [View on GitHub](https://github.com/fsantibanezleal/Udec_Robotic_Writer)

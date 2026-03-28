@@ -25,4 +25,8 @@ This was my 2008 undergraduate thesis project at Universidad de Concepcion, part
 
 ![Haptic Simulation](/images/projects/haptic_sim.svg)
 
+## Live application
+
+![3D Haptic Simulation — Octree visualization and force feedback](/images/projects/screenshots/haptic_frontend.png)
+
 [View on GitHub](https://github.com/fsantibanezleal/UDEC_Haptic_SIM)

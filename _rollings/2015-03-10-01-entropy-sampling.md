@@ -24,3 +24,5 @@ H(X|Y) = H(X,Y) &minus; H(Y)<br/>
 </div>
 
 [Sampling code on GitHub](https://github.com/fsantibanezleal/IDS_OWP).
+
+{% include youtube.html id="KnTyQgQcpCQ" %}

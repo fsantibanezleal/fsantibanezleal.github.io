@@ -34,4 +34,12 @@ This is not just a matrix transpose. The transport matrix **T** (of size N_camer
 - **BRDF models**: Lambertian reflectance with configurable material properties for realistic light transport
 - **Patterns**: Compressed sensing connections through Bernoulli measurement matrices
 
+## Live application
+
+![Dual Photography Lab — Transport matrix and relighting interface](/images/projects/screenshots/dual_frontend.png)
+
+### Demo video
+
+{% include youtube.html id="Ju5GQuowxaE" %}
+
 [View on GitHub](https://github.com/fsantibanezleal/FASL_Coding_DualFotography)
