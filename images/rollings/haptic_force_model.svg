@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="700" height="500">
+  <defs>
+    <linearGradient id="bgG4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <radialGradient id="probeGrad" cx="0.4" cy="0.35" r="0.6">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#996600"/>
+    </radialGradient>
+    <filter id="g4">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="fArr" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f85149"/>
+    </marker>
+    <marker id="sArr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#3fb950"/>
+    </marker>
+  </defs>
+
+  <rect width="700" height="500" fill="url(#bgG4)"/>
+
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Spring-Damper Force Model</text>
+  <text x="350" y="48" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="11">Kelvin-Voigt contact model for haptic feedback</text>
+
+  <!-- ===== Main Diagram ===== -->
+
+  <!-- Surface (triangle mesh) -->
+  <polygon points="50,320 200,280 350,310 300,350 150,360" fill="#21262d" stroke="#58a6ff" stroke-width="2"/>
+  <polygon points="50,320 200,280 150,360" fill="#58a6ff" fill-opacity="0.08" stroke="#58a6ff" stroke-width="1"/>
+  <polygon points="200,280 350,310 300,350" fill="#58a6ff" fill-opacity="0.12" stroke="#58a6ff" stroke-width="1"/>
+  <polygon points="200,280 300,350 150,360" fill="#58a6ff" fill-opacity="0.06" stroke="#58a6ff" stroke-width="1"/>
+  <text x="200" y="370" text-anchor="middle" fill="#58a6ff" font-family="Arial, sans-serif" font-size="11">Surface Mesh</text>
+
+  <!-- Anchor point on surface -->
+  <circle cx="220" cy="300" r="6" fill="#3fb950" filter="url(#g4)"/>
+  <text x="220" y="295" text-anchor="middle" fill="#3fb950" font-family="Arial, sans-serif" font-size="10" font-weight="bold" dy="-10">p_contact</text>
+  <text x="220" y="295" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="8" dy="18">(anchor)</text>
+
+  <!-- Probe (sphere) -->
+  <circle cx="220" cy="180" r="22" fill="url(#probeGrad)" stroke="#ffd700" stroke-width="1.5" filter="url(#g4)"/>
+  <text x="220" y="185" text-anchor="middle" fill="#000" font-family="Arial, sans-serif" font-size="10" font-weight="bold">P</text>
+  <text x="258" y="172" fill="#ffd700" font-family="Arial, sans-serif" font-size="10" font-weight="bold">p_probe</text>
+
+  <!-- Spring (zigzag line connecting probe to anchor) -->
+  <polyline points="220,202 210,215 230,225 210,235 230,245 210,255 230,265 210,275 230,285 220,294"
+            fill="none" stroke="#3fb950" stroke-width="2"/>
+  <text x="245" y="250" fill="#3fb950" font-family="Arial, sans-serif" font-size="11" font-weight="bold">k</text>
+  <text x="245" y="264" fill="#8b949e" font-family="Arial, sans-serif" font-size="9">(spring)</text>
+
+  <!-- Damper (dashpot symbol) -->
+  <rect x="170" y="220" width="20" height="40" fill="none" stroke="#d29922" stroke-width="1.5"/>
+  <line x1="180" y1="220" x2="180" y2="210" stroke="#d29922" stroke-width="1.5"/>
+  <line x1="180" y1="260" x2="180" y2="270" stroke="#d29922" stroke-width="1.5"/>
+  <line x1="175" y1="240" x2="185" y2="240" stroke="#d29922" stroke-width="2"/>
+  <line x1="180" y1="210" x2="180" y2="202" stroke="#d29922" stroke-width="1"/>
+  <line x1="180" y1="270" x2="180" y2="294" stroke="#d29922" stroke-width="1"/>
+  <text x="158" y="250" fill="#d29922" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="end">b</text>
+  <text x="158" y="264" fill="#8b949e" font-family="Arial, sans-serif" font-size="9" text-anchor="end">(damper)</text>
+
+  <!-- Force vector arrow -->
+  <line x1="220" y1="160" x2="220" y2="90" stroke="#f85149" stroke-width="3" marker-end="url(#fArr)" filter="url(#g4)"/>
+  <text x="240" y="120" fill="#f85149" font-family="Arial, sans-serif" font-size="13" font-weight="bold">F</text>
+
+  <!-- Displacement label -->
+  <line x1="265" y1="180" x2="265" y2="300" stroke="#bc8cff" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="260" y1="180" x2="270" y2="180" stroke="#bc8cff" stroke-width="1"/>
+  <line x1="260" y1="300" x2="270" y2="300" stroke="#bc8cff" stroke-width="1"/>
+  <text x="280" y="240" fill="#bc8cff" font-family="Arial, sans-serif" font-size="11" font-weight="bold">x</text>
+  <text x="280" y="254" fill="#8b949e" font-family="Arial, sans-serif" font-size="8">(displacement)</text>
+
+  <!-- Velocity arrow -->
+  <line x1="195" y1="170" x2="160" y2="140" stroke="#39d2c0" stroke-width="2" marker-end="url(#sArr)"/>
+  <text x="152" y="138" fill="#39d2c0" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="end">v</text>
+
+  <!-- ===== Equations ===== -->
+  <rect x="380" y="70" width="290" height="180" rx="10" fill="#21262d" stroke="#d29922" stroke-width="1.5"/>
+  <text x="525" y="95" text-anchor="middle" fill="#d29922" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Force Equations</text>
+
+  <text x="400" y="125" fill="#e6edf3" font-family="monospace" font-size="13" filter="url(#g4)">F = -k * x - b * v</text>
+  <text x="400" y="148" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">where:</text>
+  <text x="410" y="166" fill="#3fb950" font-family="monospace" font-size="10">k = stiffness   (N/m)</text>
+  <text x="410" y="184" fill="#bc8cff" font-family="monospace" font-size="10">x = p_probe - p_contact</text>
+  <text x="410" y="202" fill="#d29922" font-family="monospace" font-size="10">b = damping     (Ns/m)</text>
+  <text x="410" y="220" fill="#39d2c0" font-family="monospace" font-size="10">v = probe velocity</text>
+  <text x="410" y="240" fill="#f85149" font-family="monospace" font-size="10">F = feedback force vector</text>
+
+  <!-- Force clamping -->
+  <rect x="380" y="265" width="290" height="80" rx="10" fill="#21262d" stroke="#f85149" stroke-width="1.5"/>
+  <text x="525" y="290" text-anchor="middle" fill="#f85149" font-family="Arial, sans-serif" font-size="13" font-weight="bold">Force Clamping</text>
+
+  <text x="400" y="315" fill="#e6edf3" font-family="monospace" font-size="11">if |F| > F_max:</text>
+  <text x="420" y="335" fill="#e6edf3" font-family="monospace" font-size="11">F = F_max * (F / |F|)</text>
+
+  <!-- PHANToM specs -->
+  <rect x="380" y="360" width="290" height="80" rx="10" fill="#21262d" stroke="#bc8cff" stroke-width="1.5"/>
+  <text x="525" y="385" text-anchor="middle" fill="#bc8cff" font-family="Arial, sans-serif" font-size="13" font-weight="bold">PHANToM Omni Specs</text>
+  <text x="400" y="405" fill="#8b949e" font-family="monospace" font-size="10">Max force:  3.3 N continuous</text>
+  <text x="400" y="422" fill="#8b949e" font-family="monospace" font-size="10">Workspace:  160 x 120 x 70 mm</text>
+  <text x="400" y="435" fill="#8b949e" font-family="monospace" font-size="10">Update:     1000 Hz (1 kHz)</text>
+
+  <!-- Legend -->
+  <rect x="30" y="395" width="320" height="90" rx="8" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+  <text x="190" y="415" text-anchor="middle" fill="#e6edf3" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Diagram Legend</text>
+  <circle cx="52" cy="432" r="5" fill="#ffd700"/>
+  <text x="65" y="436" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">Probe cursor (user-controlled)</text>
+  <circle cx="52" cy="452" r="5" fill="#3fb950"/>
+  <text x="65" y="456" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">Contact anchor on surface</text>
+  <line x1="42" y1="472" x2="62" y2="472" stroke="#f85149" stroke-width="2.5"/>
+  <text x="65" y="476" fill="#8b949e" font-family="Arial, sans-serif" font-size="10">Computed feedback force F</text>
+</svg>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Arial, sans-serif; fill: #e6edf3; }
+      .title { font-size: 15px; font-weight: bold; fill: #58a6ff; }
+      .heading { font-size: 13px; font-weight: bold; }
+      .label { font-size: 11px; fill: #e6edf3; }
+      .sublabel { font-size: 9.5px; fill: #8b949e; }
+      .math { font-size: 11px; fill: #d2a8ff; font-style: italic; }
+      .emitter { fill: #7ee787; stroke: #7ee787; stroke-width: 1; }
+      .emitter-dim { fill: #7ee787; fill-opacity: 0.3; stroke: #7ee787; stroke-width: 0.5; stroke-opacity: 0.4; }
+      .conn-all { stroke: #f97583; stroke-width: 1.2; stroke-opacity: 0.5; }
+      .conn-genuine { stroke: #58a6ff; stroke-width: 2.5; }
+      .panel-bg { fill: #161b22; stroke: #30363d; stroke-width: 1; rx: 8; }
+      .minus { font-size: 28px; fill: #f0883e; font-weight: bold; }
+      .equals { font-size: 28px; fill: #8b949e; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#0d1117"/>
+
+  <!-- Title -->
+  <text class="title" x="400" y="30" text-anchor="middle">Cumulant vs Moment: Why Cumulants Isolate Genuine Correlations</text>
+
+  <!-- LEFT Panel: Moment M_4 -->
+  <rect class="panel-bg" x="20" y="50" width="340" height="290"/>
+  <text class="heading" x="190" y="78" text-anchor="middle" fill="#f97583">Moment M_4</text>
+  <text class="sublabel" x="190" y="95" text-anchor="middle">All cross-terms included</text>
+
+  <!-- 4 emitters -->
+  <circle class="emitter" cx="100" cy="150" r="10"/>
+  <circle class="emitter" cx="260" cy="150" r="10"/>
+  <circle class="emitter" cx="100" cy="270" r="10"/>
+  <circle class="emitter" cx="260" cy="270" r="10"/>
+  <text class="label" x="100" y="130" text-anchor="middle">e1</text>
+  <text class="label" x="260" y="130" text-anchor="middle">e2</text>
+  <text class="label" x="100" y="295" text-anchor="middle">e3</text>
+  <text class="label" x="260" y="295" text-anchor="middle">e4</text>
+
+  <!-- ALL connections (cross-terms) -->
+  <!-- Pairs -->
+  <line class="conn-all" x1="110" y1="150" x2="250" y2="150"/>
+  <line class="conn-all" x1="100" y1="160" x2="100" y2="260"/>
+  <line class="conn-all" x1="260" y1="160" x2="260" y2="260"/>
+  <line class="conn-all" x1="110" y1="270" x2="250" y2="270"/>
+  <line class="conn-all" x1="108" y1="158" x2="252" y2="262"/>
+  <line class="conn-all" x1="108" y1="262" x2="252" y2="158"/>
+  <!-- Triple connections (faint) -->
+  <path d="M100,150 Q180,190 260,150 Q200,210 100,270" fill="none" stroke="#f97583" stroke-width="0.7" stroke-opacity="0.25"/>
+  <path d="M260,150 Q200,210 260,270 Q180,230 100,270" fill="none" stroke="#f97583" stroke-width="0.7" stroke-opacity="0.25"/>
+
+  <!-- Genuine 4-point connection (also present but hidden in noise) -->
+  <path d="M100,150 L260,150 L260,270 L100,270 Z" fill="none" stroke="#58a6ff" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="4,3"/>
+
+  <text class="math" x="190" y="325" text-anchor="middle">M_4 = genuine + pairs + triples</text>
+
+  <!-- MINUS sign -->
+  <text class="minus" x="385" y="210" text-anchor="middle">-</text>
+  <text class="sublabel" x="385" y="230" text-anchor="middle">subtract</text>
+  <text class="sublabel" x="385" y="245" text-anchor="middle">lower-order</text>
+  <text class="sublabel" x="385" y="260" text-anchor="middle">products</text>
+
+  <!-- RIGHT Panel: Cumulant K_4 -->
+  <rect class="panel-bg" x="430" y="50" width="340" height="290"/>
+  <text class="heading" x="600" y="78" text-anchor="middle" fill="#58a6ff">Cumulant K_4</text>
+  <text class="sublabel" x="600" y="95" text-anchor="middle">Only genuine 4-point correlation</text>
+
+  <!-- 4 emitters -->
+  <circle class="emitter" cx="510" cy="150" r="10"/>
+  <circle class="emitter" cx="670" cy="150" r="10"/>
+  <circle class="emitter" cx="510" cy="270" r="10"/>
+  <circle class="emitter" cx="670" cy="270" r="10"/>
+  <text class="label" x="510" y="130" text-anchor="middle">e1</text>
+  <text class="label" x="670" y="130" text-anchor="middle">e2</text>
+  <text class="label" x="510" y="295" text-anchor="middle">e3</text>
+  <text class="label" x="670" y="295" text-anchor="middle">e4</text>
+
+  <!-- ONLY genuine 4-point connection -->
+  <line class="conn-genuine" x1="520" y1="150" x2="660" y2="150"/>
+  <line class="conn-genuine" x1="670" y1="160" x2="670" y2="260"/>
+  <line class="conn-genuine" x1="660" y1="270" x2="520" y2="270"/>
+  <line class="conn-genuine" x1="510" y1="260" x2="510" y2="160"/>
+
+  <text class="math" x="600" y="325" text-anchor="middle">K_4 = M_4 - 3*M_2^2  (clean!)</text>
+
+  <!-- Bottom equation -->
+  <text class="sublabel" x="400" y="370" text-anchor="middle">K_n[X+Y] = K_n[X] + K_n[Y] for independent X,Y -- cross-emitter terms vanish</text>
+  <text class="sublabel" x="400" y="388" text-anchor="middle">Result: PSF enters as U^n (not a mixture of lower powers) -- clean resolution gain of sqrt(n)</text>
+</svg>
