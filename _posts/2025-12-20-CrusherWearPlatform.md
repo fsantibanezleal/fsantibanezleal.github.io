@@ -23,6 +23,8 @@ What made this project particularly interesting -- and particularly demanding --
 Point cloud (x, y, z) → Cylindrical (r, θ, h) → Radial profile R(θ, h)
 </div>
 
+![Crusher wear platform — dual deployment](/images/projects/crusher_wear_system.svg)
+
 The infrastructure side was its own challenge: Docker Swarm orchestration, Traefik for routing, Ansible for automated provisioning. Going from a prototype running on a laptop to a production deployment with proper monitoring and backups is a journey that teaches you things no tutorial covers.
 
 There is a particular satisfaction in seeing raw 3D point clouds -- millions of noisy laser-scanned coordinates -- transform step by step into actionable maintenance decisions. The moment when an engineer looks at a wear forecast and says "we need to change those liners next week" based on data that started as a cloud of points in space -- that is the payoff. It makes the long hours of coordinate transformations and alignment algorithms feel worthwhile.

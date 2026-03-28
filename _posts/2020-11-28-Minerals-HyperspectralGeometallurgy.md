@@ -20,6 +20,13 @@ A significant part of the work involved spending long hours in the lab with SWIR
 
 Our approach introduces a stochastic formulation for mineral hyperspectral analysis. Rather than producing a single deterministic estimate of mineral abundance, we explicitly model the uncertainty through a probabilistic framework. This is paired with a hierarchical regression scheme that handles the complex, nested structure of spectral-to-mineral relationships.
 
+![SOFI pipeline (spectral processing analogy)](/images/rollings/sofi_pipeline.svg)
+
+<div style="background:#0d1b2a;padding:16px 20px;border-radius:8px;margin:16px 0;font-family:Georgia,serif;color:#e0e0e0;font-size:15px;line-height:1.8;">
+<strong style="color:#e07830;">Hierarchical regression:</strong><br/>
+y = f(spectrum) + random_effects(ambient) + ε — separating signal from environmental noise
+</div>
+
 Why stochastic matters
 ======
 

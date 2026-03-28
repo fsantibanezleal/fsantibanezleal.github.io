@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700">
+  <defs>
+    <style>
+      .box { fill: #1e2a3a; stroke: #4a9eff; stroke-width: 2; rx: 8; }
+      .decision { fill: #2e2a1a; stroke: #f59e0b; stroke-width: 2; }
+      .start-end { fill: #1a2e1a; stroke: #34d399; stroke-width: 2; rx: 20; }
+      .title { font-family: sans-serif; font-size: 12px; fill: #e8eaed; font-weight: bold; text-anchor: middle; }
+      .label { font-family: sans-serif; font-size: 10px; fill: #9aa0a6; text-anchor: middle; }
+      .arrow { stroke: #4a9eff; stroke-width: 2; fill: none; marker-end: url(#ah); }
+      .yes { font-family: sans-serif; font-size: 10px; fill: #34d399; }
+      .no { font-family: sans-serif; font-size: 10px; fill: #ef4444; }
+    </style>
+    <marker id="ah" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#4a9eff"/>
+    </marker>
+  </defs>
+
+  <rect width="600" height="700" fill="#0f1419"/>
+
+  <!-- Start -->
+  <rect class="start-end" x="200" y="20" width="200" height="40"/>
+  <text class="title" x="300" y="45">START: Input TI, (H,W), K, r</text>
+
+  <!-- Init -->
+  <rect class="box" x="175" y="90" width="250" height="50"/>
+  <text class="title" x="300" y="110">Initialize</text>
+  <text class="label" x="300" y="128">field = empty, sampled = {}, k = 0</text>
+
+  <!-- Loop check -->
+  <polygon class="decision" points="300,175 400,210 300,245 200,210"/>
+  <text class="title" x="300" y="213">k &lt; K?</text>
+
+  <!-- Estimate entropy -->
+  <rect class="box" x="150" y="280" width="300" height="55"/>
+  <text class="title" x="300" y="298">Estimate Conditional Entropy</text>
+  <text class="label" x="300" y="316">For each unsampled i: H(X_i | neighbors)</text>
+  <text class="label" x="300" y="328">using pattern matching against TI</text>
+
+  <!-- Select max -->
+  <rect class="box" x="175" y="365" width="250" height="45"/>
+  <text class="title" x="300" y="383">Select Maximum Entropy</text>
+  <text class="label" x="300" y="400">i*_k = argmax H_est(i)</text>
+
+  <!-- Reveal -->
+  <rect class="box" x="175" y="440" width="250" height="45"/>
+  <text class="title" x="300" y="458">Reveal True Value</text>
+  <text class="label" x="300" y="475">field[i*_k] = true_field[i*_k]</text>
+
+  <!-- Update -->
+  <rect class="box" x="175" y="515" width="250" height="45"/>
+  <text class="title" x="300" y="533">Update State</text>
+  <text class="label" x="300" y="550">sampled += {i*_k}, k += 1</text>
+
+  <!-- End -->
+  <rect class="start-end" x="200" y="620" width="200" height="40"/>
+  <text class="title" x="300" y="645">END: Return f* = {i*_1,...,i*_K}</text>
+
+  <!-- Arrows -->
+  <line class="arrow" x1="300" y1="60" x2="300" y2="88"/>
+  <line class="arrow" x1="300" y1="140" x2="300" y2="175"/>
+  <line class="arrow" x1="300" y1="245" x2="300" y2="278"/>
+  <line class="arrow" x1="300" y1="335" x2="300" y2="363"/>
+  <line class="arrow" x1="300" y1="410" x2="300" y2="438"/>
+  <line class="arrow" x1="300" y1="485" x2="300" y2="513"/>
+
+  <!-- Loop back -->
+  <path class="arrow" d="M 300 560 L 300 580 L 500 580 L 500 210 L 402 210" style="marker-end: none;"/>
+  <polygon points="402 207, 402 213, 410 210" fill="#4a9eff"/>
+
+  <!-- No arrow to end -->
+  <line class="arrow" x1="400" y1="210" x2="500" y2="210" style="marker-end: none;"/>
+  <path class="arrow" d="M 500 210 L 500 640 L 402 640" style="marker-end: none;"/>
+
+  <!-- Labels -->
+  <text class="yes" x="280" y="265">Yes</text>
+  <text class="no" x="440" y="205">No</text>
+</svg>
