@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" font-family="Segoe UI, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e94560"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="300" fill="#1a1a2e" rx="10"/>
+
+  <!-- Title -->
+  <text x="450" y="30" fill="#e94560" font-size="16" font-weight="bold" text-anchor="middle">RGB-D Processing Pipeline</text>
+
+  <!-- Step 1: Input -->
+  <rect x="20" y="60" width="120" height="80" fill="#0f3460" stroke="#4ecdc4" stroke-width="2" rx="6"/>
+  <text x="80" y="90" fill="#eee" font-size="11" text-anchor="middle" font-weight="bold">Input</text>
+  <text x="80" y="108" fill="#aab" font-size="9" text-anchor="middle">RGB + Depth</text>
+  <text x="80" y="122" fill="#aab" font-size="9" text-anchor="middle">or Synthetic</text>
+
+  <line x1="145" y1="100" x2="175" y2="100" stroke="#e94560" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 2: Bilateral Filter -->
+  <rect x="180" y="60" width="130" height="80" fill="#0f3460" stroke="#4ecdc4" stroke-width="2" rx="6"/>
+  <text x="245" y="85" fill="#eee" font-size="11" text-anchor="middle" font-weight="bold">Bilateral Filter</text>
+  <text x="245" y="103" fill="#aab" font-size="8" text-anchor="middle">sigma_s, sigma_r</text>
+  <text x="245" y="118" fill="#aab" font-size="8" text-anchor="middle">Edge-preserving</text>
+  <text x="245" y="130" fill="#aab" font-size="8" text-anchor="middle">noise reduction</text>
+
+  <line x1="315" y1="100" x2="345" y2="100" stroke="#e94560" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 3: Hole Fill -->
+  <rect x="350" y="60" width="120" height="80" fill="#0f3460" stroke="#4ecdc4" stroke-width="2" rx="6"/>
+  <text x="410" y="88" fill="#eee" font-size="11" text-anchor="middle" font-weight="bold">Hole Filling</text>
+  <text x="410" y="108" fill="#aab" font-size="8" text-anchor="middle">Nearest-neighbour</text>
+  <text x="410" y="122" fill="#aab" font-size="8" text-anchor="middle">interpolation</text>
+
+  <line x1="475" y1="100" x2="505" y2="100" stroke="#e94560" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 4: Normals -->
+  <rect x="510" y="60" width="120" height="80" fill="#0f3460" stroke="#4ecdc4" stroke-width="2" rx="6"/>
+  <text x="570" y="88" fill="#eee" font-size="11" text-anchor="middle" font-weight="bold">Normals</text>
+  <text x="570" y="108" fill="#aab" font-size="8" text-anchor="middle">n = (-dz/dx,</text>
+  <text x="570" y="122" fill="#aab" font-size="8" text-anchor="middle">-dz/dy, 1) / ||n||</text>
+
+  <line x1="635" y1="100" x2="665" y2="100" stroke="#e94560" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 5: Mesh -->
+  <rect x="670" y="60" width="110" height="80" fill="#0f3460" stroke="#4ecdc4" stroke-width="2" rx="6"/>
+  <text x="725" y="88" fill="#eee" font-size="11" text-anchor="middle" font-weight="bold">Mesh Gen</text>
+  <text x="725" y="108" fill="#aab" font-size="8" text-anchor="middle">Depth -> Vertices</text>
+  <text x="725" y="122" fill="#aab" font-size="8" text-anchor="middle">-> Triangles</text>
+
+  <line x1="785" y1="100" x2="815" y2="100" stroke="#e94560" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 6: Output -->
+  <rect x="820" y="60" width="65" height="80" fill="#0f3460" stroke="#e94560" stroke-width="2" rx="6"/>
+  <text x="852" y="90" fill="#e94560" font-size="11" text-anchor="middle" font-weight="bold">3D</text>
+  <text x="852" y="108" fill="#aab" font-size="9" text-anchor="middle">Three.js</text>
+
+  <!-- Lower branch: Analysis -->
+  <line x1="570" y1="145" x2="570" y2="175" stroke="#e94560" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="440" y="180" width="130" height="60" fill="#0f3460" stroke="#4ecdc4" stroke-width="2" rx="6"/>
+  <text x="505" y="205" fill="#eee" font-size="11" text-anchor="middle" font-weight="bold">Curvature</text>
+  <text x="505" y="225" fill="#aab" font-size="8" text-anchor="middle">K (Gauss) + H (Mean)</text>
+
+  <rect x="590" y="180" width="130" height="60" fill="#0f3460" stroke="#4ecdc4" stroke-width="2" rx="6"/>
+  <text x="655" y="205" fill="#eee" font-size="11" text-anchor="middle" font-weight="bold">Cross-Section</text>
+  <text x="655" y="225" fill="#aab" font-size="8" text-anchor="middle">Bilinear interp.</text>
+
+  <line x1="655" y1="245" x2="655" y2="270" stroke="#e94560" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="590" y="255" width="130" height="35" fill="#0f3460" stroke="#e94560" stroke-width="2" rx="6"/>
+  <text x="655" y="278" fill="#e94560" font-size="11" text-anchor="middle" font-weight="bold">Ra Rq Rz Rsk Rku</text>
+
+  <!-- Colormap branch -->
+  <line x1="410" y1="145" x2="300" y2="180" stroke="#e94560" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <rect x="220" y="180" width="130" height="60" fill="#0f3460" stroke="#4ecdc4" stroke-width="2" rx="6"/>
+  <text x="285" y="205" fill="#eee" font-size="11" text-anchor="middle" font-weight="bold">Colormap</text>
+  <text x="285" y="225" fill="#aab" font-size="8" text-anchor="middle">viridis | hot | jet</text>
+</svg>
