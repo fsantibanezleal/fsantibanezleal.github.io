@@ -29,3 +29,5 @@ Years in the making
 ======
 
 The lab work behind this dataset was painstaking. Acquiring clean hyperspectral images, ensuring consistent illumination, managing sample preparation -- none of it is glamorous, but all of it is essential. Seeing this effort recognized in a Nature journal validates the belief that careful data curation is a scientific contribution in its own right. I hope HIDSAG becomes a useful resource for the community for years to come.
+
+![AdSEMES adaptive algorithm](/images/rollings/owp_adsemes.svg)

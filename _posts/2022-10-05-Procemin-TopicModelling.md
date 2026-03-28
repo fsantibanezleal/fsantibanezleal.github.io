@@ -16,6 +16,11 @@ An unconventional idea
 
 The core idea behind this work is to borrow a technique from natural language processing -- Latent Dirichlet Allocation (LDA) -- and apply it to hyperspectral mineral images. In text analysis, LDA discovers hidden topics that explain collections of documents. The "aha" moment came when I realized that spectral pixels are structurally identical to words in documents. Each pixel is a "document" composed of spectral features ("words"), and the minerals present are the hidden "topics" that explain the observed spectral patterns. Once that analogy clicked, the entire formulation fell into place almost naturally -- the mathematics of topic modelling mapped onto the spectral unmixing problem with surprising elegance.
 
+<div style="background:#0d1b2a;padding:16px 20px;border-radius:8px;margin:16px 0;font-family:Georgia,serif;color:#e0e0e0;font-size:15px;line-height:1.8;">
+<strong style="color:#e07830;">LDA for mineral unmixing:</strong><br/>
+p(mineral | pixel) = Σ<sub>k</sub> p(mineral | topic<sub>k</sub>) × p(topic<sub>k</sub> | pixel) — each pixel is a mixture of mineral "topics"
+</div>
+
 This reframing is not just a clever analogy -- it opened new possibilities that go well beyond traditional spectral unmixing. It provides a principled, probabilistic way to decompose complex mineral mixtures without requiring prior knowledge of the exact minerals present. The model learns the characteristic spectral patterns directly from the data, grouping pixels into coherent mineral assemblages.
 
 Why this matters for geometallurgy
