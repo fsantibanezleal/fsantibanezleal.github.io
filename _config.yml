@@ -12,7 +12,7 @@ site_theme               : "default" # Options: "default", "air", "sunrise", "mi
 title                    : "The last love song on this little planet"
 title_separator          : "-"
 name                     : &name "Felipe Santibañez-Leal"
-description              : &description "Advanced Analytics & Data Science | Computational Photography & Optics"
+description              : &description "Decision Science & Advanced Analytics | Mining, Manufacturing & Services"
 url                      : https://fsantibanezleal.github.io
 baseurl                  : ""
 repository               : "fsantibanezleal/fsantibanezleal.github.io"
