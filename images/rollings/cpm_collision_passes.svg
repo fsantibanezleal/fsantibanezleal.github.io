@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="760" height="300">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#0d1b2a"/>
+      <stop offset="100%" style="stop-color:#1b2d45"/>
+    </linearGradient>
+  </defs>
+  <rect width="760" height="300" fill="url(#bg2)"/>
+  <!-- Title -->
+  <text x="380" y="22" style="font-family:Arial,sans-serif;font-size:13px;fill:#5bc0be;text-anchor:middle;font-weight:bold;">Two-Pass Collision Resolution</text>
+  <!-- FORWARD PASS section -->
+  <rect x="15" y="32" width="230" height="120" rx="6" style="fill:#0f2236;stroke:#2a4060;stroke-width:1;"/>
+  <text x="130" y="48" style="font-family:Arial,sans-serif;font-size:11px;fill:#fca311;text-anchor:middle;font-weight:bold;">FORWARD PASS</text>
+  <text x="130" y="62" style="font-family:Arial,sans-serif;font-size:9px;fill:#8899aa;text-anchor:middle;">factor = 1.0 (soft push)</text>
+  <!-- Cell A forward -->
+  <circle cx="100" cy="105" r="28" style="fill:none;stroke:#5bc0be;stroke-width:1.5;opacity:0.7;"/>
+  <text x="100" y="109" style="font-family:Arial,sans-serif;font-size:10px;fill:#5bc0be;text-anchor:middle;">A</text>
+  <!-- Cell B forward (overlapping) -->
+  <circle cx="140" cy="105" r="28" style="fill:none;stroke:#f4845f;stroke-width:1.5;opacity:0.7;"/>
+  <text x="140" y="109" style="font-family:Arial,sans-serif;font-size:10px;fill:#f4845f;text-anchor:middle;">B</text>
+  <!-- Overlap shading -->
+  <ellipse cx="120" cy="105" rx="8" ry="24" style="fill:#fca311;opacity:0.15;"/>
+  <!-- Soft push arrows (small) -->
+  <line x1="100" y1="85" x2="90" y2="80" style="stroke:#5bc0be;stroke-width:1.5;"/>
+  <polygon points="88,79 90,84 93,80" style="fill:#5bc0be;"/>
+  <line x1="140" y1="85" x2="150" y2="80" style="stroke:#f4845f;stroke-width:1.5;"/>
+  <polygon points="152,79 150,84 147,80" style="fill:#f4845f;"/>
+  <text x="130" y="143" style="font-family:Arial,sans-serif;font-size:8px;fill:#8899aa;text-anchor:middle;">Half overlap pushed</text>
+  <!-- BACKWARD PASS section -->
+  <rect x="265" y="32" width="230" height="120" rx="6" style="fill:#0f2236;stroke:#2a4060;stroke-width:1;"/>
+  <text x="380" y="48" style="font-family:Arial,sans-serif;font-size:11px;fill:#fca311;text-anchor:middle;font-weight:bold;">BACKWARD PASS</text>
+  <text x="380" y="62" style="font-family:Arial,sans-serif;font-size:9px;fill:#8899aa;text-anchor:middle;">factor = 0.0 (hard separation)</text>
+  <!-- Cell A backward (separated) -->
+  <circle cx="340" cy="105" r="28" style="fill:none;stroke:#5bc0be;stroke-width:1.5;"/>
+  <text x="340" y="109" style="font-family:Arial,sans-serif;font-size:10px;fill:#5bc0be;text-anchor:middle;">A</text>
+  <!-- Cell B backward (separated) -->
+  <circle cx="415" cy="105" r="28" style="fill:none;stroke:#f4845f;stroke-width:1.5;"/>
+  <text x="415" y="109" style="font-family:Arial,sans-serif;font-size:10px;fill:#f4845f;text-anchor:middle;">B</text>
+  <!-- Strong push arrows -->
+  <line x1="340" y1="85" x2="322" y2="75" style="stroke:#5bc0be;stroke-width:2;"/>
+  <polygon points="319,74 323,79 325,73" style="fill:#5bc0be;"/>
+  <line x1="415" y1="85" x2="433" y2="75" style="stroke:#f4845f;stroke-width:2;"/>
+  <polygon points="436,74 432,79 430,73" style="fill:#f4845f;"/>
+  <text x="380" y="143" style="font-family:Arial,sans-serif;font-size:8px;fill:#8899aa;text-anchor:middle;">Full overlap resolved</text>
+  <!-- Timeline: oscillation vs stable -->
+  <rect x="510" y="32" width="235" height="120" rx="6" style="fill:#0f2236;stroke:#2a4060;stroke-width:1;"/>
+  <text x="628" y="48" style="font-family:Arial,sans-serif;font-size:10px;fill:#fca311;text-anchor:middle;font-weight:bold;">Stability Comparison</text>
+  <!-- Before fix: oscillation -->
+  <text x="520" y="66" style="font-family:Arial,sans-serif;font-size:8px;fill:#f4845f;">Before (single pass):</text>
+  <polyline points="520,80 535,72 550,88 565,70 580,90 595,68 610,92 625,66" style="fill:none;stroke:#f4845f;stroke-width:1.5;opacity:0.8;"/>
+  <text x="640" y="82" style="font-family:Arial,sans-serif;font-size:7px;fill:#f4845f;">oscillates</text>
+  <!-- After fix: stable -->
+  <text x="520" y="106" style="font-family:Arial,sans-serif;font-size:8px;fill:#5bc0be;">After (two pass):</text>
+  <polyline points="520,120 535,116 550,114 565,113 580,112.5 595,112.3 610,112.2 625,112.1" style="fill:none;stroke:#5bc0be;stroke-width:1.5;"/>
+  <text x="640" y="116" style="font-family:Arial,sans-serif;font-size:7px;fill:#5bc0be;">converges</text>
+  <text x="628" y="143" style="font-family:Arial,sans-serif;font-size:8px;fill:#8899aa;text-anchor:middle;">Gauss-Seidel relaxation</text>
+  <!-- CIL section (Contact Inhibition of Locomotion) -->
+  <rect x="15" y="160" width="730" height="105" rx="6" style="fill:#0f2236;stroke:#2a4060;stroke-width:1;"/>
+  <text x="380" y="178" style="font-family:Arial,sans-serif;font-size:11px;fill:#5bc0be;text-anchor:middle;font-weight:bold;">Contact Inhibition of Locomotion (CIL)</text>
+  <!-- Two cells colliding -->
+  <circle cx="140" cy="225" r="30" style="fill:none;stroke:#5bc0be;stroke-width:1.5;"/>
+  <text x="140" y="220" style="font-family:Arial,sans-serif;font-size:8px;fill:#e0e0e0;text-anchor:middle;">Cell 1</text>
+  <circle cx="210" cy="225" r="30" style="fill:none;stroke:#f4845f;stroke-width:1.5;"/>
+  <text x="210" y="220" style="font-family:Arial,sans-serif;font-size:8px;fill:#e0e0e0;text-anchor:middle;">Cell 2</text>
+  <!-- Contact point -->
+  <circle cx="175" cy="225" r="3" style="fill:#fca311;"/>
+  <!-- Original polarity arrows (toward contact) -->
+  <text x="90" y="200" style="font-family:Arial,sans-serif;font-size:8px;fill:#8899aa;">Before:</text>
+  <line x1="125" y1="230" x2="155" y2="230" style="stroke:#5bc0be;stroke-width:1.5;stroke-dasharray:3,2;"/>
+  <polygon points="155,228 155,232 160,230" style="fill:#5bc0be;opacity:0.5;"/>
+  <line x1="225" y1="230" x2="195" y2="230" style="stroke:#f4845f;stroke-width:1.5;stroke-dasharray:3,2;"/>
+  <polygon points="195,228 195,232 190,230" style="fill:#f4845f;opacity:0.5;"/>
+  <!-- After CIL: rotated polarity arrows (away from contact) -->
+  <text x="310" y="200" style="font-family:Arial,sans-serif;font-size:8px;fill:#8899aa;">After CIL:</text>
+  <!-- Cell 1 after -->
+  <circle cx="360" cy="225" r="30" style="fill:none;stroke:#5bc0be;stroke-width:1.5;"/>
+  <!-- Cell 2 after -->
+  <circle cx="440" cy="225" r="30" style="fill:none;stroke:#f4845f;stroke-width:1.5;"/>
+  <!-- Rotated polarity (away + rotated 30%) -->
+  <line x1="360" y1="225" x2="330" y2="215" style="stroke:#5bc0be;stroke-width:2;"/>
+  <polygon points="327,214 332,219 331,212" style="fill:#5bc0be;"/>
+  <line x1="440" y1="225" x2="470" y2="215" style="stroke:#f4845f;stroke-width:2;"/>
+  <polygon points="473,214 468,219 469,212" style="fill:#f4845f;"/>
+  <text x="400" y="252" style="font-family:Arial,sans-serif;font-size:8px;fill:#fca311;text-anchor:middle;">Polarity rotates AWAY from contact by 30%</text>
+  <!-- Annotation -->
+  <text x="570" y="218" style="font-family:Arial,sans-serif;font-size:9px;fill:#e0e0e0;">CIL repolarization:</text>
+  <text x="570" y="232" style="font-family:Arial,sans-serif;font-size:9px;fill:#5bc0be;">&#x03B8;&#x2032; = &#x03B8; + 0.3&#x00B7;(&#x03B8;_away &#x2212; &#x03B8;)</text>
+  <text x="570" y="246" style="font-family:Arial,sans-serif;font-size:8px;fill:#8899aa;">Prevents cell pile-up</text>
+  <!-- Bottom accent -->
+  <rect x="0" y="294" width="760" height="6" rx="0" style="fill:#f4845f;opacity:0.3;"/>
+</svg>

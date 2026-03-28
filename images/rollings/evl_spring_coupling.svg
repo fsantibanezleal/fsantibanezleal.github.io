@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="760" height="300">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#0d1b2a"/>
+      <stop offset="100%" style="stop-color:#1b2d45"/>
+    </linearGradient>
+  </defs>
+  <rect width="760" height="300" fill="url(#bg5)"/>
+  <!-- Title -->
+  <text x="380" y="22" style="font-family:Arial,sans-serif;font-size:13px;fill:#5bc0be;text-anchor:middle;font-weight:bold;">EVL Elastic Coupling on Sphere</text>
+  <!-- LEFT: Sphere side view -->
+  <rect x="15" y="32" width="300" height="225" rx="6" style="fill:#0f2236;stroke:#2a4060;stroke-width:1;"/>
+  <text x="165" y="48" style="font-family:Arial,sans-serif;font-size:10px;fill:#fca311;text-anchor:middle;font-weight:bold;">Embryo Side View</text>
+  <!-- Sphere outline -->
+  <circle cx="165" cy="145" r="85" style="fill:none;stroke:#5bc0be;stroke-width:1.5;"/>
+  <!-- Equator / EVL margin line (advancing downward) -->
+  <ellipse cx="165" cy="165" rx="82" ry="18" style="fill:none;stroke:#fca311;stroke-width:2;stroke-dasharray:5,3;"/>
+  <text x="262" y="162" style="font-family:Arial,sans-serif;font-size:8px;fill:#fca311;">EVL margin</text>
+  <!-- Margin advancement arrow -->
+  <line x1="165" y1="185" x2="165" y2="210" style="stroke:#fca311;stroke-width:1.5;"/>
+  <polygon points="162,210 168,210 165,218" style="fill:#fca311;"/>
+  <text x="180" y="215" style="font-family:Arial,sans-serif;font-size:7px;fill:#fca311;">advances</text>
+  <!-- Cells above the margin (dots) -->
+  <!-- Cell near margin (strong spring) -->
+  <circle cx="130" cy="140" r="5" style="fill:#5bc0be;opacity:0.8;"/>
+  <text x="110" y="138" style="font-family:Arial,sans-serif;font-size:7px;fill:#e0e0e0;">near</text>
+  <!-- Thick arrow (strong force) pointing down toward margin -->
+  <line x1="130" y1="146" x2="130" y2="158" style="stroke:#5bc0be;stroke-width:3;"/>
+  <polygon points="125,158 135,158 130,164" style="fill:#5bc0be;"/>
+  <!-- Cell far from margin (weak spring) -->
+  <circle cx="185" cy="90" r="5" style="fill:#5bc0be;opacity:0.4;"/>
+  <text x="196" y="88" style="font-family:Arial,sans-serif;font-size:7px;fill:#e0e0e0;">far</text>
+  <!-- Thin arrow (weak force) -->
+  <line x1="185" y1="96" x2="185" y2="108" style="stroke:#5bc0be;stroke-width:1;opacity:0.5;"/>
+  <polygon points="183,108 187,108 185,112" style="fill:#5bc0be;opacity:0.5;"/>
+  <!-- More cells scattered -->
+  <circle cx="145" cy="110" r="4" style="fill:#5bc0be;opacity:0.6;"/>
+  <circle cx="195" cy="120" r="4" style="fill:#5bc0be;opacity:0.65;"/>
+  <circle cx="155" cy="85" r="4" style="fill:#5bc0be;opacity:0.35;"/>
+  <circle cx="175" cy="135" r="5" style="fill:#5bc0be;opacity:0.75;"/>
+  <circle cx="120" cy="100" r="4" style="fill:#5bc0be;opacity:0.45;"/>
+  <circle cx="200" cy="145" r="5" style="fill:#5bc0be;opacity:0.8;"/>
+  <!-- Spring symbols between near cell and margin -->
+  <path d="M140,148 L142,150 L138,153 L142,156 L140,158" style="fill:none;stroke:#fca311;stroke-width:1;"/>
+  <text x="148" y="155" style="font-family:Arial,sans-serif;font-size:6px;fill:#fca311;">strong k</text>
+  <!-- Weak spring for far cell -->
+  <path d="M190,100 L191,102 L189,104 L191,106 L190,108" style="fill:none;stroke:#fca311;stroke-width:0.6;opacity:0.5;"/>
+  <text x="196" y="104" style="font-family:Arial,sans-serif;font-size:6px;fill:#fca311;opacity:0.5;">weak k</text>
+  <!-- RIGHT: Coupling strength graph -->
+  <rect x="330" y="32" width="250" height="145" rx="6" style="fill:#0f2236;stroke:#2a4060;stroke-width:1;"/>
+  <text x="455" y="48" style="font-family:Arial,sans-serif;font-size:10px;fill:#fca311;text-anchor:middle;font-weight:bold;">Coupling Strength vs Distance</text>
+  <!-- Axes -->
+  <line x1="365" y1="58" x2="365" y2="155" style="stroke:#667788;stroke-width:0.8;"/>
+  <line x1="365" y1="155" x2="560" y2="155" style="stroke:#667788;stroke-width:0.8;"/>
+  <text x="360" y="65" style="font-family:Arial,sans-serif;font-size:7px;fill:#8899aa;text-anchor:end;">F</text>
+  <text x="560" y="167" style="font-family:Arial,sans-serif;font-size:7px;fill:#8899aa;text-anchor:end;">distance d</text>
+  <!-- Exponential decay curve: F = k*exp(-d/0.3) -->
+  <polyline points="365,62 375,68 385,76 395,85 405,94 415,103 425,111 435,118 445,124 455,129 465,133 475,136 485,139 495,141 505,143 515,144 525,145 535,146 545,146.5 555,147" style="fill:none;stroke:#5bc0be;stroke-width:2.5;"/>
+  <!-- Formula label -->
+  <text x="400" y="80" style="font-family:Arial,sans-serif;font-size:10px;fill:#e0e0e0;">F = k &#x00B7; exp(&#x2212;d/0.3)</text>
+  <!-- Decay length annotation -->
+  <line x1="408" y1="94" x2="408" y2="155" style="stroke:#fca311;stroke-width:0.8;stroke-dasharray:3,2;"/>
+  <text x="412" y="142" style="font-family:Arial,sans-serif;font-size:7px;fill:#fca311;">&#x03BB; = 0.3</text>
+  <!-- PULL ONLY annotation -->
+  <rect x="330" y="184" width="250" height="73" rx="6" style="fill:#0f2236;stroke:#2a4060;stroke-width:1;"/>
+  <text x="455" y="200" style="font-family:Arial,sans-serif;font-size:10px;fill:#f4845f;text-anchor:middle;font-weight:bold;">Pull Only, Never Push</text>
+  <!-- Asymmetric force diagram -->
+  <!-- Pull scenario -->
+  <circle cx="380" cy="230" r="8" style="fill:none;stroke:#5bc0be;stroke-width:1.5;"/>
+  <text x="380" y="233" style="font-family:Arial,sans-serif;font-size:6px;fill:#e0e0e0;text-anchor:middle;">cell</text>
+  <line x1="388" y1="230" x2="420" y2="230" style="stroke:#5bc0be;stroke-width:2;"/>
+  <polygon points="420,227 420,233 428,230" style="fill:#5bc0be;"/>
+  <text x="440" y="233" style="font-family:Arial,sans-serif;font-size:8px;fill:#5bc0be;">pull &#x2714;</text>
+  <!-- Push scenario (crossed out) -->
+  <circle cx="380" cy="248" r="8" style="fill:none;stroke:#f4845f;stroke-width:1.5;"/>
+  <text x="380" y="251" style="font-family:Arial,sans-serif;font-size:6px;fill:#e0e0e0;text-anchor:middle;">cell</text>
+  <line x1="372" y1="248" x2="340" y2="248" style="stroke:#f4845f;stroke-width:2;stroke-dasharray:4,2;"/>
+  <polygon points="340,245 340,251 332,248" style="fill:#f4845f;opacity:0.4;"/>
+  <text x="440" y="251" style="font-family:Arial,sans-serif;font-size:8px;fill:#f4845f;">push &#x2718;</text>
+  <!-- Cross out the push -->
+  <line x1="330" y1="242" x2="430" y2="254" style="stroke:#f4845f;stroke-width:1;opacity:0.4;"/>
+  <!-- Cell division inset -->
+  <rect x="595" y="32" width="150" height="225" rx="6" style="fill:#0f2236;stroke:#2a4060;stroke-width:1;"/>
+  <text x="670" y="48" style="font-family:Arial,sans-serif;font-size:9px;fill:#fca311;text-anchor:middle;font-weight:bold;">Cell Division</text>
+  <!-- Parent cell -->
+  <circle cx="670" cy="90" r="20" style="fill:none;stroke:#5bc0be;stroke-width:1.5;"/>
+  <text x="670" y="94" style="font-family:Arial,sans-serif;font-size:8px;fill:#e0e0e0;text-anchor:middle;">parent</text>
+  <!-- Division arrow -->
+  <line x1="670" y1="112" x2="670" y2="130" style="stroke:#fca311;stroke-width:1;"/>
+  <polygon points="667,130 673,130 670,136" style="fill:#fca311;"/>
+  <!-- Two daughter cells -->
+  <circle cx="650" cy="160" r="17" style="fill:none;stroke:#5bc0be;stroke-width:1.5;"/>
+  <text x="650" y="157" style="font-family:Arial,sans-serif;font-size:7px;fill:#e0e0e0;text-anchor:middle;">D1</text>
+  <text x="650" y="167" style="font-family:Arial,sans-serif;font-size:6px;fill:#8899aa;text-anchor:middle;">85%</text>
+  <circle cx="690" cy="160" r="17" style="fill:none;stroke:#5bc0be;stroke-width:1.5;"/>
+  <text x="690" y="157" style="font-family:Arial,sans-serif;font-size:7px;fill:#e0e0e0;text-anchor:middle;">D2</text>
+  <text x="690" y="167" style="font-family:Arial,sans-serif;font-size:6px;fill:#8899aa;text-anchor:middle;">85%</text>
+  <!-- Division axis annotation -->
+  <line x1="635" y1="148" x2="705" y2="172" style="stroke:#fca311;stroke-width:0.8;stroke-dasharray:3,2;"/>
+  <text x="670" y="192" style="font-family:Arial,sans-serif;font-size:7px;fill:#fca311;text-anchor:middle;">azimuth &#x22A5; axis</text>
+  <!-- Size annotation -->
+  <text x="670" y="210" style="font-family:Arial,sans-serif;font-size:8px;fill:#e0e0e0;text-anchor:middle;">r_daughter = 0.85 &#x00B7; r_parent</text>
+  <text x="670" y="224" style="font-family:Arial,sans-serif;font-size:7px;fill:#8899aa;text-anchor:middle;">Split perpendicular to</text>
+  <text x="670" y="236" style="font-family:Arial,sans-serif;font-size:7px;fill:#8899aa;text-anchor:middle;">azimuthal direction</text>
+  <!-- Bottom accent -->
+  <rect x="0" y="294" width="760" height="6" rx="0" style="fill:#5bc0be;opacity:0.3;"/>
+</svg>

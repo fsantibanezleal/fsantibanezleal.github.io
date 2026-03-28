@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="760" height="300">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#0d1b2a"/>
+      <stop offset="100%" style="stop-color:#1b2d45"/>
+    </linearGradient>
+  </defs>
+  <rect width="760" height="300" fill="url(#bg1)"/>
+  <!-- Title -->
+  <text x="380" y="22" style="font-family:Arial,sans-serif;font-size:13px;fill:#5bc0be;text-anchor:middle;font-weight:bold;">SOFI Cumulant PSF Narrowing</text>
+  <!-- Order boxes and curves -->
+  <!-- Order 2 -->
+  <rect x="18" y="34" width="70" height="22" rx="4" style="fill:none;stroke:#5bc0be;stroke-width:1.5;"/>
+  <text x="53" y="49" style="font-family:Arial,sans-serif;font-size:10px;fill:#e0e0e0;text-anchor:middle;">Order 2</text>
+  <path d="M23,88 Q28,88 33,86 Q38,82 43,72 Q48,60 53,55 Q58,60 63,72 Q68,82 73,86 Q78,88 83,88" style="fill:none;stroke:#f4845f;stroke-width:2;"/>
+  <text x="53" y="100" style="font-family:Arial,sans-serif;font-size:10px;fill:#fca311;text-anchor:middle;font-weight:bold;">1.41x</text>
+  <!-- Order 3 -->
+  <rect x="108" y="34" width="70" height="22" rx="4" style="fill:none;stroke:#5bc0be;stroke-width:1.5;"/>
+  <text x="143" y="49" style="font-family:Arial,sans-serif;font-size:10px;fill:#e0e0e0;text-anchor:middle;">Order 3</text>
+  <path d="M118,88 Q125,88 130,85 Q135,80 139,70 Q141,62 143,57 Q145,62 147,70 Q151,80 156,85 Q161,88 168,88" style="fill:none;stroke:#f4845f;stroke-width:2;"/>
+  <text x="143" y="100" style="font-family:Arial,sans-serif;font-size:10px;fill:#fca311;text-anchor:middle;font-weight:bold;">1.73x</text>
+  <!-- Order 4 -->
+  <rect x="198" y="34" width="70" height="22" rx="4" style="fill:none;stroke:#5bc0be;stroke-width:1.5;"/>
+  <text x="233" y="49" style="font-family:Arial,sans-serif;font-size:10px;fill:#e0e0e0;text-anchor:middle;">Order 4</text>
+  <path d="M213,88 Q220,87 225,84 Q229,78 232,68 Q233,61 233,58 Q233,61 234,68 Q237,78 241,84 Q246,87 253,88" style="fill:none;stroke:#f4845f;stroke-width:2;"/>
+  <text x="233" y="100" style="font-family:Arial,sans-serif;font-size:10px;fill:#fca311;text-anchor:middle;font-weight:bold;">2.00x</text>
+  <!-- Order 5 -->
+  <rect x="288" y="34" width="70" height="22" rx="4" style="fill:none;stroke:#5bc0be;stroke-width:1.5;"/>
+  <text x="323" y="49" style="font-family:Arial,sans-serif;font-size:10px;fill:#e0e0e0;text-anchor:middle;">Order 5</text>
+  <path d="M306,88 Q313,87 317,84 Q320,78 322,68 Q323,62 323,59 Q323,62 324,68 Q326,78 329,84 Q333,87 340,88" style="fill:none;stroke:#f4845f;stroke-width:2;"/>
+  <text x="323" y="100" style="font-family:Arial,sans-serif;font-size:10px;fill:#fca311;text-anchor:middle;font-weight:bold;">2.24x</text>
+  <!-- Order 6 -->
+  <rect x="378" y="34" width="70" height="22" rx="4" style="fill:none;stroke:#5bc0be;stroke-width:1.5;"/>
+  <text x="413" y="49" style="font-family:Arial,sans-serif;font-size:10px;fill:#e0e0e0;text-anchor:middle;">Order 6</text>
+  <path d="M398,88 Q405,87 408,84 Q411,79 412,70 Q413,63 413,60 Q413,63 414,70 Q415,79 418,84 Q421,87 428,88" style="fill:none;stroke:#f4845f;stroke-width:2;"/>
+  <text x="413" y="100" style="font-family:Arial,sans-serif;font-size:10px;fill:#fca311;text-anchor:middle;font-weight:bold;">2.45x</text>
+  <!-- PSF label -->
+  <text x="235" y="118" style="font-family:Arial,sans-serif;font-size:9px;fill:#8899aa;text-anchor:middle;">PSF width &#x03C3;/&#x221A;n &#x2192; progressively narrower</text>
+  <!-- Divider -->
+  <line x1="20" y1="126" x2="460" y2="126" style="stroke:#2a4060;stroke-width:1;"/>
+  <!-- Formula section -->
+  <text x="20" y="142" style="font-family:Arial,sans-serif;font-size:11px;fill:#5bc0be;font-weight:bold;">Cumulant Formulas:</text>
+  <!-- kappa 2 -->
+  <text x="30" y="162" style="font-family:Arial,sans-serif;font-size:11px;fill:#e0e0e0;">&#x03BA;&#x2082; = &#x27E8;&#x03B4;F(t) &#x00B7; &#x03B4;F(t+&#x03C4;)&#x27E9;</text>
+  <text x="310" y="162" style="font-family:Arial,sans-serif;font-size:9px;fill:#8899aa;">(simple product)</text>
+  <!-- kappa 4 -->
+  <text x="30" y="182" style="font-family:Arial,sans-serif;font-size:11px;fill:#e0e0e0;">&#x03BA;&#x2084; = &#x03BC;&#x2084; &#x2212; 3&#x03BC;&#x2082;&#x00B2;</text>
+  <text x="310" y="182" style="font-family:Arial,sans-serif;font-size:9px;fill:#8899aa;">(subtract Gaussian terms)</text>
+  <!-- kappa 6 -->
+  <text x="30" y="202" style="font-family:Arial,sans-serif;font-size:11px;fill:#e0e0e0;">&#x03BA;&#x2086; = &#x03BC;&#x2086; &#x2212; 15&#x00B7;(pair&#x00D7;quartet) &#x2212; 10&#x00B7;(triple&#x00D7;triple) + 30&#x00B7;(pair&#x00B3;)</text>
+  <!-- Partition types illustration -->
+  <text x="500" y="42" style="font-family:Arial,sans-serif;font-size:10px;fill:#5bc0be;font-weight:bold;">Partition Types for {1,2,3,4,5,6}</text>
+  <!-- Pair-Quartet -->
+  <rect x="490" y="52" width="255" height="38" rx="4" style="fill:#162438;stroke:#2a4060;stroke-width:1;"/>
+  <text x="500" y="66" style="font-family:Arial,sans-serif;font-size:9px;fill:#fca311;">Pair &#x00D7; Quartet:</text>
+  <rect x="500" y="72" width="22" height="14" rx="2" style="fill:#1e4d6e;stroke:#5bc0be;stroke-width:0.8;"/>
+  <text x="511" y="82" style="font-family:Arial,sans-serif;font-size:8px;fill:#e0e0e0;text-anchor:middle;">1,2</text>
+  <text x="528" y="82" style="font-family:Arial,sans-serif;font-size:9px;fill:#667788;">&#x00D7;</text>
+  <rect x="536" y="72" width="44" height="14" rx="2" style="fill:#1e4d6e;stroke:#f4845f;stroke-width:0.8;"/>
+  <text x="558" y="82" style="font-family:Arial,sans-serif;font-size:8px;fill:#e0e0e0;text-anchor:middle;">3,4,5,6</text>
+  <text x="600" y="82" style="font-family:Arial,sans-serif;font-size:8px;fill:#667788;">(15 ways)</text>
+  <!-- Triple-Triple -->
+  <rect x="490" y="96" width="255" height="38" rx="4" style="fill:#162438;stroke:#2a4060;stroke-width:1;"/>
+  <text x="500" y="110" style="font-family:Arial,sans-serif;font-size:9px;fill:#fca311;">Triple &#x00D7; Triple:</text>
+  <rect x="500" y="116" width="33" height="14" rx="2" style="fill:#1e4d6e;stroke:#5bc0be;stroke-width:0.8;"/>
+  <text x="516" y="126" style="font-family:Arial,sans-serif;font-size:8px;fill:#e0e0e0;text-anchor:middle;">1,2,3</text>
+  <text x="540" y="126" style="font-family:Arial,sans-serif;font-size:9px;fill:#667788;">&#x00D7;</text>
+  <rect x="548" y="116" width="33" height="14" rx="2" style="fill:#1e4d6e;stroke:#f4845f;stroke-width:0.8;"/>
+  <text x="564" y="126" style="font-family:Arial,sans-serif;font-size:8px;fill:#e0e0e0;text-anchor:middle;">4,5,6</text>
+  <text x="600" y="126" style="font-family:Arial,sans-serif;font-size:8px;fill:#667788;">(10 ways)</text>
+  <!-- Pair cubed -->
+  <rect x="490" y="140" width="255" height="38" rx="4" style="fill:#162438;stroke:#2a4060;stroke-width:1;"/>
+  <text x="500" y="154" style="font-family:Arial,sans-serif;font-size:9px;fill:#fca311;">Pair&#x00B3;:</text>
+  <rect x="500" y="160" width="22" height="14" rx="2" style="fill:#1e4d6e;stroke:#5bc0be;stroke-width:0.8;"/>
+  <text x="511" y="170" style="font-family:Arial,sans-serif;font-size:8px;fill:#e0e0e0;text-anchor:middle;">1,2</text>
+  <text x="528" y="170" style="font-family:Arial,sans-serif;font-size:9px;fill:#667788;">&#x00D7;</text>
+  <rect x="536" y="160" width="22" height="14" rx="2" style="fill:#1e4d6e;stroke:#5bc0be;stroke-width:0.8;"/>
+  <text x="547" y="170" style="font-family:Arial,sans-serif;font-size:8px;fill:#e0e0e0;text-anchor:middle;">3,4</text>
+  <text x="564" y="170" style="font-family:Arial,sans-serif;font-size:9px;fill:#667788;">&#x00D7;</text>
+  <rect x="572" y="160" width="22" height="14" rx="2" style="fill:#1e4d6e;stroke:#5bc0be;stroke-width:0.8;"/>
+  <text x="583" y="170" style="font-family:Arial,sans-serif;font-size:8px;fill:#e0e0e0;text-anchor:middle;">5,6</text>
+  <text x="612" y="170" style="font-family:Arial,sans-serif;font-size:8px;fill:#667788;">(15 ways)</text>
+  <!-- Bottom note -->
+  <text x="20" y="228" style="font-family:Arial,sans-serif;font-size:9px;fill:#5bc0be;">Resolution improvement = &#x221A;n relative to diffraction limit</text>
+  <!-- Decorative bottom line -->
+  <rect x="0" y="294" width="760" height="6" rx="0" style="fill:#5bc0be;opacity:0.3;"/>
+</svg>
