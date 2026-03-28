@@ -50,4 +50,8 @@ where R0 is the resting cell radius, A_j is the amplitude (extension length), th
 
 Developed during my work at [SCIAN-Lab](http://www.scian.cl/) and the [BNI](https://www.bni.cl/) at the Universidad de Chile, this simulator supported research in developmental biology, helping understand the physical mechanisms behind collective cell migration in vertebrate embryos.
 
+## Live application
+
+![Cellular Potts Model — Interactive web interface](/images/projects/screenshots/cpm_frontend.png)
+
 [View on GitHub](https://github.com/fsantibanezleal/SCIAN_LEO_CPM)

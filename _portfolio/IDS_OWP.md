@@ -25,4 +25,12 @@ This work was developed during 2014-2016 at the IDS Group (Information and Decis
 
 ![Optimal Spatial Sampling](/images/projects/ids_owp.svg)
 
+## Live application
+
+![Optimal Well Placement — Adaptive sampling visualization](/images/projects/screenshots/owp_frontend.png)
+
+### Demo video — Adaptive entropy sampling in action
+
+{% include youtube.html id="KnTyQgQcpCQ" %}
+
 [View on GitHub](https://github.com/fsantibanezleal/IDS_OWP)
