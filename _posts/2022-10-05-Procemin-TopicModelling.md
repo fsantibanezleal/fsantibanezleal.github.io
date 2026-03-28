@@ -21,6 +21,8 @@ The core idea behind this work is to borrow a technique from natural language pr
 p(mineral | pixel) = Σ<sub>k</sub> p(mineral | topic<sub>k</sub>) × p(topic<sub>k</sub> | pixel) — each pixel is a mixture of mineral "topics"
 </div>
 
+![Sampling comparison — related geostatistical work presented at the same venue](/images/rollings/owp_sampling_comparison.svg)
+
 This reframing is not just a clever analogy -- it opened new possibilities that go well beyond traditional spectral unmixing. It provides a principled, probabilistic way to decompose complex mineral mixtures without requiring prior knowledge of the exact minerals present. The model learns the characteristic spectral patterns directly from the data, grouping pixels into coherent mineral assemblages.
 
 Why this matters for geometallurgy
