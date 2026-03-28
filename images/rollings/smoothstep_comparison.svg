@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="760" height="300">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#0d1b2a"/>
+      <stop offset="100%" style="stop-color:#1b2d45"/>
+    </linearGradient>
+  </defs>
+  <rect width="760" height="300" fill="url(#bg4)"/>
+  <!-- Title -->
+  <text x="380" y="22" style="font-family:Arial,sans-serif;font-size:13px;fill:#5bc0be;text-anchor:middle;font-weight:bold;">Trajectory Interpolation: Cubic vs Quintic Smoothstep</text>
+  <!-- LEFT GRAPH: s(t) vs t (position) -->
+  <rect x="15" y="32" width="230" height="170" rx="6" style="fill:#0f2236;stroke:#2a4060;stroke-width:1;"/>
+  <text x="130" y="48" style="font-family:Arial,sans-serif;font-size:10px;fill:#fca311;text-anchor:middle;font-weight:bold;">Position s(t)</text>
+  <!-- Axes -->
+  <line x1="45" y1="55" x2="45" y2="180" style="stroke:#667788;stroke-width:0.8;"/>
+  <line x1="45" y1="180" x2="225" y2="180" style="stroke:#667788;stroke-width:0.8;"/>
+  <text x="40" y="62" style="font-family:Arial,sans-serif;font-size:7px;fill:#8899aa;text-anchor:end;">1</text>
+  <text x="40" y="183" style="font-family:Arial,sans-serif;font-size:7px;fill:#8899aa;text-anchor:end;">0</text>
+  <text x="225" y="192" style="font-family:Arial,sans-serif;font-size:7px;fill:#8899aa;text-anchor:end;">t=1</text>
+  <text x="45" y="192" style="font-family:Arial,sans-serif;font-size:7px;fill:#8899aa;">t=0</text>
+  <!-- Cubic: 3t^2 - 2t^3 (sampled at many points) -->
+  <polyline points="45,180 54,178.3 63,173.4 72,165.8 81,156.2 90,145.4 99,134.1 108,123 117,112.8 126,104 135,97 144,91.7 153,88.2 162,86 171,84.6 180,83.6 189,82.6 198,81.2 207,79.4 216,77 225,75" style="fill:none;stroke:#f4845f;stroke-width:2;"/>
+  <!-- Quintic: 6t^5 - 15t^4 + 10t^3 (very similar shape, slightly different curvature) -->
+  <polyline points="45,180 54,179.6 63,177.2 72,171.5 81,162.4 90,150.5 99,137 108,123 117,110 126,99.2 135,91.2 144,86 153,83 162,81 171,79.6 180,78.4 189,77 198,75.4 207,73.8 216,72.5 225,72" style="fill:none;stroke:#5bc0be;stroke-width:2;"/>
+  <!-- Legend -->
+  <line x1="60" y1="65" x2="80" y2="65" style="stroke:#f4845f;stroke-width:2;"/>
+  <text x="84" y="68" style="font-family:Arial,sans-serif;font-size:8px;fill:#f4845f;">Cubic: 3t&#x00B2;&#x2212;2t&#x00B3;</text>
+  <line x1="60" y1="76" x2="80" y2="76" style="stroke:#5bc0be;stroke-width:2;"/>
+  <text x="84" y="79" style="font-family:Arial,sans-serif;font-size:8px;fill:#5bc0be;">Quintic: 6t&#x2075;&#x2212;15t&#x2074;+10t&#x00B3;</text>
+  <!-- CENTER GRAPH: Velocity ds/dt -->
+  <rect x="265" y="32" width="230" height="170" rx="6" style="fill:#0f2236;stroke:#2a4060;stroke-width:1;"/>
+  <text x="380" y="48" style="font-family:Arial,sans-serif;font-size:10px;fill:#fca311;text-anchor:middle;font-weight:bold;">Velocity ds/dt</text>
+  <!-- Axes -->
+  <line x1="295" y1="55" x2="295" y2="180" style="stroke:#667788;stroke-width:0.8;"/>
+  <line x1="295" y1="180" x2="475" y2="180" style="stroke:#667788;stroke-width:0.8;"/>
+  <text x="290" y="62" style="font-family:Arial,sans-serif;font-size:7px;fill:#8899aa;text-anchor:end;">1.5</text>
+  <text x="290" y="183" style="font-family:Arial,sans-serif;font-size:7px;fill:#8899aa;text-anchor:end;">0</text>
+  <!-- Cubic velocity: 6t - 6t^2, peak at t=0.5 = 1.5 -->
+  <!-- Starts at 0, rises linearly to 1.5 at midpoint, drops linearly back -->
+  <polyline points="295,180 304,170 313,160 322,150 331,140 340,130 349,120 358,110 367,100 376,95 385,100 394,110 403,120 412,130 421,140 430,150 439,160 448,170 457,178 466,180 475,180" style="fill:none;stroke:#f4845f;stroke-width:2;"/>
+  <!-- Quintic velocity: 30t^4 - 60t^3 + 30t^2, peak at t=0.5 = 1.875 -->
+  <polyline points="295,180 304,179.2 313,176 322,168 331,155 340,137 349,118 358,102 367,92 376,88 385,92 394,102 403,118 412,137 421,155 430,168 439,176 448,179.2 457,180 466,180 475,180" style="fill:none;stroke:#5bc0be;stroke-width:2;"/>
+  <text x="380" y="195" style="font-family:Arial,sans-serif;font-size:8px;fill:#8899aa;text-anchor:middle;">Quintic starts/ends flatter</text>
+  <!-- RIGHT GRAPH: Acceleration d^2s/dt^2 -->
+  <rect x="515" y="32" width="230" height="170" rx="6" style="fill:#0f2236;stroke:#2a4060;stroke-width:1;"/>
+  <text x="630" y="48" style="font-family:Arial,sans-serif;font-size:10px;fill:#fca311;text-anchor:middle;font-weight:bold;">Acceleration d&#x00B2;s/dt&#x00B2;</text>
+  <!-- Axes -->
+  <line x1="545" y1="55" x2="545" y2="180" style="stroke:#667788;stroke-width:0.8;"/>
+  <line x1="545" y1="120" x2="725" y2="120" style="stroke:#667788;stroke-width:0.5;stroke-dasharray:3,3;"/>
+  <line x1="545" y1="180" x2="725" y2="180" style="stroke:#667788;stroke-width:0.8;"/>
+  <text x="540" y="123" style="font-family:Arial,sans-serif;font-size:7px;fill:#8899aa;text-anchor:end;">0</text>
+  <!-- Cubic acceleration: 6 - 12t (linear, JUMPS at endpoints) -->
+  <!-- At t=0: 6 (jump from 0), at t=1: -6 (jump to 0) -->
+  <!-- Mark the discontinuity -->
+  <circle cx="545" cy="70" r="3" style="fill:none;stroke:#f4845f;stroke-width:1.5;"/>
+  <line x1="545" y1="120" x2="545" y2="120" style="stroke:#f4845f;stroke-width:2;"/>
+  <polyline points="548,70 590,85 635,100 680,115 725,130" style="fill:none;stroke:#f4845f;stroke-width:2;"/>
+  <!-- Jump at t=0: open circle at (0,0), filled at (0,6) -->
+  <circle cx="545" cy="120" r="3" style="fill:#0f2236;stroke:#f4845f;stroke-width:1.5;"/>
+  <!-- Jump at t=1: line ends at -6, open circle -->
+  <line x1="722" y1="130" x2="725" y2="130" style="stroke:#f4845f;stroke-width:2;"/>
+  <circle cx="725" cy="130" r="3" style="fill:none;stroke:#f4845f;stroke-width:1.5;"/>
+  <circle cx="725" cy="120" r="3" style="fill:#0f2236;stroke:#f4845f;stroke-width:1.5;"/>
+  <!-- Jump indicators -->
+  <line x1="543" y1="120" x2="543" y2="70" style="stroke:#f4845f;stroke-width:1;stroke-dasharray:2,2;"/>
+  <text x="537" y="95" style="font-family:Arial,sans-serif;font-size:7px;fill:#f4845f;text-anchor:end;">jump!</text>
+  <!-- Quintic acceleration: 120t^3 - 180t^2 + 60t, starts at 0, ends at 0 smoothly -->
+  <polyline points="545,120 554,112 563,100 572,88 581,80 590,78 599,82 608,90 617,100 626,110 635,120 644,130 653,140 662,148 671,152 680,148 689,138 698,125 707,115 716,120 725,120" style="fill:none;stroke:#5bc0be;stroke-width:2;"/>
+  <text x="630" y="170" style="font-family:Arial,sans-serif;font-size:8px;fill:#5bc0be;text-anchor:middle;">Smooth zero at endpoints</text>
+  <!-- Continuity labels -->
+  <rect x="15" y="210" width="360" height="42" rx="6" style="fill:#0f2236;stroke:#2a4060;stroke-width:1;"/>
+  <rect x="55" y="218" width="100" height="20" rx="3" style="fill:#2a1a1a;stroke:#f4845f;stroke-width:1;"/>
+  <text x="105" y="232" style="font-family:Arial,sans-serif;font-size:10px;fill:#f4845f;text-anchor:middle;font-weight:bold;">C&#x00B9; continuity</text>
+  <text x="170" y="232" style="font-family:Arial,sans-serif;font-size:9px;fill:#8899aa;">Cubic</text>
+  <rect x="210" y="218" width="100" height="20" rx="3" style="fill:#1a2a2a;stroke:#5bc0be;stroke-width:1;"/>
+  <text x="260" y="232" style="font-family:Arial,sans-serif;font-size:10px;fill:#5bc0be;text-anchor:middle;font-weight:bold;">C&#x00B2; continuity</text>
+  <text x="325" y="232" style="font-family:Arial,sans-serif;font-size:9px;fill:#8899aa;">Quintic</text>
+  <!-- Robot arm illustration -->
+  <rect x="400" y="210" width="345" height="80" rx="6" style="fill:#0f2236;stroke:#2a4060;stroke-width:1;"/>
+  <text x="572" y="226" style="font-family:Arial,sans-serif;font-size:9px;fill:#fca311;text-anchor:middle;font-weight:bold;">Robot Arm Trajectory</text>
+  <!-- Jerky path (cubic) -->
+  <text x="420" y="246" style="font-family:Arial,sans-serif;font-size:8px;fill:#f4845f;">C&#x00B9; (jerky):</text>
+  <!-- Robot arm base -->
+  <rect x="420" y="256" width="8" height="20" rx="1" style="fill:#667788;"/>
+  <line x1="424" y1="256" x2="440" y2="248" style="stroke:#667788;stroke-width:2.5;"/>
+  <line x1="440" y1="248" x2="460" y2="252" style="stroke:#667788;stroke-width:2;"/>
+  <!-- Jerky path -->
+  <polyline points="460,252 468,250 472,246 478,248 484,244 490,248 496,242" style="fill:none;stroke:#f4845f;stroke-width:1.5;stroke-dasharray:3,2;"/>
+  <text x="500" y="248" style="font-family:Arial,sans-serif;font-size:7px;fill:#f4845f;">vibration at joints</text>
+  <!-- Smooth path (quintic) -->
+  <text x="580" y="246" style="font-family:Arial,sans-serif;font-size:8px;fill:#5bc0be;">C&#x00B2; (smooth):</text>
+  <!-- Robot arm base -->
+  <rect x="580" y="256" width="8" height="20" rx="1" style="fill:#667788;"/>
+  <line x1="584" y1="256" x2="600" y2="248" style="stroke:#667788;stroke-width:2.5;"/>
+  <line x1="600" y1="248" x2="620" y2="252" style="stroke:#667788;stroke-width:2;"/>
+  <!-- Smooth path -->
+  <path d="M620,252 Q640,245 660,244 Q680,243 700,244" style="fill:none;stroke:#5bc0be;stroke-width:1.5;"/>
+  <text x="710" y="248" style="font-family:Arial,sans-serif;font-size:7px;fill:#5bc0be;">clean arc</text>
+  <!-- Bottom accent -->
+  <rect x="0" y="294" width="760" height="6" rx="0" style="fill:#fca311;opacity:0.3;"/>
+</svg>
