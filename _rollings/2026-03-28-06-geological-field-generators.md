@@ -39,3 +39,7 @@ Also built a comparison page where you can see all field types side by side with
 ![Information theory concepts](/images/rollings/owp_information_theory.svg)
 
 The porphyry generator uses `np.sin(r * 0.3) > 0.3` for the concentric rings and `np.sin(angle * k) > 0.7` for radial veins, where k is randomly chosen between 3 and 8. Simple trigonometry producing surprisingly realistic-looking alteration halos.
+
+Here's the adaptive sampling algorithm in action on these fields:
+
+{% include youtube.html id="KnTyQgQcpCQ" %}

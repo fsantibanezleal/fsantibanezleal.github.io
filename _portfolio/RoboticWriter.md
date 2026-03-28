@@ -51,4 +51,8 @@ The original 2004 lab used MATLAB scripts to command the physical Scorbot III. T
 
 ![Robotic Writer — 3D kinematics simulation and trajectory planning](/images/projects/screenshots/robotic_frontend.png)
 
+### Demo video — The robot spells words
+
+{% include youtube.html id="ubUdNsb0W-o" %}
+
 [View on GitHub](https://github.com/fsantibanezleal/Udec_Robotic_Writer)

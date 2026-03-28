@@ -27,3 +27,5 @@ T<sub>0</sub><sup>5</sup> = T<sub>0</sub><sup>1</sup> &middot; T<sub>1</sub><sup
 The Denavit-Hartenberg convention gives you a systematic way to assign coordinate frames to each joint and compute the full chain. Each 4x4 homogeneous transformation encodes a rotation and a translation, and the product of all five gives you the end-effector position and orientation in the base frame. Inverse kinematics — going from a desired pen position back to joint angles — is where the real pain lives, especially with 5 DOF where you have to sacrifice one degree of orientation freedom.
 
 Every letter the robot writes is a sequence of these inverse kinematics solutions, interpolated smoothly so the pen does not jerk. The workspace analysis tells you which letters are even possible. The rest is just path planning. [Robotic Writer](https://github.com/fsantibanezleal/Udec_Robotic_Writer).
+
+{% include youtube.html id="ubUdNsb0W-o" %}
