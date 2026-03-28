@@ -31,4 +31,8 @@ The system implements the **weighted Gerchberg-Saxton (GS) algorithm**, an itera
 
 The original implementation ran on lab hardware controlling a physical SLM. The modern version recreates the full computational pipeline as an interactive web tool, making it accessible for teaching and exploration without specialized equipment.
 
+## Live application
+
+![Holographic Optical Tweezers — Phase mask computation interface](/images/projects/screenshots/dinhot_frontend.png)
+
 [View on GitHub](https://github.com/fsantibanezleal/CEFOP_DinHot)

@@ -26,4 +26,10 @@ This work originated during 2012-2014 at SCIAN-Lab, Universidad de Chile, in col
 
 Related publication: [SOFI of GABAB neurotransmitter receptors in hippocampal neurons (SPIE 2013)](/publication/2013-02-06-SOFI-SPIE)
 
+## Live application
+
+![SOFI — Quantum dot simulation interface](/images/projects/screenshots/sofi_frontend.png)
+
+![SOFI — Cumulant output visualization](/images/projects/screenshots/sofi_frontend_outputs.png)
+
 [View on GitHub](https://github.com/fsantibanezleal/FASL_SOFI_QDOTS)

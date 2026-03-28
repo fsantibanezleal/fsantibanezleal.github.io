@@ -39,4 +39,8 @@ Each cell's contour is discretized as N vertices: vertex[i] = (center_az + r*cos
 
 This project originated at the [Laboratory for Scientific Image Analysis (SCIAN-Lab)](http://www.scian.cl/) at the Universidad de Chile, where I worked on computational tools for developmental biology research in collaboration with the NEMO Millennium Nucleus.
 
+## Live application
+
+![3D Embryo Simulator — Three.js visualization](/images/projects/screenshots/sphersim_frontend.png)
+
 [View on GitHub](https://github.com/fsantibanezleal/SCIAN_EVL_SpherSIM)
