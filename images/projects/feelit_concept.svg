@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#0d1b2a"/>
+      <stop offset="100%" style="stop-color:#1b2d45"/>
+    </linearGradient>
+    <linearGradient id="pinGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#00b4d8"/>
+      <stop offset="100%" style="stop-color:#0077b6"/>
+    </linearGradient>
+    <linearGradient id="timelineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" style="stop-color:#00b4d8"/>
+      <stop offset="50%" style="stop-color:#48cae4"/>
+      <stop offset="100%" style="stop-color:#e07a2f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="400" y="28" style="font-family:Arial,sans-serif;font-size:16px;font-weight:bold;fill:#48cae4;text-anchor:middle;">FeelIT &#x2014; Haptic Accessibility Concept</text>
+
+  <!-- Section dividers -->
+  <line x1="267" y1="38" x2="267" y2="280" style="stroke:#2a4a6b;stroke-width:1;stroke-dasharray:4,4;"/>
+  <line x1="533" y1="38" x2="533" y2="280" style="stroke:#2a4a6b;stroke-width:1;stroke-dasharray:4,4;"/>
+
+  <!-- ========== LEFT SECTION: Physical World ========== -->
+  <text x="133" y="55" style="font-family:Arial,sans-serif;font-size:12px;font-weight:bold;fill:#48cae4;text-anchor:middle;">Physical World</text>
+
+  <!-- 3D object (cube) -->
+  <polygon points="133,90 173,75 173,115 133,130" style="fill:#1a6b8a;stroke:#48cae4;stroke-width:1.5;"/>
+  <polygon points="133,90 93,75 93,115 133,130" style="fill:#0e4d6b;stroke:#48cae4;stroke-width:1.5;"/>
+  <polygon points="93,75 133,60 173,75 133,90" style="fill:#2090b0;stroke:#48cae4;stroke-width:1.5;"/>
+
+  <!-- Arrow down -->
+  <line x1="133" y1="138" x2="133" y2="165" style="stroke:#e07a2f;stroke-width:2;"/>
+  <polygon points="133,172 127,162 139,162" style="fill:#e07a2f;"/>
+
+  <!-- Eye with cross (visual impairment icon) -->
+  <ellipse cx="80" cy="195" rx="22" ry="14" style="fill:none;stroke:#e07a2f;stroke-width:1.5;"/>
+  <circle cx="80" cy="195" r="6" style="fill:none;stroke:#e07a2f;stroke-width:1.5;"/>
+  <line x1="60" y1="180" x2="100" y2="210" style="stroke:#ff4444;stroke-width:2;"/>
+
+  <!-- Hand touching surface (tactile icon) -->
+  <path d="M160,185 C160,185 170,178 175,185 C180,192 172,195 172,195 L165,205 C165,205 155,208 155,200 Z" style="fill:none;stroke:#48cae4;stroke-width:1.5;"/>
+  <line x1="145" y1="210" x2="190" y2="210" style="stroke:#48cae4;stroke-width:2;"/>
+  <!-- fingers -->
+  <line x1="172" y1="195" x2="178" y2="188" style="stroke:#48cae4;stroke-width:1.2;"/>
+  <line x1="170" y1="193" x2="176" y2="183" style="stroke:#48cae4;stroke-width:1.2;"/>
+
+  <!-- Label -->
+  <text x="80" y="230" style="font-family:Arial,sans-serif;font-size:9px;fill:#90a4ae;text-anchor:middle;">Visual Impairment</text>
+  <text x="170" y="230" style="font-family:Arial,sans-serif;font-size:9px;fill:#90a4ae;text-anchor:middle;">Tactile Sense</text>
+
+  <!-- ========== CENTER SECTION: Pin Array Display ========== -->
+  <text x="400" y="55" style="font-family:Arial,sans-serif;font-size:12px;font-weight:bold;fill:#48cae4;text-anchor:middle;">Pin Array Display</text>
+
+  <!-- Base platform -->
+  <rect x="310" y="210" width="180" height="12" rx="2" style="fill:#1a3a5c;stroke:#2a5a7c;stroke-width:1;"/>
+
+  <!-- Pins at varying heights (side view) - forming a relief pattern like a dome/sphere -->
+  <!-- Row of pins -->
+  <rect x="320" y="185" width="6" height="37" rx="1" style="fill:url(#pinGrad);"/>
+  <rect x="335" y="165" width="6" height="57" rx="1" style="fill:url(#pinGrad);"/>
+  <rect x="350" y="145" width="6" height="77" rx="1" style="fill:url(#pinGrad);"/>
+  <rect x="365" y="130" width="6" height="92" rx="1" style="fill:url(#pinGrad);"/>
+  <rect x="380" y="120" width="6" height="102" rx="1" style="fill:url(#pinGrad);"/>
+  <rect x="395" y="115" width="6" height="107" rx="1" style="fill:url(#pinGrad);"/>
+  <rect x="410" y="120" width="6" height="102" rx="1" style="fill:url(#pinGrad);"/>
+  <rect x="425" y="130" width="6" height="92" rx="1" style="fill:url(#pinGrad);"/>
+  <rect x="440" y="145" width="6" height="77" rx="1" style="fill:url(#pinGrad);"/>
+  <rect x="455" y="165" width="6" height="57" rx="1" style="fill:url(#pinGrad);"/>
+  <rect x="470" y="185" width="6" height="37" rx="1" style="fill:url(#pinGrad);"/>
+
+  <!-- Relief curve outline -->
+  <path d="M323,185 C340,155 370,120 398,115 C426,120 456,155 473,185" style="fill:none;stroke:#e07a2f;stroke-width:1.5;stroke-dasharray:3,3;"/>
+
+  <!-- Pin caps (top circles) -->
+  <circle cx="323" cy="183" r="4" style="fill:#48cae4;"/>
+  <circle cx="338" cy="163" r="4" style="fill:#48cae4;"/>
+  <circle cx="353" cy="143" r="4" style="fill:#48cae4;"/>
+  <circle cx="368" cy="128" r="4" style="fill:#48cae4;"/>
+  <circle cx="383" cy="118" r="4" style="fill:#48cae4;"/>
+  <circle cx="398" cy="113" r="4" style="fill:#00b4d8;"/>
+  <circle cx="413" cy="118" r="4" style="fill:#48cae4;"/>
+  <circle cx="428" cy="128" r="4" style="fill:#48cae4;"/>
+  <circle cx="443" cy="143" r="4" style="fill:#48cae4;"/>
+  <circle cx="458" cy="163" r="4" style="fill:#48cae4;"/>
+  <circle cx="473" cy="183" r="4" style="fill:#48cae4;"/>
+
+  <!-- Label -->
+  <text x="400" y="245" style="font-family:Arial,sans-serif;font-size:9px;fill:#90a4ae;text-anchor:middle;">Side view &#x2014; pins form relief of physical object</text>
+
+  <!-- Arrows between sections -->
+  <path d="M230,150 L290,150" style="fill:none;stroke:#e07a2f;stroke-width:1.5;marker-end:url(#arrowOrange);"/>
+  <polygon points="295,150 285,145 285,155" style="fill:#e07a2f;"/>
+
+  <path d="M500,150 L545,150" style="fill:none;stroke:#e07a2f;stroke-width:1.5;"/>
+  <polygon points="550,150 540,145 540,155" style="fill:#e07a2f;"/>
+
+  <!-- ========== RIGHT SECTION: Haptic VR ========== -->
+  <text x="666" y="55" style="font-family:Arial,sans-serif;font-size:12px;font-weight:bold;fill:#48cae4;text-anchor:middle;">Haptic VR</text>
+
+  <!-- Computer screen -->
+  <rect x="610" y="70" width="80" height="55" rx="3" style="fill:#0a1628;stroke:#2a5a7c;stroke-width:1.5;"/>
+  <rect x="637" y="125" width="26" height="8" style="fill:#2a5a7c;"/>
+  <rect x="627" y="133" width="46" height="4" rx="1" style="fill:#2a5a7c;"/>
+
+  <!-- 3D object on screen -->
+  <polygon points="650,85 670,78 670,103 650,110" style="fill:#1a6b8a;stroke:#48cae4;stroke-width:0.8;"/>
+  <polygon points="650,85 635,80 635,105 650,110" style="fill:#0e4d6b;stroke:#48cae4;stroke-width:0.8;"/>
+  <polygon points="635,80 650,73 670,78 650,85" style="fill:#2090b0;stroke:#48cae4;stroke-width:0.8;"/>
+
+  <!-- VR icon label -->
+  <text x="650" y="155" style="font-family:Arial,sans-serif;font-size:9px;fill:#90a4ae;text-anchor:middle;">VR Environment</text>
+
+  <!-- Haptic stylus device -->
+  <line x1="720" y1="100" x2="690" y2="170" style="stroke:#e07a2f;stroke-width:3;stroke-linecap:round;"/>
+  <circle cx="720" cy="100" r="4" style="fill:#e07a2f;"/>
+  <!-- Stylus base -->
+  <rect x="680" y="170" width="22" height="10" rx="2" style="fill:#3a3a4a;stroke:#e07a2f;stroke-width:1;"/>
+  <rect x="675" y="180" width="32" height="6" rx="2" style="fill:#3a3a4a;stroke:#e07a2f;stroke-width:1;"/>
+
+  <!-- Force feedback arrows -->
+  <path d="M715,105 C730,95 735,108 720,112" style="fill:none;stroke:#48cae4;stroke-width:1;stroke-dasharray:2,2;"/>
+  <text x="740" y="108" style="font-family:Arial,sans-serif;font-size:7px;fill:#48cae4;text-anchor:start;">Force</text>
+  <text x="740" y="117" style="font-family:Arial,sans-serif;font-size:7px;fill:#48cae4;text-anchor:start;">Feedback</text>
+
+  <!-- Stylus label -->
+  <text x="691" y="200" style="font-family:Arial,sans-serif;font-size:9px;fill:#90a4ae;text-anchor:middle;">Haptic Stylus</text>
+
+  <!-- ========== BOTTOM: Timeline ========== -->
+  <rect x="30" y="275" width="740" height="90" rx="6" style="fill:#0a1628;stroke:#1a3a5c;stroke-width:1;"/>
+
+  <!-- Timeline line -->
+  <line x1="60" y1="310" x2="740" y2="310" style="stroke:url(#timelineGrad);stroke-width:2;"/>
+
+  <!-- Timeline nodes -->
+  <!-- Node 1: Pin Array Prototype -->
+  <circle cx="130" cy="310" r="6" style="fill:#00b4d8;stroke:#48cae4;stroke-width:1.5;"/>
+  <text x="130" y="298" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#48cae4;text-anchor:middle;">Pin Array Prototype</text>
+  <text x="130" y="330" style="font-family:Arial,sans-serif;font-size:8px;fill:#90a4ae;text-anchor:middle;">2008&#x2013;2010</text>
+
+  <!-- Arrow -->
+  <polygon points="215,310 205,305 205,315" style="fill:#48cae4;"/>
+
+  <!-- Node 2: Haptic Exploration -->
+  <circle cx="310" cy="310" r="6" style="fill:#00b4d8;stroke:#48cae4;stroke-width:1.5;"/>
+  <text x="310" y="298" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#48cae4;text-anchor:middle;">Haptic Exploration</text>
+  <text x="310" y="330" style="font-family:Arial,sans-serif;font-size:8px;fill:#90a4ae;text-anchor:middle;">2009</text>
+
+  <!-- Arrow -->
+  <polygon points="400,310 390,305 390,315" style="fill:#48cae4;"/>
+
+  <!-- Node 3: VR Integration -->
+  <circle cx="490" cy="310" r="6" style="fill:#00b4d8;stroke:#48cae4;stroke-width:1.5;"/>
+  <text x="490" y="298" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#48cae4;text-anchor:middle;">VR Integration</text>
+  <text x="490" y="330" style="font-family:Arial,sans-serif;font-size:8px;fill:#90a4ae;text-anchor:middle;">2012</text>
+
+  <!-- Arrow -->
+  <polygon points="580,310 570,305 570,315" style="fill:#e07a2f;"/>
+
+  <!-- Node 4: Project Frozen -->
+  <circle cx="660" cy="310" r="6" style="fill:#e07a2f;stroke:#ff9a3c;stroke-width:1.5;"/>
+  <text x="660" y="298" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#e07a2f;text-anchor:middle;">Project Frozen</text>
+  <text x="660" y="330" style="font-family:Arial,sans-serif;font-size:8px;fill:#90a4ae;text-anchor:middle;">Paused</text>
+
+  <!-- Snowflake icon for frozen -->
+  <text x="660" y="352" style="font-family:Arial,sans-serif;font-size:14px;fill:#90a4ae;text-anchor:middle;">*</text>
+
+  <!-- Bottom label -->
+  <text x="400" y="358" style="font-family:Arial,sans-serif;font-size:8px;fill:#4a6a8a;text-anchor:middle;">Assistive technology for visually impaired users through haptic interfaces</text>
+
+</svg>
