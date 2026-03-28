@@ -8,6 +8,21 @@ tags: [computer-vision, generative-ai, environmental, monitoring, deep-learning]
 
 An **environmental monitoring system** that combines computer vision, predictive modeling, and Generative AI to detect, forecast, and mitigate pollution events at mining operation sites.
 
+## Business impact
+
+The system achieved a 15% reduction in severe environmental alert events, shifting the operation from reactive incident response to proactive pollution mitigation. Natural-language recommendations made the system accessible to non-technical operators and environmental managers, removing the interpretive barrier between predictive analytics and operational action.
+
+| Metric | Result |
+|--------|--------|
+| Alert reduction | 15% fewer severe events |
+| Forecast horizons | 1-hour and 6-hour predictions |
+| Video streams | 24 continuous camera feeds |
+| Recommendations | Natural language, real-time |
+
+## Strategic context
+
+Environmental compliance in mining is not optional — it is a license to operate. Regulatory violations can halt production, generate fines, and damage community relationships irreversibly. This system transformed environmental management from reactive (respond after the alert) to predictive (act before the event), protecting both surrounding communities and operational continuity. The integration of Generative AI for operator-facing recommendations was a deliberate decision to maximize adoption by the people who actually control dust-generating activities.
+
 ![Environmental Monitoring](/images/projects/environmental_monitoring.svg)
 
 ## The challenge

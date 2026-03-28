@@ -8,6 +8,21 @@ tags: [hyperspectral, machine-learning, mineral-classification, cnn, fastapi, da
 
 A **machine learning platform** for classifying minerals and estimating their abundances from hyperspectral imagery (VNIR/SWIR), designed for deployment at mining and exploration sites.
 
+## Business impact
+
+This platform automated mineral identification that previously required manual laboratory analysis, compressing turnaround from days to minutes for routine characterization. Faster mineralogical feedback enables tighter process control in geometallurgical workflows. Compositional constraints (abundances sum to 100%) ensure that results are physically meaningful and directly usable by geologists without manual correction.
+
+| Metric | Result |
+|--------|--------|
+| Models | XGBoost, ExtraTrees, CNN 1D/2D, ensemble |
+| Constraint | Predicted abundances sum to 100% |
+| Minerals | Clays, sulfates, iron oxides, phyllosilicates |
+| Deployment | Desktop application for field use |
+
+## Strategic context
+
+Laboratory mineral analysis (XRD/XRF) takes days and requires sample preparation; this system provides estimates in minutes directly from spectral data. For geometallurgical applications, faster characterization means tighter feedback loops between ore properties and processing parameters — enabling operators to adapt process settings to changing ore in near real-time rather than reacting to stale lab results.
+
 ![Pipeline](/images/projects/hsi_mineral_classification.svg)
 
 ## The challenge

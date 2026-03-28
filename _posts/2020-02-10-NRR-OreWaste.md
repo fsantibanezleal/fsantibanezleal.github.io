@@ -23,6 +23,13 @@ Validation on real cases
 
 What makes this paper particularly satisfying is the validation. We tested the approach on three real mining cases with distinct geological settings and orebody geometries, and in each one the adaptive strategy showed clear improvement over the standard regular grid approach. The feeling of watching the algorithm place samples in geologically sensible locations -- concentrating effort near ore-waste boundaries where uncertainty is highest -- was remarkable. The theory was not just working in the abstract; it was making decisions that an experienced geologist would recognize as intelligent.
 
+![Sampling strategies comparison](/images/rollings/owp_sampling_comparison.svg)
+
+<div style="background:#0d1b2a;padding:16px 20px;border-radius:8px;margin:16px 0;font-family:Georgia,serif;color:#e0e0e0;font-size:15px;line-height:1.8;">
+<strong style="color:#e07830;">Adaptive sampling:</strong><br/>
+select x* = argmax H(X<sup>f</sup> | X<sub>f</sub> ∪ {x}) — place next sample where uncertainty is highest
+</div>
+
 This is not a marginal academic improvement -- it translates to better classification of ore and waste blocks, which directly impacts operational decisions and economic outcomes. It is worth emphasizing what this means in practice: mining companies overwhelmingly rely on regular drilling grids for grade control. Showing that an adaptive, information-driven approach consistently outperforms this industry standard, on real data from real mines, challenges deeply entrenched operational habits. The potential savings from better ore-waste boundary delineation are substantial.
 
 For me, this paper closes a loop that started during my doctoral research. The theoretical framework needed to prove itself in realistic scenarios, and it did. Seeing the ideas work on actual mining data, with all the messiness and complexity that entails, was one of the most rewarding moments of my PhD journey. It confirmed that the years spent on formalization were not in vain. The code implementing the information-driven sampling framework used in both this paper and the earlier Mathematical Geosciences publication is openly available. [View the code on GitHub](https://github.com/fsantibanezleal/IDS_OWP).
