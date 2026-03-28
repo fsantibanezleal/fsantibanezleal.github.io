@@ -61,3 +61,5 @@ Finally it was a quiet afternoon capturing hyperspectral images. I like the heat
 
 <iframe src="https://www.youtube.com/embed/uG9nOjof9ok" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+![SOFI pipeline — spectral processing analogy](/images/rollings/sofi_pipeline.svg)
+
