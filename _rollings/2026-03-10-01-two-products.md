@@ -11,3 +11,7 @@ Two Products Running
 ======
 
 Both the crusher wear management platform and the hyperspectral mineral classification system are now operational and in use by industrial clients. Building software products as a consultant alongside my day job at a large company is exhausting but rewarding. Different muscles, different pace. The consulting work forces you to own every decision -- architecture, UX, deployment, support -- in a way that a big organization rarely does.
+
+![Crusher wear system](/images/projects/crusher_wear_system.svg)
+
+![HSI classification](/images/projects/hsi_mineral_classification.svg)
