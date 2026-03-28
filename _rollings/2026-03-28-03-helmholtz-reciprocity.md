@@ -29,3 +29,5 @@ But the transport matrix is large and measuring it naively requires as many capt
 The low-rank structure of most real scenes means that a handful of singular values capture most of the transport. The rest is noise and high-frequency inter-reflections that rarely matter perceptually.
 
 I keep coming back to this project because it sits at the intersection of linear algebra and physical optics in a way that feels almost too clean. The math works because the physics is symmetric, and the physics is symmetric because... well, that is a deeper question. [Dual Photography project](https://github.com/fsantibanezleal/FASL_Coding_DualFotography).
+
+{% include youtube.html id="Ju5GQuowxaE" %}
