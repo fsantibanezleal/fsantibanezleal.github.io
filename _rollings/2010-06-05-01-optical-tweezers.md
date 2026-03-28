@@ -13,4 +13,8 @@ Working on the holographic optical tweezers system at CEFOP. The Gerchberg-Saxto
 
 The iterative convergence is mesmerizing. Each iteration gets closer to equalizing the intensity across all trap positions. The weighted version converges faster and distributes power more evenly.
 
-The lab smells like ozone from the laser and the room is always dark. I am learning a lot about Fourier optics and how phase modulation can shape light in ways I never imagined during my electronics courses at UdeC. [Optical tweezers on GitHub](https://github.com/fsantibanezleal/CEFOP_DinHot).
+The lab smells like ozone from the laser and the room is always dark. I am learning a lot about Fourier optics and how phase modulation can shape light in ways I never imagined during my electronics courses at UdeC.
+
+![Fourier optics and trap types](/images/rollings/dinhot_fourier_optics.svg)
+
+[Optical tweezers on GitHub](https://github.com/fsantibanezleal/CEFOP_DinHot).

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="400" viewBox="0 0 700 400">
+  <defs>
+    <style>
+      text { font-family: 'Segoe UI', Arial, sans-serif; fill: #e6edf3; }
+      .title { font-size: 15px; font-weight: bold; fill: #58a6ff; }
+      .label { font-size: 11px; fill: #e6edf3; }
+      .sublabel { font-size: 9.5px; fill: #8b949e; }
+      .math { font-size: 11px; fill: #d2a8ff; font-style: italic; }
+      .axis-label { font-size: 12px; fill: #e6edf3; }
+      .tick { font-size: 9px; fill: #8b949e; }
+      .gridline { stroke: #21262d; stroke-width: 0.5; }
+    </style>
+    <linearGradient id="areaGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#7ee787" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#7ee787" stop-opacity="0.02"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#e6edf3"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="400" fill="#0d1117"/>
+
+  <!-- Title -->
+  <text class="title" x="350" y="30" text-anchor="middle">Resolvability Capacity Curve C_k</text>
+
+  <!-- Plot area: x=80..620, y=55..330 -->
+  <!-- Grid lines -->
+  <line class="gridline" x1="80" y1="110" x2="620" y2="110"/>
+  <line class="gridline" x1="80" y1="165" x2="620" y2="165"/>
+  <line class="gridline" x1="80" y1="220" x2="620" y2="220"/>
+  <line class="gridline" x1="80" y1="275" x2="620" y2="275"/>
+
+  <!-- Axes -->
+  <line x1="80" y1="330" x2="635" y2="330" stroke="#e6edf3" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="80" y1="340" x2="80" y2="48" stroke="#e6edf3" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Y-axis ticks and labels -->
+  <text class="tick" x="72" y="334" text-anchor="end">0.0</text>
+  <text class="tick" x="72" y="279" text-anchor="end">0.2</text>
+  <text class="tick" x="72" y="224" text-anchor="end">0.4</text>
+  <text class="tick" x="72" y="169" text-anchor="end">0.6</text>
+  <text class="tick" x="72" y="114" text-anchor="end">0.8</text>
+  <text class="tick" x="72" y="59" text-anchor="end">1.0</text>
+
+  <!-- X-axis ticks -->
+  <text class="tick" x="80" y="348" text-anchor="middle">0</text>
+  <text class="tick" x="188" y="348" text-anchor="middle">5</text>
+  <text class="tick" x="296" y="348" text-anchor="middle">10</text>
+  <text class="tick" x="404" y="348" text-anchor="middle">15</text>
+  <text class="tick" x="512" y="348" text-anchor="middle">20</text>
+  <text class="tick" x="620" y="348" text-anchor="middle">25</text>
+
+  <!-- Axis labels -->
+  <text class="axis-label" x="350" y="375" text-anchor="middle">Number of samples k</text>
+  <text class="axis-label" x="28" y="195" text-anchor="middle" transform="rotate(-90,28,195)">C_k = I(f*_k) / H(X)</text>
+
+  <!-- 1.0 dashed line -->
+  <line x1="80" y1="55" x2="620" y2="55" stroke="#8b949e" stroke-width="0.8" stroke-dasharray="4,3"/>
+
+  <!-- Shaded "sufficient samples" region -->
+  <!-- Area under curve up to stopping point (k~12, x~340) -->
+  <path d="M80,330 L80,330 L102,308 L124,282 L146,255 L168,228 L190,202 L212,180 L234,162 L256,148 L278,137 L300,128 L322,121 L340,117 L340,330 Z" fill="url(#areaGrad)"/>
+
+  <!-- Curve: C_k = 1 - exp(-0.18*k) approximately -->
+  <path d="M80,330 C100,290 120,265 146,230 C170,200 190,178 212,160 C234,145 256,133 278,124 C300,117 322,112 340,108 C360,105 380,102 404,99 C430,96 460,93 490,90 C520,88 550,86 580,84 C600,83 620,82 620,82" fill="none" stroke="#7ee787" stroke-width="2.5"/>
+
+  <!-- Stopping rule point -->
+  <circle cx="340" cy="108" r="5" fill="#f97583" stroke="#f97583" stroke-width="1"/>
+  <line x1="340" y1="108" x2="340" y2="330" stroke="#f97583" stroke-width="1" stroke-dasharray="5,4"/>
+
+  <!-- Stopping rule annotation -->
+  <line x1="345" y1="105" x2="420" y2="78" stroke="#f97583" stroke-width="0.8"/>
+  <text class="label" x="425" y="75" fill="#f97583">Stopping point</text>
+  <text class="math" x="425" y="90">dC_k/dk &lt; epsilon</text>
+
+  <!-- "Sufficient samples" label -->
+  <text class="sublabel" x="210" y="310" text-anchor="middle" fill="#7ee787">Sufficient</text>
+  <text class="sublabel" x="210" y="322" text-anchor="middle" fill="#7ee787">samples</text>
+
+  <!-- "Diminishing returns" label -->
+  <text class="sublabel" x="510" y="75" text-anchor="middle" fill="#8b949e">Diminishing returns</text>
+  <path d="M460,78 L445,85" fill="none" stroke="#8b949e" stroke-width="0.5"/>
+
+  <!-- Plateau annotation -->
+  <text class="sublabel" x="600" y="72" text-anchor="middle">C_k -> 1</text>
+</svg>

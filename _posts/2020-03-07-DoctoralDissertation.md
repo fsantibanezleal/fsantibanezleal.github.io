@@ -29,6 +29,13 @@ In this work, the formulation and experimental analysis of the Optimal Sensor Pl
 
 This work aims at formalizing the OSP problem for a given amount of available measurements. The characterization of the uncertainty is a central piece of this formalization -- connecting information theory with geostatistics in a way that had not been done before for categorical spatial models. The full dissertation is [available in the University of Chile repository](http://repositorio.uchile.cl/handle/2250/175050), and the code implementing the information-driven sampling framework is [open-sourced on GitHub](https://github.com/fsantibanezleal/IDS_OWP).
 
+![Information theory for spatial sampling](/images/rollings/owp_information_theory.svg)
+
+<div style="background:#0d1b2a;padding:16px 20px;border-radius:8px;margin:16px 0;font-family:Georgia,serif;color:#e0e0e0;font-size:15px;line-height:1.8;">
+<strong style="color:#e07830;">Shannon entropy — maximum at uniform distribution (maximum uncertainty):</strong><br/>
+H(X) = −Σ p(x) log₂ p(x)
+</div>
+
 More details?
 ------
 
