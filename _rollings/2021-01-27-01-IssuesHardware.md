@@ -32,3 +32,9 @@ Hard work for this summer !!!
 
 Cleaning of Optics and Hardware
 
+![Hyperspectral classification pipeline](/images/projects/hsi_mineral_classification.svg)
+
+<div style="background:#0d1b2a;padding:16px 20px;border-radius:8px;margin:16px 0;font-family:Georgia,serif;color:#e0e0e0;font-size:15px;line-height:1.8;">
+<strong style="color:#e07830;">Dead pixel correction:</strong><br/>
+I_corrected(x,y,λ) = median(neighborhood) when I(x,y,λ) deviates > 3σ from local statistics
+</div>

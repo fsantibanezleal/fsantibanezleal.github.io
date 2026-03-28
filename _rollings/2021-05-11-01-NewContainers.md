@@ -47,3 +47,5 @@ The offtopic
 Topology, XD.
 
 ![img](/files/personal-blog/2021-05-11-01/11.jpg)
+
+![Material tracking and blending](/images/projects/material_tracking.svg)
