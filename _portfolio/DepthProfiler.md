@@ -61,4 +61,8 @@ Ra = (1/N) Σ |z<sub>i</sub> - z̄| — arithmetic mean deviation of the profile
 
 This project is the **enabling technology** for granulometry estimation from surface imaging. When combined with the [HSI Mineral Classification](/portfolio/HSIMineralClassification/) pipeline, it allows simultaneous characterization of both **what a mineral sample is** (spectral composition) and **how it looks physically** (particle size, roughness, texture). This joint characterization is critical for geometallurgical models that predict processing behavior.
 
+## Live application
+
+![3D Distance Profiler — depth map processing and surface analysis](/images/projects/screenshots/depth_profiler_frontend.png)
+
 [View on GitHub](https://github.com/fsantibanezleal/FASL_3D_Distance_Profiler)
