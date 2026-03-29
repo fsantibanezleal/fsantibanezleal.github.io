@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="Segoe UI, sans-serif" font-size="12">
+  <rect width="600" height="400" fill="#0d1117" rx="8"/>
+  <text x="300" y="25" text-anchor="middle" fill="#d29922" font-size="15" font-weight="bold">Particle Size Distribution Curve</text>
+
+  <!-- Axes -->
+  <line x1="70" y1="40" x2="70" y2="340" stroke="#8b949e" stroke-width="1"/>
+  <line x1="70" y1="340" x2="570" y2="340" stroke="#8b949e" stroke-width="1"/>
+
+  <!-- Y-axis labels -->
+  <text x="60" y="340" text-anchor="end" fill="#8b949e" font-size="10">0%</text>
+  <text x="60" y="280" text-anchor="end" fill="#8b949e" font-size="10">20%</text>
+  <text x="60" y="220" text-anchor="end" fill="#8b949e" font-size="10">40%</text>
+  <text x="60" y="160" text-anchor="end" fill="#8b949e" font-size="10">60%</text>
+  <text x="60" y="100" text-anchor="end" fill="#8b949e" font-size="10">80%</text>
+  <text x="60" y="46" text-anchor="end" fill="#8b949e" font-size="10">100%</text>
+
+  <!-- Grid -->
+  <line x1="70" y1="280" x2="570" y2="280" stroke="#30363d" stroke-width="0.5"/>
+  <line x1="70" y1="220" x2="570" y2="220" stroke="#30363d" stroke-width="0.5"/>
+  <line x1="70" y1="160" x2="570" y2="160" stroke="#30363d" stroke-width="0.5"/>
+  <line x1="70" y1="100" x2="570" y2="100" stroke="#30363d" stroke-width="0.5"/>
+
+  <!-- S-curve (Rosin-Rammler shape) -->
+  <path d="M 70 340 Q 150 338, 200 320 Q 250 295, 300 220 Q 350 130, 400 80 Q 450 55, 500 48 Q 550 44, 570 43"
+        fill="none" stroke="#d29922" stroke-width="2.5"/>
+
+  <!-- D10 marker -->
+  <line x1="175" y1="40" x2="175" y2="340" stroke="#58a6ff" stroke-width="1" stroke-dasharray="4"/>
+  <circle cx="175" cy="310" r="4" fill="#58a6ff"/>
+  <text x="175" y="365" text-anchor="middle" fill="#58a6ff" font-size="10">D10</text>
+
+  <!-- D50 marker -->
+  <line x1="305" y1="40" x2="305" y2="340" stroke="#3fb950" stroke-width="1" stroke-dasharray="4"/>
+  <circle cx="305" cy="190" r="4" fill="#3fb950"/>
+  <text x="305" y="365" text-anchor="middle" fill="#3fb950" font-size="10">D50</text>
+
+  <!-- D80 marker -->
+  <line x1="400" y1="40" x2="400" y2="340" stroke="#f85149" stroke-width="1" stroke-dasharray="4"/>
+  <circle cx="400" cy="80" r="4" fill="#f85149"/>
+  <text x="400" y="365" text-anchor="middle" fill="#f85149" font-size="10">D80</text>
+
+  <!-- x0 marker (63.2%) -->
+  <line x1="350" y1="40" x2="350" y2="340" stroke="#d29922" stroke-width="1" stroke-dasharray="2,4"/>
+  <circle cx="350" cy="120" r="3" fill="#d29922"/>
+  <text x="350" y="380" text-anchor="middle" fill="#d29922" font-size="10">x0 (63.2%)</text>
+
+  <!-- Axis titles -->
+  <text x="320" y="395" text-anchor="middle" fill="#8b949e" font-size="12">Grain Size (mm)</text>
+
+  <text x="15" y="190" text-anchor="middle" fill="#8b949e" font-size="11" transform="rotate(-90, 15, 190)">Cumulative Passing (%)</text>
+
+  <!-- Legend -->
+  <rect x="420" y="50" width="140" height="60" rx="4" fill="#161b22" stroke="#30363d"/>
+  <line x1="430" y1="65" x2="450" y2="65" stroke="#d29922" stroke-width="2"/>
+  <text x="455" y="68" fill="#8b949e" font-size="10">Cumulative PSD</text>
+  <text x="430" y="85" fill="#8b949e" font-size="10">F(x)=1-exp(-(x/x0)^n)</text>
+  <text x="430" y="100" fill="#8b949e" font-size="10">Rosin-Rammler fit</text>
+</svg>

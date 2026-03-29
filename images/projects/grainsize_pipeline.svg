@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" font-family="Segoe UI, sans-serif" font-size="12">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#d29922"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="200" fill="#0d1117" rx="8"/>
+  <text x="450" y="25" text-anchor="middle" fill="#d29922" font-size="15" font-weight="bold">Processing Pipeline</text>
+
+  <!-- Step 1: Generate -->
+  <rect x="30" y="50" width="120" height="60" rx="6" fill="#161b22" stroke="#d29922"/>
+  <text x="90" y="75" text-anchor="middle" fill="#d29922" font-weight="bold">Generate</text>
+  <text x="90" y="95" text-anchor="middle" fill="#8b949e">RGB + Depth</text>
+
+  <line x1="150" y1="80" x2="190" y2="80" stroke="#d29922" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Step 2: Smooth -->
+  <rect x="195" y="50" width="110" height="60" rx="6" fill="#161b22" stroke="#30363d"/>
+  <text x="250" y="75" text-anchor="middle" fill="#e6edf3" font-weight="bold">Smooth</text>
+  <text x="250" y="95" text-anchor="middle" fill="#8b949e">Gaussian filter</text>
+
+  <line x1="305" y1="80" x2="345" y2="80" stroke="#d29922" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Step 3: Gradient -->
+  <rect x="350" y="50" width="110" height="60" rx="6" fill="#161b22" stroke="#30363d"/>
+  <text x="405" y="75" text-anchor="middle" fill="#e6edf3" font-weight="bold">Gradient</text>
+  <text x="405" y="95" text-anchor="middle" fill="#8b949e">|nabla z|</text>
+
+  <line x1="460" y1="80" x2="500" y2="80" stroke="#d29922" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Step 4: Watershed -->
+  <rect x="505" y="50" width="110" height="60" rx="6" fill="#161b22" stroke="#d29922"/>
+  <text x="560" y="75" text-anchor="middle" fill="#d29922" font-weight="bold">Watershed</text>
+  <text x="560" y="95" text-anchor="middle" fill="#8b949e">Markers + flood</text>
+
+  <line x1="615" y1="80" x2="655" y2="80" stroke="#d29922" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Step 5: Measure -->
+  <rect x="660" y="50" width="110" height="60" rx="6" fill="#161b22" stroke="#30363d"/>
+  <text x="715" y="75" text-anchor="middle" fill="#e6edf3" font-weight="bold">Measure</text>
+  <text x="715" y="95" text-anchor="middle" fill="#8b949e">d_eq, AR, V</text>
+
+  <line x1="770" y1="80" x2="810" y2="80" stroke="#d29922" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Step 6: PSD -->
+  <rect x="815" y="50" width="65" height="60" rx="6" fill="#161b22" stroke="#d29922"/>
+  <text x="847" y="75" text-anchor="middle" fill="#d29922" font-weight="bold">PSD</text>
+  <text x="847" y="95" text-anchor="middle" fill="#8b949e">D50, R-R</text>
+
+  <!-- Bottom: equations -->
+  <text x="90"  y="145" text-anchor="middle" fill="#8b949e" font-size="10">z = z_peak * sqrt(1 - e^2)</text>
+  <text x="250" y="145" text-anchor="middle" fill="#8b949e" font-size="10">G_sigma * z(x,y)</text>
+  <text x="405" y="145" text-anchor="middle" fill="#8b949e" font-size="10">sqrt((dz/dx)^2+(dz/dy)^2)</text>
+  <text x="560" y="145" text-anchor="middle" fill="#8b949e" font-size="10">markers -> flooding</text>
+  <text x="715" y="145" text-anchor="middle" fill="#8b949e" font-size="10">d=2*sqrt(A/pi)</text>
+  <text x="847" y="145" text-anchor="middle" fill="#8b949e" font-size="10">F=1-e^(-(x/x0)^n)</text>
+
+  <!-- Legend -->
+  <text x="450" y="185" text-anchor="middle" fill="#58a6ff" font-size="11">Gold borders = key algorithmic steps | Gray borders = processing stages</text>
+</svg>
