@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980" role="img" aria-labelledby="title desc">
+  <title id="title">FeelIT architecture</title>
+  <desc id="desc">Architecture diagram for FeelIT showing four frontend routes, shared API and domain services, scene runtime and haptic boundary, and release governance that keeps documentation and SVG diagrams synchronized with the shipped state.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="55%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#182233"/>
+      <stop offset="100%" stop-color="#101722"/>
+    </linearGradient>
+    <linearGradient id="panelSoft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#142030"/>
+      <stop offset="100%" stop-color="#0f1724"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.30"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#79c0ff"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#7ee787"/>
+    </marker>
+    <style>
+      .title { font: 700 40px 'Segoe UI', sans-serif; fill: #e6edf3; }
+      .subtitle { font: 400 18px 'Segoe UI', sans-serif; fill: #8b949e; }
+      .lane { font: 700 14px 'Segoe UI', sans-serif; fill: #0d1117; letter-spacing: 1.8px; }
+      .cardTitle { font: 700 22px 'Segoe UI', sans-serif; fill: #e6edf3; }
+      .body { font: 400 16px 'Segoe UI', sans-serif; fill: #9fb0c3; }
+      .small { font: 400 14px 'Segoe UI', sans-serif; fill: #8b949e; }
+      .mono { font: 400 14px Consolas, monospace; fill: #d7e2ee; }
+      .legend { font: 600 14px 'Segoe UI', sans-serif; fill: #d3deea; }
+      .badge { font: 700 12px 'Segoe UI', sans-serif; fill: #0d1117; letter-spacing: 1px; }
+      .iconStroke { stroke: #e6edf3; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .iconFillBlue { fill: rgba(121,192,255,0.22); stroke: #79c0ff; stroke-width: 1.6; }
+      .iconFillGreen { fill: rgba(126,231,135,0.20); stroke: #7ee787; stroke-width: 1.6; }
+      .iconFillPurple { fill: rgba(194,151,255,0.20); stroke: #c297ff; stroke-width: 1.6; }
+      .iconFillOrange { fill: rgba(255,166,87,0.20); stroke: #ffa657; stroke-width: 1.6; }
+      .iconFillYellow { fill: rgba(242,204,96,0.20); stroke: #f2cc60; stroke-width: 1.6; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="980" fill="url(#bg)"/>
+  <circle cx="1460" cy="170" r="240" fill="#58a6ff" opacity="0.06"/>
+  <circle cx="210" cy="860" r="220" fill="#39d2c0" opacity="0.05"/>
+  <rect x="42" y="42" width="1516" height="896" rx="28" fill="none" stroke="#30363d" stroke-width="2"/>
+
+  <text x="78" y="102" class="title">FeelIT Architecture</text>
+  <text x="78" y="136" class="subtitle">Four dedicated routes share one runtime, one domain core, and one release discipline that keeps docs and SVGs synchronized with shipped behavior.</text>
+
+  <rect x="78" y="174" width="224" height="30" rx="15" fill="#79c0ff"/>
+  <text x="102" y="194" class="lane">FRONTEND ROUTES</text>
+  <rect x="568" y="174" width="236" height="30" rx="15" fill="#7ee787"/>
+  <text x="592" y="194" class="lane">API AND DOMAIN CORE</text>
+  <rect x="1096" y="174" width="256" height="30" rx="15" fill="#ffa657"/>
+  <text x="1122" y="194" class="lane">RUNTIME AND GOVERNANCE</text>
+
+  <rect x="78" y="224" width="440" height="622" rx="24" fill="url(#panel)" stroke="#30363d" filter="url(#shadow)"/>
+  <rect x="560" y="224" width="472" height="622" rx="24" fill="url(#panel)" stroke="#30363d" filter="url(#shadow)"/>
+  <rect x="1074" y="224" width="438" height="622" rx="24" fill="url(#panel)" stroke="#30363d" filter="url(#shadow)"/>
+
+  <rect x="108" y="256" width="178" height="182" rx="18" fill="url(#panelSoft)" stroke="#58a6ff"/>
+  <circle cx="144" cy="294" r="18" class="iconFillBlue"/>
+  <path d="M134 296 L144 289 L154 296 L154 308 L144 315 L134 308 Z" class="iconStroke"/>
+  <path d="M144 289 L144 301" class="iconStroke"/>
+  <path d="M134 296 L144 303 L154 296" class="iconStroke"/>
+  <text x="176" y="292" class="cardTitle">Object</text>
+  <text x="176" y="318" class="cardTitle">Explorer</text>
+  <text x="126" y="350" class="mono">/object-explorer</text>
+  <text x="126" y="386" class="body">OBJ staging, tactile</text>
+  <text x="126" y="410" class="body">materials, scale tuning,</text>
+  <text x="126" y="434" class="body">and live 3D exploration.</text>
+
+  <rect x="310" y="256" width="178" height="182" rx="18" fill="url(#panelSoft)" stroke="#7ee787"/>
+  <circle cx="346" cy="294" r="18" class="iconFillGreen"/>
+  <circle cx="340" cy="287" r="2.8" fill="#e6edf3"/>
+  <circle cx="352" cy="287" r="2.8" fill="#e6edf3"/>
+  <circle cx="340" cy="294" r="2.8" fill="#e6edf3"/>
+  <circle cx="352" cy="294" r="2.8" fill="#e6edf3"/>
+  <circle cx="340" cy="301" r="2.8" fill="#e6edf3"/>
+  <circle cx="352" cy="301" r="2.8" fill="#e6edf3"/>
+  <text x="378" y="292" class="cardTitle">Braille</text>
+  <text x="378" y="318" class="cardTitle">Reader</text>
+  <text x="328" y="350" class="mono">/braille-reader</text>
+  <text x="328" y="386" class="body">Scene-native library</text>
+  <text x="328" y="410" class="body">launcher, segment load,</text>
+  <text x="328" y="434" class="body">and tactile reading world.</text>
+
+  <rect x="108" y="470" width="178" height="182" rx="18" fill="url(#panelSoft)" stroke="#c297ff"/>
+  <circle cx="144" cy="508" r="18" class="iconFillPurple"/>
+  <path d="M134 500 H148 L152 506 H160 V516 H134 Z" class="iconStroke"/>
+  <path d="M140 510 H154" class="iconStroke"/>
+  <text x="176" y="506" class="cardTitle">Haptic</text>
+  <text x="176" y="532" class="cardTitle">Desktop</text>
+  <text x="126" y="564" class="mono">/haptic-desktop</text>
+  <text x="126" y="600" class="body">Launcher, galleries,</text>
+  <text x="126" y="624" class="body">typed file browser, and</text>
+  <text x="126" y="648" class="body">opened content scenes.</text>
+
+  <rect x="310" y="470" width="178" height="182" rx="18" fill="url(#panelSoft)" stroke="#f2cc60"/>
+  <circle cx="346" cy="508" r="18" class="iconFillYellow"/>
+  <rect x="336" y="498" width="20" height="20" rx="3.5" class="iconStroke"/>
+  <path d="M341 504 H351" class="iconStroke"/>
+  <path d="M341 510 H351" class="iconStroke"/>
+  <path d="M341 516 H348" class="iconStroke"/>
+  <text x="378" y="506" class="cardTitle">Workspace</text>
+  <text x="378" y="532" class="cardTitle">Manager</text>
+  <text x="328" y="564" class="mono">/haptic-workspace-manager</text>
+  <text x="328" y="600" class="body">Creates and registers</text>
+  <text x="328" y="624" class="body">structured descriptors</text>
+  <text x="328" y="648" class="body">rooted in external folders.</text>
+
+  <rect x="108" y="688" width="380" height="126" rx="18" fill="url(#panelSoft)" stroke="#39d2c0"/>
+  <circle cx="144" cy="726" r="18" fill="rgba(57,210,192,0.20)" stroke="#39d2c0" stroke-width="1.6"/>
+  <path d="M134 726 H154" class="iconStroke"/>
+  <path d="M144 716 V736" class="iconStroke"/>
+  <text x="176" y="724" class="cardTitle">Shared Frontend Contract</text>
+  <text x="126" y="760" class="body">Dark technical shell, version badge, help modal,</text>
+  <text x="126" y="784" class="body">real 3D primary pane, and blind-first scene controls.</text>
+
+  <rect x="590" y="256" width="412" height="170" rx="18" fill="url(#panelSoft)" stroke="#79c0ff"/>
+  <circle cx="630" cy="296" r="18" class="iconFillBlue"/>
+  <rect x="620" y="286" width="20" height="20" rx="3.5" class="iconStroke"/>
+  <path d="M625 292 H635" class="iconStroke"/>
+  <path d="M625 298 H635" class="iconStroke"/>
+  <path d="M625 304 H632" class="iconStroke"/>
+  <text x="662" y="294" class="cardTitle">HTTP Delivery And Mode Contracts</text>
+  <text x="662" y="322" class="mono">app/main.py   app/api/routes.py</text>
+  <text x="612" y="358" class="body">Serves four routes plus health, meta, materials,</text>
+  <text x="612" y="382" class="body">demo models, Braille preview, libraries, and workspaces.</text>
+
+  <rect x="590" y="452" width="412" height="180" rx="18" fill="url(#panelSoft)" stroke="#7ee787"/>
+  <circle cx="630" cy="492" r="18" class="iconFillGreen"/>
+  <circle cx="624" cy="485" r="2.8" fill="#e6edf3"/>
+  <circle cx="636" cy="485" r="2.8" fill="#e6edf3"/>
+  <circle cx="624" cy="492" r="2.8" fill="#e6edf3"/>
+  <circle cx="636" cy="492" r="2.8" fill="#e6edf3"/>
+  <circle cx="624" cy="499" r="2.8" fill="#e6edf3"/>
+  <circle cx="636" cy="499" r="2.8" fill="#e6edf3"/>
+  <text x="662" y="490" class="cardTitle">Domain Services And Catalogs</text>
+  <text x="662" y="518" class="mono">braille.py   library_assets.py   demo_assets.py</text>
+  <text x="662" y="542" class="mono">haptic_materials.py   haptic_workspace.py</text>
+  <text x="612" y="578" class="body">Keeps translation logic, library extraction, workspace</text>
+  <text x="612" y="602" class="body">descriptors, model catalogs, and material profiles</text>
+  <text x="612" y="626" class="body">independent from route layout or hardware vendors.</text>
+
+  <rect x="590" y="658" width="412" height="156" rx="18" fill="url(#panelSoft)" stroke="#f2cc60"/>
+  <circle cx="630" cy="698" r="18" class="iconFillYellow"/>
+  <path d="M620 692 H640" class="iconStroke"/>
+  <path d="M620 700 H640" class="iconStroke"/>
+  <path d="M620 708 H636" class="iconStroke"/>
+  <text x="662" y="696" class="cardTitle">Canonical Project State</text>
+  <text x="662" y="724" class="mono">config.py   version.py   modes.py</text>
+  <text x="612" y="760" class="body">One padded version source, one port assignment, one</text>
+  <text x="612" y="784" class="body">mode catalog, and one stable runtime metadata surface.</text>
+
+  <rect x="1104" y="256" width="378" height="170" rx="18" fill="url(#panelSoft)" stroke="#ffa657"/>
+  <circle cx="1144" cy="296" r="18" class="iconFillOrange"/>
+  <path d="M1134 290 H1154 V302 H1134 Z" class="iconStroke"/>
+  <path d="M1144 302 V314" class="iconStroke"/>
+  <text x="1176" y="294" class="cardTitle">Shared Scene Runtime</text>
+  <text x="1176" y="322" class="mono">three_scene_common.js   app.js</text>
+  <text x="1126" y="358" class="body">Provides bounded scenes, orbit controls, persistent</text>
+  <text x="1126" y="382" class="body">camera state, pointer emulation, and stage boot checks.</text>
+
+  <rect x="1104" y="452" width="378" height="170" rx="18" fill="url(#panelSoft)" stroke="#ffa657"/>
+  <circle cx="1144" cy="492" r="18" class="iconFillOrange"/>
+  <rect x="1134" y="482" width="20" height="20" rx="4" class="iconStroke"/>
+  <path d="M1130 488 H1134" class="iconStroke"/>
+  <path d="M1130 496 H1134" class="iconStroke"/>
+  <path d="M1154 488 H1158" class="iconStroke"/>
+  <path d="M1154 496 H1158" class="iconStroke"/>
+  <text x="1176" y="490" class="cardTitle">Haptic Boundary And Delivery</text>
+  <text x="1176" y="518" class="mono">base.py   null_backend.py   factory.py</text>
+  <text x="1176" y="542" class="mono">Build_PyInstaller.ps1   installer/FeelIT_installer.iss</text>
+  <text x="1126" y="578" class="body">Keeps the null backend as a safe fallback and derives</text>
+  <text x="1126" y="602" class="body">packaging metadata from the canonical release state.</text>
+
+  <rect x="1104" y="648" width="378" height="166" rx="18" fill="url(#panelSoft)" stroke="#ff7b72"/>
+  <circle cx="1144" cy="688" r="18" fill="rgba(255,123,114,0.20)" stroke="#ff7b72" stroke-width="1.6"/>
+  <path d="M1134 680 H1154 V696 H1134 Z" class="iconStroke"/>
+  <path d="M1138 684 H1150" class="iconStroke"/>
+  <path d="M1138 690 H1150" class="iconStroke"/>
+  <text x="1176" y="686" class="cardTitle">Documentation And Evidence Audit</text>
+  <text x="1176" y="714" class="mono">README   docs/*.md   docs/svg   artifacts/</text>
+  <text x="1126" y="750" class="body">The shipped state, SVG suite, help content, snapshots,</text>
+  <text x="1126" y="774" class="body">and methodological history must be refreshed together.</text>
+
+  <path d="M488 347 H590" fill="none" stroke="#79c0ff" stroke-width="5" marker-end="url(#arrowBlue)"/>
+  <path d="M488 561 H590" fill="none" stroke="#79c0ff" stroke-width="5" marker-end="url(#arrowBlue)"/>
+  <path d="M488 751 H590" fill="none" stroke="#79c0ff" stroke-width="5" marker-end="url(#arrowBlue)"/>
+  <path d="M1002 341 H1104" fill="none" stroke="#79c0ff" stroke-width="5" marker-end="url(#arrowBlue)"/>
+  <path d="M1002 542 H1104" fill="none" stroke="#7ee787" stroke-width="5" marker-end="url(#arrowGreen)"/>
+  <path d="M1002 736 H1104" fill="none" stroke="#7ee787" stroke-width="5" marker-end="url(#arrowGreen)"/>
+
+  <rect x="78" y="872" width="1434" height="66" rx="20" fill="#111827" stroke="#30363d"/>
+  <text x="110" y="912" class="legend">Legend: blue panels represent route-facing surfaces, green panels represent reusable domain contracts, orange panels represent runtime and packaging boundaries, and red panels represent release-governed documentation and evidence duties.</text>
+</svg>

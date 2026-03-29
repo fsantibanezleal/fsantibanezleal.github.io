@@ -73,4 +73,8 @@ D-values (D10, D25, D50, D75, D80, D90) are extracted from the cumulative PSD cu
 - **Export**: CSV with 18 metrics per grain, PSD summary with D-values
 - **Standards**: ISO 565 (sieve series), ISO 13322-1 (image-based particle sizing)
 
+## Live application
+
+![GrainSight — particle segmentation, PSD analysis, and grain measurement](/images/projects/screenshots/grainsize_frontend.png)
+
 [View on GitHub](https://github.com/fsantibanezleal/FASL_3D_GrainSize)
