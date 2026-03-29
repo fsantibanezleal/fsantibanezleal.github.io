@@ -25,6 +25,17 @@ Crusher liner replacement is one of the highest-cost maintenance activities in m
 
 ![Architecture](/images/projects/crusher_wear_system.svg)
 
+## Key Performance Indicators — Process impact
+
+The system redirects expert time from measurement to analysis, while providing richer wear profiles than manual methods can achieve.
+
+| KPI | Baseline (manual) | With system | Impact |
+|-----|-------------------|-------------|--------|
+| Processing time | Hours (manual caliper measurements) | ~80% reduction (automated 3D scan processing) | Expert time redirected to analysis and evaluation |
+| Profile coverage | Specific cross-section cuts | Full point cloud: max-wear, mean-wear, min-wear profiles | Complete wear characterization, not sampled |
+| Delivery time | Days for manual reporting | Maintained or reduced despite richer analysis | Faster decisions with more information |
+| Wear projection | Experience-based estimates | Data-driven remaining-life forecasting from trend models | Optimal replacement timing, not conservative/late |
+
 ## The challenge
 
 Gyratory and cone crushers are among the largest and most critical machines in a minerals processing plant. Their concave and mantle liners degrade continuously under extreme loads, and knowing when to schedule a liner change is a costly decision: too early wastes material, too late risks catastrophic failure. Traditionally, wear is estimated with manual caliper measurements taken during maintenance windows -- a slow, imprecise, and sometimes dangerous process. 3D laser scanning offers a far richer picture, but the raw point clouds (millions of points in DXF or PTS format) require significant processing before they become actionable.

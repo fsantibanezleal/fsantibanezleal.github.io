@@ -51,9 +51,9 @@ Industry experience
 
 I have delivered tangible KPI improvements across multiple sectors:
 
-- **Mining operations:** Fleet optimization reducing unplanned stoppages; concentrator initiatives increasing SAG milling throughput and flotation recovery
+- **Mining operations:** Fleet optimization reducing unplanned stoppages; concentrator initiatives delivering +100 TPH in SAG milling throughput and measurable flotation recovery gains
 - **Manufacturing:** Advanced analytics projects improving production by 10-15%
-- **Environmental management:** Proactive monitoring and mitigation strategies reducing critical alert events
+- **Environmental management:** Proactive monitoring and mitigation strategies achieving 15% reduction in critical environmental alerts
 - **Engineering systems:** Workflows for GPR, hyperspectral, and magnetometry data collection accelerated from days to hours
 
 Key clients and companies include CODELCO, Minera Centinela, and various mining and industrial operations across Chile.

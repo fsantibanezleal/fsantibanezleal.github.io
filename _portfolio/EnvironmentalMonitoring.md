@@ -25,6 +25,17 @@ Environmental compliance in mining is not optional — it is a license to operat
 
 ![Environmental Monitoring](/images/projects/environmental_monitoring.svg)
 
+## Key Performance Indicators — Process impact
+
+The system transforms environmental management from reactive alerting to prescriptive anticipation, expanding the decision window from minutes to hours.
+
+| KPI | Baseline (reactive) | With system | Impact |
+|-----|---------------------|-------------|--------|
+| Response paradigm | Reactive: response plans triggered post-peak | Prescriptive: anticipate mitigation measures 1-3 hours ahead | From damage control to prevention |
+| Decision window | Minutes (after alert fires) | 1-3 hours (forecast-based) | Time for planned, cost-effective mitigation |
+| Management approach | Passive alert monitoring | Active tools for early management and mitigation planning | Operational ownership of environmental outcomes |
+| Spatial coverage | Sparse fixed sensors | 24-stream video + sensor fusion | Dense pollution map, not point measurements |
+
 ## The challenge
 
 Open-pit mining operations generate airborne particulate matter that can impact surrounding communities and worker safety. Traditional monitoring relies on sparse sensor networks with significant spatial gaps and delayed reporting. Events can escalate from acceptable to critical levels faster than manual response protocols allow.

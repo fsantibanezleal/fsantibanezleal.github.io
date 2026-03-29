@@ -17,7 +17,7 @@ Education
 * Ph.D. in Electrical Engineering, Universidad de Chile, 2013-2019
 * Postgraduate Diploma in Medical Informatics, Universidad de Chile & University of Heidelberg, 2011
 * B.Sc. in Electronic Civil Engineering, Universidad de Concepción, 2003-2009
-* Industrial Electronics Technician, CEAT Liceo Mauricio Hochschild, 1999-2002
+* Industrial Electronics Technician, CEAT Liceo Mauricio Hochschild, 1998-2002
 
 Work experience
 ======
@@ -83,6 +83,8 @@ Selected projects
 * **Hyperspectral Mineral Classification** — ML platform for mineral ID from VNIR/SWIR imagery (XGBoost, CNN, compositional constraints)
 * **[HIDSAG](https://doi.org/10.1038/s41597-023-02061-x)** — Hyperspectral Image Database for Geometallurgy (Scientific Data, Nature)
 * **[SOFI Super-Resolution Microscopy](https://github.com/fsantibanezleal/FASL_SOFI_QDOTS)** — Quantum dot fluorescence via higher-order cumulants (up to 2.45x resolution)
+* **[GrainSight](https://github.com/fsantibanezleal/FASL_3D_GrainSize)** — Particle size distribution from RGB-D data (watershed segmentation, Rosin-Rammler PSD, D-values)
+* **[3D Distance Profiler](https://github.com/fsantibanezleal/FASL_3D_Distance_Profiler)** — RGB-D depth maps for granulometry enabling (ISO 4287 roughness, surface curvature)
 * **[Optimal Spatial Sampling](https://github.com/fsantibanezleal/IDS_OWP)** — Information-theoretic AdSEMES algorithm for well placement (PhD thesis companion)
 * **[3D Haptic Simulation](https://github.com/fsantibanezleal/UDEC_Haptic_SIM)** — Octree collision detection and spring-damper force feedback
 * **[Cellular Potts Model](https://github.com/fsantibanezleal/SCIAN_LEO_CPM)** — Zebrafish embryonic cell migration with deformable bodies

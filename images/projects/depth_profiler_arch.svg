@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" style="font-family:Arial,sans-serif;">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b2a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1b2d45;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0,10 3.5,0 7" style="fill:#4ecdc4;"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" style="fill:url(#bg);" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="26" style="fill:#4ecdc4;font-size:15px;font-weight:bold;text-anchor:middle;">Depth Profiler - System Architecture</text>
+
+  <!-- ═══════ BROWSER LAYER ═══════ -->
+  <rect x="25" y="38" width="750" height="105" rx="8" style="fill:none;stroke:#4ecdc4;stroke-width:1.5;stroke-dasharray:6,3;"/>
+  <text x="45" y="55" style="fill:#4ecdc4;font-size:12px;font-weight:bold;">Browser (localhost:8009)</text>
+
+  <!-- 2D Canvas -->
+  <rect x="45" y="63" width="200" height="65" rx="5" style="fill:#0f2338;stroke:#3a5a7c;stroke-width:1;"/>
+  <text x="145" y="82" style="fill:#eeeeee;font-size:11px;font-weight:bold;text-anchor:middle;">2D Canvas</text>
+  <text x="100" y="100" style="fill:#8899aa;font-size:9px;text-anchor:middle;">Depth View</text>
+  <text x="190" y="100" style="fill:#8899aa;font-size:9px;text-anchor:middle;">RGB View</text>
+  <line x1="145" y1="87" x2="145" y2="110" style="stroke:#3a5a7c;stroke-width:0.5;"/>
+  <!-- Depth mini icon -->
+  <rect x="65" y="104" width="40" height="16" rx="2" style="fill:#0a1a3a;stroke:#4488cc;stroke-width:0.5;"/>
+  <text x="85" y="115" style="fill:#4488cc;font-size:7px;text-anchor:middle;">colormap</text>
+  <!-- RGB mini icon -->
+  <rect x="165" y="104" width="40" height="16" rx="2" style="fill:#1a2a1a;stroke:#44cc88;stroke-width:0.5;"/>
+  <text x="185" y="115" style="fill:#44cc88;font-size:7px;text-anchor:middle;">texture</text>
+
+  <!-- 3D Viewer -->
+  <rect x="265" y="63" width="250" height="65" rx="5" style="fill:#0f2338;stroke:#3a5a7c;stroke-width:1;"/>
+  <text x="390" y="82" style="fill:#eeeeee;font-size:11px;font-weight:bold;text-anchor:middle;">3D Viewer (Three.js)</text>
+  <text x="390" y="100" style="fill:#8899aa;font-size:9px;text-anchor:middle;">Interactive mesh + orbit controls</text>
+  <!-- Wireframe mini -->
+  <polygon points="340,108 365,103 390,108 365,118" style="fill:none;stroke:#4ecdc4;stroke-width:0.6;"/>
+  <polygon points="380,108 405,103 430,108 405,118" style="fill:none;stroke:#e8a838;stroke-width:0.6;"/>
+  <text x="365" y="125" style="fill:#4ecdc4;font-size:7px;text-anchor:middle;">wire</text>
+  <text x="405" y="125" style="fill:#e8a838;font-size:7px;text-anchor:middle;">solid</text>
+
+  <!-- Controls Panel -->
+  <rect x="535" y="63" width="220" height="65" rx="5" style="fill:#0f2338;stroke:#3a5a7c;stroke-width:1;"/>
+  <text x="645" y="82" style="fill:#eeeeee;font-size:11px;font-weight:bold;text-anchor:middle;">Controls Panel</text>
+  <text x="595" y="100" style="fill:#8899aa;font-size:8px;text-anchor:middle;">Params</text>
+  <text x="645" y="100" style="fill:#8899aa;font-size:8px;text-anchor:middle;">Filter</text>
+  <text x="700" y="100" style="fill:#8899aa;font-size:8px;text-anchor:middle;">Profile</text>
+  <rect x="555" y="105" width="60" height="14" rx="2" style="fill:#162a3a;stroke:#3a5a7c;stroke-width:0.5;"/>
+  <rect x="620" y="105" width="60" height="14" rx="2" style="fill:#162a3a;stroke:#3a5a7c;stroke-width:0.5;"/>
+  <rect x="685" y="105" width="50" height="14" rx="2" style="fill:#162a3a;stroke:#3a5a7c;stroke-width:0.5;"/>
+  <text x="585" y="115" style="fill:#6e8898;font-size:7px;text-anchor:middle;">sliders</text>
+  <text x="650" y="115" style="fill:#6e8898;font-size:7px;text-anchor:middle;">toggles</text>
+  <text x="710" y="115" style="fill:#6e8898;font-size:7px;text-anchor:middle;">lines</text>
+
+  <!-- Arrows Browser to API -->
+  <line x1="145" y1="148" x2="145" y2="172" style="stroke:#4ecdc4;stroke-width:1.5;" marker-end="url(#arrow)"/>
+  <line x1="390" y1="148" x2="390" y2="172" style="stroke:#4ecdc4;stroke-width:1.5;" marker-end="url(#arrow)"/>
+  <line x1="645" y1="148" x2="645" y2="172" style="stroke:#4ecdc4;stroke-width:1.5;" marker-end="url(#arrow)"/>
+
+  <!-- ═══════ API LAYER ═══════ -->
+  <rect x="25" y="178" width="750" height="90" rx="8" style="fill:none;stroke:#e8a838;stroke-width:1.5;stroke-dasharray:6,3;"/>
+  <text x="45" y="195" style="fill:#e8a838;font-size:12px;font-weight:bold;">FastAPI REST API</text>
+
+  <!-- Endpoint boxes -->
+  <rect x="45" y="203" width="120" height="48" rx="5" style="fill:#1a2a1a;stroke:#e8a838;stroke-width:1;"/>
+  <text x="105" y="222" style="fill:#e8a838;font-size:10px;font-weight:bold;text-anchor:middle;">/generate</text>
+  <text x="105" y="238" style="fill:#8899aa;font-size:8px;text-anchor:middle;">Synthetic depth maps</text>
+
+  <rect x="185" y="203" width="110" height="48" rx="5" style="fill:#1a2a1a;stroke:#e8a838;stroke-width:1;"/>
+  <text x="240" y="222" style="fill:#e8a838;font-size:10px;font-weight:bold;text-anchor:middle;">/upload</text>
+  <text x="240" y="238" style="fill:#8899aa;font-size:8px;text-anchor:middle;">RGB-D file input</text>
+
+  <rect x="315" y="203" width="110" height="48" rx="5" style="fill:#1a2a1a;stroke:#e8a838;stroke-width:1;"/>
+  <text x="370" y="222" style="fill:#e8a838;font-size:10px;font-weight:bold;text-anchor:middle;">/process</text>
+  <text x="370" y="238" style="fill:#8899aa;font-size:8px;text-anchor:middle;">Filter + reconstruct</text>
+
+  <rect x="445" y="203" width="110" height="48" rx="5" style="fill:#1a2a1a;stroke:#e8a838;stroke-width:1;"/>
+  <text x="500" y="222" style="fill:#e8a838;font-size:10px;font-weight:bold;text-anchor:middle;">/profile</text>
+  <text x="500" y="238" style="fill:#8899aa;font-size:8px;text-anchor:middle;">Cross-sections</text>
+
+  <rect x="575" y="203" width="110" height="48" rx="5" style="fill:#1a2a1a;stroke:#e8a838;stroke-width:1;"/>
+  <text x="630" y="222" style="fill:#e8a838;font-size:10px;font-weight:bold;text-anchor:middle;">/metrics</text>
+  <text x="630" y="238" style="fill:#8899aa;font-size:8px;text-anchor:middle;">Ra, Rq, Rz values</text>
+
+  <!-- Arrows API to Engine -->
+  <line x1="145" y1="273" x2="145" y2="300" style="stroke:#4ecdc4;stroke-width:1.5;" marker-end="url(#arrow)"/>
+  <line x1="390" y1="273" x2="390" y2="300" style="stroke:#4ecdc4;stroke-width:1.5;" marker-end="url(#arrow)"/>
+  <line x1="645" y1="273" x2="645" y2="300" style="stroke:#4ecdc4;stroke-width:1.5;" marker-end="url(#arrow)"/>
+
+  <!-- ═══════ ENGINE LAYER ═══════ -->
+  <rect x="25" y="306" width="750" height="82" rx="8" style="fill:none;stroke:#6e8898;stroke-width:1.5;stroke-dasharray:6,3;"/>
+  <text x="45" y="324" style="fill:#6e8898;font-size:12px;font-weight:bold;">Simulation Engine (Python)</text>
+
+  <!-- Module boxes -->
+  <rect x="35" y="332" width="120" height="40" rx="4" style="fill:#0f2338;stroke:#3a5a7c;stroke-width:1;"/>
+  <text x="95" y="349" style="fill:#eeeeee;font-size:9px;font-weight:bold;text-anchor:middle;">depth_generator</text>
+  <text x="95" y="363" style="fill:#6e8898;font-size:7px;text-anchor:middle;">Perlin, Gaussian, planes</text>
+
+  <rect x="170" y="332" width="120" height="40" rx="4" style="fill:#0f2338;stroke:#3a5a7c;stroke-width:1;"/>
+  <text x="230" y="349" style="fill:#eeeeee;font-size:9px;font-weight:bold;text-anchor:middle;">depth_processing</text>
+  <text x="230" y="363" style="fill:#6e8898;font-size:7px;text-anchor:middle;">Bilateral, hole fill</text>
+
+  <rect x="305" y="332" width="150" height="40" rx="4" style="fill:#0f2338;stroke:#3a5a7c;stroke-width:1;"/>
+  <text x="380" y="349" style="fill:#eeeeee;font-size:9px;font-weight:bold;text-anchor:middle;">surface_reconstruction</text>
+  <text x="380" y="363" style="fill:#6e8898;font-size:7px;text-anchor:middle;">Mesh from depth via pinhole</text>
+
+  <rect x="470" y="332" width="130" height="40" rx="4" style="fill:#0f2338;stroke:#3a5a7c;stroke-width:1;"/>
+  <text x="535" y="349" style="fill:#eeeeee;font-size:9px;font-weight:bold;text-anchor:middle;">profile_analysis</text>
+  <text x="535" y="363" style="fill:#6e8898;font-size:7px;text-anchor:middle;">ISO 4287 metrics</text>
+
+  <rect x="615" y="332" width="145" height="40" rx="4" style="fill:#0f2338;stroke:#3a5a7c;stroke-width:1;"/>
+  <text x="687" y="349" style="fill:#eeeeee;font-size:9px;font-weight:bold;text-anchor:middle;">export</text>
+  <text x="687" y="363" style="fill:#6e8898;font-size:7px;text-anchor:middle;">PLY / PCD / OBJ writers</text>
+</svg>
