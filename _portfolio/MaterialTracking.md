@@ -25,6 +25,17 @@ Without material tracking, blending decisions relied on delayed lab results — 
 
 ![Material Tracking](/images/projects/material_tracking.svg)
 
+## Key Performance Indicators — Process impact
+
+The system closes the information gap between ore extraction and processing, enabling blending decisions based on current state rather than historical assumptions.
+
+| KPI | Baseline | With system | Impact |
+|-----|----------|-------------|--------|
+| Blending visibility | Delayed lab results (hours to days) | Real-time stockpile state estimation | Decisions based on current ore properties |
+| Feed compliance | Reactive correction after off-spec events | Proactive blending optimization | Reduced out-of-specification feed to plant |
+| Tracking granularity | Batch-level estimates | Hourly conveyor-level tracking | Fine-grained material flow visibility |
+| Decision cadence | Shift-based manual assessment | Hourly tracking, 4-hourly optimization | Continuous improvement loop |
+
 ## The problem
 
 Mining operations extract ore from multiple sources with varying mineral compositions. This ore travels through conveyor networks, accumulates in stockpiles, and must be blended to meet specific processing requirements. Without real-time visibility into material properties at each point in the chain, blending decisions rely on delayed lab results and operator experience, leaving significant optimization potential untapped.
