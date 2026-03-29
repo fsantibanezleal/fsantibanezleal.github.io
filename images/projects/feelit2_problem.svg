@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980" role="img" aria-labelledby="title desc">
+  <title id="title">FeelIT problem framing</title>
+  <desc id="desc">Problem framing diagram for FeelIT showing inaccessible visual domains, the barriers that block direct access for blind users, and the tactile interaction workspaces that FeelIT uses to convert those domains into bounded haptic experiences.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="52%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#152132"/>
+      <stop offset="100%" stop-color="#101722"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.30"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#79c0ff"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#7ee787"/>
+    </marker>
+    <style>
+      .title { font: 700 40px 'Segoe UI', sans-serif; fill: #e6edf3; }
+      .subtitle { font: 400 18px 'Segoe UI', sans-serif; fill: #8b949e; }
+      .lane { font: 700 14px 'Segoe UI', sans-serif; fill: #0d1117; letter-spacing: 1.5px; }
+      .cardTitle { font: 700 22px 'Segoe UI', sans-serif; fill: #e6edf3; }
+      .body { font: 400 16px 'Segoe UI', sans-serif; fill: #9fb0c3; }
+      .mono { font: 400 14px Consolas, monospace; fill: #d7e2ee; }
+      .legend { font: 600 14px 'Segoe UI', sans-serif; fill: #d3deea; }
+      .smallBadge { font: 700 12px 'Segoe UI', sans-serif; fill: #e6edf3; letter-spacing: 0.8px; }
+      .iconStroke { stroke: #e6edf3; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="980" fill="url(#bg)"/>
+  <circle cx="1430" cy="180" r="220" fill="#58a6ff" opacity="0.06"/>
+  <circle cx="220" cy="850" r="230" fill="#39d2c0" opacity="0.05"/>
+
+  <text x="78" y="102" class="title">FeelIT Problem Framing</text>
+  <text x="78" y="136" class="subtitle">The project exists because many important shapes, textures, and text surfaces are not reachable through direct touch, and audio alone does not preserve tactile agency.</text>
+
+  <rect x="78" y="174" width="230" height="30" rx="15" fill="#79c0ff"/>
+  <text x="102" y="194" class="lane">INACCESSIBLE DOMAINS</text>
+  <rect x="640" y="174" width="194" height="30" rx="15" fill="#ff7b72"/>
+  <text x="664" y="194" class="lane">ACCESS BARRIERS</text>
+  <rect x="1128" y="174" width="256" height="30" rx="15" fill="#7ee787"/>
+  <text x="1152" y="194" class="lane">FEELIT RESPONSE</text>
+
+  <rect x="78" y="228" width="430" height="560" rx="24" fill="url(#panel)" stroke="#30363d" filter="url(#shadow)"/>
+  <rect x="586" y="228" width="370" height="560" rx="24" fill="url(#panel)" stroke="#30363d" filter="url(#shadow)"/>
+  <rect x="1034" y="228" width="488" height="560" rx="24" fill="url(#panel)" stroke="#30363d" filter="url(#shadow)"/>
+
+  <rect x="108" y="260" width="370" height="118" rx="18" fill="rgba(88,166,255,0.08)" stroke="#58a6ff"/>
+  <circle cx="150" cy="300" r="20" fill="rgba(88,166,255,0.18)" stroke="#58a6ff"/>
+  <path d="M142 308 C145 298 150 294 158 290" class="iconStroke"/>
+  <path d="M138 314 C147 320 156 322 164 318" class="iconStroke"/>
+  <path d="M141 286 L147 279" class="iconStroke"/>
+  <text x="184" y="294" class="cardTitle">Shapes And Scale</text>
+  <text x="126" y="332" class="body">Landmarks, terrain, artifacts, and animals often</text>
+  <text x="126" y="356" class="body">cannot be touched directly at a useful scale.</text>
+
+  <rect x="108" y="406" width="370" height="118" rx="18" fill="rgba(126,231,135,0.08)" stroke="#7ee787"/>
+  <circle cx="150" cy="446" r="20" fill="rgba(126,231,135,0.18)" stroke="#7ee787"/>
+  <path d="M138 438 H162 V454 H138 Z" class="iconStroke"/>
+  <path d="M144 446 H156" class="iconStroke"/>
+  <text x="184" y="440" class="cardTitle">Text And Reading</text>
+  <text x="126" y="478" class="body">Digital text can be listened to, but tactile reading</text>
+  <text x="126" y="502" class="body">still matters when audio must stay available.</text>
+
+  <rect x="108" y="552" width="370" height="118" rx="18" fill="rgba(194,151,255,0.08)" stroke="#c297ff"/>
+  <circle cx="150" cy="592" r="20" fill="rgba(194,151,255,0.18)" stroke="#c297ff"/>
+  <path d="M137 585 H151 L155 591 H163 V603 H137 Z" class="iconStroke"/>
+  <path d="M143 597 H158" class="iconStroke"/>
+  <text x="184" y="586" class="cardTitle">Desktop Interaction</text>
+  <text x="126" y="624" class="body">Files, tools, and digital actions are usually exposed</text>
+  <text x="126" y="648" class="body">through visual metaphors that exclude tactile control.</text>
+
+  <rect x="108" y="698" width="370" height="58" rx="18" fill="rgba(57,210,192,0.08)" stroke="#39d2c0"/>
+  <text x="126" y="734" class="mono">Goal: turn inaccessible visual structure into bounded tactile interaction.</text>
+
+  <rect x="616" y="260" width="310" height="96" rx="18" fill="rgba(255,123,114,0.08)" stroke="#ff7b72"/>
+  <text x="640" y="296" class="cardTitle">Physical Barriers</text>
+  <text x="640" y="328" class="body">distance, scale, fragility, and safety</text>
+
+  <rect x="616" y="386" width="310" height="96" rx="18" fill="rgba(255,123,114,0.08)" stroke="#ff7b72"/>
+  <text x="640" y="422" class="cardTitle">Perceptual Barriers</text>
+  <text x="640" y="454" class="body">shape, texture, and spatial layout remain hidden</text>
+
+  <rect x="616" y="512" width="310" height="96" rx="18" fill="rgba(255,123,114,0.08)" stroke="#ff7b72"/>
+  <text x="640" y="548" class="cardTitle">Interaction Barriers</text>
+  <text x="640" y="580" class="body">audio-only access reduces tactile autonomy</text>
+
+  <rect x="616" y="638" width="310" height="118" rx="18" fill="rgba(255,123,114,0.08)" stroke="#ff7b72"/>
+  <text x="640" y="674" class="cardTitle">Design Consequence</text>
+  <text x="640" y="706" class="body">the user needs a controlled world with tactile</text>
+  <text x="640" y="730" class="body">targets, return paths, and optional audio cues.</text>
+
+  <rect x="1064" y="260" width="428" height="124" rx="18" fill="rgba(88,166,255,0.08)" stroke="#58a6ff"/>
+  <circle cx="1104" cy="300" r="18" fill="rgba(88,166,255,0.18)" stroke="#58a6ff"/>
+  <path d="M1094 302 L1104 295 L1114 302 L1114 314 L1104 321 L1094 314 Z" class="iconStroke"/>
+  <path d="M1104 295 L1104 307" class="iconStroke"/>
+  <path d="M1094 302 L1104 309 L1114 302" class="iconStroke"/>
+  <text x="1136" y="296" class="cardTitle">3D Object Explorer</text>
+  <text x="1136" y="324" class="body">Stages geometry, scale, and tactile material context</text>
+  <text x="1136" y="348" class="body">inside a bounded exploration scene.</text>
+
+  <rect x="1064" y="414" width="428" height="124" rx="18" fill="rgba(126,231,135,0.08)" stroke="#7ee787"/>
+  <circle cx="1104" cy="454" r="18" fill="rgba(126,231,135,0.18)" stroke="#7ee787"/>
+  <circle cx="1098" cy="447" r="2.8" fill="#e6edf3"/>
+  <circle cx="1110" cy="447" r="2.8" fill="#e6edf3"/>
+  <circle cx="1098" cy="454" r="2.8" fill="#e6edf3"/>
+  <circle cx="1110" cy="454" r="2.8" fill="#e6edf3"/>
+  <circle cx="1098" cy="461" r="2.8" fill="#e6edf3"/>
+  <circle cx="1110" cy="461" r="2.8" fill="#e6edf3"/>
+  <text x="1136" y="450" class="cardTitle">Braille Reader</text>
+  <text x="1136" y="478" class="body">Converts document segments into a tactile reading</text>
+  <text x="1136" y="502" class="body">surface with scene-native navigation controls.</text>
+
+  <rect x="1064" y="568" width="428" height="124" rx="18" fill="rgba(194,151,255,0.08)" stroke="#c297ff"/>
+  <circle cx="1104" cy="608" r="18" fill="rgba(194,151,255,0.18)" stroke="#c297ff"/>
+  <path d="M1094 600 H1108 L1112 606 H1120 V616 H1094 Z" class="iconStroke"/>
+  <path d="M1100 610 H1114" class="iconStroke"/>
+  <text x="1136" y="604" class="cardTitle">Haptic Desktop</text>
+  <text x="1136" y="632" class="body">Represents curated media and file-system navigation</text>
+  <text x="1136" y="656" class="body">as tactile objects inside a changing 3D scene flow.</text>
+
+  <rect x="1064" y="722" width="428" height="50" rx="18" fill="rgba(242,204,96,0.08)" stroke="#f2cc60"/>
+  <text x="1088" y="754" class="mono">Supporting route: /haptic-workspace-manager keeps external assets organized.</text>
+
+  <path d="M508 316 H616" fill="none" stroke="#79c0ff" stroke-width="5" marker-end="url(#arrowBlue)"/>
+  <path d="M508 462 H616" fill="none" stroke="#79c0ff" stroke-width="5" marker-end="url(#arrowBlue)"/>
+  <path d="M508 608 H616" fill="none" stroke="#79c0ff" stroke-width="5" marker-end="url(#arrowBlue)"/>
+  <path d="M926 316 H1064" fill="none" stroke="#7ee787" stroke-width="5" marker-end="url(#arrowGreen)"/>
+  <path d="M926 462 H1064" fill="none" stroke="#7ee787" stroke-width="5" marker-end="url(#arrowGreen)"/>
+  <path d="M926 608 H1064" fill="none" stroke="#7ee787" stroke-width="5" marker-end="url(#arrowGreen)"/>
+
+  <rect x="78" y="840" width="1444" height="94" rx="22" fill="#111827" stroke="#30363d"/>
+  <text x="110" y="876" class="cardTitle">Why This Matters</text>
+  <text x="110" y="908" class="legend">FeelIT is not trying to replace touch with audio description. It is trying to preserve tactile agency by converting inaccessible visual structure into coherent, bounded, and eventually hardware-backed interaction worlds.</text>
+</svg>
