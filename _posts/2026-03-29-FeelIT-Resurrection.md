@@ -59,3 +59,5 @@ What it means
 Starting this project again after 14 years feels different. In 2008, I was a student excited by the technical challenge of controlling pins with electromagnets. In 2026, I'm a Decision Science manager who understands that the real challenge isn't the technology — it's building something that genuinely serves people who need it. The technical architecture is cleaner now, the testing is more rigorous, and the documentation is more honest. But the motivation is the same: the world of objects should be accessible to everyone, not just those who can see.
 
 The original FeelIT taught me that hardware constraints are temporary. This version is betting that the constraint has moved far enough.
+
+[FeelIT 2.0 on GitHub](https://github.com/fsantibanezleal/UDEC_FEELIT)
