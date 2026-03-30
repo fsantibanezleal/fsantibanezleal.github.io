@@ -29,4 +29,4 @@ The part I'm most proud of is the methodological honesty. There's an Implementat
 
 ![Braille Reader workspace](/images/projects/screenshots/feelit2_braille_reader.png)
 
-Strange feeling revisiting a project after 14 years. The 20-year-old me who built pin arrays with electromagnets would be amazed that the Braille cells are now floating in a Three.js scene. The 35-year-old me building this version is more concerned with whether the tests pass and the gap audit is honest.
+Strange feeling revisiting a project after 14 years. The 20-year-old me who built pin arrays with electromagnets would be amazed that the Braille cells are now floating in a Three.js scene. The 35-year-old me building this version is more concerned with whether the tests pass and the gap audit is honest. [FeelIT 2.0 on GitHub](https://github.com/fsantibanezleal/UDEC_FEELIT).
