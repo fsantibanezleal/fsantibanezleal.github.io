@@ -75,7 +75,7 @@ Skills
 
 Selected projects
 ======
-* **FeelIT 2.0** — Haptic accessibility workbench: 4 workspaces (3D Explorer, Braille Reader, Haptic Desktop, Workspace Manager) with 49 tests
+* **[FeelIT 2.0](https://github.com/fsantibanezleal/UDEC_FEELIT)** — Haptic accessibility workbench: 4 workspaces (3D Explorer, Braille Reader, Haptic Desktop, Workspace Manager) with 49 tests
 * **Mining Process Optimization Platform** — End-to-end ML for SAG milling, flotation, and thickening (+100 TPH throughput gains)
 * **Real-Time Material Tracking & Blending** — Digital twin for ore flow, stockpile management, and blending optimization
 * **Environmental Monitoring & Mitigation** — Computer vision (24-stream) + GenAI for pollution forecasting and natural-language recommendations
