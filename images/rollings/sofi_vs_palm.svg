@@ -1,148 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300">
   <defs>
-    <style>
-      text { font-family: 'Segoe UI', Arial, sans-serif; fill: #e6edf3; }
-      .title { font-size: 15px; font-weight: bold; fill: #58a6ff; }
-      .heading { font-size: 13px; font-weight: bold; }
-      .label { font-size: 11px; fill: #e6edf3; }
-      .sublabel { font-size: 9.5px; fill: #8b949e; }
-      .stat { font-size: 10px; fill: #d2a8ff; }
-      .panel-bg { fill: #161b22; stroke: #30363d; stroke-width: 1; rx: 8; }
-      .arrow { stroke: #58a6ff; stroke-width: 1.5; fill: none; }
-      .arrow-palm { stroke: #f97583; stroke-width: 1.5; fill: none; }
-      .box { fill: #21262d; stroke: #30363d; stroke-width: 1; rx: 4; }
-      .dot-dense { fill: #7ee787; fill-opacity: 0.7; }
-      .dot-sparse { fill: #f97583; }
-      .dot-off { fill: #30363d; stroke: #8b949e; stroke-width: 0.5; }
-    </style>
-    <marker id="arr-blue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-      <polygon points="0,0 8,3 0,6" fill="#58a6ff"/>
-    </marker>
-    <marker id="arr-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-      <polygon points="0,0 8,3 0,6" fill="#f97583"/>
-    </marker>
+    <linearGradient id="bg7" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#1b2d45"/>
+    </linearGradient>
   </defs>
-
-  <!-- Background -->
-  <rect width="800" height="400" fill="#0d1117"/>
-
-  <!-- Title -->
-  <text class="title" x="400" y="28" text-anchor="middle">SOFI vs PALM/STORM: Workflow Comparison</text>
-
-  <!-- LEFT: SOFI workflow -->
-  <rect class="panel-bg" x="15" y="42" width="375" height="345"/>
-  <text class="heading" x="202" y="66" text-anchor="middle" fill="#7ee787">SOFI Workflow</text>
-
-  <!-- Step 1: Dense labeling -->
-  <rect class="box" x="35" y="80" width="100" height="65"/>
-  <text class="label" x="85" y="98" text-anchor="middle">Dense</text>
-  <text class="label" x="85" y="112" text-anchor="middle">Labeling</text>
-  <!-- Dense dots -->
-  <circle class="dot-dense" cx="50" cy="130" r="2.5"/>
-  <circle class="dot-dense" cx="58" cy="126" r="2.5"/>
-  <circle class="dot-dense" cx="66" cy="132" r="2.5"/>
-  <circle class="dot-dense" cx="74" cy="127" r="2.5"/>
-  <circle class="dot-dense" cx="82" cy="131" r="2.5"/>
-  <circle class="dot-dense" cx="90" cy="125" r="2.5"/>
-  <circle class="dot-dense" cx="98" cy="130" r="2.5"/>
-  <circle class="dot-dense" cx="106" cy="128" r="2.5"/>
-  <circle class="dot-dense" cx="114" cy="133" r="2.5"/>
-  <circle class="dot-dense" cx="54" cy="136" r="2.5"/>
-  <circle class="dot-dense" cx="70" cy="138" r="2.5"/>
-  <circle class="dot-dense" cx="86" cy="137" r="2.5"/>
-  <circle class="dot-dense" cx="102" cy="135" r="2.5"/>
-
-  <!-- Arrow 1 -->
-  <line class="arrow" x1="140" y1="112" x2="160" y2="112" marker-end="url(#arr-blue)"/>
-
-  <!-- Step 2: Short stack -->
-  <rect class="box" x="165" y="80" width="100" height="65"/>
-  <text class="label" x="215" y="98" text-anchor="middle">Short Stack</text>
-  <text class="stat" x="215" y="115" text-anchor="middle">~100-1000</text>
-  <text class="stat" x="215" y="128" text-anchor="middle">frames</text>
-  <!-- Stack icon -->
-  <rect x="195" y="132" width="40" height="4" fill="#58a6ff" fill-opacity="0.3" stroke="#58a6ff" stroke-width="0.5"/>
-  <rect x="197" y="137" width="40" height="4" fill="#58a6ff" fill-opacity="0.2" stroke="#58a6ff" stroke-width="0.5"/>
-  <rect x="199" y="142" width="40" height="4" fill="#58a6ff" fill-opacity="0.1" stroke="#58a6ff" stroke-width="0.5"/>
-
-  <!-- Arrow 2 -->
-  <line class="arrow" x1="270" y1="112" x2="290" y2="112" marker-end="url(#arr-blue)"/>
-
-  <!-- Step 3: Cumulant -->
-  <rect class="box" x="295" y="80" width="80" height="65"/>
-  <text class="label" x="335" y="98" text-anchor="middle">Cumulant</text>
-  <text class="stat" x="335" y="115" text-anchor="middle">K_n(r)</text>
-  <text class="stat" x="335" y="130" text-anchor="middle">U^n(r)</text>
-
-  <!-- Arrow down -->
-  <line class="arrow" x1="335" y1="150" x2="335" y2="170" marker-end="url(#arr-blue)"/>
-
-  <!-- Step 4: Super-resolved -->
-  <rect class="box" x="265" y="175" width="140" height="50"/>
-  <text class="label" x="335" y="196" text-anchor="middle">Super-resolved Image</text>
-  <text class="stat" x="335" y="212" text-anchor="middle">sigma_eff = sigma/sqrt(n)</text>
-
-  <!-- SOFI stats box -->
-  <rect x="35" y="240" width="340" height="135" fill="#161b22" stroke="#30363d" stroke-width="0.5" rx="4"/>
-  <text class="label" x="55" y="260" fill="#7ee787">SOFI Characteristics:</text>
-  <text class="sublabel" x="55" y="278">Resolution: sqrt(n)x  (~1.4x for n=2, ~2x for n=4)</text>
-  <text class="sublabel" x="55" y="294">Frames: ~100-1000 (orders 2-3)</text>
-  <text class="sublabel" x="55" y="310">Labeling: HIGH density (many emitters per PSF)</text>
-  <text class="sublabel" x="55" y="326">Speed: FAST (seconds to minutes)</text>
-  <text class="sublabel" x="55" y="342">Probes: Any blinking fluorophore / QDots</text>
-  <text class="sublabel" x="55" y="358">Live cell: YES (low phototoxicity)</text>
-
-  <!-- RIGHT: PALM/STORM workflow -->
-  <rect class="panel-bg" x="410" y="42" width="375" height="345"/>
-  <text class="heading" x="597" y="66" text-anchor="middle" fill="#f97583">PALM/STORM Workflow</text>
-
-  <!-- Step 1: Sparse activation -->
-  <rect class="box" x="430" y="80" width="100" height="65"/>
-  <text class="label" x="480" y="98" text-anchor="middle">Sparse</text>
-  <text class="label" x="480" y="112" text-anchor="middle">Activation</text>
-  <!-- Sparse dots (few on, many off) -->
-  <circle class="dot-off" cx="445" cy="130" r="2.5"/>
-  <circle class="dot-sparse" cx="458" cy="126" r="3"/>
-  <circle class="dot-off" cx="470" cy="132" r="2.5"/>
-  <circle class="dot-off" cx="482" cy="127" r="2.5"/>
-  <circle class="dot-off" cx="494" cy="131" r="2.5"/>
-  <circle class="dot-sparse" cx="506" cy="125" r="3"/>
-  <circle class="dot-off" cx="518" cy="130" r="2.5"/>
-
-  <!-- Arrow 1 -->
-  <line class="arrow-palm" x1="535" y1="112" x2="555" y2="112" marker-end="url(#arr-red)"/>
-
-  <!-- Step 2: Long acquisition -->
-  <rect class="box" x="560" y="80" width="100" height="65"/>
-  <text class="label" x="610" y="98" text-anchor="middle">Long Acquis.</text>
-  <text class="stat" x="610" y="115" text-anchor="middle">~10000-50000</text>
-  <text class="stat" x="610" y="128" text-anchor="middle">frames</text>
-  <!-- Tall stack icon -->
-  <rect x="590" y="132" width="40" height="3" fill="#f97583" fill-opacity="0.4" stroke="#f97583" stroke-width="0.5"/>
-  <rect x="591" y="136" width="40" height="3" fill="#f97583" fill-opacity="0.3" stroke="#f97583" stroke-width="0.5"/>
-  <rect x="592" y="140" width="40" height="3" fill="#f97583" fill-opacity="0.2" stroke="#f97583" stroke-width="0.5"/>
-  <rect x="593" y="144" width="40" height="3" fill="#f97583" fill-opacity="0.1" stroke="#f97583" stroke-width="0.5"/>
-
-  <!-- Arrow down -->
-  <line class="arrow-palm" x1="610" y1="150" x2="610" y2="170" marker-end="url(#arr-red)"/>
-
-  <!-- Step 3: Localization -->
-  <rect class="box" x="555" y="175" width="110" height="35"/>
-  <text class="label" x="610" y="197" text-anchor="middle">PSF Fitting / Localization</text>
-
-  <!-- Arrow down -->
-  <line class="arrow-palm" x1="610" y1="215" x2="610" y2="230" marker-end="url(#arr-red)"/>
-
-  <!-- Step 4: Reconstruction -->
-  <rect class="box" x="540" y="235" width="140" height="35"/>
-  <text class="label" x="610" y="257" text-anchor="middle">Pointillist Reconstruction</text>
-
-  <!-- PALM stats box -->
-  <rect x="430" y="285" width="340" height="90" fill="#161b22" stroke="#30363d" stroke-width="0.5" rx="4"/>
-  <text class="label" x="450" y="305" fill="#f97583">PALM/STORM Characteristics:</text>
-  <text class="sublabel" x="450" y="323">Resolution: ~20 nm (unlimited in principle)</text>
-  <text class="sublabel" x="450" y="339">Frames: ~10000-50000 (sparse activation per frame)</text>
-  <text class="sublabel" x="450" y="355">Labeling: LOW density (single molecule per PSF)</text>
-  <text class="sublabel" x="450" y="371">Speed: SLOW (minutes to hours)</text>
+  <rect width="760" height="300" style="fill:url(#bg7)"/>
+  <text x="380" y="24" style="font-family:Arial,sans-serif;font-size:15px;fill:#e0e6ed;text-anchor:middle;font-weight:bold">SOFI vs PALM / STORM</text>
+  <!-- PALM column -->
+  <rect x="30" y="40" width="340" height="210" rx="6" style="fill:#0d1b2a;fill-opacity:0.7;stroke:#3a7ab8;stroke-width:1.2"/>
+  <text x="200" y="62" style="font-family:Arial,sans-serif;font-size:14px;fill:#3a7ab8;text-anchor:middle;font-weight:bold">PALM / STORM</text>
+  <line x1="50" y1="70" x2="350" y2="70" style="stroke:#3a7ab8;stroke-width:0.5;stroke-opacity:0.4"/>
+  <!-- Requirements -->
+  <text x="50" y="92" style="font-family:Arial,sans-serif;font-size:11px;fill:#c8d6e5;font-weight:bold">Requirements:</text>
+  <text x="60" y="108" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa">&#x2022; Sparse blinking (isolated emitters)</text>
+  <text x="60" y="123" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa">&#x2022; Many frames (10k&#x2013;50k typical)</text>
+  <text x="60" y="138" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa">&#x2022; Exact single-molecule localization</text>
+  <!-- Pros -->
+  <text x="50" y="162" style="font-family:Arial,sans-serif;font-size:11px;fill:#0d7377;font-weight:bold">Pros:</text>
+  <text x="60" y="178" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa">&#x2022; ~20nm resolution</text>
+  <text x="60" y="193" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa">&#x2022; True single-molecule precision</text>
+  <!-- Cons -->
+  <text x="50" y="215" style="font-family:Arial,sans-serif;font-size:11px;fill:#e07830;font-weight:bold">Cons:</text>
+  <text x="60" y="231" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa">&#x2022; Slow acquisition (minutes&#x2013;hours)</text>
+  <text x="60" y="246" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa">&#x2022; Photo-bleaching limits imaging</text>
+  <!-- SOFI column -->
+  <rect x="390" y="40" width="340" height="210" rx="6" style="fill:#0d1b2a;fill-opacity:0.7;stroke:#0d7377;stroke-width:1.2"/>
+  <text x="560" y="62" style="font-family:Arial,sans-serif;font-size:14px;fill:#0d7377;text-anchor:middle;font-weight:bold">SOFI</text>
+  <line x1="410" y1="70" x2="710" y2="70" style="stroke:#0d7377;stroke-width:0.5;stroke-opacity:0.4"/>
+  <text x="410" y="92" style="font-family:Arial,sans-serif;font-size:11px;fill:#c8d6e5;font-weight:bold">Requirements:</text>
+  <text x="420" y="108" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa">&#x2022; Dense blinking OK (overlapping)</text>
+  <text x="420" y="123" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa">&#x2022; Fewer frames (100&#x2013;1000)</text>
+  <text x="420" y="138" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa">&#x2022; Statistical cumulant analysis</text>
+  <text x="410" y="162" style="font-family:Arial,sans-serif;font-size:11px;fill:#0d7377;font-weight:bold">Pros:</text>
+  <text x="420" y="178" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa">&#x2022; Fast acquisition (seconds)</text>
+  <text x="420" y="193" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa">&#x2022; Works with standard fluorophores</text>
+  <text x="410" y="215" style="font-family:Arial,sans-serif;font-size:11px;fill:#e07830;font-weight:bold">Cons:</text>
+  <text x="420" y="231" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa">&#x2022; ~80&#x2013;120nm resolution</text>
+  <text x="420" y="246" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa">&#x2022; Noise amplification at high orders</text>
+  <!-- VS divider -->
+  <circle cx="380" cy="145" r="16" style="fill:#1b2d45;stroke:#e07830;stroke-width:1.5"/>
+  <text x="380" y="150" style="font-family:Arial,sans-serif;font-size:11px;fill:#e07830;text-anchor:middle;font-weight:bold">vs</text>
+  <!-- Bottom summary -->
+  <rect x="130" y="260" width="500" height="28" rx="5" style="fill:#1b2d45;stroke:#e07830;stroke-width:0.8"/>
+  <text x="380" y="279" style="font-family:Arial,sans-serif;font-size:11px;fill:#e07830;text-anchor:middle;font-style:italic">SOFI trades single-molecule precision for ensemble speed.</text>
 </svg>
