@@ -1,138 +1,148 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300">
   <defs>
-    <style>
-      .bg { fill: #0f1419; }
-      .grid { stroke: #2d3748; stroke-width: 0.5; }
-      .field-bg { fill: #111827; }
-      .channel { fill: #4a9eff; opacity: 0.3; }
-      .sample { fill: #ef4444; stroke: white; stroke-width: 1; }
-      .title { font-family: sans-serif; font-size: 11px; fill: #e8eaed; text-anchor: middle; font-weight: bold; }
-      .subtitle { font-family: sans-serif; font-size: 9px; fill: #9aa0a6; text-anchor: middle; }
-      .border { fill: none; stroke: #4a9eff; stroke-width: 1; rx: 4; }
-    </style>
+    <linearGradient id="bg6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#1b2d45"/>
+    </linearGradient>
   </defs>
-
-  <rect class="bg" width="900" height="380"/>
-
-  <!-- Title -->
-  <text class="title" x="450" y="25" style="font-size: 14px;">Comparison of Sampling Schemes on a Channelized Field</text>
-
-  <!-- 1. Random Uniform -->
-  <g transform="translate(20, 45)">
-    <rect class="border" x="0" y="0" width="130" height="130"/>
-    <rect class="field-bg" x="1" y="1" width="128" height="128"/>
-    <!-- Stylized channel -->
-    <path class="channel" d="M 0 40 Q 30 30, 65 50 Q 100 70, 130 55 L 130 75 Q 100 90, 65 70 Q 30 50, 0 60 Z"/>
-    <!-- Random points -->
-    <circle class="sample" cx="12" cy="95" r="3"/><circle class="sample" cx="45" cy="22" r="3"/>
-    <circle class="sample" cx="78" cy="88" r="3"/><circle class="sample" cx="110" cy="15" r="3"/>
-    <circle class="sample" cx="33" cy="65" r="3"/><circle class="sample" cx="95" cy="45" r="3"/>
-    <circle class="sample" cx="55" cy="110" r="3"/><circle class="sample" cx="8" cy="38" r="3"/>
-    <circle class="sample" cx="120" cy="100" r="3"/><circle class="sample" cx="68" cy="55" r="3"/>
-    <text class="title" x="65" y="150">Random Uniform</text>
-    <text class="subtitle" x="65" y="165">No structure, may cluster</text>
-  </g>
-
-  <!-- 2. Stratified Grid -->
-  <g transform="translate(170, 45)">
-    <rect class="border" x="0" y="0" width="130" height="130"/>
-    <rect class="field-bg" x="1" y="1" width="128" height="128"/>
-    <path class="channel" d="M 0 40 Q 30 30, 65 50 Q 100 70, 130 55 L 130 75 Q 100 90, 65 70 Q 30 50, 0 60 Z"/>
-    <!-- Grid points -->
-    <circle class="sample" cx="22" cy="22" r="3"/><circle class="sample" cx="65" cy="22" r="3"/>
-    <circle class="sample" cx="108" cy="22" r="3"/><circle class="sample" cx="22" cy="65" r="3"/>
-    <circle class="sample" cx="65" cy="65" r="3"/><circle class="sample" cx="108" cy="65" r="3"/>
-    <circle class="sample" cx="22" cy="108" r="3"/><circle class="sample" cx="65" cy="108" r="3"/>
-    <circle class="sample" cx="108" cy="108" r="3"/>
-    <text class="title" x="65" y="150">Stratified Grid</text>
-    <text class="subtitle" x="65" y="165">Uniform coverage, rigid</text>
-  </g>
-
-  <!-- 3. Random Stratified -->
-  <g transform="translate(320, 45)">
-    <rect class="border" x="0" y="0" width="130" height="130"/>
-    <rect class="field-bg" x="1" y="1" width="128" height="128"/>
-    <path class="channel" d="M 0 40 Q 30 30, 65 50 Q 100 70, 130 55 L 130 75 Q 100 90, 65 70 Q 30 50, 0 60 Z"/>
-    <!-- Jittered grid -->
-    <circle class="sample" cx="18" cy="28" r="3"/><circle class="sample" cx="58" cy="15" r="3"/>
-    <circle class="sample" cx="112" cy="30" r="3"/><circle class="sample" cx="28" cy="70" r="3"/>
-    <circle class="sample" cx="70" cy="60" r="3"/><circle class="sample" cx="100" cy="72" r="3"/>
-    <circle class="sample" cx="15" cy="115" r="3"/><circle class="sample" cx="72" cy="100" r="3"/>
-    <circle class="sample" cx="115" cy="112" r="3"/>
-    <text class="title" x="65" y="150">Random Stratified</text>
-    <text class="subtitle" x="65" y="165">Coverage + randomization</text>
-  </g>
-
-  <!-- 4. Multiscale -->
-  <g transform="translate(20, 210)">
-    <rect class="border" x="0" y="0" width="130" height="130"/>
-    <rect class="field-bg" x="1" y="1" width="128" height="128"/>
-    <path class="channel" d="M 0 40 Q 30 30, 65 50 Q 100 70, 130 55 L 130 75 Q 100 90, 65 70 Q 30 50, 0 60 Z"/>
-    <!-- Multi-scale: big + small -->
-    <circle class="sample" cx="32" cy="32" r="4" style="fill: #f59e0b;"/><circle class="sample" cx="97" cy="97" r="4" style="fill: #f59e0b;"/>
-    <circle class="sample" cx="65" cy="32" r="3"/><circle class="sample" cx="32" cy="97" r="3"/>
-    <circle class="sample" cx="97" cy="32" r="3"/><circle class="sample" cx="65" cy="97" r="3"/>
-    <circle class="sample" cx="15" cy="65" r="2.5" style="fill: #34d399;"/>
-    <circle class="sample" cx="50" cy="65" r="2.5" style="fill: #34d399;"/>
-    <circle class="sample" cx="80" cy="65" r="2.5" style="fill: #34d399;"/>
-    <circle class="sample" cx="115" cy="65" r="2.5" style="fill: #34d399;"/>
-    <text class="title" x="65" y="150">Multiscale</text>
-    <text class="subtitle" x="65" y="165">Coarse + fine resolution</text>
-  </g>
-
-  <!-- 5. Oracle Entropy -->
-  <g transform="translate(170, 210)">
-    <rect class="border" x="0" y="0" width="130" height="130"/>
-    <rect class="field-bg" x="1" y="1" width="128" height="128"/>
-    <path class="channel" d="M 0 40 Q 30 30, 65 50 Q 100 70, 130 55 L 130 75 Q 100 90, 65 70 Q 30 50, 0 60 Z"/>
-    <!-- Concentrated near channel boundaries -->
-    <circle class="sample" cx="20" cy="48" r="3"/><circle class="sample" cx="35" cy="42" r="3"/>
-    <circle class="sample" cx="50" cy="48" r="3"/><circle class="sample" cx="65" cy="55" r="3"/>
-    <circle class="sample" cx="80" cy="62" r="3"/><circle class="sample" cx="95" cy="65" r="3"/>
-    <circle class="sample" cx="110" cy="60" r="3"/><circle class="sample" cx="25" cy="58" r="3"/>
-    <circle class="sample" cx="75" cy="72" r="3"/><circle class="sample" cx="105" cy="70" r="3"/>
-    <text class="title" x="65" y="150">Oracle Entropy</text>
-    <text class="subtitle" x="65" y="165">Upper bound (uses truth)</text>
-  </g>
-
-  <!-- 6. Adaptive Entropy (AdSEMES) -->
-  <g transform="translate(320, 210)">
-    <rect class="border" x="0" y="0" width="130" height="130" style="stroke: #34d399;"/>
-    <rect class="field-bg" x="1" y="1" width="128" height="128"/>
-    <path class="channel" d="M 0 40 Q 30 30, 65 50 Q 100 70, 130 55 L 130 75 Q 100 90, 65 70 Q 30 50, 0 60 Z"/>
-    <!-- Numbered sequence near boundaries -->
-    <circle class="sample" cx="65" cy="65" r="3" style="fill: #34d399;"/>
-    <circle class="sample" cx="30" cy="45" r="3" style="fill: #34d399;"/>
-    <circle class="sample" cx="100" cy="60" r="3" style="fill: #34d399;"/>
-    <circle class="sample" cx="15" cy="55" r="3" style="fill: #34d399;"/>
-    <circle class="sample" cx="50" cy="50" r="3" style="fill: #34d399;"/>
-    <circle class="sample" cx="85" cy="70" r="3" style="fill: #34d399;"/>
-    <circle class="sample" cx="115" cy="55" r="3" style="fill: #34d399;"/>
-    <circle class="sample" cx="40" cy="65" r="3" style="fill: #34d399;"/>
-    <circle class="sample" cx="75" cy="48" r="3" style="fill: #34d399;"/>
-    <circle class="sample" cx="95" cy="80" r="3" style="fill: #34d399;"/>
-    <text class="title" x="65" y="150" style="fill: #34d399;">AdSEMES (Adaptive)</text>
-    <text class="subtitle" x="65" y="165">Near-optimal, uses TI</text>
-  </g>
-
-  <!-- Legend -->
-  <g transform="translate(510, 60)">
-    <rect x="0" y="0" width="360" height="280" fill="#1e2a3a" stroke="#2d3748" rx="8"/>
-    <text class="title" x="180" y="25">Legend</text>
-    <rect x="20" y="40" width="20" height="12" fill="#4a9eff" opacity="0.3" stroke="#4a9eff"/>
-    <text class="subtitle" x="55" y="50" style="text-anchor: start;">Channel (sand facies)</text>
-    <circle cx="30" cy="70" r="4" fill="#ef4444" stroke="white" stroke-width="1"/>
-    <text class="subtitle" x="55" y="74" style="text-anchor: start;">Sample position</text>
-    <circle cx="30" cy="95" r="4" fill="#34d399" stroke="white" stroke-width="1"/>
-    <text class="subtitle" x="55" y="99" style="text-anchor: start;">Adaptive sample</text>
-
-    <text class="subtitle" x="20" y="130" style="text-anchor: start; fill: #e8eaed;">Key observations:</text>
-    <text class="subtitle" x="20" y="150" style="text-anchor: start;">- Random may miss critical boundaries</text>
-    <text class="subtitle" x="20" y="168" style="text-anchor: start;">- Stratified ensures coverage but is rigid</text>
-    <text class="subtitle" x="20" y="186" style="text-anchor: start;">- Oracle concentrates near boundaries</text>
-    <text class="subtitle" x="20" y="204" style="text-anchor: start;">- AdSEMES approximates oracle behavior</text>
-    <text class="subtitle" x="20" y="222" style="text-anchor: start;">  using only the training image</text>
-    <text class="subtitle" x="20" y="250" style="text-anchor: start; fill: #f59e0b;">Submodularity guarantee: greedy achieves</text>
-    <text class="subtitle" x="20" y="268" style="text-anchor: start; fill: #f59e0b;">(1 - 1/e) ~ 63.2% of optimal info. gain</text>
-  </g>
+  <rect width="760" height="300" style="fill:url(#bg6)"/>
+  <text x="380" y="24" style="font-family:Arial,sans-serif;font-size:15px;fill:#e0e6ed;text-anchor:middle;font-weight:bold">Sampling Strategies Comparison</text>
+  <!-- 6 grids: each 90x90 with 5x5 grid lines, placed in 2 rows of 3 -->
+  <!-- Row 1 -->
+  <!-- Random -->
+  <rect x="45" y="45" width="90" height="90" rx="4" style="fill:#0d1b2a;stroke:#3a7ab8;stroke-width:0.8"/>
+  <line x1="63" y1="45" x2="63" y2="135" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="81" y1="45" x2="81" y2="135" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="99" y1="45" x2="99" y2="135" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="117" y1="45" x2="117" y2="135" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="45" y1="63" x2="135" y2="63" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="45" y1="81" x2="135" y2="81" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="45" y1="99" x2="135" y2="99" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="45" y1="117" x2="135" y2="117" style="stroke:#2d3748;stroke-width:0.4"/>
+  <circle cx="55" cy="72" r="3" style="fill:#e07830"/>
+  <circle cx="78" cy="120" r="3" style="fill:#e07830"/>
+  <circle cx="105" cy="55" r="3" style="fill:#e07830"/>
+  <circle cx="125" cy="95" r="3" style="fill:#e07830"/>
+  <circle cx="68" cy="105" r="3" style="fill:#e07830"/>
+  <circle cx="110" cy="128" r="3" style="fill:#e07830"/>
+  <text x="90" y="152" style="font-family:Arial,sans-serif;font-size:11px;fill:#e0e6ed;text-anchor:middle">Random</text>
+  <!-- Stratified -->
+  <rect x="175" y="45" width="90" height="90" rx="4" style="fill:#0d1b2a;stroke:#3a7ab8;stroke-width:0.8"/>
+  <line x1="193" y1="45" x2="193" y2="135" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="211" y1="45" x2="211" y2="135" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="229" y1="45" x2="229" y2="135" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="247" y1="45" x2="247" y2="135" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="175" y1="63" x2="265" y2="63" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="175" y1="81" x2="265" y2="81" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="175" y1="99" x2="265" y2="99" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="175" y1="117" x2="265" y2="117" style="stroke:#2d3748;stroke-width:0.4"/>
+  <!-- One dot per quadrant (2x2 quadrants) -->
+  <circle cx="188" cy="58" r="3" style="fill:#0d7377"/>
+  <circle cx="240" cy="70" r="3" style="fill:#0d7377"/>
+  <circle cx="195" cy="110" r="3" style="fill:#0d7377"/>
+  <circle cx="250" cy="125" r="3" style="fill:#0d7377"/>
+  <text x="220" y="152" style="font-family:Arial,sans-serif;font-size:11px;fill:#e0e6ed;text-anchor:middle">Stratified</text>
+  <!-- Multiscale -->
+  <rect x="305" y="45" width="90" height="90" rx="4" style="fill:#0d1b2a;stroke:#3a7ab8;stroke-width:0.8"/>
+  <line x1="323" y1="45" x2="323" y2="135" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="341" y1="45" x2="341" y2="135" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="359" y1="45" x2="359" y2="135" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="377" y1="45" x2="377" y2="135" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="305" y1="63" x2="395" y2="63" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="305" y1="81" x2="395" y2="81" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="305" y1="99" x2="395" y2="99" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="305" y1="117" x2="395" y2="117" style="stroke:#2d3748;stroke-width:0.4"/>
+  <!-- Hierarchical: corners + center + midpoints -->
+  <circle cx="350" cy="90" r="4" style="fill:#3a7ab8"/>
+  <circle cx="315" cy="55" r="2.5" style="fill:#3a7ab8"/>
+  <circle cx="385" cy="55" r="2.5" style="fill:#3a7ab8"/>
+  <circle cx="315" cy="125" r="2.5" style="fill:#3a7ab8"/>
+  <circle cx="385" cy="125" r="2.5" style="fill:#3a7ab8"/>
+  <circle cx="350" cy="55" r="2" style="fill:#3a7ab8;fill-opacity:0.6"/>
+  <circle cx="350" cy="125" r="2" style="fill:#3a7ab8;fill-opacity:0.6"/>
+  <circle cx="315" cy="90" r="2" style="fill:#3a7ab8;fill-opacity:0.6"/>
+  <circle cx="385" cy="90" r="2" style="fill:#3a7ab8;fill-opacity:0.6"/>
+  <text x="350" y="152" style="font-family:Arial,sans-serif;font-size:11px;fill:#e0e6ed;text-anchor:middle">Multiscale</text>
+  <!-- Row 2 -->
+  <!-- Regular -->
+  <rect x="45" y="170" width="90" height="90" rx="4" style="fill:#0d1b2a;stroke:#3a7ab8;stroke-width:0.8"/>
+  <line x1="63" y1="170" x2="63" y2="260" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="81" y1="170" x2="81" y2="260" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="99" y1="170" x2="99" y2="260" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="117" y1="170" x2="117" y2="260" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="45" y1="188" x2="135" y2="188" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="45" y1="206" x2="135" y2="206" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="45" y1="224" x2="135" y2="224" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="45" y1="242" x2="135" y2="242" style="stroke:#2d3748;stroke-width:0.4"/>
+  <!-- Uniform grid dots -->
+  <circle cx="63" cy="188" r="2.5" style="fill:#8899aa"/>
+  <circle cx="90" cy="188" r="2.5" style="fill:#8899aa"/>
+  <circle cx="117" cy="188" r="2.5" style="fill:#8899aa"/>
+  <circle cx="63" cy="215" r="2.5" style="fill:#8899aa"/>
+  <circle cx="90" cy="215" r="2.5" style="fill:#8899aa"/>
+  <circle cx="117" cy="215" r="2.5" style="fill:#8899aa"/>
+  <circle cx="63" cy="242" r="2.5" style="fill:#8899aa"/>
+  <circle cx="90" cy="242" r="2.5" style="fill:#8899aa"/>
+  <circle cx="117" cy="242" r="2.5" style="fill:#8899aa"/>
+  <text x="90" y="277" style="font-family:Arial,sans-serif;font-size:11px;fill:#e0e6ed;text-anchor:middle">Regular</text>
+  <!-- Oracle -->
+  <rect x="175" y="170" width="90" height="90" rx="4" style="fill:#0d1b2a;stroke:#3a7ab8;stroke-width:0.8"/>
+  <line x1="193" y1="170" x2="193" y2="260" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="211" y1="170" x2="211" y2="260" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="229" y1="170" x2="229" y2="260" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="247" y1="170" x2="247" y2="260" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="175" y1="188" x2="265" y2="188" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="175" y1="206" x2="265" y2="206" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="175" y1="224" x2="265" y2="224" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="175" y1="242" x2="265" y2="242" style="stroke:#2d3748;stroke-width:0.4"/>
+  <!-- Optimal placement on a diagonal boundary -->
+  <circle cx="190" cy="195" r="2.5" style="fill:#e07830"/>
+  <circle cx="205" cy="205" r="2.5" style="fill:#e07830"/>
+  <circle cx="220" cy="215" r="2.5" style="fill:#e07830"/>
+  <circle cx="235" cy="225" r="2.5" style="fill:#e07830"/>
+  <circle cx="250" cy="235" r="2.5" style="fill:#e07830"/>
+  <circle cx="195" cy="210" r="2.5" style="fill:#e07830"/>
+  <circle cx="210" cy="220" r="2.5" style="fill:#e07830"/>
+  <line x1="180" y1="188" x2="260" y2="248" style="stroke:#e07830;stroke-width:0.6;stroke-dasharray:3,2;stroke-opacity:0.5"/>
+  <text x="220" y="277" style="font-family:Arial,sans-serif;font-size:11px;fill:#e0e6ed;text-anchor:middle">Oracle</text>
+  <!-- Adaptive -->
+  <rect x="305" y="170" width="90" height="90" rx="4" style="fill:#0d1b2a;stroke:#3a7ab8;stroke-width:0.8"/>
+  <line x1="323" y1="170" x2="323" y2="260" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="341" y1="170" x2="341" y2="260" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="359" y1="170" x2="359" y2="260" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="377" y1="170" x2="377" y2="260" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="305" y1="188" x2="395" y2="188" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="305" y1="206" x2="395" y2="206" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="305" y1="224" x2="395" y2="224" style="stroke:#2d3748;stroke-width:0.4"/>
+  <line x1="305" y1="242" x2="395" y2="242" style="stroke:#2d3748;stroke-width:0.4"/>
+  <!-- Concentrated on a boundary region -->
+  <circle cx="320" cy="205" r="2.5" style="fill:#0d7377"/>
+  <circle cx="330" cy="210" r="2.5" style="fill:#0d7377"/>
+  <circle cx="340" cy="215" r="2.5" style="fill:#0d7377"/>
+  <circle cx="350" cy="220" r="2.5" style="fill:#0d7377"/>
+  <circle cx="325" cy="218" r="2.5" style="fill:#0d7377"/>
+  <circle cx="335" cy="225" r="2.5" style="fill:#0d7377"/>
+  <circle cx="355" cy="230" r="2.5" style="fill:#0d7377"/>
+  <!-- sparse elsewhere -->
+  <circle cx="370" cy="185" r="2" style="fill:#0d7377;fill-opacity:0.4"/>
+  <circle cx="315" cy="250" r="2" style="fill:#0d7377;fill-opacity:0.4"/>
+  <line x1="310" y1="200" x2="370" y2="240" style="stroke:#0d7377;stroke-width:0.6;stroke-dasharray:3,2;stroke-opacity:0.5"/>
+  <text x="350" y="277" style="font-family:Arial,sans-serif;font-size:11px;fill:#e0e6ed;text-anchor:middle">Adaptive</text>
+  <!-- Right-side summary -->
+  <rect x="440" y="55" width="300" height="200" rx="6" style="fill:#0d1b2a;fill-opacity:0.85;stroke:#3a7ab8;stroke-width:0.8"/>
+  <text x="590" y="78" style="font-family:Arial,sans-serif;font-size:12px;fill:#e0e6ed;text-anchor:middle;font-weight:bold">Strategy Summary</text>
+  <circle cx="458" cy="100" r="3" style="fill:#e07830"/>
+  <text x="470" y="104" style="font-family:Arial,sans-serif;font-size:10px;fill:#c8d6e5">Random &#x2014; no structure, high variance</text>
+  <circle cx="458" cy="120" r="3" style="fill:#0d7377"/>
+  <text x="470" y="124" style="font-family:Arial,sans-serif;font-size:10px;fill:#c8d6e5">Stratified &#x2014; one per stratum</text>
+  <circle cx="458" cy="140" r="3" style="fill:#3a7ab8"/>
+  <text x="470" y="144" style="font-family:Arial,sans-serif;font-size:10px;fill:#c8d6e5">Multiscale &#x2014; hierarchical refinement</text>
+  <circle cx="458" cy="160" r="3" style="fill:#8899aa"/>
+  <text x="470" y="164" style="font-family:Arial,sans-serif;font-size:10px;fill:#c8d6e5">Regular &#x2014; uniform spacing</text>
+  <circle cx="458" cy="180" r="3" style="fill:#e07830"/>
+  <text x="470" y="184" style="font-family:Arial,sans-serif;font-size:10px;fill:#c8d6e5">Oracle &#x2014; optimal (ground truth)</text>
+  <circle cx="458" cy="200" r="3" style="fill:#0d7377"/>
+  <text x="470" y="204" style="font-family:Arial,sans-serif;font-size:10px;fill:#c8d6e5">Adaptive &#x2014; boundary-focused</text>
+  <text x="590" y="236" style="font-family:Arial,sans-serif;font-size:10px;fill:#e07830;text-anchor:middle;font-style:italic">Adaptive approaches Oracle quality</text>
 </svg>
