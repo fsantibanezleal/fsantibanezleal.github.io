@@ -1,89 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="700" height="400" viewBox="0 0 700 400">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300">
   <defs>
-    <style>
-      text { font-family: 'Segoe UI', Arial, sans-serif; fill: #e6edf3; }
-      .title { font-size: 15px; font-weight: bold; fill: #58a6ff; }
-      .label { font-size: 11px; fill: #e6edf3; }
-      .sublabel { font-size: 9.5px; fill: #8b949e; }
-      .math { font-size: 11px; fill: #d2a8ff; font-style: italic; }
-      .axis-label { font-size: 12px; fill: #e6edf3; }
-      .tick { font-size: 9px; fill: #8b949e; }
-      .gridline { stroke: #21262d; stroke-width: 0.5; }
-    </style>
-    <linearGradient id="areaGrad" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0%" stop-color="#7ee787" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#7ee787" stop-opacity="0.02"/>
+    <linearGradient id="bg5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#1b2d45"/>
     </linearGradient>
-    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-      <polygon points="0,0 8,3 0,6" fill="#e6edf3"/>
-    </marker>
   </defs>
-
-  <!-- Background -->
-  <rect width="700" height="400" fill="#0d1117"/>
-
-  <!-- Title -->
-  <text class="title" x="350" y="30" text-anchor="middle">Resolvability Capacity Curve C_k</text>
-
-  <!-- Plot area: x=80..620, y=55..330 -->
-  <!-- Grid lines -->
-  <line class="gridline" x1="80" y1="110" x2="620" y2="110"/>
-  <line class="gridline" x1="80" y1="165" x2="620" y2="165"/>
-  <line class="gridline" x1="80" y1="220" x2="620" y2="220"/>
-  <line class="gridline" x1="80" y1="275" x2="620" y2="275"/>
-
+  <rect width="760" height="300" style="fill:url(#bg5)"/>
+  <text x="380" y="24" style="font-family:Arial,sans-serif;font-size:15px;fill:#e0e6ed;text-anchor:middle;font-weight:bold">Resolvability Curve</text>
   <!-- Axes -->
-  <line x1="80" y1="330" x2="635" y2="330" stroke="#e6edf3" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="80" y1="340" x2="80" y2="48" stroke="#e6edf3" stroke-width="1.5" marker-end="url(#arr)"/>
-
-  <!-- Y-axis ticks and labels -->
-  <text class="tick" x="72" y="334" text-anchor="end">0.0</text>
-  <text class="tick" x="72" y="279" text-anchor="end">0.2</text>
-  <text class="tick" x="72" y="224" text-anchor="end">0.4</text>
-  <text class="tick" x="72" y="169" text-anchor="end">0.6</text>
-  <text class="tick" x="72" y="114" text-anchor="end">0.8</text>
-  <text class="tick" x="72" y="59" text-anchor="end">1.0</text>
-
-  <!-- X-axis ticks -->
-  <text class="tick" x="80" y="348" text-anchor="middle">0</text>
-  <text class="tick" x="188" y="348" text-anchor="middle">5</text>
-  <text class="tick" x="296" y="348" text-anchor="middle">10</text>
-  <text class="tick" x="404" y="348" text-anchor="middle">15</text>
-  <text class="tick" x="512" y="348" text-anchor="middle">20</text>
-  <text class="tick" x="620" y="348" text-anchor="middle">25</text>
-
-  <!-- Axis labels -->
-  <text class="axis-label" x="350" y="375" text-anchor="middle">Number of samples k</text>
-  <text class="axis-label" x="28" y="195" text-anchor="middle" transform="rotate(-90,28,195)">C_k = I(f*_k) / H(X)</text>
-
-  <!-- 1.0 dashed line -->
-  <line x1="80" y1="55" x2="620" y2="55" stroke="#8b949e" stroke-width="0.8" stroke-dasharray="4,3"/>
-
-  <!-- Shaded "sufficient samples" region -->
-  <!-- Area under curve up to stopping point (k~12, x~340) -->
-  <path d="M80,330 L80,330 L102,308 L124,282 L146,255 L168,228 L190,202 L212,180 L234,162 L256,148 L278,137 L300,128 L322,121 L340,117 L340,330 Z" fill="url(#areaGrad)"/>
-
-  <!-- Curve: C_k = 1 - exp(-0.18*k) approximately -->
-  <path d="M80,330 C100,290 120,265 146,230 C170,200 190,178 212,160 C234,145 256,133 278,124 C300,117 322,112 340,108 C360,105 380,102 404,99 C430,96 460,93 490,90 C520,88 550,86 580,84 C600,83 620,82 620,82" fill="none" stroke="#7ee787" stroke-width="2.5"/>
-
-  <!-- Stopping rule point -->
-  <circle cx="340" cy="108" r="5" fill="#f97583" stroke="#f97583" stroke-width="1"/>
-  <line x1="340" y1="108" x2="340" y2="330" stroke="#f97583" stroke-width="1" stroke-dasharray="5,4"/>
-
-  <!-- Stopping rule annotation -->
-  <line x1="345" y1="105" x2="420" y2="78" stroke="#f97583" stroke-width="0.8"/>
-  <text class="label" x="425" y="75" fill="#f97583">Stopping point</text>
-  <text class="math" x="425" y="90">dC_k/dk &lt; epsilon</text>
-
-  <!-- "Sufficient samples" label -->
-  <text class="sublabel" x="210" y="310" text-anchor="middle" fill="#7ee787">Sufficient</text>
-  <text class="sublabel" x="210" y="322" text-anchor="middle" fill="#7ee787">samples</text>
-
-  <!-- "Diminishing returns" label -->
-  <text class="sublabel" x="510" y="75" text-anchor="middle" fill="#8b949e">Diminishing returns</text>
-  <path d="M460,78 L445,85" fill="none" stroke="#8b949e" stroke-width="0.5"/>
-
-  <!-- Plateau annotation -->
-  <text class="sublabel" x="600" y="72" text-anchor="middle">C_k -> 1</text>
+  <line x1="100" y1="250" x2="680" y2="250" style="stroke:#8899aa;stroke-width:1.2"/>
+  <line x1="100" y1="250" x2="100" y2="45" style="stroke:#8899aa;stroke-width:1.2"/>
+  <!-- Y axis label -->
+  <text x="30" y="150" style="font-family:Arial,sans-serif;font-size:11px;fill:#c8d6e5;text-anchor:middle" transform="rotate(-90,30,150)">Recovery accuracy (%)</text>
+  <!-- X axis label -->
+  <text x="390" y="286" style="font-family:Arial,sans-serif;font-size:11px;fill:#c8d6e5;text-anchor:middle">Sampling rate</text>
+  <!-- X ticks -->
+  <text x="100" y="266" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa;text-anchor:middle">0.1%</text>
+  <text x="245" y="266" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa;text-anchor:middle">1%</text>
+  <text x="390" y="266" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa;text-anchor:middle">2%</text>
+  <text x="535" y="266" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa;text-anchor:middle">3.5%</text>
+  <text x="680" y="266" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa;text-anchor:middle">5%</text>
+  <!-- Y ticks -->
+  <text x="90" y="250" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa;text-anchor:end">0</text>
+  <text x="90" y="188" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa;text-anchor:end">25</text>
+  <text x="90" y="147" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa;text-anchor:end">50</text>
+  <text x="90" y="106" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa;text-anchor:end">75</text>
+  <text x="90" y="65" style="font-family:Arial,sans-serif;font-size:10px;fill:#8899aa;text-anchor:end">100</text>
+  <!-- Grid lines -->
+  <line x1="100" y1="185" x2="680" y2="185" style="stroke:#2d3748;stroke-width:0.5"/>
+  <line x1="100" y1="144" x2="680" y2="144" style="stroke:#2d3748;stroke-width:0.5"/>
+  <line x1="100" y1="103" x2="680" y2="103" style="stroke:#2d3748;stroke-width:0.5"/>
+  <line x1="100" y1="62" x2="680" y2="62" style="stroke:#2d3748;stroke-width:0.5"/>
+  <!-- Shaded advantage area -->
+  <path d="M 100,245 160,220 245,180 350,130 450,95 550,75 650,65 680,62 680,62 650,100 550,125 450,148 350,175 245,210 160,235 100,248 Z" style="fill:#0d7377;fill-opacity:0.12"/>
+  <!-- Adaptive entropy curve (teal, higher) -->
+  <polyline points="100,245 160,220 245,180 350,130 450,95 550,75 650,65 680,62" style="fill:none;stroke:#0d7377;stroke-width:2.5"/>
+  <!-- Regular grid curve (blue, lower) -->
+  <polyline points="100,248 160,235 245,210 350,175 450,148 550,125 650,100 680,92" style="fill:none;stroke:#3a7ab8;stroke-width:2;stroke-dasharray:6,3"/>
+  <!-- Legend -->
+  <rect x="520" y="38" width="210" height="58" rx="5" style="fill:#0d1b2a;fill-opacity:0.85;stroke:#3a7ab8;stroke-width:0.6"/>
+  <line x1="530" y1="54" x2="560" y2="54" style="stroke:#0d7377;stroke-width:2.5"/>
+  <text x="568" y="58" style="font-family:Arial,sans-serif;font-size:11px;fill:#0d7377">Adaptive entropy</text>
+  <line x1="530" y1="74" x2="560" y2="74" style="stroke:#3a7ab8;stroke-width:2;stroke-dasharray:6,3"/>
+  <text x="568" y="78" style="font-family:Arial,sans-serif;font-size:11px;fill:#3a7ab8">Regular grid</text>
+  <!-- Advantage annotation -->
+  <text x="420" y="180" style="font-family:Arial,sans-serif;font-size:10px;fill:#e07830;font-style:italic">advantage</text>
 </svg>

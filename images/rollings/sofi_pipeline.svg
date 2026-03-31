@@ -1,104 +1,87 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1"/>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" style="stop-color:#0d1b2a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1b2d45;stop-opacity:1"/>
     </linearGradient>
-    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#00d4aa"/>
+    <marker id="arrowTeal" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" style="fill:#0d7377"/>
     </marker>
   </defs>
-  <rect width="900" height="400" fill="url(#bgGrad)"/>
 
-  <text x="450" y="30" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="16" font-weight="bold">SOFI Processing Pipeline</text>
+  <!-- Background -->
+  <rect width="760" height="300" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="380" y="28" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:15px;font-weight:bold;fill:#3a7ab8">SOFI Processing Pipeline</text>
 
   <!-- Stage 1: Input -->
-  <rect x="20" y="60" width="110" height="70" rx="8" fill="#21262d" stroke="#58a6ff" stroke-width="2"/>
-  <text x="75" y="85" text-anchor="middle" fill="#58a6ff" font-family="monospace" font-size="11" font-weight="bold">Input</text>
-  <text x="75" y="100" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">Image Stack</text>
-  <text x="75" y="115" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">(T, H, W)</text>
+  <rect x="15" y="55" width="110" height="55" rx="6" style="fill:#1b2d45;stroke:#3a7ab8;stroke-width:1.5"/>
+  <text x="70" y="76" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#3a7ab8">Fluorescence</text>
+  <text x="70" y="92" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:10px;fill:#e6edf3">Video (T frames)</text>
 
-  <line x1="130" y1="95" x2="155" y2="95" stroke="#00d4aa" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- Arrow 1 -->
+  <line x1="128" y1="82" x2="148" y2="82" style="stroke:#0d7377;stroke-width:2" marker-end="url(#arrowTeal)"/>
 
-  <!-- Stage 2: Mean Subtraction -->
-  <rect x="160" y="60" width="110" height="70" rx="8" fill="#21262d" stroke="#3fb950" stroke-width="2"/>
-  <text x="215" y="82" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="10" font-weight="bold">Mean</text>
-  <text x="215" y="96" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="10" font-weight="bold">Subtraction</text>
-  <text x="215" y="115" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">dF = F - &lt;F&gt;</text>
+  <!-- Stage 2: Cumulant -->
+  <rect x="152" y="55" width="110" height="55" rx="6" style="fill:#1b2d45;stroke:#0d7377;stroke-width:1.5"/>
+  <text x="207" y="76" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#0d7377">Temporal</text>
+  <text x="207" y="92" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:10px;fill:#e6edf3">Cumulant &#x03BA;&#x2099;</text>
 
-  <line x1="270" y1="95" x2="295" y2="95" stroke="#00d4aa" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- Arrow 2 -->
+  <line x1="265" y1="82" x2="285" y2="82" style="stroke:#0d7377;stroke-width:2" marker-end="url(#arrowTeal)"/>
 
-  <!-- Stage 3: Cumulants -->
-  <rect x="300" y="60" width="110" height="70" rx="8" fill="#21262d" stroke="#d29922" stroke-width="2"/>
-  <text x="355" y="82" text-anchor="middle" fill="#d29922" font-family="monospace" font-size="10" font-weight="bold">Cumulant</text>
-  <text x="355" y="96" text-anchor="middle" fill="#d29922" font-family="monospace" font-size="10" font-weight="bold">Orders 2-6</text>
-  <text x="355" y="115" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">C_n(r)</text>
+  <!-- Stage 3: PSF Narrowing -->
+  <rect x="289" y="55" width="110" height="55" rx="6" style="fill:#1b2d45;stroke:#0d7377;stroke-width:1.5"/>
+  <text x="344" y="76" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#0d7377">PSF Narrowing</text>
+  <text x="344" y="92" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:10px;fill:#e6edf3">&#x00D7;&#x221A;n</text>
 
-  <line x1="410" y1="95" x2="435" y2="95" stroke="#00d4aa" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- Arrow 3 -->
+  <line x1="402" y1="82" x2="422" y2="82" style="stroke:#0d7377;stroke-width:2" marker-end="url(#arrowTeal)"/>
 
-  <!-- Stage 4: Fourier -->
-  <rect x="440" y="60" width="110" height="70" rx="8" fill="#21262d" stroke="#f85149" stroke-width="2"/>
-  <text x="495" y="82" text-anchor="middle" fill="#f85149" font-family="monospace" font-size="10" font-weight="bold">Fourier</text>
-  <text x="495" y="96" text-anchor="middle" fill="#f85149" font-family="monospace" font-size="10" font-weight="bold">Interpolation</text>
-  <text x="495" y="115" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">nx upsample</text>
+  <!-- Stage 4: Fourier Interpolation -->
+  <rect x="426" y="55" width="110" height="55" rx="6" style="fill:#1b2d45;stroke:#0d7377;stroke-width:1.5"/>
+  <text x="481" y="76" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#0d7377">Fourier</text>
+  <text x="481" y="92" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:10px;fill:#e6edf3">Interpolation</text>
 
-  <line x1="550" y1="95" x2="575" y2="95" stroke="#00d4aa" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- Arrow 4 -->
+  <line x1="539" y1="82" x2="559" y2="82" style="stroke:#0d7377;stroke-width:2" marker-end="url(#arrowTeal)"/>
 
   <!-- Stage 5: Deconvolution -->
-  <rect x="580" y="60" width="110" height="70" rx="8" fill="#21262d" stroke="#a371f7" stroke-width="2"/>
-  <text x="635" y="82" text-anchor="middle" fill="#a371f7" font-family="monospace" font-size="10" font-weight="bold">Deconv.</text>
-  <text x="635" y="96" text-anchor="middle" fill="#a371f7" font-family="monospace" font-size="10" font-weight="bold">Wiener/RL</text>
-  <text x="635" y="115" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">U^n(r) PSF</text>
+  <rect x="563" y="55" width="110" height="55" rx="6" style="fill:#1b2d45;stroke:#e07830;stroke-width:1.5"/>
+  <text x="618" y="72" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;fill:#e07830">Deconvolution</text>
+  <text x="618" y="88" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:10px;fill:#e6edf3">Wiener / RL</text>
+  <text x="618" y="102" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:9px;fill:#8b949e">Richardson-Lucy</text>
 
-  <line x1="690" y1="95" x2="715" y2="95" stroke="#00d4aa" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- Final arrow down -->
+  <line x1="618" y1="113" x2="618" y2="138" style="stroke:#e07830;stroke-width:2" marker-end="url(#arrowTeal)"/>
 
-  <!-- Stage 6: Output -->
-  <rect x="720" y="60" width="150" height="70" rx="8" fill="#21262d" stroke="#00d4aa" stroke-width="2"/>
-  <text x="795" y="82" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="10" font-weight="bold">Linearize</text>
-  <text x="795" y="96" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="10" font-weight="bold">+ Normalize</text>
-  <text x="795" y="115" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="9">|C_n|^(1/n)</text>
+  <!-- Output -->
+  <rect x="538" y="142" width="160" height="45" rx="8" style="fill:#0d7377;fill-opacity:0.3;stroke:#e07830;stroke-width:2"/>
+  <text x="618" y="163" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:12px;font-weight:bold;fill:#e07830">Super-resolved</text>
+  <text x="618" y="178" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:11px;fill:#e6edf3">Image</text>
 
-  <!-- Resolution labels -->
-  <text x="450" y="170" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="12">Resolution Improvement at Each Stage:</text>
+  <!-- Resolution improvement table -->
+  <rect x="50" y="140" width="430" height="80" rx="6" style="fill:#0d1b2a;fill-opacity:0.85;stroke:#3a7ab8;stroke-width:1"/>
+  <text x="265" y="162" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:12px;font-weight:bold;fill:#3a7ab8">Resolution Improvement (PSF narrowing factor &#x221A;n)</text>
 
-  <!-- Resolution bars -->
-  <rect x="100" y="190" width="200" height="25" rx="4" fill="#21262d" stroke="#30363d"/>
-  <rect x="100" y="190" width="200" height="25" rx="4" fill="#58a6ff" opacity="0.3"/>
-  <text x="200" y="207" text-anchor="middle" fill="#e6edf3" font-family="monospace" font-size="10">Widefield: 1.00x</text>
+  <!-- n=2 -->
+  <rect x="75" y="172" width="110" height="35" rx="4" style="fill:#0d7377;fill-opacity:0.2;stroke:#0d7377;stroke-width:1"/>
+  <text x="130" y="188" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:11px;fill:#e6edf3">n = 2</text>
+  <text x="130" y="202" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:13px;font-weight:bold;fill:#e07830">&#x00D7;1.41</text>
 
-  <rect x="100" y="225" width="200" height="25" rx="4" fill="#21262d" stroke="#30363d"/>
-  <rect x="100" y="225" width="141" height="25" rx="4" fill="#3fb950" opacity="0.3"/>
-  <text x="200" y="242" text-anchor="middle" fill="#e6edf3" font-family="monospace" font-size="10">SOFI C2: 1.41x (sqrt2)</text>
+  <!-- n=4 -->
+  <rect x="210" y="172" width="110" height="35" rx="4" style="fill:#0d7377;fill-opacity:0.2;stroke:#0d7377;stroke-width:1"/>
+  <text x="265" y="188" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:11px;fill:#e6edf3">n = 4</text>
+  <text x="265" y="202" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:13px;font-weight:bold;fill:#e07830">&#x00D7;2.00</text>
 
-  <rect x="100" y="260" width="200" height="25" rx="4" fill="#21262d" stroke="#30363d"/>
-  <rect x="100" y="260" width="115" height="25" rx="4" fill="#d29922" opacity="0.3"/>
-  <text x="200" y="277" text-anchor="middle" fill="#e6edf3" font-family="monospace" font-size="10">SOFI C3: 1.73x (sqrt3)</text>
+  <!-- n=6 -->
+  <rect x="345" y="172" width="110" height="35" rx="4" style="fill:#0d7377;fill-opacity:0.2;stroke:#0d7377;stroke-width:1"/>
+  <text x="400" y="188" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:11px;fill:#e6edf3">n = 6</text>
+  <text x="400" y="202" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:13px;font-weight:bold;fill:#e07830">&#x00D7;2.45</text>
 
-  <rect x="100" y="295" width="200" height="25" rx="4" fill="#21262d" stroke="#30363d"/>
-  <rect x="100" y="295" width="100" height="25" rx="4" fill="#f85149" opacity="0.3"/>
-  <text x="200" y="312" text-anchor="middle" fill="#e6edf3" font-family="monospace" font-size="10">SOFI C4: 2.00x (sqrt4)</text>
-
-  <rect x="100" y="330" width="200" height="25" rx="4" fill="#21262d" stroke="#30363d"/>
-  <rect x="100" y="330" width="89" height="25" rx="4" fill="#a371f7" opacity="0.3"/>
-  <text x="200" y="347" text-anchor="middle" fill="#e6edf3" font-family="monospace" font-size="10">SOFI C5: 2.24x (sqrt5)</text>
-
-  <rect x="100" y="365" width="200" height="25" rx="4" fill="#21262d" stroke="#30363d"/>
-  <rect x="100" y="365" width="82" height="25" rx="4" fill="#00d4aa" opacity="0.3"/>
-  <text x="200" y="382" text-anchor="middle" fill="#e6edf3" font-family="monospace" font-size="10">SOFI C6: 2.45x (sqrt6)</text>
-
-  <!-- SOFIX note -->
-  <rect x="450" y="200" width="400" height="90" rx="8" fill="#21262d" stroke="#00d4aa" stroke-width="1" stroke-dasharray="4"/>
-  <text x="650" y="225" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="12" font-weight="bold">SOFIX (with deconvolution):</text>
-  <text x="650" y="250" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="10">Cumulant + Fourier Interp + Deconvolution</text>
-  <text x="650" y="270" text-anchor="middle" fill="#e6edf3" font-family="monospace" font-size="11">Achieves n-fold resolution (not just sqrt(n))</text>
-
-  <!-- Mode labels -->
-  <rect x="450" y="310" width="180" height="30" rx="5" fill="#21262d" stroke="#3fb950"/>
-  <text x="540" y="330" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="10">Mode 1: Basic SOFI</text>
-
-  <rect x="450" y="350" width="180" height="30" rx="5" fill="#21262d" stroke="#d29922"/>
-  <text x="540" y="370" text-anchor="middle" fill="#d29922" font-family="monospace" font-size="10">Mode 2: bSOFI</text>
-
-  <rect x="670" y="310" width="180" height="30" rx="5" fill="#21262d" stroke="#00d4aa"/>
-  <text x="760" y="330" text-anchor="middle" fill="#00d4aa" font-family="monospace" font-size="10">Mode 3: SOFIX</text>
+  <!-- Bottom note -->
+  <text x="380" y="260" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:10px;fill:#8b949e">Higher-order cumulants yield sharper PSFs but require longer sequences and have lower SNR</text>
+  <text x="380" y="278" text-anchor="middle" style="font-family:Arial,sans-serif;font-size:10px;fill:#8b949e">&#x03BA;&#x2099;(&#x03C4;) captures n-th order temporal statistics &#x2014; only blinking emitters contribute</text>
 </svg>
