@@ -1,7 +1,7 @@
 ---
 title: "Mine Pile Visualizer — Stockpile & Circuit Topology Explorer"
 date: 2026-04-01
-excerpt: "Local-first web application for exploring mining circuit topology, live material state, stockpile voxel structure, and profiler history from a mineral tracking simulation engine.<br/><img src='/images/projects/screenshots/minepile_3d_stockpile.png'>"
+excerpt: "Local-first web application for exploring mining circuit topology, live material state, stockpile voxel structure, and profiler history from a mineral tracking simulation engine.<br/><img src='/images/projects/material_tracking.svg'>"
 collection: portfolio
 tags: [mining, visualization, nextjs, react, three-js, typescript, stockpile, circuit-topology]
 ---
