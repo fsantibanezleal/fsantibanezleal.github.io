@@ -1,7 +1,7 @@
 ---
 title: "Micromundo — Virtual Microscopy & Science Education Platform"
 date: 2015-01-01
-excerpt: "Educational platform integrating virtual microscopy, collaborative science teaching, and 3D-printed microscope technology for schools and universities.<br/><img src='/images/projects/feelit2_problem.svg'>"
+excerpt: "Educational platform integrating virtual microscopy, collaborative science teaching, and 3D-printed microscope technology for schools and universities.<br/><img src='/images/projects/micromundo_platform.svg'>"
 collection: portfolio
 tags: [education, microscopy, startup, science-outreach, wordpress, 3d-printing]
 ---
