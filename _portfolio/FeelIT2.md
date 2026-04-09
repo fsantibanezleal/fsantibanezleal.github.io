@@ -86,4 +86,8 @@ Create new workspaces from external folders with auto-population of models, docu
 
 This project explicitly separates what is **shipped and tested** from what is **planned**. The [Implementation Gap Audit](https://github.com/fsantibanezleal/UDEC_FEELIT) documents exactly what works today (Braille reading, 3D staging, workspace management) and what requires future work (native haptic hardware bridge, PDF/DOCX support, force-feedback material realization).
 
+## Recent updates
+
+**v2.18.000 (April 2026)**: First bounded native haptic pilot — real force feedback through physical device. The pluggable backend abstraction allowed hardware integration with zero changes to workspaces, Braille engine, or material profiles. Haptic configuration review flow added for safe parameter adjustment before sessions.
+
 [View on GitHub](https://github.com/fsantibanezleal/UDEC_FEELIT)
