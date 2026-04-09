@@ -94,7 +94,7 @@ Selected projects
 * **[Holographic Optical Tweezers](https://github.com/fsantibanezleal/CEFOP_DinHot)** — Real-time phase mask computation via Gerchberg-Saxton algorithm
 * **[Dual Photography Lab](https://github.com/fsantibanezleal/FASL_Coding_DualFotography)** — Light transport matrices, SVD analysis, and compressed sensing
 * **[Robotic Writer](https://github.com/fsantibanezleal/Udec_Robotic_Writer)** — 5-DOF robotic arm kinematics, trajectory planning, and simulation
-* **[MicroMundo](https://micromundo.app/)** — Virtual microscopy educational platform for science outreach
+* **[Micromundo](https://micromundo.app/)** — Virtual microscopy & science education platform (3D-printed microscopes + web app, [team site](https://micromundo.team))
 
 Publications
 ======
