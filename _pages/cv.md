@@ -75,6 +75,7 @@ Skills
 
 Selected projects
 ======
+* **[Mine Pile Visualizer](https://github.com/fsantibanezleal/MINE_PILE_VIZ_TS)** — Stockpile & circuit topology explorer (Next.js 16, React Three Fiber, Apache Arrow)
 * **[FeelIT 2.0](https://github.com/fsantibanezleal/UDEC_FEELIT)** — Haptic accessibility workbench: 4 workspaces (3D Explorer, Braille Reader, Haptic Desktop, Workspace Manager) with 49 tests
 * **Mining Process Optimization Platform** — End-to-end ML for SAG milling, flotation, and thickening (+100 TPH throughput gains)
 * **Real-Time Material Tracking & Blending** — Digital twin for ore flow, stockpile management, and blending optimization
