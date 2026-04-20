@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380" role="img" aria-labelledby="title desc">
+  <title id="title">Portfolio drift matrix — three projects before the sync</title>
+  <desc id="desc">Three projects (Mine Pile Visualizer, FeelIT 2.0, PhD Thesis) audited across the four surfaces. Check marks show where the project was present before the April 2026 sync; gaps show the drift that was closed.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#111c33"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 18px 'Segoe UI', Arial, sans-serif; fill: #e8772e; letter-spacing: 1.2px; }
+      .subtitle { font: 400 12px 'Segoe UI', Arial, sans-serif; fill: #8b9bb0; }
+      .colHeader { font: 700 12px 'Segoe UI', Arial, sans-serif; fill: #ffffff; letter-spacing: 0.8px; }
+      .rowLabel { font: 600 13px 'Segoe UI', Arial, sans-serif; fill: #e6edf3; }
+      .check { font: 700 22px 'Segoe UI', Arial, sans-serif; fill: #5cb85c; text-anchor: middle; }
+      .miss { font: 700 22px 'Segoe UI', Arial, sans-serif; fill: #e06c6c; text-anchor: middle; }
+      .added { font: 700 22px 'Segoe UI', Arial, sans-serif; fill: #e8772e; text-anchor: middle; }
+      .caption { font: 400 11px 'Segoe UI', Arial, sans-serif; fill: #7db8e0; }
+      .mono { font: 400 10px Consolas, monospace; fill: #a6b8cf; }
+    </style>
+  </defs>
+
+  <rect width="900" height="380" fill="url(#bg)" rx="8"/>
+
+  <text x="450" y="34" class="title" text-anchor="middle">DRIFT MATRIX — THREE PROJECTS, FOUR SURFACES</text>
+  <text x="450" y="54" class="subtitle" text-anchor="middle">Before the April 2026 sync: ✓ present · ✗ missing · ⊕ added by the sync</text>
+
+  <!-- Table headers -->
+  <rect x="60" y="78" width="780" height="36" rx="4" fill="#1e3a5f" stroke="#2a6aa8" stroke-width="1"/>
+  <text x="110" y="101" class="colHeader">PROJECT</text>
+  <text x="360" y="101" class="colHeader" text-anchor="middle">portfolio site</text>
+  <text x="490" y="101" class="colHeader" text-anchor="middle">personal website</text>
+  <text x="620" y="101" class="colHeader" text-anchor="middle">online CV</text>
+  <text x="760" y="101" class="colHeader" text-anchor="middle">writing-resume</text>
+
+  <!-- Row 1 — Mine Pile Visualizer -->
+  <rect x="60" y="122" width="780" height="58" rx="4" fill="#152132" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="75" y="148" class="rowLabel">Mine Pile Visualizer</text>
+  <text x="75" y="167" class="mono">Next.js 16 · React Three Fiber · Apache Arrow</text>
+  <text x="360" y="159" class="check">✓</text>
+  <text x="490" y="159" class="check">✓</text>
+  <text x="620" y="159" class="check">✓</text>
+  <text x="760" y="159" class="added">⊕</text>
+
+  <!-- Row 2 — FeelIT 2.0 -->
+  <rect x="60" y="186" width="780" height="58" rx="4" fill="#152132" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="75" y="212" class="rowLabel">FeelIT 2.0 — Haptic Accessibility Workbench</text>
+  <text x="75" y="231" class="mono">Python · FastAPI · Three.js · native haptic pilot</text>
+  <text x="360" y="223" class="check">✓</text>
+  <text x="490" y="223" class="check">✓</text>
+  <text x="620" y="223" class="check">✓</text>
+  <text x="760" y="223" class="added">⊕</text>
+
+  <!-- Row 3 — PhD Thesis -->
+  <rect x="60" y="250" width="780" height="58" rx="4" fill="#152132" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="75" y="276" class="rowLabel">PhD Thesis — Information-Theoretic Sampling</text>
+  <text x="75" y="295" class="mono">AdSEMES · submodularity · Math.Geo. + NRR (2019–2020)</text>
+  <text x="360" y="287" class="check">✓</text>
+  <text x="490" y="287" class="check">✓</text>
+  <text x="620" y="287" class="added">⊕</text>
+  <text x="760" y="287" class="added">⊕</text>
+
+  <!-- Legend -->
+  <rect x="60" y="324" width="780" height="36" rx="4" fill="#0a1628" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="80" y="347" class="check">✓</text>
+  <text x="95" y="345" class="caption" style="fill:#9fb0c3;">already present before sync</text>
+  <text x="290" y="347" class="miss">✗</text>
+  <text x="305" y="345" class="caption" style="fill:#9fb0c3;">missing (the drift)</text>
+  <text x="460" y="347" class="added">⊕</text>
+  <text x="475" y="345" class="caption" style="fill:#e8772e; font-weight:700;">added by the April 2026 sync</text>
+  <text x="760" y="345" class="caption" style="fill:#8b9bb0;">5 entries closed</text>
+</svg>

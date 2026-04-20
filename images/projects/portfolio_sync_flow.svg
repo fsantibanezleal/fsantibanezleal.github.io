@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520" role="img" aria-labelledby="title desc">
+  <title id="title">Portfolio sync flow — five surfaces</title>
+  <desc id="desc">Canonical sources (portfolio site for product content, writing-resume for CV text) feed three mirrors (personal website, online CV, and CV summary) while branding flows from FASL_GTASKS into every visual consumer.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#111c33"/>
+    </linearGradient>
+    <linearGradient id="canonical" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8772e"/>
+      <stop offset="100%" stop-color="#c45a1a"/>
+    </linearGradient>
+    <linearGradient id="mirror" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#0f2440"/>
+    </linearGradient>
+    <linearGradient id="branding" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a6aa8"/>
+      <stop offset="100%" stop-color="#174a7c"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#7db8e0"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#e8772e"/>
+    </marker>
+    <style>
+      .title { font: 700 18px 'Segoe UI', Arial, sans-serif; fill: #e8772e; letter-spacing: 1.2px; }
+      .subtitle { font: 400 12px 'Segoe UI', Arial, sans-serif; fill: #8b9bb0; }
+      .boxTitle { font: 700 14px 'Segoe UI', Arial, sans-serif; fill: #ffffff; }
+      .boxSub { font: 400 11px 'Segoe UI', Arial, sans-serif; fill: #c5d2e1; }
+      .mono { font: 400 10px Consolas, monospace; fill: #a6b8cf; }
+      .badge { font: 700 10px 'Segoe UI', Arial, sans-serif; fill: #0a1628; letter-spacing: 1px; }
+      .arrowLabel { font: 400 10px 'Segoe UI', Arial, sans-serif; fill: #7db8e0; }
+    </style>
+  </defs>
+
+  <rect width="900" height="520" fill="url(#bg)" rx="8"/>
+
+  <text x="450" y="36" class="title" text-anchor="middle">PORTFOLIO SYNC FLOW — FIVE SURFACES, TWO CANONICAL SOURCES</text>
+  <text x="450" y="58" class="subtitle" text-anchor="middle">Product content flows from the portfolio site. CV text flows from writing-resume. Branding flows from GTASKS into all visual consumers.</text>
+
+  <!-- GTASKS upstream (top) -->
+  <rect x="360" y="90" width="180" height="60" rx="6" fill="url(#branding)" stroke="#3d7ec0" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="450" y="115" class="boxTitle" text-anchor="middle">FASL_GTASKS</text>
+  <text x="450" y="133" class="boxSub" text-anchor="middle">logos · favicons · OG · palette</text>
+  <rect x="378" y="94" width="70" height="16" rx="3" fill="#2a6aa8"/>
+  <text x="413" y="105" class="badge" text-anchor="middle">BRANDING</text>
+
+  <!-- Canonical sources (left + center-left) -->
+  <rect x="70" y="220" width="220" height="78" rx="6" fill="url(#canonical)" stroke="#e8772e" stroke-width="2" filter="url(#shadow)"/>
+  <text x="180" y="248" class="boxTitle" text-anchor="middle">FASL_WEB_Portfolio</text>
+  <text x="180" y="266" class="boxSub" text-anchor="middle">Astro · bilingual · Zod schema</text>
+  <text x="180" y="284" class="mono" text-anchor="middle">22 products · canonical</text>
+  <rect x="82" y="224" width="80" height="16" rx="3" fill="#0a1628"/>
+  <text x="122" y="235" class="badge" text-anchor="middle">CANONICAL</text>
+
+  <rect x="610" y="220" width="220" height="78" rx="6" fill="url(#canonical)" stroke="#e8772e" stroke-width="2" filter="url(#shadow)"/>
+  <text x="720" y="248" class="boxTitle" text-anchor="middle">FASL_Writing_Resume</text>
+  <text x="720" y="266" class="boxSub" text-anchor="middle">LaTeX · 4 variants · PDFs</text>
+  <text x="720" y="284" class="mono" text-anchor="middle">Industry ES/EN · Research ES/EN</text>
+  <rect x="622" y="224" width="80" height="16" rx="3" fill="#0a1628"/>
+  <text x="662" y="235" class="badge" text-anchor="middle">CANONICAL</text>
+
+  <!-- Mirrors (bottom row) -->
+  <rect x="70" y="400" width="220" height="70" rx="6" fill="url(#mirror)" stroke="#2a6aa8" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="180" y="428" class="boxTitle" text-anchor="middle">personal website</text>
+  <text x="180" y="446" class="boxSub" text-anchor="middle">Jekyll · _portfolio · rollings · posts</text>
+  <text x="180" y="462" class="mono" text-anchor="middle">fsantibanezleal.github.io</text>
+
+  <rect x="340" y="400" width="220" height="70" rx="6" fill="url(#mirror)" stroke="#2a6aa8" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="450" y="428" class="boxTitle" text-anchor="middle">online CV</text>
+  <text x="450" y="446" class="boxSub" text-anchor="middle">Jekyll · Orbit theme · data.yml</text>
+  <text x="450" y="462" class="mono" text-anchor="middle">/online-cv/</text>
+
+  <rect x="610" y="400" width="220" height="70" rx="6" fill="url(#mirror)" stroke="#2a6aa8" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="720" y="428" class="boxTitle" text-anchor="middle">CV summary slot</text>
+  <text x="720" y="446" class="boxSub" text-anchor="middle">personal website _pages/cv.md</text>
+  <text x="720" y="462" class="mono" text-anchor="middle">derived from LaTeX</text>
+
+  <!-- Arrows: canonical → mirrors -->
+  <!-- portfolio-web → personal-web -->
+  <path d="M 180 298 L 180 400" stroke="#e8772e" stroke-width="2" fill="none" marker-end="url(#arrowOrange)"/>
+  <!-- portfolio-web → online-cv (projects) -->
+  <path d="M 240 298 C 300 340, 380 360, 420 400" stroke="#e8772e" stroke-width="2" fill="none" marker-end="url(#arrowOrange)"/>
+  <!-- writing-resume → online-cv (bulk) -->
+  <path d="M 660 298 C 600 340, 520 360, 480 400" stroke="#e8772e" stroke-width="2" fill="none" marker-end="url(#arrowOrange)"/>
+  <!-- writing-resume → cv-summary -->
+  <path d="M 720 298 L 720 400" stroke="#e8772e" stroke-width="2" fill="none" marker-end="url(#arrowOrange)"/>
+
+  <!-- Arrows: GTASKS → everyone visual -->
+  <path d="M 430 150 C 400 190, 300 200, 230 220" stroke="#7db8e0" stroke-width="1.4" fill="none" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <path d="M 470 150 C 500 190, 600 200, 670 220" stroke="#7db8e0" stroke-width="1.4" fill="none" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <path d="M 420 150 C 360 240, 280 340, 230 400" stroke="#7db8e0" stroke-width="1.4" fill="none" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <path d="M 450 150 L 450 400" stroke="#7db8e0" stroke-width="1.4" fill="none" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+
+  <!-- Legend -->
+  <rect x="70" y="492" width="760" height="22" rx="4" fill="#0a1628" stroke="#1e3a5f" stroke-width="1"/>
+  <line x1="86" y1="503" x2="106" y2="503" stroke="#e8772e" stroke-width="2"/>
+  <text x="115" y="507" class="arrowLabel">content flow (canonical → mirror)</text>
+  <line x1="320" y1="503" x2="340" y2="503" stroke="#7db8e0" stroke-width="1.4" stroke-dasharray="4,3"/>
+  <text x="349" y="507" class="arrowLabel">branding asset copy (GTASKS → consumer)</text>
+  <text x="580" y="507" class="arrowLabel" style="fill:#e8772e; font-weight:700;">manual runbooks, no auto-sync</text>
+</svg>
