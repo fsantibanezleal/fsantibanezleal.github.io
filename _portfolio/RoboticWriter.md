@@ -49,6 +49,8 @@ The original 2004 lab used MATLAB scripts to command the physical Scorbot III. T
 
 ## Live application
 
+▶ **[Live demo — robotic.fasl-work.com](https://robotic.fasl-work.com)** — interactive Dash simulator running in the browser (simulation mode, no hardware required).
+
 ![Robotic Writer — 3D kinematics simulation and trajectory planning](/images/projects/screenshots/robotic_frontend.png)
 
 ### Demo video — The robot spells words

@@ -75,6 +75,8 @@ D-values (D10, D25, D50, D75, D80, D90) are extracted from the cumulative PSD cu
 
 ## Live application
 
+▶ **[Live demo — grainsize.fasl-work.com](https://grainsize.fasl-work.com)** — particle size distribution from RGB-D data.
+
 ![GrainSight — particle segmentation, PSD analysis, and grain measurement](/images/projects/screenshots/grainsize_frontend.png)
 
 [View on GitHub](https://github.com/fsantibanezleal/FASL_3D_GrainSize)
