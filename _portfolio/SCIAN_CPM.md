@@ -52,6 +52,8 @@ Developed during my work at [SCIAN-Lab](http://www.scian.cl/) and the [BNI](http
 
 ## Live application
 
+▶ **[Live demo — cpm.fasl-work.com](https://cpm.fasl-work.com)** — Cellular Potts Model simulator — zebrafish DFC migration.
+
 ![Cellular Potts Model — Interactive web interface](/images/projects/screenshots/cpm_frontend.png)
 
 [View on GitHub](https://github.com/fsantibanezleal/SCIAN_LEO_CPM)

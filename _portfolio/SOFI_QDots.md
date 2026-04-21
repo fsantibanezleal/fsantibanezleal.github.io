@@ -28,6 +28,8 @@ Related publication: [SOFI of GABAB neurotransmitter receptors in hippocampal ne
 
 ## Live application
 
+▶ **[Live demo — sofi.fasl-work.com](https://sofi.fasl-work.com)** — SOFI super-resolution imaging from quantum dot fluctuations.
+
 ![SOFI — Quantum dot simulation interface](/images/projects/screenshots/sofi_frontend.png)
 
 ![SOFI — Cumulant output visualization](/images/projects/screenshots/sofi_frontend_outputs.png)

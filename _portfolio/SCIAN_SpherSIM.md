@@ -41,6 +41,8 @@ This project originated at the [Laboratory for Scientific Image Analysis (SCIAN-
 
 ## Live application
 
+▶ **[Live demo — sphersim.fasl-work.com](https://sphersim.fasl-work.com)** — 3D embryo cell migration simulator on a spherical surface.
+
 ![3D Embryo Simulator — Three.js visualization](/images/projects/screenshots/sphersim_frontend.png)
 
 [View on GitHub](https://github.com/fsantibanezleal/SCIAN_EVL_SpherSIM)
