@@ -27,6 +27,8 @@ This work was developed during 2014-2016 at the IDS Group (Information and Decis
 
 ## Live application
 
+▶ **[Live demo — owp.fasl-work.com](https://owp.fasl-work.com)** — optimal sampling visualizer — AdSEMES algorithm in action.
+
 ![Optimal Well Placement — Adaptive sampling visualization](/images/projects/screenshots/owp_frontend.png)
 
 ### Demo video — Adaptive entropy sampling in action

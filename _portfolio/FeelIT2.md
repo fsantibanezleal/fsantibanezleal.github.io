@@ -76,6 +76,8 @@ Create new workspaces from external folders with auto-population of models, docu
 
 ## Live application
 
+▶ **[Live demo — feelit.fasl-work.com](https://feelit.fasl-work.com)** — haptic accessibility workbench (4 workspaces + Braille reader).
+
 ![FeelIT 2.0 — Braille Reader workspace](/images/projects/screenshots/feelit2_braille_reader.png)
 
 ![FeelIT 2.0 — 3D Object Explorer](/images/projects/screenshots/feelit2_object_explorer.png)

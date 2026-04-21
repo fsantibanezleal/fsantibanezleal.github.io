@@ -33,6 +33,8 @@ The original implementation ran on lab hardware controlling a physical SLM. The 
 
 ## Live application
 
+▶ **[Live demo — dinhot.fasl-work.com](https://dinhot.fasl-work.com)** — dynamic holographic optical tweezers simulator.
+
 ![Holographic Optical Tweezers — Phase mask computation interface](/images/projects/screenshots/dinhot_frontend.png)
 
 [View on GitHub](https://github.com/fsantibanezleal/CEFOP_DinHot)

@@ -54,6 +54,8 @@ Belt blocks: (position, massTon, timestampOldest/Newest, qualities)<br/>
 
 ## Live application
 
+▶ **[Live demo — minepile.fasl-work.com](https://minepile.fasl-work.com)** — local-first 3D mining stockpile and circuit explorer.
+
 ![Mine Pile Visualizer — 3D stockpile voxels with categorical quality](/images/projects/screenshots/minepile_3d_stockpile.png)
 
 ![Mine Pile Visualizer — 3D voxels with numeric quality coloring](/images/projects/screenshots/minepile_3d_numeric.png)
