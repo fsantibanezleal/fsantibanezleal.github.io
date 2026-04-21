@@ -63,6 +63,8 @@ This project is the **enabling technology** for granulometry estimation from sur
 
 ## Live application
 
+▶ **[Live demo — profiler.fasl-work.com](https://profiler.fasl-work.com)** — 3D distance profiler and surface reconstruction.
+
 ![3D Distance Profiler — depth map processing and surface analysis](/images/projects/screenshots/depth_profiler_frontend.png)
 
 [View on GitHub](https://github.com/fsantibanezleal/FASL_3D_Distance_Profiler)

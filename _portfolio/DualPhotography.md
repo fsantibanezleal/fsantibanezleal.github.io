@@ -36,6 +36,8 @@ This is not just a matrix transpose. The transport matrix **T** (of size N_camer
 
 ## Live application
 
+▶ **[Live demo — dual.fasl-work.com](https://dual.fasl-work.com)** — dual photography lab — light transport matrices + SVD.
+
 ![Dual Photography Lab — Transport matrix and relighting interface](/images/projects/screenshots/dual_frontend.png)
 
 ### Demo video
