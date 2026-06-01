@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <title>Finn — market-analytics architecture and the rigor that separates a demo from a trap</title>
+  <desc>Market and news data flow through a FastAPI + HTMX backend into five analytics modules (Forecast, Risk and Portfolio, Backtest, Sentiment, Macro), with walk-forward cross-validation and transaction-cost-aware backtesting as the integrity guarantees, plus first-class LATAM coverage.</desc>
+  <defs>
+    <linearGradient id="bgF" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b2a"/>
+      <stop offset="100%" style="stop-color:#1b2d45"/>
+    </linearGradient>
+    <marker id="arrF" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0,9 3.5,0 7" style="fill:#4ecdc4"/>
+    </marker>
+    <marker id="arrFo" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0,9 3.5,0 7" style="fill:#e8a838"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgF)" rx="8"/>
+  <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1a5a6a" stroke-width="2" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="28" style="font-family:Arial,sans-serif;font-size:15px;font-weight:bold;fill:#4ecdc4;text-anchor:middle;letter-spacing:1px">FINN &#x2014; PERSONAL FINANCE &amp; MARKET FORECASTING</text>
+
+  <!-- ===== LEFT: Data sources ===== -->
+  <rect x="15" y="46" width="140" height="160" rx="6" style="fill:#0a1628;stroke:#1a5a6a;stroke-width:1"/>
+  <text x="85" y="64" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#4ecdc4;text-anchor:middle">Data Sources</text>
+  <rect x="27" y="74" width="116" height="20" rx="3" style="fill:#112a40;stroke:#3a5a7c;stroke-width:0.7"/>
+  <text x="85" y="88" style="font-family:Arial,sans-serif;font-size:8px;fill:#b0c4d8;text-anchor:middle">Market OHLCV (yfinance)</text>
+  <rect x="27" y="98" width="116" height="20" rx="3" style="fill:#112a40;stroke:#3a5a7c;stroke-width:0.7"/>
+  <text x="85" y="112" style="font-family:Arial,sans-serif;font-size:8px;fill:#b0c4d8;text-anchor:middle">Fundamentals</text>
+  <rect x="27" y="122" width="116" height="20" rx="3" style="fill:#112a40;stroke:#3a5a7c;stroke-width:0.7"/>
+  <text x="85" y="136" style="font-family:Arial,sans-serif;font-size:8px;fill:#b0c4d8;text-anchor:middle">News RSS (8 sources)</text>
+  <rect x="27" y="146" width="116" height="20" rx="3" style="fill:#112a40;stroke:#3a5a7c;stroke-width:0.7"/>
+  <text x="85" y="160" style="font-family:Arial,sans-serif;font-size:8px;fill:#b0c4d8;text-anchor:middle">Macro (FRED)</text>
+  <!-- LATAM highlight -->
+  <rect x="27" y="170" width="116" height="28" rx="3" style="fill:#1a2e22;stroke:#e8a838;stroke-width:1"/>
+  <text x="85" y="183" style="font-family:Arial,sans-serif;font-size:8px;font-weight:bold;fill:#e8a838;text-anchor:middle">LATAM coverage</text>
+  <text x="85" y="194" style="font-family:Arial,sans-serif;font-size:7px;fill:#cfe6e4;text-anchor:middle">IPSA &#xB7; Chile macro &#xB7; BCCh</text>
+
+  <!-- arrow L -> C -->
+  <line x1="158" y1="126" x2="186" y2="126" style="stroke:#4ecdc4;stroke-width:1.5" marker-end="url(#arrF)"/>
+
+  <!-- ===== CENTER: Backend core ===== -->
+  <rect x="190" y="46" width="180" height="160" rx="6" style="fill:#0a1628;stroke:#e8a838;stroke-width:1"/>
+  <text x="280" y="64" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#e8a838;text-anchor:middle">FastAPI Backend</text>
+  <text x="280" y="77" style="font-family:Arial,sans-serif;font-size:8px;fill:#7a9ab5;text-anchor:middle">server-rendered &#xB7; cached</text>
+  <!-- quant stack chips -->
+  <g style="font-family:Arial,sans-serif;font-size:7px">
+    <rect x="200" y="86"  width="50" height="16" rx="2" style="fill:#112a40;stroke:#3a7a9a;stroke-width:0.6"/><text x="225" y="97"  style="fill:#4ecdc4;text-anchor:middle">pandas</text>
+    <rect x="254" y="86"  width="50" height="16" rx="2" style="fill:#112a40;stroke:#3a7a9a;stroke-width:0.6"/><text x="279" y="97"  style="fill:#4ecdc4;text-anchor:middle">numpy</text>
+    <rect x="308" y="86"  width="52" height="16" rx="2" style="fill:#112a40;stroke:#3a7a9a;stroke-width:0.6"/><text x="334" y="97"  style="fill:#4ecdc4;text-anchor:middle">scipy</text>
+    <rect x="200" y="105" width="74" height="16" rx="2" style="fill:#112a40;stroke:#3a7a9a;stroke-width:0.6"/><text x="237" y="116" style="fill:#4ecdc4;text-anchor:middle">statsmodels</text>
+    <rect x="278" y="105" width="82" height="16" rx="2" style="fill:#112a40;stroke:#3a7a9a;stroke-width:0.6"/><text x="319" y="116" style="fill:#4ecdc4;text-anchor:middle">scikit-learn</text>
+    <rect x="200" y="124" width="74" height="16" rx="2" style="fill:#112a40;stroke:#3a7a9a;stroke-width:0.6"/><text x="237" y="135" style="fill:#4ecdc4;text-anchor:middle">PyPortfolioOpt</text>
+    <rect x="278" y="124" width="40" height="16" rx="2" style="fill:#112a40;stroke:#3a7a9a;stroke-width:0.6"/><text x="298" y="135" style="fill:#4ecdc4;text-anchor:middle">arch</text>
+    <rect x="322" y="124" width="38" height="16" rx="2" style="fill:#112a40;stroke:#3a7a9a;stroke-width:0.6"/><text x="341" y="135" style="fill:#4ecdc4;text-anchor:middle">hmm</text>
+  </g>
+  <!-- FinBERT -->
+  <rect x="200" y="146" width="160" height="22" rx="3" style="fill:#2a1e3a;stroke:#9b59b6;stroke-width:1"/>
+  <text x="280" y="160" style="font-family:Arial,sans-serif;font-size:8px;font-weight:bold;fill:#c39bd3;text-anchor:middle">FinBERT sentiment (HF Inference API)</text>
+  <!-- auth/persistence -->
+  <rect x="200" y="172" width="160" height="26" rx="3" style="fill:#0f2338;stroke:#3a5a7c;stroke-width:0.8"/>
+  <text x="280" y="184" style="font-family:Arial,sans-serif;font-size:8px;fill:#b0c4d8;text-anchor:middle">Auth + SQLAlchemy persistence</text>
+  <text x="280" y="194" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">saved watchlists &amp; portfolios</text>
+
+  <!-- arrow C -> R -->
+  <line x1="373" y1="126" x2="401" y2="126" style="stroke:#4ecdc4;stroke-width:1.5" marker-end="url(#arrF)"/>
+
+  <!-- ===== RIGHT: Analytics modules ===== -->
+  <rect x="405" y="46" width="380" height="160" rx="6" style="fill:#0a1628;stroke:#1a5a6a;stroke-width:1"/>
+  <text x="595" y="64" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#4ecdc4;text-anchor:middle">Analytics Modules &#x2192; HTMX + Plotly UI</text>
+  <!-- five module cards -->
+  <rect x="417" y="74" width="115" height="56" rx="4" style="fill:#0f2338;stroke:#4ecdc4;stroke-width:1"/>
+  <text x="474" y="90" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#4ecdc4;text-anchor:middle">Forecast</text>
+  <text x="474" y="103" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">ARIMA/SARIMA, HW,</text>
+  <text x="474" y="113" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">GARCH, RF, GBM</text>
+  <text x="474" y="124" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">+ HMM regimes</text>
+
+  <rect x="538" y="74" width="115" height="56" rx="4" style="fill:#0f2338;stroke:#4ecdc4;stroke-width:1"/>
+  <text x="595" y="90" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#4ecdc4;text-anchor:middle">Risk &amp; Portfolio</text>
+  <text x="595" y="103" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">Sharpe/Sortino, VaR/CVaR</text>
+  <text x="595" y="113" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">Markowitz, HRP, BL,</text>
+  <text x="595" y="124" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">Risk Parity, frontier</text>
+
+  <rect x="659" y="74" width="115" height="56" rx="4" style="fill:#0f2338;stroke:#4ecdc4;stroke-width:1"/>
+  <text x="716" y="90" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#4ecdc4;text-anchor:middle">Backtest</text>
+  <text x="716" y="103" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">B&amp;H, rebalancing,</text>
+  <text x="716" y="113" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">momentum, pairs</text>
+  <text x="716" y="124" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">equity + drawdown</text>
+
+  <rect x="417" y="136" width="175" height="34" rx="4" style="fill:#0f2338;stroke:#9b59b6;stroke-width:0.9"/>
+  <text x="504" y="150" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#c39bd3;text-anchor:middle">Sentiment &amp; News</text>
+  <text x="504" y="163" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">FinBERT scores headlines</text>
+
+  <rect x="599" y="136" width="175" height="34" rx="4" style="fill:#0f2338;stroke:#3a5a7c;stroke-width:0.9"/>
+  <text x="686" y="150" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#cfe6e4;text-anchor:middle">Macro &amp; Fundamentals</text>
+  <text x="686" y="163" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">FRED series, valuation, growth</text>
+  <!-- viz hint -->
+  <text x="595" y="187" style="font-family:Arial,sans-serif;font-size:7px;fill:#e8a838;text-anchor:middle">Plotly: fan charts &#xB7; drawdown &#xB7; fundamentals bubbles &#xB7; regime shading</text>
+  <text x="595" y="199" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a7a8a;text-anchor:middle">interactive, bilingual ES/EN</text>
+
+  <!-- ===== BOTTOM: integrity guarantees ===== -->
+  <rect x="15" y="214" width="770" height="173" rx="6" style="fill:#0a1628;stroke:#e8a838;stroke-width:1"/>
+  <text x="400" y="233" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#e8a838;text-anchor:middle">The rigor that separates a demo from a trap</text>
+
+  <!-- LEFT: walk-forward CV -->
+  <rect x="30" y="244" width="365" height="130" rx="5" style="fill:#0f2338;stroke:#4ecdc4;stroke-width:1"/>
+  <text x="212" y="262" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#4ecdc4;text-anchor:middle">Walk-forward cross-validation</text>
+  <text x="212" y="275" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">train on the past, test on the unseen next window &#x2014; no future leakage</text>
+  <!-- three folds: train (teal) + test (orange) sliding right -->
+  <!-- fold 1 -->
+  <rect x="50" y="290" width="120" height="13" rx="2" style="fill:#20b2aa;opacity:0.75"/>
+  <rect x="170" y="290" width="40" height="13" rx="2" style="fill:#e8873a;opacity:0.9"/>
+  <text x="360" y="300" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:end">fold 1</text>
+  <!-- fold 2 -->
+  <rect x="50" y="308" width="160" height="13" rx="2" style="fill:#20b2aa;opacity:0.75"/>
+  <rect x="210" y="308" width="40" height="13" rx="2" style="fill:#e8873a;opacity:0.9"/>
+  <text x="360" y="318" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:end">fold 2</text>
+  <!-- fold 3 -->
+  <rect x="50" y="326" width="200" height="13" rx="2" style="fill:#20b2aa;opacity:0.75"/>
+  <rect x="250" y="326" width="40" height="13" rx="2" style="fill:#e8873a;opacity:0.9"/>
+  <text x="360" y="336" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:end">fold 3</text>
+  <!-- legend -->
+  <rect x="50" y="350" width="11" height="11" rx="2" style="fill:#20b2aa;opacity:0.75"/>
+  <text x="66" y="359" style="font-family:Arial,sans-serif;font-size:7px;fill:#b0c4d8">train</text>
+  <rect x="104" y="350" width="11" height="11" rx="2" style="fill:#e8873a;opacity:0.9"/>
+  <text x="120" y="359" style="font-family:Arial,sans-serif;font-size:7px;fill:#b0c4d8">test (out-of-sample)</text>
+  <text x="360" y="359" style="font-family:Arial,sans-serif;font-size:9px;fill:#4ecdc4;text-anchor:end">time &#x2192;</text>
+
+  <!-- RIGHT: transaction costs -->
+  <rect x="405" y="244" width="370" height="130" rx="5" style="fill:#0f2338;stroke:#e8a838;stroke-width:1"/>
+  <text x="590" y="262" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#e8a838;text-anchor:middle">Cost-aware backtesting</text>
+  <text x="590" y="275" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">charge transaction costs &#x2014; a strategy must survive contact with reality</text>
+  <!-- two equity curves: gross (looks great) vs net (honest) -->
+  <line x1="430" y1="355" x2="430" y2="290" style="stroke:#6e8898;stroke-width:0.7"/>
+  <line x1="430" y1="355" x2="755" y2="355" style="stroke:#6e8898;stroke-width:0.7"/>
+  <text x="425" y="293" style="font-family:Arial,sans-serif;font-size:6px;fill:#5a7a8a;text-anchor:end">equity</text>
+  <!-- gross (no costs) -->
+  <path d="M430,348 Q500,330 560,308 Q640,286 750,296" style="fill:none;stroke:#4ecdc4;stroke-width:1.6;stroke-dasharray:4,3"/>
+  <text x="690" y="288" style="font-family:Arial,sans-serif;font-size:7px;fill:#4ecdc4">gross (no costs)</text>
+  <!-- net (with costs) -->
+  <path d="M430,348 Q500,344 560,336 Q640,330 750,338" style="fill:none;stroke:#e8a838;stroke-width:1.8"/>
+  <text x="690" y="350" style="font-family:Arial,sans-serif;font-size:7px;fill:#e8a838">net (cost_bp)</text>
+  <text x="590" y="370" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a7a8a;text-anchor:middle">the gap is the cost of trading &#x2014; the demo refuses to hide it</text>
+</svg>
