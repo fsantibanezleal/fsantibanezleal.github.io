@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <title>LDA-HSI — wordification design-space sweep across topic-model backbones, evaluated on a multi-axis battery</title>
+  <desc>Hyperspectral scenes are turned into topic-model corpora by 19 wordification recipes (V1..V20), swept across four topic-model backbones (LDA, HDP, ProdLDA, ETM) at quantisation levels Q=8/16/32, then scored on a multi-axis evaluation battery. The verdict: V8 is the portable cross-backbone leader, V20 is the LDA Q-scaling peak, and F-1 accuracy does not discriminate.</desc>
+  <defs>
+    <linearGradient id="bgL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b2a"/>
+      <stop offset="100%" style="stop-color:#1b2d45"/>
+    </linearGradient>
+    <marker id="arrL" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0,9 3.5,0 7" style="fill:#4ecdc4"/>
+    </marker>
+    <marker id="arrLo" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0,9 3.5,0 7" style="fill:#e8a838"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#bgL)" rx="8"/>
+  <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1a5a6a" stroke-width="2" rx="8"/>
+
+  <text x="400" y="27" style="font-family:Arial,sans-serif;font-size:15px;font-weight:bold;fill:#4ecdc4;text-anchor:middle;letter-spacing:1px">LDA-HSI &#x2014; WHICH WORDIFICATION MATTERS?</text>
+  <text x="400" y="42" style="font-family:Arial,sans-serif;font-size:9px;fill:#7a9ab5;text-anchor:middle">spectra as documents &#xB7; 19 recipes &#xD7; 4 backbones &#xD7; Q&#x2208;{8,16,32} &#xB7; multi-axis evaluation</text>
+
+  <!-- ===== STAGE 1: HSI input ===== -->
+  <rect x="14" y="56" width="120" height="300" rx="6" style="fill:#0a1628;stroke:#1a5a6a;stroke-width:1"/>
+  <text x="74" y="74" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#4ecdc4;text-anchor:middle">HSI Scenes</text>
+  <!-- hypercube -->
+  <g transform="translate(40,86)">
+    <rect x="6" y="6" width="44" height="34" style="fill:#0f2338;stroke:#3a5a7c;stroke-width:0.8"/>
+    <rect x="0" y="0" width="44" height="34" style="fill:#112a40;stroke:#4ecdc4;stroke-width:1"/>
+    <line x1="0" y1="0" x2="6" y2="6" style="stroke:#4ecdc4;stroke-width:0.6"/>
+    <line x1="44" y1="0" x2="50" y2="6" style="stroke:#4ecdc4;stroke-width:0.6"/>
+    <line x1="44" y1="34" x2="50" y2="40" style="stroke:#4ecdc4;stroke-width:0.6"/>
+    <text x="22" y="22" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">H&#xD7;W&#xD7;B</text>
+  </g>
+  <text x="74" y="142" style="font-family:Arial,sans-serif;font-size:7px;fill:#b0c4d8;text-anchor:middle">6 labelled scenes:</text>
+  <text x="74" y="154" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">Indian Pines (16 cls)</text>
+  <text x="74" y="165" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">Salinas / Salinas-A</text>
+  <text x="74" y="176" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">Pavia U &#xB7; KSC</text>
+  <text x="74" y="187" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">Botswana</text>
+  <rect x="24" y="198" width="100" height="1" style="fill:#2a4a5a"/>
+  <text x="74" y="214" style="font-family:Arial,sans-serif;font-size:7px;fill:#b0c4d8;text-anchor:middle">+ HIDSAG mineral</text>
+  <text x="74" y="225" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">subsets (geo origin)</text>
+  <!-- spectra -> documents motif -->
+  <text x="74" y="250" style="font-family:Arial,sans-serif;font-size:8px;fill:#e8a838;text-anchor:middle">spectra &#x2192; documents</text>
+  <polyline points="30,272 40,262 50,278 60,260 70,274 80,264 90,280 100,266 118,272" style="fill:none;stroke:#4ecdc4;stroke-width:1"/>
+  <text x="74" y="298" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">quantised tokens</text>
+  <text x="74" y="312" style="font-family:Arial,sans-serif;font-size:8px;fill:#cfe6e4;text-anchor:middle">Q &#x2208; {8, 16, 32}</text>
+  <rect x="34" y="320" width="80" height="20" rx="10" style="fill:#112a40;stroke:#e8a838;stroke-width:1"/>
+  <text x="74" y="333" style="font-family:Arial,sans-serif;font-size:8px;fill:#e8a838;text-anchor:middle">quantisation</text>
+
+  <line x1="137" y1="206" x2="159" y2="206" style="stroke:#4ecdc4;stroke-width:1.5" marker-end="url(#arrL)"/>
+
+  <!-- ===== STAGE 2: wordification fan-out ===== -->
+  <rect x="162" y="56" width="210" height="300" rx="6" style="fill:#0a1628;stroke:#e8a838;stroke-width:1"/>
+  <text x="267" y="74" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#e8a838;text-anchor:middle">19 Wordification Recipes</text>
+  <text x="267" y="86" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">7 families of pixel &#x2192; doc-term maps (V1..V20)</text>
+  <!-- family rows -->
+  <g style="font-family:Arial,sans-serif;font-size:7px">
+    <rect x="172" y="94"  width="190" height="17" rx="3" style="fill:#0f2338;stroke:#3a5a7c;stroke-width:0.6"/><text x="178" y="106" style="fill:#cfe6e4">Intensity</text><text x="356" y="106" style="fill:#7a9ab5;text-anchor:end">V1 V2 V3</text>
+    <rect x="172" y="113" width="190" height="17" rx="3" style="fill:#0f2338;stroke:#3a5a7c;stroke-width:0.6"/><text x="178" y="125" style="fill:#cfe6e4">Differentiated / wavelet</text><text x="356" y="125" style="fill:#7a9ab5;text-anchor:end">V4 V5 V6 V14</text>
+    <rect x="172" y="132" width="190" height="17" rx="3" style="fill:#0f2338;stroke:#e8a838;stroke-width:0.9"/><text x="178" y="144" style="fill:#e8a838">Absorption / chemistry</text><text x="356" y="144" style="fill:#e8a838;text-anchor:end">V7 <tspan style="font-weight:bold">V8</tspan> V15</text>
+    <rect x="172" y="151" width="190" height="17" rx="3" style="fill:#0f2338;stroke:#3a5a7c;stroke-width:0.6"/><text x="178" y="163" style="fill:#cfe6e4">Learnt codebook</text><text x="356" y="163" style="fill:#7a9ab5;text-anchor:end">V11 V12 V13 V17</text>
+    <rect x="172" y="170" width="190" height="17" rx="3" style="fill:#0f2338;stroke:#3a5a7c;stroke-width:0.6"/><text x="178" y="182" style="fill:#cfe6e4">Manifold</text><text x="356" y="182" style="fill:#7a9ab5;text-anchor:end">V18 V19</text>
+    <rect x="172" y="189" width="190" height="17" rx="3" style="fill:#0f2338;stroke:#3a5a7c;stroke-width:0.6"/><text x="178" y="201" style="fill:#cfe6e4">Spatial</text><text x="356" y="201" style="fill:#7a9ab5;text-anchor:end">V9 V10</text>
+    <rect x="172" y="208" width="190" height="17" rx="3" style="fill:#0f2338;stroke:#9b59b6;stroke-width:0.9"/><text x="178" y="220" style="fill:#c39bd3">Label-aware (MI)</text><text x="356" y="220" style="fill:#c39bd3;text-anchor:end;font-weight:bold">V20</text>
+  </g>
+  <!-- highlighted recipe legend -->
+  <rect x="172" y="232" width="190" height="116" rx="4" style="fill:#081828;stroke:#2a4a5a;stroke-width:0.6"/>
+  <text x="267" y="246" style="font-family:Arial,sans-serif;font-size:7px;fill:#e8a838;text-anchor:middle;font-weight:bold">recipes that matter</text>
+  <text x="180" y="261" style="font-family:Arial,sans-serif;font-size:7px;fill:#4ecdc4">V1</text><text x="200" y="261" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5">band-frequency &#x2014; canonical baseline</text>
+  <text x="180" y="276" style="font-family:Arial,sans-serif;font-size:7px;fill:#e8a838;font-weight:bold">V8</text><text x="200" y="276" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5">NFINDR endmembers &#x2014; portable leader</text>
+  <text x="180" y="291" style="font-family:Arial,sans-serif;font-size:7px;fill:#c39bd3;font-weight:bold">V20</text><text x="200" y="291" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5">MI-weighted bands &#x2014; LDA Q-peak</text>
+  <text x="180" y="306" style="font-family:Arial,sans-serif;font-size:7px;fill:#cfe6e4;font-weight:bold">V11</text><text x="200" y="306" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5">product-quant &#x2014; backbone specialist</text>
+  <text x="180" y="321" style="font-family:Arial,sans-serif;font-size:7px;fill:#cfe6e4;font-weight:bold">V12</text><text x="200" y="321" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5">GMM-token &#x2014; LDA@Q=8 leader</text>
+  <text x="267" y="340" style="font-family:Arial,sans-serif;font-size:6.5px;fill:#5a7a8a;text-anchor:middle">&#x03A6;: R&#x1D2E; &#x2192; doc-term counts &#xB7; 4 axes of design freedom</text>
+
+  <line x1="375" y1="206" x2="397" y2="206" style="stroke:#4ecdc4;stroke-width:1.5" marker-end="url(#arrL)"/>
+
+  <!-- ===== STAGE 3: 4 backbones ===== -->
+  <rect x="400" y="56" width="150" height="300" rx="6" style="fill:#0a1628;stroke:#1a5a6a;stroke-width:1"/>
+  <text x="475" y="74" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#4ecdc4;text-anchor:middle">Topic-Model Backbones</text>
+  <text x="475" y="86" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">the winner inverts by backbone</text>
+  <rect x="412" y="96" width="126" height="40" rx="4" style="fill:#0f2338;stroke:#4ecdc4;stroke-width:1"/>
+  <text x="420" y="112" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#4ecdc4">LDA</text>
+  <text x="530" y="112" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:end">gensim / Gibbs</text>
+  <text x="420" y="127" style="font-family:Arial,sans-serif;font-size:7px;fill:#e8a838">wins: V12 (Q8) &#x2192; V20 (Q32)</text>
+  <rect x="412" y="140" width="126" height="34" rx="4" style="fill:#0f2338;stroke:#3a5a7c;stroke-width:0.8"/>
+  <text x="420" y="156" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#cfe6e4">HDP</text>
+  <text x="530" y="156" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:end">tomotopy / nonparam</text>
+  <text x="420" y="170" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5">wins: V11</text>
+  <rect x="412" y="178" width="126" height="34" rx="4" style="fill:#0f2338;stroke:#3a5a7c;stroke-width:0.8"/>
+  <text x="420" y="194" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#cfe6e4">ProdLDA</text>
+  <text x="530" y="194" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:end">Pyro / VAE</text>
+  <text x="420" y="208" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5">wins: V8</text>
+  <rect x="412" y="216" width="126" height="34" rx="4" style="fill:#0f2338;stroke:#3a5a7c;stroke-width:0.8"/>
+  <text x="420" y="232" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#cfe6e4">ETM</text>
+  <text x="530" y="232" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:end">Dieng / embedding</text>
+  <text x="420" y="246" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5">wins: V11</text>
+  <!-- deep baselines note -->
+  <rect x="412" y="256" width="126" height="44" rx="4" style="fill:#081828;stroke:#2a4a5a;stroke-width:0.6"/>
+  <text x="475" y="270" style="font-family:Arial,sans-serif;font-size:7px;fill:#b0c4d8;text-anchor:middle">+ fair deep baselines</text>
+  <text x="475" y="282" style="font-family:Arial,sans-serif;font-size:6.5px;fill:#7a9ab5;text-anchor:middle">CAE-1D/2D/3D, &#x03B2;-VAE,</text>
+  <text x="475" y="293" style="font-family:Arial,sans-serif;font-size:6.5px;fill:#7a9ab5;text-anchor:middle">PCA/NMF/ICA-K (GPU 50&#x2013;120&#xD7;)</text>
+  <text x="475" y="318" style="font-family:Arial,sans-serif;font-size:7px;fill:#e8a838;text-anchor:middle">Q-sweep: Q=8 full grid</text>
+  <text x="475" y="330" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">1140 cells &#xB7; 100% &#xB7; +Q16/Q32 spot</text>
+  <text x="475" y="344" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a7a8a;text-anchor:middle">live Q-extension API</text>
+
+  <line x1="552" y1="206" x2="574" y2="206" style="stroke:#4ecdc4;stroke-width:1.5" marker-end="url(#arrL)"/>
+
+  <!-- ===== STAGE 4: evaluation battery (fan-in) ===== -->
+  <rect x="577" y="56" width="209" height="200" rx="6" style="fill:#0a1628;stroke:#1a5a6a;stroke-width:1"/>
+  <text x="681" y="74" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#4ecdc4;text-anchor:middle">Multi-Axis Evaluation</text>
+  <text x="681" y="86" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">12-axis battery + extended F-axes</text>
+  <!-- axis chips, colour-keyed -->
+  <g style="font-family:Arial,sans-serif;font-size:6.5px">
+    <rect x="586" y="94"  width="58" height="16" rx="2" style="fill:#10243a;stroke:#1e90ff;stroke-width:0.7"/><text x="615" y="105" style="fill:#7ab8ff;text-anchor:middle">F-1 class.</text>
+    <rect x="648" y="94"  width="58" height="16" rx="2" style="fill:#10243a;stroke:#e8a838;stroke-width:0.9"/><text x="677" y="105" style="fill:#e8a838;text-anchor:middle">F-7 NMI &#x2605;</text>
+    <rect x="710" y="94"  width="68" height="16" rx="2" style="fill:#10243a;stroke:#1e90ff;stroke-width:0.7"/><text x="744" y="105" style="fill:#7ab8ff;text-anchor:middle">F-2 coherence</text>
+    <rect x="586" y="113" width="58" height="16" rx="2" style="fill:#10243a;stroke:#3fb950;stroke-width:0.7"/><text x="615" y="124" style="fill:#5fd97a;text-anchor:middle">F-18 rel. &#x2605;</text>
+    <rect x="648" y="113" width="58" height="16" rx="2" style="fill:#10243a;stroke:#3fb950;stroke-width:0.7"/><text x="677" y="124" style="fill:#5fd97a;text-anchor:middle">F-3 seed</text>
+    <rect x="710" y="113" width="68" height="16" rx="2" style="fill:#10243a;stroke:#3fb950;stroke-width:0.7"/><text x="744" y="124" style="fill:#5fd97a;text-anchor:middle">F-10 transfer</text>
+    <rect x="586" y="132" width="58" height="16" rx="2" style="fill:#10243a;stroke:#1e90ff;stroke-width:0.7"/><text x="615" y="143" style="fill:#7ab8ff;text-anchor:middle">F-14 div.</text>
+    <rect x="648" y="132" width="58" height="16" rx="2" style="fill:#10243a;stroke:#e85149;stroke-width:0.7"/><text x="677" y="143" style="fill:#ff8079;text-anchor:middle">F-15 LLM</text>
+    <rect x="710" y="132" width="68" height="16" rx="2" style="fill:#10243a;stroke:#e85149;stroke-width:0.7"/><text x="744" y="143" style="fill:#ff8079;text-anchor:middle">F-13 SHAP</text>
+    <rect x="586" y="151" width="58" height="16" rx="2" style="fill:#10243a;stroke:#e85149;stroke-width:0.7"/><text x="615" y="162" style="fill:#ff8079;text-anchor:middle">F-22 c.f.</text>
+    <rect x="648" y="151" width="58" height="16" rx="2" style="fill:#10243a;stroke:#e8873a;stroke-width:0.7"/><text x="677" y="162" style="fill:#e8a838;text-anchor:middle">F-9 HIDSAG</text>
+    <rect x="710" y="151" width="68" height="16" rx="2" style="fill:#10243a;stroke:#e8873a;stroke-width:0.7"/><text x="744" y="162" style="fill:#e8a838;text-anchor:middle">endmember</text>
+  </g>
+  <!-- colour key -->
+  <text x="586" y="184" style="font-family:Arial,sans-serif;font-size:6px;fill:#7ab8ff">&#x25A0; downstream</text>
+  <text x="660" y="184" style="font-family:Arial,sans-serif;font-size:6px;fill:#5fd97a">&#x25A0; robustness</text>
+  <text x="586" y="196" style="font-family:Arial,sans-serif;font-size:6px;fill:#e8a838">&#x25A0; HSI-credibility</text>
+  <text x="660" y="196" style="font-family:Arial,sans-serif;font-size:6px;fill:#ff8079">&#x25A0; interpretability</text>
+  <text x="681" y="214" style="font-family:Arial,sans-serif;font-size:7px;fill:#cfe6e4;text-anchor:middle">hierarchical-Bayesian dominance per axis</text>
+  <text x="681" y="228" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">&#x2605; = the two decision axes</text>
+  <text x="681" y="245" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a7a8a;text-anchor:middle">F-1 accuracy does NOT discriminate (tie ~0.86&#x2013;0.92)</text>
+
+  <!-- ===== STAGE 5: two-pole verdict ===== -->
+  <rect x="577" y="262" width="209" height="94" rx="6" style="fill:#0a1628;stroke:#e8a838;stroke-width:1"/>
+  <text x="681" y="278" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#e8a838;text-anchor:middle">The verdict: two poles</text>
+  <rect x="586" y="286" width="95" height="62" rx="4" style="fill:#0f2338;stroke:#e8a838;stroke-width:0.9"/>
+  <text x="633" y="300" style="font-family:Arial,sans-serif;font-size:8px;font-weight:bold;fill:#e8a838;text-anchor:middle">V8 &#x2014; portable</text>
+  <text x="633" y="313" style="font-family:Arial,sans-serif;font-size:6.5px;fill:#cfe6e4;text-anchor:middle">cross-backbone leader</text>
+  <text x="633" y="324" style="font-family:Arial,sans-serif;font-size:6.5px;fill:#7a9ab5;text-anchor:middle">F-7 0.431 (+0.034)</text>
+  <text x="633" y="335" style="font-family:Arial,sans-serif;font-size:6.5px;fill:#7a9ab5;text-anchor:middle">F-18 ~0.96 stable</text>
+  <text x="633" y="345" style="font-family:Arial,sans-serif;font-size:6px;fill:#5a7a8a;text-anchor:middle">use when backbone uncertain</text>
+  <rect x="686" y="286" width="95" height="62" rx="4" style="fill:#0f2338;stroke:#9b59b6;stroke-width:0.9"/>
+  <text x="733" y="300" style="font-family:Arial,sans-serif;font-size:8px;font-weight:bold;fill:#c39bd3;text-anchor:middle">V20 &#x2014; LDA peak</text>
+  <text x="733" y="313" style="font-family:Arial,sans-serif;font-size:6.5px;fill:#cfe6e4;text-anchor:middle">Q-scaling winner</text>
+  <text x="733" y="324" style="font-family:Arial,sans-serif;font-size:6.5px;fill:#7a9ab5;text-anchor:middle">F-7 0.563 @Q=32</text>
+  <text x="733" y="335" style="font-family:Arial,sans-serif;font-size:6.5px;fill:#7a9ab5;text-anchor:middle">inverts vs V12 at Q=32</text>
+  <text x="733" y="345" style="font-family:Arial,sans-serif;font-size:6px;fill:#5a7a8a;text-anchor:middle">use when LDA fixed, Q&#x2265;16</text>
+
+  <!-- bottom strip: surfaces -->
+  <text x="400" y="372" style="font-family:Arial,sans-serif;font-size:8px;fill:#b0c4d8;text-anchor:middle">Surfaces: live web app (28-tab workspace + benchmarks) &#xB7; public Q-extension API &#xB7; P3/P4/P5 preprints</text>
+  <text x="400" y="386" style="font-family:Arial,sans-serif;font-size:8px;fill:#7a9ab5;text-anchor:middle">Backend FastAPI &#xB7; Frontend React 19 + Three.js &#xB7; Pipeline scikit-learn / gensim / tomotopy / PyTorch (Pyro) &#xB7; ~1726 reproducible artefacts</text>
+</svg>
