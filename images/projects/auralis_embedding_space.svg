@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <title>Auralis — from a sound to a navigable 6D embedding trajectory</title>
+  <desc>An audio clip is analyzed into seven 6D embedding tracks (Features, PCA, t-SNE, UMAP, Tonnetz, YAMNet, CLAP), then mapped to a 3D trajectory where position, color, size and time encode the six dimensions, rendered in ten visual modes.</desc>
+  <defs>
+    <linearGradient id="bgA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b2a"/>
+      <stop offset="100%" style="stop-color:#1b2d45"/>
+    </linearGradient>
+    <marker id="arrA" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0,9 3.5,0 7" style="fill:#4ecdc4"/>
+    </marker>
+    <filter id="glowA">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="trail6d" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#4ecdc4"/>
+      <stop offset="100%" style="stop-color:#1e90ff"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgA)" rx="8"/>
+  <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1a5a6a" stroke-width="2" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="28" style="font-family:Arial,sans-serif;font-size:15px;font-weight:bold;fill:#4ecdc4;text-anchor:middle;letter-spacing:1px">AURALIS &#x2014; 6D AUDIO EMBEDDING VISUALIZER</text>
+
+  <!-- ===== LEFT: Audio input ===== -->
+  <rect x="15" y="44" width="150" height="200" rx="6" style="fill:#0a1628;stroke:#1a5a6a;stroke-width:1"/>
+  <text x="90" y="62" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#4ecdc4;text-anchor:middle">Audio Clip</text>
+  <text x="90" y="74" style="font-family:Arial,sans-serif;font-size:8px;fill:#7a9ab5;text-anchor:middle">102 curated sounds</text>
+  <!-- waveform -->
+  <line x1="25" y1="110" x2="155" y2="110" style="stroke:#2a4a5a;stroke-width:0.5"/>
+  <polyline points="25,110 32,96 38,124 44,86 50,118 56,100 62,130 68,80 74,116 80,104 86,122 92,90 98,112 104,98 110,128 116,84 122,120 128,102 134,114 140,94 146,116 152,108 155,110" style="fill:none;stroke:#4ecdc4;stroke-width:1.3"/>
+  <text x="90" y="146" style="font-family:Arial,sans-serif;font-size:8px;fill:#e8a838;text-anchor:middle">waveform &#x2192; per-frame analysis</text>
+  <!-- mini spectrogram strip -->
+  <rect x="25" y="158" width="130" height="32" rx="2" style="fill:#081828;stroke:#2a4a5a;stroke-width:0.5"/>
+  <rect x="27" y="160" width="8" height="28" style="fill:#1e90ff;opacity:0.5"/>
+  <rect x="36" y="166" width="8" height="22" style="fill:#20b2aa;opacity:0.6"/>
+  <rect x="45" y="162" width="8" height="26" style="fill:#4ecdc4;opacity:0.7"/>
+  <rect x="54" y="170" width="8" height="18" style="fill:#9b59b6;opacity:0.5"/>
+  <rect x="63" y="164" width="8" height="24" style="fill:#e8873a;opacity:0.6"/>
+  <rect x="72" y="172" width="8" height="16" style="fill:#1e90ff;opacity:0.5"/>
+  <rect x="81" y="160" width="8" height="28" style="fill:#4ecdc4;opacity:0.7"/>
+  <rect x="90" y="168" width="8" height="20" style="fill:#20b2aa;opacity:0.6"/>
+  <rect x="99" y="174" width="8" height="14" style="fill:#9b59b6;opacity:0.5"/>
+  <rect x="108" y="162" width="8" height="26" style="fill:#e8873a;opacity:0.6"/>
+  <rect x="117" y="170" width="8" height="18" style="fill:#1e90ff;opacity:0.5"/>
+  <rect x="126" y="166" width="8" height="22" style="fill:#4ecdc4;opacity:0.7"/>
+  <rect x="135" y="172" width="8" height="16" style="fill:#20b2aa;opacity:0.6"/>
+  <rect x="144" y="164" width="9" height="24" style="fill:#e8873a;opacity:0.6"/>
+  <text x="90" y="202" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a7a8a;text-anchor:middle">mel spectrogram</text>
+  <text x="90" y="228" style="font-family:Arial,sans-serif;font-size:8px;fill:#7a9ab5;text-anchor:middle">space &#xB7; nature &#xB7; music</text>
+  <text x="90" y="238" style="font-family:Arial,sans-serif;font-size:8px;fill:#7a9ab5;text-anchor:middle">&#xB7; human-made</text>
+
+  <!-- arrow L -> C -->
+  <line x1="168" y1="144" x2="192" y2="144" style="stroke:#4ecdc4;stroke-width:1.5" marker-end="url(#arrA)"/>
+
+  <!-- ===== CENTER: Seven embedding tracks ===== -->
+  <rect x="196" y="44" width="250" height="200" rx="6" style="fill:#0a1628;stroke:#e8a838;stroke-width:1"/>
+  <text x="321" y="62" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#e8a838;text-anchor:middle">Seven 6D Embedding Tracks</text>
+  <text x="321" y="74" style="font-family:Arial,sans-serif;font-size:8px;fill:#7a9ab5;text-anchor:middle">each normalized so any feature drives any axis</text>
+
+  <!-- track rows: dot + name + source -->
+  <!-- 1 Features -->
+  <circle cx="212" cy="91" r="4" style="fill:#4ecdc4" filter="url(#glowA)"/>
+  <text x="224" y="94" style="font-family:Arial,sans-serif;font-size:9px;fill:#cfe6e4">Features</text>
+  <text x="436" y="94" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:end">spectral, direct 6D</text>
+  <!-- 2 PCA -->
+  <circle cx="212" cy="112" r="4" style="fill:#1e90ff" filter="url(#glowA)"/>
+  <text x="224" y="115" style="font-family:Arial,sans-serif;font-size:9px;fill:#cfe6e4">PCA</text>
+  <text x="436" y="115" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:end">MFCC &#x2192; linear 6D</text>
+  <!-- 3 t-SNE -->
+  <circle cx="212" cy="133" r="4" style="fill:#1e90ff" filter="url(#glowA)"/>
+  <text x="224" y="136" style="font-family:Arial,sans-serif;font-size:9px;fill:#cfe6e4">t-SNE</text>
+  <text x="436" y="136" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:end">MFCC &#x2192; manifold 6D</text>
+  <!-- 4 UMAP -->
+  <circle cx="212" cy="154" r="4" style="fill:#1e90ff" filter="url(#glowA)"/>
+  <text x="224" y="157" style="font-family:Arial,sans-serif;font-size:9px;fill:#cfe6e4">UMAP</text>
+  <text x="436" y="157" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:end">MFCC &#x2192; manifold 6D</text>
+  <!-- 5 Tonnetz -->
+  <circle cx="212" cy="175" r="4" style="fill:#9b59b6" filter="url(#glowA)"/>
+  <text x="224" y="178" style="font-family:Arial,sans-serif;font-size:9px;fill:#cfe6e4">Tonnetz</text>
+  <text x="436" y="178" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:end">harmonic, natural 6D</text>
+  <!-- 6 YAMNet -->
+  <circle cx="212" cy="196" r="4" style="fill:#e8873a" filter="url(#glowA)"/>
+  <text x="224" y="199" style="font-family:Arial,sans-serif;font-size:9px;fill:#cfe6e4">YAMNet</text>
+  <text x="436" y="199" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:end">1024-D events &#x2192; 6D</text>
+  <!-- 7 CLAP -->
+  <circle cx="212" cy="217" r="4" style="fill:#00ffaa" filter="url(#glowA)"/>
+  <text x="224" y="220" style="font-family:Arial,sans-serif;font-size:9px;fill:#cfe6e4">CLAP</text>
+  <text x="436" y="220" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:end">512-D audio-text &#x2192; 6D</text>
+  <text x="321" y="236" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a7a8a;text-anchor:middle;font-style:italic">CLAP precomputed offline</text>
+
+  <!-- arrow C -> R -->
+  <line x1="449" y1="144" x2="473" y2="144" style="stroke:#4ecdc4;stroke-width:1.5" marker-end="url(#arrA)"/>
+
+  <!-- ===== RIGHT: 6D -> 3D trajectory ===== -->
+  <rect x="477" y="44" width="308" height="200" rx="6" style="fill:#0a1628;stroke:#1a5a6a;stroke-width:1"/>
+  <text x="631" y="62" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#4ecdc4;text-anchor:middle">Navigable 3D Trajectory</text>
+  <text x="631" y="74" style="font-family:Arial,sans-serif;font-size:8px;fill:#7a9ab5;text-anchor:middle">each point = one moment of the sound</text>
+  <!-- faint 3D axes -->
+  <line x1="520" y1="220" x2="520" y2="92" style="stroke:#2a4a5a;stroke-width:0.6"/>
+  <line x1="520" y1="220" x2="760" y2="220" style="stroke:#2a4a5a;stroke-width:0.6"/>
+  <line x1="520" y1="220" x2="560" y2="180" style="stroke:#2a4a5a;stroke-width:0.6"/>
+  <text x="514" y="92" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a7a8a;text-anchor:end">Y</text>
+  <text x="762" y="222" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a7a8a">X</text>
+  <text x="562" y="176" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a7a8a">Z</text>
+  <!-- trail polyline (comet) with fading tail -->
+  <polyline points="545,200 575,176 600,188 628,150 655,164 682,124 706,142 730,108" style="fill:none;stroke:url(#trail6d);stroke-width:2;opacity:0.85"/>
+  <circle cx="545" cy="200" r="3" style="fill:#1e90ff;opacity:0.35"/>
+  <circle cx="575" cy="176" r="3.5" style="fill:#20b2aa;opacity:0.5"/>
+  <circle cx="600" cy="188" r="4" style="fill:#4ecdc4;opacity:0.6"/>
+  <circle cx="628" cy="150" r="4.5" style="fill:#4ecdc4;opacity:0.7"/>
+  <circle cx="655" cy="164" r="5" style="fill:#9b59b6;opacity:0.8"/>
+  <circle cx="682" cy="124" r="5.5" style="fill:#e8873a;opacity:0.9"/>
+  <circle cx="706" cy="142" r="6" style="fill:#00ffaa;opacity:0.95" filter="url(#glowA)"/>
+  <circle cx="730" cy="108" r="7" style="fill:#00ffaa" filter="url(#glowA)"/>
+  <text x="730" y="98" style="font-family:Arial,sans-serif;font-size:7px;fill:#00ffaa;text-anchor:middle">now</text>
+  <!-- 6D mapping legend -->
+  <text x="631" y="237" style="font-family:Arial,sans-serif;font-size:8px;fill:#e8a838;text-anchor:middle">position X/Y/Z &#xB7; color (4D) &#xB7; size (5D) &#xB7; time (6D)</text>
+
+  <!-- ===== BOTTOM: ten render modes ===== -->
+  <rect x="15" y="252" width="770" height="135" rx="6" style="fill:#0a1628;stroke:#e8a838;stroke-width:1"/>
+  <text x="400" y="271" style="font-family:Arial,sans-serif;font-size:10px;font-weight:bold;fill:#e8a838;text-anchor:middle">Ten Render Modes &#xB7; one trajectory, ten ways to see it</text>
+
+  <!-- row of mode chips -->
+  <g style="font-family:Arial,sans-serif;font-size:8px">
+    <rect x="28"  y="284" width="86" height="20" rx="4" style="fill:#112a40;stroke:#4ecdc4;stroke-width:0.8"/><text x="71"  y="297" style="fill:#4ecdc4;text-anchor:middle">Comet</text>
+    <rect x="121" y="284" width="86" height="20" rx="4" style="fill:#112a40;stroke:#4ecdc4;stroke-width:0.8"/><text x="164" y="297" style="fill:#4ecdc4;text-anchor:middle">Tube</text>
+    <rect x="214" y="284" width="86" height="20" rx="4" style="fill:#112a40;stroke:#4ecdc4;stroke-width:0.8"/><text x="257" y="297" style="fill:#4ecdc4;text-anchor:middle">Galaxy</text>
+    <rect x="307" y="284" width="86" height="20" rx="4" style="fill:#112a40;stroke:#4ecdc4;stroke-width:0.8"/><text x="350" y="297" style="fill:#4ecdc4;text-anchor:middle">Aurora</text>
+    <rect x="400" y="284" width="100" height="20" rx="4" style="fill:#112a40;stroke:#4ecdc4;stroke-width:0.8"/><text x="450" y="297" style="fill:#4ecdc4;text-anchor:middle">Light-paint</text>
+    <rect x="507" y="284" width="100" height="20" rx="4" style="fill:#112a40;stroke:#4ecdc4;stroke-width:0.8"/><text x="557" y="297" style="fill:#4ecdc4;text-anchor:middle">Constellation</text>
+    <rect x="614" y="284" width="86" height="20" rx="4" style="fill:#112a40;stroke:#4ecdc4;stroke-width:0.8"/><text x="657" y="297" style="fill:#4ecdc4;text-anchor:middle">Spheres</text>
+    <rect x="28"  y="310" width="86" height="20" rx="4" style="fill:#112a40;stroke:#e8a838;stroke-width:0.8"/><text x="71"  y="323" style="fill:#e8a838;text-anchor:middle">Smoke</text>
+    <rect x="121" y="310" width="86" height="20" rx="4" style="fill:#112a40;stroke:#e8a838;stroke-width:0.8"/><text x="164" y="323" style="fill:#e8a838;text-anchor:middle">Bursts</text>
+    <rect x="214" y="310" width="86" height="20" rx="4" style="fill:#112a40;stroke:#e8a838;stroke-width:0.8"/><text x="257" y="323" style="fill:#e8a838;text-anchor:middle">Flowfield</text>
+  </g>
+
+  <!-- stack footer -->
+  <line x1="28" y1="344" x2="772" y2="344" style="stroke:#2a4a5a;stroke-width:0.5"/>
+  <text x="400" y="360" style="font-family:Arial,sans-serif;font-size:8px;fill:#b0c4d8;text-anchor:middle">Offline pipeline: librosa &#xB7; scikit-learn / UMAP &#xB7; TensorFlow / YAMNet &#xB7; CLAP</text>
+  <text x="400" y="375" style="font-family:Arial,sans-serif;font-size:8px;fill:#b0c4d8;text-anchor:middle">Frontend: React &#xB7; Three.js (@react-three/fiber) &#xB7; Web Audio API &#xB7; served by FastAPI</text>
+</svg>
