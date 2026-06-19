@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <title>CAOS Seismic — calibration is the credibility artifact</title>
+  <desc>A reliability diagram is the headline artifact: when the model says a given probability, that outcome happens about that fraction of the time. A forecast is a probability strictly between 0 and 1, shown next to its baseline, never a deterministic prediction or an alarm.</desc>
+  <defs>
+    <linearGradient id="bgH" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#111a2b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bgH)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#E8EAED" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Skill is proven, not asserted — and calibration ships it</text>
+
+  <!-- Reliability diagram panel -->
+  <g transform="translate(70,80)">
+    <rect x="-14" y="-14" width="300" height="280" rx="10" fill="#0c1622" stroke="#1f3a52" stroke-width="1"/>
+    <text x="136" y="6" text-anchor="middle" fill="#29B6F6" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Reliability diagram</text>
+    <!-- axes -->
+    <line x1="20" y1="230" x2="260" y2="230" stroke="#6b8299" stroke-width="1.5"/>
+    <line x1="20" y1="230" x2="20" y2="30" stroke="#6b8299" stroke-width="1.5"/>
+    <text x="140" y="258" text-anchor="middle" fill="#9fb3c8" font-family="Segoe UI, Arial, sans-serif" font-size="11">forecast probability</text>
+    <text x="-30" y="130" text-anchor="middle" fill="#9fb3c8" font-family="Segoe UI, Arial, sans-serif" font-size="11" transform="rotate(-90,-30,130)">observed frequency</text>
+    <!-- perfect-calibration diagonal -->
+    <line x1="20" y1="230" x2="260" y2="30" stroke="#5e7a93" stroke-width="1.4" stroke-dasharray="5 4"/>
+    <text x="232" y="52" fill="#6b8299" font-family="Segoe UI, Arial, sans-serif" font-size="10">perfect</text>
+    <!-- model points near the diagonal with uncertainty bars -->
+    <g stroke="#29B6F6" stroke-width="1.4">
+      <line x1="68" y1="206" x2="68" y2="178"/>
+      <line x1="116" y1="172" x2="116" y2="146"/>
+      <line x1="164" y1="140" x2="164" y2="110"/>
+      <line x1="212" y1="96" x2="212" y2="70"/>
+    </g>
+    <g fill="#29B6F6">
+      <circle cx="68" cy="192" r="5"/>
+      <circle cx="116" cy="159" r="5"/>
+      <circle cx="164" cy="125" r="5"/>
+      <circle cx="212" cy="83" r="5"/>
+    </g>
+    <text x="140" y="284" text-anchor="middle" fill="#cdd9e5" font-family="Segoe UI, Arial, sans-serif" font-size="10.5">"when we said 5%, it happened ~5% of the time"</text>
+  </g>
+
+  <!-- Right column: the rules -->
+  <g transform="translate(400,80)">
+    <rect x="0" y="-14" width="330" height="280" rx="10" fill="#0c1622" stroke="#1f3a52" stroke-width="1"/>
+
+    <circle cx="24" cy="20" r="6" fill="#29B6F6"/>
+    <text x="42" y="18" fill="#E8EAED" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="600">Forecast, not prediction</text>
+    <text x="42" y="36" fill="#9fb3c8" font-family="Segoe UI, Arial, sans-serif" font-size="11">a probability strictly in (0,1) — never yes/no</text>
+
+    <circle cx="24" cy="70" r="6" fill="#29B6F6"/>
+    <text x="42" y="68" fill="#E8EAED" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="600">Measured in nats vs ETAS + null</text>
+    <text x="42" y="86" fill="#9fb3c8" font-family="Segoe UI, Arial, sans-serif" font-size="11">CSEP information gain — ROC/AUC banned</text>
+
+    <circle cx="24" cy="120" r="6" fill="#29B6F6"/>
+    <text x="42" y="118" fill="#E8EAED" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="600">Shown next to the baseline</text>
+    <text x="42" y="136" fill="#9fb3c8" font-family="Segoe UI, Arial, sans-serif" font-size="11">absolute stays low; relative gain can be large</text>
+
+    <circle cx="24" cy="170" r="6" fill="#f25f5c"/>
+    <text x="42" y="168" fill="#E8EAED" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="600">Never an alarm or a "safe" state</text>
+    <text x="42" y="186" fill="#9fb3c8" font-family="Segoe UI, Arial, sans-serif" font-size="11">blank = no forecast / out of coverage</text>
+
+    <circle cx="24" cy="220" r="6" fill="#29B6F6"/>
+    <text x="42" y="218" fill="#E8EAED" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="600">Leakage-proof &amp; reproducible</text>
+    <text x="42" y="236" fill="#9fb3c8" font-family="Segoe UI, Arial, sans-serif" font-size="11">strict forecast clock; byte-reproducible logs</text>
+  </g>
+
+  <text x="400" y="384" text-anchor="middle" fill="#6b8299" font-family="Segoe UI, Arial, sans-serif" font-size="11">An independent research &amp; education tool that complements official agencies — it never replaces them.</text>
+</svg>
