@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <title>CAOS SimLab — deterministic-replay simulation: one engine, two lanes, one render path</title>
+  <desc>A scenario defined by parameters and a seed runs through one shared Python engine; a measured 3-gate rule sends it to the live in-browser Pyodide lane or the offline precomputed lane; both produce one trace that the front end animates through a single render path across six visualization families.</desc>
+  <defs>
+    <linearGradient id="bgSL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#111a2b"/>
+    </linearGradient>
+    <marker id="arrSL" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><polygon points="0 0,9 3.5,0 7" fill="#29B6F6"/></marker>
+  </defs>
+  <rect width="800" height="400" fill="url(#bgSL)" rx="8"/>
+  <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1f3a52" stroke-width="2" rx="8"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">CAOS SIMLAB — DETERMINISTIC-REPLAY SIMULATION (DES &amp; ABM)</text>
+
+  <!-- scenario + engine -->
+  <rect x="16" y="60" width="150" height="120" rx="6" fill="#0a1628" stroke="#1f3a52"/>
+  <text x="91" y="80" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#29B6F6">Scenario</text>
+  <rect x="28" y="90" width="126" height="22" rx="3" fill="#11243b" stroke="#3a5a7c" stroke-width="0.7"/>
+  <text x="91" y="105" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" fill="#cdd9e5">params + seed</text>
+  <rect x="28" y="118" width="126" height="50" rx="3" fill="#11243b" stroke="#3a5a7c" stroke-width="0.7"/>
+  <text x="91" y="134" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" font-weight="bold" fill="#9fb3c8">shared Python engine</text>
+  <text x="91" y="148" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" fill="#9fb3c8">SimPy · Mesa</text>
+  <text x="91" y="160" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" fill="#9fb3c8">OR-Tools</text>
+
+  <!-- 3-gate -->
+  <rect x="196" y="86" width="120" height="68" rx="6" fill="#0d1117" stroke="#e8a838" stroke-width="1.2"/>
+  <text x="256" y="104" text-anchor="middle" font-family="Arial,sans-serif" font-size="9.5" font-weight="bold" fill="#e8a838">3-gate rule</text>
+  <text x="256" y="120" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" fill="#cfe0d8">pure-Python AND</text>
+  <text x="256" y="132" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" fill="#cfe0d8">&lt; 3 s AND</text>
+  <text x="256" y="144" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" fill="#cfe0d8">trace &lt; 1 MB</text>
+
+  <!-- live lane -->
+  <rect x="350" y="56" width="190" height="60" rx="6" fill="#0a1628" stroke="#3ddc97" stroke-width="1.1"/>
+  <text x="445" y="74" text-anchor="middle" font-family="Arial,sans-serif" font-size="9.5" font-weight="bold" fill="#3ddc97">LIVE lane</text>
+  <text x="445" y="90" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.8" fill="#bfe9d6">Pyodide in browser</text>
+  <text x="445" y="102" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.8" fill="#bfe9d6">tune params · re-run · animate</text>
+
+  <!-- precomputed lane -->
+  <rect x="350" y="124" width="190" height="60" rx="6" fill="#0a1628" stroke="#9fb3c8" stroke-width="1.1"/>
+  <text x="445" y="142" text-anchor="middle" font-family="Arial,sans-serif" font-size="9.5" font-weight="bold" fill="#9fb3c8">PRECOMPUTED lane</text>
+  <text x="445" y="158" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.8" fill="#cdd9e5">offline → seeded trace</text>
+  <text x="445" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.8" fill="#cdd9e5">replay with scrubber</text>
+
+  <!-- one trace / render path -->
+  <rect x="574" y="86" width="120" height="68" rx="6" fill="#11243b" stroke="#29B6F6" stroke-width="1.3"/>
+  <text x="634" y="106" text-anchor="middle" font-family="Arial,sans-serif" font-size="9.5" font-weight="bold" fill="#29B6F6">One trace</text>
+  <text x="634" y="122" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.8" fill="#cdd9e5">one render path</text>
+  <text x="634" y="136" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.8" fill="#cdd9e5">"replay = truth"</text>
+  <text x="634" y="150" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.8" fill="#cdd9e5">6 viz families</text>
+
+  <!-- arrows -->
+  <line x1="166" y1="120" x2="194" y2="120" stroke="#29B6F6" stroke-width="1.5" marker-end="url(#arrSL)"/>
+  <line x1="316" y1="104" x2="348" y2="86" stroke="#3ddc97" stroke-width="1.5" marker-end="url(#arrSL)"/>
+  <line x1="316" y1="136" x2="348" y2="154" stroke="#9fb3c8" stroke-width="1.5" marker-end="url(#arrSL)"/>
+  <line x1="540" y1="86" x2="572" y2="108" stroke="#29B6F6" stroke-width="1.5" marker-end="url(#arrSL)"/>
+  <line x1="540" y1="154" x2="572" y2="132" stroke="#29B6F6" stroke-width="1.5" marker-end="url(#arrSL)"/>
+
+  <!-- honesty strip -->
+  <rect x="16" y="232" width="768" height="58" rx="6" fill="#0c1622" stroke="#1f3a52"/>
+  <text x="400" y="255" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#e8a838">Honest simulation, not a pretty animation:</text>
+  <text x="400" y="275" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.6" fill="#cdd9e5">replications + confidence intervals · warm-up cut · seed-reproducible · validated vs theory (M/M/c ↔ Erlang-C)</text>
+
+  <!-- scenarios footer -->
+  <rect x="16" y="306" width="768" height="74" rx="6" fill="#0a1628" stroke="#1f3a52"/>
+  <text x="400" y="330" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#29B6F6">10 / 10 scenarios live · 6 visualization families</text>
+  <text x="400" y="350" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.4" fill="#9fb3c8">queue · Schelling · SIR · ED flow · beer game · job-shop · haul · VRP · dispatch · Monte-Carlo/CI</text>
+  <text x="400" y="370" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.4" fill="#7d93a8">live in the browser at simlab.fasl-work.com · MIT, public</text>
+</svg>

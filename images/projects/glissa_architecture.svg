@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <title>Glissa — expressive glissando instrument</title>
+  <desc>A touch surface drives a real-time audio engine whose signature is continuous glissando with Keys, Glide and Auto modes, layered with an FX rack, instrument morphing and sampled packs; a Pro tier adds recording, account, cloud sync and billing over a FastAPI and Postgres backend.</desc>
+  <defs>
+    <linearGradient id="bgGL" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#121a2b"/></linearGradient>
+    <marker id="arrGL" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><polygon points="0 0,9 3.5,0 7" fill="#29B6F6"/></marker>
+  </defs>
+  <rect width="800" height="400" fill="url(#bgGL)" rx="8"/>
+  <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1f3a52" stroke-width="2" rx="8"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">GLISSA — EXPRESSIVE GLISSANDO INSTRUMENT</text>
+  <text x="400" y="46" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" fill="#6b8299">private product · architecture shown without internal logic</text>
+
+  <g font-family="Arial,sans-serif">
+    <!-- touch -->
+    <rect x="22" y="78" width="130" height="120" rx="6" fill="#0a1628" stroke="#1f3a52"/>
+    <text x="87" y="98" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#9fb3c8">Touch surface</text>
+    <text x="87" y="116" text-anchor="middle" font-size="7.8" fill="#cdd9e5">finger slides between</text>
+    <text x="87" y="127" text-anchor="middle" font-size="7.8" fill="#cdd9e5">pitches in real time</text>
+    <text x="87" y="146" text-anchor="middle" font-size="7.6" fill="#7d93a8">two-finger octave pan</text>
+    <path d="M34,180 Q70,150 104,176 T140,166" fill="none" stroke="#3ddc97" stroke-width="1.4"/>
+
+    <!-- glissando engine -->
+    <rect x="184" y="78" width="190" height="120" rx="6" fill="#0a1628" stroke="#e8a838" stroke-width="1.2"/>
+    <text x="279" y="98" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#e8a838">Continuous glissando</text>
+    <text x="279" y="113" text-anchor="middle" font-size="7.8" fill="#cfe0d8">the signature feature</text>
+    <rect x="196" y="124" width="166" height="22" rx="3" fill="#1c1607" stroke="#5a4a1e" stroke-width="0.7"/>
+    <text x="279" y="139" text-anchor="middle" font-size="8" fill="#cfe0d8">Keys — discrete</text>
+    <rect x="196" y="150" width="166" height="22" rx="3" fill="#1c1607" stroke="#5a4a1e" stroke-width="0.7"/>
+    <text x="279" y="165" text-anchor="middle" font-size="8" fill="#cfe0d8">Glide — slide between notes</text>
+    <rect x="196" y="176" width="166" height="18" rx="3" fill="#1c1607" stroke="#5a4a1e" stroke-width="0.7"/>
+    <text x="279" y="189" text-anchor="middle" font-size="8" fill="#cfe0d8">Auto — guided</text>
+
+    <!-- audio chain -->
+    <rect x="406" y="78" width="170" height="120" rx="6" fill="#0a1628" stroke="#1f3a52"/>
+    <text x="491" y="98" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#9fb3c8">Audio chain</text>
+    <text x="491" y="118" text-anchor="middle" font-size="8" fill="#cdd9e5">FX rack</text>
+    <text x="491" y="136" text-anchor="middle" font-size="8" fill="#cdd9e5">instrument morph</text>
+    <text x="491" y="154" text-anchor="middle" font-size="8" fill="#cdd9e5">sampled packs</text>
+    <text x="491" y="178" text-anchor="middle" font-size="7.6" fill="#7d93a8">richer timbres</text>
+
+    <!-- pro suite -->
+    <rect x="608" y="78" width="170" height="120" rx="6" fill="#11243b" stroke="#3ddc97" stroke-width="1.3"/>
+    <text x="693" y="98" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#3ddc97">Pro suite</text>
+    <text x="693" y="118" text-anchor="middle" font-size="8" fill="#bfe9d6">local recording</text>
+    <text x="693" y="136" text-anchor="middle" font-size="8" fill="#bfe9d6">account + cloud sync</text>
+    <text x="693" y="154" text-anchor="middle" font-size="8" fill="#bfe9d6">own-JWT auth + billing</text>
+    <text x="693" y="178" text-anchor="middle" font-size="7.6" fill="#7d93a8">RevenueCat</text>
+
+    <!-- arrows -->
+    <line x1="152" y1="138" x2="182" y2="138" stroke="#29B6F6" stroke-width="1.5" marker-end="url(#arrGL)"/>
+    <line x1="374" y1="138" x2="404" y2="138" stroke="#29B6F6" stroke-width="1.5" marker-end="url(#arrGL)"/>
+    <line x1="576" y1="138" x2="606" y2="138" stroke="#3ddc97" stroke-width="1.5" marker-end="url(#arrGL)"/>
+
+    <!-- backend strip -->
+    <rect x="22" y="216" width="756" height="44" rx="6" fill="#0c1622" stroke="#1f3a52"/>
+    <text x="400" y="236" text-anchor="middle" font-size="9" font-weight="bold" fill="#9fb3c8">Cloud backend</text>
+    <text x="400" y="252" text-anchor="middle" font-size="8.2" fill="#cdd9e5">FastAPI + PostgreSQL + own auth · Pro sessions · cross-device sync</text>
+
+    <!-- footer -->
+    <rect x="22" y="272" width="756" height="106" rx="6" fill="#0a1628" stroke="#1f3a52"/>
+    <text x="400" y="296" text-anchor="middle" font-size="10" font-weight="bold" fill="#29B6F6">Expressive control is what separates a toy from an instrument</text>
+    <text x="400" y="318" text-anchor="middle" font-size="8.6" fill="#9fb3c8">a real-time audio engine with a distinctive expressive feature, not a keyboard clone</text>
+    <text x="400" y="340" text-anchor="middle" font-size="8.6" fill="#9fb3c8">a freemium → Pro ladder turns that expressiveness into a sustainable product</text>
+    <text x="400" y="362" text-anchor="middle" font-size="8.4" fill="#7d93a8">Stack: React Native · Expo · Web Audio · FastAPI · PostgreSQL · RevenueCat · standalone EAS build</text>
+  </g>
+</svg>
