@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <title>Ronquy — on-device snore detection</title>
+  <desc>A native overnight loop on the phone captures audio and runs a YAMNet model through TFLite locally for about eight hours; the raw audio never leaves the device and only derived events are stored, with an optional cloud account adding cross-device sync.</desc>
+  <defs>
+    <linearGradient id="bgRO" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#121a2b"/></linearGradient>
+    <marker id="arrRO" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><polygon points="0 0,9 3.5,0 7" fill="#29B6F6"/></marker>
+  </defs>
+  <rect width="800" height="400" fill="url(#bgRO)" rx="8"/>
+  <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1f3a52" stroke-width="2" rx="8"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">RONQUY — ON-DEVICE SNORE DETECTION</text>
+  <text x="400" y="46" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" fill="#6b8299">private product · privacy-first architecture, no internal logic shown</text>
+
+  <g font-family="Arial,sans-serif">
+    <!-- phone boundary -->
+    <rect x="40" y="64" width="470" height="210" rx="14" fill="#0a1628" stroke="#3ddc97" stroke-width="1.4"/>
+    <text x="275" y="84" text-anchor="middle" font-size="10" font-weight="bold" fill="#3ddc97">On the phone — audio never leaves the device</text>
+
+    <!-- mic -->
+    <rect x="60" y="100" width="120" height="70" rx="6" fill="#11243b" stroke="#3a5a7c" stroke-width="0.8"/>
+    <text x="120" y="122" text-anchor="middle" font-size="9" font-weight="bold" fill="#9fb3c8">Native loop</text>
+    <text x="120" y="139" text-anchor="middle" font-size="7.8" fill="#cdd9e5">capture audio</text>
+    <text x="120" y="151" text-anchor="middle" font-size="7.8" fill="#cdd9e5">~8 h overnight</text>
+    <text x="120" y="163" text-anchor="middle" font-size="7.4" fill="#7d93a8">battery-aware</text>
+
+    <!-- model -->
+    <rect x="200" y="100" width="130" height="70" rx="6" fill="#11243b" stroke="#e8a838" stroke-width="1.1"/>
+    <text x="265" y="122" text-anchor="middle" font-size="9" font-weight="bold" fill="#e8a838">On-device model</text>
+    <text x="265" y="139" text-anchor="middle" font-size="7.8" fill="#cfe0d8">YAMNet via TFLite</text>
+    <text x="265" y="151" text-anchor="middle" font-size="7.8" fill="#cfe0d8">(real, not a mock)</text>
+    <text x="265" y="163" text-anchor="middle" font-size="7.4" fill="#7d93a8">native, not a JS shim</text>
+
+    <!-- events -->
+    <rect x="350" y="100" width="140" height="70" rx="6" fill="#11243b" stroke="#3a5a7c" stroke-width="0.8"/>
+    <text x="420" y="122" text-anchor="middle" font-size="9" font-weight="bold" fill="#9fb3c8">Keep events only</text>
+    <text x="420" y="139" text-anchor="middle" font-size="7.8" fill="#cdd9e5">snore timestamps</text>
+    <text x="420" y="151" text-anchor="middle" font-size="7.8" fill="#cdd9e5">+ summaries</text>
+    <text x="420" y="163" text-anchor="middle" font-size="7.4" fill="#7d93a8">raw audio discarded</text>
+
+    <line x1="180" y1="135" x2="198" y2="135" stroke="#29B6F6" stroke-width="1.5" marker-end="url(#arrRO)"/>
+    <line x1="330" y1="135" x2="348" y2="135" stroke="#29B6F6" stroke-width="1.5" marker-end="url(#arrRO)"/>
+
+    <!-- works offline -->
+    <rect x="60" y="190" width="430" height="64" rx="6" fill="#0c2018" stroke="#2f6e54" stroke-width="0.9"/>
+    <text x="275" y="212" text-anchor="middle" font-size="9" font-weight="bold" fill="#3ddc97">Privacy is the product</text>
+    <text x="275" y="230" text-anchor="middle" font-size="8" fill="#bfe9d6">works fully offline · nothing to upload · zero per-night cost</text>
+    <text x="275" y="244" text-anchor="middle" font-size="7.6" fill="#9fb3c8">a snore tracker that never sees your sleep audio</text>
+
+    <!-- optional cloud -->
+    <rect x="560" y="110" width="210" height="120" rx="8" fill="#0a1628" stroke="#1f3a52" stroke-dasharray="5 4"/>
+    <text x="665" y="134" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#9fb3c8">Optional cloud</text>
+    <text x="665" y="154" text-anchor="middle" font-size="8" fill="#cdd9e5">register + sync</text>
+    <text x="665" y="170" text-anchor="middle" font-size="8" fill="#cdd9e5">across devices</text>
+    <text x="665" y="190" text-anchor="middle" font-size="7.8" fill="#7d93a8">FastAPI + Postgres</text>
+    <text x="665" y="204" text-anchor="middle" font-size="7.8" fill="#7d93a8">own auth</text>
+    <text x="665" y="220" text-anchor="middle" font-size="7.4" fill="#6b8299">events only — never raw audio</text>
+    <line x1="490" y1="150" x2="558" y2="150" stroke="#9fb3c8" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arrRO)"/>
+
+    <!-- footer -->
+    <rect x="40" y="290" width="730" height="90" rx="6" fill="#0c1622" stroke="#1f3a52"/>
+    <text x="405" y="314" text-anchor="middle" font-size="10" font-weight="bold" fill="#29B6F6">A hard mobile-ML pattern, end to end</text>
+    <text x="405" y="336" text-anchor="middle" font-size="8.6" fill="#9fb3c8">native, battery-aware, all-night audio + inference loop · a real model on-device · sensitive data never leaves the phone</text>
+    <text x="405" y="358" text-anchor="middle" font-size="8.6" fill="#9fb3c8">Stack: React Native · Expo · TensorFlow Lite (YAMNet) · FastAPI · PostgreSQL</text>
+    <text x="405" y="374" text-anchor="middle" font-size="8.4" fill="#7d93a8">private app · shipped as a standalone EAS build</text>
+  </g>
+</svg>
