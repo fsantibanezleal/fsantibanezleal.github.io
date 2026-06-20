@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <title>RotorVitals — bearing fault diagnosis by envelope analysis</title>
+  <desc>A vibration signal is band-passed around the structural resonance, demodulated with the Hilbert transform to an envelope, and its spectrum is read for energy at the bearing's kinematic defect frequencies (BPFO, BPFI, BSF); each fault is scored over its first five harmonics and the top score above a gate is the diagnosis. Calibrated to the CWRU benchmark, all in the browser.</desc>
+  <defs>
+    <linearGradient id="bgRV" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#131b2e"/>
+    </linearGradient>
+    <marker id="arrRV" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><polygon points="0 0,9 3.5,0 7" fill="#29B6F6"/></marker>
+  </defs>
+  <rect width="800" height="400" fill="url(#bgRV)" rx="8"/>
+  <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1f3a52" stroke-width="2" rx="8"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">ROTORVITALS — BEARING FAULT DIAGNOSIS BY ENVELOPE ANALYSIS</text>
+
+  <!-- pipeline stages -->
+  <g font-family="Arial,sans-serif">
+    <!-- 1 signal -->
+    <rect x="18" y="70" width="116" height="58" rx="6" fill="#0a1628" stroke="#1f3a52"/>
+    <text x="76" y="92" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#9fb3c8">Vibration signal</text>
+    <polyline points="30,116 42,104 50,120 60,100 70,118 80,103 92,119 104,106 118,116" fill="none" stroke="#3ddc97" stroke-width="1.2"/>
+    <!-- 2 band-pass -->
+    <rect x="160" y="70" width="116" height="58" rx="6" fill="#0a1628" stroke="#1f3a52"/>
+    <text x="218" y="92" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#9fb3c8">Band-pass</text>
+    <text x="218" y="108" text-anchor="middle" font-size="7.6" fill="#cdd9e5">around the</text>
+    <text x="218" y="119" text-anchor="middle" font-size="7.6" fill="#cdd9e5">resonance</text>
+    <!-- 3 hilbert envelope -->
+    <rect x="302" y="70" width="116" height="58" rx="6" fill="#0a1628" stroke="#1f3a52"/>
+    <text x="360" y="92" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#9fb3c8">Hilbert envelope</text>
+    <text x="360" y="108" text-anchor="middle" font-size="7.6" fill="#cdd9e5">analytic signal</text>
+    <text x="360" y="119" text-anchor="middle" font-size="7.6" fill="#cdd9e5">→ magnitude</text>
+    <!-- 4 envelope spectrum -->
+    <rect x="444" y="70" width="116" height="58" rx="6" fill="#11243b" stroke="#29B6F6" stroke-width="1.2"/>
+    <text x="502" y="92" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#29B6F6">Envelope spectrum</text>
+    <line x1="456" y1="120" x2="548" y2="120" stroke="#3a5a7c" stroke-width="0.8"/>
+    <line x1="470" y1="120" x2="470" y2="104" stroke="#29B6F6" stroke-width="1.6"/>
+    <line x1="492" y1="120" x2="492" y2="110" stroke="#29B6F6" stroke-width="1.6"/>
+    <line x1="514" y1="120" x2="514" y2="100" stroke="#29B6F6" stroke-width="1.6"/>
+    <line x1="536" y1="120" x2="536" y2="112" stroke="#29B6F6" stroke-width="1.6"/>
+    <!-- 5 harmonic scoring -->
+    <rect x="586" y="70" width="120" height="58" rx="6" fill="#0a1628" stroke="#1f3a52"/>
+    <text x="646" y="92" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#9fb3c8">Harmonic scoring</text>
+    <text x="646" y="108" text-anchor="middle" font-size="7.6" fill="#cdd9e5">Σ peak energy,</text>
+    <text x="646" y="119" text-anchor="middle" font-size="7.6" fill="#cdd9e5">first 5 harmonics</text>
+
+    <!-- arrows -->
+    <line x1="134" y1="99" x2="158" y2="99" stroke="#29B6F6" stroke-width="1.5" marker-end="url(#arrRV)"/>
+    <line x1="276" y1="99" x2="300" y2="99" stroke="#29B6F6" stroke-width="1.5" marker-end="url(#arrRV)"/>
+    <line x1="418" y1="99" x2="442" y2="99" stroke="#29B6F6" stroke-width="1.5" marker-end="url(#arrRV)"/>
+    <line x1="560" y1="99" x2="584" y2="99" stroke="#29B6F6" stroke-width="1.5" marker-end="url(#arrRV)"/>
+
+    <!-- kinematics feed -->
+    <rect x="302" y="156" width="258" height="58" rx="6" fill="#0d1117" stroke="#e8a838" stroke-width="1.1"/>
+    <text x="431" y="176" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#e8a838">Kinematic defect frequencies (from geometry + RPM)</text>
+    <text x="431" y="194" text-anchor="middle" font-size="8.4" fill="#cfe0d8">BPFO · BPFI · BSF · FTF — the exact lines to look for</text>
+    <text x="431" y="206" text-anchor="middle" font-size="7.4" fill="#9fb3c8">Randall &amp; Antoni 2011</text>
+    <line x1="431" y1="156" x2="460" y2="130" stroke="#e8a838" stroke-width="1.3" marker-end="url(#arrRV)"/>
+    <line x1="540" y1="160" x2="620" y2="130" stroke="#e8a838" stroke-width="1.3" marker-end="url(#arrRV)"/>
+
+    <!-- diagnosis -->
+    <rect x="586" y="156" width="120" height="58" rx="6" fill="#11243b" stroke="#3ddc97" stroke-width="1.3"/>
+    <text x="646" y="178" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#3ddc97">Diagnosis</text>
+    <text x="646" y="194" text-anchor="middle" font-size="7.6" fill="#bfe9d6">top score &gt; gate,</text>
+    <text x="646" y="205" text-anchor="middle" font-size="7.6" fill="#bfe9d6">else "healthy"</text>
+    <line x1="646" y1="128" x2="646" y2="154" stroke="#3ddc97" stroke-width="1.5" marker-end="url(#arrRV)"/>
+
+    <!-- bottom strip -->
+    <rect x="18" y="240" width="688" height="56" rx="6" fill="#0c1622" stroke="#1f3a52"/>
+    <text x="362" y="262" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#e8a838">No black box — every number traces to a computed envelope line</text>
+    <text x="362" y="281" text-anchor="middle" font-size="8.2" fill="#cdd9e5">closed-form DSP, 100% in the browser (FFT · Hilbert) · no dataset required · on-device synthetic signals double as a self-validation set</text>
+
+    <!-- footer -->
+    <rect x="18" y="312" width="688" height="66" rx="6" fill="#0a1628" stroke="#1f3a52"/>
+    <text x="362" y="336" text-anchor="middle" font-size="10" font-weight="bold" fill="#29B6F6">Calibrated to the public CWRU bearing benchmark (SKF 6205 / 6203)</text>
+    <text x="362" y="356" text-anchor="middle" font-size="8.4" fill="#9fb3c8">the same pipeline reads real CWRU recordings unchanged — frequency relationships are exact</text>
+    <text x="362" y="372" text-anchor="middle" font-size="8.4" fill="#7d93a8">live at rotorvitals.fasl-work.com · part of the Faena mining-analytics hub</text>
+  </g>
+</svg>

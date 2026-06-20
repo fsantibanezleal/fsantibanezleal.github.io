@@ -1,7 +1,7 @@
 ---
 title: "Veta — Agentic Mineral-Tracking Decision Support"
 date: 2026-06-10
-excerpt: "A private decision-support system that turns a natural-language question — typed or spoken — about a mineral-processing operation into a traceable, evidence-backed answer."
+excerpt: "A private decision-support system that turns a natural-language question — typed or spoken — about a mineral-processing operation into a traceable, evidence-backed answer.<br/><img src='/images/projects/veta_architecture.svg'>"
 collection: portfolio
 tags: [mining, decision-support, agents, rag, private]
 ---
@@ -13,6 +13,8 @@ tags: [mining, decision-support, agents, rag, private]
 ## Why it exists
 
 In a plant, the knowledge needed to answer *"what should we do about this feed and these constraints?"* is spread across telemetry, historical runs, and expert intuition. Pulling it together is slow and hard to audit — and an answer with no traceable evidence is hard to trust on the floor. Veta compresses the loop from question to *defensible* recommendation and keeps the reasoning auditable rather than a black box.
+
+![Veta — agentic mineral-tracking decision support](/images/projects/veta_architecture.svg)
 
 ## What it demonstrates
 
