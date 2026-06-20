@@ -1,7 +1,7 @@
 ---
 title: "Ronquy — On-Device Snore Detection"
 date: 2026-06-14
-excerpt: "A private mobile app that detects snoring on-device, overnight, with no audio ever leaving the phone — a YAMNet + TFLite model runs an 8-hour native audio-and-inference loop locally."
+excerpt: "A private mobile app that detects snoring on-device, overnight, with no audio ever leaving the phone — a YAMNet + TFLite model runs an 8-hour native audio-and-inference loop locally.<br/><img src='/images/projects/ronquy_architecture.svg'>"
 collection: portfolio
 tags: [mobile, audio-ml, on-device, yamnet, tflite, private]
 ---
@@ -13,6 +13,8 @@ tags: [mobile, audio-ml, on-device, yamnet, tflite, private]
 ## Why it matters
 
 Privacy is the product. A snore tracker that never uploads your sleep audio is fundamentally more trustworthy than one that does — and doing the inference on-device also means it works offline and costs nothing per night to run. An optional cloud mode (FastAPI + Postgres + own auth) lets a user register and sync results across devices, but the detection itself is fully local.
+
+![Ronquy — on-device snore detection](/images/projects/ronquy_architecture.svg)
 
 ## What it demonstrates
 

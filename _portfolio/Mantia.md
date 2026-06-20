@@ -1,7 +1,7 @@
 ---
 title: "Mantia — Agentic Industrial-Maintenance Suite"
 date: 2026-06-12
-excerpt: "A private suite of agentic assistants for industrial asset maintenance, shaped to enterprise EAM data via OData — a portal hub plus three specialist agents on one shared agent core."
+excerpt: "A private suite of agentic assistants for industrial asset maintenance, shaped to enterprise EAM data via OData — a portal hub plus three specialist agents on one shared agent core.<br/><img src='/images/projects/mantia_architecture.svg'>"
 collection: portfolio
 tags: [agentic-ai, maintenance, odata, eam, private]
 ---
@@ -13,6 +13,8 @@ tags: [agentic-ai, maintenance, odata, eam, private]
 ## The pattern
 
 The shared core is a generic **OData V2 connector** (with CSRF), an agent base, and a common web baseline. The connector runs against a faithful **mock** of the enterprise schema in development and a **real** backend in production — so the same agent code is developed, demoed, and validated without ever touching production, then promoted unchanged.
+
+![Mantia — agentic industrial-maintenance suite](/images/projects/mantia_architecture.svg)
 
 ## What it demonstrates
 

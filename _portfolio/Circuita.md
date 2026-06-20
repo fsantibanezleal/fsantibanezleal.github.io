@@ -1,7 +1,7 @@
 ---
 title: "Circuita — Stochastic Mineral-Tracking Engine & Console"
 date: 2026-06-08
-excerpt: "A private analysis console built on a stochastic cellular-automaton engine that tracks material through a processing circuit, with a self-contained bilingual report export."
+excerpt: "A private analysis console built on a stochastic cellular-automaton engine that tracks material through a processing circuit, with a self-contained bilingual report export.<br/><img src='/images/projects/circuita_architecture.svg'>"
 collection: portfolio
 tags: [mining, cellular-automaton, simulation, reporting, private]
 ---
@@ -9,6 +9,8 @@ tags: [mining, cellular-automaton, simulation, reporting, private]
 > **Private product.** This is proprietary work; the deployment is private. This page describes the architecture and intent without exposing internal data or logic.
 
 **Circuita** drives a **stochastic cellular-automaton** engine that simulates how material moves, mixes, and lags through a processing circuit — the behavior a static mass balance misses. The result renders in an operator-grade console: per-pile **fan, balance, delta and inventory** views, with monitor tabs for the circuit and for individual objects.
+
+![Circuita — stochastic mineral-tracking engine and console](/images/projects/circuita_architecture.svg)
 
 ## What it demonstrates
 
