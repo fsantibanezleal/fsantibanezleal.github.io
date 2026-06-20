@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <title>Circuita — stochastic mineral-tracking engine and console</title>
+  <desc>A stochastic cellular-automaton engine simulates how material mixes and lags through a processing circuit; an operator console renders per-pile fan, balance, delta and inventory views, and a report builder emits a self-contained bilingual HTML file with inline-SVG charts.</desc>
+  <defs>
+    <linearGradient id="bgCI" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#121a2b"/></linearGradient>
+    <marker id="arrCI" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><polygon points="0 0,9 3.5,0 7" fill="#29B6F6"/></marker>
+  </defs>
+  <rect width="800" height="400" fill="url(#bgCI)" rx="8"/>
+  <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1f3a52" stroke-width="2" rx="8"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">CIRCUITA — STOCHASTIC MINERAL-TRACKING ENGINE &amp; CONSOLE</text>
+  <text x="400" y="46" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" fill="#6b8299">private product · architecture shown without internal data or logic</text>
+
+  <g font-family="Arial,sans-serif">
+    <!-- engine -->
+    <rect x="22" y="74" width="180" height="150" rx="6" fill="#0a1628" stroke="#e8a838" stroke-width="1.1"/>
+    <text x="112" y="94" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#e8a838">Stochastic CA engine</text>
+    <text x="112" y="110" text-anchor="middle" font-size="7.8" fill="#cfe0d8">material tracking through</text>
+    <text x="112" y="121" text-anchor="middle" font-size="7.8" fill="#cfe0d8">the processing circuit</text>
+    <!-- little CA grid -->
+    <g stroke="#5a4a1e" stroke-width="0.6">
+      <rect x="42" y="134" width="140" height="76" fill="#1c1607"/>
+      <line x1="42" y1="153" x2="182" y2="153"/><line x1="42" y1="172" x2="182" y2="172"/><line x1="42" y1="191" x2="182" y2="191"/>
+      <line x1="77" y1="134" x2="77" y2="210"/><line x1="112" y1="134" x2="112" y2="210"/><line x1="147" y1="134" x2="147" y2="210"/>
+    </g>
+    <rect x="77" y="153" width="35" height="19" fill="#e8a838" opacity="0.55"/>
+    <rect x="112" y="172" width="35" height="19" fill="#29B6F6" opacity="0.55"/>
+    <rect x="42" y="191" width="35" height="19" fill="#3ddc97" opacity="0.5"/>
+    <text x="112" y="222" text-anchor="middle" font-size="7" fill="#7d93a8">mixing · splits · lag the balance misses</text>
+
+    <!-- console views -->
+    <rect x="232" y="74" width="300" height="150" rx="6" fill="#0a1628" stroke="#1f3a52"/>
+    <text x="382" y="94" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#9fb3c8">Operator console — per-pile views</text>
+    <rect x="246" y="104" width="130" height="44" rx="4" fill="#11243b" stroke="#3a5a7c" stroke-width="0.7"/>
+    <text x="311" y="123" text-anchor="middle" font-size="8.4" fill="#cdd9e5">Fan</text>
+    <text x="311" y="137" text-anchor="middle" font-size="7.4" fill="#9fb3c8">composition spread</text>
+    <rect x="388" y="104" width="130" height="44" rx="4" fill="#11243b" stroke="#3a5a7c" stroke-width="0.7"/>
+    <text x="453" y="123" text-anchor="middle" font-size="8.4" fill="#cdd9e5">Balance</text>
+    <text x="453" y="137" text-anchor="middle" font-size="7.4" fill="#9fb3c8">in vs out</text>
+    <rect x="246" y="154" width="130" height="44" rx="4" fill="#11243b" stroke="#3a5a7c" stroke-width="0.7"/>
+    <text x="311" y="173" text-anchor="middle" font-size="8.4" fill="#cdd9e5">Delta</text>
+    <text x="311" y="187" text-anchor="middle" font-size="7.4" fill="#9fb3c8">expected vs actual</text>
+    <rect x="388" y="154" width="130" height="44" rx="4" fill="#11243b" stroke="#3a5a7c" stroke-width="0.7"/>
+    <text x="453" y="173" text-anchor="middle" font-size="8.4" fill="#cdd9e5">Inventory</text>
+    <text x="453" y="187" text-anchor="middle" font-size="7.4" fill="#9fb3c8">over time</text>
+    <text x="382" y="216" text-anchor="middle" font-size="7" fill="#7d93a8">monitor tabs: circuit · individual objects</text>
+
+    <!-- report -->
+    <rect x="562" y="74" width="216" height="150" rx="6" fill="#11243b" stroke="#3ddc97" stroke-width="1.3"/>
+    <text x="670" y="94" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#3ddc97">Self-contained report</text>
+    <text x="670" y="114" text-anchor="middle" font-size="8" fill="#bfe9d6">downsampled series per pile</text>
+    <text x="670" y="130" text-anchor="middle" font-size="8" fill="#bfe9d6">bilingual HTML + inline-SVG charts</text>
+    <text x="670" y="146" text-anchor="middle" font-size="8" fill="#bfe9d6">opens anywhere — no server</text>
+    <rect x="600" y="158" width="140" height="50" rx="4" fill="#0c2018" stroke="#2f6e54" stroke-width="0.8"/>
+    <polyline points="612,196 626,182 640,190 654,172 668,186 682,176 728,176" fill="none" stroke="#3ddc97" stroke-width="1.2"/>
+
+    <!-- arrows -->
+    <line x1="202" y1="149" x2="230" y2="149" stroke="#29B6F6" stroke-width="1.5" marker-end="url(#arrCI)"/>
+    <line x1="532" y1="149" x2="560" y2="149" stroke="#29B6F6" stroke-width="1.5" marker-end="url(#arrCI)"/>
+
+    <!-- footer -->
+    <rect x="22" y="244" width="756" height="58" rx="6" fill="#0c1622" stroke="#1f3a52"/>
+    <text x="400" y="266" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#e8a838">See where material actually goes — not where a static balance says it should</text>
+    <text x="400" y="285" text-anchor="middle" font-size="8.2" fill="#cdd9e5">simulate the real stochastic behavior, then make it legible and shareable</text>
+
+    <text x="400" y="330" text-anchor="middle" font-size="8.8" fill="#9fb3c8">Stack: TypeScript · Next.js · Python · FastAPI · cellular automata · SVG</text>
+    <text x="400" y="352" text-anchor="middle" font-size="8.4" fill="#7d93a8">private deployment · Azure Container Apps (Next build → Python serves)</text>
+  </g>
+</svg>
