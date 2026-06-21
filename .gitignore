@@ -21,3 +21,10 @@ package-lock.json
 
 # Ignore files created by MacOS
 .DS_Store
+
+# Python virtualenvs (any name, any depth) — never commit venvs
+.venv/
+.venv*
+**/.venv*
+venv/
+**/venv/
