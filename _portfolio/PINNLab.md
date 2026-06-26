@@ -1,12 +1,12 @@
 ---
 title: "PINN-Lab — A Runnable Catalogue of Physics-Informed Neural Networks"
 date: 2026-06-25
-excerpt: "A live catalogue of 19 Physics-Informed Neural Network cases — each trained offline (DeepXDE → ONNX), validated against an analytic, FEM, or real-data anchor, and re-inferred live in the browser: move a physical parameter and watch the trained network re-solve the PDE.<br/><img src='/images/projects/pinnlab_architecture.svg'>"
+excerpt: "A live catalogue of 19 Physics-Informed Neural Network cases — each trained offline (DeepXDE → ONNX), validated against an analytic, benchmark, or real-data anchor, and re-inferred live in the browser: move a physical parameter and watch the trained network re-solve the PDE.<br/><img src='/images/projects/pinnlab_architecture.svg'>"
 collection: portfolio
 tags: [scientific-ml, pinn, deepxde, onnx, pde, inverse-problems]
 ---
 
-A runnable catalogue of **19 Physics-Informed Neural Network cases**. Each is trained offline with DeepXDE/PyTorch, validated against an analytic, FEM, or real-data anchor, and exported to ONNX — then the static web app loads that ONNX and **re-infers it live in the browser** (onnxruntime-web). Because the physical parameter is a network input, you move a slider and the trained network re-solves the PDE client-side, in real time. Live at [pinnlab.fasl-work.com](https://pinnlab.fasl-work.com).
+A runnable catalogue of **19 Physics-Informed Neural Network cases**. Each is trained offline with DeepXDE/PyTorch, validated against an analytic, benchmark, or real-data anchor, and exported to ONNX — then the static web app loads that ONNX and **re-infers it live in the browser** (onnxruntime-web). Because the physical parameter is a network input, you move a slider and the trained network re-solves the PDE client-side, in real time. Live at [pinnlab.fasl-work.com](https://pinnlab.fasl-work.com).
 
 ![PINN-Lab — two worlds joined by an artifact contract](/images/projects/pinnlab_architecture.svg)
 
