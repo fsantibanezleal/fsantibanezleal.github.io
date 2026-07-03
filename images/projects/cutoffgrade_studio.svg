@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <title>CutoffGrade Studio — Lane's optimal cut-off as a declining trajectory</title>
+  <desc>From a grade-tonnage curve and economic and capacity inputs, the exact Lane optimizer computes the NPV-maximising declining cut-off trajectory above a break-even floor, set by the binding stage; a learned surrogate reproduces it for speed. Data is synthetic.</desc>
+  <defs>
+    <linearGradient id="bgCG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#111a2b"/></linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bgCG)" rx="8"/>
+  <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1f3a52" stroke-width="2" rx="8"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">CUTOFFGRADE STUDIO — LANE'S OPTIMAL CUT-OFF (A DECLINING TRAJECTORY)</text>
+
+  <g font-family="Arial,sans-serif">
+    <!-- grade-tonnage panel -->
+    <rect x="20" y="60" width="200" height="180" rx="8" fill="#0a1628" stroke="#1f3a52"/>
+    <text x="120" y="80" text-anchor="middle" font-size="10" font-weight="bold" fill="#9fb3c8">Grade–tonnage curve</text>
+    <line x1="40" y1="220" x2="200" y2="220" stroke="#3a5a7c" stroke-width="1"/>
+    <line x1="40" y1="220" x2="40" y2="96" stroke="#3a5a7c" stroke-width="1"/>
+    <path d="M40 210 Q110 205 150 150 Q180 108 196 100" fill="none" stroke="#3ddc97" stroke-width="1.8"/>
+    <text x="120" y="236" text-anchor="middle" font-size="7.4" fill="#6b8299">tonnage above cut-off vs grade</text>
+
+    <!-- hero: declining trajectory -->
+    <rect x="234" y="60" width="386" height="180" rx="8" fill="#0a1628" stroke="#29B6F6" stroke-width="1.2"/>
+    <text x="427" y="80" text-anchor="middle" font-size="10" font-weight="bold" fill="#29B6F6">NPV-maximising cut-off trajectory</text>
+    <line x1="254" y1="222" x2="600" y2="222" stroke="#3a5a7c" stroke-width="1"/>
+    <line x1="254" y1="222" x2="254" y2="96" stroke="#3a5a7c" stroke-width="1"/>
+    <text x="427" y="236" text-anchor="middle" font-size="7.6" fill="#6b8299">mine life →</text>
+    <!-- break-even floor -->
+    <line x1="254" y1="196" x2="600" y2="196" stroke="#f25f5c" stroke-width="1.2" stroke-dasharray="5 4"/>
+    <text x="566" y="192" font-size="7.6" fill="#f0a3a1">break-even</text>
+    <!-- high-grading wedge -->
+    <path d="M254 110 L600 196 L254 196 Z" fill="#e8a838" opacity="0.16"/>
+    <!-- declining optimal trajectory -->
+    <path d="M254 110 Q360 150 470 178 Q540 192 600 196" fill="none" stroke="#e8a838" stroke-width="2.2"/>
+    <text x="330" y="128" font-size="8" fill="#e8a838">high-grade early → declines</text>
+
+    <!-- learned surrogate note -->
+    <rect x="634" y="60" width="148" height="180" rx="8" fill="#11243b" stroke="#1f3a52"/>
+    <text x="708" y="80" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#9fb3c8">Model ladder</text>
+    <text x="708" y="100" text-anchor="middle" font-size="8" fill="#3ddc97" font-weight="bold">exact Lane</text>
+    <text x="708" y="113" text-anchor="middle" font-size="7.4" fill="#bfe9d6">the authority</text>
+    <text x="708" y="132" text-anchor="middle" font-size="7.8" fill="#cdd9e5">+ best-constant</text>
+    <text x="708" y="146" text-anchor="middle" font-size="7.8" fill="#cdd9e5">+ 2 oracles</text>
+    <text x="708" y="164" text-anchor="middle" font-size="7.8" fill="#cdd9e5">+ learned surrogate</text>
+    <text x="708" y="178" text-anchor="middle" font-size="7.8" fill="#cdd9e5">+ OOD guard (ONNX)</text>
+    <rect x="648" y="190" width="120" height="38" rx="5" fill="#0d1117" stroke="#e8a838" stroke-width="0.9"/>
+    <text x="708" y="206" text-anchor="middle" font-size="7.6" fill="#e8a838">AI = speed, not accuracy</text>
+    <text x="708" y="219" text-anchor="middle" font-size="7" fill="#9fb3c8">exact optimizer wins</text>
+
+    <!-- binding stage chips -->
+    <text x="20" y="266" font-size="9" font-weight="bold" fill="#9fb3c8">Binding stage decides the schedule:</text>
+    <rect x="234" y="256" width="90" height="20" rx="10" fill="#0d2233" stroke="#29B6F6" stroke-width="1.2"/>
+    <text x="279" y="270" text-anchor="middle" font-size="8" font-weight="bold" fill="#29B6F6">mill (binds)</text>
+    <rect x="330" y="256" width="70" height="20" rx="10" fill="#0a1628" stroke="#3a5a7c"/>
+    <text x="365" y="270" text-anchor="middle" font-size="8" fill="#9fb3c8">mine</text>
+    <rect x="406" y="256" width="80" height="20" rx="10" fill="#0a1628" stroke="#3a5a7c"/>
+    <text x="446" y="270" text-anchor="middle" font-size="8" fill="#9fb3c8">market</text>
+    <text x="500" y="270" font-size="7.6" fill="#3ddc97">~2.6% NPV uplift when a stage binds · 0% when mine-limited</text>
+
+    <!-- honesty strip -->
+    <rect x="20" y="290" width="762" height="52" rx="6" fill="#0c1622" stroke="#1f3a52"/>
+    <text x="401" y="311" text-anchor="middle" font-size="9" font-weight="bold" fill="#e8a838">A faithful implementation of a classic method — not a black box, not a "novel AI" claim</text>
+    <text x="401" y="329" text-anchor="middle" font-size="8" fill="#cdd9e5">exact Lane vs baselines is provable · learned models are speed-only · 100% synthetic porphyry-copper base case (labelled) · two textbook divergences disclosed</text>
+
+    <text x="401" y="366" text-anchor="middle" font-size="8.4" fill="#7d93a8">live at cutoffgrade.fasl-work.com · Vite + React 19 + onnxruntime-web · static GitHub Pages · part of Faena</text>
+  </g>
+</svg>
