@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <title>MineHaul (minehaulsim) — deterministic mine-haulage discrete-event simulation</title>
+  <desc>A seed drives parametric open-pit and underground mine generators, which pass validity gates before a deterministic discrete-event engine simulates the truck-shovel cycle and exports a cycle log, provenance and 3D topology; these feed DispatchLab. Mines are synthetic and curves are class-representative.</desc>
+  <defs>
+    <linearGradient id="bgMH" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#111a2b"/></linearGradient>
+    <marker id="arrMH" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><polygon points="0 0,9 3.5,0 7" fill="#29B6F6"/></marker>
+  </defs>
+  <rect width="800" height="400" fill="url(#bgMH)" rx="8"/>
+  <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1f3a52" stroke-width="2" rx="8"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">MINEHAUL — DETERMINISTIC MINE-HAULAGE DISCRETE-EVENT SIMULATION</text>
+  <text x="400" y="46" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" fill="#6b8299">open-source Python package · minehaulsim v0.10 (PyPI, Apache-2.0) · no web app</text>
+
+  <g font-family="Arial,sans-serif">
+    <!-- seed -->
+    <rect x="18" y="78" width="86" height="70" rx="8" fill="#11243b" stroke="#3ddc97" stroke-width="1.2"/>
+    <text x="61" y="104" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#3ddc97">seed</text>
+    <text x="61" y="122" text-anchor="middle" font-size="7.4" fill="#bfe9d6">byte-</text>
+    <text x="61" y="133" text-anchor="middle" font-size="7.4" fill="#bfe9d6">deterministic</text>
+
+    <!-- generator -->
+    <rect x="128" y="70" width="150" height="86" rx="8" fill="#0a1628" stroke="#e8a838" stroke-width="1.1"/>
+    <text x="203" y="90" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#e8a838">Parametric generators</text>
+    <text x="203" y="108" text-anchor="middle" font-size="7.8" fill="#cfe0d8">open-pit + underground</text>
+    <text x="203" y="122" text-anchor="middle" font-size="7.8" fill="#cfe0d8">ramp topologies · flow modes</text>
+    <text x="203" y="136" text-anchor="middle" font-size="7.8" fill="#cfe0d8">constrained road network</text>
+    <text x="203" y="150" text-anchor="middle" font-size="7" fill="#7d93a8">structure-real (synthetic data)</text>
+
+    <!-- gates -->
+    <rect x="302" y="78" width="96" height="70" rx="8" fill="#0d1117" stroke="#e8a838" stroke-width="1"/>
+    <text x="350" y="98" text-anchor="middle" font-size="9" font-weight="bold" fill="#e8a838">7 validity gates</text>
+    <text x="350" y="116" text-anchor="middle" font-size="7.6" fill="#cfe0d8">reject invalid</text>
+    <text x="350" y="128" text-anchor="middle" font-size="7.6" fill="#cfe0d8">mines/runs</text>
+    <text x="350" y="142" text-anchor="middle" font-size="7" fill="#7d93a8">227 tests · CI</text>
+
+    <!-- DES engine -->
+    <rect x="422" y="70" width="160" height="86" rx="8" fill="#0a1628" stroke="#29B6F6" stroke-width="1.2"/>
+    <text x="502" y="90" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#29B6F6">Deterministic DES</text>
+    <text x="502" y="108" text-anchor="middle" font-size="7.8" fill="#cdd9e5">truck-shovel cycle · routing</text>
+    <text x="502" y="122" text-anchor="middle" font-size="7.8" fill="#cdd9e5">rimpull/retarder speed-by-grade</text>
+    <text x="502" y="136" text-anchor="middle" font-size="7.8" fill="#cdd9e5">emergent bunching · 5 dispatch baselines</text>
+    <text x="502" y="150" text-anchor="middle" font-size="7" fill="#7d93a8">~63–77k events/s (measured)</text>
+
+    <!-- outputs -->
+    <rect x="606" y="70" width="176" height="86" rx="8" fill="#0a1628" stroke="#1f3a52"/>
+    <text x="694" y="90" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#9fb3c8">Exports</text>
+    <text x="694" y="108" text-anchor="middle" font-size="7.8" fill="#cdd9e5">cyclelog.csv</text>
+    <text x="694" y="122" text-anchor="middle" font-size="7.8" fill="#cdd9e5">provenance.json</text>
+    <text x="694" y="136" text-anchor="middle" font-size="7.8" fill="#cdd9e5">topology.json (3D)</text>
+    <text x="694" y="150" text-anchor="middle" font-size="7" fill="#7d93a8">API + CLI · 12-seed pit gallery</text>
+
+    <!-- arrows -->
+    <line x1="104" y1="113" x2="126" y2="113" stroke="#29B6F6" stroke-width="1.6" marker-end="url(#arrMH)"/>
+    <line x1="278" y1="113" x2="300" y2="113" stroke="#29B6F6" stroke-width="1.6" marker-end="url(#arrMH)"/>
+    <line x1="398" y1="113" x2="420" y2="113" stroke="#29B6F6" stroke-width="1.6" marker-end="url(#arrMH)"/>
+    <line x1="582" y1="113" x2="604" y2="113" stroke="#29B6F6" stroke-width="1.6" marker-end="url(#arrMH)"/>
+
+    <!-- feeds DispatchLab -->
+    <rect x="300" y="196" width="200" height="40" rx="8" fill="#0c1622" stroke="#6b8299" stroke-width="1" stroke-dasharray="5 4"/>
+    <text x="400" y="214" text-anchor="middle" font-size="9" font-weight="bold" fill="#8aa0b4">→ feeds DispatchLab (the consumer)</text>
+    <text x="400" y="228" text-anchor="middle" font-size="7.6" fill="#6b8299">MineHaul generates &amp; simulates · DispatchLab optimizes (separate web app)</text>
+    <line x1="694" y1="156" x2="500" y2="198" stroke="#6b8299" stroke-width="1.1" stroke-dasharray="4 3" marker-end="url(#arrMH)"/>
+
+    <!-- honesty strip -->
+    <rect x="18" y="256" width="764" height="52" rx="6" fill="#0c1622" stroke="#1f3a52"/>
+    <text x="400" y="277" text-anchor="middle" font-size="9" font-weight="bold" fill="#e8a838">Real engine, synthetic mines — said plainly</text>
+    <text x="400" y="295" text-anchor="middle" font-size="8" fill="#cdd9e5">the DES + physics are genuine &amp; hand-verified · mines are synthetic (fabricated data) · equipment curves class-representative, not OEM · Alpha · does not optimize a real operation</text>
+
+    <text x="400" y="332" text-anchor="middle" font-size="8.6" fill="#9fb3c8">First open-source package to do mine haulage on a genuinely constrained road network (commercial closed tools exist)</text>
+    <text x="400" y="356" text-anchor="middle" font-size="8.4" fill="#7d93a8">github.com/fsantibanezleal/CAOS_MINEHAUL · pypi.org/project/minehaulsim · companion of DispatchLab (Faena)</text>
+  </g>
+</svg>

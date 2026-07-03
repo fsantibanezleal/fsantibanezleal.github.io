@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <title>Lidar3D — one baked cloud, four honest renderers</title>
+  <desc>Reconstruction engines run offline to produce one baked point cloud, which four renderers draw under one unified transform; the app replays baked artifacts, discloses approximations in the UI, and shows metrics without ground truth as none with a reason.</desc>
+  <defs>
+    <linearGradient id="bgL3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#111a2b"/></linearGradient>
+    <marker id="arrL3" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><polygon points="0 0,9 3.5,0 7" fill="#29B6F6"/></marker>
+  </defs>
+  <rect width="800" height="400" fill="url(#bgL3)" rx="8"/>
+  <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1f3a52" stroke-width="2" rx="8"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">LIDAR3D — ONE BAKED CLOUD, FOUR HONEST RENDERERS</text>
+  <text x="400" y="46" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" fill="#6b8299">early research lab (v0.1) · offline GPU reconstruction → in-browser replay · NOT real-time, NOT SLAM</text>
+
+  <g font-family="Arial,sans-serif">
+    <!-- reconstruction engines (offline) -->
+    <rect x="18" y="66" width="176" height="176" rx="8" fill="#0a1628" stroke="#e8a838" stroke-width="1.1"/>
+    <text x="106" y="86" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#e8a838">Reconstruction (offline GPU)</text>
+    <rect x="30" y="96" width="152" height="34" rx="5" fill="#1c1607" stroke="#5a4a1e" stroke-width="0.8"/>
+    <text x="106" y="110" text-anchor="middle" font-size="7.8" font-weight="bold" fill="#cfe0d8">own depth+pose net</text>
+    <text x="106" y="123" text-anchor="middle" font-size="7.2" fill="#cfe0d8">ResNet-18 · SE(3) · ~0.28 m ATE</text>
+    <rect x="30" y="134" width="152" height="26" rx="5" fill="#11243b" stroke="#3a5a7c" stroke-width="0.7"/>
+    <text x="106" y="151" text-anchor="middle" font-size="7.6" fill="#cdd9e5">vendored 2026 model (labelled)</text>
+    <rect x="30" y="164" width="152" height="26" rx="5" fill="#11243b" stroke="#3a5a7c" stroke-width="0.7"/>
+    <text x="106" y="181" text-anchor="middle" font-size="7.6" fill="#cdd9e5">Open3D ICP LiDAR · CPU synthetic</text>
+    <text x="106" y="206" text-anchor="middle" font-size="7.4" fill="#7d93a8">feed-forward, no per-scene optim.</text>
+    <text x="106" y="222" text-anchor="middle" font-size="7.4" fill="#7d93a8">real scenes: TUM / 7-Scenes / ICL</text>
+    <text x="106" y="236" text-anchor="middle" font-size="7.4" fill="#7d93a8">depth AbsRel 0.38 → 0.22</text>
+
+    <!-- one baked cloud -->
+    <rect x="214" y="96" width="120" height="116" rx="8" fill="#11243b" stroke="#29B6F6" stroke-width="1.3"/>
+    <text x="274" y="116" text-anchor="middle" font-size="9" font-weight="bold" fill="#29B6F6">one baked cloud</text>
+    <g fill="#29B6F6"><circle cx="245" cy="150" r="2"/><circle cx="258" cy="142" r="2"/><circle cx="270" cy="158" r="2"/><circle cx="284" cy="146" r="2"/><circle cx="298" cy="160" r="2"/><circle cx="252" cy="168" r="2"/><circle cx="288" cy="172" r="2"/><circle cx="266" cy="176" r="2"/><circle cx="300" cy="150" r="2"/><circle cx="240" cy="160" r="2"/></g>
+    <text x="274" y="200" text-anchor="middle" font-size="7.4" fill="#9fb3c8">unified (x, −y, −z)</text>
+    <line x1="194" y1="154" x2="212" y2="154" stroke="#29B6F6" stroke-width="1.6" marker-end="url(#arrL3)"/>
+
+    <!-- four renderers -->
+    <rect x="354" y="66" width="428" height="176" rx="8" fill="#0a1628" stroke="#1f3a52"/>
+    <text x="568" y="86" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#9fb3c8">Four renderers — same cloud, one transform</text>
+    <rect x="368" y="98" width="196" height="60" rx="6" fill="#0d1117" stroke="#3a5a7c" stroke-width="0.8"/>
+    <text x="466" y="122" text-anchor="middle" font-size="8.6" font-weight="bold" fill="#cdd9e5">three.js</text><text x="466" y="140" text-anchor="middle" font-size="7.4" fill="#9fb3c8">points</text>
+    <rect x="572" y="98" width="196" height="60" rx="6" fill="#0d1117" stroke="#3a5a7c" stroke-width="0.8"/>
+    <text x="670" y="122" text-anchor="middle" font-size="8.6" font-weight="bold" fill="#cdd9e5">deck.gl</text><text x="670" y="140" text-anchor="middle" font-size="7.4" fill="#9fb3c8">GPU (mirror bug fixed)</text>
+    <rect x="368" y="166" width="196" height="60" rx="6" fill="#0d1117" stroke="#3a5a7c" stroke-width="0.8"/>
+    <text x="466" y="190" text-anchor="middle" font-size="8.6" font-weight="bold" fill="#cdd9e5">surfels</text><text x="466" y="208" text-anchor="middle" font-size="7.4" fill="#9fb3c8">oriented disks</text>
+    <rect x="572" y="166" width="196" height="60" rx="6" fill="#0d1117" stroke="#3a5a7c" stroke-width="0.8"/>
+    <text x="670" y="190" text-anchor="middle" font-size="8.6" font-weight="bold" fill="#cdd9e5">Potree LOD</text><text x="670" y="208" text-anchor="middle" font-size="7.2" fill="#e8a838">per-frame replay approximated + labelled</text>
+
+    <!-- honesty strip -->
+    <rect x="18" y="256" width="764" height="52" rx="6" fill="#0c1622" stroke="#1f3a52"/>
+    <text x="400" y="277" text-anchor="middle" font-size="9" font-weight="bold" fill="#e8a838">Renderer honesty is the point, not fidelity</text>
+    <text x="400" y="295" text-anchor="middle" font-size="8" fill="#cdd9e5">all four draw the SAME cloud under ONE transform · metrics without ground truth show "none" + a reason · approximations disclosed in-UI · a coordinate-mirror bug was found &amp; fixed</text>
+
+    <text x="400" y="332" text-anchor="middle" font-size="8.6" fill="#9fb3c8">An early lab with a negative-results ledger — it does not claim real-time, SLAM, or beating the state of the art</text>
+    <text x="400" y="356" text-anchor="middle" font-size="8.4" fill="#7d93a8">live at lidar3d.fasl-work.com · PyTorch offline · React/Vite viewer (three.js · deck.gl · Potree)</text>
+  </g>
+</svg>
