@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" role="img"
+     aria-label="Faena hub: swimlanes across the mining value chain with three live tiles lit and the rest planned">
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#0f1622"/>
+    </linearGradient>
+    <style>
+      text{font-family:'Segoe UI',system-ui,sans-serif;fill:#c9d1d9}
+      .t{fill:#e6edf3;font-weight:600}.a{fill:#29B6F6}.m{fill:#8b949e;font-size:10px}
+      .lane{fill:#161b22;stroke:#21262d;stroke-width:1}
+      .tile{fill:#0d1117;stroke:#30363d;stroke-width:1}
+      .live{fill:#0d2233;stroke:#29B6F6;stroke-width:1.5}
+      .bld{fill:#12202b;stroke:#3b5566;stroke-width:1}
+    </style>
+  </defs>
+  <rect width="800" height="400" fill="url(#fbg)"/>
+  <text x="32" y="46" class="t" font-size="24">Faena</text>
+  <text x="120" y="46" class="a" font-size="15">· mining-analytics hub</text>
+  <text x="32" y="70" class="m" font-size="12">One launcher, many tools · 3 live · 7 in development · ~29 planned · static · bilingual · faena.fasl-work.com</text>
+
+  <g>
+    <rect x="32" y="92" width="736" height="66" rx="8" class="lane"/>
+    <text x="44" y="114" class="a" font-size="11">EXPLORATION · MINE DESIGN</text>
+    <rect x="44" y="122" width="96" height="26" rx="5" class="bld"/><text x="52" y="139" class="m">CoreLog*</text>
+    <rect x="148" y="122" width="96" height="26" rx="5" class="bld"/><text x="156" y="139" class="m">ProspectMap*</text>
+    <rect x="252" y="122" width="96" height="26" rx="5" class="bld"/><text x="260" y="139" class="m">PitForge*</text>
+    <rect x="356" y="122" width="96" height="26" rx="5" class="tile"/><text x="364" y="139" class="m">BlockScope</text>
+    <rect x="460" y="122" width="96" height="26" rx="5" class="tile"/><text x="468" y="139" class="m">PhaseFlow</text>
+    <rect x="564" y="122" width="96" height="26" rx="5" class="tile"/><text x="572" y="139" class="m">RampGraph</text>
+    <rect x="668" y="122" width="88" height="26" rx="5" class="tile"/><text x="676" y="139" class="m">+ more</text>
+
+    <rect x="32" y="166" width="736" height="66" rx="8" class="lane"/>
+    <text x="44" y="188" class="a" font-size="11">DRILL &amp; BLAST · LOAD/HAUL · CRUSHING</text>
+    <rect x="44" y="196" width="96" height="26" rx="5" class="bld"/><text x="52" y="213" class="m">FragmentIQ*</text>
+    <rect x="148" y="196" width="96" height="26" rx="5" class="bld"/><text x="156" y="213" class="m">DispatchLab*</text>
+    <rect x="252" y="196" width="96" height="26" rx="5" class="bld"/><text x="260" y="213" class="m">ChancaDEM*</text>
+    <rect x="356" y="196" width="96" height="26" rx="5" class="tile"/><text x="364" y="213" class="m">Fragmenta</text>
+    <rect x="460" y="196" width="96" height="26" rx="5" class="tile"/><text x="468" y="213" class="m">FleetMatch</text>
+    <rect x="564" y="196" width="96" height="26" rx="5" class="tile"/><text x="572" y="213" class="m">HaulGraph</text>
+    <rect x="668" y="196" width="88" height="26" rx="5" class="tile"/><text x="676" y="213" class="m">+ more</text>
+
+    <rect x="32" y="240" width="736" height="66" rx="8" class="lane"/>
+    <text x="44" y="262" class="a" font-size="11">PROCESSING · TAILINGS · ASSET HEALTH · ECONOMICS</text>
+    <rect x="44" y="270" width="104" height="26" rx="5" class="live"/><text x="52" y="287" class="t" font-size="10">ChargeCascade</text>
+    <rect x="156" y="270" width="104" height="26" rx="5" class="live"/><text x="164" y="287" class="t" font-size="10">RotorVitals</text>
+    <rect x="268" y="270" width="104" height="26" rx="5" class="live"/><text x="276" y="287" class="t" font-size="10">CutoffGrade</text>
+    <rect x="380" y="270" width="96" height="26" rx="5" class="bld"/><text x="388" y="287" class="m">TailWatch*</text>
+    <rect x="484" y="270" width="96" height="26" rx="5" class="tile"/><text x="492" y="287" class="m">FrothSeg</text>
+    <rect x="588" y="270" width="80" height="26" rx="5" class="tile"/><text x="596" y="287" class="m">CuPrice</text>
+    <rect x="676" y="270" width="80" height="26" rx="5" class="tile"/><text x="684" y="287" class="m">+ more</text>
+  </g>
+
+  <rect x="32" y="326" width="16" height="16" rx="4" class="live"/><text x="54" y="339" class="m">live (3)</text>
+  <rect x="132" y="326" width="16" height="16" rx="4" class="bld"/><text x="154" y="339" class="m">building* (7)</text>
+  <rect x="252" y="326" width="16" height="16" rx="4" class="tile"/><text x="274" y="339" class="m">planned (~29)</text>
+  <text x="32" y="372" class="m">Value-chain swimlanes · solution-type facet · tiles advance planned → building → live · the hub lists and links out, never bundles</text>
+</svg>
