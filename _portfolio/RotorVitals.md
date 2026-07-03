@@ -1,25 +1,27 @@
 ---
-title: "RotorVitals — Bearing Fault Diagnosis by Envelope Analysis"
-date: 2026-06-19
-excerpt: "Open, explainable diagnosis of rolling-element bearing faults from a vibration signal — entirely in the browser, showing its working. Field-standard envelope analysis, calibrated to the public CWRU benchmark.<br/><img src='/images/projects/rotorvitals_pipeline.svg'>"
+title: "RotorVitals — Rotating-Machinery Condition Monitoring & Prognostics"
+date: 2026-06-28
+excerpt: "An in-browser condition-monitoring and prognostics workbench for rotating machinery (bearings-first), on real measured vibration. A source selector switches between a synthetic generator, real diagnosis segments (CWRU / Ottawa order-tracked / MaFaulDa) and real run-to-failure trajectories (FEMTO / XJTU / IMS); classical DSP, a learned WDCNN + autoencoder, and a four-model RUL ladder run live via onnxruntime-web.<br/><img src='/images/projects/rotorvitals_pipeline.svg'>"
 collection: portfolio
-tags: [predictive-maintenance, vibration, dsp, envelope-analysis, bearings, mining]
+tags: [predictive-maintenance, condition-monitoring, prognostics, rul, vibration, wdcnn, onnx]
 ---
 
-Open, explainable diagnosis of **rolling-element bearing faults** from a vibration signal — running entirely in the browser, showing its working. Bearings are the most common failure point of crushers, conveyors, pumps and fans; RotorVitals computes the bearing's kinematic defect frequencies, demodulates the resonance a defect excites, and reads the **envelope spectrum** for energy at exactly those lines. Live at [rotorvitals.fasl-work.com](https://rotorvitals.fasl-work.com), part of the [Faena](https://faena.fasl-work.com) mining-analytics hub.
+An in-browser **condition-monitoring and prognostics** workbench for rotating machinery, **bearings-first**, running on **real measured vibration**. Envelope analysis (the classic bearing-fault method) is now one tier inside it. Live at [rotorvitals.fasl-work.com](https://rotorvitals.fasl-work.com), part of the [Faena](https://faena.fasl-work.com) mining-analytics hub.
 
-![RotorVitals — the envelope-analysis pipeline](/images/projects/rotorvitals_pipeline.svg)
+![RotorVitals — source selector → classical DSP, learned tier, RUL ladder, live in the browser](/images/projects/rotorvitals_pipeline.svg)
 
-## The pipeline
+## A source selector drives the whole workbench
 
-`signal → band-pass → Hilbert envelope → envelope spectrum → harmonic scoring → diagnosis`
+- **Synthetic (with controls)** — a physically-grounded generator; fault type, severity, rpm and SNR are live knobs. Severities here are **synthetic and labelled as such**.
+- **Real: diagnosis segment** — a measured window from **CWRU** (the classifier's native domain), **Ottawa** (time-varying speed, computed-order-tracked → a real Campbell/order view), or **MaFaulDa**.
+- **Real: run-to-failure** — a real trajectory from **FEMTO / XJTU / IMS**; a life slider scrubs measured windows healthy → failure, and RUL projects against the experiment's true failure time.
 
-- **Kinematics** — BPFO / BPFI / BSF / FTF from bearing geometry and shaft speed (Randall & Antoni 2011).
-- **Envelope analysis** — band-pass around the structural resonance, the analytic signal via the Hilbert transform, magnitude, then its spectrum. A fault appears as a line at its kinematic frequency.
-- **Decision** — each fault is scored by summed peak energy at its first 5 harmonics, normalized by the noise floor; the top score wins above a floor gate, else "healthy". Every number traces to a computed line — no black box.
+## Three tiers, run live
 
-## Honest about data
+A classical DSP chain (envelope/SES, kurtogram, cyclostationary, cepstrum, Campbell/order, ISO zones); a learned tier (a **WDCNN** classifier + a deep-autoencoder health indicator, both ONNX); and a four-model **RUL ladder** (exponential → particle filter → Gaussian process → deep-RUL CNN), benchmarked on **36 real run-to-failure trajectories** (GP gives the lowest aggregate error, ≈1 h MAE, with the transparent exponential a close second).
 
-No dataset is shipped or required: the engine is closed-form DSP and the demo signals are generated on-device from published physics (McFadden & Smith 1984), doubling as a self-validation set — the engine recovers the fault frequency that generated each. The SKF 6205/6203 geometries match the open **CWRU Bearing Data Center** rig, so the same pipeline reads real CWRU recordings unchanged. A single localized defect at steady speed is the easy case; real machines bring variable speed and multiple faults, but the frequency relationships are exact and transfer directly.
+## Honest about the model's limits
+
+The learned classifier is trained on CWRU and shown **in-domain** there; everywhere else it is **cross-domain-labelled**, with its failures on display: it collapses on an unseen severity (27.8%) and scores near chance cross-rig on MFPT (0% outer-race recall), while the training-free envelope analysis transfers almost perfectly. The honest lesson, shown not claimed: **deep learning wins in-distribution, physics wins out-of-distribution.** Frequency relations are exact; scope is rotating machinery, bearings-first (no gear claim).
 
 [Live demo](https://rotorvitals.fasl-work.com) · [GitHub repository](https://github.com/fsantibanezleal/CAOS_RotorVitals)
