@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <title>ChargeCascade — exact mill physics, a 3D kinematic view, and a thin learned layer</title>
+  <desc>A tumbling-mill charge and the closed-form engine that computes critical speed, the Davis regime, toe/shoulder and power; a thin learned layer (a power surrogate and an out-of-distribution autoencoder) trained offline and run in-browser; and a workbench readout. The 3D is a kinematic animation, not a DEM solve.</desc>
+  <defs>
+    <linearGradient id="bgCC" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#111a2b"/></linearGradient>
+    <marker id="arrCC" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><polygon points="0 0,9 3.5,0 7" fill="#29B6F6"/></marker>
+  </defs>
+  <rect width="800" height="400" fill="url(#bgCC)" rx="8"/>
+  <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1f3a52" stroke-width="2" rx="8"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">CHARGECASCADE — TUMBLING-MILL CHARGE MOTION &amp; POWER</text>
+
+  <g font-family="Arial,sans-serif">
+    <!-- 1 the mill -->
+    <rect x="18" y="66" width="176" height="176" rx="8" fill="#0a1628" stroke="#1f3a52"/>
+    <text x="106" y="86" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#9fb3c8">The mill</text>
+    <circle cx="106" cy="158" r="58" fill="#0d1117" stroke="#3a5a7c" stroke-width="1"/>
+    <!-- charge toe wedge -->
+    <path d="M106 158 L58 178 A58 58 0 0 0 132 214 Z" fill="#e8a838" opacity="0.30"/>
+    <!-- cataract parabola -->
+    <path d="M150 120 Q140 175 96 206" fill="none" stroke="#E040FB" stroke-width="1.6"/>
+    <circle cx="150" cy="120" r="3.4" fill="#E040FB"/><circle cx="140" cy="150" r="3.4" fill="#E040FB"/><circle cx="120" cy="188" r="3.4" fill="#E040FB"/><circle cx="96" cy="206" r="3.4" fill="#E040FB"/>
+    <text x="106" y="232" text-anchor="middle" font-size="8" fill="#7d93a8">D · L · J · d · φc → toe / shoulder</text>
+
+    <!-- 2 analytic engine -->
+    <rect x="212" y="66" width="180" height="176" rx="8" fill="#0a1628" stroke="#e8a838" stroke-width="1.1"/>
+    <text x="302" y="86" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#e8a838">Analytic engine (TS, live)</text>
+    <text x="302" y="108" text-anchor="middle" font-size="8.4" fill="#cfe0d8">Nc = 42.3 / √(D−d)</text>
+    <text x="302" y="126" text-anchor="middle" font-size="8.4" fill="#cfe0d8">Davis: cos α = φc²·(r/R)</text>
+    <text x="302" y="144" text-anchor="middle" font-size="8.4" fill="#cfe0d8">cascade → cataract → centrifuge</text>
+    <text x="302" y="162" text-anchor="middle" font-size="8.4" fill="#cfe0d8">P = ω · M · g · arm</text>
+    <text x="302" y="180" text-anchor="middle" font-size="8" fill="#9fb3c8">Hogg-Fuerstenau · Morrell-form · Bond</text>
+    <rect x="226" y="196" width="152" height="32" rx="6" fill="#0d1117" stroke="#3ddc97" stroke-width="1"/>
+    <text x="302" y="211" text-anchor="middle" font-size="8" font-weight="bold" fill="#3ddc97">closed-form, exact — NOT DEM</text>
+    <text x="302" y="223" text-anchor="middle" font-size="7" fill="#7d93a8">2 analytic controls pass</text>
+
+    <!-- 3 learned layer -->
+    <rect x="410" y="66" width="180" height="176" rx="8" fill="#0a1628" stroke="#1f3a52"/>
+    <text x="500" y="86" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#29B6F6">Learned layer (ONNX, in-browser)</text>
+    <rect x="424" y="98" width="152" height="46" rx="6" fill="#11243b" stroke="#3a5a7c" stroke-width="0.8"/>
+    <text x="500" y="116" text-anchor="middle" font-size="8.4" font-weight="bold" fill="#cdd9e5">power surrogate</text>
+    <text x="500" y="132" text-anchor="middle" font-size="7.8" fill="#9fb3c8">~5% vs the exact engine</text>
+    <rect x="424" y="150" width="152" height="46" rx="6" fill="#11243b" stroke="#3a5a7c" stroke-width="0.8"/>
+    <text x="500" y="168" text-anchor="middle" font-size="8.4" font-weight="bold" fill="#cdd9e5">OOD autoencoder</text>
+    <text x="500" y="184" text-anchor="middle" font-size="7.8" fill="#9fb3c8">AUC 0.922 — flags off-envelope</text>
+    <text x="500" y="216" text-anchor="middle" font-size="7.6" fill="#7d93a8">trained offline torch → ONNX</text>
+    <text x="500" y="230" text-anchor="middle" font-size="7.6" fill="#7d93a8">the exact engine stays the authority</text>
+
+    <!-- 4 workbench readout -->
+    <rect x="608" y="66" width="174" height="176" rx="8" fill="#11243b" stroke="#29B6F6" stroke-width="1.3"/>
+    <text x="695" y="86" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#29B6F6">The workbench</text>
+    <!-- regime grid -->
+    <rect x="624" y="98" width="142" height="76" rx="4" fill="#0d1117" stroke="#30363d"/>
+    <line x1="624" y1="123" x2="766" y2="123" stroke="#22303f"/><line x1="624" y1="148" x2="766" y2="148" stroke="#22303f"/>
+    <line x1="671" y1="98" x2="671" y2="174" stroke="#22303f"/><line x1="718" y1="98" x2="718" y2="174" stroke="#22303f"/>
+    <text x="632" y="112" font-size="7" fill="#6b8299">φc × J regime</text>
+    <circle cx="700" cy="132" r="4.5" fill="#3ddc97"/>
+    <text x="695" y="192" text-anchor="middle" font-size="7.8" fill="#cdd9e5">power (MW) · regime</text>
+    <text x="695" y="206" text-anchor="middle" font-size="7.8" fill="#cdd9e5">toe/shoulder · capacity P/W</text>
+    <text x="695" y="228" text-anchor="middle" font-size="7.6" fill="#7d93a8">instant, sub-ms recompute</text>
+
+    <!-- arrows -->
+    <line x1="194" y1="154" x2="210" y2="154" stroke="#29B6F6" stroke-width="1.6" marker-end="url(#arrCC)"/>
+    <line x1="392" y1="154" x2="408" y2="154" stroke="#29B6F6" stroke-width="1.6" marker-end="url(#arrCC)"/>
+    <line x1="590" y1="154" x2="606" y2="154" stroke="#29B6F6" stroke-width="1.6" marker-end="url(#arrCC)"/>
+
+    <!-- honesty strip -->
+    <rect x="18" y="256" width="764" height="60" rx="6" fill="#0c1622" stroke="#1f3a52"/>
+    <text x="400" y="278" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#e8a838">Exact physics is the authority; the 3D is a kinematic view; the learned layer is speed + a sanity guard</text>
+    <text x="400" y="297" text-anchor="middle" font-size="8.2" fill="#cdd9e5">operating points synthetic-but-realistic (no plant/DEM data) · power magnitude calibrated to a ~1.3 MW textbook reference · no population-balance breakage</text>
+
+    <text x="400" y="342" text-anchor="middle" font-size="9" font-weight="bold" fill="#9fb3c8">SAG / ball / rod / autogenous · 10 reactive App tabs · bilingual</text>
+    <text x="400" y="362" text-anchor="middle" font-size="8.4" fill="#7d93a8">live at chargecascade.fasl-work.com · React 19 + three.js + onnxruntime-web · static GitHub Pages · part of Faena</text>
+  </g>
+</svg>
