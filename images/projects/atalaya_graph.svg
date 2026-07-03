@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <title>Atalaya — harvest, profile and relate Chile's open data into a knowledge graph</title>
+  <desc>A data-engineering pipeline harvests, profiles, relates, evaluates and exports 1017 datasets into a knowledge graph of five relation types, with client-side semantic search; the strength of the evidence is reported honestly and never as causation.</desc>
+  <defs>
+    <linearGradient id="bgAT" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#0f1622"/></linearGradient>
+    <marker id="arrAT" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><polygon points="0 0,9 3.5,0 7" fill="#29B6F6"/></marker>
+  </defs>
+  <rect width="800" height="400" fill="url(#bgAT)" rx="8"/>
+  <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1f3a52" stroke-width="2" rx="8"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">ATALAYA — A WATCHTOWER OVER CHILE'S OPEN DATA</text>
+
+  <g font-family="Arial,sans-serif">
+    <!-- pipeline stages -->
+    <text x="30" y="66" font-size="9" font-weight="bold" fill="#9fb3c8">Data-engineering pipeline over 1,017 real datasets</text>
+    <g>
+      <rect x="20" y="76" width="118" height="40" rx="6" fill="#0a1628" stroke="#1f3a52"/><text x="79" y="100" text-anchor="middle" font-size="9" fill="#cdd9e5">harvest</text>
+      <rect x="152" y="76" width="118" height="40" rx="6" fill="#0a1628" stroke="#1f3a52"/><text x="211" y="100" text-anchor="middle" font-size="9" fill="#cdd9e5">profile</text>
+      <rect x="284" y="76" width="118" height="40" rx="6" fill="#0a1628" stroke="#e8a838" stroke-width="1.1"/><text x="343" y="100" text-anchor="middle" font-size="9" font-weight="bold" fill="#e8a838">relate</text>
+      <rect x="416" y="76" width="118" height="40" rx="6" fill="#0a1628" stroke="#1f3a52"/><text x="475" y="100" text-anchor="middle" font-size="9" fill="#cdd9e5">evaluate</text>
+      <rect x="548" y="76" width="118" height="40" rx="6" fill="#0a1628" stroke="#1f3a52"/><text x="607" y="100" text-anchor="middle" font-size="9" fill="#cdd9e5">export</text>
+      <line x1="138" y1="96" x2="150" y2="96" stroke="#29B6F6" stroke-width="1.4" marker-end="url(#arrAT)"/>
+      <line x1="270" y1="96" x2="282" y2="96" stroke="#29B6F6" stroke-width="1.4" marker-end="url(#arrAT)"/>
+      <line x1="402" y1="96" x2="414" y2="96" stroke="#29B6F6" stroke-width="1.4" marker-end="url(#arrAT)"/>
+      <line x1="534" y1="96" x2="546" y2="96" stroke="#29B6F6" stroke-width="1.4" marker-end="url(#arrAT)"/>
+    </g>
+
+    <!-- relation types -->
+    <rect x="20" y="128" width="382" height="118" rx="8" fill="#0a1628" stroke="#1f3a52"/>
+    <text x="211" y="148" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#9fb3c8">Five relation types mined</text>
+    <text x="34" y="168" font-size="8.2" fill="#cdd9e5">• same-source</text>
+    <text x="34" y="184" font-size="8.2" fill="#cdd9e5">• semantic similarity (MiniLM → ONNX)</text>
+    <text x="34" y="200" font-size="8.2" fill="#cdd9e5">• spatial overlap</text>
+    <text x="34" y="216" font-size="8.2" fill="#3ddc97">• joinability (MinHash containment) — 117</text>
+    <text x="34" y="232" font-size="8.2" fill="#3ddc97">• correlation (Spearman + permutation null + FDR) — 24</text>
+
+    <!-- knowledge graph payoff -->
+    <rect x="416" y="128" width="366" height="118" rx="8" fill="#0a1628" stroke="#29B6F6" stroke-width="1.2"/>
+    <text x="599" y="148" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#29B6F6">Explorable knowledge graph</text>
+    <g stroke="#3a5a7c" stroke-width="1">
+      <line x1="470" y1="185" x2="540" y2="165"/><line x1="540" y1="165" x2="620" y2="195"/><line x1="620" y1="195" x2="700" y2="170"/>
+      <line x1="540" y1="165" x2="560" y2="220"/><line x1="620" y1="195" x2="560" y2="220"/><line x1="700" y1="170" x2="730" y2="215"/>
+    </g>
+    <g fill="#29B6F6"><circle cx="470" cy="185" r="6"/><circle cx="540" cy="165" r="7"/><circle cx="620" cy="195" r="7"/><circle cx="700" cy="170" r="6"/><circle cx="560" cy="220" r="5"/><circle cx="730" cy="215" r="5"/></g>
+    <text x="599" y="238" text-anchor="middle" font-size="7.4" fill="#7d93a8">semantic search runs client-side (ONNX) · no backend</text>
+
+    <!-- honesty chips -->
+    <rect x="20" y="258" width="762" height="52" rx="6" fill="#0c1622" stroke="#1f3a52"/>
+    <text x="401" y="279" text-anchor="middle" font-size="9" font-weight="bold" fill="#e8a838">Honest about evidence strength — never causal</text>
+    <text x="401" y="297" text-anchor="middle" font-size="8" fill="#cdd9e5">of ~14,000 edges, most are cheap priors · the hard evidence is 117 joins + 24 FDR-controlled correlations · SOTA beats classical only ~+1.4 pts · small-n correlations flagged fragile</text>
+
+    <text x="401" y="334" text-anchor="middle" font-size="8.6" fill="#9fb3c8">classical (PCA/KMeans/TF-IDF) + SOTA (MiniLM) + a novel calibrated multi-evidence affinity score (live-reweightable)</text>
+    <text x="401" y="358" text-anchor="middle" font-size="8.4" fill="#7d93a8">live at atalaya.fasl-work.com · Python pipeline → static React SPA · Data Observatory (catalogo.dataobservatory.net)</text>
+  </g>
+</svg>
