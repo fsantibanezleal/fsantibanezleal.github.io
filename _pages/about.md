@@ -24,6 +24,7 @@ I lead end-to-end data science initiatives for mining process optimization, deli
 - Predictive modeling, recommendation systems, and scenario-based optimization
 - Hyperspectral imaging and geometallurgical estimation
 - Architecture & solution design: feature engineering, batch/streaming pipelines, APIs/microservices
+- Browser-native scientific and mining software (the [Faena](https://faena.fasl-work.com) product line) and agentic systems for enterprise maintenance (SAP PM)
 
 **Research interests:**
 - Machine Learning & Deep Learning for industrial applications
@@ -45,6 +46,18 @@ Several laboratories, institutions, and researchers have shaped my research and 
 1. [Millennium Scientific Nucleus of Neural Morphogenesis NEMO](https://www.uchile.cl/portafolio-academico/impresion.jsf?username=mconcha)
 1. [Center for Optics and Photonics CEFOP, Universidad de Concepcion](http://cefop.udec.cl/)
 1. [Computer Graphics Lab, Universidad de Concepcion](https://www.programacion11.com/)
+
+What I am building now
+======
+
+Outside the day job I build and ship software products end to end. Everything below is live, open to inspect, and documented honestly:
+
+- **[Faena](https://faena.fasl-work.com)**, a hub of browser-native mining-analytics tools, 11 live today: [RotorVitals](https://rotorvitals.fasl-work.com), [ChargeCascade](https://chargecascade.fasl-work.com), [CutoffGrade](https://cutoffgrade.fasl-work.com), [TailWatch](https://tailwatch.fasl-work.com), [DispatchLab](https://dispatchlab.fasl-work.com), [ChancaDEM](https://chancadem.fasl-work.com), [CoreLog](https://corelog.fasl-work.com), [PitForge](https://pitforge.fasl-work.com), [ProspectMap](https://prospectmap.fasl-work.com), [FragmentIQ](https://fragmentiq.fasl-work.com) and [FrothSeg](https://frothseg.fasl-work.com). Each is an independent app with real methods running client-side and an offline precompute lane.
+- **Research labs** that explore one method family end to end, on real data where it exists: [ChronoScope](https://chronoscope.fasl-work.com) (a forecasting atlas with a real foundation-model tier), [QLab](https://qlab.fasl-work.com), [PINN-Lab](https://pinnlab.fasl-work.com), [SimLab](https://simlab.fasl-work.com), [Lidar3D](https://lidar3d.fasl-work.com), [Pulso](https://pulso.fasl-work.com), [CardioPINN](https://cardiopinn.fasl-work.com) and [CAOS Seismic](https://seismic.fasl-work.com).
+- **Six Python packages on PyPI**: [minehaulsim](https://pypi.org/project/minehaulsim/), [oreblocks](https://pypi.org/project/oreblocks/), [preqts](https://pypi.org/project/preqts/), [pygeotypes](https://pypi.org/project/pygeotypes/), [adra](https://pypi.org/project/adra/) and [geoscena](https://pypi.org/project/geoscena/).
+- **Agentic systems**: Mantia, an anonymized hub of agentic tools oriented to SAP Plant Maintenance, and [ADRA](https://adra.fasl-work.com), an adversarial dev-review engine that tries to refute its own findings before reporting them.
+
+One rule ties them together: every tool publishes its own limits, including the cases where the learned model loses to the classical method. The full catalogue is at [fasl-work.com/portfolio](https://fasl-work.com/portfolio/), and the running engineering notes are in the [rollings](/rollings/).
 
 Industry experience
 ======
