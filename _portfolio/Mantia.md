@@ -1,7 +1,7 @@
 ---
-title: "Mantia — Agentic Industrial-Maintenance Suite"
+title: "Mantia — Anonymized Hub of Agentic Tools for SAP Plant Maintenance"
 date: 2026-06-12
-excerpt: "A private suite of agentic assistants for industrial asset maintenance, shaped to enterprise EAM data via OData — a portal hub plus three specialist agents on one shared agent core.<br/><img src='/images/projects/mantia_architecture.svg'>"
+excerpt: "An anonymized hub cataloguing a family of agentic tools oriented to SAP Plant Maintenance (PM): work-order generation, spares planning, notification triage, scheduling and more, on one shared agent core with a mock-or-real connector. Delivered under confidentiality, general description only.<br/><img src='/images/projects/mantia_architecture.svg'>"
 collection: portfolio
 tags: [agentic-ai, maintenance, odata, eam, private]
 ---
