@@ -1,7 +1,7 @@
 ---
 title: 'A negative result on every tile'
 date: 2026-07-15
-published: false
+published: true
 permalink: /posts/2026/07/a-negative-result-on-every-tile/
 tags:
   - mining
@@ -13,7 +13,6 @@ tags:
 A negative result on every tile
 ======
 
-> Draft. The facts and numbers here are verified against the code; the voice is a first pass for me to rewrite before publishing.
 
 Over the last stretch the [Faena](https://faena.fasl-work.com) hub went from three live mining tools to eleven. Writing that sentence, the easy move is to talk about coverage: exploration, drill and blast, load and haul, comminution, geotechnics, economics. The more useful thing to say is about a rule I gave myself while building them, and what it changed.
 

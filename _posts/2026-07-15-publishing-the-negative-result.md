@@ -1,7 +1,7 @@
 ---
 title: 'Publishing the negative result'
 date: 2026-07-15
-published: false
+published: true
 permalink: /posts/2026/07/publishing-the-negative-result/
 tags:
   - honesty
@@ -13,7 +13,6 @@ tags:
 Publishing the negative result
 ======
 
-> Draft for me to rewrite before publishing.
 
 Every tool I ship has a benchmark page. It is one of the fixed pages in the app, the same slot in every product, and it has one job that the rest of the app does not: to be the place where the tool is allowed to lose. Over the last stretch of building I have come to think of that page as the most important one, and I want to write down why, using the actual results that live on those pages.
 
@@ -29,7 +28,7 @@ In [PitForge](https://pitforge.fasl-work.com), the exact core (a min-cut solving
 
 In [ProspectMap](https://prospectmap.fasl-work.com), on a real mineral belt, a trivial distance-to-deposit baseline (0.783) ties the best model. Most of the apparent skill is spatial proximity, and the app commits that as a verdict rather than hiding it.
 
-In [CardioPINN](https://cardiopinn.fasl-work.com), the physics-informed reconstruction does not beat a 1970s Tikhonov baseline on any of the four ECGi beats. The real contribution is a calibrated uncertainty the baseline cannot give, and the benchmark page says both parts.
+In [CardioPINN](https://cardiopinn.fasl-work.com), the physics-informed reconstruction sits at parity with a 1970s Tikhonov baseline on point accuracy, on all four ECGi beats, and the benchmark page states it. The lesson there was about my own scorecard: replacing classical accuracy was never the goal, so parity is not a defeat. The method earns its place with the outputs the baseline cannot give, a calibrated per-node uncertainty (2-sigma coverage 0.89-0.90) and a resolved relative-pressure field, and the page states that positioning too.
 
 Even [ChronoScope](https://chronoscope.fasl-work.com), a forecasting atlas where a foundation model does earn its place on some series, keeps the case where a one-line SeasonalNaive beats a foundation model on real data.
 
