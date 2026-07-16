@@ -1,7 +1,7 @@
 ---
 title: 'Browser-native scientific computing'
 date: 2026-07-15
-published: false
+published: true
 permalink: /posts/2026/07/browser-native-scientific-computing/
 tags:
   - scientific-computing
@@ -13,7 +13,6 @@ tags:
 Browser-native scientific computing
 ======
 
-> Draft for me to rewrite before publishing.
 
 A pattern has settled across most of the tools I have built this year, and it took me a while to name it. Each one runs a real scientific method client-side, in a static single-page app, with an offline precompute lane behind it doing the heavy work. There is no server. The method itself runs in the browser, or the browser replays an artifact the offline lane baked. I want to write down why that shape is worth committing to, and where it honestly does and does not run live.
 
