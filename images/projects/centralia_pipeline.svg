@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" role="img"
+     aria-label="CentralIA: a connection-first console connects to GitHub, GitLab or an offline emulator, reads a management repo through its structure map, and renders a portfolio of initiatives with 5-axis status, live open issues and a hub growth graph">
+  <defs>
+    <linearGradient id="cibg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <marker id="ciar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9 z" fill="#29B6F6"/></marker>
+    <style>
+      text{font-family:'Segoe UI',system-ui,sans-serif;fill:#c9d1d9}
+      .t{fill:#e6edf3;font-weight:600}.a{fill:#29B6F6}.m{fill:#8b949e;font-size:11px}
+      .box{fill:#161b22;stroke:#30363d;stroke-width:1}.acc{stroke:#29B6F6}
+    </style>
+  </defs>
+  <rect width="800" height="400" fill="url(#cibg)"/>
+  <text x="32" y="44" class="t" font-size="22">CentralIA</text>
+  <text x="32" y="66" class="m">Initiative-management console · state read live from the repos, never staler than the last commit</text>
+
+  <rect x="32" y="96" width="160" height="150" rx="10" class="box acc"/>
+  <text x="46" y="120" class="a" font-size="13">CONNECT</text>
+  <text x="46" y="144" class="t" font-size="12">Version-control provider</text>
+  <text x="46" y="164" class="m">GitHub</text>
+  <text x="46" y="182" class="m">GitLab</text>
+  <text x="46" y="200" class="m">offline emulator (no creds)</text>
+  <text x="46" y="226" class="m">token in server env only</text>
+
+  <path d="M192 171 H224" class="acc" fill="none" stroke-width="2" marker-end="url(#ciar)"/>
+
+  <rect x="224" y="96" width="196" height="150" rx="10" class="box"/>
+  <text x="240" y="120" class="a" font-size="13">READ</text>
+  <text x="240" y="144" class="t" font-size="12">Management repo</text>
+  <text x="240" y="162" class="m">via its structure map</text>
+  <text x="240" y="186" class="t" font-size="12">Repo-mapped initiatives</text>
+  <text x="240" y="204" class="m">plans · findings · history</text>
+  <text x="240" y="222" class="m">live open issues (from provider)</text>
+
+  <path d="M420 171 H452" class="acc" fill="none" stroke-width="2" marker-end="url(#ciar)"/>
+
+  <rect x="452" y="96" width="316" height="150" rx="10" class="box"/>
+  <text x="468" y="120" class="a" font-size="13">RENDER</text>
+  <text x="468" y="144" class="t" font-size="12">Filterable portfolio grid</text>
+  <text x="468" y="162" class="m">group · line · hub · lifecycle · deploy · kind</text>
+  <text x="468" y="186" class="t" font-size="12">5-axis status per initiative</text>
+  <text x="468" y="204" class="m">development · design · impl · deploy · value (0-5)</text>
+  <text x="468" y="228" class="t" font-size="12">Hub growth graph</text>
+
+  <rect x="32" y="270" width="736" height="62" rx="10" class="box acc"/>
+  <text x="46" y="292" class="a" font-size="13">A REAL TOOL, NOT A MOCKUP</text>
+  <text x="46" y="314" class="m">Connectors genuinely implemented; the offline emulator is a self-contained backend with a bundled fake hub.</text>
+  <text x="46" y="330" class="m">Server-side anonymize toggle redacts client info for screen-sharing. Single-user auth; public instance is private.</text>
+
+  <text x="32" y="366" class="m">The version-control provider IS the backend of the console, so the portfolio view is never staler than the last commit.</text>
+</svg>
