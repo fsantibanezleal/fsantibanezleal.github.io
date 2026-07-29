@@ -1,6 +1,6 @@
 ---
 title: 'A review agent that tries to refute its own findings'
-date: 2026-07-15 17:00:00
+date: 2026-07-16
 permalink: /rollings/2026/07/adra-adversarial-review/
 tags:
   - agents

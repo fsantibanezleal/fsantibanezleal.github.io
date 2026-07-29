@@ -1,6 +1,6 @@
 ---
 title: 'A 3D reconstruction lab whose point is keeping the viewer honest'
-date: 2026-07-15 19:00:00
+date: 2026-07-12
 permalink: /rollings/2026/07/lidar3d-renderer-honesty/
 tags:
   - 3d-reconstruction

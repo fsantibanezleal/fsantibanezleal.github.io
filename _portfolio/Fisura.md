@@ -1,6 +1,6 @@
 ---
 title: "Fisura — Materials-Damage Vision Lab (Crack Detection to Engineering Units)"
-date: 2026-07-16
+date: 2026-07-26
 excerpt: "A public research lab on seeing damage in built materials: one image of a concrete wall, pavement or facade goes in, and Fisura detects the damage, quantifies it in engineering units (width, length, orientation, density, growth between inspections), and compares every method family (classical, learned SOTA, foundation models, anomaly detection) on the same open cases with the same metrics. Masks are only ever the input to a number.<br/><img src='/images/projects/fisura_app.png'>"
 collection: portfolio
 tags: [computer-vision, crack-detection, materials, segmentation, foundation-models, measurement]

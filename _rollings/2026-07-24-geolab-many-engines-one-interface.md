@@ -1,6 +1,6 @@
 ---
 title: 'GeoLab: many WASM geospatial engines behind one interface, in the browser'
-date: 2026-07-29 19:00:00
+date: 2026-07-24
 permalink: /rollings/2026/07/geolab-many-engines-one-interface/
 tags:
   - geospatial
