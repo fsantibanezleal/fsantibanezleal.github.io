@@ -1,6 +1,6 @@
 ---
 title: 'CardioPINN: complement, not replacement (and getting my own scorecard right)'
-date: 2026-07-15
+date: 2026-07-15 18:00:00
 permalink: /rollings/2026/07/cardiopinn-complement-not-replacement/
 tags:
   - physics-informed

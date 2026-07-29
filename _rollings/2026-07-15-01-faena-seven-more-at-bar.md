@@ -1,6 +1,6 @@
 ---
 title: 'Seven more mining tools crossed the bar, each with a negative result on it'
-date: 2026-07-15
+date: 2026-07-15 22:00:00
 permalink: /rollings/2026/07/faena-seven-more-at-bar/
 tags:
   - mining
