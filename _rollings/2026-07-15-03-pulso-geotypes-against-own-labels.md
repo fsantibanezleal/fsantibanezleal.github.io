@@ -1,6 +1,6 @@
 ---
 title: 'A shape catalogue for well tests, honest about what its labels are'
-date: 2026-07-15
+date: 2026-07-15 20:00:00
 permalink: /rollings/2026/07/pulso-geotypes-against-own-labels/
 tags:
   - reservoir
