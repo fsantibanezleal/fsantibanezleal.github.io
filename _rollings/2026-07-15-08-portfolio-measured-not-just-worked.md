@@ -1,6 +1,6 @@
 ---
 title: 'A portfolio of things I measured, not just things that worked'
-date: 2026-07-15
+date: 2026-07-15 15:00:00
 permalink: /rollings/2026/07/portfolio-measured-not-just-worked/
 tags:
   - portfolio
