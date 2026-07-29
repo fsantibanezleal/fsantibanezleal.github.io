@@ -12,6 +12,8 @@ tags:
 CardioPINN: complement, not replacement (and getting my own scorecard right)
 ======
 
+![CardioPINN: ECGi and 4D-flow cardiac reconstruction with calibrated uncertainty](/images/projects/cardiopinn_app.png)
+
 [CardioPINN](https://cardiopinn.fasl-work.com) reconstructs two cardiac quantities that cannot be measured directly, heart-surface potentials (ECGi) and the aortic relative-pressure field (4D-flow MRI), from quantities that can. All of it on real measured data: EDGAR torso-tank and in-situ beats, one thoracic-aorta 4D-flow scan, no synthetic ground truth.
 
 The first framing I gave this work was wrong, and the correction is worth writing down. I initially scored it as "the physics-informed method does not beat a well-tuned Tikhonov baseline on point accuracy", which is true on all four beats and stated in the app. But that is the wrong scorecard: replacing classical accuracy was never the goal. The method is scoped as a complement where information is partial and confidence-per-node is part of the answer.

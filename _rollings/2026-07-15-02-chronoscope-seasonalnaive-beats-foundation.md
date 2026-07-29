@@ -12,6 +12,8 @@ tags:
 A forecasting atlas where a one-line baseline beats a foundation model
 ======
 
+![ChronoScope: fifteen cases through one 19-method ladder up to a foundation-model tier](/images/projects/chronoscope_app.png)
+
 [ChronoScope](https://chronoscope.fasl-work.com) is a univariate time-series forecasting atlas: fifteen diagnostic cases, four of them real and licensed (UCI Electricity, UCI Beijing PM2.5, Monash/M4 hourly and daily), each run through the same nineteen-method ladder and scored by backtested MASE, sMAPE and interval coverage. The ladder goes from classical baselines up through gradient boosting and deep nets to a foundation-model tier: Chronos-Bolt, Chronos-2, TimesFM-2.5 and TiRex-2, all zero-shot.
 
 The reason I built it as an atlas rather than a leaderboard is the result you only see when everything runs on the same footing:

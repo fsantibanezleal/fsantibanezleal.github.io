@@ -12,6 +12,8 @@ tags:
 Seven more mining tools crossed the bar, each with a negative result on it
 ======
 
+![One of the eleven live Faena tools: DispatchLab, a truck-shovel dispatch bench in the browser](/images/projects/dispatchlab_app.png)
+
 The [Faena](https://faena.fasl-work.com) hub went from three live tools to eleven. The seven that just crossed the bar span most of the value chain: [TailWatch](https://tailwatch.fasl-work.com) (InSAR ground deformation), [DispatchLab](https://dispatchlab.fasl-work.com) (truck-shovel dispatch), [ChancaDEM](https://chancadem.fasl-work.com) (crusher comminution), [CoreLog](https://corelog.fasl-work.com) (drill-core lithology), [PitForge](https://pitforge.fasl-work.com) (ultimate pit limit), [ProspectMap](https://prospectmap.fasl-work.com) (prospectivity) and [FragmentIQ](https://fragmentiq.fasl-work.com) (fragmentation).
 
 What I want to note is not that they are live. It is what each one puts on screen when the learned model does not help:
