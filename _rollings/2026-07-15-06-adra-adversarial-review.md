@@ -12,6 +12,8 @@ tags:
 A review agent that tries to refute its own findings
 ======
 
+![ADRA: a deterministic-first adversarial dev-review console](/images/projects/adra_app.png)
+
 [ADRA](https://adra.fasl-work.com) (Adversarial Dev Review Agent) is a deterministic-first, client-agnostic validation engine. It reviews PRs, designs and runs validation experiments, writes documentation back, and escalates to a human where a senior engineer would. It is on PyPI (`pip install adra`) and runs offline with no API key. The specific problem it targets is the one that made me build it: a code-review model that states a finding confidently and wrongly.
 
 The AI-review market splits in two and both halves miss the same spot. Reviewers (CodeRabbit, Greptile, Qodo and the like) feed linters into an LLM, but the model's prose is the verdict, so a plausible-but-false finding leaks through. Autonomous coders (Devin, OpenHands, SWE-agent) write code and treat "tests pass" as success rather than trying to prove the change wrong. ADRA sits in the gap: a deterministic spine grounds a blocking adversarial critic whose job is to refute each artifact, not bless it.

@@ -12,6 +12,8 @@ tags:
 A portfolio of things I measured, not just things that worked
 ======
 
+![The restructured portfolio: six families, each card a real app screenshot](/images/projects/portfolio_grid.png)
+
 I rebuilt the [portfolio](https://fasl-work.com) from the ground up. The old version was 22 category chips over a wall of text: every project described in the register a project describes itself in, which is to say the flattering one. What bothered me was not the design. It was that nothing on the page could lose.
 
 The new structure is six families, each product with a real screenshot of its running app and, on every product, a negative result stated on the card. Not in a footnote. Where a visitor looking for a reason to trust the thing would actually land. That constraint did more to shape the writing than any layout decision, because it forced each card to answer a question the marketing version never asks: where does this tool's fashionable method lose to the boring one?
