@@ -1,6 +1,6 @@
 ---
 title: 'Symbolic regression: a near-perfect fit that recovers nothing'
-date: 2026-07-29 21:00:00
+date: 2026-07-28
 permalink: /rollings/2026/07/symlab-accuracy-is-not-recovery/
 tags:
   - symbolic-regression

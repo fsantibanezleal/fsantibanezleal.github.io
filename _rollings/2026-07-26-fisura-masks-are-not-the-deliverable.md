@@ -1,6 +1,6 @@
 ---
 title: 'Materials-damage vision: the mask is never the deliverable'
-date: 2026-07-29 20:00:00
+date: 2026-07-26
 permalink: /rollings/2026/07/fisura-masks-are-not-the-deliverable/
 tags:
   - computer-vision

@@ -1,6 +1,6 @@
 ---
 title: 'Browser-native scientific computing'
-date: 2026-07-15
+date: 2026-07-20
 published: true
 permalink: /posts/2026/07/browser-native-scientific-computing/
 tags:
