@@ -12,6 +12,8 @@ tags:
 A shape catalogue for well tests, honest about what its labels are
 ======
 
+![Pulso: shape clustering of Bourdet-derivative well-test curves](/images/projects/pulso_app.png)
+
 [Pulso](https://pulso.fasl-work.com) is an unsupervised catalogue of flow-behaviour classes ("GeoTypes") for fractured reservoirs. It takes the diagnostic Bourdet derivative of a pressure-transient response, clusters the curves by shape with DTW k-medoids, and attributes each class to the fracture-network descriptors that control it. The result I want to lead with is not the clustering score. It is the caveat I had to keep attached to the learned tier.
 
 Four neural models (InceptionTime, PatchTST, an autoencoder, an embedding) are exported to ONNX and run in the browser, and they report a good test accuracy: InceptionTime 0.911, PatchTST 0.902. That number is easy to misread. It is measured against the pipeline's own k-medoids cluster labels, not an external ground truth, and the training-set silhouette there is a weak 0.190. So the nets are accurate at reproducing a weakly-separated clustering, not at classifying against reality. That distinction stays on the card.
