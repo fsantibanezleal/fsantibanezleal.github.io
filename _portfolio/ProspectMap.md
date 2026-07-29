@@ -1,6 +1,6 @@
 ---
 title: "ProspectMap — Mineral Prospectivity Workbench with a Published Null Result"
-date: 2026-07-15
+date: 2026-07-06
 excerpt: "A mineral-prospectivity workbench that computes a Weights-of-Evidence posterior P(deposit|evidence) live in the browser over stacked geophysical, geochemical and structural layers, and whose real reason to exist is adversarial honesty. On real US Midcontinent MVT Zn-Pb belt data (Lawley et al. 2022, USGS public domain) it publishes a recorded null: the proposed PU-Conformal method loses to 1989-vintage Weights of Evidence, and a trivial distance-to-deposit baseline already ties the best learned model, so most apparent skill is spatial proximity, not learned geology.<br/><img src='/images/projects/prospectmap_app.png'>"
 collection: portfolio
 tags: [mining-analytics, mineral-prospectivity, weights-of-evidence, null-result, spatial-cv, conformal, mvt, geoscience, onnx, mining]

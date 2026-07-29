@@ -1,6 +1,6 @@
 ---
 title: "CentralIA — Initiative-Management Console over a Version-Control Provider"
-date: 2026-07-16
+date: 2026-07-21
 excerpt: "A connection-first web console that connects to GitHub, GitLab or an offline emulator, reads a management repo through its structure map, and renders a whole portfolio of repo-mapped initiatives: a filterable grid, per-initiative 5-axis status, live open issues, and a hub growth graph. A real tool, not a mockup; the token lives server-side, with a server-side anonymize toggle for screen-sharing.<br/><img src='/images/projects/centralia_pipeline.svg'>"
 collection: portfolio
 tags: [developer-tools, project-management, github, gitlab, dashboard, connectors]
