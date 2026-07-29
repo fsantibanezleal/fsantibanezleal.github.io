@@ -12,6 +12,8 @@ tags:
 A 3D reconstruction lab whose point is keeping the viewer honest
 ======
 
+![Lidar3D: four point-cloud renderers over one baked reconstruction](/images/projects/lidar3d_app.png)
+
 [Lidar3D](https://lidar3d.fasl-work.com) is an early research lab for feed-forward streaming 3D reconstruction: an ordered RGB or LiDAR stream becomes a camera trajectory, dense metric depth and a fused colored point cloud. Before anything else, the honest framing: it replays baked artifacts, it is not real-time and not SLAM by default, and the outdoor model is vendored, not mine. The heavy engine runs offline on a GPU and the public site is a static SPA that replays the result.
 
 What is actually wired is a from-scratch depth-and-pose network (ResNet-18 backbone, a Siamese SE(3) pose head, aleatoric depth) with a real held-out trajectory error, reconstructing eight real indoor scenes from TUM, 7-Scenes and ICL. Alongside it, a genuinely vendored 2026 model handles four outdoor scenes and is kept labelled as vendored, plus Open3D ICP LiDAR odometry and a CPU synthetic engine.
