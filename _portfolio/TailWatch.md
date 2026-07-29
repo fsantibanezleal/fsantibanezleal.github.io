@@ -1,6 +1,6 @@
 ---
 title: "TailWatch — InSAR Ground-Deformation Studio for Tailings Dams & Slopes"
-date: 2026-07-15
+date: 2026-07-08
 excerpt: "An in-browser InSAR ground-deformation studio for tailings dams and slopes: a multi-temporal line-of-sight displacement cube (velocity, coherence, cumulative series) with classical inverse-velocity failure forecasting plus two small neural nets. Five cases are physics-simulated from a forward model, one is a real Sentinel-1 sample. Honest by design: on the held-out benchmark the classical velocity map (AUC 0.968) beats the learned anomaly autoencoder (AUC 0.898), and the app says so.<br/><img src='/images/projects/tailwatch_app.png'>"
 collection: portfolio
 tags: [geotechnical, insar, ground-deformation, tailings-dam, slope-stability, inverse-velocity, forecasting, conformal-prediction, onnx, sentinel-1, mining]

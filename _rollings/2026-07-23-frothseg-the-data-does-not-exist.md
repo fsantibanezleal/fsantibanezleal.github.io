@@ -1,6 +1,6 @@
 ---
 title: 'FrothSeg: a real model, and the honest fact that the data does not exist'
-date: 2026-07-29 18:00:00
+date: 2026-07-23
 permalink: /rollings/2026/07/frothseg-the-data-does-not-exist/
 tags:
   - computer-vision

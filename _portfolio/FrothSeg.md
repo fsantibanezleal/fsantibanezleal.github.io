@@ -1,6 +1,6 @@
 ---
 title: "FrothSeg — Flotation-Froth Instance Segmentation Lab (Browser ML)"
-date: 2026-07-16
+date: 2026-07-23
 excerpt: "A browser-native lab for instance segmentation of flotation froth: it delineates individual bubbles client-side via ONNX and compares seven classical methods against a real published model (LamellaStar, a three-seed ensemble with SAM2 / Cellpose-SAM teachers). The honest core is the data situation, stated openly: no real froth images exist publicly, so froth cases are synthetic and BBBC038 is an adjacent-domain transfer probe that does not clear the froth blocker.<br/><img src='/images/projects/frothseg_app.png'>"
 collection: portfolio
 tags: [computer-vision, instance-segmentation, flotation, froth, onnx, ensemble, negative-results]

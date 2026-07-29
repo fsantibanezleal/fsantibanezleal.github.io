@@ -1,6 +1,6 @@
 ---
 title: "ADRA — Adversarial Dev Review Agent"
-date: 2026-07-15
+date: 2026-07-16
 excerpt: "A deterministic-first, adversarial-validation engine for the software lifecycle: deterministic tools run first and become grounding the model may not contradict, a blocking critic tries to refute each artifact instead of blessing it, and the loop escalates to a human where nothing deterministic backs the verdict. Live console, offline-capable, published on PyPI as adra.<br/><img src='/images/projects/adra_app.png'>"
 collection: portfolio
 tags: [agentic-ai, code-review, adversarial-validation, llm, provenance, developer-tools]

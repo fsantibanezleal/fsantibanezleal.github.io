@@ -1,6 +1,6 @@
 ---
 title: 'Standardizing versioning across the workspace, including the tagging bug I caused'
-date: 2026-07-15 16:00:00
+date: 2026-07-17
 permalink: /rollings/2026/07/versioning-and-the-bug-i-shipped/
 tags:
   - engineering

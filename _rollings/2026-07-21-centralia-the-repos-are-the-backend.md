@@ -1,6 +1,6 @@
 ---
 title: 'CentralIA: the version-control provider is the backend'
-date: 2026-07-29 17:00:00
+date: 2026-07-21
 permalink: /rollings/2026/07/centralia-repos-are-the-backend/
 tags:
   - developer-tools
