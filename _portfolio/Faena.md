@@ -12,7 +12,7 @@ The open **hub** for a growing family of independent, in-browser mining-analytic
 
 ## Honest by construction
 
-Every tile carries a lifecycle status, so the catalogue tells the truth about maturity: **4 live today** (DispatchLab, ChancaDEM, ChargeCascade, RotorVitals), **9 in active development**, and **29 more mapped on the roadmap** — tiles advance *planned → building → live* as each one actually ships. "Live" means brought to the quality bar, not merely deployed. There is no "39 mining apps" claim — a small set that works today, and a visible plan for the rest.
+Every tile carries a lifecycle status, so the catalogue tells the truth about maturity: **4 live today** (DispatchLab, ChancaDEM, ChargeCascade, RotorVitals), **10 in active development**, and **28 more mapped on the roadmap** — tiles advance *planned → building → live* as each one actually ships. "Live" means brought to the quality bar, not merely deployed. There is no "39 mining apps" claim — a small set that works today, and a visible plan for the rest.
 
 ## How it is organized
 
