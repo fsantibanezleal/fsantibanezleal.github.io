@@ -16,7 +16,7 @@ The exact result is the max-closure / min-cut equivalent of Lerchs-Grossmann, vi
 
 ## Validated against MineLib, not against itself
 
-The exact pit reproduces the published optima of three real MineLib instances: newman1 (1,060 blocks, 1.9 ms, relative error 9.96e-10), zuck_small (9,400 blocks, 111 ms, 1.86e-10), and kd (14,153 blocks / 219,778 precedences, 207 ms, 1.30e-10), as Node medians of three on the same TypeScript engine the browser runs. All three match. Three further instances (marvin, mclaughlin_limit, mclaughlin) are excluded with committed reasons rather than silently dropped. In real mode the scenario knobs are locked, because the instances publish their own net values and precedences and re-deriving them would break comparability with the published optimum.
+The exact pit reproduces the published optima of three real MineLib instances: newman1 (1,060 blocks, relative error 9.96e-10), zuck_small (9,400 blocks, 1.86e-10), and kd (14,153 blocks / 219,778 precedences, 1.30e-10). They solve in milliseconds to a fraction of a second under Node on the same TypeScript engine the browser runs, though that figure is machine-dependent: repeat runs on one laptop varied by a factor of several, so the artifact records its environment and no decimal is quoted here. All three match. Three further instances (marvin, mclaughlin_limit, mclaughlin) are excluded with committed reasons rather than silently dropped. In real mode the scenario knobs are locked, because the instances publish their own net values and precedences and re-deriving them would break comparability with the published optimum.
 
 ## The honest limit
 
