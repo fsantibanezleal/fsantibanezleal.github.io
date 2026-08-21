@@ -21,11 +21,11 @@ This platform automated mineral identification that previously required manual l
 
 ## Strategic context
 
-Laboratory mineral analysis (XRD/XRF) takes days and requires sample preparation; this system provides estimates in minutes directly from spectral data. For geometallurgical applications, faster characterization means tighter feedback loops between ore properties and processing parameters — enabling operators to adapt process settings to changing ore in near real-time rather than reacting to stale lab results.
+Laboratory mineral analysis (XRD/XRF) takes days and requires sample preparation; this system provides estimates in minutes directly from spectral data. For geometallurgical applications, faster characterization means tighter feedback loops between ore properties and processing parameters, enabling operators to adapt process settings to changing ore in near real-time rather than reacting to stale lab results.
 
 ![Pipeline](/images/projects/hsi_mineral_classification.svg)
 
-## Key Performance Indicators — Process impact
+## Key Performance Indicators, Process impact
 
 Mineral characterization speed and accuracy directly affect process control feedback loops. The system transforms a laboratory bottleneck into a near-real-time capability.
 

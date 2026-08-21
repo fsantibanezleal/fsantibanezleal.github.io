@@ -10,7 +10,7 @@ A **real-time material tracking and blending optimization system** that maintain
 
 ## Business impact
 
-This system created real-time visibility into ore flow that simply did not exist before — closing a critical information gap between mine extraction and plant processing. Blending compliance improved significantly, reducing out-of-spec feed to the processing plant and enabling proactive stockpile management that maintains operational continuity across shifts and planning horizons.
+This system created real-time visibility into ore flow that simply did not exist before, closing a critical information gap between mine extraction and plant processing. Blending compliance improved significantly, reducing out-of-spec feed to the processing plant and enabling proactive stockpile management that maintains operational continuity across shifts and planning horizons.
 
 | Metric | Result |
 |--------|--------|
@@ -21,11 +21,11 @@ This system created real-time visibility into ore flow that simply did not exist
 
 ## Strategic context
 
-Without material tracking, blending decisions relied on delayed lab results — hours to days old — and individual operator experience. This system closed that gap, giving operators real-time visibility to make blending decisions that directly affect processing efficiency and product quality. The configurable multi-division architecture ensured that each operation could adapt the system to its specific ore body and logistics constraints.
+Without material tracking, blending decisions relied on delayed lab results, hours to days old, and individual operator experience. This system closed that gap, giving operators real-time visibility to make blending decisions that directly affect processing efficiency and product quality. The configurable multi-division architecture ensured that each operation could adapt the system to its specific ore body and logistics constraints.
 
 ![Material Tracking](/images/projects/material_tracking.svg)
 
-## Key Performance Indicators — Process impact
+## Key Performance Indicators, Process impact
 
 The system closes the information gap between ore extraction and processing, enabling blending decisions based on current state rather than historical assumptions.
 

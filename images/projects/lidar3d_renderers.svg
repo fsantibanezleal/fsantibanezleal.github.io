@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
-  <title>Lidar3D — one baked cloud, four honest renderers</title>
+  <title>Lidar3D, one baked cloud, four honest renderers</title>
   <desc>Reconstruction engines run offline to produce one baked point cloud, which four renderers draw under one unified transform; the app replays baked artifacts, discloses approximations in the UI, and shows metrics without ground truth as none with a reason.</desc>
   <defs>
     <linearGradient id="bgL3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#111a2b"/></linearGradient>
@@ -7,7 +7,7 @@
   </defs>
   <rect width="800" height="400" fill="url(#bgL3)" rx="8"/>
   <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1f3a52" stroke-width="2" rx="8"/>
-  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">LIDAR3D — ONE BAKED CLOUD, FOUR HONEST RENDERERS</text>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">LIDAR3D, ONE BAKED CLOUD, FOUR HONEST RENDERERS</text>
   <text x="400" y="46" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" fill="#6b8299">early research lab (v0.1) · offline GPU reconstruction → in-browser replay · NOT real-time, NOT SLAM</text>
 
   <g font-family="Arial,sans-serif">
@@ -34,7 +34,7 @@
 
     <!-- four renderers -->
     <rect x="354" y="66" width="428" height="176" rx="8" fill="#0a1628" stroke="#1f3a52"/>
-    <text x="568" y="86" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#9fb3c8">Four renderers — same cloud, one transform</text>
+    <text x="568" y="86" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#9fb3c8">Four renderers, same cloud, one transform</text>
     <rect x="368" y="98" width="196" height="60" rx="6" fill="#0d1117" stroke="#3a5a7c" stroke-width="0.8"/>
     <text x="466" y="122" text-anchor="middle" font-size="8.6" font-weight="bold" fill="#cdd9e5">three.js</text><text x="466" y="140" text-anchor="middle" font-size="7.4" fill="#9fb3c8">points</text>
     <rect x="572" y="98" width="196" height="60" rx="6" fill="#0d1117" stroke="#3a5a7c" stroke-width="0.8"/>
@@ -49,7 +49,7 @@
     <text x="400" y="277" text-anchor="middle" font-size="9" font-weight="bold" fill="#e8a838">Renderer honesty is the point, not fidelity</text>
     <text x="400" y="295" text-anchor="middle" font-size="8" fill="#cdd9e5">all four draw the SAME cloud under ONE transform · metrics without ground truth show "none" + a reason · approximations disclosed in-UI · a coordinate-mirror bug was found &amp; fixed</text>
 
-    <text x="400" y="332" text-anchor="middle" font-size="8.6" fill="#9fb3c8">An early lab with a negative-results ledger — it does not claim real-time, SLAM, or beating the state of the art</text>
+    <text x="400" y="332" text-anchor="middle" font-size="8.6" fill="#9fb3c8">An early lab with a negative-results ledger, it does not claim real-time, SLAM, or beating the state of the art</text>
     <text x="400" y="356" text-anchor="middle" font-size="8.4" fill="#7d93a8">live at lidar3d.fasl-work.com · PyTorch offline · React/Vite viewer (three.js · deck.gl · Potree)</text>
   </g>
 </svg>

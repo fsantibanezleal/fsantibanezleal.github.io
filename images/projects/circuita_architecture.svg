@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
-  <title>Circuita — stochastic mineral-tracking engine and console</title>
+  <title>Circuita, stochastic mineral-tracking engine and console</title>
   <desc>A stochastic cellular-automaton engine simulates how material mixes and lags through a processing circuit; an operator console renders per-pile fan, balance, delta and inventory views, and a report builder emits a self-contained bilingual HTML file with inline-SVG charts.</desc>
   <defs>
     <linearGradient id="bgCI" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#121a2b"/></linearGradient>
@@ -7,7 +7,7 @@
   </defs>
   <rect width="800" height="400" fill="url(#bgCI)" rx="8"/>
   <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1f3a52" stroke-width="2" rx="8"/>
-  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">CIRCUITA — STOCHASTIC MINERAL-TRACKING ENGINE &amp; CONSOLE</text>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">CIRCUITA, STOCHASTIC MINERAL-TRACKING ENGINE &amp; CONSOLE</text>
   <text x="400" y="46" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" fill="#6b8299">private product · architecture shown without internal data or logic</text>
 
   <g font-family="Arial,sans-serif">
@@ -29,7 +29,7 @@
 
     <!-- console views -->
     <rect x="232" y="74" width="300" height="150" rx="6" fill="#0a1628" stroke="#1f3a52"/>
-    <text x="382" y="94" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#9fb3c8">Operator console — per-pile views</text>
+    <text x="382" y="94" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#9fb3c8">Operator console, per-pile views</text>
     <rect x="246" y="104" width="130" height="44" rx="4" fill="#11243b" stroke="#3a5a7c" stroke-width="0.7"/>
     <text x="311" y="123" text-anchor="middle" font-size="8.4" fill="#cdd9e5">Fan</text>
     <text x="311" y="137" text-anchor="middle" font-size="7.4" fill="#9fb3c8">composition spread</text>
@@ -49,7 +49,7 @@
     <text x="670" y="94" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#3ddc97">Self-contained report</text>
     <text x="670" y="114" text-anchor="middle" font-size="8" fill="#bfe9d6">downsampled series per pile</text>
     <text x="670" y="130" text-anchor="middle" font-size="8" fill="#bfe9d6">bilingual HTML + inline-SVG charts</text>
-    <text x="670" y="146" text-anchor="middle" font-size="8" fill="#bfe9d6">opens anywhere — no server</text>
+    <text x="670" y="146" text-anchor="middle" font-size="8" fill="#bfe9d6">opens anywhere, no server</text>
     <rect x="600" y="158" width="140" height="50" rx="4" fill="#0c2018" stroke="#2f6e54" stroke-width="0.8"/>
     <polyline points="612,196 626,182 640,190 654,172 668,186 682,176 728,176" fill="none" stroke="#3ddc97" stroke-width="1.2"/>
 
@@ -59,7 +59,7 @@
 
     <!-- footer -->
     <rect x="22" y="244" width="756" height="58" rx="6" fill="#0c1622" stroke="#1f3a52"/>
-    <text x="400" y="266" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#e8a838">See where material actually goes — not where a static balance says it should</text>
+    <text x="400" y="266" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#e8a838">See where material actually goes, not where a static balance says it should</text>
     <text x="400" y="285" text-anchor="middle" font-size="8.2" fill="#cdd9e5">simulate the real stochastic behavior, then make it legible and shareable</text>
 
     <text x="400" y="330" text-anchor="middle" font-size="8.8" fill="#9fb3c8">Stack: TypeScript · Next.js · Python · FastAPI · cellular automata · SVG</text>

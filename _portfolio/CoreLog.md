@@ -1,5 +1,5 @@
 ---
-title: "CoreLog Vision — Drill-Core Logging & Lithology Classification Workbench"
+title: "CoreLog Vision, Drill-Core Logging & Lithology Classification Workbench"
 date: 2026-07-04
 excerpt: "A browser-native drill-core logging workbench: it classifies sliding windows along core-tray channels into six lithologies with a CNN, merges adjacent same-class patches into a depth-stitched strip log with confidence shading, and flags out-of-distribution core with a Mahalanobis detector instead of forcing a class. It runs on procedurally synthetic trays, with a real-photo lane (DCID) used strictly as the out-of-distribution and real-head evaluation set. Honest by design: the CNN accuracy is synthetic-vs-synthetic, a label-permutation control collapses to chance, and the shipped detector is named for what it is.<br/><img src='/images/projects/corelog_app.png'>"
 collection: portfolio
@@ -8,7 +8,7 @@ tags: [mining-analytics, drill-core, lithology, cnn, computer-vision, out-of-dis
 
 CoreLog Vision is a browser-native **drill-core logging** workbench. It classifies sliding windows along core-tray channels into six lithologies with a CNN, merges adjacent same-class patches into a depth-stitched strip log with confidence shading, and flags out-of-distribution core instead of forcing a class. Live at [corelog.fasl-work.com](https://corelog.fasl-work.com), part of the [Faena](https://faena.fasl-work.com) mining-analytics hub.
 
-![CoreLog Vision — a lithology CNN plus a Mahalanobis out-of-distribution flag, run client-side over core trays](/images/projects/corelog_app.png)
+![CoreLog Vision, a lithology CNN plus a Mahalanobis out-of-distribution flag, run client-side over core trays](/images/projects/corelog_app.png)
 
 ## Three rungs, run live
 

@@ -18,10 +18,10 @@ The core idea behind this work is to borrow a technique from natural language pr
 
 <div style="background:#0d1b2a;padding:16px 20px;border-radius:8px;margin:16px 0;font-family:Georgia,serif;color:#e0e0e0;font-size:15px;line-height:1.8;">
 <strong style="color:#e07830;">LDA for mineral unmixing:</strong><br/>
-p(mineral | pixel) = Σ<sub>k</sub> p(mineral | topic<sub>k</sub>) × p(topic<sub>k</sub> | pixel) — each pixel is a mixture of mineral "topics"
+p(mineral | pixel) = Σ<sub>k</sub> p(mineral | topic<sub>k</sub>) × p(topic<sub>k</sub> | pixel), each pixel is a mixture of mineral "topics"
 </div>
 
-![Sampling comparison — related geostatistical work presented at the same venue](/images/rollings/owp_sampling_comparison.svg)
+![Sampling comparison, related geostatistical work presented at the same venue](/images/rollings/owp_sampling_comparison.svg)
 
 This reframing is not just a clever analogy -- it opened new possibilities that go well beyond traditional spectral unmixing. It provides a principled, probabilistic way to decompose complex mineral mixtures without requiring prior knowledge of the exact minerals present. The model learns the characteristic spectral patterns directly from the data, grouping pixels into coherent mineral assemblages.
 

@@ -124,7 +124,7 @@
 
   <!-- Main drift (Level 1) -->
   <rect x="80" y="250" width="600" height="26" rx="5" fill="#080808" opacity="0.75" stroke="#5a4a30" stroke-width="1"/>
-  <text x="380" y="268" style="font-family:Arial,sans-serif;font-size:9px;fill:#7db8e0;text-anchor:middle;">MAIN DRIFT — Level 1</text>
+  <text x="380" y="268" style="font-family:Arial,sans-serif;font-size:9px;fill:#7db8e0;text-anchor:middle;">MAIN DRIFT, Level 1</text>
 
   <!-- Cross-cuts (vertical tunnels) -->
   <rect x="170" y="278" width="24" height="55" rx="4" fill="#080808" opacity="0.65" stroke="#5a4a30" stroke-width="0.8"/>
@@ -133,7 +133,7 @@
 
   <!-- Lower drift (Level 2) -->
   <rect x="140" y="338" width="420" height="22" rx="4" fill="#080808" opacity="0.6" stroke="#5a4a30" stroke-width="0.8"/>
-  <text x="350" y="353" style="font-family:Arial,sans-serif;font-size:8px;fill:#5a9ac0;text-anchor:middle;">LOWER DRIFT — Level 2</text>
+  <text x="350" y="353" style="font-family:Arial,sans-serif;font-size:8px;fill:#5a9ac0;text-anchor:middle;">LOWER DRIFT, Level 2</text>
 
   <!-- Seismic sensors (orange circles with radiation rings) -->
   <circle cx="140" cy="263" r="5" fill="#e07830"/>

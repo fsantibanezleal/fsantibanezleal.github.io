@@ -9,7 +9,7 @@ tags:
   - Hyperspectral Imaging
 ---
 
-Starting the characterization of our industrial partner's cement samples — the first step in building a spectral database for material classification.
+Starting the characterization of our industrial partner's cement samples, the first step in building a spectral database for material classification.
 
 The samples
 ======
@@ -43,7 +43,7 @@ Acquisition
 ![img](/files/personal-blog/2021-05-13-01/10.jpg)
 ![img](/files/personal-blog/2021-05-13-01/11.jpg)
 
-In total, I acquired 7 hyperspectral images across the samples. That is a *lot* of spectral pixels for this amount of material — the RAW database is close to 200 GB.
+In total, I acquired 7 hyperspectral images across the samples. That is a *lot* of spectral pixels for this amount of material, the RAW database is close to 200 GB.
 
 <iframe src="https://www.youtube.com/embed/0ni4GjJX5Zw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -54,6 +54,6 @@ Off-topic find of the day
 
 I came across an article about altered visual encoding capacity in individuals with autism spectrum disorder. [PLOS Biology Article](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001215)
 
-The article draws connections with the Cramer-Rao lower bound and Fisher information — a nice bridge between neuroscience and the kind of estimation theory I work with daily.
+The article draws connections with the Cramer-Rao lower bound and Fisher information, a nice bridge between neuroscience and the kind of estimation theory I work with daily.
 
 ![img](/files/personal-blog/2021-05-13-01/21.jpg)

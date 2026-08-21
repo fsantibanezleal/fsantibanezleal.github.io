@@ -1,12 +1,12 @@
 ---
 title: "Super-Resolution Microscopy via Optical Fluctuation Imaging"
 date: 2012-07-01
-excerpt: "SOFI implementation for quantum dot fluorescence analysis — achieving sub-diffraction resolution through higher-order cumulant computation.<br/><img src='/images/projects/sofi_qdots.svg'>"
+excerpt: "SOFI implementation for quantum dot fluorescence analysis, achieving sub-diffraction resolution through higher-order cumulant computation.<br/><img src='/images/projects/sofi_qdots.svg'>"
 collection: portfolio
 tags: [super-resolution, microscopy, sofi, cumulants, quantum-dots, python, fastapi]
 ---
 
-This project implements Super-resolution Optical Fluctuation Imaging (SOFI), a computational technique that extracts sub-diffraction spatial information from the temporal fluorescence fluctuations of independently blinking emitters — in this case, quantum dots. The fundamental insight behind SOFI is that the nth-order cumulant of intensity time traces narrows the effective point spread function (PSF) by a factor of sqrt(n), achieving spatial resolution beyond the classical diffraction limit without requiring the single-molecule sparsity that techniques like PALM or STORM demand.
+This project implements Super-resolution Optical Fluctuation Imaging (SOFI), a computational technique that extracts sub-diffraction spatial information from the temporal fluorescence fluctuations of independently blinking emitters, in this case, quantum dots. The fundamental insight behind SOFI is that the nth-order cumulant of intensity time traces narrows the effective point spread function (PSF) by a factor of sqrt(n), achieving spatial resolution beyond the classical diffraction limit without requiring the single-molecule sparsity that techniques like PALM or STORM demand.
 
 Core algorithm
 ======
@@ -28,10 +28,10 @@ Related publication: [SOFI of GABAB neurotransmitter receptors in hippocampal ne
 
 ## Live application
 
-▶ **[Live demo — sofi.fasl-work.com](https://sofi.fasl-work.com)** — SOFI super-resolution imaging from quantum dot fluctuations.
+▶ **[Live demo, sofi.fasl-work.com](https://sofi.fasl-work.com)**, SOFI super-resolution imaging from quantum dot fluctuations.
 
-![SOFI — Quantum dot simulation interface](/images/projects/screenshots/sofi_frontend.png)
+![SOFI, Quantum dot simulation interface](/images/projects/screenshots/sofi_frontend.png)
 
-![SOFI — Cumulant output visualization](/images/projects/screenshots/sofi_frontend_outputs.png)
+![SOFI, Cumulant output visualization](/images/projects/screenshots/sofi_frontend_outputs.png)
 
 [View on GitHub](https://github.com/fsantibanezleal/FASL_SOFI_QDOTS)

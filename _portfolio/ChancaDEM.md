@@ -1,5 +1,5 @@
 ---
-title: "ChancaDEM — Crusher-Comminution Studio (Population-Balance Engine)"
+title: "ChancaDEM, Crusher-Comminution Studio (Population-Balance Engine)"
 date: 2026-07-09
 excerpt: "An in-browser crusher-comminution studio: you set the machine, closed-side setting, eccentric throw and speed and the feed gradation, and a pure-TypeScript closed-form engine (Whiten population balance + Evertsson capacity + Bond power) computes the product gradation, throughput and power in sub-millisecond. Despite the name it does NOT run DEM: the 3D chamber is a kinematic animation. The secondary-cone lane is calibrated against 10 published HP500 surveys (Rocha et al. 2024), with a leave-one-out cross-validation that includes negative controls.<br/><img src='/images/projects/chancadem_app.png'>"
 collection: portfolio
@@ -8,7 +8,7 @@ tags: [mining-optimization, comminution, crushing, population-balance, whiten, e
 
 ChancaDEM is an in-browser **crusher-comminution studio**. You set the machine, closed-side setting, eccentric throw and speed and the feed gradation, and a pure-TypeScript closed-form engine computes the product gradation, throughput and power in sub-millisecond. Despite the name it does **not** run DEM: the 3D chamber is a kinematic animation, the offline 2-D DEM tracer is unwired and unbaked, and the app says so on its Introduction page. Live at [chancadem.fasl-work.com](https://chancadem.fasl-work.com), part of the [Faena](https://faena.fasl-work.com) mining-analytics hub.
 
-![ChancaDEM — a Whiten population balance solved live by LU, plus Evertsson capacity and Bond power, in the browser](/images/projects/chancadem_app.png)
+![ChancaDEM: a Whiten population balance solved live by LU, plus Evertsson capacity and Bond power, in the browser](/images/projects/chancadem_app.png)
 
 ## The model chain
 

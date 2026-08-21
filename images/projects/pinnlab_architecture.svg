@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
-  <title>PINN-Lab — two worlds joined by an artifact contract</title>
+  <title>PINN-Lab, two worlds joined by an artifact contract</title>
   <desc>An offline Python world trains each PINN with DeepXDE, validates it against an analytic, FEM, or real-data anchor, and exports it to ONNX. An artifact contract of manifests, field traces, and per-case ONNX networks crosses to a static web world that loads the ONNX and re-infers it live in the browser with onnxruntime-web as a physical parameter slider moves.</desc>
   <defs>
     <linearGradient id="bgP" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#121a2b"/></linearGradient>
@@ -7,7 +7,7 @@
   </defs>
   <rect width="800" height="400" fill="url(#bgP)" rx="8"/>
   <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1f3a52" stroke-width="2" rx="8"/>
-  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">PINN-Lab — TWO WORLDS JOINED BY AN ARTIFACT CONTRACT</text>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">PINN-Lab, TWO WORLDS JOINED BY AN ARTIFACT CONTRACT</text>
 
   <g font-family="Arial,sans-serif">
     <!-- OFFLINE WORLD -->
@@ -66,13 +66,13 @@
 
     <!-- onnxruntime-web live -->
     <rect x="544" y="166" width="228" height="48" rx="5" fill="#0c2018" stroke="#2f6e54" stroke-width="0.9"/>
-    <text x="658" y="184" text-anchor="middle" font-size="8.2" font-weight="bold" fill="#3ddc97">onnxruntime-web — live re-inference</text>
+    <text x="658" y="184" text-anchor="middle" font-size="8.2" font-weight="bold" fill="#3ddc97">onnxruntime-web, live re-inference</text>
     <text x="658" y="199" text-anchor="middle" font-size="7.4" fill="#bfe9d6">move the parameter slider → the network re-solves the PDE</text>
     <text x="658" y="210" text-anchor="middle" font-size="6.8" fill="#6b8299">18 / 19 cases live · 1 replay (Darcy FNO)</text>
 
     <!-- footer -->
     <rect x="14" y="264" width="772" height="56" rx="6" fill="#0c1622" stroke="#1f3a52"/>
-    <text x="400" y="286" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#e8a838">Measured, not curated — relative-L2 published per case (including the imperfect ones)</text>
+    <text x="400" y="286" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#e8a838">Measured, not curated, relative-L2 published per case (including the imperfect ones)</text>
     <text x="400" y="304" text-anchor="middle" font-size="8" fill="#cdd9e5">clean analytic ≤ ~0.4% · Helmholtz ~10% · Navier-cavity ~17% (spectral bias) · 1 real-data case (NOAA USCRN, RMSE 1.03 °C)</text>
 
     <text x="400" y="346" text-anchor="middle" font-size="9" font-weight="bold" fill="#9fb3c8">19 cases · forward + inverse + UQ + operator learning · 18 live / 1 replay</text>

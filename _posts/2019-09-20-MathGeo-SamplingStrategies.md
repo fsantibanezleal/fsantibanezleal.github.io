@@ -19,7 +19,7 @@ This paper represents one of the central chapters of my PhD thesis, and seeing i
 ![Resolvability and sampling comparison](/images/rollings/owp_resolvability.svg)
 
 <div style="background:#0d1b2a;padding:16px 20px;border-radius:8px;margin:16px 0;font-family:Georgia,serif;color:#e0e0e0;font-size:15px;line-height:1.8;">
-<strong style="color:#e07830;">Mutual information — the quantity we maximize:</strong><br/>
+<strong style="color:#e07830;">Mutual information, the quantity we maximize:</strong><br/>
 I(X<sub>f</sub>; X<sup>f</sup>) = H(X<sup>f</sup>) − H(X<sup>f</sup> | X<sub>f</sub>)
 </div>
 

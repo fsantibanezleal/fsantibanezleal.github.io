@@ -6,13 +6,13 @@ collection: portfolio
 tags: [biophysics, simulation, three-js, fastapi, developmental-biology, python]
 ---
 
-A **3D simulation of Deep Forming Cell (DFC) collective migration** on the surface of a spherical zebrafish embryo during epiboly — a fundamental process in vertebrate development where cells spread to cover the yolk cell.
+A **3D simulation of Deep Forming Cell (DFC) collective migration** on the surface of a spherical zebrafish embryo during epiboly, a fundamental process in vertebrate development where cells spread to cover the yolk cell.
 
 ![Spherical Model](/images/projects/sphersim.svg)
 
 ## Biological context
 
-During zebrafish gastrulation, the Enveloping Layer (EVL) expands from the animal pole toward the vegetal pole. Deep Forming Cells (DFCs) are carried along by the advancing EVL margin, eventually clustering to form the Kupffer's vesicle — an organ critical for establishing left-right body asymmetry. Understanding the mechanics of this collective migration requires modeling how cells move, collide, and respond to tissue-level forces on a curved surface.
+During zebrafish gastrulation, the Enveloping Layer (EVL) expands from the animal pole toward the vegetal pole. Deep Forming Cells (DFCs) are carried along by the advancing EVL margin, eventually clustering to form the Kupffer's vesicle, an organ critical for establishing left-right body asymmetry. Understanding the mechanics of this collective migration requires modeling how cells move, collide, and respond to tissue-level forces on a curved surface.
 
 ## The simulation
 
@@ -41,8 +41,8 @@ This project originated at the [Laboratory for Scientific Image Analysis (SCIAN-
 
 ## Live application
 
-▶ **[Live demo — sphersim.fasl-work.com](https://sphersim.fasl-work.com)** — 3D embryo cell migration simulator on a spherical surface.
+▶ **[Live demo, sphersim.fasl-work.com](https://sphersim.fasl-work.com)**, 3D embryo cell migration simulator on a spherical surface.
 
-![3D Embryo Simulator — Three.js visualization](/images/projects/screenshots/sphersim_frontend.png)
+![3D Embryo Simulator, Three.js visualization](/images/projects/screenshots/sphersim_frontend.png)
 
 [View on GitHub](https://github.com/fsantibanezleal/SCIAN_EVL_SpherSIM)
