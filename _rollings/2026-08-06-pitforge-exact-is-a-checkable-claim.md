@@ -20,7 +20,7 @@ PitForge: "exact" is a checkable claim, so check it
 
 <div style="background:#0d1b2a;padding:16px 20px;border-radius:8px;margin:16px 0;font-family:Georgia,serif;color:#e0e0e0;font-size:15px;line-height:1.8;">
 <strong style="color:#e07830;">Three published MineLib optima, reproduced to 2e-9 relative error or better.</strong><br/>
-newman1 (1,060 blocks, 1.9 ms), zuck_small (9,400 blocks, 111 ms), kd (14,153 blocks and 219,778 precedences, 207 ms median), as Node medians of three on the same TypeScript engine the browser runs.<br/>
+newman1 (1,060 blocks), zuck_small (9,400 blocks), kd (14,153 blocks and 219,778 precedences), solving in milliseconds to a fraction of a second under Node on the same TypeScript engine the browser runs.<br/>
 <span style="color:#5a9ac0;font-size:13px;">Three further instances are excluded, with the reasons committed rather than omitted. The max-flow duality identity, pitValue = sum(positive) - maxflow, is asserted in the explicit-precedence MineLib lane and displayed as a live check on the interactive one, so a wrong answer cannot pass quietly.</span>
 </div>
 
