@@ -1,5 +1,5 @@
 ---
-title: "StockTwin — Run-of-Mine Stockpile Twin (Built Truck by Truck)"
+title: "StockTwin, Run-of-Mine Stockpile Twin (Built Truck by Truck)"
 date: 2026-08-02
 excerpt: "A run-of-mine stockpile built the way one actually is: by trucks, one load at a time, following a dump plan, on ground they have to be able to climb. It measures how much the pile homogenises the feed (variance reduction against the 1/N layer bound, withheld where unreliable), where each reclaimed tonne came from (a lot ledger summing to one on every cut), and how much size segregation biases the cut. 22 scenarios, 22,656 loads, every one relaxing to zero cell pairs over the angle of repose. Synthetic + MineLib-public data only; not a blending optimizer and no plant setpoint.<br/><img src='/images/projects/stocktwin_app.png'>"
 collection: portfolio
@@ -8,7 +8,7 @@ tags: [mining-simulation, stockpile, blending, grade-control, kinetic-sieving, t
 
 A **run-of-mine stockpile twin** built the way one actually is: by trucks, one load at a time, following a dump plan, on ground they have to be able to climb. Live at [stocktwin.fasl-work.com](https://stocktwin.fasl-work.com), part of the [Faena](https://faena.fasl-work.com) hub.
 
-![StockTwin — a ROM stockpile built truck by truck, coloured by grade, with the reclaim and provenance readouts](/images/projects/stocktwin_app.png)
+![StockTwin: a ROM stockpile built truck by truck, coloured by grade, with the reclaim and provenance readouts](/images/projects/stocktwin_app.png)
 
 ## The fact the whole product turns on
 

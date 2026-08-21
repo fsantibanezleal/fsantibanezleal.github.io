@@ -1,12 +1,12 @@
 ---
-title: "FeelIT 2.0 — Haptic Accessibility Workbench"
+title: "FeelIT 2.0, Haptic Accessibility Workbench"
 date: 2026-03-01
-excerpt: "Modern web-based haptic accessibility platform for tactile 3D object exploration, Braille reading, and haptic desktop interaction — resurrecting and expanding a 2008 accessibility vision.<br/><img src='/images/projects/feelit2_modes.svg'>"
+excerpt: "Modern web-based haptic accessibility platform for tactile 3D object exploration, Braille reading, and haptic desktop interaction, resurrecting and expanding a 2008 accessibility vision.<br/><img src='/images/projects/feelit2_modes.svg'>"
 collection: portfolio
 tags: [accessibility, haptics, braille, three-js, fastapi, assistive-technology, python]
 ---
 
-A **web-based haptic accessibility workbench** that enables visually impaired users to explore 3D objects through touch, read Braille text in immersive 3D environments, and navigate a haptic desktop for models, documents, and audio. This is the modern realization of a vision that began in 2008 — now built on Python/FastAPI + Three.js instead of Windows Forms + OpenGL.
+A **web-based haptic accessibility workbench** that enables visually impaired users to explore 3D objects through touch, read Braille text in immersive 3D environments, and navigate a haptic desktop for models, documents, and audio. This is the modern realization of a vision that began in 2008, now built on Python/FastAPI + Three.js instead of Windows Forms + OpenGL.
 
 ## The resurrection
 
@@ -16,7 +16,7 @@ The [original FeelIT](/portfolio/FeelIT/) (2008-2012) was frozen when hardware m
 
 Tactile accessibility remains an underserved space. Screen readers and audio descriptions dominate assistive technology, but audio alone cannot convey spatial relationships, 3D shapes, or the physical texture of objects. FeelIT 2.0 addresses this gap with a structured, multi-workspace approach to tactile interaction.
 
-## Key Performance Indicators — Process impact
+## Key Performance Indicators, Process impact
 
 | KPI | Baseline (audio-only AT) | With FeelIT 2.0 | Impact |
 |-----|--------------------------|-----------------|--------|
@@ -76,13 +76,13 @@ Create new workspaces from external folders with auto-population of models, docu
 
 ## Live application
 
-▶ **[Live demo — feelit.fasl-work.com](https://feelit.fasl-work.com)** — haptic accessibility workbench (4 workspaces + Braille reader).
+▶ **[Live demo, feelit.fasl-work.com](https://feelit.fasl-work.com)**, haptic accessibility workbench (4 workspaces + Braille reader).
 
-![FeelIT 2.0 — Braille Reader workspace](/images/projects/screenshots/feelit2_braille_reader.png)
+![FeelIT 2.0, Braille Reader workspace](/images/projects/screenshots/feelit2_braille_reader.png)
 
-![FeelIT 2.0 — 3D Object Explorer](/images/projects/screenshots/feelit2_object_explorer.png)
+![FeelIT 2.0, 3D Object Explorer](/images/projects/screenshots/feelit2_object_explorer.png)
 
-![FeelIT 2.0 — Haptic Desktop](/images/projects/screenshots/feelit2_haptic_desktop.png)
+![FeelIT 2.0, Haptic Desktop](/images/projects/screenshots/feelit2_haptic_desktop.png)
 
 ## Methodological honesty
 
@@ -90,6 +90,6 @@ This project explicitly separates what is **shipped and tested** from what is **
 
 ## Recent updates
 
-**v2.18.000 (April 2026)**: First bounded native haptic pilot — real force feedback through physical device. The pluggable backend abstraction allowed hardware integration with zero changes to workspaces, Braille engine, or material profiles. Haptic configuration review flow added for safe parameter adjustment before sessions.
+**v2.18.000 (April 2026)**: First bounded native haptic pilot, real force feedback through physical device. The pluggable backend abstraction allowed hardware integration with zero changes to workspaces, Braille engine, or material profiles. Haptic configuration review flow added for safe parameter adjustment before sessions.
 
 [View on GitHub](https://github.com/fsantibanezleal/UDEC_FEELIT)

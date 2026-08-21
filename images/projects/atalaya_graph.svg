@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
-  <title>Atalaya — harvest, profile and relate Chile's open data into a knowledge graph</title>
+  <title>Atalaya, harvest, profile and relate Chile's open data into a knowledge graph</title>
   <desc>A data-engineering pipeline harvests, profiles, relates, evaluates and exports 1017 datasets into a knowledge graph of five relation types, with client-side semantic search; the strength of the evidence is reported honestly and never as causation.</desc>
   <defs>
     <linearGradient id="bgAT" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#0f1622"/></linearGradient>
@@ -7,7 +7,7 @@
   </defs>
   <rect width="800" height="400" fill="url(#bgAT)" rx="8"/>
   <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1f3a52" stroke-width="2" rx="8"/>
-  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">ATALAYA — A WATCHTOWER OVER CHILE'S OPEN DATA</text>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">ATALAYA, A WATCHTOWER OVER CHILE'S OPEN DATA</text>
 
   <g font-family="Arial,sans-serif">
     <!-- pipeline stages -->
@@ -30,8 +30,8 @@
     <text x="34" y="168" font-size="8.2" fill="#cdd9e5">• same-source</text>
     <text x="34" y="184" font-size="8.2" fill="#cdd9e5">• semantic similarity (MiniLM → ONNX)</text>
     <text x="34" y="200" font-size="8.2" fill="#cdd9e5">• spatial overlap</text>
-    <text x="34" y="216" font-size="8.2" fill="#3ddc97">• joinability (MinHash containment) — 117</text>
-    <text x="34" y="232" font-size="8.2" fill="#3ddc97">• correlation (Spearman + permutation null + FDR) — 24</text>
+    <text x="34" y="216" font-size="8.2" fill="#3ddc97">• joinability (MinHash containment), 117</text>
+    <text x="34" y="232" font-size="8.2" fill="#3ddc97">• correlation (Spearman + permutation null + FDR), 24</text>
 
     <!-- knowledge graph payoff -->
     <rect x="416" y="128" width="366" height="118" rx="8" fill="#0a1628" stroke="#29B6F6" stroke-width="1.2"/>
@@ -45,7 +45,7 @@
 
     <!-- honesty chips -->
     <rect x="20" y="258" width="762" height="52" rx="6" fill="#0c1622" stroke="#1f3a52"/>
-    <text x="401" y="279" text-anchor="middle" font-size="9" font-weight="bold" fill="#e8a838">Honest about evidence strength — never causal</text>
+    <text x="401" y="279" text-anchor="middle" font-size="9" font-weight="bold" fill="#e8a838">Honest about evidence strength, never causal</text>
     <text x="401" y="297" text-anchor="middle" font-size="8" fill="#cdd9e5">of ~14,000 edges, most are cheap priors · the hard evidence is 117 joins + 24 FDR-controlled correlations · SOTA beats classical only ~+1.4 pts · small-n correlations flagged fragile</text>
 
     <text x="401" y="334" text-anchor="middle" font-size="8.6" fill="#9fb3c8">classical (PCA/KMeans/TF-IDF) + SOTA (MiniLM) + a novel calibrated multi-evidence affinity score (live-reweightable)</text>

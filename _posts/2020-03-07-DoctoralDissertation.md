@@ -32,7 +32,7 @@ This work aims at formalizing the OSP problem for a given amount of available me
 ![Information theory for spatial sampling](/images/rollings/owp_information_theory.svg)
 
 <div style="background:#0d1b2a;padding:16px 20px;border-radius:8px;margin:16px 0;font-family:Georgia,serif;color:#e0e0e0;font-size:15px;line-height:1.8;">
-<strong style="color:#e07830;">Shannon entropy — maximum at uniform distribution (maximum uncertainty):</strong><br/>
+<strong style="color:#e07830;">Shannon entropy, maximum at uniform distribution (maximum uncertainty):</strong><br/>
 H(X) = −Σ p(x) log₂ p(x)
 </div>
 

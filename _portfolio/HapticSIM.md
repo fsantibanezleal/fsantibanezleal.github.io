@@ -21,14 +21,14 @@ Contact forces follow a spring-damper model based on Hooke's law with viscous da
 Origin and context
 ======
 
-This was my 2008 undergraduate thesis project at Universidad de Concepcion, part of a FONDEF-funded project aimed at building arthroscopic surgical training simulators. The haptic device work was also the technology exploration that directly led to the [FeelIT project](/portfolio/FeelIT/) — a haptic interface for visually impaired people. The legacy C++/CLI code is preserved alongside the modern Python/FastAPI web application.
+This was my 2008 undergraduate thesis project at Universidad de Concepcion, part of a FONDEF-funded project aimed at building arthroscopic surgical training simulators. The haptic device work was also the technology exploration that directly led to the [FeelIT project](/portfolio/FeelIT/), a haptic interface for visually impaired people. The legacy C++/CLI code is preserved alongside the modern Python/FastAPI web application.
 
 ![Haptic Simulation](/images/projects/haptic_sim.svg)
 
 ## Live application
 
-▶ **[Live demo — haptic.fasl-work.com](https://haptic.fasl-work.com)** — 3D haptic simulator — octree collision + spring-damper feedback.
+▶ **[Live demo, haptic.fasl-work.com](https://haptic.fasl-work.com)**, 3D haptic simulator, octree collision + spring-damper feedback.
 
-![3D Haptic Simulation — Octree visualization and force feedback](/images/projects/screenshots/haptic_frontend.png)
+![3D Haptic Simulation, Octree visualization and force feedback](/images/projects/screenshots/haptic_frontend.png)
 
 [View on GitHub](https://github.com/fsantibanezleal/UDEC_Haptic_SIM)

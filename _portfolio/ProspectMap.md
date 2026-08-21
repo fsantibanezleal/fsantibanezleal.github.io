@@ -1,5 +1,5 @@
 ---
-title: "ProspectMap — Mineral Prospectivity Workbench with a Published Null Result"
+title: "ProspectMap, Mineral Prospectivity Workbench with a Published Null Result"
 date: 2026-07-06
 excerpt: "A mineral-prospectivity workbench that computes a Weights-of-Evidence posterior P(deposit|evidence) live in the browser over stacked geophysical, geochemical and structural layers, and whose real reason to exist is adversarial honesty. On real US Midcontinent MVT Zn-Pb belt data (Lawley et al. 2022, USGS public domain) it publishes a recorded null: the proposed PU-Conformal method loses to 1989-vintage Weights of Evidence, and a trivial distance-to-deposit baseline already ties the best learned model, so most apparent skill is spatial proximity, not learned geology.<br/><img src='/images/projects/prospectmap_app.png'>"
 collection: portfolio
@@ -8,7 +8,7 @@ tags: [mining-analytics, mineral-prospectivity, weights-of-evidence, null-result
 
 ProspectMap is a **mineral-prospectivity** workbench. It computes a Weights-of-Evidence posterior P(deposit|evidence) live in the browser over stacked geophysical, geochemical and structural layers, and its reason to exist is adversarial honesty: it makes first-class the two ways prospectivity maps lie (conditional-independence violation and random-CV inflation), and it publishes a recorded null result on real data. Live at [prospectmap.fasl-work.com](https://prospectmap.fasl-work.com), part of the [Faena](https://faena.fasl-work.com) mining-analytics hub.
 
-![ProspectMap — a Weights-of-Evidence posterior with its failure modes made first-class, in the browser](/images/projects/prospectmap_app.png)
+![ProspectMap, a Weights-of-Evidence posterior with its failure modes made first-class, in the browser](/images/projects/prospectmap_app.png)
 
 ## No AlphaEarth, no foundation-model embeddings
 

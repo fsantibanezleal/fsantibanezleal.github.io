@@ -18,7 +18,7 @@ Together with Dr. Jorge Toledo, we have taught this subject for several years. I
 
 Normally, this requires face-to-face sessions to support students as they learn to navigate image processing tools. The pandemic made that impossible. Worse, student attendance at fixed schedules became optional, making it harder for them to build the tool proficiency needed to truly benefit from the material.
 
-For now, the objective is to convey the core concepts and ensure students reach at least a basic working knowledge of the tools — enough to build on later when conditions allow deeper practice.
+For now, the objective is to convey the core concepts and ensure students reach at least a basic working knowledge of the tools, enough to build on later when conditions allow deeper practice.
 
 A touch of creativity
 ------

@@ -1,7 +1,7 @@
 ---
 title: "Robotic Writer"
 date: 2009-01-01
-excerpt: "Simulation and control of a 5-DOF robotic arm that picks letter blocks and spells words — kinematics, trajectory planning, and hardware integration.<br/><img src='/images/projects/robotic_writer.svg'>"
+excerpt: "Simulation and control of a 5-DOF robotic arm that picks letter blocks and spells words: kinematics, trajectory planning, and hardware integration.<br/><img src='/images/projects/robotic_writer.svg'>"
 collection: portfolio
 tags: [robotics, kinematics, denavit-hartenberg, simulation, dash, python, matlab]
 ---
@@ -45,15 +45,15 @@ Forward kinematics compose the transformations; inverse kinematics are solved an
 
 ## From 2004 to today
 
-The original 2004 lab used MATLAB scripts to command the physical Scorbot III. The modern version wraps the entire system — simulation, kinematics, planning, and optional hardware control — in a Python web application, making the project accessible without the physical robot.
+The original 2004 lab used MATLAB scripts to command the physical Scorbot III. The modern version wraps the entire system (simulation, kinematics, planning, and optional hardware control) in a Python web application, making the project accessible without the physical robot.
 
 ## Live application
 
-▶ **[Live demo — robotic.fasl-work.com](https://robotic.fasl-work.com)** — interactive Dash simulator running in the browser (simulation mode, no hardware required).
+▶ **[Live demo, robotic.fasl-work.com](https://robotic.fasl-work.com)**, interactive Dash simulator running in the browser (simulation mode, no hardware required).
 
-![Robotic Writer — 3D kinematics simulation and trajectory planning](/images/projects/screenshots/robotic_frontend.png)
+![Robotic Writer, 3D kinematics simulation and trajectory planning](/images/projects/screenshots/robotic_frontend.png)
 
-### Demo video — The robot spells words
+### Demo video, The robot spells words
 
 {% include youtube.html id="ubUdNsb0W-o" %}
 

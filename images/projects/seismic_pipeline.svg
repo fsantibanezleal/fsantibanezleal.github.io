@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
-  <title>CAOS Seismic — offline daily compute, git-as-data, static viewer</title>
+  <title>CAOS Seismic, offline daily compute, git-as-data, static viewer</title>
   <desc>Public seismic data feeds are pulled once per day by an offline job that cleans the catalog, fits ETAS plus a gated neural challenger, simulates an ensemble, calibrates, and runs CSEP tests; it commits one compact gzipped artifact to a public repo, which a static web viewer reads with no processing backend.</desc>
   <defs>
     <linearGradient id="bgS" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -11,7 +11,7 @@
     </marker>
   </defs>
   <rect width="800" height="400" fill="url(#bgS)"/>
-  <text x="400" y="34" text-anchor="middle" fill="#E8EAED" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">CAOS Seismic — heavy compute offline · the web is a pure viewer</text>
+  <text x="400" y="34" text-anchor="middle" fill="#E8EAED" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">CAOS Seismic, heavy compute offline · the web is a pure viewer</text>
 
   <!-- Stage 1: data feeds -->
   <rect x="24" y="78" width="170" height="150" rx="10" fill="#0f1f33" stroke="#29B6F6" stroke-width="1.5"/>
@@ -56,6 +56,6 @@
 
   <!-- creed strip -->
   <rect x="24" y="300" width="752" height="74" rx="10" fill="#0c1622" stroke="#1f3a52" stroke-width="1"/>
-  <text x="400" y="330" text-anchor="middle" fill="#E8EAED" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Earthquakes cannot be predicted, but their probability can be forecast — honestly.</text>
+  <text x="400" y="330" text-anchor="middle" fill="#E8EAED" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Earthquakes cannot be predicted, but their probability can be forecast, honestly.</text>
   <text x="400" y="356" text-anchor="middle" fill="#9fb3c8" font-family="Segoe UI, Arial, sans-serif" font-size="12">Every number is a probability in (0,1), shown next to its baseline, scored prospectively. Never an alarm. Never a "safe" state.</text>
 </svg>

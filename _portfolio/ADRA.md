@@ -1,5 +1,5 @@
 ---
-title: "ADRA — Adversarial Dev Review Agent"
+title: "ADRA, Adversarial Dev Review Agent"
 date: 2026-07-16
 excerpt: "A deterministic-first, adversarial-validation engine for the software lifecycle: deterministic tools run first and become grounding the model may not contradict, a blocking critic tries to refute each artifact instead of blessing it, and the loop escalates to a human where nothing deterministic backs the verdict. Live console, offline-capable, published on PyPI as adra.<br/><img src='/images/projects/adra_app.png'>"
 collection: portfolio
@@ -8,7 +8,7 @@ tags: [agentic-ai, code-review, adversarial-validation, llm, provenance, develop
 
 A **deterministic-first, adversarial-validation engine** for the software lifecycle. The design premise: an LLM review that can only agree with itself is worthless, so the loop is built to disagree. Live console at [adra.fasl-work.com](https://adra.fasl-work.com), published on PyPI as [adra](https://pypi.org/project/adra/), Apache-2.0.
 
-![ADRA — deterministic tools first, an adversarial critic, an LLM-as-judge, and human gates](/images/projects/adra_app.png)
+![ADRA: deterministic tools first, an adversarial critic, an LLM-as-judge, and human gates](/images/projects/adra_app.png)
 
 ## Deterministic first, adversarial always
 

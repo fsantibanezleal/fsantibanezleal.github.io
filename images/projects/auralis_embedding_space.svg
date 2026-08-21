@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
-  <title>Auralis — from a sound to a navigable 6D embedding trajectory</title>
+  <title>Auralis, from a sound to a navigable 6D embedding trajectory</title>
   <desc>An audio clip is analyzed into seven 6D embedding tracks (Features, PCA, t-SNE, UMAP, Tonnetz, YAMNet, CLAP), then mapped to a 3D trajectory where position, color, size and time encode the six dimensions, rendered in ten visual modes.</desc>
   <defs>
     <linearGradient id="bgA" x1="0%" y1="0%" x2="100%" y2="100%">

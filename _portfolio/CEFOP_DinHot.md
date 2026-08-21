@@ -22,7 +22,7 @@ The system implements the **weighted Gerchberg-Saxton (GS) algorithm**, an itera
 
 - **Backend**: Python/FastAPI serving the GS computation with NumPy for FFT operations
 - **Improved phase scaling**: corrected phase mask normalization for accurate multi-trap intensity distribution
-- **Frontend**: HTML5 Canvas for dual visualization — interactive trap placement and real-time phase mask rendering
+- **Frontend**: HTML5 Canvas for dual visualization, interactive trap placement and real-time phase mask rendering
 - **Communication**: REST API + WebSocket for streaming convergence data
 - **Legacy preservation**: The original C++/.NET version (2010) is preserved alongside the modern rewrite
 - **Testing**: 59 automated tests covering optical computation, API endpoints, and frontend interactions
@@ -33,8 +33,8 @@ The original implementation ran on lab hardware controlling a physical SLM. The 
 
 ## Live application
 
-▶ **[Live demo — dinhot.fasl-work.com](https://dinhot.fasl-work.com)** — dynamic holographic optical tweezers simulator.
+▶ **[Live demo, dinhot.fasl-work.com](https://dinhot.fasl-work.com)**, dynamic holographic optical tweezers simulator.
 
-![Holographic Optical Tweezers — Phase mask computation interface](/images/projects/screenshots/dinhot_frontend.png)
+![Holographic Optical Tweezers, Phase mask computation interface](/images/projects/screenshots/dinhot_frontend.png)
 
 [View on GitHub](https://github.com/fsantibanezleal/CEFOP_DinHot)

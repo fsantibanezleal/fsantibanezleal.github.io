@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
-  <title>Glissa — expressive glissando instrument</title>
+  <title>Glissa, expressive glissando instrument</title>
   <desc>A touch surface drives a real-time audio engine whose signature is continuous glissando with Keys, Glide and Auto modes, layered with an FX rack, instrument morphing and sampled packs; a Pro tier adds recording, account, cloud sync and billing over a FastAPI and Postgres backend.</desc>
   <defs>
     <linearGradient id="bgGL" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#121a2b"/></linearGradient>
@@ -7,7 +7,7 @@
   </defs>
   <rect width="800" height="400" fill="url(#bgGL)" rx="8"/>
   <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1f3a52" stroke-width="2" rx="8"/>
-  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">GLISSA — EXPRESSIVE GLISSANDO INSTRUMENT</text>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">GLISSA, EXPRESSIVE GLISSANDO INSTRUMENT</text>
   <text x="400" y="46" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" fill="#6b8299">private product · architecture shown without internal logic</text>
 
   <g font-family="Arial,sans-serif">
@@ -24,11 +24,11 @@
     <text x="279" y="98" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#e8a838">Continuous glissando</text>
     <text x="279" y="113" text-anchor="middle" font-size="7.8" fill="#cfe0d8">the signature feature</text>
     <rect x="196" y="124" width="166" height="22" rx="3" fill="#1c1607" stroke="#5a4a1e" stroke-width="0.7"/>
-    <text x="279" y="139" text-anchor="middle" font-size="8" fill="#cfe0d8">Keys — discrete</text>
+    <text x="279" y="139" text-anchor="middle" font-size="8" fill="#cfe0d8">Keys, discrete</text>
     <rect x="196" y="150" width="166" height="22" rx="3" fill="#1c1607" stroke="#5a4a1e" stroke-width="0.7"/>
-    <text x="279" y="165" text-anchor="middle" font-size="8" fill="#cfe0d8">Glide — slide between notes</text>
+    <text x="279" y="165" text-anchor="middle" font-size="8" fill="#cfe0d8">Glide, slide between notes</text>
     <rect x="196" y="176" width="166" height="18" rx="3" fill="#1c1607" stroke="#5a4a1e" stroke-width="0.7"/>
-    <text x="279" y="189" text-anchor="middle" font-size="8" fill="#cfe0d8">Auto — guided</text>
+    <text x="279" y="189" text-anchor="middle" font-size="8" fill="#cfe0d8">Auto, guided</text>
 
     <!-- audio chain -->
     <rect x="406" y="78" width="170" height="120" rx="6" fill="#0a1628" stroke="#1f3a52"/>
