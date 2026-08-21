@@ -27,7 +27,7 @@ What makes this paper particularly satisfying is the validation. We tested the a
 
 <div style="background:#0d1b2a;padding:16px 20px;border-radius:8px;margin:16px 0;font-family:Georgia,serif;color:#e0e0e0;font-size:15px;line-height:1.8;">
 <strong style="color:#e07830;">Adaptive sampling:</strong><br/>
-select x* = argmax H(X<sup>f</sup> | X<sub>f</sub> ∪ {x}) — place next sample where uncertainty is highest
+select x* = argmax H(X<sup>f</sup> | X<sub>f</sub> ∪ {x}), place next sample where uncertainty is highest
 </div>
 
 This is not a marginal academic improvement -- it translates to better classification of ore and waste blocks, which directly impacts operational decisions and economic outcomes. It is worth emphasizing what this means in practice: mining companies overwhelmingly rely on regular drilling grids for grade control. Showing that an adaptive, information-driven approach consistently outperforms this industry standard, on real data from real mines, challenges deeply entrenched operational habits. The potential savings from better ore-waste boundary delineation are substantial.

@@ -6,13 +6,13 @@ collection: portfolio
 tags: [computational-photography, linear-algebra, svd, compressed-sensing, dash, python]
 ---
 
-An interactive application implementing the **dual photography** technique — a computational imaging method that reconstructs how a scene looks from a projector's point of view, even though no camera exists there. Based on the foundational work by [Sen et al. (SIGGRAPH 2005)](https://doi.org/10.1145/1073204.1073257).
+An interactive application implementing the **dual photography** technique, a computational imaging method that reconstructs how a scene looks from a projector's point of view, even though no camera exists there. Based on the foundational work by [Sen et al. (SIGGRAPH 2005)](https://doi.org/10.1145/1073204.1073257).
 
 ![Concept](/images/projects/dual_photography.svg)
 
 ## The idea
 
-When a projector illuminates a scene and a camera captures the result, the relationship between projected patterns and captured images is encoded in a **light transport matrix T**. Helmholtz reciprocity tells us that light paths are reversible: transposing T yields the "dual image" — what the projector would see if it were a camera.
+When a projector illuminates a scene and a camera captures the result, the relationship between projected patterns and captured images is encoded in a **light transport matrix T**. Helmholtz reciprocity tells us that light paths are reversible: transposing T yields the "dual image", what the projector would see if it were a camera.
 
 ## What makes this interesting
 
@@ -20,7 +20,7 @@ This is not just a matrix transpose. The transport matrix **T** (of size N_camer
 
 ## Features
 
-- **Ray-cast simulation**: 3D scenes with occlusion and Lambertian BRDF — no physical hardware needed
+- **Ray-cast simulation**: 3D scenes with occlusion and Lambertian BRDF, no physical hardware needed
 - **6 scene types**: From simple planes to multi-object arrangements with varying optical complexity
 - **SVD analysis**: Interactive exploration of singular value spectra, effective rank, and condition numbers
 - **10 illumination patterns**: Canonical, Hadamard, Bernoulli (compressed sensing), Gray code, and more
@@ -36,9 +36,9 @@ This is not just a matrix transpose. The transport matrix **T** (of size N_camer
 
 ## Live application
 
-▶ **[Live demo — dual.fasl-work.com](https://dual.fasl-work.com)** — dual photography lab — light transport matrices + SVD.
+▶ **[Live demo, dual.fasl-work.com](https://dual.fasl-work.com)**, dual photography lab, light transport matrices + SVD.
 
-![Dual Photography Lab — Transport matrix and relighting interface](/images/projects/screenshots/dual_frontend.png)
+![Dual Photography Lab, Transport matrix and relighting interface](/images/projects/screenshots/dual_frontend.png)
 
 ### Demo video
 

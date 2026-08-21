@@ -8,7 +8,7 @@ date: 2026-08-05
 location: "Hotel Sheraton, Santiago, Chile"
 ---
 
-![Minería Digital 2026 — Modelos de Mineral Tracking: cinco años de experiencia en Codelco](/images/mineria-digital-2026.png)
+![Minería Digital 2026, Modelos de Mineral Tracking: cinco años de experiencia en Codelco](/images/mineria-digital-2026.png)
 
 Presented at **Minería Digital 2026** (Hotel Sheraton, Santiago, Chile, 5-7 August 2026), co-presented with **Magdalena Ribbeck**, Directora of Codelco MinCo-Hidro. I gave this talk in my role as Ind&Func Decision Science Associate Manager at Accenture (Industry X).
 

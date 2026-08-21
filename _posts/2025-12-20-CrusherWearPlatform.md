@@ -23,7 +23,7 @@ What made this project particularly interesting -- and particularly demanding --
 Point cloud (x, y, z) → Cylindrical (r, θ, h) → Radial profile R(θ, h)
 </div>
 
-![Crusher wear platform — dual deployment](/images/projects/crusher_wear_system.svg)
+![Crusher wear platform, dual deployment](/images/projects/crusher_wear_system.svg)
 
 The infrastructure side was its own challenge: Docker Swarm orchestration, Traefik for routing, Ansible for automated provisioning. Going from a prototype running on a laptop to a production deployment with proper monitoring and backups is a journey that teaches you things no tutorial covers.
 

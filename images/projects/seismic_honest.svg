@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
-  <title>CAOS Seismic — calibration is the credibility artifact</title>
+  <title>CAOS Seismic, calibration is the credibility artifact</title>
   <desc>A reliability diagram is the headline artifact: when the model says a given probability, that outcome happens about that fraction of the time. A forecast is a probability strictly between 0 and 1, shown next to its baseline, never a deterministic prediction or an alarm.</desc>
   <defs>
     <linearGradient id="bgH" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -8,7 +8,7 @@
     </linearGradient>
   </defs>
   <rect width="800" height="400" fill="url(#bgH)"/>
-  <text x="400" y="36" text-anchor="middle" fill="#E8EAED" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Skill is proven, not asserted — and calibration ships it</text>
+  <text x="400" y="36" text-anchor="middle" fill="#E8EAED" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Skill is proven, not asserted, and calibration ships it</text>
 
   <!-- Reliability diagram panel -->
   <g transform="translate(70,80)">
@@ -44,11 +44,11 @@
 
     <circle cx="24" cy="20" r="6" fill="#29B6F6"/>
     <text x="42" y="18" fill="#E8EAED" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="600">Forecast, not prediction</text>
-    <text x="42" y="36" fill="#9fb3c8" font-family="Segoe UI, Arial, sans-serif" font-size="11">a probability strictly in (0,1) — never yes/no</text>
+    <text x="42" y="36" fill="#9fb3c8" font-family="Segoe UI, Arial, sans-serif" font-size="11">a probability strictly in (0,1), never yes/no</text>
 
     <circle cx="24" cy="70" r="6" fill="#29B6F6"/>
     <text x="42" y="68" fill="#E8EAED" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="600">Measured in nats vs ETAS + null</text>
-    <text x="42" y="86" fill="#9fb3c8" font-family="Segoe UI, Arial, sans-serif" font-size="11">CSEP information gain — ROC/AUC banned</text>
+    <text x="42" y="86" fill="#9fb3c8" font-family="Segoe UI, Arial, sans-serif" font-size="11">CSEP information gain, ROC/AUC banned</text>
 
     <circle cx="24" cy="120" r="6" fill="#29B6F6"/>
     <text x="42" y="118" fill="#E8EAED" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="600">Shown next to the baseline</text>
@@ -63,5 +63,5 @@
     <text x="42" y="236" fill="#9fb3c8" font-family="Segoe UI, Arial, sans-serif" font-size="11">strict forecast clock; byte-reproducible logs</text>
   </g>
 
-  <text x="400" y="384" text-anchor="middle" fill="#6b8299" font-family="Segoe UI, Arial, sans-serif" font-size="11">An independent research &amp; education tool that complements official agencies — it never replaces them.</text>
+  <text x="400" y="384" text-anchor="middle" fill="#6b8299" font-family="Segoe UI, Arial, sans-serif" font-size="11">An independent research &amp; education tool that complements official agencies, it never replaces them.</text>
 </svg>

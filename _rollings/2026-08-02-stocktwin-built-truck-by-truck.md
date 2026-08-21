@@ -12,7 +12,7 @@ tags:
 StockTwin: a stockpile built the way one actually is, truck by truck
 ======
 
-![StockTwin — a ROM stockpile built truck by truck, coloured by grade, with the reclaim and provenance readouts](/images/projects/stocktwin_app.png)
+![StockTwin: a ROM stockpile built truck by truck, coloured by grade, with the reclaim and provenance readouts](/images/projects/stocktwin_app.png)
 
 [StockTwin](https://stocktwin.fasl-work.com) builds a run-of-mine stockpile the way one is actually built: by trucks, one load at a time, following a dump plan, on ground they have to be able to climb. A truck routes over the trafficable surface, spots against the working face, tips, and leaves; the material stands at its angle of repose; a dozer turns the heaps into a floor so the next lift starts higher.
 

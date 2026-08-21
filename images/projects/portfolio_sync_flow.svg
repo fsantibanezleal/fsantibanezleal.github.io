@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520" role="img" aria-labelledby="title desc">
-  <title id="title">Portfolio sync flow — five surfaces</title>
+  <title id="title">Portfolio sync flow, five surfaces</title>
   <desc id="desc">Canonical sources (portfolio site for product content, writing-resume for CV text) feed three mirrors (personal website, online CV, and CV summary) while branding flows from FASL_GTASKS into every visual consumer.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -40,7 +40,7 @@
 
   <rect width="900" height="520" fill="url(#bg)" rx="8"/>
 
-  <text x="450" y="36" class="title" text-anchor="middle">PORTFOLIO SYNC FLOW — FIVE SURFACES, TWO CANONICAL SOURCES</text>
+  <text x="450" y="36" class="title" text-anchor="middle">PORTFOLIO SYNC FLOW, FIVE SURFACES, TWO CANONICAL SOURCES</text>
   <text x="450" y="58" class="subtitle" text-anchor="middle">Product content flows from the portfolio site. CV text flows from writing-resume. Branding flows from GTASKS into all visual consumers.</text>
 
   <!-- GTASKS upstream (top) -->

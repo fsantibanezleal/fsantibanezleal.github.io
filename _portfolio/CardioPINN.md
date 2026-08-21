@@ -1,5 +1,5 @@
 ---
-title: "CardioPINN — Physics-Informed Cardiac Inverse-Problem Lab"
+title: "CardioPINN, Physics-Informed Cardiac Inverse-Problem Lab"
 date: 2026-07-14
 excerpt: "A two-case lab in physics-informed cardiac reconstruction on 100% real measured data, scoped as a complement to classical methods, not a replacement: calibrated per-node uncertainty (2-sigma ~0.90) and a resolved aortic relative-pressure field, outputs the classical estimate cannot give, at point-accuracy parity with Tikhonov (stated in-app).<br/><img src='/images/projects/cardiopinn_app.png'>"
 collection: portfolio
@@ -8,7 +8,7 @@ tags: [scientific-ml, physics-informed, inverse-problems, ecgi, 4d-flow-mri, unc
 
 A two-case lab in **physics-informed cardiac reconstruction**, run entirely on **real measured data** (EDGAR torso-tank and in-situ ECGi beats; one thoracic-aorta 4D-flow MRI scan), and scoped as a **complement to classical methods, not a replacement**. Live at [cardiopinn.fasl-work.com](https://cardiopinn.fasl-work.com).
 
-![CardioPINN — two offline lanes, Tikhonov+ensemble ECGi and a divergence-free PINN for 4D-flow, baked to JSON and replayed](/images/projects/cardiopinn_app.png)
+![CardioPINN: two offline lanes, Tikhonov+ensemble ECGi and a divergence-free PINN for 4D-flow, baked to JSON and replayed](/images/projects/cardiopinn_app.png)
 
 ## The right scorecard
 

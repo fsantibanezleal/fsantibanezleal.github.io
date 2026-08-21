@@ -1,5 +1,5 @@
 ---
-title: "Croquis — On-Device 3D Reconstruction of Real Spaces on Android"
+title: "Croquis, On-Device 3D Reconstruction of Real Spaces on Android"
 date: 2026-07-19
 excerpt: "An Android app that turns a walk-through (camera, IMU and GPS, no lidar) into a metric, consistency-gated point-cloud reconstruction computed fully on the phone, stored on the phone as a scene library with an honest uncertainty budget. Imagery never leaves the device. In development (v0), Apache-2.0."
 collection: portfolio

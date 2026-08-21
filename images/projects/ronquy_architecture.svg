@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
-  <title>Ronquy — on-device snore detection</title>
+  <title>Ronquy, on-device snore detection</title>
   <desc>A native overnight loop on the phone captures audio and runs a YAMNet model through TFLite locally for about eight hours; the raw audio never leaves the device and only derived events are stored, with an optional cloud account adding cross-device sync.</desc>
   <defs>
     <linearGradient id="bgRO" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#121a2b"/></linearGradient>
@@ -7,13 +7,13 @@
   </defs>
   <rect width="800" height="400" fill="url(#bgRO)" rx="8"/>
   <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1f3a52" stroke-width="2" rx="8"/>
-  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">RONQUY — ON-DEVICE SNORE DETECTION</text>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">RONQUY, ON-DEVICE SNORE DETECTION</text>
   <text x="400" y="46" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" fill="#6b8299">private product · privacy-first architecture, no internal logic shown</text>
 
   <g font-family="Arial,sans-serif">
     <!-- phone boundary -->
     <rect x="40" y="64" width="470" height="210" rx="14" fill="#0a1628" stroke="#3ddc97" stroke-width="1.4"/>
-    <text x="275" y="84" text-anchor="middle" font-size="10" font-weight="bold" fill="#3ddc97">On the phone — audio never leaves the device</text>
+    <text x="275" y="84" text-anchor="middle" font-size="10" font-weight="bold" fill="#3ddc97">On the phone, audio never leaves the device</text>
 
     <!-- mic -->
     <rect x="60" y="100" width="120" height="70" rx="6" fill="#11243b" stroke="#3a5a7c" stroke-width="0.8"/>
@@ -52,7 +52,7 @@
     <text x="665" y="170" text-anchor="middle" font-size="8" fill="#cdd9e5">across devices</text>
     <text x="665" y="190" text-anchor="middle" font-size="7.8" fill="#7d93a8">FastAPI + Postgres</text>
     <text x="665" y="204" text-anchor="middle" font-size="7.8" fill="#7d93a8">own auth</text>
-    <text x="665" y="220" text-anchor="middle" font-size="7.4" fill="#6b8299">events only — never raw audio</text>
+    <text x="665" y="220" text-anchor="middle" font-size="7.4" fill="#6b8299">events only, never raw audio</text>
     <line x1="490" y1="150" x2="558" y2="150" stroke="#9fb3c8" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arrRO)"/>
 
     <!-- footer -->

@@ -1,5 +1,5 @@
 ---
-title: "SymLab — Symbolic Regression Lab (Accuracy and Recovery, Separately)"
+title: "SymLab, Symbolic Regression Lab (Accuracy and Recovery, Separately)"
 date: 2026-07-28
 excerpt: "A public research lab on symbolic regression: recovering a readable closed-form expression from data. Its reason to exist is one honest measurement: accuracy and structural recovery are different claims, and a method can clear R2 above 0.999 while returning the wrong structure. SymLab reports the two separately, on every case, and never averages them into one number.<br/><img src='/images/projects/symlab_app.png'>"
 collection: portfolio
@@ -8,7 +8,7 @@ tags: [scientific-ml, symbolic-regression, genetic-programming, sparse-regressio
 
 A public research lab on **symbolic regression**: recovering an explicit closed-form expression from data, rather than fitting a predictor nobody can read. Live at [symlab.fasl-work.com](https://symlab.fasl-work.com).
 
-![SymLab — genetic programming and sparse regression on known-law cases, accuracy and recovery in two separate columns](/images/projects/symlab_app.png)
+![SymLab, genetic programming and sparse regression on known-law cases, accuracy and recovery in two separate columns](/images/projects/symlab_app.png)
 
 ## Accuracy and recovery are different claims
 

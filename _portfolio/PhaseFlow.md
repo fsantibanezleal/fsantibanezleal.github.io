@@ -1,5 +1,5 @@
 ---
-title: "PhaseFlow — Open-Pit Production Schedule with a Certified Bound"
+title: "PhaseFlow, Open-Pit Production Schedule with a Certified Bound"
 date: 2026-08-10
 excerpt: "An open-pit production schedule solved with a certified bound and animated year by year over the block model. PitForge answers which blocks are worth mining; PhaseFlow answers when. Anchored to the published MineLib newman1.cpit solved AS PUBLISHED: the ultimate pit optimum reproduces exactly (26,086,899) and the joint LP bound lands at 24,486,184 against a published 24,486,549. The bound needs no LP solver, so the whole problem re-solves live in the browser.<br/><img src='/images/projects/phaseflow_app.png'>"
 collection: portfolio
@@ -8,7 +8,7 @@ tags: [mining-optimization, mine-planning, scheduling, cpit, lagrangian-bound, m
 
 An **open-pit production schedule**, solved with a certified bound and animated year by year over the block model. Live at [phaseflow.fasl-work.com](https://phaseflow.fasl-work.com), part of the [Faena](https://faena.fasl-work.com) hub.
 
-![PhaseFlow — a year-coloured pit with NPV, bound, gap and spatial-coherence readouts](/images/projects/phaseflow_app.png)
+![PhaseFlow: a year-coloured pit with NPV, bound, gap and spatial-coherence readouts](/images/projects/phaseflow_app.png)
 
 ## Which blocks, then when
 

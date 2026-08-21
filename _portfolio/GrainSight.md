@@ -1,5 +1,5 @@
 ---
-title: "GrainSight — Particle Size Distribution from RGB-D Data"
+title: "GrainSight, Particle Size Distribution from RGB-D Data"
 date: 2018-06-01
 excerpt: "3D granulometry analyzer using marker-based watershed segmentation, per-grain geometric measurement, and Rosin-Rammler PSD fitting from depth camera data.<br/><img src='/images/projects/grainsize_pipeline.svg'>"
 collection: portfolio
@@ -10,9 +10,9 @@ A **3D particle size and granulometry analyzer** that estimates grain size distr
 
 ## Business context
 
-Particle size distribution (PSD) is one of the most critical parameters in mineral processing. It directly affects grinding energy consumption, flotation recovery, and leaching kinetics. Traditional PSD measurement requires physical sieve analysis — a destructive, time-consuming laboratory procedure that provides only batch-level averages.
+Particle size distribution (PSD) is one of the most critical parameters in mineral processing. It directly affects grinding energy consumption, flotation recovery, and leaching kinetics. Traditional PSD measurement requires physical sieve analysis, a destructive, time-consuming laboratory procedure that provides only batch-level averages.
 
-## Key Performance Indicators — Process impact
+## Key Performance Indicators, Process impact
 
 GrainSight replaces physical sieve analysis with non-destructive image-based measurement, enabling continuous monitoring that was previously impossible.
 
@@ -28,9 +28,9 @@ GrainSight replaces physical sieve analysis with non-destructive image-based mea
 
 This project completes a three-system pipeline for comprehensive mineral sample characterization:
 
-1. **[HSI Mineral Classification](/portfolio/HSIMineralClassification/)** — *what it is* (spectral composition, mineral abundances)
-2. **[3D Distance Profiler](/portfolio/DepthProfiler/)** — *how it looks* (surface depth maps, roughness, curvature)
-3. **GrainSight** — *how big it is* (particle size distribution, grain shapes)
+1. **[HSI Mineral Classification](/portfolio/HSIMineralClassification/)**, *what it is* (spectral composition, mineral abundances)
+2. **[3D Distance Profiler](/portfolio/DepthProfiler/)**: *how it looks* (surface depth maps, roughness, curvature)
+3. **GrainSight**, *how big it is* (particle size distribution, grain shapes)
 
 Together, these three systems provide the data needed for **geometallurgical models** that predict processing behavior from ore properties.
 
@@ -46,10 +46,10 @@ Marker-based **watershed segmentation** on the depth gradient magnitude image. L
 
 <div style="background:#0d1b2a;padding:16px 20px;border-radius:8px;margin:16px 0;font-family:Georgia,serif;color:#e0e0e0;font-size:15px;line-height:1.8;">
 <strong style="color:#e07830;">Per-grain metrics:</strong><br/>
-d<sub>eq</sub> = √(4A/π) — equivalent diameter from pixel area<br/>
-AR = d<sub>major</sub> / d<sub>minor</sub> — aspect ratio from PCA axes<br/>
-C = 4πA / P² — circularity (1.0 = perfect circle)<br/>
-V = Σ (z<sub>i</sub> - z<sub>base</sub>) × Δx × Δy — depth-integrated volume above base plane
+d<sub>eq</sub> = √(4A/π), equivalent diameter from pixel area<br/>
+AR = d<sub>major</sub> / d<sub>minor</sub>, aspect ratio from PCA axes<br/>
+C = 4πA / P², circularity (1.0 = perfect circle)<br/>
+V = Σ (z<sub>i</sub> - z<sub>base</sub>) × Δx × Δy, depth-integrated volume above base plane
 </div>
 
 ### 3. PSD analysis and Rosin-Rammler fitting
@@ -75,8 +75,8 @@ D-values (D10, D25, D50, D75, D80, D90) are extracted from the cumulative PSD cu
 
 ## Live application
 
-▶ **[Live demo — grainsize.fasl-work.com](https://grainsize.fasl-work.com)** — particle size distribution from RGB-D data.
+▶ **[Live demo, grainsize.fasl-work.com](https://grainsize.fasl-work.com)**, particle size distribution from RGB-D data.
 
-![GrainSight — particle segmentation, PSD analysis, and grain measurement](/images/projects/screenshots/grainsize_frontend.png)
+![GrainSight: particle segmentation, PSD analysis, and grain measurement](/images/projects/screenshots/grainsize_frontend.png)
 
 [View on GitHub](https://github.com/fsantibanezleal/FASL_3D_GrainSize)

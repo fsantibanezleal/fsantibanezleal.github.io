@@ -75,26 +75,26 @@ Skills
 
 Selected projects
 ======
-* **[Mine Pile Visualizer](https://github.com/fsantibanezleal/MINE_PILE_VIZ_TS)** — Stockpile & circuit topology explorer (Next.js 16, React Three Fiber, Apache Arrow)
-* **[FeelIT 2.0](https://github.com/fsantibanezleal/UDEC_FEELIT)** — Haptic accessibility workbench: 4 workspaces (3D Explorer, Braille Reader, Haptic Desktop, Workspace Manager) with 49 tests
-* **Mining Process Optimization Platform** — End-to-end ML for SAG milling, flotation, and thickening (+100 TPH throughput gains)
-* **Real-Time Material Tracking & Blending** — Digital twin for ore flow, stockpile management, and blending optimization
-* **Environmental Monitoring & Mitigation** — Computer vision (24-stream) + GenAI for pollution forecasting and natural-language recommendations
-* **Geotechnical Risk Prediction** — ML-based rockburst and slope instability prediction from seismic data and 3D block models
-* **Crusher Liner Wear Management** — 3D point cloud profiling, cylindrical wear analysis, and remaining-life forecasting
-* **Hyperspectral Mineral Classification** — ML platform for mineral ID from VNIR/SWIR imagery (XGBoost, CNN, compositional constraints)
-* **[HIDSAG](https://doi.org/10.1038/s41597-023-02061-x)** — Hyperspectral Image Database for Geometallurgy (Scientific Data, Nature)
-* **[SOFI Super-Resolution Microscopy](https://github.com/fsantibanezleal/FASL_SOFI_QDOTS)** — Quantum dot fluorescence via higher-order cumulants (up to 2.45x resolution)
-* **[GrainSight](https://github.com/fsantibanezleal/FASL_3D_GrainSize)** — Particle size distribution from RGB-D data (watershed segmentation, Rosin-Rammler PSD, D-values)
-* **[3D Distance Profiler](https://github.com/fsantibanezleal/FASL_3D_Distance_Profiler)** — RGB-D depth maps for granulometry enabling (ISO 4287 roughness, surface curvature)
-* **[Optimal Spatial Sampling](https://github.com/fsantibanezleal/IDS_OWP)** — Information-theoretic AdSEMES algorithm for well placement (PhD thesis companion)
-* **[3D Haptic Simulation](https://github.com/fsantibanezleal/UDEC_Haptic_SIM)** — Octree collision detection and spring-damper force feedback
-* **[Cellular Potts Model](https://github.com/fsantibanezleal/SCIAN_LEO_CPM)** — Zebrafish embryonic cell migration with deformable bodies
-* **[3D Embryo Cell Migration](https://github.com/fsantibanezleal/SCIAN_EVL_SpherSIM)** — Collective cell migration on spherical embryo surface
-* **[Holographic Optical Tweezers](https://github.com/fsantibanezleal/CEFOP_DinHot)** — Real-time phase mask computation via Gerchberg-Saxton algorithm
-* **[Dual Photography Lab](https://github.com/fsantibanezleal/FASL_Coding_DualFotography)** — Light transport matrices, SVD analysis, and compressed sensing
-* **[Robotic Writer](https://github.com/fsantibanezleal/Udec_Robotic_Writer)** — 5-DOF robotic arm kinematics, trajectory planning, and simulation
-* **[Micromundo](https://micromundo.app/)** — Virtual microscopy & science education platform (3D-printed microscopes + web app, [team site](https://micromundo.team))
+* **[Mine Pile Visualizer](https://github.com/fsantibanezleal/MINE_PILE_VIZ_TS)**, Stockpile & circuit topology explorer (Next.js 16, React Three Fiber, Apache Arrow)
+* **[FeelIT 2.0](https://github.com/fsantibanezleal/UDEC_FEELIT)**: Haptic accessibility workbench: 4 workspaces (3D Explorer, Braille Reader, Haptic Desktop, Workspace Manager) with 49 tests
+* **Mining Process Optimization Platform**: End-to-end ML for SAG milling, flotation, and thickening (+100 TPH throughput gains)
+* **Real-Time Material Tracking & Blending**: Digital twin for ore flow, stockpile management, and blending optimization
+* **Environmental Monitoring & Mitigation**, Computer vision (24-stream) + GenAI for pollution forecasting and natural-language recommendations
+* **Geotechnical Risk Prediction**, ML-based rockburst and slope instability prediction from seismic data and 3D block models
+* **Crusher Liner Wear Management**: 3D point cloud profiling, cylindrical wear analysis, and remaining-life forecasting
+* **Hyperspectral Mineral Classification**: ML platform for mineral ID from VNIR/SWIR imagery (XGBoost, CNN, compositional constraints)
+* **[HIDSAG](https://doi.org/10.1038/s41597-023-02061-x)**, Hyperspectral Image Database for Geometallurgy (Scientific Data, Nature)
+* **[SOFI Super-Resolution Microscopy](https://github.com/fsantibanezleal/FASL_SOFI_QDOTS)**, Quantum dot fluorescence via higher-order cumulants (up to 2.45x resolution)
+* **[GrainSight](https://github.com/fsantibanezleal/FASL_3D_GrainSize)**: Particle size distribution from RGB-D data (watershed segmentation, Rosin-Rammler PSD, D-values)
+* **[3D Distance Profiler](https://github.com/fsantibanezleal/FASL_3D_Distance_Profiler)**, RGB-D depth maps for granulometry enabling (ISO 4287 roughness, surface curvature)
+* **[Optimal Spatial Sampling](https://github.com/fsantibanezleal/IDS_OWP)**, Information-theoretic AdSEMES algorithm for well placement (PhD thesis companion)
+* **[3D Haptic Simulation](https://github.com/fsantibanezleal/UDEC_Haptic_SIM)**, Octree collision detection and spring-damper force feedback
+* **[Cellular Potts Model](https://github.com/fsantibanezleal/SCIAN_LEO_CPM)**, Zebrafish embryonic cell migration with deformable bodies
+* **[3D Embryo Cell Migration](https://github.com/fsantibanezleal/SCIAN_EVL_SpherSIM)**, Collective cell migration on spherical embryo surface
+* **[Holographic Optical Tweezers](https://github.com/fsantibanezleal/CEFOP_DinHot)**, Real-time phase mask computation via Gerchberg-Saxton algorithm
+* **[Dual Photography Lab](https://github.com/fsantibanezleal/FASL_Coding_DualFotography)**: Light transport matrices, SVD analysis, and compressed sensing
+* **[Robotic Writer](https://github.com/fsantibanezleal/Udec_Robotic_Writer)**: 5-DOF robotic arm kinematics, trajectory planning, and simulation
+* **[Micromundo](https://micromundo.app/)**, Virtual microscopy & science education platform (3D-printed microscopes + web app, [team site](https://micromundo.team))
 
 Publications
 ======

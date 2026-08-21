@@ -1,5 +1,5 @@
 ---
-title: "CentralIA — Initiative-Management Console over a Version-Control Provider"
+title: "CentralIA, Initiative-Management Console over a Version-Control Provider"
 date: 2026-07-21
 excerpt: "A connection-first web console that connects to GitHub, GitLab or an offline emulator, reads a management repo through its structure map, and renders a whole portfolio of repo-mapped initiatives: a filterable grid, per-initiative 5-axis status, live open issues, and a hub growth graph. A real tool, not a mockup; the token lives server-side, with a server-side anonymize toggle for screen-sharing.<br/><img src='/images/projects/centralia_pipeline.svg'>"
 collection: portfolio
@@ -8,7 +8,7 @@ tags: [developer-tools, project-management, github, gitlab, dashboard, connector
 
 A **connection-first** web console that turns a version-control provider into the backend of a management dashboard, so the state of a whole portfolio of initiatives is never staler than the last commit.
 
-![CentralIA — connect to a provider, read a management repo, render a portfolio with 5-axis status and a hub growth graph](/images/projects/centralia_pipeline.svg)
+![CentralIA: connect to a provider, read a management repo, render a portfolio with 5-axis status and a hub growth graph](/images/projects/centralia_pipeline.svg)
 
 ## Read the state live from the repos
 

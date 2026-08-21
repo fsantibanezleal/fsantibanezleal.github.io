@@ -10,7 +10,7 @@ A **full-stack platform** for tracking and forecasting the wear of crusher liner
 
 ## Business impact
 
-This platform replaced manual caliper measurements with automated 3D point cloud analysis, transforming liner wear assessment from imprecise periodic snapshots into continuous, data-driven forecasting. Maintenance scheduling shifted from fixed intervals to remaining-useful-life predictions — reducing both premature replacements and the risk of catastrophic failure. Dual deployment (desktop for remote mine sites, web for centralized management) ensured adoption across operational contexts.
+This platform replaced manual caliper measurements with automated 3D point cloud analysis, transforming liner wear assessment from imprecise periodic snapshots into continuous, data-driven forecasting. Maintenance scheduling shifted from fixed intervals to remaining-useful-life predictions, reducing both premature replacements and the risk of catastrophic failure. Dual deployment (desktop for remote mine sites, web for centralized management) ensured adoption across operational contexts.
 
 | Metric | Result |
 |--------|--------|
@@ -21,11 +21,11 @@ This platform replaced manual caliper measurements with automated 3D point cloud
 
 ## Strategic context
 
-Crusher liner replacement is one of the highest-cost maintenance activities in mineral processing — each change involves days of downtime and hundreds of thousands in parts and labor. Replacing liners too early wastes material; too late risks catastrophic failure that can shut down the entire crushing circuit. This system provides the quantitative basis to make that decision optimally, turning a high-stakes judgment call into a data-informed planning activity.
+Crusher liner replacement is one of the highest-cost maintenance activities in mineral processing, each change involves days of downtime and hundreds of thousands in parts and labor. Replacing liners too early wastes material; too late risks catastrophic failure that can shut down the entire crushing circuit. This system provides the quantitative basis to make that decision optimally, turning a high-stakes judgment call into a data-informed planning activity.
 
 ![Architecture](/images/projects/crusher_wear_system.svg)
 
-## Key Performance Indicators — Process impact
+## Key Performance Indicators, Process impact
 
 The system redirects expert time from measurement to analysis, while providing richer wear profiles than manual methods can achieve.
 

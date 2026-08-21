@@ -1,5 +1,5 @@
 ---
-title: "Fisura — Materials-Damage Vision Lab (Crack Detection to Engineering Units)"
+title: "Fisura, Materials-Damage Vision Lab (Crack Detection to Engineering Units)"
 date: 2026-07-26
 excerpt: "A public research lab on seeing damage in built materials: one image of a concrete wall, pavement or facade goes in, and Fisura detects the damage, quantifies it in engineering units (width, length, orientation, density, growth between inspections), and compares every method family (classical, learned SOTA, foundation models, anomaly detection) on the same open cases with the same metrics. Masks are only ever the input to a number.<br/><img src='/images/projects/fisura_app.png'>"
 collection: portfolio
@@ -8,7 +8,7 @@ tags: [computer-vision, crack-detection, materials, segmentation, foundation-mod
 
 A public research lab on **seeing damage in built materials**. One image of a concrete wall, a pavement, a masonry facade or an industrial surface goes in; Fisura detects the damage, **quantifies it in engineering units** (width, length, orientation, density, growth between inspection epochs), and shows how every method family gets there. Live at [fisura.fasl-work.com](https://fisura.fasl-work.com).
 
-![Fisura — one image runs a classical-to-foundation method ladder, then measurement turns masks into engineering numbers](/images/projects/fisura_app.png)
+![Fisura, one image runs a classical-to-foundation method ladder, then measurement turns masks into engineering numbers](/images/projects/fisura_app.png)
 
 ## Masks are never the deliverable
 

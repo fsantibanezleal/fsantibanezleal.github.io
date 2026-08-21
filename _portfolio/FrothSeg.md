@@ -1,5 +1,5 @@
 ---
-title: "FrothSeg — Flotation-Froth Instance Segmentation Lab (Browser ML)"
+title: "FrothSeg, Flotation-Froth Instance Segmentation Lab (Browser ML)"
 date: 2026-07-23
 excerpt: "A browser-native lab for instance segmentation of flotation froth: it delineates individual bubbles client-side via ONNX and compares seven classical methods against a real published model (LamellaStar, a three-seed ensemble with SAM2 / Cellpose-SAM teachers). The honest core is the data situation, stated openly: no real froth images exist publicly, so froth cases are synthetic and BBBC038 is an adjacent-domain transfer probe that does not clear the froth blocker.<br/><img src='/images/projects/frothseg_app.png'>"
 collection: portfolio
@@ -8,7 +8,7 @@ tags: [computer-vision, instance-segmentation, flotation, froth, onnx, ensemble,
 
 A browser-native lab for **instance segmentation of flotation froth**: delineating individual bubbles in a froth image, entirely client-side via ONNX. Live at [frothseg.fasl-work.com](https://frothseg.fasl-work.com), part of the [Faena](https://faena.fasl-work.com) hub.
 
-![FrothSeg — seven classical methods vs a learned LamellaStar ensemble, with an honest real-transfer probe](/images/projects/frothseg_app.png)
+![FrothSeg, seven classical methods vs a learned LamellaStar ensemble, with an honest real-transfer probe](/images/projects/frothseg_app.png)
 
 ## A real model, and a real classical ladder
 

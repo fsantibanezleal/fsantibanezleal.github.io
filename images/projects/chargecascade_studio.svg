@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
-  <title>ChargeCascade — exact mill physics, a 3D kinematic view, and a thin learned layer</title>
+  <title>ChargeCascade, exact mill physics, a 3D kinematic view, and a thin learned layer</title>
   <desc>A tumbling-mill charge and the closed-form engine that computes critical speed, the Davis regime, toe/shoulder and power; a thin learned layer (a power surrogate and an out-of-distribution autoencoder) trained offline and run in-browser; and a workbench readout. The 3D is a kinematic animation, not a DEM solve.</desc>
   <defs>
     <linearGradient id="bgCC" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#111a2b"/></linearGradient>
@@ -7,7 +7,7 @@
   </defs>
   <rect width="800" height="400" fill="url(#bgCC)" rx="8"/>
   <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1f3a52" stroke-width="2" rx="8"/>
-  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">CHARGECASCADE — TUMBLING-MILL CHARGE MOTION &amp; POWER</text>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">CHARGECASCADE, TUMBLING-MILL CHARGE MOTION &amp; POWER</text>
 
   <g font-family="Arial,sans-serif">
     <!-- 1 the mill -->
@@ -30,7 +30,7 @@
     <text x="302" y="162" text-anchor="middle" font-size="8.4" fill="#cfe0d8">P = ω · M · g · arm</text>
     <text x="302" y="180" text-anchor="middle" font-size="8" fill="#9fb3c8">Hogg-Fuerstenau · Morrell-form · Bond</text>
     <rect x="226" y="196" width="152" height="32" rx="6" fill="#0d1117" stroke="#3ddc97" stroke-width="1"/>
-    <text x="302" y="211" text-anchor="middle" font-size="8" font-weight="bold" fill="#3ddc97">closed-form, exact — NOT DEM</text>
+    <text x="302" y="211" text-anchor="middle" font-size="8" font-weight="bold" fill="#3ddc97">closed-form, exact, NOT DEM</text>
     <text x="302" y="223" text-anchor="middle" font-size="7" fill="#7d93a8">2 analytic controls pass</text>
 
     <!-- 3 learned layer -->
@@ -41,7 +41,7 @@
     <text x="500" y="132" text-anchor="middle" font-size="7.8" fill="#9fb3c8">~5% vs the exact engine</text>
     <rect x="424" y="150" width="152" height="46" rx="6" fill="#11243b" stroke="#3a5a7c" stroke-width="0.8"/>
     <text x="500" y="168" text-anchor="middle" font-size="8.4" font-weight="bold" fill="#cdd9e5">OOD autoencoder</text>
-    <text x="500" y="184" text-anchor="middle" font-size="7.8" fill="#9fb3c8">AUC 0.922 — flags off-envelope</text>
+    <text x="500" y="184" text-anchor="middle" font-size="7.8" fill="#9fb3c8">AUC 0.922, flags off-envelope</text>
     <text x="500" y="216" text-anchor="middle" font-size="7.6" fill="#7d93a8">trained offline torch → ONNX</text>
     <text x="500" y="230" text-anchor="middle" font-size="7.6" fill="#7d93a8">the exact engine stays the authority</text>
 

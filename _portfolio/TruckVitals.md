@@ -1,5 +1,5 @@
 ---
-title: "TruckVitals — Onset Detection on Haul-Truck Telemetry (Regime First, Then Residual)"
+title: "TruckVitals, Onset Detection on Haul-Truck Telemetry (Regime First, Then Residual)"
 date: 2026-08-11
 excerpt: "Every haul-truck channel moves with payload, grade and speed, so a detector run on raw telemetry detects the truck going uphill, not a fault. TruckVitals segments the operating regime first, from context channels disjoint from the monitored ones, and detects on the within-regime residual. The headline carries no detector in it: 0.16 sigma of the pooled spread against 11.95 sigma of the within-regime spread, with single-condition subsets returning exactly 1.00 as a negative control. It ships a published null and a withdrawn claim.<br/><img src='/images/projects/truckvitals_app.png'>"
 collection: portfolio
@@ -8,7 +8,7 @@ tags: [predictive-maintenance, condition-monitoring, change-point-detection, reg
 
 **Onset detection on haul-truck fleet telemetry**, built on regime-conditional residuals. Live at [truckvitals.fasl-work.com](https://truckvitals.fasl-work.com), part of the [Faena](https://faena.fasl-work.com) hub.
 
-![TruckVitals — a raw channel above with learned regime bands, the within-regime residual below, and the true onset marked](/images/projects/truckvitals_app.png)
+![TruckVitals: a raw channel above with learned regime bands, the within-regime residual below, and the true onset marked](/images/projects/truckvitals_app.png)
 
 ## Detect the fault, not the ramp
 

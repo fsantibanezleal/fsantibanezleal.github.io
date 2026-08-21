@@ -6,7 +6,7 @@ collection: portfolio
 tags: [information-theory, entropy, sampling, geostatistics, python, fastapi]
 ---
 
-This project implements the AdSEMES (Adaptive Sequential Empirical Maximum Entropy Sampling) algorithm for optimal spatial sampling in binary random fields — specifically channelized geological reservoirs. It is the computational companion to my doctoral thesis and published papers in Mathematical Geosciences and Natural Resources Research.
+This project implements the AdSEMES (Adaptive Sequential Empirical Maximum Entropy Sampling) algorithm for optimal spatial sampling in binary random fields, specifically channelized geological reservoirs. It is the computational companion to my doctoral thesis and published papers in Mathematical Geosciences and Natural Resources Research.
 
 The core problem
 ======
@@ -27,11 +27,11 @@ This work was developed during 2014-2016 at the IDS Group (Information and Decis
 
 ## Live application
 
-▶ **[Live demo — owp.fasl-work.com](https://owp.fasl-work.com)** — optimal sampling visualizer — AdSEMES algorithm in action.
+▶ **[Live demo, owp.fasl-work.com](https://owp.fasl-work.com)**, optimal sampling visualizer, AdSEMES algorithm in action.
 
-![Optimal Well Placement — Adaptive sampling visualization](/images/projects/screenshots/owp_frontend.png)
+![Optimal Well Placement, Adaptive sampling visualization](/images/projects/screenshots/owp_frontend.png)
 
-### Demo video — Adaptive entropy sampling in action
+### Demo video, Adaptive entropy sampling in action
 
 {% include youtube.html id="KnTyQgQcpCQ" %}
 

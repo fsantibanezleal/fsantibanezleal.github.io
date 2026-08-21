@@ -9,7 +9,7 @@ tags:
   - SVD
 ---
 
-There is something philosophically satisfying about the idea that every observation contains, embedded within it, the reverse observation. Helmholtz saw this in 1856. Light paths are reversible — if a photon can travel from point A to point B through a scene, bouncing off surfaces and scattering through media, then a photon can travel the exact same path from B back to A. The physics does not care about direction.
+There is something philosophically satisfying about the idea that every observation contains, embedded within it, the reverse observation. Helmholtz saw this in 1856. Light paths are reversible: if a photon can travel from point A to point B through a scene, bouncing off surfaces and scattering through media, then a photon can travel the exact same path from B back to A. The physics does not care about direction.
 
 Dual photography takes this principle and turns it into a computational tool. You project structured patterns from a projector onto a scene and capture the result with a camera. Each pixel in the projector illuminates the scene, and each pixel in the camera records the aggregate response. The entire relationship between projector pixels and camera pixels is captured in a transport matrix T.
 
@@ -22,9 +22,9 @@ p' = T<sup>T</sup> &middot; c &nbsp;&nbsp;(dual)<br/>
 <em>The transpose is all you need</em>
 </div>
 
-The forward image is c = T*p, where p is the projector pattern and c is the camera capture. The dual image — what the scene would look like if the camera were the light source and the projector were the sensor — is simply p' = T^T * c. The transpose is all you need. Helmholtz reciprocity guarantees that this transposed matrix is physically meaningful.
+The forward image is c = T*p, where p is the projector pattern and c is the camera capture. The dual image, what the scene would look like if the camera were the light source and the projector were the sensor, is simply p' = T^T * c. The transpose is all you need. Helmholtz reciprocity guarantees that this transposed matrix is physically meaningful.
 
-But the transport matrix is large and measuring it naively requires as many captures as there are projector pixels. This is where the SVD becomes essential. Decomposing T = USV^T lets you approximate the matrix with far fewer measurements, and it also enables relighting — synthesizing images under novel illumination conditions without physically changing the light.
+But the transport matrix is large and measuring it naively requires as many captures as there are projector pixels. This is where the SVD becomes essential. Decomposing T = USV^T lets you approximate the matrix with far fewer measurements, and it also enables relighting, synthesizing images under novel illumination conditions without physically changing the light.
 
 The low-rank structure of most real scenes means that a handful of singular values capture most of the transport. The rest is noise and high-frequency inter-reflections that rarely matter perceptually.
 
