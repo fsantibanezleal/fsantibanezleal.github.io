@@ -6,6 +6,7 @@ on:
       - 'talks/**'
       - '_talks/**'
       - 'talkmap.ipynb'
+  workflow_dispatch:        # so a broken scraper can be re-run without faking a talk edit
 
 jobs:
   build:
