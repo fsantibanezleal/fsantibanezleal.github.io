@@ -1,12 +1,12 @@
 ---
 title: "FeelIT"
 date: 2012-07-07
-excerpt: "Haptic and VR interactive platform for visually impaired people — exploring tactile feedback for virtual objects.<br/><img src='/files/portfolio/FeelIT/FeelIT500x300.png'>"
+excerpt: "Haptic and VR interactive platform for visually impaired people, exploring tactile feedback for virtual objects.<br/><img src='/files/portfolio/FeelIT/FeelIT500x300.png'>"
 collection: portfolio
 tags: [haptics, accessibility, virtual-reality, hardware, assistive-technology]
 ---
 
-A project that sought to create a digital environment with augmented reality — based on non-visual tactile feedback — to allow blind people to explore virtual objects through relief information and virtual touch.
+A project that sought to create a digital environment with augmented reality, based on non-visual tactile feedback, to allow blind people to explore virtual objects through relief information and virtual touch.
 
 This project was ultimately frozen due to hardware limitations and cost constraints, but the journey shaped my approach to interdisciplinary engineering.
 
@@ -19,13 +19,13 @@ A small toy with pins is what started everything: the [3D Metal Pin Art Board]()
 
 ![img](/files/portfolio/FeelIT/00.jpg)
 
-A deceptively simple device. I started wondering: what if you could *fix* the pin positions electronically? You could store a surface, recall it later — like a raised photograph. You could let someone who had never seen an object explore its shape through touch.
+A deceptively simple device. I started wondering: what if you could *fix* the pin positions electronically? You could store a surface, recall it later, like a raised photograph. You could let someone who had never seen an object explore its shape through touch.
 
-Of course, you could just sculpt a model and hand it to someone. But my idea was something *controllable and changeable* — a dynamic tactile display.
+Of course, you could just sculpt a model and hand it to someone. But my idea was something *controllable and changeable*, a dynamic tactile display.
 
 In my mind as an electronic engineer, the concept was not far from a screen: a structured array of independently controlled elements. Instead of pixel color intensity, you control the height of each pin.
 
-Around 2010, I built a first 16-pin version (a humble 4x4 grid) with binary control — electromagnets switching each pin between resting and raised positions.
+Around 2010, I built a first 16-pin version (a humble 4x4 grid) with binary control, electromagnets switching each pin between resting and raised positions.
 
 Then reality hit. The costs were high, miniaturization was complex. I improved the design to a few height levels, but could not push beyond a 10x10 array (100 independently controlled mechanisms in a small space). The project was frozen.
 
@@ -48,7 +48,7 @@ Others were software applications for magnifying screen content for people with 
 ![img](/files/portfolio/FeelIT/comp3.jpg)
 ![img](/files/portfolio/FeelIT/comp4.jpg)
 
-There were also interesting innovations for reproducing phone text messages on Braille lines — consistent with my prototypes but limited to two positions, without the mechanical resistance and resolution I was aiming for:
+There were also interesting innovations for reproducing phone text messages on Braille lines, consistent with my prototypes but limited to two positions, without the mechanical resistance and resolution I was aiming for:
 
 ![img](/files/portfolio/FeelIT/comp5.jpg)
 ![img](/files/portfolio/FeelIT/comp5.png)
@@ -59,7 +59,7 @@ I researched miniaturized technologies and explored various materials and mechan
 Haptic devices
 ======
 
-During my undergraduate thesis, I explored haptic devices — servo-motor-based systems that feed back force and resistance to movement. They function as 3D input devices that can simulate the physical sensation of touching objects: resistance to penetration, surface texture, and contact forces.
+During my undergraduate thesis, I explored haptic devices, servo-motor-based systems that feed back force and resistance to movement. They function as 3D input devices that can simulate the physical sensation of touching objects: resistance to penetration, surface texture, and contact forces.
 
 Through these devices, a user can interact with virtual objects in a 3D environment by feeling the resistance and shape of surfaces that exist only in software.
 
@@ -70,7 +70,7 @@ Through these devices, a user can interact with virtual objects in a 3D environm
 The project
 ======
 
-By combining haptic feedback with a virtual environment, we built a system where visually impaired users could explore 3D objects through touch alone. The visual interface was deliberately minimal — this was a *haptic* interface, not a visual one.
+By combining haptic feedback with a virtual environment, we built a system where visually impaired users could explore 3D objects through touch alone. The visual interface was deliberately minimal, this was a *haptic* interface, not a visual one.
 
 ![img](/files/portfolio/FeelIT/s1.png)
 
@@ -84,7 +84,7 @@ In the final phase of the project, Daniel and I continued searching for resource
 Testing
 ======
 
-The most rewarding part was watching users interact with the system for the first time — hands exploring shapes they could only previously imagine.
+The most rewarding part was watching users interact with the system for the first time, hands exploring shapes they could only previously imagine.
 
 ![img](/files/portfolio/FeelIT/t3.jpg)
 ![img](/files/portfolio/FeelIT/t4.jpg)
@@ -96,6 +96,6 @@ The most rewarding part was watching users interact with the system for the firs
 
 ## Lessons learned
 
-Although FeelIT never reached a production-ready state, the project taught me two things that shaped my career: first, that the most meaningful engineering problems sit at the intersection of technology and human needs; and second, that hardware constraints are temporary — the miniaturization and cost barriers that stopped us in 2010 are falling every year.
+Although FeelIT never reached a production-ready state, the project taught me two things that shaped my career: first, that the most meaningful engineering problems sit at the intersection of technology and human needs; and second, that hardware constraints are temporary, the miniaturization and cost barriers that stopped us in 2010 are falling every year.
 
 *This project does not have a public repository. The hardware prototypes and software components remain in private archives.*

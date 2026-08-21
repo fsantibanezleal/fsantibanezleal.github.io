@@ -1,5 +1,5 @@
 ---
-title: "PitForge — Exact Ultimate Pit Limit & Nested Whittle Pit-Shell Workbench"
+title: "PitForge, Exact Ultimate Pit Limit & Nested Whittle Pit-Shell Workbench"
 date: 2026-07-05
 excerpt: "An open-pit mine-design workbench that solves the ultimate pit limit exactly, as a maximum-weight closure of the block-precedence graph reduced to a minimum cut on a Dinic max-flow engine, running live in the browser, and derives the nested Whittle pit shells by revenue factor. It reproduces the published optima of three real MineLib instances to at most 2e-9 relative error, and self-checks every solve with the max-flow duality identity. This is the only one of the Faena four whose headline is validated against third-party published optima rather than its own generator.<br/><img src='/images/projects/pitforge_app.png'>"
 collection: portfolio
@@ -8,7 +8,7 @@ tags: [mining-optimization, open-pit, ultimate-pit-limit, max-flow, min-cut, whi
 
 PitForge is an open-pit **mine-design** workbench. It solves the **ultimate pit limit exactly**, as a maximum-weight closure of the block-precedence graph reduced to a minimum cut on a Dinic max-flow engine, running live in the browser, and derives the nested Whittle pit shells by revenue factor. Live at [pitforge.fasl-work.com](https://pitforge.fasl-work.com), part of the [Faena](https://faena.fasl-work.com) mining-analytics hub.
 
-![PitForge — an exact ultimate pit via Dinic min-cut, with nested Whittle shells, in the browser](/images/projects/pitforge_app.png)
+![PitForge: an exact ultimate pit via Dinic min-cut, with nested Whittle shells, in the browser](/images/projects/pitforge_app.png)
 
 ## Say what the engine is
 

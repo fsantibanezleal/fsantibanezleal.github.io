@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
-  <title>Finn — market-analytics architecture and the rigor that separates a demo from a trap</title>
+  <title>Finn, market-analytics architecture and the rigor that separates a demo from a trap</title>
   <desc>Market and news data flow through a FastAPI + HTMX backend into five analytics modules (Forecast, Risk and Portfolio, Backtest, Sentiment, Macro), with walk-forward cross-validation and transaction-cost-aware backtesting as the integrity guarantees, plus first-class LATAM coverage.</desc>
   <defs>
     <linearGradient id="bgF" x1="0%" y1="0%" x2="100%" y2="100%">

@@ -15,7 +15,7 @@ I am an applied scientist and technical leader with over 15 years of experience 
 My work and research
 ======
 
-I love science, mathematics, and nature—and my career sits at their intersection.
+I love science, mathematics, and nature, and my career sits at their intersection.
 
 I lead end-to-end data science initiatives for mining process optimization, delivering secure, scalable, production-grade solutions that tie business value to governance and engineering best practices.
 
@@ -73,7 +73,7 @@ Key clients and companies include CODELCO, Minera Centinela, and various mining 
 
 My origins
 ======
-I come from southern Chile, where I grew up on a hill—a bit isolated from civilization, but surrounded by nature, cliffs, forests, and beaches.
+I come from southern Chile, where I grew up on a hill, a bit isolated from civilization, but surrounded by nature, cliffs, forests, and beaches.
 
 ![wolverine](/images/places/wolverine/15.jpg)
 
@@ -81,6 +81,6 @@ I received my Ph.D. from the School of Electrical Engineering at the University 
 
 ![UDEC](/images/places/udec/udec3.jpg)
 
-I also hold an Industrial Electronics Technician degree from the High Technology Educational Center [CEAT](https://www.ceat.cl/inicio/), located in San Pedro de la Paz—surrounded by a lagoon and a small hill.
+I also hold an Industrial Electronics Technician degree from the High Technology Educational Center [CEAT](https://www.ceat.cl/inicio/), located in San Pedro de la Paz, surrounded by a lagoon and a small hill.
 
 ![CEAT](/images/places/ceat/ceat1.jpg)

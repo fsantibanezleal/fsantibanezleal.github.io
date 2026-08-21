@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
-  <title>CAOS SimLab — deterministic-replay simulation: one engine, two lanes, one render path</title>
+  <title>CAOS SimLab, deterministic-replay simulation: one engine, two lanes, one render path</title>
   <desc>A scenario defined by parameters and a seed runs through one shared Python engine; a measured 3-gate rule sends it to the live in-browser Pyodide lane or the offline precomputed lane; both produce one trace that the front end animates through a single render path across six visualization families.</desc>
   <defs>
     <linearGradient id="bgSL" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -10,7 +10,7 @@
   </defs>
   <rect width="800" height="400" fill="url(#bgSL)" rx="8"/>
   <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1f3a52" stroke-width="2" rx="8"/>
-  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">CAOS SIMLAB — DETERMINISTIC-REPLAY SIMULATION (DES &amp; ABM)</text>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">CAOS SIMLAB, DETERMINISTIC-REPLAY SIMULATION (DES &amp; ABM)</text>
 
   <!-- scenario + engine -->
   <rect x="16" y="60" width="150" height="120" rx="6" fill="#0a1628" stroke="#1f3a52"/>

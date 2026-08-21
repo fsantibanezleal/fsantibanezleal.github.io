@@ -1,5 +1,5 @@
 ---
-title: 'The Traps That Wouldn't Equalize'
+title: 'The Traps That Wouldn''t Equalize'
 date: 2026-03-28
 permalink: /rollings/2026/03/damped-gs-convergence/
 tags:

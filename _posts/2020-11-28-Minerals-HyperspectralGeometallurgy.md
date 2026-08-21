@@ -24,7 +24,7 @@ Our approach introduces a stochastic formulation for mineral hyperspectral analy
 
 <div style="background:#0d1b2a;padding:16px 20px;border-radius:8px;margin:16px 0;font-family:Georgia,serif;color:#e0e0e0;font-size:15px;line-height:1.8;">
 <strong style="color:#e07830;">Hierarchical regression:</strong><br/>
-y = f(spectrum) + random_effects(ambient) + ε — separating signal from environmental noise
+y = f(spectrum) + random_effects(ambient) + ε, separating signal from environmental noise
 </div>
 
 Why stochastic matters

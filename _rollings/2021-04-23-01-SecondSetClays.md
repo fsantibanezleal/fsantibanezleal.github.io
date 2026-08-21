@@ -76,5 +76,5 @@ My wife told me that my clays look like makeup and she sent me this photo
 
 <div style="background:#0d1b2a;padding:16px 20px;border-radius:8px;margin:16px 0;font-family:Georgia,serif;color:#e0e0e0;font-size:15px;line-height:1.8;">
 <strong style="color:#e07830;">Spectral reflectance:</strong><br/>
-R(λ) = reflected(λ) / incident(λ) — each mineral has a unique spectral signature across 400-2500nm
+R(λ) = reflected(λ) / incident(λ), each mineral has a unique spectral signature across 400-2500nm
 </div>

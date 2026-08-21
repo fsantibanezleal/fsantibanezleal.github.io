@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
-  <title>LDA-HSI — wordification design-space sweep across topic-model backbones, evaluated on a multi-axis battery</title>
+  <title>LDA-HSI, wordification design-space sweep across topic-model backbones, evaluated on a multi-axis battery</title>
   <desc>Hyperspectral scenes are turned into topic-model corpora by 19 wordification recipes (V1..V20), swept across four topic-model backbones (LDA, HDP, ProdLDA, ETM) at quantisation levels Q=8/16/32, then scored on a multi-axis evaluation battery. The verdict: V8 is the portable cross-backbone leader, V20 is the LDA Q-scaling peak, and F-1 accuracy does not discriminate.</desc>
   <defs>
     <linearGradient id="bgL" x1="0%" y1="0%" x2="100%" y2="100%">

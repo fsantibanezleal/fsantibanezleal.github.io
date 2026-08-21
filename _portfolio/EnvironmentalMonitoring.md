@@ -21,11 +21,11 @@ The system achieved a 15% reduction in severe environmental alert events, shifti
 
 ## Strategic context
 
-Environmental compliance in mining is not optional — it is a license to operate. Regulatory violations can halt production, generate fines, and damage community relationships irreversibly. This system transformed environmental management from reactive (respond after the alert) to predictive (act before the event), protecting both surrounding communities and operational continuity. The integration of Generative AI for operator-facing recommendations was a deliberate decision to maximize adoption by the people who actually control dust-generating activities.
+Environmental compliance in mining is not optional, it is a license to operate. Regulatory violations can halt production, generate fines, and damage community relationships irreversibly. This system transformed environmental management from reactive (respond after the alert) to predictive (act before the event), protecting both surrounding communities and operational continuity. The integration of Generative AI for operator-facing recommendations was a deliberate decision to maximize adoption by the people who actually control dust-generating activities.
 
 ![Environmental Monitoring](/images/projects/environmental_monitoring.svg)
 
-## Key Performance Indicators — Process impact
+## Key Performance Indicators, Process impact
 
 The system transforms environmental management from reactive alerting to prescriptive anticipation, expanding the decision window from minutes to hours.
 
@@ -51,7 +51,7 @@ The system operates in three integrated stages:
 Time-series models generate forecasts at **1-hour and 6-hour horizons**, combining current pollution estimates with meteorological data, operational schedules, and historical patterns. This gives operators advance warning to take preventive action before events reach critical thresholds.
 
 ### 3. Intelligent recommendations
-A **Generative AI module** synthesizes the current situation, forecasts, and operational context to produce **natural-language recommendations** — specific, actionable guidance written in the language that operators and environmental managers actually use. Instead of abstract dashboards, they receive clear instructions adapted to the current operational state.
+A **Generative AI module** synthesizes the current situation, forecasts, and operational context to produce **natural-language recommendations**, specific, actionable guidance written in the language that operators and environmental managers actually use. Instead of abstract dashboards, they receive clear instructions adapted to the current operational state.
 
 ## Results
 

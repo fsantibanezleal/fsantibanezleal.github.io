@@ -6,11 +6,11 @@ collection: portfolio
 tags: [machine-learning, geotechnical, mining, seismic, risk-prediction, xgboost]
 ---
 
-A **machine learning system for predicting geotechnical hazards** — including rockburst and slope instability events — in underground and open-pit mining operations.
+A **machine learning system for predicting geotechnical hazards**, including rockburst and slope instability events, in underground and open-pit mining operations.
 
 ## Business impact
 
-This system replaced ad hoc manual expert judgment with systematic, data-driven risk assessment on a weekly operational cadence. It enables access restriction decisions that balance safety with productivity — each unnecessary closure costs production tonnage, while each missed hazard risks lives and equipment. Interpretable outputs (SHAP-based feature importance) ensure that geologists and mine planners trust and act on the predictions.
+This system replaced ad hoc manual expert judgment with systematic, data-driven risk assessment on a weekly operational cadence. It enables access restriction decisions that balance safety with productivity, each unnecessary closure costs production tonnage, while each missed hazard risks lives and equipment. Interpretable outputs (SHAP-based feature importance) ensure that geologists and mine planners trust and act on the predictions.
 
 | Metric | Result |
 |--------|--------|
@@ -21,11 +21,11 @@ This system replaced ad hoc manual expert judgment with systematic, data-driven 
 
 ## Strategic context
 
-Underground mining safety decisions traditionally depend on individual expert judgment, which varies across shifts, geologists, and sites. This system provides a consistent, data-driven baseline that supports — not replaces — expert decisions, ensuring that risk assessment is systematic and auditable. For mining operations, the ability to demonstrate a rigorous, repeatable safety process is both an operational necessity and a regulatory expectation.
+Underground mining safety decisions traditionally depend on individual expert judgment, which varies across shifts, geologists, and sites. This system provides a consistent, data-driven baseline that supports, not replaces, expert decisions, ensuring that risk assessment is systematic and auditable. For mining operations, the ability to demonstrate a rigorous, repeatable safety process is both an operational necessity and a regulatory expectation.
 
 ![Geotechnical Risk](/images/projects/geotechnical_risk.svg)
 
-## Key Performance Indicators — Process impact
+## Key Performance Indicators, Process impact
 
 The system shifts geotechnical risk management from reactive expert judgment to proactive data-informed planning, with quantifiable detection capabilities.
 

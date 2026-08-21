@@ -12,7 +12,7 @@ tags:
 Adding the third dimension
 ======
 
-We've been capturing hyperspectral images of mineral samples for months now — VNIR and SWIR cameras giving us spectral information across hundreds of wavelengths. But spectral data alone doesn't tell you everything about a mineral sample. Particle size matters. Surface texture matters. And those are fundamentally 3D properties that a flat spectral image can't capture.
+We've been capturing hyperspectral images of mineral samples for months now, VNIR and SWIR cameras giving us spectral information across hundreds of wavelengths. But spectral data alone doesn't tell you everything about a mineral sample. Particle size matters. Surface texture matters. And those are fundamentally 3D properties that a flat spectral image can't capture.
 
 Today we started integrating depth cameras into the acquisition setup. The idea: capture depth maps alongside the spectral images, co-register them, and have both the "what it is" (spectral composition) and the "how it looks" (particle size, roughness) in a single dataset.
 
@@ -21,7 +21,7 @@ Today we started integrating depth cameras into the acquisition setup. The idea:
 Sieve analysis takes hours and destroys the sample. Surface profiling from depth images takes minutes and the sample survives intact for spectral analysis. If we can correlate depth-derived roughness metrics with sieve-derived particle size distributions, we have a non-destructive, fast alternative.
 </div>
 
-The first challenge is the bilateral filter — standard smoothing destroys edges between particles, but bilateral filtering preserves them by weighting based on both spatial proximity and depth similarity. Getting the kernel parameters right for mineral samples (which have much sharper depth transitions than human faces, where this filter was originally designed) took most of the afternoon.
+The first challenge is the bilateral filter, standard smoothing destroys edges between particles, but bilateral filtering preserves them by weighting based on both spatial proximity and depth similarity. Getting the kernel parameters right for mineral samples (which have much sharper depth transitions than human faces, where this filter was originally designed) took most of the afternoon.
 
 ![Depth profiler processing pipeline](/images/projects/depth_profiler_pipeline.svg)
 

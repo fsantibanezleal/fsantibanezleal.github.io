@@ -30,7 +30,7 @@ where R0 is the resting cell radius, A_j is the amplitude (extension length), th
 ## Key features
 
 - **Deformable cell model** with configurable Gaussian filopodia
-- **Durotaxis mechanics**: cells respond to stiffness gradients in the tissue, biasing migration toward stiffer regions — a key mechanism in developmental biology
+- **Durotaxis mechanics**: cells respond to stiffness gradients in the tissue, biasing migration toward stiffer regions, a key mechanism in developmental biology
 - **Real-time 2D Canvas visualization** at 10-50 FPS
 - **Per-cell color coding** for tracking individual cells
 - **Tissue boundary dynamics**: EVL epiboly front and DEB convergence margin
@@ -52,8 +52,8 @@ Developed during my work at [SCIAN-Lab](http://www.scian.cl/) and the [BNI](http
 
 ## Live application
 
-▶ **[Live demo — cpm.fasl-work.com](https://cpm.fasl-work.com)** — Cellular Potts Model simulator — zebrafish DFC migration.
+▶ **[Live demo, cpm.fasl-work.com](https://cpm.fasl-work.com)**, Cellular Potts Model simulator, zebrafish DFC migration.
 
-![Cellular Potts Model — Interactive web interface](/images/projects/screenshots/cpm_frontend.png)
+![Cellular Potts Model, Interactive web interface](/images/projects/screenshots/cpm_frontend.png)
 
 [View on GitHub](https://github.com/fsantibanezleal/SCIAN_LEO_CPM)

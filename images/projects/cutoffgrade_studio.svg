@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
-  <title>CutoffGrade Studio — Lane's optimal cut-off as a declining trajectory</title>
+  <title>CutoffGrade Studio, Lane's optimal cut-off as a declining trajectory</title>
   <desc>From a grade-tonnage curve and economic and capacity inputs, the exact Lane optimizer computes the NPV-maximising declining cut-off trajectory above a break-even floor, set by the binding stage; a learned surrogate reproduces it for speed. Data is synthetic.</desc>
   <defs>
     <linearGradient id="bgCG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#111a2b"/></linearGradient>
   </defs>
   <rect width="800" height="400" fill="url(#bgCG)" rx="8"/>
   <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1f3a52" stroke-width="2" rx="8"/>
-  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">CUTOFFGRADE STUDIO — LANE'S OPTIMAL CUT-OFF (A DECLINING TRAJECTORY)</text>
+  <text x="400" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#29B6F6" letter-spacing="0.5">CUTOFFGRADE STUDIO, LANE'S OPTIMAL CUT-OFF (A DECLINING TRAJECTORY)</text>
 
   <g font-family="Arial,sans-serif">
     <!-- grade-tonnage panel -->
@@ -57,7 +57,7 @@
 
     <!-- honesty strip -->
     <rect x="20" y="290" width="762" height="52" rx="6" fill="#0c1622" stroke="#1f3a52"/>
-    <text x="401" y="311" text-anchor="middle" font-size="9" font-weight="bold" fill="#e8a838">A faithful implementation of a classic method — not a black box, not a "novel AI" claim</text>
+    <text x="401" y="311" text-anchor="middle" font-size="9" font-weight="bold" fill="#e8a838">A faithful implementation of a classic method, not a black box, not a "novel AI" claim</text>
     <text x="401" y="329" text-anchor="middle" font-size="8" fill="#cdd9e5">exact Lane vs baselines is provable · learned models are speed-only · 100% synthetic porphyry-copper base case (labelled) · two textbook divergences disclosed</text>
 
     <text x="401" y="366" text-anchor="middle" font-size="8.4" fill="#7d93a8">live at cutoffgrade.fasl-work.com · Vite + React 19 + onnxruntime-web · static GitHub Pages · part of Faena</text>
