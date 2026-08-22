@@ -22,7 +22,7 @@ In practice that turned into a negative result per tool, and they are more inter
 
 - In [TailWatch](https://tailwatch.fasl-work.com), an InSAR ground-deformation studio, I trained an anomaly autoencoder to flag accelerating slopes. On the held-out benchmark the classical velocity map (AUC 0.968) beats it (0.898). The learned model is the loser, and the page says so.
 - In [DispatchLab](https://dispatchlab.fasl-work.com), a truck-shovel dispatch bench, the policy I most wanted to work was a distilled Monte-Carlo rollout under cycle-time uncertainty. It wins 0 of 8 random seeds against a simpler assignment. That is a published null, not a hidden one.
-- In [PitForge](https://pitforge.fasl-work.com), the exact optimizer (a min-cut solving the ultimate pit limit to within 2e-9 of three published MineLib optima) is the star; the grade neural net ties ordinary kriging (0.9613 vs 0.958) and never beats it.
+- In [PitForge](https://pitforge.fasl-work.com), the exact optimizer (a min-cut solving the ultimate pit limit to within 2e-9 of three published MineLib optima) is the star; the grade neural net loses to ordinary kriging (R2 0.8757 vs 0.9333) and never beats it.
 - In [ProspectMap](https://prospectmap.fasl-work.com), on a real mineral belt, a trivial distance-to-deposit null (0.783) ties the best model. Most of the apparent skill is spatial proximity, and the app commits that verdict as `ranking_win: false`.
 - Even [ChronoScope](https://chronoscope.fasl-work.com), a forecasting atlas, keeps a case where a one-line SeasonalNaive beats a foundation model on real data.
 
