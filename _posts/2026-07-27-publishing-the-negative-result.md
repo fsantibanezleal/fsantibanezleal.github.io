@@ -24,7 +24,7 @@ In [TailWatch](https://tailwatch.fasl-work.com), an InSAR ground-deformation stu
 
 In [DispatchLab](https://dispatchlab.fasl-work.com), a truck-shovel dispatch bench, the policy I most wanted to work was a Monte-Carlo rollout under cycle-time uncertainty. It wins 0 of 8 random seeds against a simpler assignment. A published null, not a quiet omission.
 
-In [PitForge](https://pitforge.fasl-work.com), the exact core (a min-cut solving the ultimate pit limit to within 2e-9 of three published MineLib optima) is the star, and the grade neural net ties ordinary kriging (0.9613 vs 0.958) and never beats it.
+In [PitForge](https://pitforge.fasl-work.com), the exact core (a min-cut solving the ultimate pit limit to within 2e-9 of three published MineLib optima) is the star, and the grade neural net loses to ordinary kriging (R2 0.8757 vs 0.9333) and never beats it.
 
 In [ProspectMap](https://prospectmap.fasl-work.com), on a real mineral belt, a trivial distance-to-deposit baseline (0.783) ties the best model. Most of the apparent skill is spatial proximity, and the app commits that as a verdict rather than hiding it.
 
