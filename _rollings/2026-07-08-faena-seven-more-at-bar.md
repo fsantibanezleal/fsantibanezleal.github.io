@@ -22,7 +22,7 @@ What I want to note is not that they are live. It is what each one puts on scree
 <strong style="color:#e07830;">One honest result per tool, on the tile:</strong><br/>
 TailWatch: the classical velocity map (AUC 0.968) beats the learned anomaly autoencoder (0.898).<br/>
 DispatchLab: the Monte-Carlo rollout policy wins 0 of 8 seeds under cycle-time uncertainty.<br/>
-PitForge: the grade neural net ties ordinary kriging (0.9613 vs 0.958); it never beats it.<br/>
+PitForge: the grade neural net loses to ordinary kriging (R2 0.8757 vs 0.9333); it never beats it.<br/>
 ProspectMap: on real MVT data, a trivial distance-to-deposit null (0.783) ties the best model.<br/>
 <span style="color:#5a9ac0;font-size:13px;">ChancaDEM keeps its name honest too: despite "DEM", the engine is a closed-form population balance, and the 3D chamber is a kinematic animation, not a physics solve.</span>
 </div>
