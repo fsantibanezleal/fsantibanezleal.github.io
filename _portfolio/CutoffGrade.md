@@ -14,7 +14,7 @@ An open, explainable studio for **Lane's optimal cut-off grade**, the NPV-maximi
 
 The engine implements Lane's method exactly, the six characteristic cut-offs, the balancing (Dagdelen) medians, and a year-by-year NPV simulator run to a fixed point, and shows it against a best-constant baseline and closed-form oracles, so the **~2.6% NPV uplift** it finds when a processing stage binds (and **0%** when the mine is the limit, exactly as theory predicts) is provable, not asserted. A real ten-tab workbench reacting to a case selector and live sliders, equations on screen.
 
-## Honest about the AI, and the data
+## The AI layer and the data
 
 Two small models run live via **onnxruntime-web**, a surrogate that reproduces the trajectory instantly and an out-of-distribution guard, but they are **for speed and sanity, not to improve the answer** (the exact optimizer is always the authority). The base case is **100% synthetic** (a porphyry-copper example, openly labelled), and the repo discloses its two small divergences from textbook Lane. A faithful classic method, made legible, no "novel-beyond-SOTA" claim.
 

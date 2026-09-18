@@ -1,16 +1,16 @@
 ---
 title: "QLab, Quantum Laboratory"
 date: 2026-06-25
-excerpt: "A public, didactic quantum-computing lab that runs real frameworks (Qiskit, PennyLane, Cirq, Stim) on 20 worked cases and puts every quantum method next to its classical baseline, and honestly shows that at lab scale, classical still wins.<br/><img src='/images/projects/qlab_architecture.svg'>"
+excerpt: "A public, didactic quantum-computing lab that runs real frameworks (Qiskit, PennyLane, Cirq, Stim) on 20 worked cases and puts every quantum method next to its classical baseline, and shows that at lab scale, classical still wins.<br/><img src='/images/projects/qlab_architecture.svg'>"
 collection: portfolio
-tags: [quantum-computing, qiskit, pennylane, cirq, stim, honest-benchmarks]
+tags: [quantum-computing, qiskit, pennylane, cirq, stim, benchmarks]
 ---
 
 An open, didactic **quantum-computing lab**. QLab runs the *real* frameworks (Qiskit + Aer, PennyLane, Cirq, Stim) on 20 worked cases, and for each one it puts the quantum method next to its classical baseline so you can see, with real numbers, which wins and at what cost. Live at [qlab.fasl-work.com](https://qlab.fasl-work.com).
 
-![QLab: Problem × Solver, three lanes, honest verdict](/images/projects/qlab_architecture.svg)
+![QLab: Problem × Solver, three lanes, verdict per case](/images/projects/qlab_architecture.svg)
 
-## The honest thesis
+## The thesis
 
 Across all 20 cases, **none shows a practical, pay-for-it quantum speedup**, at lab scale, classical still wins, and QLab shows qubits / gates / shots / wall-time side by side so the verdict is evidence, not a slogan. It is careful about the difference between a genuine quantum *phenomenon* and a quantum *advantage*: the CHSH case really does violate the classical bound (S = 2√2 > 2), and QLab labels that as nonlocality, **not** a speedup.
 

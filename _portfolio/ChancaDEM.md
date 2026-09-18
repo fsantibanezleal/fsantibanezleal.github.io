@@ -18,7 +18,7 @@ A Whiten classification-breakage population balance solved live by LU over a 28-
 
 Only the secondary cone has a calibrated lane. It is fitted to 10 published HP500 surveys of a Metso HP500 secondary cone at Minas Rio (Anglo American), crushing itabirite iron ore, transcribed from Rocha et al., Minerals 2024 (DOI 10.3390/min14090919, CC BY), not from any campaign of the author. Jaw, gyratory, tertiary and short-head use illustrative constants that reproduce the correct trends, not any plant absolute numbers.
 
-## The honest limit
+## The limit
 
 The rigor is in a leave-one-out ridge cross-validation over the 10 real surveys, with negative controls. Strict LOO throughput MAPE 12.09 percent beats both a constant-mean control (18.29 percent) and a label-shuffle control (25.04 percent), a real if modest signal on n=10, and the repo also stores the leaky non-LOO block to show the optimism gap. The ONNX surrogate emulates the engine at R-squared 0.995 (P80) and 0.998 (throughput): that is fidelity to the engine, never accuracy against a plant. It is a cheap closed-form model, not a particle simulation or a plant twin.
 
