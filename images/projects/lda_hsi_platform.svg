@@ -17,7 +17,7 @@
   <rect width="800" height="400" fill="url(#bgL)" rx="8"/>
   <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1a5a6a" stroke-width="2" rx="8"/>
 
-  <text x="400" y="27" style="font-family:Arial,sans-serif;font-size:15px;font-weight:bold;fill:#4ecdc4;text-anchor:middle;letter-spacing:1px">LDA-HSI &#x2014; WHICH WORDIFICATION MATTERS?</text>
+  <text x="400" y="27" style="font-family:Arial,sans-serif;font-size:15px;font-weight:bold;fill:#4ecdc4;text-anchor:middle;letter-spacing:1px">LDA-HSI &#xB7; WHICH WORDIFICATION MATTERS?</text>
   <text x="400" y="42" style="font-family:Arial,sans-serif;font-size:9px;fill:#7a9ab5;text-anchor:middle">spectra as documents &#xB7; 19 recipes &#xD7; 4 backbones &#xD7; Q&#x2208;{8,16,32} &#xB7; multi-axis evaluation</text>
 
   <!-- ===== STAGE 1: HSI input ===== -->
@@ -67,11 +67,11 @@
   <!-- highlighted recipe legend -->
   <rect x="172" y="232" width="190" height="116" rx="4" style="fill:#081828;stroke:#2a4a5a;stroke-width:0.6"/>
   <text x="267" y="246" style="font-family:Arial,sans-serif;font-size:7px;fill:#e8a838;text-anchor:middle;font-weight:bold">recipes that matter</text>
-  <text x="180" y="261" style="font-family:Arial,sans-serif;font-size:7px;fill:#4ecdc4">V1</text><text x="200" y="261" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5">band-frequency &#x2014; canonical baseline</text>
-  <text x="180" y="276" style="font-family:Arial,sans-serif;font-size:7px;fill:#e8a838;font-weight:bold">V8</text><text x="200" y="276" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5">NFINDR endmembers &#x2014; portable leader</text>
-  <text x="180" y="291" style="font-family:Arial,sans-serif;font-size:7px;fill:#c39bd3;font-weight:bold">V20</text><text x="200" y="291" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5">MI-weighted bands &#x2014; LDA Q-peak</text>
-  <text x="180" y="306" style="font-family:Arial,sans-serif;font-size:7px;fill:#cfe6e4;font-weight:bold">V11</text><text x="200" y="306" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5">product-quant &#x2014; backbone specialist</text>
-  <text x="180" y="321" style="font-family:Arial,sans-serif;font-size:7px;fill:#cfe6e4;font-weight:bold">V12</text><text x="200" y="321" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5">GMM-token &#x2014; LDA@Q=8 leader</text>
+  <text x="180" y="261" style="font-family:Arial,sans-serif;font-size:7px;fill:#4ecdc4">V1</text><text x="200" y="261" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5">band-frequency &#xB7; canonical baseline</text>
+  <text x="180" y="276" style="font-family:Arial,sans-serif;font-size:7px;fill:#e8a838;font-weight:bold">V8</text><text x="200" y="276" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5">NFINDR endmembers &#xB7; portable leader</text>
+  <text x="180" y="291" style="font-family:Arial,sans-serif;font-size:7px;fill:#c39bd3;font-weight:bold">V20</text><text x="200" y="291" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5">MI-weighted bands &#xB7; LDA Q-peak</text>
+  <text x="180" y="306" style="font-family:Arial,sans-serif;font-size:7px;fill:#cfe6e4;font-weight:bold">V11</text><text x="200" y="306" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5">product-quant &#xB7; backbone specialist</text>
+  <text x="180" y="321" style="font-family:Arial,sans-serif;font-size:7px;fill:#cfe6e4;font-weight:bold">V12</text><text x="200" y="321" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5">GMM-token &#xB7; LDA@Q=8 leader</text>
   <text x="267" y="340" style="font-family:Arial,sans-serif;font-size:6.5px;fill:#5a7a8a;text-anchor:middle">&#x03A6;: R&#x1D2E; &#x2192; doc-term counts &#xB7; 4 axes of design freedom</text>
 
   <line x1="375" y1="206" x2="397" y2="206" style="stroke:#4ecdc4;stroke-width:1.5" marker-end="url(#arrL)"/>
@@ -139,13 +139,13 @@
   <rect x="577" y="262" width="209" height="94" rx="6" style="fill:#0a1628;stroke:#e8a838;stroke-width:1"/>
   <text x="681" y="278" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#e8a838;text-anchor:middle">The verdict: two poles</text>
   <rect x="586" y="286" width="95" height="62" rx="4" style="fill:#0f2338;stroke:#e8a838;stroke-width:0.9"/>
-  <text x="633" y="300" style="font-family:Arial,sans-serif;font-size:8px;font-weight:bold;fill:#e8a838;text-anchor:middle">V8 &#x2014; portable</text>
+  <text x="633" y="300" style="font-family:Arial,sans-serif;font-size:8px;font-weight:bold;fill:#e8a838;text-anchor:middle">V8 &#xB7; portable</text>
   <text x="633" y="313" style="font-family:Arial,sans-serif;font-size:6.5px;fill:#cfe6e4;text-anchor:middle">cross-backbone leader</text>
   <text x="633" y="324" style="font-family:Arial,sans-serif;font-size:6.5px;fill:#7a9ab5;text-anchor:middle">F-7 0.431 (+0.034)</text>
   <text x="633" y="335" style="font-family:Arial,sans-serif;font-size:6.5px;fill:#7a9ab5;text-anchor:middle">F-18 ~0.96 stable</text>
   <text x="633" y="345" style="font-family:Arial,sans-serif;font-size:6px;fill:#5a7a8a;text-anchor:middle">use when backbone uncertain</text>
   <rect x="686" y="286" width="95" height="62" rx="4" style="fill:#0f2338;stroke:#9b59b6;stroke-width:0.9"/>
-  <text x="733" y="300" style="font-family:Arial,sans-serif;font-size:8px;font-weight:bold;fill:#c39bd3;text-anchor:middle">V20 &#x2014; LDA peak</text>
+  <text x="733" y="300" style="font-family:Arial,sans-serif;font-size:8px;font-weight:bold;fill:#c39bd3;text-anchor:middle">V20 &#xB7; LDA peak</text>
   <text x="733" y="313" style="font-family:Arial,sans-serif;font-size:6.5px;fill:#cfe6e4;text-anchor:middle">Q-scaling winner</text>
   <text x="733" y="324" style="font-family:Arial,sans-serif;font-size:6.5px;fill:#7a9ab5;text-anchor:middle">F-7 0.563 @Q=32</text>
   <text x="733" y="335" style="font-family:Arial,sans-serif;font-size:6.5px;fill:#7a9ab5;text-anchor:middle">inverts vs V12 at Q=32</text>

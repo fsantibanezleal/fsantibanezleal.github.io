@@ -24,7 +24,7 @@
   <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1a5a6a" stroke-width="2" rx="8"/>
 
   <!-- Title -->
-  <text x="400" y="28" style="font-family:Arial,sans-serif;font-size:15px;font-weight:bold;fill:#4ecdc4;text-anchor:middle;letter-spacing:1px">AURALIS &#x2014; 6D AUDIO EMBEDDING VISUALIZER</text>
+  <text x="400" y="28" style="font-family:Arial,sans-serif;font-size:15px;font-weight:bold;fill:#4ecdc4;text-anchor:middle;letter-spacing:1px">AURALIS &#xB7; 6D AUDIO EMBEDDING VISUALIZER</text>
 
   <!-- ===== LEFT: Audio input ===== -->
   <rect x="15" y="44" width="150" height="200" rx="6" style="fill:#0a1628;stroke:#1a5a6a;stroke-width:1"/>
