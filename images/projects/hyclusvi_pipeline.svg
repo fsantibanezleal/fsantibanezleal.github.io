@@ -35,7 +35,7 @@
   <rect width="800" height="400" fill="url(#bg)"/>
 
   <!-- Title -->
-  <text x="400" y="24" style="font-family:Arial,sans-serif;font-size:15px;font-weight:bold;fill:#48cae4;text-anchor:middle;">HyClusVi &#x2014; Hyperspectral Clustering &amp; Visualization Pipeline</text>
+  <text x="400" y="24" style="font-family:Arial,sans-serif;font-size:15px;font-weight:bold;fill:#48cae4;text-anchor:middle;">HyClusVi &#xB7; Hyperspectral Clustering &amp; Visualization Pipeline</text>
 
   <!-- ========== LEFT: Hyperspectral Acquisition ========== -->
   <rect x="15" y="38" width="155" height="200" rx="6" style="fill:url(#boxGrad);stroke:#1a3a5c;stroke-width:1;"/>
