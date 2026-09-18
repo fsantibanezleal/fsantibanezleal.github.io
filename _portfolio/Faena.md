@@ -3,7 +3,7 @@ title: "Faena, Mining-Analytics Hub"
 date: 2026-06-28
 excerpt: "A single open launcher that catalogues a growing set of independent, in-browser mining-analytics tools across the value chain. Each tool is its own documented product on a named real dataset or a validated synthetic. Six live today, eight in active development, and 28 more mapped on a visible roadmap.<br/><img src='/images/projects/faena_hub.svg'>"
 collection: portfolio
-tags: [mining, analytics, hub, launcher, astro]
+tags: [mining, analytics, hub, launcher, react]
 ---
 
 The open **hub** for a growing family of independent, in-browser mining-analytics tools. Faena is not an app itself, it is a fast static index that catalogues each tool across the value chain (exploration → drill & blast → load/haul → comminution → processing → tailings → asset health → economics) and links out to its own repo and subdomain. It never bundles or proxies the apps. Live at [faena.fasl-work.com](https://faena.fasl-work.com).
@@ -16,6 +16,6 @@ Every tile carries a lifecycle status, so the catalogue tells the truth about ma
 
 ## How it is organized
 
-Two axes: **value-chain stage** as swimlanes and **solution-type** (computer vision, 3D physics, optimization, condition monitoring, geospatial, forecasting) as a colour facet. The whole site is **data-driven** from a registry, adding a tool is a data edit, and built with **Astro** for a static, near-zero-JS surface, bilingual EN/ES with a light/dark theme.
+Two axes: **value-chain stage** as swimlanes and **solution-type** (computer vision, 3D physics, optimization, condition monitoring, geospatial, forecasting) as a colour facet. The whole site is **data-driven** from a registry, adding a tool is a data edit, and built as a **React 19 and Vite** single-page app on the shared CAOS app shell, served as static files, bilingual EN/ES with a light/dark theme.
 
 [Live hub](https://faena.fasl-work.com) · [GitHub repository](https://github.com/fsantibanezleal/CAOS_FAENA)
