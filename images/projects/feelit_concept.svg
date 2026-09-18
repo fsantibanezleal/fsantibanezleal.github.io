@@ -20,7 +20,7 @@
   <rect width="800" height="400" fill="url(#bg)"/>
 
   <!-- Title -->
-  <text x="400" y="28" style="font-family:Arial,sans-serif;font-size:16px;font-weight:bold;fill:#48cae4;text-anchor:middle;">FeelIT &#x2014; Haptic Accessibility Concept</text>
+  <text x="400" y="28" style="font-family:Arial,sans-serif;font-size:16px;font-weight:bold;fill:#48cae4;text-anchor:middle;">FeelIT &#xB7; Haptic Accessibility Concept</text>
 
   <!-- Section dividers -->
   <line x1="267" y1="38" x2="267" y2="280" style="stroke:#2a4a6b;stroke-width:1;stroke-dasharray:4,4;"/>
@@ -91,7 +91,7 @@
   <circle cx="473" cy="183" r="4" style="fill:#48cae4;"/>
 
   <!-- Label -->
-  <text x="400" y="245" style="font-family:Arial,sans-serif;font-size:9px;fill:#90a4ae;text-anchor:middle;">Side view &#x2014; pins form relief of physical object</text>
+  <text x="400" y="245" style="font-family:Arial,sans-serif;font-size:9px;fill:#90a4ae;text-anchor:middle;">Side view &#xB7; pins form relief of physical object</text>
 
   <!-- Arrows between sections -->
   <path d="M230,150 L290,150" style="fill:none;stroke:#e07a2f;stroke-width:1.5;marker-end:url(#arrowOrange);"/>

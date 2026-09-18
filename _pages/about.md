@@ -50,7 +50,7 @@ Several laboratories, institutions, and researchers have shaped my research and 
 What I am building now
 ======
 
-Outside the day job I build and ship software products end to end. Everything below is live, open to inspect, and documented honestly:
+Outside the day job I build and ship software products end to end. Everything below is live, open to inspect, and documented:
 
 - **[Faena](https://faena.fasl-work.com)**, a hub of browser-native mining-analytics tools, 11 live today: [RotorVitals](https://rotorvitals.fasl-work.com), [ChargeCascade](https://chargecascade.fasl-work.com), [CutoffGrade](https://cutoffgrade.fasl-work.com), [TailWatch](https://tailwatch.fasl-work.com), [DispatchLab](https://dispatchlab.fasl-work.com), [ChancaDEM](https://chancadem.fasl-work.com), [CoreLog](https://corelog.fasl-work.com), [PitForge](https://pitforge.fasl-work.com), [ProspectMap](https://prospectmap.fasl-work.com), [FragmentIQ](https://fragmentiq.fasl-work.com) and [FrothSeg](https://frothseg.fasl-work.com). Each is an independent app with real methods running client-side and an offline precompute lane.
 - **Research labs** that explore one method family end to end, on real data where it exists: [ChronoScope](https://chronoscope.fasl-work.com) (a forecasting atlas with a real foundation-model tier), [QLab](https://qlab.fasl-work.com), [PINN-Lab](https://pinnlab.fasl-work.com), [SimLab](https://simlab.fasl-work.com), [Lidar3D](https://lidar3d.fasl-work.com), [Pulso](https://pulso.fasl-work.com), [CardioPINN](https://cardiopinn.fasl-work.com) and [CAOS Seismic](https://seismic.fasl-work.com).
