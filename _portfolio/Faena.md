@@ -1,7 +1,7 @@
 ---
 title: "Faena, Mining-Analytics Hub"
 date: 2026-06-28
-excerpt: "A single open launcher that catalogues a growing set of independent, in-browser mining-analytics tools across the value chain. Each tool is its own documented product on a named real dataset or a validated synthetic. Three live today, seven in active development, and more on a visible roadmap.<br/><img src='/images/projects/faena_hub.svg'>"
+excerpt: "A single open launcher that catalogues a growing set of independent, in-browser mining-analytics tools across the value chain. Each tool is its own documented product on a named real dataset or a validated synthetic. Six live today, eight in active development, and 28 more mapped on a visible roadmap.<br/><img src='/images/projects/faena_hub.svg'>"
 collection: portfolio
 tags: [mining, analytics, hub, launcher, astro]
 ---
@@ -12,7 +12,7 @@ The open **hub** for a growing family of independent, in-browser mining-analytic
 
 ## Every tile carries its status
 
-Every tile carries a lifecycle status, so the catalogue tells the truth about maturity: **4 live today** (DispatchLab, ChancaDEM, ChargeCascade, RotorVitals), **10 in active development**, and **28 more mapped on the roadmap** (tiles advance *planned → building → live* as each one actually ships. "Live" means brought to the quality bar, not merely deployed. There is no "39 mining apps" claim) a small set that works today, and a visible plan for the rest.
+Every tile carries a lifecycle status, so the catalogue tells the truth about maturity: **6 live today** (DispatchLab, ChancaDEM, ChargeCascade, FrothSeg, StockTwin, RotorVitals), **8 in active development**, and **28 more mapped on the roadmap** (tiles advance from *planned* to *building* to *live* as each one actually ships. "Live" means brought to the quality bar, not merely deployed. There is no "39 mining apps" claim) a small set that works today, and a visible plan for the rest.
 
 ## How it is organized
 
