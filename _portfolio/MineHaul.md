@@ -14,7 +14,7 @@ An **open-source Python package** (`minehaulsim`) for deterministic **discrete-e
 
 The discrete-event engine and its physics are genuine and hand-verified: rimpull/retarder speed-by-grade, emergent truck bunching, routing on a constrained network, five dispatch baselines. Every run passes named **validity gates** and is **byte-deterministic** (asserted in CI, 227 tests on Linux + Windows). The mines are **synthetic**, seeded generators produce *realistic structure with fabricated data*, and equipment values use public spec magnitudes with **class-representative, not OEM, curves**.
 
-## Honest scope
+## Scope
 
 It is early (Alpha) and deliberately bounded: it **does not predict or optimize a real operation** (no calibration, that is DispatchLab's role), its physics anchors are qualitative literature orderings used as tests, and its novelty claim keeps its qualifier, the first **open-source** package to do mine haulage on a genuinely constrained road network (commercial closed tools exist).
 

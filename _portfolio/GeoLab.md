@@ -14,6 +14,6 @@ A **browser-native, no-install, multi-engine geospatial platform**. Load a DEM, 
 
 The WebAssembly ecosystem has real geospatial engines, but they are fragmented. GeoLab aggregates them behind one uniform tool interface. Live today it runs **747 real WhiteboxTools / GeoLibre tools** via the geolibre WASM engine, in a Web Worker so the UI stays responsive. The architecture ([ADR-0059](https://github.com/fsantibanezleal/CAOS_GEOLAB)) is multi-engine by design: adding an engine is one adapter, and GDAL, GEOS, Turf, H3, mapshaper, ITK-Wasm, OpenCV.js and ONNX Runtime Web land incrementally.
 
-## Honest by construction
+## Provenance and tool count
 
 Each result becomes a layer you inspect with a colormap and a value read-out at the cursor. A visual node editor chains tools into a shareable JSON recipe, re-runnable on new data, and every tool shows its source engine, authors and license. The tool count is only ever what genuinely runs, never padded; the sample data is labelled synthetic; and it is openly an actively-built-out lab, not a finished app.

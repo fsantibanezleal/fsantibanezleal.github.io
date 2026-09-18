@@ -56,6 +56,6 @@
 
   <!-- creed strip -->
   <rect x="24" y="300" width="752" height="74" rx="10" fill="#0c1622" stroke="#1f3a52" stroke-width="1"/>
-  <text x="400" y="330" text-anchor="middle" fill="#E8EAED" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Earthquakes cannot be predicted, but their probability can be forecast, honestly.</text>
+  <text x="400" y="330" text-anchor="middle" fill="#E8EAED" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">Earthquakes cannot be predicted, but their probability can be forecast.</text>
   <text x="400" y="356" text-anchor="middle" fill="#9fb3c8" font-family="Segoe UI, Arial, sans-serif" font-size="12">Every number is a probability in (0,1), shown next to its baseline, scored prospectively. Never an alarm. Never a "safe" state.</text>
 </svg>

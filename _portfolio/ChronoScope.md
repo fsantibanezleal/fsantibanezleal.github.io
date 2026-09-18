@@ -14,6 +14,6 @@ A univariate **time-series forecasting atlas**. Fifteen diagnostic cases, each f
 
 Classical and statistical baselines (SeasonalNaive, Theta, AutoARIMA, AutoETS), a gradient-boosting tier (LightGBM), deep nets (NHITS, DLinear, NLinear), and a **foundation-model tier**: Chronos-Bolt, Chronos-2, TimesFM-2.5 and TiRex-2, run **zero-shot**. TiRex-2 needs a purpose-built WSL2/CUDA lane because its kernels have no Windows wheels.
 
-## Real data, and honest limits
+## Real data, and its limits
 
 Four cases are real and licensed (UCI Electricity, UCI Beijing PM2.5, Monash/M4 hourly and daily, all CC-BY-4.0); the other eleven are seeded synthetic with a licence guard that blocks non-redistributable sources. The **foundation models run offline only** (the browser lane is numpy, not an in-browser transformer). And the atlas shows where the hype breaks: on real M4-hourly a one-line **SeasonalNaive (MASE 0.641) beats TimesFM-2.5 (0.729)**, while TiRex-2 gives the best 0.476. White-noise and random-walk controls are on the board too.

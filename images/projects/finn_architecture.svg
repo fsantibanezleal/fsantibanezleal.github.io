@@ -131,7 +131,7 @@
   <rect x="405" y="244" width="370" height="130" rx="5" style="fill:#0f2338;stroke:#e8a838;stroke-width:1"/>
   <text x="590" y="262" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#e8a838;text-anchor:middle">Cost-aware backtesting</text>
   <text x="590" y="275" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">charge transaction costs &#x2014; a strategy must survive contact with reality</text>
-  <!-- two equity curves: gross (looks great) vs net (honest) -->
+  <!-- two equity curves: gross (looks great) vs net (after transaction costs) -->
   <line x1="430" y1="355" x2="430" y2="290" style="stroke:#6e8898;stroke-width:0.7"/>
   <line x1="430" y1="355" x2="755" y2="355" style="stroke:#6e8898;stroke-width:0.7"/>
   <text x="425" y="293" style="font-family:Arial,sans-serif;font-size:6px;fill:#5a7a8a;text-anchor:end">equity</text>
