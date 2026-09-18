@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
   <title>Atalaya, harvest, profile and relate Chile's open data into a knowledge graph</title>
-  <desc>A data-engineering pipeline harvests, profiles, relates, evaluates and exports 1017 datasets into a knowledge graph of five relation types, with client-side semantic search; the strength of the evidence is reported honestly and never as causation.</desc>
+  <desc>A data-engineering pipeline harvests, profiles, relates, evaluates and exports 1017 datasets into a knowledge graph of five relation types, with client-side semantic search; the strength of the evidence is labelled per edge and never reported as causation.</desc>
   <defs>
     <linearGradient id="bgAT" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#0f1622"/></linearGradient>
     <marker id="arrAT" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><polygon points="0 0,9 3.5,0 7" fill="#29B6F6"/></marker>
@@ -43,9 +43,9 @@
     <g fill="#29B6F6"><circle cx="470" cy="185" r="6"/><circle cx="540" cy="165" r="7"/><circle cx="620" cy="195" r="7"/><circle cx="700" cy="170" r="6"/><circle cx="560" cy="220" r="5"/><circle cx="730" cy="215" r="5"/></g>
     <text x="599" y="238" text-anchor="middle" font-size="7.4" fill="#7d93a8">semantic search runs client-side (ONNX) · no backend</text>
 
-    <!-- honesty chips -->
+    <!-- evidence-strength chips -->
     <rect x="20" y="258" width="762" height="52" rx="6" fill="#0c1622" stroke="#1f3a52"/>
-    <text x="401" y="279" text-anchor="middle" font-size="9" font-weight="bold" fill="#e8a838">Honest about evidence strength, never causal</text>
+    <text x="401" y="279" text-anchor="middle" font-size="9" font-weight="bold" fill="#e8a838">Evidence strength labelled, never causal</text>
     <text x="401" y="297" text-anchor="middle" font-size="8" fill="#cdd9e5">of ~14,000 edges, most are cheap priors · the hard evidence is 117 joins + 24 FDR-controlled correlations · SOTA beats classical only ~+1.4 pts · small-n correlations flagged fragile</text>
 
     <text x="401" y="334" text-anchor="middle" font-size="8.6" fill="#9fb3c8">classical (PCA/KMeans/TF-IDF) + SOTA (MiniLM) + a novel calibrated multi-evidence affinity score (live-reweightable)</text>

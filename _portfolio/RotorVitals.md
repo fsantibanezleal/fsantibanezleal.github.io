@@ -20,8 +20,8 @@ An in-browser **condition-monitoring and prognostics** workbench for rotating ma
 
 A classical DSP chain (envelope/SES, kurtogram, cyclostationary, cepstrum, Campbell/order, ISO zones); a learned tier (a **WDCNN** classifier + a deep-autoencoder health indicator, both ONNX); and a four-model **RUL ladder** (exponential → particle filter → Gaussian process → deep-RUL CNN), benchmarked on **36 real run-to-failure trajectories** (GP gives the lowest aggregate error, ≈1 h MAE, with the transparent exponential a close second).
 
-## Honest about the model's limits
+## The model's limits
 
-The learned classifier is trained on CWRU and shown **in-domain** there; everywhere else it is **cross-domain-labelled**, with its failures on display: it collapses on an unseen severity (27.8%) and scores near chance cross-rig on MFPT (0% outer-race recall), while the training-free envelope analysis transfers almost perfectly. The honest lesson, shown not claimed: **deep learning wins in-distribution, physics wins out-of-distribution.** Frequency relations are exact; scope is rotating machinery, bearings-first (no gear claim).
+The learned classifier is trained on CWRU and shown **in-domain** there; everywhere else it is **cross-domain-labelled**, with its failures on display: it collapses on an unseen severity (27.8%) and scores near chance cross-rig on MFPT (0% outer-race recall), while the training-free envelope analysis transfers almost perfectly. The lesson, shown not claimed: **deep learning wins in-distribution, physics wins out-of-distribution.** Frequency relations are exact; scope is rotating machinery, bearings-first (no gear claim).
 
 [Live demo](https://rotorvitals.fasl-work.com) · [GitHub repository](https://github.com/fsantibanezleal/CAOS_RotorVitals)

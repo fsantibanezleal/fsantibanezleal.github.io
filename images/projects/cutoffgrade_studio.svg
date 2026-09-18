@@ -55,7 +55,7 @@
     <text x="446" y="270" text-anchor="middle" font-size="8" fill="#9fb3c8">market</text>
     <text x="500" y="270" font-size="7.6" fill="#3ddc97">~2.6% NPV uplift when a stage binds · 0% when mine-limited</text>
 
-    <!-- honesty strip -->
+    <!-- scope strip -->
     <rect x="20" y="290" width="762" height="52" rx="6" fill="#0c1622" stroke="#1f3a52"/>
     <text x="401" y="311" text-anchor="middle" font-size="9" font-weight="bold" fill="#e8a838">A faithful implementation of a classic method, not a black box, not a "novel AI" claim</text>
     <text x="401" y="329" text-anchor="middle" font-size="8" fill="#cdd9e5">exact Lane vs baselines is provable · learned models are speed-only · 100% synthetic porphyry-copper base case (labelled) · two textbook divergences disclosed</text>
