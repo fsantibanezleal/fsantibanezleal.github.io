@@ -17,7 +17,7 @@ A run is a pure function of `(params, seed)` that produces a compact **trace**; 
 - **Live**, light scenarios run in your browser via [Pyodide](https://pyodide.org); edit parameters, re-run, watch it animate. No server, nothing to install.
 - **Precomputed**, heavy scenarios (native solvers like OR-Tools, large agent counts) are run offline into a seeded trace and replayed with a timeline scrubber under a clear "precomputed due to cost" banner.
 
-## Honest simulation
+## Replications, not a single run
 
 The lab teaches what most demos skip: a single run is noisy, so results come from **replications + confidence intervals**; steady-state metrics need a **warm-up** cut; the same seed must reproduce the same result; and an animation is a hypothesis generator, not evidence. Each scenario validates against theory or a baseline where one exists, the M/M/c queue against the closed-form Erlang-C.
 

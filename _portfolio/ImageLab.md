@@ -18,7 +18,7 @@ Four orthonormal transforms (Fourier, DCT, wavelet, KLT), overcomplete **sparse 
 
 Measured on the Experiments and Benchmark pages: editability peaks at the **designed-structure pole** (local, exact edits) and again at the **learned-manifold pole** (semantic, entangled edits), and collapses to noise between them. The cross-family benchmark makes this concrete, an editability-locality metric where **KLT and wavelet score ~1.0** (local, exact edits) against **Fourier and DCT at ~0.16-0.23** (global, entangled edits), alongside a rate-distortion curve and a fixed-budget fidelity table.
 
-## Shared, honest measurement
+## Shared measurement
 
 PSNR / SSIM / MS-SSIM are computed the same way in Python and in TypeScript, so the browser numbers match the offline bake. Bilingual EN/ES, light/dark, static GitHub Pages deploy. It is a CAOS Research-group lab (educational and research, not a commercial product) a sibling of [PINN-Lab](https://pinnlab.fasl-work.com), [QLab](https://qlab.fasl-work.com), [ChronoScope](https://chronoscope.fasl-work.com) and [SimLab](https://simlab.fasl-work.com).
 
