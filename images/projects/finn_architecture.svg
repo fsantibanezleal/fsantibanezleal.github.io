@@ -19,7 +19,7 @@
   <rect x="0" y="0" width="800" height="400" fill="none" stroke="#1a5a6a" stroke-width="2" rx="8"/>
 
   <!-- Title -->
-  <text x="400" y="28" style="font-family:Arial,sans-serif;font-size:15px;font-weight:bold;fill:#4ecdc4;text-anchor:middle;letter-spacing:1px">FINN &#x2014; PERSONAL FINANCE &amp; MARKET FORECASTING</text>
+  <text x="400" y="28" style="font-family:Arial,sans-serif;font-size:15px;font-weight:bold;fill:#4ecdc4;text-anchor:middle;letter-spacing:1px">FINN &#xB7; PERSONAL FINANCE &amp; MARKET FORECASTING</text>
 
   <!-- ===== LEFT: Data sources ===== -->
   <rect x="15" y="46" width="140" height="160" rx="6" style="fill:#0a1628;stroke:#1a5a6a;stroke-width:1"/>
@@ -106,7 +106,7 @@
   <!-- LEFT: walk-forward CV -->
   <rect x="30" y="244" width="365" height="130" rx="5" style="fill:#0f2338;stroke:#4ecdc4;stroke-width:1"/>
   <text x="212" y="262" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#4ecdc4;text-anchor:middle">Walk-forward cross-validation</text>
-  <text x="212" y="275" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">train on the past, test on the unseen next window &#x2014; no future leakage</text>
+  <text x="212" y="275" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">train on the past, test on the unseen next window &#xB7; no future leakage</text>
   <!-- three folds: train (teal) + test (orange) sliding right -->
   <!-- fold 1 -->
   <rect x="50" y="290" width="120" height="13" rx="2" style="fill:#20b2aa;opacity:0.75"/>
@@ -130,7 +130,7 @@
   <!-- RIGHT: transaction costs -->
   <rect x="405" y="244" width="370" height="130" rx="5" style="fill:#0f2338;stroke:#e8a838;stroke-width:1"/>
   <text x="590" y="262" style="font-family:Arial,sans-serif;font-size:9px;font-weight:bold;fill:#e8a838;text-anchor:middle">Cost-aware backtesting</text>
-  <text x="590" y="275" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">charge transaction costs &#x2014; a strategy must survive contact with reality</text>
+  <text x="590" y="275" style="font-family:Arial,sans-serif;font-size:7px;fill:#7a9ab5;text-anchor:middle">charge transaction costs &#xB7; a strategy must survive contact with reality</text>
   <!-- two equity curves: gross (looks great) vs net (after transaction costs) -->
   <line x1="430" y1="355" x2="430" y2="290" style="stroke:#6e8898;stroke-width:0.7"/>
   <line x1="430" y1="355" x2="755" y2="355" style="stroke:#6e8898;stroke-width:0.7"/>
@@ -141,5 +141,5 @@
   <!-- net (with costs) -->
   <path d="M430,348 Q500,344 560,336 Q640,330 750,338" style="fill:none;stroke:#e8a838;stroke-width:1.8"/>
   <text x="690" y="350" style="font-family:Arial,sans-serif;font-size:7px;fill:#e8a838">net (cost_bp)</text>
-  <text x="590" y="370" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a7a8a;text-anchor:middle">the gap is the cost of trading &#x2014; the demo refuses to hide it</text>
+  <text x="590" y="370" style="font-family:Arial,sans-serif;font-size:7px;fill:#5a7a8a;text-anchor:middle">the gap is the cost of trading &#xB7; the demo refuses to hide it</text>
 </svg>
