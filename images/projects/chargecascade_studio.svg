@@ -63,7 +63,7 @@
     <line x1="392" y1="154" x2="408" y2="154" stroke="#29B6F6" stroke-width="1.6" marker-end="url(#arrCC)"/>
     <line x1="590" y1="154" x2="606" y2="154" stroke="#29B6F6" stroke-width="1.6" marker-end="url(#arrCC)"/>
 
-    <!-- honesty strip -->
+    <!-- scope strip -->
     <rect x="18" y="256" width="764" height="60" rx="6" fill="#0c1622" stroke="#1f3a52"/>
     <text x="400" y="278" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#e8a838">Exact physics is the authority; the 3D is a kinematic view; the learned layer is speed + a sanity guard</text>
     <text x="400" y="297" text-anchor="middle" font-size="8.2" fill="#cdd9e5">operating points synthetic-but-realistic (no plant/DEM data) · power magnitude calibrated to a ~1.3 MW textbook reference · no population-balance breakage</text>

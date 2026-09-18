@@ -22,7 +22,7 @@ In hyperspectral analysis almost all of the methodological attention goes to the
 
 ## Strategic context
 
-The honest, defensible headline is not a single accuracy record, it is a *finding about methodology*: the wordification choice materially changes the conclusions, and there is no universal winner. The platform identifies **two poles and a non-discriminating axis**, which is a more useful result for a practitioner than a leaderboard. It also demonstrates engineering maturity: a fully reproducible offline experiment grid (100% populated at the base setting), a hierarchical-Bayesian dominance test per axis rather than cherry-picked wins, and a public surface that never claims more than the artefacts support, including walking back an earlier over-claim once an internal audit caught it.
+The defensible headline is not a single accuracy record, it is a *finding about methodology*: the wordification choice materially changes the conclusions, and there is no universal winner. The platform identifies **two poles and a non-discriminating axis**, which is a more useful result for a practitioner than a leaderboard. It also demonstrates engineering maturity: a fully reproducible offline experiment grid (100% populated at the base setting), a hierarchical-Bayesian dominance test per axis rather than cherry-picked wins, and a public surface that never claims more than the artefacts support, including walking back an earlier over-claim once an internal audit caught it.
 
 ![LDA-HSI design-space sweep and evaluation battery](/images/projects/lda_hsi_platform.svg)
 

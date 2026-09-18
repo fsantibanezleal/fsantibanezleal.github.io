@@ -14,7 +14,7 @@ A runnable catalogue of **19 Physics-Informed Neural Network cases**. Each is tr
 
 It is not one forward problem: it exercises the real range of scientific ML: **forward** PDE solving, **inverse** problems (parameter and field recovery), **uncertainty quantification** (Bayesian / ensemble), and **operator learning** (a Fourier Neural Operator generalizing across coefficient fields). Nine SOTA method families appear, each in a per-case workbench with an interactive field heatmap, a live slider, a per-variant error chart, and a bilingual write-up with the governing equations in KaTeX.
 
-## Honest about accuracy and scope
+## Accuracy and scope
 
 Benchmarks are measured, not curated: ONNX parity is `< 1e-4` everywhere, and relative-L2 is published per case, including the cases that sit at known PINN limits (**Helmholtz ~10%, Navier-cavity ~17%, a soil-barrier case ~19%** from spectral bias and the CPU training lane). PINN-Lab is **not** an FEM/FVM replacement, **not** an industrial digital twin, and **not** trained on real industrial data, only one of the 19 cases (soil heat, NOAA USCRN) uses real measurements; the rest are analytic anchors or synthetic-illustrative reduced models, all labeled as such. It is deliberately a 0.x release while predominantly synthetic.
 

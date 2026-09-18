@@ -18,7 +18,7 @@ The corpus is real and licensed: a 4TU well-test corpus (~4768 dimensionless Bou
 
 On the real 4TU curves the clustering is genuinely good: silhouette 0.72 on low-perm and 0.86 on mid-perm. What makes that trustworthy is the control next to it, a single-regime case at 0.137: when there is no structure, the method correctly does not find any, and a noisy family degrades to 0.172 as it should. A DARTS analytic validation gate passes on a homogeneous anchor (relative L2 0.0108 against a 0.05 tolerance), checking the simulation lane against a closed-form answer.
 
-## The honest limit
+## The limit
 
 Two limits stay on the card. First, the aquifer generalization is a shape-diagnostic transfer only: aquifer pumping tests are a different physical system, transmissivity and storativity are unknown, so those curves are clustered by shape, not by a physically referenced response, and where a field site has only eight curves the attribution is skipped (a proof-of-transfer, not a study). Second, the learned models' strong test accuracy (InceptionTime 0.911, PatchTST 0.902) is measured against the pipeline's own k-medoids cluster labels, not an external ground truth, and the training-set silhouette there is a weak 0.190, so those nets reproduce a weakly-separated clustering rather than classify against reality.
 

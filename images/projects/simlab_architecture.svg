@@ -55,9 +55,9 @@
   <line x1="540" y1="86" x2="572" y2="108" stroke="#29B6F6" stroke-width="1.5" marker-end="url(#arrSL)"/>
   <line x1="540" y1="154" x2="572" y2="132" stroke="#29B6F6" stroke-width="1.5" marker-end="url(#arrSL)"/>
 
-  <!-- honesty strip -->
+  <!-- method strip -->
   <rect x="16" y="232" width="768" height="58" rx="6" fill="#0c1622" stroke="#1f3a52"/>
-  <text x="400" y="255" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#e8a838">Honest simulation, not a pretty animation:</text>
+  <text x="400" y="255" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#e8a838">Replicated simulation, not a pretty animation:</text>
   <text x="400" y="275" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.6" fill="#cdd9e5">replications + confidence intervals · warm-up cut · seed-reproducible · validated vs theory (M/M/c ↔ Erlang-C)</text>
 
   <!-- scenarios footer -->

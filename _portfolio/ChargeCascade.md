@@ -14,12 +14,12 @@ A live, in-browser **3D studio for tumbling-mill charge motion and power** (SAG 
 
 A dependency-free TypeScript engine implements the published closed-form equations exactly and recomputes on every control change: critical speed `Nc = 42.3/√(D−d)`, the Davis regime bands, toe/shoulder geometry, and net power as the centre-of-mass torque arm (Hogg-Fuerstenau, a Morrell-form, Bond). Two exact analytic controls pass (an empty mill draws 0 kW; at critical speed the charge centrifuges), so the engine is **verified, not asserted**.
 
-## A thin, honest learned layer
+## A thin learned layer
 
 Run offline, the exact engine labels a synthetic operating envelope on which two small models are trained (PyTorch → ONNX) and served live via **onnxruntime-web**: a **power surrogate** (~5% error vs the exact engine) for instant envelope sweeps, and an **out-of-distribution autoencoder** (AUC 0.922) that flags off-envelope inputs. The exact engine stays the authority.
 
 ## What it is not
 
-The 3D is a **kinematic animation** of the closed-form engine, **not** a DEM / N-body simulation, and there is no population-balance breakage model. All operating points are **synthetic-but-realistic**; the power magnitude is **calibrated** to a ~1.3 MW textbook reference, not validated against a real mill. Honest boundaries are the point: a fast design-intuition studio, not a plant model.
+The 3D is a **kinematic animation** of the closed-form engine, **not** a DEM / N-body simulation, and there is no population-balance breakage model. All operating points are **synthetic-but-realistic**; the power magnitude is **calibrated** to a ~1.3 MW textbook reference, not validated against a real mill. It is a fast design-intuition studio, not a plant model.
 
 [Live demo](https://chargecascade.fasl-work.com) · [GitHub repository](https://github.com/fsantibanezleal/CAOS_ChargeCascade)
