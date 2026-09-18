@@ -10,7 +10,7 @@ A **full-stack personal-finance and market-analytics platform**: track instrumen
 
 ## Business impact
 
-Finance tooling tends to split into two camps: polished dashboards with shallow analytics, or powerful quant libraries with no usable interface. Neither serves someone who wants *real* forecasting and risk analysis, *honest* backtesting, and coverage of Latin American markets, which mainstream tools largely ignore, without standing up a research environment from scratch. Finn packages a research-grade analytics stack behind a clean web app, and its credibility comes from two deliberate engineering choices most demos skip: forecasts validated the way they would actually be traded, and backtests that charge the costs of trading.
+Finance tooling tends to split into two camps: polished dashboards with shallow analytics, or powerful quant libraries with no usable interface. Neither serves someone who wants *real* forecasting and risk analysis, *cost-aware* backtesting, and coverage of Latin American markets, which mainstream tools largely ignore, without standing up a research environment from scratch. Finn packages a research-grade analytics stack behind a clean web app, and its credibility comes from two deliberate engineering choices most demos skip: forecasts validated the way they would actually be traded, and backtests that charge the costs of trading.
 
 | Metric | Result |
 |--------|--------|
@@ -22,7 +22,7 @@ Finance tooling tends to split into two camps: polished dashboards with shallow 
 
 ## Strategic context
 
-A quant demo that defaults to US tickers and frictionless backtests looks impressive and quietly misleads (strategies that only worked because they traded for free, and accuracy numbers inflated by future leakage. Finn is built to be the opposite: a tool you could hand to an analyst because it is honest about validation and costs, and relevant because it covers the markets it was built in. As a portfolio piece it demonstrates depth across time-series econometrics, portfolio optimization, NLP, and full-stack delivery) and the judgment to know which guarantees actually make a market tool trustworthy.
+A quant demo that defaults to US tickers and frictionless backtests looks impressive and quietly misleads (strategies that only worked because they traded for free, and accuracy numbers inflated by future leakage. Finn is built to be the opposite: a tool you could hand to an analyst because it validates forecasts the way they would be traded and charges trading costs, and relevant because it covers the markets it was built in. As a portfolio piece it demonstrates depth across time-series econometrics, portfolio optimization, NLP, and full-stack delivery) and the judgment to know which guarantees actually make a market tool trustworthy.
 
 ![Architecture and integrity guarantees](/images/projects/finn_architecture.svg)
 

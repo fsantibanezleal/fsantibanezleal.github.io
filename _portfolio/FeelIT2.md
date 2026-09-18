@@ -84,7 +84,7 @@ Create new workspaces from external folders with auto-population of models, docu
 
 ![FeelIT 2.0, Haptic Desktop](/images/projects/screenshots/feelit2_haptic_desktop.png)
 
-## Methodological honesty
+## Shipped versus planned
 
 This project explicitly separates what is **shipped and tested** from what is **planned**. The [Implementation Gap Audit](https://github.com/fsantibanezleal/UDEC_FEELIT) documents exactly what works today (Braille reading, 3D staging, workspace management) and what requires future work (native haptic hardware bridge, PDF/DOCX support, force-feedback material realization).
 
