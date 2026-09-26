@@ -1,6 +1,6 @@
 ---
 title: "Enunciado, How Faithfully Language Models Turn a Problem Statement into a Solvable Model"
-date: 2026-09-26
+date: 2026-09-23
 excerpt: "The field reports whether a generated model ran and calls that correct. Enunciado measures faithfulness: 20 authored optimization statements across five tiers, sixteen models from four providers, 320 calls, and an oracle that is not a language model (executable, structural and property layers over a solver, with a duality certificate). The best local model is faithful on 5 of 20; the output cap moves DeepSeek-V4-Pro from 2 of 20 to 11 of 20. The first version of the measurement read +0.000 and was wrong.<br/><img src='/images/projects/enunciado_pipeline.svg'>"
 collection: portfolio
 tags: [formalization, optimization, llm-evaluation, benchmark, pyomo, ollama, reproducible-research]
