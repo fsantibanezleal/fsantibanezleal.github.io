@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="t d">
+  <title id="t">The browser engine of flycns</title>
+  <desc id="d">Top: one 0.1 ms LIF step as seven WebGPU kernels in one compute pass (integrate, deliver with int32 fixed-point atomic adds, apply, events, reset, trace, tick). Middle: one 5 ms graded frame of the hybrid (feedback, graded step, bridge, record, then 50 LIF steps). Bottom: the NumPy reference writes the parity fixtures; the TypeScript CPU engine reproduces it spike for spike, and the WebGPU engine is held to it by tolerance.</desc>
+  <style>
+    .bg { fill: #ffffff; }
+    .node { fill: #f6f8fa; stroke: #d0d7de; stroke-width: 1.5; }
+    .key { fill: #f6f8fa; stroke: #0969da; stroke-width: 2; }
+    .h { font: 600 14px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #1f2328; }
+    .b { font: 12px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #1f2328; }
+    .m { font: 13px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #59636e; }
+    .title { font: 600 16px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #1f2328; }
+    .edge { stroke: #59636e; stroke-width: 1.5; fill: none; }
+    .accent { stroke: #0969da; stroke-width: 2; fill: none; }
+    .ok { font: 600 12px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #1a7f37; }
+    .ah { fill: #59636e; }
+    .ahk { fill: #0969da; }
+  </style>
+  <rect class="bg" width="800" height="500"/>
+  <text class="title" x="24" y="30">The browser engine: kernels, frames, and what each engine is held to</text>
+  <text class="m" x="24" y="58">one LIF step (0.1 ms): seven kernels in one compute pass, a batch of steps in one command buffer</text>
+  <rect class="node" x="24" y="68" width="98" height="96" rx="6"/>
+  <text class="h" x="34" y="89">integrate</text>
+  <text class="b" x="34" y="108">exact v and g,</text>
+  <text class="b" x="34" y="124">threshold,</text>
+  <text class="b" x="34" y="140">delay ring</text>
+  <rect class="key" x="132" y="68" width="98" height="96" rx="6"/>
+  <text class="h" x="142" y="89">deliver</text>
+  <text class="b" x="142" y="108">rows spiked</text>
+  <text class="b" x="142" y="124">1.8 ms ago:</text>
+  <text class="b" x="142" y="140">int32 atomics</text>
+  <line class="edge" x1="122" y1="116" x2="125" y2="116"/>
+  <polygon class="ah" points="132,116 124,111 124,121"/>
+  <rect class="node" x="240" y="68" width="98" height="96" rx="6"/>
+  <text class="h" x="250" y="89">apply</text>
+  <text class="b" x="250" y="108">delivery and</text>
+  <text class="b" x="250" y="124">bridge into g;</text>
+  <text class="b" x="250" y="140">Poisson into v</text>
+  <line class="edge" x1="230" y1="116" x2="233" y2="116"/>
+  <polygon class="ah" points="240,116 232,111 232,121"/>
+  <rect class="node" x="348" y="68" width="98" height="96" rx="6"/>
+  <text class="h" x="358" y="89">events</text>
+  <text class="b" x="358" y="108">fixed events</text>
+  <text class="b" x="358" y="124">in order</text>
+  <text class="b" x="358" y="140">(when any)</text>
+  <line class="edge" x1="338" y1="116" x2="341" y2="116"/>
+  <polygon class="ah" points="348,116 340,111 340,121"/>
+  <rect class="node" x="456" y="68" width="98" height="96" rx="6"/>
+  <text class="h" x="466" y="89">reset</text>
+  <text class="b" x="466" y="108">v, g reset,</text>
+  <text class="b" x="466" y="124">adaptation,</text>
+  <text class="b" x="466" y="140">spike list, rate</text>
+  <line class="edge" x1="446" y1="116" x2="449" y2="116"/>
+  <polygon class="ah" points="456,116 448,111 448,121"/>
+  <rect class="node" x="564" y="68" width="98" height="96" rx="6"/>
+  <text class="h" x="574" y="89">trace</text>
+  <text class="b" x="574" y="108">traced v</text>
+  <text class="b" x="574" y="124">(when any)</text>
+  <line class="edge" x1="554" y1="116" x2="557" y2="116"/>
+  <polygon class="ah" points="564,116 556,111 556,121"/>
+  <rect class="node" x="672" y="68" width="98" height="96" rx="6"/>
+  <text class="h" x="682" y="89">tick</text>
+  <text class="b" x="682" y="108">step k + 1</text>
+  <line class="edge" x1="662" y1="116" x2="665" y2="116"/>
+  <polygon class="ah" points="672,116 664,111 664,121"/>
+  <text class="m" x="24" y="196">one graded frame of the hybrid (5 ms): gathers in each target's connection order, then 50 LIF steps</text>
+  <rect class="node" x="24" y="206" width="138" height="96" rx="6"/>
+  <text class="h" x="34" y="227">feedback</text>
+  <text class="b" x="34" y="246">filtered rates</text>
+  <text class="b" x="34" y="262">over beta, into</text>
+  <text class="b" x="34" y="278">graded input</text>
+  <rect class="node" x="175" y="206" width="138" height="96" rx="6"/>
+  <text class="h" x="185" y="227">graded step</text>
+  <text class="b" x="185" y="246">v + rate x ((-v +</text>
+  <text class="b" x="185" y="262">bias) + syn +</text>
+  <text class="b" x="185" y="278">light) x dt</text>
+  <line class="edge" x1="162" y1="254" x2="168" y2="254"/>
+  <polygon class="ah" points="175,254 167,249 167,259"/>
+  <rect class="node" x="326" y="206" width="138" height="96" rx="6"/>
+  <text class="h" x="336" y="227">bridge</text>
+  <text class="b" x="336" y="246">(max(V, 0) - grey)</text>
+  <text class="b" x="336" y="262">x weight x beta dt</text>
+  <text class="b" x="336" y="278">into g</text>
+  <line class="edge" x1="313" y1="254" x2="319" y2="254"/>
+  <polygon class="ah" points="326,254 318,249 318,259"/>
+  <rect class="node" x="477" y="206" width="138" height="96" rx="6"/>
+  <text class="h" x="487" y="227">record</text>
+  <text class="b" x="487" y="246">graded units</text>
+  <text class="b" x="487" y="262">of this frame</text>
+  <line class="edge" x1="464" y1="254" x2="470" y2="254"/>
+  <polygon class="ah" points="477,254 469,249 469,259"/>
+  <rect class="key" x="628" y="206" width="138" height="96" rx="6"/>
+  <text class="h" x="638" y="227">50 LIF steps</text>
+  <text class="b" x="638" y="246">the kernels above,</text>
+  <text class="b" x="638" y="262">with the bridge</text>
+  <text class="b" x="638" y="278">as extra input</text>
+  <line class="edge" x1="615" y1="254" x2="621" y2="254"/>
+  <polygon class="ah" points="628,254 620,249 620,259"/>
+  <text class="m" x="24" y="334">three engines, one reference: the parity fixtures are written by the Python reference itself</text>
+  <rect class="node" x="24" y="344" width="214" height="112" rx="6"/>
+  <text class="h" x="34" y="365">NumPy reference</text>
+  <text class="b" x="34" y="384">float64, a fixed reduction</text>
+  <text class="b" x="34" y="400">order: a pure function of</text>
+  <text class="b" x="34" y="416">(bundle, drive, seed);</text>
+  <text class="b" x="34" y="432">writes parity/ and bundles</text>
+  <rect class="node" x="300" y="344" width="228" height="112" rx="6"/>
+  <text class="h" x="310" y="365">TypeScript CPU (worker)</text>
+  <text class="b" x="310" y="384">float64, the reference's</text>
+  <text class="b" x="310" y="400">operations in its order,</text>
+  <text class="b" x="310" y="416">every constant read from</text>
+  <text class="b" x="310" y="432">the bundle: identical spikes,</text>
+  <text class="b" x="310" y="448">the whole CNS included</text>
+  <rect class="key" x="560" y="344" width="216" height="112" rx="6"/>
+  <text class="h" x="570" y="365">WebGPU</text>
+  <text class="b" x="570" y="384">float32; delivery summed in</text>
+  <text class="b" x="570" y="400">int32 fixed point, so any</text>
+  <text class="b" x="570" y="416">thread order gives one sum:</text>
+  <text class="b" x="570" y="432">identical on the circuits,</text>
+  <text class="b" x="570" y="448">whole CNS by tolerance</text>
+  <line class="edge" x1="238" y1="400" x2="293" y2="400"/>
+  <polygon class="ah" points="300,400 292,395 292,405"/>
+  <polyline class="accent" points="131,456 131,482 668,482 668,465"/>
+  <polygon class="ahk" points="668,457 663,466 673,466"/>
+  <text class="m" x="150" y="476">compared by SDD section 7: the CPU spike for spike, WebGPU by tolerance</text>
+</svg>
