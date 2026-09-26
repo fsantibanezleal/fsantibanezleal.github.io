@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" role="img"
+     aria-label="Eight errors made during the fleet promotion, each with what it cost and the gate that catches it next time">
+  <defs>
+    <linearGradient id="egbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <style>
+      text{font-family:'Segoe UI',system-ui,sans-serif;fill:#c9d1d9}
+      .t{fill:#e6edf3;font-weight:600}.a{fill:#29B6F6}.m{fill:#8b949e;font-size:11px}
+      .row{fill:#161b22;stroke:#30363d;stroke-width:1}.bad{fill:#f06292;font-weight:600}.good{fill:#7ee787}
+      .h{fill:#8b949e;font-size:10px;letter-spacing:1px}
+    </style>
+  </defs>
+  <rect width="800" height="460" fill="url(#egbg)"/>
+  <text x="32" y="38" class="t" font-size="20">Eight errors, eight gates</text>
+  <text x="32" y="58" class="m">each mistake of the pass, what it cost, and the check that now catches it before a merge</text>
+  <text x="32" y="86" class="h">THE ERROR</text>
+  <text x="300" y="86" class="h">WHAT IT COST</text>
+  <text x="556" y="86" class="h">THE GATE NOW</text>
+
+  <g>
+    <rect x="32" y="96" width="736" height="40" rx="6" class="row"/>
+    <text x="44" y="113" class="bad" font-size="11">1  a pipeline that could not stop</text>
+    <text x="44" y="128" class="m">pytest | tail -1 returns tail's status</text>
+    <text x="300" y="113" class="m">a failing test shipped; a tag whose</text>
+    <text x="300" y="128" class="m">VERSION had not moved; a failing guard merged</text>
+    <text x="556" y="113" class="good" font-size="11">every step gated on its own exit code;</text>
+    <text x="556" y="128" class="m">set -o pipefail in every chain</text>
+
+    <rect x="32" y="142" width="736" height="40" rx="6" class="row"/>
+    <text x="44" y="159" class="bad" font-size="11">2  a version bump by substitution</text>
+    <text x="44" y="174" class="m">sed over the whole tree</text>
+    <text x="300" y="159" class="m">app_version rewritten inside 34 committed</text>
+    <text x="300" y="174" class="m">artifacts; a historical sentence in a guide</text>
+    <text x="556" y="159" class="good" font-size="11">the bump tool moves version sources only;</text>
+    <text x="556" y="174" class="m">artifacts regenerated under the pin</text>
+
+    <rect x="32" y="188" width="736" height="40" rx="6" class="row"/>
+    <text x="44" y="205" class="bad" font-size="11">3  a colon in a YAML step name</text>
+    <text x="44" y="220" class="m">"Guards: content and budget"</text>
+    <text x="300" y="205" class="m">the workflow did not parse: shown under</text>
+    <text x="300" y="220" class="m">its file path with zero jobs, silently</text>
+    <text x="556" y="205" class="good" font-size="11">yaml.safe_load on every workflow before</text>
+    <text x="556" y="220" class="m">commit; the comma form only in YAML</text>
+
+    <rect x="32" y="234" width="736" height="40" rx="6" class="row"/>
+    <text x="44" y="251" class="bad" font-size="11">4  footer constants the bump missed</text>
+    <text x="44" y="266" class="m">a version typed into a component</text>
+    <text x="300" y="251" class="m">a site stuck at 0.08.000 in its footer</text>
+    <text x="300" y="266" class="m">for fourteen releases</text>
+    <text x="556" y="251" class="good" font-size="11">the bump sets the constant to the target</text>
+    <text x="556" y="266" class="m">whatever it read; the bundle checked</text>
+
+    <rect x="32" y="280" width="736" height="40" rx="6" class="row"/>
+    <text x="44" y="297" class="bad" font-size="11">5  an emoji tidy regex</text>
+    <text x="44" y="312" class="m">strip and collapse in one pass</text>
+    <text x="300" y="297" class="m">the newline after 17 docstrings collapsed</text>
+    <text x="300" y="312" class="m">into the next statement</text>
+    <text x="556" y="297" class="good" font-size="11">from HEAD; same-line edits only,</text>
+    <text x="556" y="312" class="m">and the diff read before the commit</text>
+
+    <rect x="32" y="326" width="736" height="40" rx="6" class="row"/>
+    <text x="44" y="343" class="bad" font-size="11">6  a PR head deleted before the merge</text>
+    <text x="44" y="358" class="m">the branch went first</text>
+    <text x="300" y="343" class="m">a stranded pull request, its commits</text>
+    <text x="300" y="358" class="m">only in the reflog</text>
+    <text x="556" y="343" class="good" font-size="11">merge first; delete the head after</text>
+    <text x="556" y="358" class="m">the API reports merged: true</text>
+
+    <rect x="32" y="372" width="736" height="40" rx="6" class="row"/>
+    <text x="44" y="389" class="bad" font-size="11">7  a tag without a release, 8  rows written from intent</text>
+    <text x="44" y="404" class="m">created and deleted the same minute; a ledger row for a tag that did not exist</text>
+    <text x="556" y="389" class="good" font-size="11">tag on the release merge only; every row</text>
+    <text x="556" y="404" class="m">re-read from the repo before writing</text>
+  </g>
+  <text x="32" y="440" class="m">A poll that treated "pending" as terminal is the ninth, from the engine extraction the same week: CI must reach "completed" and read its conclusion.</text>
+</svg>
