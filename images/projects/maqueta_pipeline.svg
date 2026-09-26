@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" role="img"
+     aria-label="Maqueta: nine open geodata sources are fetched for an area of interest and fused by geoscena into one scene bundle with provenance, baked into compressed 3D places, and explored in the browser with per-building attributes, a satellite drape and a sub-area statistics tool">
+  <defs>
+    <linearGradient id="mqbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <marker id="mqar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9 z" fill="#29B6F6"/></marker>
+    <style>
+      text{font-family:'Segoe UI',system-ui,sans-serif;fill:#c9d1d9}
+      .t{fill:#e6edf3;font-weight:600}.a{fill:#29B6F6}.m{fill:#8b949e;font-size:11px}
+      .box{fill:#161b22;stroke:#30363d;stroke-width:1}.acc{stroke:#29B6F6}.warn{fill:#e0a030}
+    </style>
+  </defs>
+  <rect width="800" height="400" fill="url(#mqbg)"/>
+  <text x="32" y="44" class="t" font-size="22">Maqueta</text>
+  <text x="32" y="66" class="m">Real places rebuilt in 3D from open geodata · every layer keeps its source and licence, every height its provenance</text>
+
+  <rect x="32" y="92" width="176" height="176" rx="10" class="box acc"/>
+  <text x="46" y="116" class="a" font-size="13">OPEN SOURCES</text>
+  <text x="46" y="138" class="m">Overture buildings + roads</text>
+  <text x="46" y="154" class="m">Copernicus GLO-30 terrain</text>
+  <text x="46" y="170" class="m">ESA WorldCover 10 m</text>
+  <text x="46" y="186" class="m">OSM water, green, rail</text>
+  <text x="46" y="202" class="m">GHS-POP population</text>
+  <text x="46" y="218" class="m">Open Buildings 2.5D heights</text>
+  <text x="46" y="234" class="m">3DBAG LoD2 reference</text>
+  <text x="46" y="250" class="m">SoilGrids soil carbon</text>
+
+  <path d="M208 180 H240" class="acc" fill="none" stroke-width="2" marker-end="url(#mqar)"/>
+
+  <rect x="240" y="80" width="200" height="200" rx="10" class="box"/>
+  <text x="256" y="104" class="a" font-size="13">FUSE: geoscena (PyPI)</text>
+  <rect x="256" y="116" width="168" height="42" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <text x="268" y="134" class="t" font-size="12">One geometry per area</text>
+  <text x="268" y="150" class="m">area of interest in, bundle out</text>
+  <rect x="256" y="166" width="168" height="42" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <text x="268" y="184" class="t" font-size="12">Provenance per element</text>
+  <text x="268" y="200" class="m">measured · floors · raster</text>
+  <rect x="256" y="216" width="168" height="42" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <text x="268" y="234" class="t" font-size="12">Bake: 118 places</text>
+  <text x="268" y="250" class="m">meshopt, progressive load</text>
+  <text x="256" y="272" class="m">NDVI, NDWI, NDBI per building</text>
+
+  <path d="M440 180 H472" class="acc" fill="none" stroke-width="2" marker-end="url(#mqar)"/>
+
+  <rect x="472" y="92" width="160" height="176" rx="10" class="box"/>
+  <text x="486" y="116" class="a" font-size="13">EXPLORE</text>
+  <text x="486" y="140" class="t" font-size="12">3D scene in the browser</text>
+  <text x="486" y="158" class="m">real coloured terrain,</text>
+  <text x="486" y="174" class="m">hillshade, hypsometry</text>
+  <text x="486" y="196" class="t" font-size="12">Colour and filter by</text>
+  <text x="486" y="214" class="m">any fused attribute</text>
+  <text x="486" y="236" class="t" font-size="12">Sentinel-2 drape</text>
+  <text x="486" y="254" class="m">cloudless, at runtime</text>
+
+  <rect x="646" y="92" width="122" height="176" rx="10" class="box acc"/>
+  <text x="660" y="116" class="a" font-size="12">AREA TOOL</text>
+  <text x="660" y="138" class="m">draw a polygon:</text>
+  <text x="660" y="154" class="m">a block, a corridor,</text>
+  <text x="660" y="170" class="m">a whole comuna</text>
+  <text x="660" y="194" class="t" font-size="12">count, footprint,</text>
+  <text x="660" y="212" class="t" font-size="12">coverage, density,</text>
+  <text x="660" y="230" class="t" font-size="12">height distribution</text>
+  <text x="660" y="254" class="m">function/cover mix</text>
+
+  <text x="32" y="318" class="m">Santiago as 37 comunas and the 11 km metro (about 179 thousand buildings); Calama, Antofagasta, Sierra Gorda, Valdivia, Chiloé; cities on every continent.</text>
+  <text x="32" y="338" class="m">Solar (PVGIS) and climate (Open-Meteo) per place; comuna aggregates over building averages, environment and Data Observatory indicators.</text>
+  <text x="32" y="358" class="m">A first deploy called a toy was rebuilt to the bar the same week. Engine and product in separate repositories; static site on the ML VPS over HTTPS.</text>
+</svg>
