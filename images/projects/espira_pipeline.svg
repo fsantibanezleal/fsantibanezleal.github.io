@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" role="img"
+     aria-label="Espira: a material's spin-Hamiltonian parameters and a target switching time go into the spinoct optimal-control engine, which returns the least-dissipation pulse and its cost, checked against a published replication and against two independent codes, with the honest units and bands stated">
+  <defs>
+    <linearGradient id="esbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <marker id="esar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9 z" fill="#29B6F6"/></marker>
+    <style>
+      text{font-family:'Segoe UI',system-ui,sans-serif;fill:#c9d1d9}
+      .t{fill:#e6edf3;font-weight:600}.a{fill:#29B6F6}.m{fill:#8b949e;font-size:11px}
+      .box{fill:#161b22;stroke:#30363d;stroke-width:1}.acc{stroke:#29B6F6}.warn{fill:#e0a030}
+    </style>
+  </defs>
+  <rect width="800" height="400" fill="url(#esbg)"/>
+  <text x="32" y="44" class="t" font-size="22">Espira</text>
+  <text x="32" y="66" class="m">The cheapest pulse that flips a magnetic bit in a two-dimensional magnet within a target time</text>
+
+  <rect x="32" y="92" width="156" height="176" rx="10" class="box acc"/>
+  <text x="46" y="116" class="a" font-size="13">MATERIAL + TIME</text>
+  <text x="46" y="140" class="t" font-size="12">Spin-Hamiltonian</text>
+  <text x="46" y="158" class="t" font-size="12">parameters</text>
+  <text x="46" y="178" class="m">moment, anisotropy,</text>
+  <text x="46" y="194" class="m">damping, ordering T</text>
+  <text x="46" y="214" class="m">a DOI on every value</text>
+  <text x="46" y="238" class="t" font-size="12">target switching time</text>
+  <text x="46" y="256" class="m">0.02 to 1 tau0</text>
+
+  <path d="M188 180 H220" class="acc" fill="none" stroke-width="2" marker-end="url(#esar)"/>
+
+  <rect x="220" y="80" width="224" height="200" rx="10" class="box"/>
+  <text x="236" y="104" class="a" font-size="13">ENGINE: spinoct (PyPI)</text>
+  <rect x="236" y="116" width="192" height="42" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <text x="248" y="134" class="t" font-size="12">Analytic optimal paths</text>
+  <text x="248" y="150" class="m">uniaxial · spin-orbit torque</text>
+  <rect x="236" y="166" width="192" height="42" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <text x="248" y="184" class="t" font-size="12">Numerical OCP</text>
+  <text x="248" y="200" class="m">biaxial · GRAPE · CRAB · baselines</text>
+  <rect x="236" y="216" width="192" height="42" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <text x="248" y="234" class="t" font-size="12">Beyond the macrospin</text>
+  <text x="248" y="250" class="m">free chain · barrier floor</text>
+  <text x="236" y="272" class="m">LLG dynamics · numpy/scipy · torch lane</text>
+
+  <path d="M444 180 H476" class="acc" fill="none" stroke-width="2" marker-end="url(#esar)"/>
+
+  <rect x="476" y="92" width="156" height="176" rx="10" class="box"/>
+  <text x="490" y="116" class="a" font-size="13">PULSE + COST</text>
+  <text x="490" y="140" class="t" font-size="12">Least dissipation</text>
+  <text x="490" y="158" class="m">cost in T^2 s, not joules</text>
+  <text x="490" y="174" class="m">(a circuit model converts)</text>
+  <text x="490" y="196" class="t" font-size="12">Reported as bands</text>
+  <text x="490" y="214" class="m">the floor is linear in the</text>
+  <text x="490" y="230" class="m">damping, the least pinned</text>
+  <text x="490" y="246" class="m">parameter</text>
+  <text x="490" y="262" class="warn" font-size="11">FePS3: negative control</text>
+
+  <rect x="646" y="92" width="122" height="176" rx="10" class="box acc"/>
+  <text x="660" y="116" class="a" font-size="12">CHECKED</text>
+  <text x="660" y="138" class="m">kickoff paper</text>
+  <text x="660" y="154" class="m">replicated (C10)</text>
+  <text x="660" y="178" class="m">Spirit, barrier:</text>
+  <text x="660" y="194" class="t" font-size="12">1.4e-06</text>
+  <text x="660" y="216" class="m">VAMPIRE, motion:</text>
+  <text x="660" y="232" class="t" font-size="12">4.7e-06</text>
+  <text x="660" y="254" class="m">equator: 78.7319 ps</text>
+
+  <text x="32" y="318" class="m">A reliable switch costs 2.5 to 15.8 times the bare optimum; the field pays only below a stability factor of about ten. Domain walls become the</text>
+  <text x="32" y="338" class="m">optimal reversal of a spin chain above a crossover length. Two CC-BY Zenodo preprints, each table pinned to its artifact. 25 of 26 cases baked,</text>
+  <text x="32" y="358" class="m">two recomputed live in the browser. 14 browser gates, 4,175 checks on 0.16.000. Product and engine MIT, from separate repositories.</text>
+</svg>
