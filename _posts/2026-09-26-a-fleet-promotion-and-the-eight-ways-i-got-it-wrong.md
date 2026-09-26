@@ -35,6 +35,10 @@ The interesting part is what I got wrong, because every one of these is a shape 
 
 **A version bump by substitution.** Replacing the old version string across the whole tree is fast, and it rewrote the `app_version` field inside thirty-four committed artifacts of a product whose artifacts are the evidence. That is forging provenance without meaning to. They were regenerated under the pinned engine, and the bump tool now moves version sources only: the version file, the manifests, the constant in the footer.
 
+![Fragmenta's engine pin moves from a git tag to a PyPI release and the artifacts stay identical](/images/projects/blastfrag_pin.svg)
+
+The same product gave me the cleanest test of the week. Its engine, blastfrag, had been pinned by git tag because the PyPI project did not exist; I registered it, the release published through a trusted publisher, and the pin changed to the published version. A pin is a claim about numbers, so it was treated as one: re-bake all sixteen cases, diff the committed artifacts. Every published number is identical, and I get to say "identical" because the diff said so, not because nothing should have changed.
+
 **A colon in a YAML step name.** "Guards: content and budget" is a mapping, not a string, and the workflow did not parse. GitHub shows such a workflow under its file path with zero jobs and no error anywhere you would look. Every workflow now goes through `yaml.safe_load` before it is committed, and step names in YAML take the comma form only.
 
 **Footer constants the bump missed.** A version typed into a component is not a version source anybody moves. One site sat at 0.08.000 in its footer for fourteen releases. The bump now sets that constant to the target whatever it read before, and the served bundle is checked after the deploy, not the source.
@@ -48,6 +52,10 @@ The interesting part is what I got wrong, because every one of these is a shape 
 And a ninth, from the engine extraction the same week: a poll that treated `pending` as a terminal state merged to `main` before the continuous integration had run. It was green afterwards, which is luck, not a process.
 
 ## What the record found
+
+![A scaffold whose stages imported a directory the instantiation had dropped, with a tracked sentinel that silenced its own guard](/images/projects/bancoestable_scaffold.svg)
+
+While writing the record I found a repository outside the workspace: a slope-stability product instantiated from my product template in July, given its science a few days later, then parked on one disk with no remote. I would have recorded it as "scaffold with science and tests", which is what the tree says. Before writing the row I made it an environment and ran it. Its test collection stopped at two modules that could not import a directory the instantiation had dropped, so its pipeline had never been able to start, and the template residue guard had been printing "this is the template, check skipped" all along because the sentinel that marks the template was still tracked. No remote, so no CI; no CI, so no gate; a guard that skipped itself. It is fixed and registered as what it is, a parked scaffold, and the cheap rule I kept is to run a repository's tests and entry point before recording its state.
 
 The last error is the one worth a paragraph, because it is the one the others hide behind. The working ledger was written from what each pass intended. When I re-derived every plan's version from its repository instead, the ledger was wrong in four places: a row claiming a version file and a tag that did not exist; a tag placed on sources that still read the previous version; an engine repository with continuous integration red since a lint release two weeks earlier, unremediated; and three products whose version lived only in a manifest. All of it was finished the same day, and none of it would have been found by reading the ledger.
 

@@ -1,6 +1,6 @@
 ---
 title: "CareerTwin, a Single-Seeker Career Evidence and Job-Search Workbench"
-date: 2026-09-26
+date: 2026-09-18
 excerpt: "A self-hosted workbench where one seeker owns one evidence-centred profile and any number of opportunities, applications, tasks and generated career artifacts. The match score is a versioned alignment measure with coverage and uncertainty, never a hiring probability; the agent side is bounded, cites evidence and may only propose writes the seeker approves. Live at v0.14.5; no external job-search outcome is claimed.<br/><img src='/images/projects/careertwin_pipeline.svg'>"
 collection: portfolio
 tags: [career, evidence-graph, job-search, agentic, self-hosted, privacy, fastapi, postgresql, react]
