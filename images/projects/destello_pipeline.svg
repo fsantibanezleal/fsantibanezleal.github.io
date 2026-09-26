@@ -39,7 +39,7 @@
   <rect x="230" y="208" width="198" height="40" rx="6" fill="#0d1117" stroke="#30363d"/>
   <text x="242" y="226" class="t" font-size="12">E3 flyvis per eye · E4 stabilised</text>
   <text x="242" y="242" class="m">a flash reaches the nerve cord</text>
-  <text x="230" y="268" class="m">0.06.000 complete in Python, on MaleCNS</text>
+  <text x="230" y="268" class="m">0.07.000 in Python and in the browser</text>
 
   <path d="M444 180 H476" class="acc" fill="none" stroke-width="2" marker-end="url(#dsar)"/>
 
@@ -50,8 +50,8 @@
   <text x="490" y="170" class="m">parallax · time to</text>
   <text x="490" y="184" class="m">contact · figure-ground</text>
   <text x="490" y="206" class="m">against three null wirings</text>
-  <text x="490" y="228" class="m">13 cases, 6 or more</text>
-  <text x="490" y="242" class="m">variants each, exact truth</text>
+  <text x="490" y="228" class="m">13 cases built: 222</text>
+  <text x="490" y="242" class="m">stimuli, exact truth</text>
 
   <rect x="640" y="92" width="128" height="176" rx="10" class="box acc"/>
   <text x="654" y="116" class="a" font-size="12">SHOW (planned)</text>
@@ -64,7 +64,7 @@
   <text x="654" y="244" class="m">WebGPU or WebGL2</text>
 
   <text x="32" y="316" class="m">Ordered on 2026-09-23 after Conectoma showed a type-level abstraction of one eye. Four verified dossiers first, a plan, the engine in its own</text>
-  <text x="32" y="332" class="m">package (flycns on PyPI since 2026-09-26; npm with the browser engine), the product after. The eye model's vertical</text>
+  <text x="32" y="332" class="m">package (flycns on PyPI and npm since 2026-09-26), the product after. The eye model's vertical</text>
   <text x="32" y="356" class="m">was found one 60-degree lattice step off and fixed. Not a digital organism: the raw wiring does not form a heading bump or track small objects.</text>
-  <text x="32" y="380" class="warn" font-size="12">Nothing deployed; version 0.00.000; lifecycle planned. Next: the scene renderer, the cases, the export, the web product with the 3D brain.</text>
+  <text x="32" y="380" class="warn" font-size="12">Nothing deployed; version 0.01.001; lifecycle planned. Next: engine runs over the cases, readouts, export, the 3D brain.</text>
 </svg>
