@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" role="img"
+     aria-label="GapTheo: a rotation number and N give a sorted finite orbit computed by an exact oracle, from which eleven linked readings are derived and kept in sync, with three contrast regimes labelled apart from the classical theorem">
+  <defs>
+    <linearGradient id="gtbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <marker id="gtar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9 z" fill="#29B6F6"/></marker>
+    <style>
+      text{font-family:'Segoe UI',system-ui,sans-serif;fill:#c9d1d9}
+      .t{fill:#e6edf3;font-weight:600}.a{fill:#29B6F6}.m{fill:#8b949e;font-size:11px}
+      .box{fill:#161b22;stroke:#30363d;stroke-width:1}.acc{stroke:#29B6F6}.warn{fill:#e0a030}
+      .g1{fill:#f06292}.g2{fill:#29B6F6}.g3{fill:#c9d1d9}
+    </style>
+  </defs>
+  <rect width="800" height="400" fill="url(#gtbg)"/>
+  <text x="32" y="44" class="t" font-size="22">GapTheo</text>
+  <text x="32" y="66" class="m">N points of an irrational rotation on a circle · the gaps take at most three lengths · one orbit, eleven exact readings</text>
+
+  <rect x="32" y="92" width="150" height="176" rx="10" class="box acc"/>
+  <text x="46" y="116" class="a" font-size="13">INPUT</text>
+  <text x="46" y="140" class="t" font-size="12">rotation number alpha</text>
+  <text x="46" y="158" class="m">irrational, numeric or p/q</text>
+  <text x="46" y="180" class="t" font-size="12">N points, phase offset</text>
+  <text x="46" y="204" class="m">12 canonical cases</text>
+  <text x="46" y="220" class="m">(golden baseline, more)</text>
+  <text x="46" y="244" class="m">every control updates</text>
+  <text x="46" y="258" class="m">every view</text>
+
+  <path d="M182 180 H214" class="acc" fill="none" stroke-width="2" marker-end="url(#gtar)"/>
+
+  <rect x="214" y="92" width="176" height="176" rx="10" class="box"/>
+  <text x="228" y="116" class="a" font-size="13">PRIMARY ORBIT</text>
+  <text x="228" y="140" class="t" font-size="12">Sorted finite orbit</text>
+  <text x="228" y="158" class="m">exact finite direct oracle</text>
+  <circle cx="302" cy="218" r="36" fill="none" stroke="#30363d"/>
+  <path d="M302 182 A36 36 0 0 1 336 205" fill="none" stroke="#f06292" stroke-width="4"/>
+  <path d="M336 205 A36 36 0 0 1 330 240" fill="none" stroke="#29B6F6" stroke-width="4"/>
+  <path d="M330 240 A36 36 0 0 1 302 254" fill="none" stroke="#f06292" stroke-width="4"/>
+  <path d="M302 254 A36 36 0 0 1 268 228" fill="none" stroke="#c9d1d9" stroke-width="4"/>
+  <path d="M268 228 A36 36 0 0 1 302 182" fill="none" stroke="#f06292" stroke-width="4"/>
+  <text x="228" y="262" class="m">certificate: gaps, counts, CF</text>
+
+  <path d="M390 180 H422" class="acc" fill="none" stroke-width="2" marker-end="url(#gtar)"/>
+
+  <rect x="422" y="80" width="214" height="200" rx="10" class="box"/>
+  <text x="438" y="104" class="a" font-size="13">ELEVEN LINKED READINGS</text>
+  <text x="438" y="128" class="t" font-size="12">Farey cells + continued fraction</text>
+  <text x="438" y="146" class="m">the certificate of the partition</text>
+  <text x="438" y="168" class="t" font-size="12">Return gaps · cyclic words</text>
+  <text x="438" y="186" class="m">the orbit as a word over 2 or 3 letters</text>
+  <text x="438" y="208" class="t" font-size="12">Lattice · two-interval exchange</text>
+  <text x="438" y="226" class="m">the same object, two more ways</text>
+  <text x="438" y="248" class="t" font-size="12">Finite 0D Rips topology</text>
+  <text x="438" y="266" class="m">all derived from the orbit, kept in sync</text>
+
+  <rect x="650" y="92" width="118" height="176" rx="10" class="box acc"/>
+  <text x="664" y="116" class="a" font-size="12">CONTRASTS</text>
+  <text x="664" y="140" class="m">seeded random</text>
+  <text x="664" y="156" class="m">placement</text>
+  <text x="664" y="176" class="m">farthest-point</text>
+  <text x="664" y="192" class="m">allocator</text>
+  <text x="664" y="212" class="m">two-frequency</text>
+  <text x="664" y="228" class="m">extension</text>
+  <text x="664" y="250" class="warn" font-size="11">labelled apart, never</text>
+  <text x="664" y="264" class="warn" font-size="11">fed to the theorem</text>
+
+  <text x="32" y="318" class="m">No new theorem, no formal proof, no adoption claimed. The shell owns the visual layer: v0.03.002 removed a bespoke theme that v0.03.000 had</text>
+  <text x="32" y="338" class="m">shipped, and CI now rejects app-owned theming. Six routes, 35 documentation tabs and five architecture plates in EN and ES, both themes, down to 390 px.</text>
+  <text x="32" y="358" class="m">Runs locally in the browser, no account or server. Manuscript source and a public deep research review in the repository. GitHub Pages, Apache-2.0.</text>
+</svg>
