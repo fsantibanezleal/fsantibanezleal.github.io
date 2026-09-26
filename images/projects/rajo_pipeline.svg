@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" role="img"
+     aria-label="Rajo: open satellite archives and reference polygons baked offline into frames, masks, series and elevation differences for thirty sites, two models exported to ONNX, and a static globe site whose live lanes read the raw imagery and run the models in the browser">
+  <defs>
+    <linearGradient id="rjbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <marker id="rjar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9 z" fill="#29B6F6"/></marker>
+    <style>
+      text{font-family:'Segoe UI',system-ui,sans-serif;fill:#c9d1d9}
+      .t{fill:#e6edf3;font-weight:600}.a{fill:#29B6F6}.m{fill:#8b949e;font-size:11px}
+      .box{fill:#161b22;stroke:#30363d;stroke-width:1}.acc{stroke:#29B6F6}.warn{fill:#e0a030}
+    </style>
+  </defs>
+  <rect width="800" height="400" fill="url(#rjbg)"/>
+  <text x="32" y="44" class="t" font-size="22">Rajo</text>
+  <text x="32" y="66" class="m">Open pits seen from orbit: four decades per site, computed in the browser or read from a checksummed artifact</text>
+
+  <rect x="32" y="92" width="176" height="176" rx="10" class="box"/>
+  <text x="46" y="116" class="a" font-size="13">OPEN SOURCES</text>
+  <text x="46" y="138" class="t" font-size="12">Landsat C2 L2, 1985 on</text>
+  <text x="46" y="154" class="t" font-size="12">Sentinel-2 L2A COGs</text>
+  <text x="46" y="174" class="m">Maus 2022, Tang 2023 polygons</text>
+  <text x="46" y="188" class="m">Jasansky 2024 training tiles</text>
+  <text x="46" y="202" class="m">SRTM 2000, Copernicus DEM</text>
+  <text x="46" y="222" class="m">Cochilco, operators, USGS</text>
+  <text x="46" y="246" class="warn" font-size="11">CC BY-SA polygons kept</text>
+
+  <path d="M208 180 H240" class="acc" fill="none" stroke-width="2" marker-end="url(#rjar)"/>
+
+  <rect x="240" y="80" width="220" height="200" rx="10" class="box acc"/>
+  <text x="256" y="104" class="a" font-size="13">OFFLINE BAKE, 30 SITES</text>
+  <rect x="256" y="116" width="188" height="40" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <text x="268" y="134" class="t" font-size="12">frames, masks, series, DEM</text>
+  <text x="268" y="150" class="m">7,107 validated files</text>
+  <rect x="256" y="162" width="188" height="40" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <text x="268" y="180" class="t" font-size="12">change points, dense series</text>
+  <text x="268" y="196" class="m">ruptures, harmonic breaks</text>
+  <rect x="256" y="208" width="188" height="40" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <text x="268" y="226" class="t" font-size="12">RF and U-Net to ONNX</text>
+  <text x="268" y="242" class="m">held-out IoU 0.378 (U-Net)</text>
+  <text x="256" y="268" class="m">WebP frames and JSON, committed</text>
+
+  <path d="M460 180 H492" class="acc" fill="none" stroke-width="2" marker-end="url(#rjar)"/>
+
+  <rect x="492" y="92" width="136" height="176" rx="10" class="box"/>
+  <text x="506" y="116" class="a" font-size="13">STATIC SITE</text>
+  <text x="506" y="140" class="t" font-size="12">MapLibre globe</text>
+  <text x="506" y="156" class="m">3D terrain, hillshade</text>
+  <text x="506" y="176" class="t" font-size="12">time-lapse 1985 on</text>
+  <text x="506" y="192" class="m">Observatory, Atlas,</text>
+  <text x="506" y="206" class="m">Methods, Data, About</text>
+  <text x="506" y="230" class="m">vps-static, no backend</text>
+  <text x="506" y="246" class="m">version 0.02.007 live</text>
+
+  <rect x="644" y="92" width="124" height="176" rx="10" class="box acc"/>
+  <text x="658" y="116" class="a" font-size="12">LIVE LANES</text>
+  <text x="658" y="138" class="m">COG range reads</text>
+  <text x="658" y="152" class="m">of the latest scene</text>
+  <text x="658" y="172" class="m">nine indices, Otsu,</text>
+  <text x="658" y="186" class="m">k-means, SAM</text>
+  <text x="658" y="206" class="m">ONNX on WebGPU</text>
+  <text x="658" y="220" class="m">or WASM</text>
+  <text x="658" y="244" class="m">nothing uploaded</text>
+
+  <text x="32" y="316" class="m">Every number on screen traces to a computation the reader can rerun in the browser or to a named, dated source. The globe, the</text>
+  <text x="32" y="332" class="m">time-lapse and the series are a replay of the baked tree; the spectral, learned and signal lanes run on the reader's machine.</text>
+  <text x="32" y="356" class="m">Own visual identity by Felipe's instruction, not the shared shell. Non-commercial showcase: the EOX basemap is CC BY-NC-SA.</text>
+  <text x="32" y="380" class="warn" font-size="12">Live at rajo.fasl-work.com since 2026-09-03; the plan keeps the lifecycle at planned, the deployment is measured live.</text>
+</svg>
