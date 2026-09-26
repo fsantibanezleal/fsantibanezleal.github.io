@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" role="img"
+     aria-label="The promotion chain applied to eighty-one repositories: read the state, sweep the content, add the guard, align the versions, promote by API through task, develop and main with CI gates, tag, verify the live surface, record; with the counts of the pass">
+  <defs>
+    <linearGradient id="fpbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <marker id="fpar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9 z" fill="#29B6F6"/></marker>
+    <style>
+      text{font-family:'Segoe UI',system-ui,sans-serif;fill:#c9d1d9}
+      .t{fill:#e6edf3;font-weight:600}.a{fill:#29B6F6}.m{fill:#8b949e;font-size:11px}
+      .box{fill:#161b22;stroke:#30363d;stroke-width:1}.acc{stroke:#29B6F6}.warn{fill:#e0a030}.big{fill:#e6edf3;font-weight:700;font-size:20px}
+    </style>
+  </defs>
+  <rect width="800" height="420" fill="url(#fpbg)"/>
+  <text x="32" y="40" class="t" font-size="20">One chain, eighty-one repositories, one at a time</text>
+  <text x="32" y="60" class="m">read the state before deciding · sweep and guard · align versions · promote by API with CI gates · tag · verify live · record</text>
+
+  <g>
+    <rect x="32" y="84" width="88" height="70" rx="8" class="box acc"/>
+    <text x="42" y="106" class="a" font-size="12">STATE</text>
+    <text x="42" y="124" class="m">read-only first</text>
+    <text x="42" y="138" class="m">branch by tree</text>
+    <path d="M120 119 H136" class="acc" fill="none" stroke-width="2" marker-end="url(#fpar)"/>
+
+    <rect x="136" y="84" width="96" height="70" rx="8" class="box"/>
+    <text x="146" y="106" class="a" font-size="12">SWEEP</text>
+    <text x="146" y="124" class="m">no em-dash, no</text>
+    <text x="146" y="138" class="m">emoji, CI guard</text>
+    <path d="M232 119 H248" class="acc" fill="none" stroke-width="2" marker-end="url(#fpar)"/>
+
+    <rect x="248" y="84" width="96" height="70" rx="8" class="box"/>
+    <text x="258" y="106" class="a" font-size="12">VERSIONS</text>
+    <text x="258" y="124" class="m">VERSION, tag,</text>
+    <text x="258" y="138" class="m">manifest, footer</text>
+    <path d="M344 119 H360" class="acc" fill="none" stroke-width="2" marker-end="url(#fpar)"/>
+
+    <rect x="360" y="84" width="120" height="70" rx="8" class="box"/>
+    <text x="370" y="106" class="a" font-size="12">PROMOTE</text>
+    <text x="370" y="124" class="m">task, develop, main</text>
+    <text x="370" y="138" class="m">API, CI completed</text>
+    <path d="M480 119 H496" class="acc" fill="none" stroke-width="2" marker-end="url(#fpar)"/>
+
+    <rect x="496" y="84" width="88" height="70" rx="8" class="box"/>
+    <text x="506" y="106" class="a" font-size="12">TAG</text>
+    <text x="506" y="124" class="m">vX.XX.XXX on</text>
+    <text x="506" y="138" class="m">release merge</text>
+    <path d="M584 119 H600" class="acc" fill="none" stroke-width="2" marker-end="url(#fpar)"/>
+
+    <rect x="600" y="84" width="88" height="70" rx="8" class="box"/>
+    <text x="610" y="106" class="a" font-size="12">LIVE</text>
+    <text x="610" y="124" class="m">200 and the</text>
+    <text x="610" y="138" class="m">served version</text>
+    <path d="M688 119 H704" class="acc" fill="none" stroke-width="2" marker-end="url(#fpar)"/>
+
+    <rect x="704" y="84" width="64" height="70" rx="8" class="box acc"/>
+    <text x="714" y="106" class="a" font-size="12">RECORD</text>
+    <text x="714" y="124" class="m">re-read,</text>
+    <text x="714" y="138" class="m">not intent</text>
+  </g>
+
+  <g>
+    <rect x="32" y="180" width="176" height="86" rx="8" class="box"/>
+    <text x="46" y="206" class="big">81</text>
+    <text x="90" y="206" class="t" font-size="12">repositories in scope</text>
+    <text x="46" y="228" class="m">80 promoted clean, 1 excluded</text>
+    <text x="46" y="244" class="m">on instruction (another session)</text>
+    <text x="46" y="258" class="m">4 wikis among the 80</text>
+
+    <rect x="224" y="180" width="176" height="86" rx="8" class="box"/>
+    <text x="238" y="206" class="big">200+</text>
+    <text x="304" y="206" class="t" font-size="12">pull requests</text>
+    <text x="238" y="228" class="m">opened and merged by API</text>
+    <text x="238" y="244" class="m">42 releases tagged</text>
+    <text x="238" y="258" class="m">8 PyPI releases published</text>
+
+    <rect x="416" y="180" width="176" height="86" rx="8" class="box"/>
+    <text x="430" y="206" class="big">1,190</text>
+    <text x="492" y="206" class="t" font-size="12">branches pruned</text>
+    <text x="430" y="228" class="m">merged or patch-equivalent,</text>
+    <text x="430" y="244" class="m">every unique branch compared</text>
+    <text x="430" y="258" class="m">as a tree before any decision</text>
+
+    <rect x="608" y="180" width="160" height="86" rx="8" class="box acc"/>
+    <text x="622" y="206" class="big">8</text>
+    <text x="648" y="206" class="t" font-size="12">errors of mine</text>
+    <text x="622" y="228" class="m">each with its correction</text>
+    <text x="622" y="244" class="m">and the gate that catches</text>
+    <text x="622" y="258" class="m">it next time</text>
+  </g>
+
+  <text x="32" y="300" class="warn" font-size="12">What the record found while being written, not while the work was done:</text>
+  <text x="32" y="320" class="m">a ledger row claiming a VERSION file and a tag that did not exist; a tag placed on sources that still read the previous version;</text>
+  <text x="32" y="336" class="m">an engine repository the pass had skipped, CI red since a new lint release; three products whose version lived only in a manifest.</text>
+  <text x="32" y="362" class="m">Rule kept from the pass: every claim in a record is re-read from the repository before it is written, and the working ledger</text>
+  <text x="32" y="378" class="m">is never the record. Read-only state first, one repository at a time; the two times work overlapped, the quality dropped.</text>
+  <text x="32" y="404" class="m">2026-09-26 · CAOS fleet · the standard is the floor: develop equals main, one guard, coherent versions, a live check, a record.</text>
+</svg>
