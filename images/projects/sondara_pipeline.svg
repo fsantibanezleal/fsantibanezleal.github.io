@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" role="img"
-     aria-label="Sondara: collar, survey, assay and geology sources are desurveyed and reconstructed in WebGL in the browser, a support-weighted estimate with uncertainty and cross-validation is recomputed locally through the geocond engine, and the workbench states what it is not: a production resource estimate">
+     aria-label="Sondara: three public drillhole families run through an eight-stage offline pipeline; twelve estimation and simulation methods and a geochemical review are compared on the same held-out holes; on Rocklea ordinary kriging holds its place, the learned methods learn the structure without beating it, and on Alberta's hole-group split no method beats the training mean">
   <defs>
     <linearGradient id="sdbg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#111827"/>
@@ -14,59 +14,62 @@
   </defs>
   <rect width="800" height="400" fill="url(#sdbg)"/>
   <text x="32" y="44" class="t" font-size="22">Sondara</text>
-  <text x="32" y="66" class="m">Local-first drillhole intelligence · the data stays on the machine, the estimate shows its doubt</text>
+  <text x="32" y="66" class="m">Drillhole estimation and simulation compared on real held-out holes · every method, the same targets, one scoring</text>
 
-  <rect x="32" y="92" width="150" height="176" rx="10" class="box acc"/>
-  <text x="46" y="116" class="a" font-size="13">SOURCES</text>
-  <text x="46" y="140" class="t" font-size="12">Four tables</text>
-  <text x="46" y="158" class="m">collar · survey ·</text>
-  <text x="46" y="172" class="m">assay · geology</text>
-  <text x="46" y="194" class="m">CSV depth and value</text>
-  <text x="46" y="208" class="m">columns parsed in the</text>
-  <text x="46" y="222" class="m">browser</text>
-  <text x="46" y="246" class="warn" font-size="11">no login, no upload</text>
+  <rect x="32" y="84" width="150" height="196" rx="10" class="box acc"/>
+  <text x="46" y="108" class="a" font-size="13">SOURCES</text>
+  <text x="46" y="130" class="t" font-size="12">Rocklea Dome</text>
+  <text x="46" y="146" class="m">CSIRO, 5,035 one-metre</text>
+  <text x="46" y="160" class="m">intervals, 158 holes</text>
+  <text x="46" y="182" class="t" font-size="12">Alberta MAR_19860002</text>
+  <text x="46" y="198" class="m">22 inclined holes, logs</text>
+  <text x="46" y="220" class="t" font-size="12">NTGS 12LE002</text>
+  <text x="46" y="236" class="m">11 measured stations</text>
+  <text x="46" y="262" class="warn" font-size="11">pinned by SHA-256</text>
 
-  <path d="M182 180 H214" class="acc" fill="none" stroke-width="2" marker-end="url(#sdar)"/>
+  <path d="M182 182 H200" class="acc" fill="none" stroke-width="2" marker-end="url(#sdar)"/>
 
-  <rect x="214" y="80" width="230" height="200" rx="10" class="box"/>
-  <text x="230" y="104" class="a" font-size="13">RECONSTRUCT (WebGL)</text>
-  <rect x="230" y="116" width="198" height="44" rx="6" fill="#0d1117" stroke="#30363d"/>
-  <text x="242" y="134" class="t" font-size="12">Desurveyed borehole tubes</text>
-  <text x="242" y="150" class="m">assay supports along them</text>
-  <rect x="230" y="168" width="198" height="44" rx="6" fill="#0d1117" stroke="#30363d"/>
-  <text x="242" y="186" class="t" font-size="12">Ore continuity shell</text>
-  <text x="242" y="202" class="m">geology contacts, depth slicing</text>
-  <rect x="230" y="220" width="198" height="44" rx="6" fill="#0d1117" stroke="#30363d"/>
-  <text x="242" y="238" class="t" font-size="12">Orbit, section, plan</text>
-  <text x="242" y="254" class="m">selection follows the 3D scene</text>
-  <text x="230" y="274" class="m">seed cases are explicit planning fixtures</text>
+  <rect x="200" y="84" width="138" height="196" rx="10" class="box"/>
+  <text x="214" y="108" class="a" font-size="13">PIPELINE</text>
+  <text x="214" y="130" class="m">acquire · ingest</text>
+  <text x="214" y="146" class="m">preprocess · dataset</text>
+  <text x="214" y="162" class="m">features · train</text>
+  <text x="214" y="178" class="m">infer · evaluate</text>
+  <text x="214" y="202" class="t" font-size="12">Whole-hole splits</text>
+  <text x="214" y="218" class="m">hole-group and</text>
+  <text x="214" y="232" class="m">spatial margin</text>
+  <text x="214" y="262" class="warn" font-size="11">export, validate next</text>
 
-  <path d="M444 180 H476" class="acc" fill="none" stroke-width="2" marker-end="url(#sdar)"/>
+  <path d="M338 182 H356" class="acc" fill="none" stroke-width="2" marker-end="url(#sdar)"/>
 
-  <rect x="476" y="92" width="150" height="176" rx="10" class="box"/>
-  <text x="490" y="116" class="a" font-size="13">ESTIMATE, LOCAL</text>
-  <text x="490" y="140" class="t" font-size="12">Support-weighted value</text>
-  <text x="490" y="158" class="m">uncertainty and</text>
-  <text x="490" y="172" class="m">cross-validation beside it</text>
-  <text x="490" y="186" class="m">grade profile per method</text>
-  <text x="490" y="210" class="t" font-size="12">Engine: geocond</text>
-  <text x="490" y="226" class="m">support-aware</text>
-  <text x="490" y="240" class="m">conditioning, covariance,</text>
-  <text x="490" y="254" class="m">sequential simulation</text>
+  <rect x="356" y="84" width="200" height="196" rx="10" class="box"/>
+  <text x="370" y="108" class="a" font-size="13">METHODS</text>
+  <text x="370" y="130" class="t" font-size="12">Classical, geocond 0.8.0</text>
+  <text x="370" y="146" class="m">NN, IDW, SK, OK, UK, LMC,</text>
+  <text x="370" y="160" class="m">MIK, SGS</text>
+  <text x="370" y="182" class="t" font-size="12">Categorical</text>
+  <text x="370" y="198" class="m">SNESIM, Direct Sampling</text>
+  <text x="370" y="220" class="t" font-size="12">Learned, PyTorch to ONNX</text>
+  <text x="370" y="236" class="m">DeepKriging, KCN</text>
+  <text x="370" y="258" class="t" font-size="12">Review</text>
+  <text x="370" y="272" class="m">autoencoder, spectral index</text>
 
-  <rect x="640" y="92" width="128" height="176" rx="10" class="box acc"/>
-  <text x="654" y="116" class="a" font-size="12">NOT THIS</text>
-  <text x="654" y="138" class="m">a production</text>
-  <text x="654" y="152" class="m">resource estimate</text>
-  <text x="654" y="172" class="m">QA/QC, compositing,</text>
-  <text x="654" y="186" class="m">variogram fitting,</text>
-  <text x="654" y="200" class="m">full covariance,</text>
-  <text x="654" y="214" class="m">categorical simulation,</text>
-  <text x="654" y="228" class="m">competent review</text>
-  <text x="654" y="250" class="warn" font-size="11">planned, not done</text>
+  <path d="M556 182 H574" class="acc" fill="none" stroke-width="2" marker-end="url(#sdar)"/>
 
-  <text x="32" y="316" class="m">A public alpha with its plan as the implementation authority: the local vertical (assay parsing and the support-weighted estimator) is live; the</text>
-  <text x="32" y="332" class="m">full covariance solvers, categorical simulation and the learned method matrix are recorded as planned; the bounded server lane is not promoted.</text>
-  <text x="32" y="356" class="m">GitHub Pages plus a static mirror on the ML VPS over HTTPS; a strict job contract and reproducible pipeline scripts in the repository.</text>
-  <text x="32" y="380" class="warn" font-size="12">Version 0.02.001; geocond 0.1.1 published 2026-09-26; lifecycle building. Sibling of Aerovia by rebuild discipline.</text>
+  <rect x="574" y="84" width="194" height="196" rx="10" class="box acc"/>
+  <text x="588" y="108" class="a" font-size="13">HELD-OUT RESULT</text>
+  <text x="588" y="130" class="t" font-size="12">Rocklea Fe, 23 test holes</text>
+  <text x="588" y="146" class="m">OK RMSE 13.53 wt%; SK, IDW,</text>
+  <text x="588" y="160" class="m">LMC within 0.4 of its MAE</text>
+  <text x="588" y="180" class="m">DeepKriging 14.11, KCN 14.56:</text>
+  <text x="588" y="194" class="m">structure learned, no gain</text>
+  <text x="588" y="214" class="m">SGS keeps the variance</text>
+  <text x="588" y="228" class="m">kriging halves</text>
+  <text x="588" y="250" class="t" font-size="12">Alberta, hole-group split</text>
+  <text x="588" y="266" class="m">no method beats the mean</text>
+
+  <text x="32" y="312" class="m">Paired hole-block intervals decide whether a difference is real; shuffled-label controls and a training-mean reference say whether a</text>
+  <text x="32" y="328" class="m">model learned anything. The supplied spectral index is read from its own files: its hem/goe column is a wavelength, not a ratio.</text>
+  <text x="32" y="352" class="m">The live page still shows the 0.2 local-first viewer; the web rebuild on these results follows export and validate.</text>
+  <text x="32" y="378" class="warn" font-size="12">Version 0.12.000; geocond 0.8.0 on PyPI; scenario matrix 61 computed, 20 verified, 4 pending; lifecycle building.</text>
 </svg>
