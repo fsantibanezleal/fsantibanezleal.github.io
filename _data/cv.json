@@ -4,7 +4,7 @@
     "email": "felipe@FASL.Work",
     "phone": "",
     "website": "https://fsantibanezleal.github.io",
-    "summary": "Advanced analytics leader with 15+ years bridging academia and industry. I design and deploy data-driven solutions for mining, manufacturing, and services: delivering throughput gains, environmental improvements, and field-data workflow acceleration.",
+    "summary": "Industrial manager with a strong foundation as an applied scientist and technical leader, and 15+ years across academia and industry. Focus on business priorities, analytics adoption roadmaps, portfolio planning, and multidisciplinary team leadership in asset-intensive industries and productive processes. Management of the full AI development cycle, from business case and data quality through validation, deployment, and continuous improvement. Experience includes analytics and development team leadership, industrial process optimization, and applied research. Ph.D. in Electrical Engineering; graduate studies in Project Management in progress.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -38,11 +38,11 @@
   "work": [
     {
       "company": "Accenture – Industry X",
-      "position": "I&F Decision Science Assoc. Manager | Senior Data Science Lead",
+      "position": "I&F Decision Science Assoc. Manager",
       "website": "https://www.accenture.com/us-en/insights/industry-x-index",
       "startDate": "2025-09-01",
       "endDate": "",
-      "summary": "Technical & Project Lead at CODELCO MinCo-Hidro. End-to-end data science for mining process optimization.",
+      "summary": "Industrial management of analytics and AI initiatives, aligning business priorities, portfolio planning, multidisciplinary teams, and operational outcomes. Client assignment: CODELCO MinCo-Hidro.",
       "highlights": [
         "Strategic deployment of Data & AI solutions across mining operations",
         "Internship supervision: geotechnical risk prediction system industrialization"
@@ -96,8 +96,8 @@
     {
       "company": "ALGES – Universidad de Chile",
       "position": "Principal ML/AI Engineer | Research Scientist",
-      "startDate": "2017-08-01",
-      "endDate": "2023-10-01",
+      "startDate": "2018-08-01",
+      "endDate": "2022-08-01",
       "summary": "Applied research in hyperspectral imaging, geostatistics, and geometallurgy.",
       "highlights": [
         "Geometallurgical models integrating spectral and laboratory data",
