@@ -10,7 +10,7 @@ location: "Hotel Sheraton, Santiago, Chile"
 
 ![Minería Digital 2026, Modelos de Mineral Tracking: cinco años de experiencia en Codelco](/images/mineria-digital-2026.png)
 
-Presented at **Minería Digital 2026** (Hotel Sheraton, Santiago, Chile, 5-7 August 2026), co-presented with **Magdalena Ribbeck**, Directora of Codelco MinCo-Hidro. I gave this talk in my role as Ind&Func Decision Science Associate Manager at Accenture (Industry X).
+Presented at **Minería Digital 2026** (Hotel Sheraton, Santiago, Chile, 5-7 August 2026), co-presented with **Magdalena Ribbeck**, Directora of Codelco MinCo-Hidro. I gave this talk in my role as Industrial & Functional Decision Science Associate Manager at Accenture (Industry X).
 
 The talk draws on five years of mineral tracking work across Codelco's divisions and the challenges each of them raised. Tracking a tonne of ore from the pit to the plant sounds like bookkeeping and is not: it forces a decision about what the "truth" of a parcel of material even is, and that truth has to be assembled from sources that disagree and arrive at different times. The block model, the dispatch system and the laboratory each describe the same material differently, at different resolutions, with different latency, and reconciling them requires explicit choices about time windows and mass aggregation before any number can be trusted.
 
