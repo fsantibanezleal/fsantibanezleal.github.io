@@ -20,7 +20,7 @@ repository               : "fsantibanezleal/fsantibanezleal.github.io"
 # Site Author - The following control what appear as part of the author content on the side bar.
 author:
   # Biographic information
-  avatar           : "fasl-brand-avatar-dark.png"
+  avatar           : "profile.png"
   name             : "Felipe Santibañez-Leal"
   pronouns         : "he/him"
   bio              : "Business & Technology Manager | Industrial Transformation"
