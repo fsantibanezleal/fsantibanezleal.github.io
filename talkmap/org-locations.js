@@ -1,5 +1,10 @@
 var addressPoints = [
   [
+    "Talk for Procemin Geomet 2020<br />Procemin Geomet 2020; Santiago, Chile",
+    -33.4376995,
+    -70.6510671
+  ],
+  [
     "Channelized facies recovery based on weighted compressed sensing<br />2016 IEEE Sensor Array and Multichannel Signal Processing Workshop (SAM); Rio de Janeiro, Brazil",
     -22.9110137,
     -43.2093727
@@ -10,7 +15,7 @@ var addressPoints = [
     -70.6510671
   ],
   [
-    "Talk for Procemin Geomet 2020<br />Procemin Geomet 2020; Santiago, Chile",
+    "Talk of my doctoral dissertation defense<br />Doctoral Electric Engineering Program of the University of Chile; Santiago, Chile",
     -33.4376995,
     -70.6510671
   ],
@@ -18,10 +23,5 @@ var addressPoints = [
     "Mineral Tracking Models: five years of Codelco experience<br />Miner\u00eda Digital 2026; Hotel Sheraton, Santiago, Chile",
     -33.4217661,
     -70.6212185
-  ],
-  [
-    "Talk of my doctoral dissertation defense<br />Doctoral Electric Engineering Program of the University of Chile; Santiago, Chile",
-    -33.4376995,
-    -70.6510671
   ]
 ];
