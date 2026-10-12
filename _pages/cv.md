@@ -11,19 +11,11 @@ redirect_from:
 
 You can also view my [online interactive CV](https://fsantibanezleal.github.io/online-cv/).
 
-Industrial manager with a strong foundation as an applied scientist and technical leader, and 15+ years across academia and industry. Focus on business priorities, analytics adoption roadmaps, portfolio planning, and multidisciplinary team leadership in asset-intensive industries and productive processes.
-
-Education
-======
-* M.Sc. Program in Project Management, Universidad de Viña del Mar, 2024-Present
-* Ph.D. in Electrical Engineering, Universidad de Chile, 2013-2019
-* Postgraduate Diploma in Medical Informatics, Universidad de Chile & University of Heidelberg, 2011
-* B.Sc. in Electronic Civil Engineering, Universidad de Concepción, 2003-2009
-* Industrial Electronics Technician, CEAT Liceo Mauricio Hochschild, 1998-2002
+Business and technology manager focused on improving industrial performance through digital transformation. I lead multidisciplinary teams and advanced analytics initiatives, aligning business priorities with operational outcomes. My work spans portfolio planning, stakeholder coordination, project delivery, and the adoption of AI and digital solutions - from business case through implementation and continuous improvement.
 
 Work experience
 ======
-* Sep 2025 - Present: **I&F Decision Science Assoc. Manager**
+* Sep 2025 - Present: **Industrial & Functional Decision Science Associate Manager**
   * Accenture, Santiago, Chile
   * Industrial management of analytics and AI initiatives, aligning business priorities, portfolio planning, multidisciplinary teams, and operational outcomes.
   * Full AI development cycle: business case, data quality, validation, deployment, and continuous improvement
@@ -66,6 +58,15 @@ Work experience
 * Jun 2013 - Mar 2016: **ML Expert - Electronic Engineer**
   * BNI - SCIAN-Lab, Universidad de Chile
   * Scientific computing software for biomedical microscopy and super-resolution techniques
+
+Education
+======
+* M.Sc. Program in Project Management, Universidad de Viña del Mar, 2024-Present
+* Ph.D. in Electrical Engineering, Universidad de Chile, 2013-2019
+* Postgraduate Diploma in Medical Informatics, Universidad de Chile & University of Heidelberg, 2011
+* B.Sc. in Electronic Civil Engineering, Universidad de Concepción, 2003-2009
+* Industrial Electronics Technician, CEAT Liceo Mauricio Hochschild, 1998-2002
+
 
 Skills
 ======

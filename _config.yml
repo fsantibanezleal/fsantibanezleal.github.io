@@ -12,7 +12,7 @@ site_theme               : "default" # Options: "default", "air", "sunrise", "mi
 title                    : "The last love song on this little planet"
 title_separator          : "-"
 name                     : &name "Felipe Santibañez-Leal"
-description              : &description "Industrial Management | Applied Science & Technical Leadership"
+description              : &description "Business & Technology Manager | Industrial Transformation"
 url                      : https://fsantibanezleal.github.io
 baseurl                  : ""
 repository               : "fsantibanezleal/fsantibanezleal.github.io"
@@ -23,7 +23,7 @@ author:
   avatar           : "fasl-brand-avatar-dark.png"
   name             : "Felipe Santibañez-Leal"
   pronouns         : "he/him"
-  bio              : "Industrial Manager | Applied Scientist & Technical Leader"
+  bio              : "Business & Technology Manager | Industrial Transformation"
   location         : "Santiago, Chile"
   employer         : "Accenture"
   uri              : "https://fasl-work.com"
