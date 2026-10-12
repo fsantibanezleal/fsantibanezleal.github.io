@@ -12,7 +12,7 @@ site_theme               : "default" # Options: "default", "air", "sunrise", "mi
 title                    : "The last love song on this little planet"
 title_separator          : "-"
 name                     : &name "Felipe Santibañez-Leal"
-description              : &description "Decision Science & Advanced Analytics | Mining, Manufacturing & Services"
+description              : &description "Industrial Management | Applied Science & Technical Leadership"
 url                      : https://fsantibanezleal.github.io
 baseurl                  : ""
 repository               : "fsantibanezleal/fsantibanezleal.github.io"
@@ -23,7 +23,7 @@ author:
   avatar           : "profile.png"
   name             : "Felipe Santibañez-Leal"
   pronouns         : "he/him"
-  bio              : "I&F Decision Science Assoc. Manager @ Accenture | Applied Scientific Researcher"
+  bio              : "Industrial Manager | Applied Scientist & Technical Leader"
   location         : "Santiago, Chile"
   employer         : "Accenture"
   uri              : "http://fasl.work"
