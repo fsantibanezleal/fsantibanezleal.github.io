@@ -20,13 +20,13 @@ repository               : "fsantibanezleal/fsantibanezleal.github.io"
 # Site Author - The following control what appear as part of the author content on the side bar.
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "fasl-brand-avatar-dark.png"
   name             : "Felipe Santibañez-Leal"
   pronouns         : "he/him"
   bio              : "Industrial Manager | Applied Scientist & Technical Leader"
   location         : "Santiago, Chile"
   employer         : "Accenture"
-  uri              : "http://fasl.work"
+  uri              : "https://fasl-work.com"
   email            : "felipe@FASL.Work"
 
   # Academic websites

@@ -30,7 +30,7 @@ Work experience
   * Client assignment: CODELCO MinCo-Hidro
   * Internship supervision: geotechnical risk prediction system industrialization (2026)
 
-* Jan 2025 - Sep 2025: **Data Processing Specialist | Senior Lead Data Scientist**
+* Jan 2025 - Sep 2025: **Data Processing Specialist \| Senior Lead Data Scientist**
   * Minera Centinela, Antofagasta, Chile
   * Advanced analytics system for SAG mill operations
   * Recommender system generating actionable operational strategies
@@ -40,7 +40,7 @@ Work experience
   * Advanced analytics and ML projects for national mining companies
   * Generative AI initiatives for process improvement and operational communication
 
-* Jan 2022 - May 2024: **Project Leader | Senior Data Scientist**
+* Jan 2022 - May 2024: **Project Leader \| Senior Data Scientist**
   * CODELCO, Santiago, Chile
   * Flotation, milling, and thickening optimization (+100 TPH throughput gains)
   * Pollution mitigation via computer vision (24-stream monitoring) and Generative AI
@@ -50,7 +50,7 @@ Work experience
   * Alaya Digital Solutions, Santiago, Chile
   * Projects across mining, aquaculture, retail, and brewing (10-15% production improvements)
 
-* Aug 2021 - Aug 2022: **Principal ML/AI Engineer | Research Scientist**
+* Aug 2021 - Aug 2022: **Principal ML/AI Engineer \| Research Scientist**
   * ALGES - AMTC, Universidad de Chile
   * Geometallurgical models integrating spectral and laboratory data
   * Exploration models for brownfield and greenfield operations
