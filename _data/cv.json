@@ -4,7 +4,7 @@
     "email": "felipe@FASL.Work",
     "phone": "",
     "website": "https://fsantibanezleal.github.io",
-    "summary": "Industrial manager with a strong foundation as an applied scientist and technical leader, and 15+ years across academia and industry. Focus on business priorities, analytics adoption roadmaps, portfolio planning, and multidisciplinary team leadership in asset-intensive industries and productive processes. Management of the full AI development cycle, from business case and data quality through validation, deployment, and continuous improvement. Experience includes analytics and development team leadership, industrial process optimization, and applied research. Ph.D. in Electrical Engineering; graduate studies in Project Management in progress.",
+    "summary": "Business and technology manager focused on improving industrial performance through digital transformation. I lead multidisciplinary teams and advanced analytics initiatives, aligning business priorities with operational outcomes. My work spans portfolio planning, stakeholder coordination, project delivery, and the adoption of AI and digital solutions - from business case through implementation and continuous improvement.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -33,12 +33,13 @@
         "username": "fsantibanez",
         "url": "https://www.linkedin.com/in/fsantibanez"
       }
-    ]
+    ],
+    "label": "Business & Technology Manager | Industrial Transformation"
   },
   "work": [
     {
       "company": "Accenture – Industry X",
-      "position": "I&F Decision Science Assoc. Manager",
+      "position": "Industrial & Functional Decision Science Associate Manager",
       "website": "https://www.accenture.com/us-en/insights/industry-x-index",
       "startDate": "2025-09-01",
       "endDate": "",
@@ -134,7 +135,9 @@
       "startDate": "2013-03-01",
       "endDate": "2019-12-01",
       "gpa": null,
-      "courses": ["CONICYT National Scholarship"]
+      "courses": [
+        "CONICYT National Scholarship"
+      ]
     },
     {
       "institution": "Universidad de Chile & University of Heidelberg",
@@ -152,26 +155,98 @@
       "startDate": "2003-03-01",
       "endDate": "2009-12-01",
       "gpa": null,
-      "courses": ["Enrique Molina Garmendia Scholarship", "Bicentenario Scholarship"]
+      "courses": [
+        "Enrique Molina Garmendia Scholarship",
+        "Bicentenario Scholarship"
+      ]
     }
   ],
   "skills": [
-    {"name": "Python / ML / Data Science", "keywords": ["Python", "scikit-learn", "PyTorch", "TensorFlow", "XGBoost", "Kedro", "Spark"]},
-    {"name": "Cloud & MLOps", "keywords": ["Azure Databricks", "Data Factory", "AWS", "MLflow", "CI/CD", "Docker"]},
-    {"name": "Image Processing & Vision", "keywords": ["OpenCV", "Hyperspectral", "FIJI/ImageJ", "Computer Vision", "Super-resolution"]},
-    {"name": "Geostatistics", "keywords": ["Spatial analysis", "MPS", "Compressed Sensing", "Information Theory"]},
-    {"name": "Full-Stack Development", "keywords": ["FastAPI", "Next.js", "Dash", "PostgreSQL", "Three.js"]},
-    {"name": "Leadership", "keywords": ["Project Management", "Agile", "Cross-functional teams", "Mentoring"]}
+    {
+      "name": "Leadership",
+      "keywords": [
+        "Project Management",
+        "Agile",
+        "Cross-functional teams",
+        "Mentoring"
+      ]
+    },
+    {
+      "name": "Python / ML / Data Science",
+      "keywords": [
+        "Python",
+        "scikit-learn",
+        "PyTorch",
+        "TensorFlow",
+        "XGBoost",
+        "Kedro",
+        "Spark"
+      ]
+    },
+    {
+      "name": "Cloud & MLOps",
+      "keywords": [
+        "Azure Databricks",
+        "Data Factory",
+        "AWS",
+        "MLflow",
+        "CI/CD",
+        "Docker"
+      ]
+    },
+    {
+      "name": "Image Processing & Vision",
+      "keywords": [
+        "OpenCV",
+        "Hyperspectral",
+        "FIJI/ImageJ",
+        "Computer Vision",
+        "Super-resolution"
+      ]
+    },
+    {
+      "name": "Geostatistics",
+      "keywords": [
+        "Spatial analysis",
+        "MPS",
+        "Compressed Sensing",
+        "Information Theory"
+      ]
+    },
+    {
+      "name": "Full-Stack Development",
+      "keywords": [
+        "FastAPI",
+        "Next.js",
+        "Dash",
+        "PostgreSQL",
+        "Three.js"
+      ]
+    }
   ],
   "languages": [
-    {"language": "Spanish", "fluency": "Native"},
-    {"language": "English", "fluency": "Professional Working"}
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional Working"
+    }
   ],
   "interests": [
-    {"name": "Data Science & Machine Learning"},
-    {"name": "Computational Photography & Optics"},
-    {"name": "Geostatistics & Mining Analytics"},
-    {"name": "Nature & Hiking"}
+    {
+      "name": "Data Science & Machine Learning"
+    },
+    {
+      "name": "Computational Photography & Optics"
+    },
+    {
+      "name": "Geostatistics & Mining Analytics"
+    },
+    {
+      "name": "Nature & Hiking"
+    }
   ],
   "references": [],
   "publications": [

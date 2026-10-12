@@ -8,46 +8,19 @@ redirect_from:
   - /about.html
 ---
 
-I am Felipe Santibañez-Leal, an **industrial manager with a strong foundation as an applied scientist and technical leader**, based in Santiago, Chile. My career spans over 15 years across academia and industry, with a growing focus on business and management.
+I am Felipe Santibañez-Leal, a **business and technology manager focused on industrial transformation**, based in Santiago, Chile.
 
-At [Accenture Industry X](https://www.accenture.com/us-en/insights/industry-x-index), I lead advanced analytics and digital transformation initiatives for industrial operations. My focus is on business priorities, analytics adoption roadmaps, portfolio planning, multidisciplinary teams, and operational outcomes. My current client assignment is at CODELCO MinCo-Hidro.
+Business and technology manager focused on improving industrial performance through digital transformation. I lead multidisciplinary teams and advanced analytics initiatives, aligning business priorities with operational outcomes. My work spans portfolio planning, stakeholder coordination, project delivery, and the adoption of AI and digital solutions - from business case through implementation and continuous improvement.
 
-My work and research
+At [Accenture Industry X](https://www.accenture.com/us-en/insights/industry-x-index), I work as **Industrial & Functional Decision Science Associate Manager**, leading advanced analytics and digital transformation initiatives for industrial operations.
+
+Leadership and delivery
 ======
 
-I love science, mathematics, and nature, and my career sits at their intersection.
-
-I manage the full AI development cycle, from the business problem and data quality through validation, deployment, and continuous improvement. Applied science and technical leadership inform my management and engineering decisions.
-
-**Current focus areas:**
-- Business alignment, analytics adoption, and portfolio planning
+- Business alignment and portfolio prioritization
 - Multidisciplinary team leadership and stakeholder coordination
-- Advanced analytics and MLOps for mining operations (SAG mills, flotation, grinding)
-- Predictive modeling, recommendation systems, and scenario-based optimization
-- Hyperspectral imaging and geometallurgical estimation
-- Architecture & solution design: feature engineering, batch/streaming pipelines, APIs/microservices
-- Browser-native scientific and mining software (the [Faena](https://faena.fasl-work.com) product line) and agentic systems for enterprise maintenance (SAP PM)
-
-**Research interests:**
-- Machine Learning & Deep Learning for industrial applications
-- Bayesian and stochastic modeling for high-dimensional data
-- Compressed sensing and adaptive sampling strategies
-- Super-resolution microscopy and computational photography
-- Geostatistical modeling and spatial analysis
-
-Several laboratories, institutions, and researchers have shaped my research and my approach to science:
-
-1. [Advanced Laboratory for Geostatistical Supercomputing (ALGES)](http://www.alges.cl/)
-1. [Information and Decision Systems Group, Universidad de Chile](http://ingenieria.uchile.cl/investigacion/presentacion/laboratorios/departamento-de-ingenieria-electrica/90774/laboratorio-de-informacion-y-decision)
-1. [Biomedical Neuroscience Institute, Universidad de Chile](https://www.bni.cl/)
-1. [Third Institute of Physics - Biophysics, University of Gottingen](https://www.uni-goettingen.de/en/499370.html)
-1. [Heidelberg Center Latin America](http://www.heidelberg-center.uni-hd.de/english/index.html)
-1. [Laboratory for Scientific Image Analysis (SCIAN-Lab), Universidad de Chile](http://www.scian.cl/)
-1. [Dr. Claudia Linker Lab](https://kclpure.kcl.ac.uk/portal/claudia.linker.html)
-1. [Laboratory of Experimental Ontogeny, Universidad de Chile](http://www.ontogenesis.cl/research_scientificnet_chile.html)
-1. [Millennium Scientific Nucleus of Neural Morphogenesis NEMO](https://www.uchile.cl/portafolio-academico/impresion.jsf?username=mconcha)
-1. [Center for Optics and Photonics CEFOP, Universidad de Concepcion](http://cefop.udec.cl/)
-1. [Computer Graphics Lab, Universidad de Concepcion](https://www.programacion11.com/)
+- Project delivery, operational adoption, and continuous improvement
+- Advanced analytics, AI, and digital solutions for industrial performance
 
 What I am building now
 ======
