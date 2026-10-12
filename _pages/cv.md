@@ -11,6 +11,8 @@ redirect_from:
 
 You can also view my [online interactive CV](https://fsantibanezleal.github.io/online-cv/).
 
+Industrial manager with a strong foundation as an applied scientist and technical leader, and 15+ years across academia and industry. Focus on business priorities, analytics adoption roadmaps, portfolio planning, and multidisciplinary team leadership in asset-intensive industries and productive processes.
+
 Education
 ======
 * M.Sc. Program in Project Management, Universidad de Viña del Mar, 2024-Present
@@ -23,8 +25,9 @@ Work experience
 ======
 * Sep 2025 - Present: **I&F Decision Science Assoc. Manager**
   * Accenture, Santiago, Chile
-  * Senior Data Science Lead & Technical Project Lead @ MinCo-Hidro CODELCO
-  * End-to-end data science initiatives for mining process optimization
+  * Industrial management of analytics and AI initiatives, aligning business priorities, portfolio planning, multidisciplinary teams, and operational outcomes.
+  * Full AI development cycle: business case, data quality, validation, deployment, and continuous improvement
+  * Client assignment: CODELCO MinCo-Hidro
   * Internship supervision: geotechnical risk prediction system industrialization (2026)
 
 * Jan 2025 - Sep 2025: **Data Processing Specialist | Senior Lead Data Scientist**
@@ -47,12 +50,12 @@ Work experience
   * Alaya Digital Solutions, Santiago, Chile
   * Projects across mining, aquaculture, retail, and brewing (10-15% production improvements)
 
-* 2021 - 2023: **Principal ML/AI Engineer | Research Scientist**
+* Aug 2021 - Aug 2022: **Principal ML/AI Engineer | Research Scientist**
   * ALGES - AMTC, Universidad de Chile
   * Geometallurgical models integrating spectral and laboratory data
   * Exploration models for brownfield and greenfield operations
 
-* Aug 2017 - Aug 2021: **Senior ML/AI Engineer - Scientific Researcher**
+* Aug 2018 - Aug 2021: **Senior ML/AI Engineer - Scientific Researcher**
   * ALGES, Universidad de Chile
   * Non-parametric Bayesian strategies with hyperspectral data for geometallurgical estimation
 
