@@ -8,18 +8,20 @@ redirect_from:
   - /about.html
 ---
 
-Hola! I am Felipe Santibañez-Leal, an **I&F Decision Science Associate Manager at [Accenture Industry X](https://www.accenture.com/us-en/insights/industry-x-index)**, currently on client assignment as **Senior Data Science Lead & Technical Project Lead** at [CODELCO](https://www.codelco.com/)'s Advanced Analytics Directorate (MinCo-Hidro) under the Technology & Digitalization Management (GTD).
+I am Felipe Santibañez-Leal, an **industrial manager with a strong foundation as an applied scientist and technical leader**, based in Santiago, Chile. My career spans over 15 years across academia and industry, with a growing focus on business and management.
 
-I am an applied scientist and technical leader with over 15 years of experience spanning academia and industry. I bridge advanced analytics, machine learning, and operational expertise to deliver measurable impact across mining, industrial, and service sectors.
+At [Accenture Industry X](https://www.accenture.com/us-en/insights/industry-x-index), I lead advanced analytics and digital transformation initiatives for industrial operations. My focus is on business priorities, analytics adoption roadmaps, portfolio planning, multidisciplinary teams, and operational outcomes. My current client assignment is at CODELCO MinCo-Hidro.
 
 My work and research
 ======
 
 I love science, mathematics, and nature, and my career sits at their intersection.
 
-I lead end-to-end data science initiatives for mining process optimization, delivering secure, scalable, production-grade solutions that tie business value to governance and engineering best practices.
+I manage the full AI development cycle, from the business problem and data quality through validation, deployment, and continuous improvement. Applied science and technical leadership inform my management and engineering decisions.
 
 **Current focus areas:**
+- Business alignment, analytics adoption, and portfolio planning
+- Multidisciplinary team leadership and stakeholder coordination
 - Advanced analytics and MLOps for mining operations (SAG mills, flotation, grinding)
 - Predictive modeling, recommendation systems, and scenario-based optimization
 - Hyperspectral imaging and geometallurgical estimation
