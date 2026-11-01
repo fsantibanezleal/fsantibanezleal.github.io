@@ -1,7 +1,7 @@
 ---
 title: "DinHot, a workbench for programmable light-field decisions"
 date: 2010-04-01
-excerpt: "A browser-based workbench for comparing optical-trap designs under stated assumptions. It makes the case, method, modeled device and measured output reviewable together.<br/><img src='/images/projects/dinhot_00_cover_proposal.svg'>"
+excerpt: "A browser-based workbench for comparing optical-trap designs under stated assumptions. It makes the case, method, modeled device and modeled output reviewable together.<br/><img src='/images/projects/dinhot_00_cover_proposal.svg'>"
 collection: portfolio
 tags: [optics, product-engineering, simulation, technology-leadership]
 ---
